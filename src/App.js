@@ -62,7 +62,7 @@ function App() {
       </header>
 
       <footer>
-        <p>© 2025 MythMU. All rights reserved.</p>
+        <p>© 2025 MyraMU. All rights reserved.</p>
       </footer>
     </div>
   );
