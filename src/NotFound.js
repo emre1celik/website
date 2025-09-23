@@ -1,20 +1,47 @@
 import React from "react";
 import "./App.css"; // reuse existing styles
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload, faHome, faUsers } from "@fortawesome/free-solid-svg-icons";
 
 function NotFound() {
   return (
     <div className="App">
       <nav className="navbar">
-        <div className="logo">MyraMU</div>
+        <div className="logo">
+          <Link
+            to="/"
+            className="hero-button-link"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            MyraMU
+          </Link>
+        </div>
         <ul className="nav-links">
           <li>
-            <a href="/">Home</a>
+            <a href="/">
+              <FontAwesomeIcon icon={faHome} style={{ marginRight: "16px" }} />
+              Home
+            </a>
           </li>
           <li>
-            <a href="/#download">Download</a>
+            <a href="/">
+              <FontAwesomeIcon
+                icon={faDownload}
+                style={{ marginRight: "6px" }}
+              />
+              Download
+            </a>
           </li>
           <li>
-            <a href="/#community">Community</a>
+            <a
+              href="https://discord.gg/NFwQxTJY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faUsers} style={{ marginRight: "16px" }} />
+              Community
+            </a>
           </li>
         </ul>
       </nav>
