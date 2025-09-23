@@ -173,6 +173,12 @@ body, html, #root, .App {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* subtle shadow */
+}
+
+.hero-buttons button:hover {
+  transform: translateY(-2px); /* lift effect */
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6); /* stronger shadow on hover */
 }
 
 .hero-buttons button:first-child {
