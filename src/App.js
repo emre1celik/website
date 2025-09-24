@@ -4,6 +4,7 @@ import Landing from "./Landing";
 import Register from "./Register";
 import Login from "./Login";
 import NotFound from "./NotFound";
+import ControlPanel from "./ControlPanel";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -14,6 +15,12 @@ function App() {
         <Route path="/" element={<Landing user={user} />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login onLogin={setUser} />} />
+        <Route
+          path="/control-panel"
+          element={
+            user ? <ControlPanel user={user} /> : <Login onLogin={setUser} />
+          }
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

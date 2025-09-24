@@ -34,6 +34,7 @@ function Login({ onLogin }) {
         // call parent callback to update logged-in user
         onLogin(data.username);
         setMessage("✅ Logged in successfully!");
+        window.location.href = "/control-panel";
       } else {
         setMessage(data.error || "❌ Invalid username or password");
       }
