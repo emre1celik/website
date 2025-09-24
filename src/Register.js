@@ -30,7 +30,7 @@ function Register() {
     }
 
     try {
-      const response = await fetch("https://api.myramu.online/api/register", {
+      const response = await fetch("http://api.myramu.online/api/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
