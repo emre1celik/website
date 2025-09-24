@@ -1,8 +1,14 @@
-import { faDownload, faHome, faUsers } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDownload,
+  faHome,
+  faRightToBracket,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-function Navigation() {
+function Navigation({ user }) {
   return (
     <nav className="navbar">
       <div className="logo">
@@ -41,6 +47,28 @@ function Navigation() {
             <span className="nav-label">Community</span>
           </a>
         </li>
+
+        {/* Conditional login/register or greeting */}
+        {!user ? (
+          <>
+            <li>
+              <Link
+                to="/login"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                <FontAwesomeIcon
+                  icon={faRightToBracket}
+                  style={{ marginRight: "16px" }}
+                />
+                Login
+              </Link>
+            </li>
+          </>
+        ) : (
+          <li>
+            <span style={{ fontWeight: "bold" }}>Hello, {user}</span>
+          </li>
+        )}
       </ul>
     </nav>
   );

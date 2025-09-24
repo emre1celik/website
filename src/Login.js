@@ -4,44 +4,26 @@ import Navigation from "./Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-function Register() {
-  const [form, setForm] = useState({
-    username: "",
-    email: "",
-    password: "",
-    confirmPassword: "",
-  });
-
+function Login({ onLogin }) {
+  const [form, setForm] = useState({ username: "", password: "" });
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Handle input changes
   const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    if (form.password !== form.confirmPassword) {
-      setMessage("❌ Passwords do not match!");
-      return;
-    }
-
     setLoading(true);
     setMessage("");
 
     try {
-      const response = await fetch("http://api.myramu.online/api/register", {
+      const response = await fetch("http://api.myramu.online/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           account: form.username,
-          email: form.email,
           password: form.password,
         }),
       });
@@ -49,17 +31,11 @@ function Register() {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage("✅ Account created successfully!");
-      } else if (data.errors) {
-        if (data.errors.account) {
-          setMessage("❌ " + data.errors.account[0]);
-        } else if (data.errors.email) {
-          setMessage("❌ " + data.errors.email[0]);
-        } else {
-          setMessage("❌ Something went wrong");
-        }
+        // call parent callback to update logged-in user
+        onLogin(data.username);
+        setMessage("✅ Logged in successfully!");
       } else {
-        setMessage("❌ Something went wrong");
+        setMessage(data.error || "❌ Invalid username or password");
       }
     } catch (err) {
       setMessage("❌ Server error: " + err.message);
@@ -71,24 +47,15 @@ function Register() {
   return (
     <div className="App">
       <Navigation />
-
       <header className="hero">
         <div className="register-box">
-          <h2>Create an Account</h2>
+          <h2>Login</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
               name="username"
               placeholder="Username"
               value={form.username}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={form.email}
               onChange={handleChange}
               required
             />
@@ -100,15 +67,6 @@ function Register() {
               onChange={handleChange}
               required
             />
-            <input
-              type="password"
-              name="confirmPassword"
-              placeholder="Confirm Password"
-              value={form.confirmPassword}
-              onChange={handleChange}
-              required
-            />
-
             <button type="submit" disabled={loading}>
               {loading ? (
                 <FontAwesomeIcon
@@ -117,15 +75,13 @@ function Register() {
                   style={{ marginRight: "6px" }}
                 />
               ) : (
-                "Register"
+                "Login"
               )}
             </button>
           </form>
-
           {message && <p style={{ marginTop: "3rem" }}>{message}</p>}
         </div>
       </header>
-
       <footer>
         <p>© 2025 MyraMU. All rights reserved.</p>
       </footer>
@@ -133,4 +89,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Login;
