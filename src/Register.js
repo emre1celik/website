@@ -33,7 +33,10 @@ function Register() {
       const response = await fetch("http://api.myramu.online/api/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
+        body: JSON.stringify({
+          username: form.username,
+          password: form.password,
+        }),
       });
 
       const data = await response.json();
