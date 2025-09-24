@@ -45,6 +45,8 @@ function ControlPanel({ user }) {
                 style={{
                   flex: 1,
                   padding: "0.75rem",
+                  paddingLeft: "3rem",
+                  paddingRight: "3rem",
                   background: "transparent",
                   border: "none",
                   borderBottom:
