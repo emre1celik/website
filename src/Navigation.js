@@ -66,10 +66,12 @@ function Navigation({ user }) {
             </li>
           </>
         ) : (
-          <li style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <FontAwesomeIcon icon={faUser} style={{ color: "#4caf50" }} />
-            <span style={{ fontWeight: "bold", color: "#fff" }}>{user}</span>
-          </li>
+          <span className="nav-label">
+            <li style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+              <FontAwesomeIcon icon={faUser} style={{ color: "#4caf50" }} />
+              <span style={{ fontWeight: "bold", color: "#fff" }}>{user}</span>
+            </li>
+          </span>
         )}
       </ul>
     </nav>
