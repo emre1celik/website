@@ -34,7 +34,8 @@ function Register() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          username: form.username,
+          account: form.username, // map username field → account column
+          email: form.email,
           password: form.password,
         }),
       });
