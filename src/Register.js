@@ -11,6 +11,7 @@ function Register() {
   });
 
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   // Handle input changes
   const handleChange = (e) => {
@@ -25,9 +26,12 @@ function Register() {
     e.preventDefault();
 
     if (form.password !== form.confirmPassword) {
-      setMessage("Passwords do not match!");
+      setMessage("❌ Passwords do not match!");
       return;
     }
+
+    setLoading(true);
+    setMessage("");
 
     try {
       const response = await fetch("http://api.myramu.online/api/register", {
@@ -44,11 +48,21 @@ function Register() {
 
       if (response.ok) {
         setMessage("✅ Account created successfully!");
+      } else if (data.errors) {
+        if (data.errors.account) {
+          setMessage("❌ " + data.errors.account[0]);
+        } else if (data.errors.email) {
+          setMessage("❌ " + data.errors.email[0]);
+        } else {
+          setMessage("❌ Something went wrong");
+        }
       } else {
-        setMessage("❌ " + (data.message || "Something went wrong"));
+        setMessage("❌ Something went wrong");
       }
     } catch (err) {
       setMessage("❌ Server error: " + err.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -92,7 +106,14 @@ function Register() {
               onChange={handleChange}
               required
             />
-            <button type="submit">Register</button>
+
+            <button type="submit" disabled={loading}>
+              {loading ? (
+                <i className="fas fa-spinner fa-spin"></i>
+              ) : (
+                "Register"
+              )}
+            </button>
           </form>
 
           {message && <p style={{ marginTop: "1rem" }}>{message}</p>}
