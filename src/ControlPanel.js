@@ -30,55 +30,50 @@ function ControlPanel({ user }) {
           <h2>Hello, {user}!</h2>
 
           {/* Tabs */}
-          <div style={{ display: "flex", gap: "1rem", marginBottom: "1.5rem" }}>
-            <button
-              onClick={() => setActiveTab("profile")}
-              style={{
-                background: activeTab === "profile" ? "#4caf50" : "#333",
-                color: "white",
-                flex: 1,
-                padding: "0.75rem",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer",
-              }}
-            >
-              Profile
-            </button>
-            <button
-              onClick={() => setActiveTab("settings")}
-              style={{
-                background: activeTab === "settings" ? "#4caf50" : "#333",
-                color: "white",
-                flex: 1,
-                padding: "0.75rem",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer",
-              }}
-            >
-              Settings
-            </button>
-            <button
-              onClick={() => setActiveTab("stats")}
-              style={{
-                background: activeTab === "stats" ? "#4caf50" : "#333",
-                color: "white",
-                flex: 1,
-                padding: "0.75rem",
-                border: "none",
-                borderRadius: "5px",
-                cursor: "pointer",
-              }}
-            >
-              Stats
-            </button>
+          <div
+            style={{
+              display: "flex",
+              gap: "0",
+              marginBottom: "1.5rem",
+              borderBottom: "2px solid #555",
+            }}
+          >
+            {["profile", "settings", "stats"].map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                style={{
+                  flex: 1,
+                  padding: "0.75rem",
+                  background: "transparent",
+                  border: "none",
+                  borderBottom:
+                    activeTab === tab
+                      ? "4px solid #4caf50"
+                      : "4px solid transparent",
+                  color: activeTab === tab ? "#fff" : "#bbb",
+                  fontWeight: activeTab === tab ? "bold" : "normal",
+                  cursor: "pointer",
+                  transition: "all 0.3s",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#fff")}
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.color =
+                    activeTab === tab ? "#fff" : "#bbb")
+                }
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            ))}
           </div>
 
           {/* Tab Content */}
           <div>{renderTabContent()}</div>
         </div>
       </header>
+      <footer>
+        <p>© 2025 MyraMU. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
