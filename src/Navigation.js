@@ -2,6 +2,7 @@ import {
   faDownload,
   faHome,
   faRightToBracket,
+  faUser,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons/faArrowRight";
@@ -65,8 +66,9 @@ function Navigation({ user }) {
             </li>
           </>
         ) : (
-          <li>
-            <span style={{ fontWeight: "bold" }}>Hello, {user}</span>
+          <li style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+            <FontAwesomeIcon icon={faUser} style={{ color: "#4caf50" }} />
+            <span style={{ fontWeight: "bold", color: "#fff" }}>{user}</span>
           </li>
         )}
       </ul>
