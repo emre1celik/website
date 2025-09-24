@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
 import Navigation from "./Navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 function Register() {
   const [form, setForm] = useState({
@@ -38,7 +40,7 @@ function Register() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          account: form.username, // map username field → account column
+          account: form.username,
           email: form.email,
           password: form.password,
         }),
@@ -109,7 +111,11 @@ function Register() {
 
             <button type="submit" disabled={loading}>
               {loading ? (
-                <i className="fas fa-spinner fa-spin"></i>
+                <FontAwesomeIcon
+                  icon={faSpinner}
+                  spin
+                  style={{ marginRight: "6px" }}
+                />
               ) : (
                 "Register"
               )}
