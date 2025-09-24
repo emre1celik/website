@@ -3,10 +3,12 @@ import "./App.css";
 import Navigation from "./Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 function Login({ onLogin }) {
   const [form, setForm] = useState({ username: "", password: "" });
   const [message, setMessage] = useState("");
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -34,7 +36,7 @@ function Login({ onLogin }) {
         // call parent callback to update logged-in user
         onLogin(data.username);
         setMessage("✅ Logged in successfully!");
-        window.location.href = "/control-panel";
+        navigate("/control-panel"); // <-- client-side navigation, no page reload
       } else {
         setMessage(data.error || "❌ Invalid username or password");
       }
