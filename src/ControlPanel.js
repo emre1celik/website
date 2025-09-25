@@ -25,7 +25,7 @@ function ControlPanel({ user }) {
       <header className="hero">
         <div
           className="register-box"
-          style={{ maxWidth: "800px", padding: "2rem 3rem" }}
+          style={{ maxWidth: "80%", padding: "2rem 3rem" }}
         >
           <h2>Hello, {user}!</h2>
 
