@@ -148,7 +148,7 @@ function Register() {
             </p>
           </form>
 
-          {message && <p style={{ marginTop: "3rem" }}>{message}</p>}
+          {message && <p>{message}</p>}
         </div>
       </header>
 

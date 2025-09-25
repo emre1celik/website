@@ -82,8 +82,8 @@ function Login({ onLogin }) {
               )}
             </button>
           </form>
-          {message && <p style={{ marginTop: "3rem" }}>{message}</p>}
-          <p style={{ marginTop: "3rem", fontSize: "0.9rem" }}>
+          {message && <p>{message}</p>}
+          <p style={{ fontSize: "0.9rem" }}>
             Don’t have an account?{" "}
             <Link
               to="/register"
