@@ -28,14 +28,13 @@ function Navigation({ user }) {
           </a>
         </li>
         <li>
-          <a
-            href="https://drive.google.com/file/d/1ednW_xQsh0xlBhg-5KpH1GcJ6JrEoCv5/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to="/downloads"
+            style={{ textDecoration: "none", color: "white" }}
           >
             <FontAwesomeIcon icon={faDownload} style={{ marginRight: "6px" }} />
             <span className="nav-label">Download</span>
-          </a>
+          </Link>
         </li>
         <li>
           <a

@@ -18,13 +18,14 @@ function Landing() {
               icon={faDownload}
               className="responsive-icon-margin"
             />
-            <Link
-              to="https://drive.google.com/file/d/1ednW_xQsh0xlBhg-5KpH1GcJ6JrEoCv5/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Download <span className="nav-label">Client</span>
+            <Link to="/downloads" className="hero-button-link">
+              <button>
+                <FontAwesomeIcon
+                  icon={faDownload}
+                  className="responsive-icon-margin"
+                />
+                Download <span className="nav-label">Client</span>
+              </button>
             </Link>
           </button>
           <Link to="/register" className="hero-button-link">

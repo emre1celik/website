@@ -21,6 +21,7 @@ function App() {
             user ? <ControlPanel user={user} /> : <Login onLogin={setUser} />
           }
         />
+        <Route path="/downloads" element={<Downloads />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
