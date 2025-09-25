@@ -21,7 +21,7 @@ function Login({ onLogin }) {
     setMessage("");
 
     try {
-      const response = await fetch("http://api.myramu.online/api/login", {
+      const response = await fetch("https://api.myramu.online/api/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
