@@ -108,7 +108,6 @@ function Register() {
               onChange={handleChange}
               required
             />
-
             <button type="submit" disabled={loading}>
               {loading ? (
                 <FontAwesomeIcon
@@ -120,6 +119,33 @@ function Register() {
                 "Register"
               )}
             </button>
+
+            <p style={{ fontSize: "0.9rem" }}>
+              Already have an account?{" "}
+              <a
+                href="/login"
+                style={{ color: "#4caf50", textDecoration: "underline" }}
+              >
+                Login here
+              </a>
+            </p>
+            <p style={{ fontSize: "0.85rem", color: "#ccc" }}>
+              By creating an account, you agree to our{" "}
+              <a
+                href="/terms"
+                style={{ color: "#4caf50", textDecoration: "underline" }}
+              >
+                Terms & Conditions
+              </a>{" "}
+              and{" "}
+              <a
+                href="/privacy"
+                style={{ color: "#4caf50", textDecoration: "underline" }}
+              >
+                Privacy Policy
+              </a>
+              .
+            </p>
           </form>
 
           {message && <p style={{ marginTop: "3rem" }}>{message}</p>}

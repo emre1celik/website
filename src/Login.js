@@ -3,7 +3,7 @@ import "./App.css";
 import Navigation from "./Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login({ onLogin }) {
   const [form, setForm] = useState({ username: "", password: "" });
@@ -52,7 +52,7 @@ function Login({ onLogin }) {
       <Navigation />
       <header className="hero">
         <div className="register-box">
-          <h2>Login</h2>
+          <h2>Control Panel</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -83,6 +83,15 @@ function Login({ onLogin }) {
             </button>
           </form>
           {message && <p style={{ marginTop: "3rem" }}>{message}</p>}
+          <p style={{ marginTop: "3rem", fontSize: "0.9rem" }}>
+            Don’t have an account?{" "}
+            <Link
+              to="/register"
+              style={{ color: "#4caf50", textDecoration: "none" }}
+            >
+              Register here
+            </Link>
+          </p>
         </div>
       </header>
       <footer>

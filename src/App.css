@@ -23,8 +23,20 @@ body, html, #root, .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-height: 80vh;       /* box won't exceed 80% of viewport height */
+  overflow-y: auto;       /* vertical scrollbar inside box */
+  box-sizing: border-box; /* include padding in height */
 }
 
+/* Optional: nicer scrollbar (for Webkit browsers like Chrome/Edge/Safari) */
+.register-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.register-box::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 3px;
+}
 /* Only add margin-right above 800px */
 .responsive-icon-margin {
   margin-right: 0;
@@ -136,6 +148,7 @@ body, html, #root, .App {
 }
 
 /* Hero Section */
+/* Hero Section */
 .hero {
   flex: 1;
   display: flex;
@@ -144,11 +157,23 @@ body, html, #root, .App {
   align-items: center;
   color: white;
   text-align: center;
-  padding: 4rem 2rem;
 
-  position: relative;
-  z-index: 1;
+  /* Limit hero height to viewport */
+  max-height: calc(100vh - 60px - 50px); /* adjust 60px for navbar, 50px for footer */
+  padding: 2rem; /* smaller padding for mobile */
+  box-sizing: border-box;
+
+  overflow: hidden; /* prevent hero from causing page scroll */
 }
+
+/* Optional: responsive adjustment for mobile */
+@media (max-width: 432px) {
+  .hero {
+    max-height: calc(100vh - 50px - 50px); /* adjust navbar/footer heights */
+    padding: 1rem;
+  }
+}
+
 
 .hero h1 {
   font-size: 3rem;
@@ -179,6 +204,18 @@ body, html, #root, .App {
 .hero-buttons button:hover {
   transform: translateY(-2px); /* lift effect */
   box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6); /* stronger shadow on hover */
+}
+
+/* Hide all nav items by default when screen width <= 432px */
+@media (max-width: 432px) {
+  .nav-links li {
+    display: none;
+  }
+
+  /* Show only the login link */
+  .nav-links li.login-link {
+    display: flex; /* or inline-flex to keep icon + label aligned */
+  }
 }
 
 .hero-buttons button:first-child {
