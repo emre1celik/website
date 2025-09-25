@@ -5,6 +5,7 @@ import Register from "./Register";
 import Login from "./Login";
 import NotFound from "./NotFound";
 import ControlPanel from "./ControlPanel";
+import Downloads from "./Downloads";
 
 function App() {
   const [user, setUser] = useState(null);

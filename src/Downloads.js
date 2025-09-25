@@ -1,65 +1,88 @@
 import React from "react";
 import "./App.css";
 import Navigation from "./Navigation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCloud, faFile } from "@fortawesome/free-solid-svg-icons";
 
 function Downloads() {
   const mirrors = [
     {
       name: "Google Drive",
       url: "https://drive.google.com/file/d/1ednW_xQsh0xlBhg-5KpH1GcJ6JrEoCv5/view?usp=sharing",
+      icon: faCloud,
     },
-    { name: "Mirror 2", url: "#" },
-    { name: "Mirror 3", url: "#" },
+    {
+      name: "MEGA.nz",
+      url: "https://mega.nz/somefile",
+      icon: faCloud,
+    },
+    {
+      name: "MediaFire",
+      url: "https://www.mediafire.com/file/somefile",
+      icon: faFile,
+    },
   ];
 
   return (
     <div className="App">
       <Navigation />
-
       <header className="hero">
         <div
           className="register-box"
-          style={{ maxWidth: "500px", padding: "2rem 2rem" }}
+          style={{ maxWidth: "600px", padding: "2rem 3rem" }}
         >
-          <h2>Download Client</h2>
-          <p style={{ marginBottom: "1rem" }}>
-            Choose a mirror to download the MyraMU client:
-          </p>
-          <ul
+          <h2>Download Mirrors</h2>
+          <p
             style={{
-              listStyle: "none",
-              padding: 0,
-              display: "flex",
-              flexDirection: "column",
-              gap: "1rem",
+              marginTop: "0.5rem",
+              marginBottom: "1.5rem",
+              color: "#ccc",
             }}
           >
-            {mirrors.map((mirror, index) => (
-              <li key={index}>
+            Choose a mirror to download the client. All links point to the same
+            latest version.
+          </p>
+
+          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+            {mirrors.map((mirror, idx) => (
+              <li key={idx} style={{ margin: "1rem 0" }}>
                 <a
                   href={mirror.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{
-                    display: "block",
-                    padding: "0.75rem 1rem",
-                    background: "#4caf50",
-                    color: "#fff",
-                    textDecoration: "none",
-                    borderRadius: "5px",
-                    textAlign: "center",
-                    fontWeight: "bold",
-                    transition: "0.3s",
-                  }}
+                  style={{ textDecoration: "none" }}
                 >
-                  {mirror.name}
+                  <button
+                    className="mirror-button"
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      gap: "0.75rem",
+                      padding: "0.75rem 3rem",
+                      border: "none",
+                      borderRadius: "5px",
+                      backgroundColor: "#4caf50",
+                      color: "white",
+                      fontWeight: "bold",
+                      cursor: "pointer",
+                      transition: "0.3s, transform 0.2s",
+                    }}
+                  >
+                    <FontAwesomeIcon icon={mirror.icon} />
+                    {mirror.name}
+                  </button>
                 </a>
               </li>
             ))}
           </ul>
+          <p style={{ fontSize: "0.85rem", color: "#ccc", marginTop: "1rem" }}>
+            ⚠️ Note: You may need to exclude <strong>main.exe</strong> from your
+            firewall or turn it off temporarily for the client to connect.
+          </p>
         </div>
       </header>
-
       <footer>
         <p>© 2025 MyraMU. All rights reserved.</p>
       </footer>

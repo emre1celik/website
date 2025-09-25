@@ -13,21 +13,20 @@ function Landing() {
         <h1>Welcome to MyraMU!</h1>
         <p>Experience the ultimate MU online adventure.</p>
         <div className="hero-buttons">
-          <button>
-            <FontAwesomeIcon
-              icon={faDownload}
-              className="responsive-icon-margin"
-            />
-            <Link to="/downloads" className="hero-button-link">
-              <button>
-                <FontAwesomeIcon
-                  icon={faDownload}
-                  className="responsive-icon-margin"
-                />
-                Download <span className="nav-label">Client</span>
-              </button>
-            </Link>
-          </button>
+          <Link to="/downloads" className="hero-button-link">
+            <button
+              style={{
+                backgroundColor: "#ff4c4c",
+                color: "white",
+              }}
+            >
+              <FontAwesomeIcon
+                icon={faDownload}
+                className="responsive-icon-margin"
+              />
+              Download <span className="nav-label">Client</span>
+            </button>
+          </Link>
           <Link to="/register" className="hero-button-link">
             <button>
               <FontAwesomeIcon
