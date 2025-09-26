@@ -70,10 +70,12 @@ function Navigation({ user }) {
           </NavigationLoginLink>
         ) : (
           <NavigationUserInfo>
-            <NavigationUserIcon>
-              <FontAwesomeIcon icon={faUser} />
-            </NavigationUserIcon>
-            <NavigationUserName>{user}</NavigationUserName>
+            <NavigationItemLink as={Link} to="/control-panel">
+              <NavigationUserIcon>
+                <FontAwesomeIcon icon={faUser} />
+              </NavigationUserIcon>
+              <NavigationUserName>{user}</NavigationUserName>
+            </NavigationItemLink>
           </NavigationUserInfo>
         )}
       </NavigationLinks>

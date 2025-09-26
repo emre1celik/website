@@ -22,6 +22,12 @@ export const NavigationLoginLink = styled.li`
   }
 `;
 
+export const NavigationUserInfo = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 6px;
+`;
+
 export const NavigationLinks = styled.ul`
   list-style: none;
   display: flex;
@@ -31,8 +37,13 @@ export const NavigationLinks = styled.ul`
   align-items: center;
   
   @media (max-width: 475px) {
-    li:not(${NavigationLoginLink}) {
+    li {
       display: none;
+    }
+
+    ${NavigationLoginLink}, 
+    ${NavigationUserInfo} {
+      display: flex;
     }
   }
 `;
@@ -48,12 +59,6 @@ export const NavigationItemLink = styled.a`
   &:hover {
     color: #b0b0b0;
   }
-`;
-
-export const NavigationUserInfo = styled.li`
-  display: flex;
-  align-items: center;
-  gap: 6px;
 `;
 
 export const NavigationIcon = styled.span`
