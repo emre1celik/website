@@ -45,6 +45,12 @@ export const LandingButtons = styled.div`
   gap: 1rem;
 `;
 
+export const LandingButtonLabel = styled.div`
+  @media (max-width: 620px) {
+    display: none;
+  }
+`;
+
 export const LandingButton = styled.button`
   display: flex;
   align-items: center;

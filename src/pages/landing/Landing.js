@@ -7,6 +7,7 @@ import {
   LandingButtons,
   LandingButton,
   ResponsiveIcon,
+  LandingButtonLabel,
 } from "./LandingStyles";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
@@ -39,7 +40,7 @@ function Landing({ user }) {
             >
               <LandingButton className="download">
                 <ResponsiveIcon icon={faDownload} />
-                Download Client
+                Download <LandingButtonLabel>Client</LandingButtonLabel>
               </LandingButton>
             </Link>
             <Link to="/register"
@@ -47,7 +48,7 @@ function Landing({ user }) {
             >
               <LandingButton className="register">
                 <ResponsiveIcon icon={faUserPlus} />
-                Register Account
+                Register <LandingButtonLabel>Account</LandingButtonLabel>
               </LandingButton>
             </Link>
           </LandingButtons>
