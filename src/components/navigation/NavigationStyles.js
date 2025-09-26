@@ -1,8 +1,7 @@
 // src/components/navigation/NavigationStyles.js
 import styled from "styled-components";
 
-/* Navbar container */
-export const Navbar = styled.nav`
+export const NavigationWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,22 +10,20 @@ export const Navbar = styled.nav`
   color: white;
 `;
 
-/* Logo link */
-export const LogoLink = styled.a`
+export const NavigationLogo = styled.a`
   font-size: 2rem;
   font-weight: bold;
   text-decoration: none;
   color: white;
 `;
 
-export const LoginListItem = styled.li`
+export const NavigationLoginLink = styled.li`
   @media (max-width: 475px) {
     display: flex;
   }
 `;
 
-/* Nav links container */
-export const NavLinks = styled.ul`
+export const NavigationLinks = styled.ul`
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -35,14 +32,13 @@ export const NavLinks = styled.ul`
   align-items: center;
   
   @media (max-width: 475px) {
-    li:not(${LoginListItem}) {
-      display: none; /* hide everything except login */
+    li:not(${NavigationLoginLink}) {
+      display: none;
     }
   }
 `;
 
-/* Each nav item link */
-export const NavItemLink = styled.a`
+export const NavigationItemLink = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -55,18 +51,13 @@ export const NavItemLink = styled.a`
   }
 `;
 
-/* Login link container */
-export const LoginLink = styled.li``;
-
-/* User info container */
-export const UserInfo = styled.li`
+export const NavigationUserInfo = styled.li`
   display: flex;
   align-items: center;
   gap: 6px;
 `;
 
-/* FontAwesome icons */
-export const NavIcon = styled.span`
+export const NavigationIcon = styled.span`
   margin-right: 16px;
   display: flex;
   align-items: center;
@@ -76,18 +67,17 @@ export const NavIcon = styled.span`
   }
 `;
 
-/* User icon color override */
-export const UserIcon = styled(NavIcon)`
+export const NavigationUserIcon = styled(NavigationIcon)`
   color: #4caf50;
 `;
 
 /* User name */
-export const UserName = styled.span`
+export const NavigationUserName = styled.span`
   font-weight: bold;
   color: white;
 `;
 
-export const NavLabel = styled.span`
+export const NavigationLabel = styled.span`
   @media (max-width: 800px) {
     display: none;
   }

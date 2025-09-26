@@ -1,5 +1,3 @@
-// src/components/navigation/Navigation.js
-import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,77 +8,76 @@ import {
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import {
-  Navbar,
-  LogoLink,
-  NavLinks,
-  NavItemLink,
-  LoginLink,
-  UserInfo,
-  NavIcon,
-  UserIcon,
-  UserName,
-  NavLabel,
-  LoginListItem,
+  NavigationLogo,
+  NavigationLinks,
+  NavigationItemLink,
+  NavigationUserInfo,
+  NavigationIcon,
+  NavigationUserIcon,
+  NavigationUserName,
+  NavigationLabel,
+  NavigationLoginLink,
+  NavigationWrapper,
 } from "./NavigationStyles";
 
 function Navigation({ user }) {
   return (
-    <Navbar>
-      <LogoLink as={Link} to="/">
+    <NavigationWrapper>
+      <NavigationLogo as={Link} to="/">
         MyraMU
-      </LogoLink>
+      </NavigationLogo>
 
-      <NavLinks>
+      <NavigationLinks>
         <li>
-          <NavItemLink as={Link} to="/">
-            <NavIcon>
+          <NavigationItemLink as={Link} to="/">
+            <NavigationIcon>
               <FontAwesomeIcon icon={faHome} />
-            </NavIcon>
-            <NavLabel>Home</NavLabel>
-          </NavItemLink>
+            </NavigationIcon>
+            <NavigationLabel>Home</NavigationLabel>
+          </NavigationItemLink>
         </li>
 
         <li>
-          <NavItemLink as={Link} to="/downloads">
-            <NavIcon className="small">
+          <NavigationItemLink as={Link} to="/downloads">
+            <NavigationIcon className="small">
               <FontAwesomeIcon icon={faDownload} />
-            </NavIcon>
-            <NavLabel>Download</NavLabel>
-          </NavItemLink>
+            </NavigationIcon>
+            <NavigationLabel>Download</NavigationLabel>
+          </NavigationItemLink>
         </li>
 
         <li>
-          <NavItemLink
+          <NavigationItemLink
             href="https://discord.gg/NFwQxTJY"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <NavIcon>
+            <NavigationIcon>
               <FontAwesomeIcon icon={faUsers} />
-            </NavIcon>
-            <NavLabel>Community</NavLabel>
-          </NavItemLink>
+            </NavigationIcon>
+            <NavigationLabel>Community</NavigationLabel>
+          </NavigationItemLink>
         </li>
 
         {!user ? (
-          <LoginListItem>
-            <NavItemLink as={Link} to="/login">
-              <NavIcon>
+          <NavigationLoginLink>
+            <NavigationItemLink as={Link} to="/login">
+              <NavigationIcon>
                 <FontAwesomeIcon icon={faRightToBracket} />
-              </NavIcon>
-              <NavLabel>Login</NavLabel>
-            </NavItemLink>
-          </LoginListItem>
+              </NavigationIcon>
+              <NavigationLabel>Login</NavigationLabel>
+            </NavigationItemLink>
+          </NavigationLoginLink>
         ) : (
-          <UserInfo>
-            <UserIcon>
+          <NavigationUserInfo>
+            <NavigationUserIcon>
               <FontAwesomeIcon icon={faUser} />
-            </UserIcon>
-            <UserName>{user}</UserName>
-          </UserInfo>
+            </NavigationUserIcon>
+            <NavigationUserName>{user}</NavigationUserName>
+          </NavigationUserInfo>
         )}
-      </NavLinks>
-    </Navbar>
+      </NavigationLinks>
+    </NavigationWrapper>
   );
 }
 
