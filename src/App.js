@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Landing from "./Landing";
-import Register from "./Register";
-import Login from "./Login";
-import ControlPanel from "./ControlPanel";
+import Landing from "./pages/landing/Landing";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
+import ControlPanel from "./pages/controlPanel/ControlPanel";
 import Downloads from "./pages/downloads/Downloads";
 import NotFound from "./pages/notFound/NotFound";
 import CookieBanner from "./components/cookies/CookieBanner";

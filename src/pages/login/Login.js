@@ -1,19 +1,23 @@
-import React, { useState } from "react";
-import "./App.css";
-import Navigation from "./components/navigation/Navigation";
+import { useState } from "react";
+import Navigation from "../../components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
+import {
+  LoginWrapper,
+  LoginContent,
+  LoginBox,
+} from "./LoginStyles";
+import Footer from "../../components/footer/Footer";
 
 function Login({ user, onLogin }) {
   const [form, setForm] = useState({ username: "", password: "" });
   const [message, setMessage] = useState("");
-  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
-  const handleChange = (e) => {
+  const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
-  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -33,10 +37,9 @@ function Login({ user, onLogin }) {
       const data = await response.json();
 
       if (response.ok) {
-        // call parent callback to update logged-in user
         onLogin(data.username);
         setMessage("✅ Logged in successfully!");
-        navigate("/control-panel"); // <-- client-side navigation, no page reload
+        navigate("/control-panel");
       } else {
         setMessage(data.error || "❌ Invalid username or password");
       }
@@ -48,11 +51,12 @@ function Login({ user, onLogin }) {
   };
 
   return (
-    <div className="App">
+    <LoginWrapper>
       <Navigation user={user} />
-      <header className="hero">
-        <div className="register-box">
-          <h2>Control Panel</h2>
+
+      <LoginContent>
+        <LoginBox>
+          <h2>Login</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -71,33 +75,22 @@ function Login({ user, onLogin }) {
               required
             />
             <button type="submit" disabled={loading}>
-              {loading ? (
-                <FontAwesomeIcon
-                  icon={faSpinner}
-                  spin
-                  style={{ marginRight: "6px" }}
-                />
-              ) : (
-                "Login"
-              )}
+              {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Login"}
             </button>
           </form>
+
           {message && <p>{message}</p>}
-          <p style={{ fontSize: "0.9rem" }}>
-            Don’t have an account?{" "}
-            <Link
-              to="/register"
-              style={{ color: "#4caf50", textDecoration: "none" }}
-            >
-              Register here
-            </Link>
+
+          <p>
+            Don’t have an account? <Link to="/register" style={{ textDecoration: "none", color: "#4caf50" }}>Register here</Link>
           </p>
-        </div>
-      </header>
-      <footer>
+        </LoginBox>
+      </LoginContent>
+
+      <Footer>
         <p>© 2025 MyraMU. All rights reserved.</p>
-      </footer>
-    </div>
+      </Footer>
+    </LoginWrapper>
   );
 }
 

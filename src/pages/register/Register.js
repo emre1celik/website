@@ -1,8 +1,13 @@
-import React, { useState } from "react";
-import "./App.css";
-import Navigation from "./components/navigation/Navigation";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import {
+  RegisterWrapper,
+  RegisterContent,
+  RegisterBox,
+} from "./RegisterStyles";
+import Footer from "../../components/footer/Footer";
+import Navigation from "../../components/navigation/Navigation";
 
 function Register({ user }) {
   const [form, setForm] = useState({
@@ -11,22 +16,13 @@ function Register({ user }) {
     password: "",
     confirmPassword: "",
   });
-
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  // Handle input changes
-  const handleChange = (e) => {
-    setForm({
-      ...form,
-      [e.target.name]: e.target.value,
-    });
-  };
+  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  // Handle form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (form.password !== form.confirmPassword) {
       setMessage("❌ Passwords do not match!");
       return;
@@ -48,19 +44,12 @@ function Register({ user }) {
 
       const data = await response.json();
 
-      if (response.ok) {
-        setMessage("✅ Account created successfully!");
-      } else if (data.errors) {
-        if (data.errors.account) {
-          setMessage("❌ " + data.errors.account[0]);
-        } else if (data.errors.email) {
-          setMessage("❌ " + data.errors.email[0]);
-        } else {
-          setMessage("❌ Something went wrong");
-        }
-      } else {
-        setMessage("❌ Something went wrong");
-      }
+      if (response.ok) setMessage("✅ Account created successfully!");
+      else if (data.errors) {
+        if (data.errors.account) setMessage("❌ " + data.errors.account[0]);
+        else if (data.errors.email) setMessage("❌ " + data.errors.email[0]);
+        else setMessage("❌ Something went wrong");
+      } else setMessage("❌ Something went wrong");
     } catch (err) {
       setMessage("❌ Server error: " + err.message);
     } finally {
@@ -69,11 +58,11 @@ function Register({ user }) {
   };
 
   return (
-    <div className="App">
+    <RegisterWrapper>
       <Navigation user={user} />
 
-      <header className="hero">
-        <div className="register-box">
+      <RegisterContent>
+        <RegisterBox>
           <h2>Create an Account</h2>
           <form onSubmit={handleSubmit}>
             <input
@@ -109,53 +98,25 @@ function Register({ user }) {
               required
             />
             <button type="submit" disabled={loading}>
-              {loading ? (
-                <FontAwesomeIcon
-                  icon={faSpinner}
-                  spin
-                  style={{ marginRight: "6px" }}
-                />
-              ) : (
-                "Register"
-              )}
+              {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Register"}
             </button>
 
-            <p style={{ fontSize: "0.9rem" }}>
-              Already have an account?{" "}
-              <a
-                href="/login"
-                style={{ color: "#4caf50", textDecoration: "underline" }}
-              >
-                Login here
-              </a>
+            <p>
+              Already have an account? <a href="/login" style={{ textDecoration: "none", color: "#4caf50" }}>Login here</a>
             </p>
-            <p style={{ fontSize: "0.85rem", color: "#ccc" }}>
-              By creating an account, you agree to our{" "}
-              <a
-                href="/terms"
-                style={{ color: "#4caf50", textDecoration: "underline" }}
-              >
-                Terms & Conditions
-              </a>{" "}
-              and{" "}
-              <a
-                href="/privacy"
-                style={{ color: "#4caf50", textDecoration: "underline" }}
-              >
-                Privacy Policy
-              </a>
-              .
+            <p>
+              By creating an account, you agree to our <a href="/terms" style={{ textDecoration: "none", color: "#4caf50" }}>Terms & Conditions</a> and <a href="/privacy" style={{ textDecoration: "none", color: "#4caf50" }}>Privacy Policy</a>.
             </p>
           </form>
 
           {message && <p>{message}</p>}
-        </div>
-      </header>
+        </RegisterBox>
+      </RegisterContent>
 
-      <footer>
+      <Footer>
         <p>© 2025 MyraMU. All rights reserved.</p>
-      </footer>
-    </div>
+      </Footer>
+    </RegisterWrapper>
   );
 }
 
