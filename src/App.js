@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./Landing";
 import Register from "./Register";
 import Login from "./Login";
-import NotFound from "./NotFound";
 import ControlPanel from "./ControlPanel";
 import Downloads from "./pages/downloads/Downloads";
+import NotFound from "./pages/notFound/NotFound";
 import CookieBanner from "./components/cookies/CookieBanner";
 
 function App() {

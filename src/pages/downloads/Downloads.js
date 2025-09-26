@@ -5,10 +5,10 @@ import {
   DownloadsHero,
   DownloadsBox,
   DownloadsMirrorButton,
-  DownloadsFooter,
   DownloadsNote,
 } from "./DownloadsStyles";
 import Navigation from "../../components/navigation/Navigation";
+import Footer from "../../components/footer/Footer";
 
 function Downloads({ user }) {
   const mirrors = [
@@ -65,9 +65,9 @@ function Downloads({ user }) {
         </DownloadsBox>
       </DownloadsHero>
 
-      <DownloadsFooter>
+      <Footer>
         <p>© 2025 MyraMU. All rights reserved.</p>
-      </DownloadsFooter>
+      </Footer>
     </DownloadsWrapper>
   );
 }
