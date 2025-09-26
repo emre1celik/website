@@ -104,7 +104,7 @@ function Register({ user }) {
             <p>
               Already have an account? <a href="/login" style={{ textDecoration: "none", color: "#4caf50" }}>Login here</a>
             </p>
-            <p>
+            <p style={{ marginTop: 0 }}>
               By creating an account, you agree to our <a href="/terms" style={{ textDecoration: "none", color: "#4caf50" }}>Terms & Conditions</a> and <a href="/privacy" style={{ textDecoration: "none", color: "#4caf50" }}>Privacy Policy</a>.
             </p>
           </form>
