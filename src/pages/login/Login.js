@@ -9,6 +9,7 @@ import {
   LoginBox,
 } from "./LoginStyles";
 import Footer from "../../components/footer/Footer";
+import { Helmet } from "react-helmet";
 
 function Login({ user, onLogin }) {
   const [form, setForm] = useState({ username: "", password: "" });
@@ -51,46 +52,60 @@ function Login({ user, onLogin }) {
   };
 
   return (
-    <LoginWrapper>
-      <Navigation user={user} />
+    <>
+      <Helmet>
+        <title>Myra MuOnline - Login | Season 19 Episode 2-3 | MU Online Private Server</title>
+        <meta
+          name="description"
+          content="Login to your Myra MuOnline account and continue your journey in Season 19 Episode 2-3. Access your stats, items, and enjoy the ultimate MU Online experience."
+        />
+        <meta
+          name="keywords"
+          content="mu online login, myra mu login, mu private server login, season 19 ep2 login, myra account login"
+        />
+      </Helmet>
 
-      <LoginContent>
-        <LoginBox>
-          <h2>Login</h2>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              value={form.username}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={form.password}
-              onChange={handleChange}
-              required
-            />
-            <button type="submit" disabled={loading}>
-              {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Login"}
-            </button>
-          </form>
+      <LoginWrapper>
+        <Navigation user={user} />
 
-          {message && <p>{message}</p>}
+        <LoginContent>
+          <LoginBox>
+            <h2>Login</h2>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                value={form.username}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                value={form.password}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit" disabled={loading}>
+                {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Login"}
+              </button>
+            </form>
 
-          <p>
-            Don’t have an account? <Link to="/register" style={{ textDecoration: "none", color: "#4caf50" }}>Register here</Link>
-          </p>
-        </LoginBox>
-      </LoginContent>
+            {message && <p>{message}</p>}
 
-      <Footer>
-        <p>© 2025 MyraMU. All rights reserved.</p>
-      </Footer>
-    </LoginWrapper>
+            <p>
+              Don’t have an account? <Link to="/register" style={{ textDecoration: "none", color: "#4caf50" }}>Register here</Link>
+            </p>
+          </LoginBox>
+        </LoginContent>
+
+        <Footer>
+          <p>© 2025 MyraMU. All rights reserved.</p>
+        </Footer>
+      </LoginWrapper>
+    </>
   );
 }
 

@@ -9,6 +9,7 @@ import {
 } from "./DownloadsStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
+import { Helmet } from "react-helmet";
 
 function Downloads({ user }) {
   const mirrors = [
@@ -30,45 +31,59 @@ function Downloads({ user }) {
   ];
 
   return (
-    <DownloadsWrapper>
-      <Navigation user={user} />
+    <>
+      <Helmet>
+        <title>Myra MuOnline - Downloads | Season 19 Episode 2-3 | MU Online Client</title>
+        <meta
+          name="description"
+          content="Download the Myra MuOnline Season 19 Episode 2-3 client now! Join the fastest and most stable MU Online private server and start playing instantly."
+        />
+        <meta
+          name="keywords"
+          content="mu online download, myra mu client, mu private server download, season 19 ep2 client, myra mu download"
+        />
+      </Helmet>
 
-      <DownloadsHero>
-        <DownloadsBox>
-          <h2>Download Mirrors</h2>
-          <p>
-            Choose a mirror to download the client. All links point to the same
-            latest version.
-          </p>
+      <DownloadsWrapper>
+        <Navigation user={user} />
 
-          <ul style={{ listStyle: "none", padding: 0, margin: 0, width: "100%" }}>
-            {mirrors.map((mirror, idx) => (
-              <li key={idx} style={{ margin: '1rem 0' }}>
-                <DownloadsMirrorButton
-                  href={mirror.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button>
-                    <FontAwesomeIcon icon={mirror.icon} />
-                    {mirror.name}
-                  </button>
-                </DownloadsMirrorButton>
-              </li>
-            ))}
-          </ul>
+        <DownloadsHero>
+          <DownloadsBox>
+            <h2>Download Mirrors</h2>
+            <p>
+              Choose a mirror to download the client. All links point to the same
+              latest version.
+            </p>
 
-          <DownloadsNote>
-            ⚠️ Note: You may need to exclude <strong>main.exe</strong> from your
-            firewall or turn it off temporarily for the client to connect.
-          </DownloadsNote>
-        </DownloadsBox>
-      </DownloadsHero>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, width: "100%" }}>
+              {mirrors.map((mirror, idx) => (
+                <li key={idx} style={{ margin: '1rem 0' }}>
+                  <DownloadsMirrorButton
+                    href={mirror.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button>
+                      <FontAwesomeIcon icon={mirror.icon} />
+                      {mirror.name}
+                    </button>
+                  </DownloadsMirrorButton>
+                </li>
+              ))}
+            </ul>
 
-      <Footer>
-        <p>© 2025 MyraMU. All rights reserved.</p>
-      </Footer>
-    </DownloadsWrapper>
+            <DownloadsNote>
+              ⚠️ Note: You may need to exclude <strong>main.exe</strong> from your
+              firewall or turn it off temporarily for the client to connect.
+            </DownloadsNote>
+          </DownloadsBox>
+        </DownloadsHero>
+
+        <Footer>
+          <p>© 2025 MyraMU. All rights reserved.</p>
+        </Footer>
+      </DownloadsWrapper>
+    </>
   );
 }
 

@@ -9,6 +9,7 @@ import {
 } from "./ControlPanelStyles";
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
+import { Helmet } from "react-helmet";
 
 function ControlPanel({ user }) {
   const [activeTab, setActiveTab] = useState("profile");
@@ -27,33 +28,47 @@ function ControlPanel({ user }) {
   };
 
   return (
-    <ControlPanelWrapper>
-      <Navigation user={user} />
+    <>
+      <Helmet>
+        <title>Myra MuOnline - Control Panel | Season 19 Episode 2-3</title>
+        <meta
+          name="description"
+          content="Manage your Myra MuOnline account in the Control Panel. Check your stats, update settings, and enjoy the Season 19 Episode 2-3 private server experience."
+        />
+        <meta
+          name="keywords"
+          content="mu online control panel, myra mu account management, mu private server stats, myra season 19 control panel"
+        />
+      </Helmet>
 
-      <ControlPanelContent>
-        <ControlPanelBox>
-          <h2>Hello, {user}!</h2>
+      <ControlPanelWrapper>
+        <Navigation user={user} />
 
-          <ControlPanelTabs>
-            {["profile", "settings", "stats"].map((tab) => (
-              <ControlPanelTabButton
-                key={tab}
-                active={activeTab === tab}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab.charAt(0).toUpperCase() + tab.slice(1)}
-              </ControlPanelTabButton>
-            ))}
-          </ControlPanelTabs>
+        <ControlPanelContent>
+          <ControlPanelBox>
+            <h2>Hello, {user}!</h2>
 
-          <ControlPanelTabContent>{renderTabContent()}</ControlPanelTabContent>
-        </ControlPanelBox>
-      </ControlPanelContent>
+            <ControlPanelTabs>
+              {["profile", "settings", "stats"].map((tab) => (
+                <ControlPanelTabButton
+                  key={tab}
+                  active={activeTab === tab}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
+                </ControlPanelTabButton>
+              ))}
+            </ControlPanelTabs>
 
-      <Footer>
-        <p>© 2025 MyraMU. All rights reserved.</p>
-      </Footer>
-    </ControlPanelWrapper>
+            <ControlPanelTabContent>{renderTabContent()}</ControlPanelTabContent>
+          </ControlPanelBox>
+        </ControlPanelContent>
+
+        <Footer>
+          <p>© 2025 MyraMU. All rights reserved.</p>
+        </Footer>
+      </ControlPanelWrapper>
+    </>
   );
 }
 

@@ -1,267 +1,40 @@
-@font-face {
-  font-family: 'AlbertusMedium';
-  src: url('./assets/fonts/albertusmedium_regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* App.css - minimal global styles */
 
-/* Reset */
-/* App.css - global */
-body, html, #root, .App {
+/* Reset and global box-sizing */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+/* Ensure full height for the root elements */
+html, body, #root {
   height: 100%;
-  font-family: 'AlbertusMedium', Arial, sans-serif;
-}
-/* Register Box */
-.register-box {
-  background: rgba(0,0,0,0.7);
-  padding: 3rem 2rem;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 80vh;       /* box won't exceed 80% of viewport height */
-  overflow-y: auto;       /* vertical scrollbar inside box */
-  box-sizing: border-box; /* include padding in height */
-}
-.mirror-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6);
-}
-
-/* Optional: nicer scrollbar (for Webkit browsers like Chrome/Edge/Safari) */
-.register-box::-webkit-scrollbar {
-  width: 6px;
-}
-
-.register-box::-webkit-scrollbar-thumb {
-  background-color: rgba(255,255,255,0.3);
-  border-radius: 3px;
-}
-/* Only add margin-right above 800px */
-.responsive-icon-margin {
-  margin-right: 0;
-}
-
-@media (min-width: 420px) {
-  .responsive-icon-margin {
-    margin-right: 16px;
-  }
-}
-/* Hide nav-label text on small screens */
-@media (max-width: 800px) {
-  .nav-label {
-    display: none;
-  }
-}
-.register-box h2 {
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  font-family: 'AlbertusMedium', Arial, sans-serif; /* fallback in case styled-components fail */
   color: white;
+  background-color: #000; /* fallback background */
 }
 
-.register-box form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.register-box input {
-  padding: 0.75rem 1rem;
-  border: none;
-  border-radius: 5px;
-  font-family: 'AlbertusMedium', Arial, sans-serif;
-  font-size: 1rem;
-}
-
-.register-box input:focus {
-  outline: none;
-  box-shadow: 0 0 5px #fff;
-}
-
-.register-box button {
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #4caf50;
-  color: white;
-  transition: 0.3s;
-}
-
-.register-box button:hover {
-  background-color: #449d46;
-}
-
-/* App container */
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-
-  /* Background image for entire page */
-  background-image: url('./assets/images/2151470664.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  color: white;
-}
-
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 3rem;
-  background: rgba(0,0,0,0.7); /* semi-transparent dark overlay */
-  color: white;
-  position: relative;
-}
-
-.navbar .logo {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.navbar .nav-links {
-  list-style: none;
-  display: flex;
-  font-size: 1rem;
-  gap: 2rem;
-  font-weight: normal;
-}
-
-.navbar .nav-links li a {
-  color: white;
+/* Links: remove default underline globally */
+a {
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s; /* smooth color transition */
+  color: inherit; /* use current text color unless overridden */
 }
 
-.navbar .nav-links li a:hover {
-  color: #b0b0b0; /* light grey on hover */
-  text-decoration: none; /* remove underline if present */
+/* Optional: smooth scroll for all scrollable boxes */
+html {
+  scroll-behavior: smooth;
 }
 
-/* Hero Section */
-/* Hero Section */
-.hero {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-
-  /* Limit hero height to viewport */
-  max-height: calc(100vh - 60px - 50px); /* adjust 60px for navbar, 50px for footer */
-  padding: 2rem; /* smaller padding for mobile */
-  box-sizing: border-box;
-
-  overflow: hidden; /* prevent hero from causing page scroll */
-}
-
-/* Optional: responsive adjustment for mobile */
-@media (max-width: 432px) {
-  .hero {
-    max-height: calc(100vh - 50px - 50px); /* adjust navbar/footer heights */
-    padding: 1rem;
-  }
-}
-
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 1rem;
-}
-
-.hero-buttons button {
-  padding: 1rem 2rem;
-  font-size: 1.3rem;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* subtle shadow */
-}
-
-.hero-buttons button:hover {
-  transform: translateY(-2px); /* lift effect */
-  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6); /* stronger shadow on hover */
-}
-
-/* Hide all nav items by default when screen width <= 432px */
-@media (max-width: 432px) {
-  .nav-links li {
-    display: none;
-  }
-
-  /* Show only the login link */
-  .nav-links li.login-link {
-    display: flex; /* or inline-flex to keep icon + label aligned */
-  }
-}
-
-.hero-buttons button:first-child {
-  background-color: #ff4c4c;
-  color: white;
-}
-
-.hero-buttons button:first-child:hover {
-  background-color: #e04343;
-}
-
-.hero-buttons button:last-child {
-  background-color: #4caf50;
-  color: white;
-}
-
-.hero-buttons button:last-child:hover {
-  background-color: #449d46;
-}
-
-/* Optional: dark overlay to make text readable */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.0); /* semi-transparent dark overlay */
-  z-index: -1;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: rgba(0,0,0,0.5); /* semi-transparent dark overlay */
-  color: white;
-  position: relative;
-  z-index: 2;
-}
-
+/* Optional: default button styles (can override in styled-components if needed) */
 button {
+  font-family: 'AlbertusMedium', Arial, sans-serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Optional: default input styles */
+input, select, textarea {
   font-family: 'AlbertusMedium', Arial, sans-serif;
 }

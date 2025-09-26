@@ -8,6 +8,7 @@ import {
 } from "./RegisterStyles";
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
+import { Helmet } from "react-helmet";
 
 function Register({ user }) {
   const [form, setForm] = useState({
@@ -58,65 +59,79 @@ function Register({ user }) {
   };
 
   return (
-    <RegisterWrapper>
-      <Navigation user={user} />
+    <>
+      <Helmet>
+        <title>Myra MuOnline - Register Account | Season 19 Episode 2-3 | MU Online</title>
+        <meta
+          name="description"
+          content="Create your Myra MuOnline account now! Join Season 19 Episode 2-3 and play on the best MU Online private server. Register quickly and start your adventure."
+        />
+        <meta
+          name="keywords"
+          content="mu online register, myra mu register, mu online account, myra season 19 register, myra private server registration"
+        />
+      </Helmet>
+      
+      <RegisterWrapper>
+        <Navigation user={user} />
 
-      <RegisterContent>
-        <RegisterBox>
-          <h2>Create an Account</h2>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              value={form.username}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Email"
-              value={form.email}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={form.password}
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="password"
-              name="confirmPassword"
-              placeholder="Confirm Password"
-              value={form.confirmPassword}
-              onChange={handleChange}
-              required
-            />
-            <button type="submit" disabled={loading}>
-              {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Register"}
-            </button>
+        <RegisterContent>
+          <RegisterBox>
+            <h2>Create an Account</h2>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="username"
+                placeholder="Username"
+                value={form.username}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                value={form.email}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                value={form.password}
+                onChange={handleChange}
+                required
+              />
+              <input
+                type="password"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+                value={form.confirmPassword}
+                onChange={handleChange}
+                required
+              />
+              <button type="submit" disabled={loading}>
+                {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Register"}
+              </button>
 
-            <p>
-              Already have an account? <a href="/login" style={{ textDecoration: "none", color: "#4caf50" }}>Login here</a>
-            </p>
-            <p style={{ marginTop: 0 }}>
-              By creating an account, you agree to our <a href="/terms" style={{ textDecoration: "none", color: "#4caf50" }}>Terms & Conditions</a> and <a href="/privacy" style={{ textDecoration: "none", color: "#4caf50" }}>Privacy Policy</a>.
-            </p>
-          </form>
+              <p>
+                Already have an account? <a href="/login" style={{ textDecoration: "none", color: "#4caf50" }}>Login here</a>
+              </p>
+              <p style={{ marginTop: 0 }}>
+                By creating an account, you agree to our <a href="/terms" style={{ textDecoration: "none", color: "#4caf50" }}>Terms & Conditions</a> and <a href="/privacy" style={{ textDecoration: "none", color: "#4caf50" }}>Privacy Policy</a>.
+              </p>
+            </form>
 
-          {message && <p>{message}</p>}
-        </RegisterBox>
-      </RegisterContent>
+            {message && <p>{message}</p>}
+          </RegisterBox>
+        </RegisterContent>
 
-      <Footer>
-        <p>© 2025 MyraMU. All rights reserved.</p>
-      </Footer>
-    </RegisterWrapper>
+        <Footer>
+          <p>© 2025 MyraMU. All rights reserved.</p>
+        </Footer>
+      </RegisterWrapper>
+    </>
   );
 }
 
