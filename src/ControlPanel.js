@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Navigation from "./Navigation";
+import Navigation from "./components/navigation/Navigation";
 
 function ControlPanel({ user }) {
   const [activeTab, setActiveTab] = useState("profile");

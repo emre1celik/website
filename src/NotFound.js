@@ -1,5 +1,5 @@
 import "./App.css";
-import Navigation from "./Navigation";
+import Navigation from "./components/navigation/Navigation";
 
 function NotFound() {
   return (

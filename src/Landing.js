@@ -2,7 +2,7 @@ import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import Navigation from "./Navigation";
+import Navigation from "./components/navigation/Navigation";
 
 function Landing() {
   return (

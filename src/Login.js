@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import Navigation from "./Navigation";
+import Navigation from "./components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";

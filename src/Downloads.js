@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Navigation from "./Navigation";
+import Navigation from "./components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloud, faFile } from "@fortawesome/free-solid-svg-icons";
 
