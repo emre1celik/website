@@ -6,12 +6,14 @@ import Login from "./Login";
 import NotFound from "./NotFound";
 import ControlPanel from "./ControlPanel";
 import Downloads from "./Downloads";
+import CookieBanner from "./components/cookies/CookieBanner";
 
 function App() {
   const [user, setUser] = useState(null);
 
   return (
     <Router>
+      <CookieBanner />
       <Routes>
         <Route path="/" element={<Landing user={user} />} />
         <Route path="/register" element={<Register />} />
