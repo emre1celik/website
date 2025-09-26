@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./Landing";
 import Register from "./Register";
 import Login from "./Login";
 import NotFound from "./NotFound";
 import ControlPanel from "./ControlPanel";
-import Downloads from "./Downloads";
+import Downloads from "./pages/downloads/Downloads";
 import CookieBanner from "./components/cookies/CookieBanner";
 
 function App() {
