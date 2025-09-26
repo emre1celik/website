@@ -1,6 +1,4 @@
-- Navigation link for user name should link to control panel
-- Navigation link for username disappears if window is not wide enough
-- Control panel
+- Control panel expansion
 -- Display account name
 -- Display account email
 -- Display character names
