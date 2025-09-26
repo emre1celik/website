@@ -21,6 +21,7 @@ export const RegisterContent = styled.main`
   padding: 2rem;
   box-sizing: border-box;
   position: relative;
+  min-height: 0; /* crucial for flex children with overflow */
 
   @media (max-width: 432px) {
     padding: 1rem;
