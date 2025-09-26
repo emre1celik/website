@@ -4,10 +4,10 @@ import { faDownload, faUserPlus } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import Navigation from "./components/navigation/Navigation";
 
-function Landing() {
+function Landing({ user }) {
   return (
     <div className="App">
-      <Navigation />
+      <Navigation user={user} />
 
       <header className="hero">
         <h1>Welcome to MyraMU!</h1>

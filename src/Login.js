@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
 
-function Login({ onLogin }) {
+function Login({ user, onLogin }) {
   const [form, setForm] = useState({ username: "", password: "" });
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
@@ -49,7 +49,7 @@ function Login({ onLogin }) {
 
   return (
     <div className="App">
-      <Navigation />
+      <Navigation user={user} />
       <header className="hero">
         <div className="register-box">
           <h2>Control Panel</h2>

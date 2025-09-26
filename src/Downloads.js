@@ -1,10 +1,9 @@
-import React from "react";
 import "./App.css";
 import Navigation from "./components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCloud, faFile } from "@fortawesome/free-solid-svg-icons";
 
-function Downloads() {
+function Downloads({ user }) {
   const mirrors = [
     {
       name: "Google Drive",
@@ -25,7 +24,7 @@ function Downloads() {
 
   return (
     <div className="App">
-      <Navigation />
+      <Navigation user={user} />
       <header className="hero">
         <div
           className="register-box"

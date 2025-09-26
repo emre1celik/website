@@ -4,7 +4,7 @@ import Navigation from "./components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
-function Register() {
+function Register({ user }) {
   const [form, setForm] = useState({
     username: "",
     email: "",
@@ -70,7 +70,7 @@ function Register() {
 
   return (
     <div className="App">
-      <Navigation />
+      <Navigation user={user} />
 
       <header className="hero">
         <div className="register-box">

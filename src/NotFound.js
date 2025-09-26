@@ -1,10 +1,10 @@
 import "./App.css";
 import Navigation from "./components/navigation/Navigation";
 
-function NotFound() {
+function NotFound({ user }) {
   return (
     <div className="App">
-      <Navigation />
+      <Navigation user={user} />
 
       <header className="hero">
         <h1>404 - Page Not Found</h1>

@@ -1,4 +1,3 @@
-// src/components/navigation/NavigationStyles.js
 import styled from "styled-components";
 
 export const NavigationWrapper = styled.nav`
@@ -6,7 +5,7 @@ export const NavigationWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
 `;
 
