@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faDownload,
   faHome,
+  faMedal,
   faRightToBracket,
   faUser,
   faUsers,
@@ -46,6 +47,14 @@ function Navigation({ user }) {
           </NavigationItemLink>
         </li>
 
+        <li>
+          <NavigationItemLink as={Link} to="/highscores">
+            <NavigationIcon className="small">
+              <FontAwesomeIcon icon={faMedal} />
+            </NavigationIcon>
+            <NavigationLabel>Highscores</NavigationLabel>
+          </NavigationItemLink>
+        </li>
         <li>
           <NavigationItemLink
             href="https://discord.gg/NFwQxTJY"

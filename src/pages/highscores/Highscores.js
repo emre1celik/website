@@ -1,0 +1,163 @@
+import { useState, useEffect } from "react";
+import {
+  HighscoresWrapper,
+  HighscoresContent,
+  HighscoresBox,
+  HighscoresFilter,
+  HighscoresTable,
+  RankIcon,
+} from "./HighscoresStyles";
+import Navigation from "../../components/navigation/Navigation";
+import Footer from "../../components/footer/Footer";
+import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCrown,
+  faMedal,
+  faAward,
+  faSpinner,
+} from "@fortawesome/free-solid-svg-icons";
+
+function Highscores({ user }) {
+  const [selectedClass, setSelectedClass] = useState("all");
+  const [players, setPlayers] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    const fetchHighscores = async () => {
+      setLoading(true);
+      setError("");
+
+      try {
+        const url =
+          selectedClass === "all"
+            ? "https://api.myramu.online/api/highscores"
+            : `https://api.myramu.online/api/highscores?class=${selectedClass}`;
+
+        const response = await fetch(url);
+
+        const data = await response.json();
+
+        if (response.ok) {
+          setPlayers(data.players || []);
+        } else {
+          setError(data.error || "Failed to fetch highscores");
+        }
+      } catch (err) {
+        setError("Server error: " + err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchHighscores();
+  }, [selectedClass]);
+
+  return (
+    <>
+      <Helmet>
+        <title>Myra MuOnline - Highscores | Season 19 Episode 2-3</title>
+        <meta
+          name="description"
+          content="View the top players on Myra MuOnline! Check highscores by class and see who dominates the rankings in Season 19 Episode 2-3."
+        />
+        <meta
+          name="keywords"
+          content="mu online highscores, myra mu rankings, top players muonline, season 19 highscores"
+        />
+      </Helmet>
+
+      <HighscoresWrapper>
+        <Navigation user={user} />
+
+        <HighscoresContent>
+          <HighscoresBox>
+            <h2>Highscores</h2>
+
+            <HighscoresFilter>
+              <label>Filter by Class:</label>
+              <select
+                value={selectedClass}
+                onChange={(e) => setSelectedClass(e.target.value)}
+              >
+                <option value="all">All</option>
+                <option value="1">Dark Wizard</option>
+                <option value="2">Dark Knight</option>
+                <option value="3">Elf</option>
+              </select>
+            </HighscoresFilter>
+
+            {loading ? (
+              <p>
+                <FontAwesomeIcon icon={faSpinner} spin /> Loading highscores...
+              </p>
+            ) : error ? (
+              <p style={{ color: "red" }}>{error}</p>
+            ) : (
+              <HighscoresTable>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Resets</th>
+                    <th>Level</th>
+                    <th>Master Lvl</th>
+                    <th>Majestic Lvl</th>
+                    <th>STR</th>
+                    <th>AGI</th>
+                    <th>VIT</th>
+                    <th>ENE</th>
+                    <th>CMD</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {players.map((player, index) => (
+                    <tr key={index}>
+                      <td>
+                        {index + 1}{" "}
+                        {index === 0 && (
+                          <RankIcon>
+                            <FontAwesomeIcon icon={faCrown} />
+                          </RankIcon>
+                        )}
+                        {index === 1 && (
+                          <RankIcon>
+                            <FontAwesomeIcon icon={faMedal} />
+                          </RankIcon>
+                        )}
+                        {index === 2 && (
+                          <RankIcon>
+                            <FontAwesomeIcon icon={faAward} />
+                          </RankIcon>
+                        )}
+                      </td>
+                      <td>{player.name}</td>
+                      <td>{player.race}</td>
+                      <td>{player.reset}</td>
+                      <td>{player.level}</td>
+                      <td>{player.level_master}</td>
+                      <td>{player.level_majestic}</td>
+                      <td>{player.strength}</td>
+                      <td>{player.agility}</td>
+                      <td>{player.vitality}</td>
+                      <td>{player.energy}</td>
+                      <td>{player.leadership}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </HighscoresTable>
+            )}
+          </HighscoresBox>
+        </HighscoresContent>
+
+        <Footer>
+          <p>© 2025 MyraMU. All rights reserved.</p>
+        </Footer>
+      </HighscoresWrapper>
+    </>
+  );
+}
+
+export default Highscores;
