@@ -103,42 +103,21 @@ function Highscores({ user }) {
                     <th>Class</th>
                     <th>Resets</th>
                     <th>Level</th>
-                    <th>Master Lvl</th>
-                    <th>Majestic Lvl</th>
-                    <th>STR</th>
-                    <th>AGI</th>
-                    <th>VIT</th>
-                    <th>ENE</th>
-                    <th>CMD</th>
+                    <th>Strength</th>
+                    <th>Agility</th>
+                    <th>Vitality</th>
+                    <th>Energy</th>
+                    <th>Leadership</th>
                   </tr>
                 </thead>
                 <tbody>
                   {players.map((player, index) => (
                     <tr key={index}>
-                      <td>
-                        {index + 1}{" "}
-                        {index === 0 && (
-                          <RankIcon>
-                            <FontAwesomeIcon icon={faCrown} />
-                          </RankIcon>
-                        )}
-                        {index === 1 && (
-                          <RankIcon>
-                            <FontAwesomeIcon icon={faMedal} />
-                          </RankIcon>
-                        )}
-                        {index === 2 && (
-                          <RankIcon>
-                            <FontAwesomeIcon icon={faAward} />
-                          </RankIcon>
-                        )}
-                      </td>
+                      <td>{index + 1}</td>
                       <td>{player.name}</td>
                       <td>{player.race}</td>
                       <td>{player.reset}</td>
-                      <td>{player.level}</td>
-                      <td>{player.level_master}</td>
-                      <td>{player.level_majestic}</td>
+                      <td>{player.level}</td> {/* now the total level */}
                       <td>{player.strength}</td>
                       <td>{player.agility}</td>
                       <td>{player.vitality}</td>
