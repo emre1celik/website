@@ -79,10 +79,28 @@ export const HighscoresTable = styled.table`
     background: rgba(255, 255, 255, 0.05);
   }
 
-  /* Hide columns on smaller screens */
+  /* Hide stat columns on smaller screens (<1300px) */
   @media (max-width: 1300px) {
     .hideOnSmall {
       display: none;
+    }
+  }
+
+  /* For very small screens (<600px), only show Rank, Name, Resets */
+  @media (max-width: 600px) {
+    th:nth-child(n+3), /* hide Class (3) */
+    td:nth-child(n+3) {
+      /* hide all columns after Name */
+      display: none;
+    }
+
+    th:nth-child(1),
+    th:nth-child(2),
+    th:nth-child(4), /* Resets */
+    td:nth-child(1),
+    td:nth-child(2),
+    td:nth-child(4) {
+      display: table-cell;
     }
   }
 `;
