@@ -78,6 +78,13 @@ export const HighscoresTable = styled.table`
   tbody tr:nth-child(even) {
     background: rgba(255, 255, 255, 0.05);
   }
+
+  /* Hide columns on smaller screens */
+  @media (max-width: 1300px) {
+    .hideOnSmall {
+      display: none;
+    }
+  }
 `;
 
 export const RankIcon = styled.span`

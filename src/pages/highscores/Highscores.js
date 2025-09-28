@@ -82,9 +82,6 @@ function Highscores({ user }) {
                 onChange={(e) => setSelectedClass(e.target.value)}
               >
                 <option value="all">All</option>
-                <option value="1">Dark Wizard</option>
-                <option value="2">Dark Knight</option>
-                <option value="3">Elf</option>
               </select>
             </HighscoresFilter>
 
@@ -103,26 +100,46 @@ function Highscores({ user }) {
                     <th>Class</th>
                     <th>Resets</th>
                     <th>Level</th>
-                    <th>Strength</th>
-                    <th>Agility</th>
-                    <th>Vitality</th>
-                    <th>Energy</th>
-                    <th>Leadership</th>
+                    <th className="hideOnSmall">Strength</th>
+                    <th className="hideOnSmall">Agility</th>
+                    <th className="hideOnSmall">Vitality</th>
+                    <th className="hideOnSmall">Energy</th>
+                    <th className="hideOnSmall">Leadership</th>
                   </tr>
                 </thead>
                 <tbody>
                   {players.map((player, index) => (
                     <tr key={index}>
-                      <td>{index + 1}</td>
+                      <td>
+                        {index + 1}{" "}
+                        {index === 0 && (
+                          <RankIcon style={{ color: "gold" }}>
+                            <FontAwesomeIcon icon={faCrown} />
+                          </RankIcon>
+                        )}
+                        {index === 1 && (
+                          <RankIcon style={{ color: "silver" }}>
+                            <FontAwesomeIcon icon={faCrown} />
+                          </RankIcon>
+                        )}
+                        {index === 2 && (
+                          <RankIcon style={{ color: "#cd7f32" }}>
+                            {" "}
+                            {/* bronze */}
+                            <FontAwesomeIcon icon={faCrown} />
+                          </RankIcon>
+                        )}
+                      </td>
+
                       <td>{player.name}</td>
                       <td>{player.race}</td>
                       <td>{player.reset}</td>
-                      <td>{player.level}</td> {/* now the total level */}
-                      <td>{player.strength}</td>
-                      <td>{player.agility}</td>
-                      <td>{player.vitality}</td>
-                      <td>{player.energy}</td>
-                      <td>{player.leadership}</td>
+                      <td>{player.level}</td>
+                      <td className="hideOnSmall">{player.strength}</td>
+                      <td className="hideOnSmall">{player.agility}</td>
+                      <td className="hideOnSmall">{player.vitality}</td>
+                      <td className="hideOnSmall">{player.energy}</td>
+                      <td className="hideOnSmall">{player.leadership}</td>
                     </tr>
                   ))}
                 </tbody>
