@@ -59,6 +59,34 @@ export const HighscoresFilter = styled.div`
   }
 `;
 
+export const ClassIconWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+
+  &:hover .class-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+`;
+
+export const ClassTooltip = styled.span`
+  visibility: hidden;
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 10;
+  bottom: 110%; /* place tooltip above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+`;
 export const HighscoresTable = styled.table`
   width: 100%;
   border-collapse: collapse;

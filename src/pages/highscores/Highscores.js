@@ -6,6 +6,8 @@ import {
   HighscoresFilter,
   HighscoresTable,
   RankIcon,
+  ClassIconWrapper,
+  ClassTooltip,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -34,6 +36,22 @@ function Highscores({ user }) {
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const classNamesMap = {
+    dw: "Dark Wizard",
+    dk: "Dark Knight",
+    elf: "Elf",
+    mg: "Magic Gladiator",
+    dl: "Dark Lord",
+    sum: "Summoner",
+    rf: "Rage Fighter",
+    gl: "Grow Lancer",
+    rw: "Rune Wizard",
+    sl: "Slayer",
+    gc: "Gun Grusher",
+    lw: "Light Wizard",
+    ma: "Mage: Lemuria",
+    ik: "Illusion Knight",
+  };
 
   const classIconMap = {
     dw: {
@@ -94,13 +112,13 @@ function Highscores({ user }) {
     },
   };
 
-  function getClassIcon(raceId) {
+  function getClassInfo(raceId) {
     for (const key in classIconMap) {
       if (classIconMap[key].ids.includes(raceId)) {
-        return classIconMap[key].icon;
+        return { icon: classIconMap[key].icon, key };
       }
     }
-    return DefaultIcon; // fallback if no match
+    return { icon: DefaultIcon, key: "unknown" };
   }
 
   useEffect(() => {
@@ -210,13 +228,26 @@ function Highscores({ user }) {
                         )}
                       </td>
 
-                      <td>{player.name}</td>
                       <td>
-                        <img
-                          src={getClassIcon(player.race)}
-                          alt={`Class ${player.race}`}
-                          style={{ width: "40px", height: "40px" }}
-                        />
+                        {(() => {
+                          const { icon, key } = getClassInfo(player.race);
+                          return (
+                            <ClassIconWrapper>
+                              <img
+                                src={icon}
+                                alt={`Class ${player.race}`}
+                                style={{
+                                  width: "40px",
+                                  height: "40px",
+                                  cursor: "pointer",
+                                }}
+                              />
+                              <ClassTooltip>
+                                {classNamesMap[key] || "Unknown Class"}
+                              </ClassTooltip>
+                            </ClassIconWrapper>
+                          );
+                        })()}
                       </td>
 
                       <td>{player.reset}</td>
