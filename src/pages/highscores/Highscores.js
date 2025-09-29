@@ -125,10 +125,14 @@ function Highscores({ user }) {
       setError("");
 
       try {
-        const url =
-          selectedClass === "all"
-            ? "https://api.myramu.online/api/highscores"
-            : `https://api.myramu.online/api/highscores?class=${selectedClass}`;
+        let url = "https://api.myramu.online/api/highscores";
+
+        if (selectedClass !== "all") {
+          const classData = classIconMap[selectedClass];
+          if (classData) {
+            url += `?class=${classData.ids.join(",")}`;
+          }
+        }
 
         const response = await fetch(url);
 
@@ -171,12 +175,16 @@ function Highscores({ user }) {
             <h2>Highscores</h2>
 
             <HighscoresFilter>
-              <label>Filter by Class:</label>
               <select
                 value={selectedClass}
                 onChange={(e) => setSelectedClass(e.target.value)}
               >
                 <option value="all">All</option>
+                {Object.keys(classIconMap).map((key) => (
+                  <option key={key} value={key}>
+                    {classNamesMap[key] || key}
+                  </option>
+                ))}
               </select>
             </HighscoresFilter>
 
