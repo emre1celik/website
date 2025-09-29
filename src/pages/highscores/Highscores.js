@@ -19,7 +19,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import BerserkerIcon from "../../assets/images/classes/Berserker_class_icon_White.png";
 import DeadeyeIcon from "../../assets/images/classes/Deadeye_class_icon_White.png";
-// keep going with your other class icons...
+import DefaultIcon from "../../assets/images/classes/Hashashin_class_icon_White.png";
 
 function Highscores({ user }) {
   const [selectedClass, setSelectedClass] = useState("all");
@@ -45,7 +45,7 @@ function Highscores({ user }) {
         return classIconMap[key].icon;
       }
     }
-    return null; // fallback if no match
+    return DefaultIcon; // fallback if no match
   }
 
   useEffect(() => {
