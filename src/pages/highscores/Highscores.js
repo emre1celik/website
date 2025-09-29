@@ -17,12 +17,36 @@ import {
   faAward,
   faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
+import BerserkerIcon from "../../assets/images/classes/Berserker_class_icon_White.png";
+import DeadeyeIcon from "../../assets/images/classes/Deadeye_class_icon_White.png";
+// keep going with your other class icons...
 
 function Highscores({ user }) {
   const [selectedClass, setSelectedClass] = useState("all");
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  const classIconMap = {
+    berserker: {
+      ids: [1, 2, 3, 4, 5],
+      icon: BerserkerIcon,
+    },
+    deadeye: {
+      ids: [6, 7, 8, 9, 10],
+      icon: DeadeyeIcon,
+    },
+    // add the rest of your classes here...
+  };
+
+  function getClassIcon(raceId) {
+    for (const key in classIconMap) {
+      if (classIconMap[key].ids.includes(raceId)) {
+        return classIconMap[key].icon;
+      }
+    }
+    return null; // fallback if no match
+  }
 
   useEffect(() => {
     const fetchHighscores = async () => {
@@ -132,7 +156,14 @@ function Highscores({ user }) {
                       </td>
 
                       <td>{player.name}</td>
-                      <td>{player.race}</td>
+                      <td>
+                        <img
+                          src={getClassIcon(player.race)}
+                          alt={`Class ${player.race}`}
+                          style={{ width: "40px", height: "40px" }}
+                        />
+                      </td>
+
                       <td>{player.reset}</td>
                       <td>{player.level}</td>
                       <td className="hideOnSmall">{player.strength}</td>
