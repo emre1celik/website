@@ -33,7 +33,9 @@ function Downloads({ user }) {
   return (
     <>
       <Helmet>
-        <title>Myra MuOnline - Downloads | Season 19 Episode 2-3 | MU Online Client</title>
+        <title>
+          Myra MuOnline - Downloads | Season 19 Episode 2-3 | MU Online Client
+        </title>
         <meta
           name="description"
           content="Download the Myra MuOnline Season 19 Episode 2-3 client now! Join the fastest and most stable MU Online private server and start playing instantly."
@@ -51,13 +53,20 @@ function Downloads({ user }) {
           <DownloadsBox>
             <h2>Download Mirrors</h2>
             <p>
-              Choose a mirror to download the client. All links point to the same
-              latest version.
+              Choose a mirror to download the client. All links point to the
+              same latest version.
             </p>
 
-            <ul style={{ listStyle: "none", padding: 0, margin: 0, width: "100%" }}>
+            <ul
+              style={{
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+                width: "100%",
+              }}
+            >
               {mirrors.map((mirror, idx) => (
-                <li key={idx} style={{ margin: '1rem 0' }}>
+                <li key={idx} style={{ margin: "1rem 0" }}>
                   <DownloadsMirrorButton
                     href={mirror.url}
                     target="_blank"
@@ -73,8 +82,16 @@ function Downloads({ user }) {
             </ul>
 
             <DownloadsNote>
-              ⚠️ Note: You may need to exclude <strong>main.exe</strong> from your
-              firewall or turn it off temporarily for the client to connect.
+              ⚠️ Note: You may need to exclude <strong>main.exe</strong> from
+              your firewall or turn it off temporarily for the client to
+              connect.
+            </DownloadsNote>
+
+            <DownloadsNote>
+              💡 You can edit the file <strong>LauncherOption.if</strong> inside
+              the client files to change the resolution. Set{" "}
+              <strong>DevModeIndex=</strong> to anywhere between 0-9 for
+              resolution changes.
             </DownloadsNote>
           </DownloadsBox>
         </DownloadsHero>
