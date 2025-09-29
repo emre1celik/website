@@ -151,6 +151,7 @@ function Highscores({ user }) {
     };
 
     fetchHighscores();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedClass]);
 
   return (
@@ -175,17 +176,31 @@ function Highscores({ user }) {
             <h2>Highscores</h2>
 
             <HighscoresFilter>
-              <select
-                value={selectedClass}
-                onChange={(e) => setSelectedClass(e.target.value)}
+              <label>Filter by Class:</label>
+              <div
+                style={{ display: "flex", alignItems: "center", gap: "8px" }}
               >
-                <option value="all">All</option>
-                {Object.keys(classIconMap).map((key) => (
-                  <option key={key} value={key}>
-                    {classNamesMap[key] || key}
-                  </option>
-                ))}
-              </select>
+                <img
+                  src={
+                    selectedClass === "all"
+                      ? DefaultIcon
+                      : classIconMap[selectedClass].icon
+                  }
+                  alt={selectedClass}
+                  style={{ width: "28px", height: "28px" }}
+                />
+                <select
+                  value={selectedClass}
+                  onChange={(e) => setSelectedClass(e.target.value)}
+                >
+                  <option value="all">All</option>
+                  {Object.keys(classIconMap).map((key) => (
+                    <option key={key} value={key}>
+                      {classNamesMap[key] || key}
+                    </option>
+                  ))}
+                </select>
+              </div>
             </HighscoresFilter>
 
             {loading ? (
