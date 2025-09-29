@@ -6,8 +6,6 @@ import {
   HighscoresFilter,
   HighscoresTable,
   RankIcon,
-  ClassIconWrapper,
-  ClassTooltip,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -228,24 +226,21 @@ function Highscores({ user }) {
                         )}
                       </td>
 
+                      <td>{player.name}</td>
                       <td>
                         {(() => {
                           const { icon, key } = getClassInfo(player.race);
                           return (
-                            <ClassIconWrapper>
-                              <img
-                                src={icon}
-                                alt={`Class ${player.race}`}
-                                style={{
-                                  width: "40px",
-                                  height: "40px",
-                                  cursor: "pointer",
-                                }}
-                              />
-                              <ClassTooltip>
-                                {classNamesMap[key] || "Unknown Class"}
-                              </ClassTooltip>
-                            </ClassIconWrapper>
+                            <img
+                              src={icon}
+                              alt={`Class ${player.race}`}
+                              title={classNamesMap[key] || "Unknown Class"}
+                              style={{
+                                width: "40px",
+                                height: "40px",
+                                cursor: "pointer",
+                              }}
+                            />
                           );
                         })()}
                       </td>
