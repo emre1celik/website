@@ -119,6 +119,10 @@ function Highscores({ user }) {
     return { icon: DefaultIcon, key: "unknown" };
   }
 
+  function formatNumber(num) {
+    return num?.toLocaleString("en-US");
+  }
+
   useEffect(() => {
     const fetchHighscores = async () => {
       setLoading(true);
@@ -268,13 +272,23 @@ function Highscores({ user }) {
                         })()}
                       </td>
 
-                      <td>{player.reset}</td>
-                      <td>{player.level}</td>
-                      <td className="hideOnSmall">{player.strength}</td>
-                      <td className="hideOnSmall">{player.agility}</td>
-                      <td className="hideOnSmall">{player.vitality}</td>
-                      <td className="hideOnSmall">{player.energy}</td>
-                      <td className="hideOnSmall">{player.leadership}</td>
+                      <td>{formatNumber(player.reset)}</td>
+                      <td>{formatNumber(player.level)}</td>
+                      <td className="hideOnSmall">
+                        {formatNumber(player.strength)}
+                      </td>
+                      <td className="hideOnSmall">
+                        {formatNumber(player.agility)}
+                      </td>
+                      <td className="hideOnSmall">
+                        {formatNumber(player.vitality)}
+                      </td>
+                      <td className="hideOnSmall">
+                        {formatNumber(player.energy)}
+                      </td>
+                      <td className="hideOnSmall">
+                        {formatNumber(player.leadership)}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
