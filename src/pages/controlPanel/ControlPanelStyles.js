@@ -35,6 +35,25 @@ export const ControlPanelBox = styled.div`
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  width: 700px;
+
+  max-height: 75vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+
+  &:hover {
+    color: #fff;
+  }
 
   h2 {
     margin-bottom: 2rem;
@@ -66,24 +85,6 @@ export const ControlPanelTabButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-
-  max-height: 75vh;
-  overflow-y: auto;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: #444;
-    border-radius: 4px;
-  }
-  &::-webkit-scrollbar-thumb:hover {
-    background: #666;
-  }
-
-  &:hover {
-    color: #fff;
-  }
 
   span {
     display: inline; /* default show text */
