@@ -46,18 +46,83 @@ function ControlPanel({ user }) {
         return (
           <div>
             <h3>Account Information</h3>
-            <p>
-              <strong>Email:</strong> {mockUser.email}
-            </p>
-            <p>
-              <strong>Account Name:</strong> {mockUser.accountName}
-            </p>
-            <p>
-              <strong>Join Date:</strong> {mockUser.joinDate}
-            </p>
-            <p>
-              <strong>Last Login:</strong> {mockUser.lastLogin}
-            </p>
+
+            <div style={{ marginBottom: "1rem" }}>
+              <label>Email</label>
+              <br />
+              <input
+                type="text"
+                value={mockUser.email}
+                disabled
+                style={{
+                  width: "100%",
+                  padding: "0.5rem",
+                  marginTop: "0.3rem",
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  border: "1px solid #555",
+                  borderRadius: "5px",
+                  color: "#ccc",
+                }}
+              />
+            </div>
+
+            <div style={{ marginBottom: "1rem" }}>
+              <label>Account Name</label>
+              <br />
+              <input
+                type="text"
+                value={mockUser.accountName}
+                disabled
+                style={{
+                  width: "100%",
+                  padding: "0.5rem",
+                  marginTop: "0.3rem",
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  border: "1px solid #555",
+                  borderRadius: "5px",
+                  color: "#ccc",
+                }}
+              />
+            </div>
+
+            <div style={{ marginBottom: "1rem" }}>
+              <label>Join Date</label>
+              <br />
+              <input
+                type="text"
+                value={mockUser.joinDate}
+                disabled
+                style={{
+                  width: "100%",
+                  padding: "0.5rem",
+                  marginTop: "0.3rem",
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  border: "1px solid #555",
+                  borderRadius: "5px",
+                  color: "#ccc",
+                }}
+              />
+            </div>
+
+            <div style={{ marginBottom: "1rem" }}>
+              <label>Last Login</label>
+              <br />
+              <input
+                type="text"
+                value={mockUser.lastLogin}
+                disabled
+                style={{
+                  width: "100%",
+                  padding: "0.5rem",
+                  marginTop: "0.3rem",
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  border: "1px solid #555",
+                  borderRadius: "5px",
+                  color: "#ccc",
+                }}
+              />
+            </div>
+
             <p>
               <strong>Email Confirmed:</strong>{" "}
               {mockUser.emailConfirmed ? "✅ Yes" : "❌ No"}
