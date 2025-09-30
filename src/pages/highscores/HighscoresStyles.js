@@ -26,7 +26,6 @@ export const HighscoresBox = styled.div`
   padding: 2rem 3rem;
   border-radius: 10px;
   width: 100%;
-  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
