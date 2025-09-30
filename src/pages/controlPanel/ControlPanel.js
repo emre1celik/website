@@ -10,6 +10,8 @@ import {
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
 import { Helmet } from "react-helmet";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faCog, faChartBar } from "@fortawesome/free-solid-svg-icons";
 
 function ControlPanel({ user }) {
   const [activeTab, setActiveTab] = useState("profile");
@@ -49,18 +51,34 @@ function ControlPanel({ user }) {
             <h2>Hello, {user}!</h2>
 
             <ControlPanelTabs>
-              {["profile", "settings", "stats"].map((tab) => (
-                <ControlPanelTabButton
-                  key={tab}
-                  active={activeTab === tab}
-                  onClick={() => setActiveTab(tab)}
-                >
-                  {tab.charAt(0).toUpperCase() + tab.slice(1)}
-                </ControlPanelTabButton>
-              ))}
+              <ControlPanelTabButton
+                active={activeTab === "profile"}
+                onClick={() => setActiveTab("profile")}
+              >
+                <FontAwesomeIcon icon={faUser} />
+                <span>Profile</span>
+              </ControlPanelTabButton>
+
+              <ControlPanelTabButton
+                active={activeTab === "settings"}
+                onClick={() => setActiveTab("settings")}
+              >
+                <FontAwesomeIcon icon={faCog} />
+                <span>Settings</span>
+              </ControlPanelTabButton>
+
+              <ControlPanelTabButton
+                active={activeTab === "stats"}
+                onClick={() => setActiveTab("stats")}
+              >
+                <FontAwesomeIcon icon={faChartBar} />
+                <span>Stats</span>
+              </ControlPanelTabButton>
             </ControlPanelTabs>
 
-            <ControlPanelTabContent>{renderTabContent()}</ControlPanelTabContent>
+            <ControlPanelTabContent>
+              {renderTabContent()}
+            </ControlPanelTabContent>
           </ControlPanelBox>
         </ControlPanelContent>
 

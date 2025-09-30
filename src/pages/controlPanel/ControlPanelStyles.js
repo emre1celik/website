@@ -10,7 +10,7 @@ export const ControlPanelWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  font-family: 'AlbertusMedium', Arial, sans-serif;
+  font-family: "AlbertusMedium", Arial, sans-serif;
 `;
 
 export const ControlPanelContent = styled.main`
@@ -27,11 +27,10 @@ export const ControlPanelContent = styled.main`
 `;
 
 export const ControlPanelBox = styled.div`
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 2rem 3rem;
   border-radius: 10px;
   width: 100%;
-  max-width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,17 +53,33 @@ export const ControlPanelTabs = styled.div`
 
 export const ControlPanelTabButton = styled.button`
   flex: 1;
-  padding: 0.75rem 3rem;
+  padding: 0.75rem 1.5rem;
   background: transparent;
   border: none;
-  border-bottom: ${({ active }) => (active ? "4px solid #4caf50" : "4px solid transparent")};
+  border-bottom: ${({ active }) =>
+    active ? "4px solid #4caf50" : "4px solid transparent"};
   color: ${({ active }) => (active ? "#fff" : "#bbb")};
   font-weight: ${({ active }) => (active ? "bold" : "normal")};
   cursor: pointer;
   transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 
   &:hover {
     color: #fff;
+  }
+
+  span {
+    display: inline; /* default show text */
+  }
+
+  @media (max-width: 550px) {
+    padding: 0.75rem;
+    span {
+      display: none; /* hide text */
+    }
   }
 `;
 
@@ -76,7 +91,7 @@ export const ControlPanelTabContent = styled.div`
 export const ControlPanelFooter = styled.footer`
   text-align: center;
   padding: 1rem;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   position: relative;
   z-index: 2;
