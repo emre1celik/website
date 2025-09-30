@@ -17,7 +17,7 @@ export const NavigationLogo = styled.a`
 `;
 
 export const NavigationLoginLink = styled.li`
-  @media (max-width: 475px) {
+  @media (max-width: 570px) {
     display: flex;
   }
 `;
@@ -36,7 +36,7 @@ export const NavigationLinks = styled.ul`
   padding: 0;
   align-items: center;
 
-  @media (max-width: 475px) {
+  @media (max-width: 570px) {
     li {
       display: none;
     }

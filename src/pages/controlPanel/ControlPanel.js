@@ -223,7 +223,7 @@ function ControlPanel({ user }) {
                   <strong>Resets:</strong> {char.reset}
                 </p>
                 <p>
-                  <strong>Stats:</strong>
+                  <strong>Characters:</strong>
                 </p>
                 <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
                   <li>Strength: {char.stats.str}</li>
