@@ -122,11 +122,6 @@ function ControlPanel({ user }) {
                 }}
               />
             </div>
-
-            <p>
-              <strong>Email Confirmed:</strong>{" "}
-              {mockUser.emailConfirmed ? "✅ Yes" : "❌ No"}
-            </p>
           </div>
         );
 
@@ -157,6 +152,10 @@ function ControlPanel({ user }) {
                     width: "100%",
                     padding: "0.5rem",
                     marginTop: "0.3rem",
+                    backgroundColor: "rgba(255,255,255,0.1)",
+                    border: "1px solid #555",
+                    borderRadius: "5px",
+                    color: "#ccc",
                   }}
                 />
               </div>
@@ -174,6 +173,10 @@ function ControlPanel({ user }) {
                     width: "100%",
                     padding: "0.5rem",
                     marginTop: "0.3rem",
+                    backgroundColor: "rgba(255,255,255,0.1)",
+                    border: "1px solid #555",
+                    borderRadius: "5px",
+                    color: "#ccc",
                   }}
                 />
               </div>
