@@ -13,17 +13,162 @@ import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCog, faChartBar } from "@fortawesome/free-solid-svg-icons";
 
+const mockUser = {
+  email: "test@test.com",
+  accountName: "test",
+  joinDate: "2025-01-15",
+  lastLogin: "2025-09-28 14:32",
+  emailConfirmed: true,
+  characters: [
+    {
+      name: "Test",
+      level: 401,
+      reset: 3,
+      stats: { str: 1200, agi: 800, vit: 700, ene: 600, cmd: 0 },
+    },
+    {
+      name: "Test1",
+      level: 350,
+      reset: 1,
+      stats: { str: 200, agi: 1500, vit: 500, ene: 800, cmd: 0 },
+    },
+  ],
+};
+
 function ControlPanel({ user }) {
   const [activeTab, setActiveTab] = useState("profile");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
 
   const renderTabContent = () => {
     switch (activeTab) {
       case "profile":
-        return <div>Your profile information will appear here.</div>;
+        return (
+          <div>
+            <h3>Account Information</h3>
+            <p>
+              <strong>Email:</strong> {mockUser.email}
+            </p>
+            <p>
+              <strong>Account Name:</strong> {mockUser.accountName}
+            </p>
+            <p>
+              <strong>Join Date:</strong> {mockUser.joinDate}
+            </p>
+            <p>
+              <strong>Last Login:</strong> {mockUser.lastLogin}
+            </p>
+            <p>
+              <strong>Email Confirmed:</strong>{" "}
+              {mockUser.emailConfirmed ? "✅ Yes" : "❌ No"}
+            </p>
+          </div>
+        );
+
       case "settings":
-        return <div>Settings and preferences can be changed here.</div>;
+        return (
+          <div>
+            <h3>Change Password</h3>
+            <form
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (password !== confirmPassword) {
+                  alert("Passwords do not match!");
+                  return;
+                }
+                alert("Password changed successfully!");
+              }}
+            >
+              <div style={{ marginBottom: "1rem" }}>
+                <label htmlFor="password">New Password</label>
+                <br />
+                <input
+                  id="password"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                  style={{
+                    width: "100%",
+                    padding: "0.5rem",
+                    marginTop: "0.3rem",
+                  }}
+                />
+              </div>
+
+              <div style={{ marginBottom: "1rem" }}>
+                <label htmlFor="confirmPassword">Confirm Password</label>
+                <br />
+                <input
+                  id="confirmPassword"
+                  type="password"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                  required
+                  style={{
+                    width: "100%",
+                    padding: "0.5rem",
+                    marginTop: "0.3rem",
+                  }}
+                />
+              </div>
+
+              <button
+                type="submit"
+                style={{
+                  padding: "0.7rem 1.5rem",
+                  backgroundColor: "#4caf50",
+                  border: "none",
+                  borderRadius: "5px",
+                  color: "#fff",
+                  cursor: "pointer",
+                }}
+              >
+                Update Password
+              </button>
+            </form>
+          </div>
+        );
+
       case "stats":
-        return <div>Game stats and account info will appear here.</div>;
+        return (
+          <div>
+            <h3>Character Statistics</h3>
+            {mockUser.characters.map((char, idx) => (
+              <div
+                key={idx}
+                style={{
+                  marginBottom: "1.5rem",
+                  padding: "1rem",
+                  border: "1px solid #555",
+                  borderRadius: "8px",
+                  background: "rgba(255,255,255,0.05)",
+                }}
+              >
+                <p>
+                  <strong>Name:</strong> {char.name}
+                </p>
+                <p>
+                  <strong>Level:</strong> {char.level}
+                </p>
+                <p>
+                  <strong>Resets:</strong> {char.reset}
+                </p>
+                <p>
+                  <strong>Stats:</strong>
+                </p>
+                <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
+                  <li>Strength: {char.stats.str}</li>
+                  <li>Agility: {char.stats.agi}</li>
+                  <li>Vitality: {char.stats.vit}</li>
+                  <li>Energy: {char.stats.ene}</li>
+                  <li>Command: {char.stats.cmd}</li>
+                </ul>
+              </div>
+            ))}
+          </div>
+        );
+
       default:
         return null;
     }
