@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import backgroundImg from '../../assets/images/2151470664.jpg'; // <- import the image
+import backgroundImg from "../../assets/images/2151470664.jpg"; // <- import the image
 
 export const DownloadsWrapper = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ export const DownloadsHero = styled.header`
 `;
 
 export const DownloadsBox = styled.div`
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 2rem 3rem;
   border-radius: 10px;
   max-width: 600px;
@@ -33,7 +33,7 @@ export const DownloadsBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: 80vh;
+  max-height: 75vh;
   overflow-y: auto;
   box-sizing: border-box;
 

@@ -31,10 +31,25 @@ export const HighscoresBox = styled.div`
   flex-direction: column;
   align-items: center;
 
+  max-height: 75vh;
+  overflow-y: auto;
+
   h2 {
     margin-bottom: 1.5rem;
     font-size: 2rem;
     color: white;
+    flex-shrink: 0;
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #666;
   }
 `;
 
