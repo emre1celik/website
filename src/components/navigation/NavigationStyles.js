@@ -35,13 +35,13 @@ export const NavigationLinks = styled.ul`
   margin: 0;
   padding: 0;
   align-items: center;
-  
+
   @media (max-width: 475px) {
     li {
       display: none;
     }
 
-    ${NavigationLoginLink}, 
+    ${NavigationLoginLink},
     ${NavigationUserInfo} {
       display: flex;
     }
@@ -82,7 +82,7 @@ export const NavigationUserName = styled.span`
 `;
 
 export const NavigationLabel = styled.span`
-  @media (max-width: 800px) {
+  @media (max-width: 870px) {
     display: none;
   }
 `;

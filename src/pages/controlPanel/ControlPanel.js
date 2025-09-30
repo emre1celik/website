@@ -72,7 +72,7 @@ function ControlPanel({ user }) {
                 onClick={() => setActiveTab("stats")}
               >
                 <FontAwesomeIcon icon={faChartBar} />
-                <span>Stats</span>
+                <span>Statistics</span>
               </ControlPanelTabButton>
             </ControlPanelTabs>
 

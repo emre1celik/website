@@ -67,6 +67,20 @@ export const ControlPanelTabButton = styled.button`
   justify-content: center;
   gap: 0.5rem;
 
+  max-height: 75vh;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+
   &:hover {
     color: #fff;
   }
