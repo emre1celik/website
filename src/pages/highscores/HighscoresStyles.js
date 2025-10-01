@@ -62,6 +62,7 @@ export const HighscoresBox = styled.div`
   /* FADE OVERLAY */
   &::after {
     content: "";
+    display: block;
     position: sticky;
     bottom: 0;
     left: 0;
