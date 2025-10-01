@@ -178,10 +178,10 @@ function Highscores({ user }) {
 
         <HighscoresContent>
           <HighscoresBox>
-            <h2>Highscores</h2>
+            <h2>Highscores - Top Players</h2>
 
             <HighscoresFilter>
-              <label>Filter by Class:</label>
+              <label>Class:</label>
               <div
                 style={{ display: "flex", alignItems: "center", gap: "8px" }}
               >

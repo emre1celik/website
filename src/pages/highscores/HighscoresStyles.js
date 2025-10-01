@@ -27,6 +27,7 @@ export const HighscoresBox = styled.div`
   width: 100%;
   flex-direction: column;
   align-items: center;
+  display: flex;
 
   max-height: 75vh;
   overflow-y: auto;
