@@ -54,10 +54,13 @@ function ControlPanel({ user }) {
   useEffect(() => {
     const fetchProfile = async () => {
       setLoading(true);
+      const token = localStorage.getItem("apiToken");
       try {
-        const response = await fetch(
-          `https://api.myramu.online/api/profile?account=${user}`
-        );
+        const response = await fetch("https://api.myramu.online/api/profile", {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        });
         const data = await response.json();
 
         if (response.ok) {

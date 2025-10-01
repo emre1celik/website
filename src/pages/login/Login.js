@@ -3,11 +3,7 @@ import Navigation from "../../components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
-import {
-  LoginWrapper,
-  LoginContent,
-  LoginBox,
-} from "./LoginStyles";
+import { LoginWrapper, LoginContent, LoginBox } from "./LoginStyles";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 
@@ -38,6 +34,8 @@ function Login({ user, onLogin }) {
       const data = await response.json();
 
       if (response.ok) {
+        const { username, token } = data;
+        localStorage.setItem("apiToken", token);
         onLogin(data.username);
         setMessage("✅ Logged in successfully!");
         navigate("/control-panel");
@@ -54,7 +52,10 @@ function Login({ user, onLogin }) {
   return (
     <>
       <Helmet>
-        <title>Myra MuOnline - Login | Season 19 Episode 2-3 | MU Online Private Server</title>
+        <title>
+          Myra MuOnline - Login | Season 19 Episode 2-3 | MU Online Private
+          Server
+        </title>
         <meta
           name="description"
           content="Login to your Myra MuOnline account and continue your journey in Season 19 Episode 2-3. Access your stats, items, and enjoy the ultimate MU Online experience."
@@ -96,7 +97,13 @@ function Login({ user, onLogin }) {
             {message && <p>{message}</p>}
 
             <p>
-              Don’t have an account? <Link to="/register" style={{ textDecoration: "none", color: "#4caf50" }}>Register here</Link>
+              Don’t have an account?{" "}
+              <Link
+                to="/register"
+                style={{ textDecoration: "none", color: "#4caf50" }}
+              >
+                Register here
+              </Link>
             </p>
           </LoginBox>
         </LoginContent>
