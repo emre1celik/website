@@ -22,34 +22,45 @@ import {
   faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 
-const mockUser = {
-  email: "test@test.com",
-  accountName: "test",
-  joinDate: "2025-01-15",
-  lastLogin: "2025-09-28 14:32",
-  emailConfirmed: true,
-  characters: [
-    {
-      name: "Test",
-      level: 401,
-      reset: 3,
-      class: "Dark Knight",
-    },
-    {
-      name: "Test1",
-      level: 350,
-      reset: 1,
-      class: "Dark Knight",
-    },
-  ],
-};
-
 function ControlPanel({ user }) {
   const [activeTab, setActiveTab] = useState("profile");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [profile, setProfile] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [characters, setCharacters] = useState([]);
+  const [charsLoading, setCharsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchCharacters = async () => {
+      setCharsLoading(true);
+      const token = localStorage.getItem("apiToken");
+
+      try {
+        const response = await fetch(
+          "https://api.myramu.online/api/characters",
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
+
+        const data = await response.json();
+        if (response.ok) {
+          setCharacters(data.characters);
+        } else {
+          console.error("Failed to load characters:", data.error);
+          setCharacters([]);
+        }
+      } catch (err) {
+        console.error("Server error:", err);
+        setCharacters([]);
+      } finally {
+        setCharsLoading(false);
+      }
+    };
+
+    fetchCharacters();
+  }, [user]);
 
   useEffect(() => {
     const fetchProfile = async () => {
@@ -284,10 +295,13 @@ function ControlPanel({ user }) {
         );
 
       case "stats":
+        if (charsLoading) return <p>Loading characters...</p>;
+        if (!characters.length) return <p>No characters found.</p>;
+
         return (
           <div>
             <h3>Character Statistics</h3>
-            {mockUser.characters.map((char, idx) => (
+            {characters.map((char, idx) => (
               <div
                 key={idx}
                 style={{
@@ -308,7 +322,7 @@ function ControlPanel({ user }) {
                   <strong>Resets:</strong> {char.reset}
                 </p>
                 <p>
-                  <strong>Class:</strong> {char.class}
+                  <strong>Race:</strong> {char.race}
                 </p>
 
                 {/* Action buttons */}

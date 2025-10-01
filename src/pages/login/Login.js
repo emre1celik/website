@@ -34,7 +34,7 @@ function Login({ user, onLogin }) {
       const data = await response.json();
 
       if (response.ok) {
-        const { username, token } = data;
+        const { token } = data;
         localStorage.setItem("apiToken", token);
         onLogin(data.username);
         setMessage("✅ Logged in successfully!");
