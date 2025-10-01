@@ -17,6 +17,9 @@ import {
   faCog,
   faChartBar,
   faCartShopping,
+  faLocationCrosshairs,
+  faUpLong,
+  faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 
 const mockUser = {
@@ -275,9 +278,27 @@ function ControlPanel({ user }) {
                 <div
                   style={{ marginTop: "1rem", display: "flex", gap: "0.5rem" }}
                 >
-                  <GreenButton>Unstuck</GreenButton>
-                  <GreenButton>Evolve</GreenButton>
-                  <GreenButton>Reset</GreenButton>
+                  <GreenButton>
+                    <FontAwesomeIcon
+                      icon={faLocationCrosshairs}
+                      style={{ marginRight: "5px" }}
+                    />
+                    Unstuck
+                  </GreenButton>
+                  <GreenButton>
+                    <FontAwesomeIcon
+                      icon={faUpLong}
+                      style={{ marginRight: "5px" }}
+                    />
+                    Evolve
+                  </GreenButton>
+                  <GreenButton>
+                    <FontAwesomeIcon
+                      icon={faArrowsRotate}
+                      style={{ marginRight: "5px" }}
+                    />
+                    Grand Reset
+                  </GreenButton>
                 </div>
               </div>
             ))}
