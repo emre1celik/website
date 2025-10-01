@@ -13,6 +13,20 @@ export const ControlPanelWrapper = styled.div`
   font-family: "AlbertusMedium", Arial, sans-serif;
 `;
 
+export const GreenButton = styled.button`
+  padding: 0.7rem 1.5rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background-color: #45a049;
+  }
+`;
+
 export const ControlPanelContent = styled.main`
   flex: 1;
   display: flex;

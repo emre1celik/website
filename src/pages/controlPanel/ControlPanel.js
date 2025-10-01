@@ -6,13 +6,13 @@ import {
   ControlPanelTabs,
   ControlPanelTabButton,
   ControlPanelTabContent,
+  GreenButton,
 } from "./ControlPanelStyles";
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCog, faChartBar } from "@fortawesome/free-solid-svg-icons";
-import { BottomFade } from "../highscores/HighscoresStyles";
 
 const mockUser = {
   email: "test@test.com",
@@ -89,39 +89,47 @@ function ControlPanel({ user }) {
             <div style={{ marginBottom: "1rem" }}>
               <label>WCoin</label>
               <br />
-              <input
-                type="number"
-                value="0"
-                disabled
-                style={{
-                  width: "100%",
-                  padding: "0.5rem",
-                  marginTop: "0.3rem",
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                  border: "1px solid #555",
-                  borderRadius: "5px",
-                  color: "#ccc",
-                }}
-              />
+              <div
+                style={{ display: "flex", gap: "0.5rem", marginTop: "0.3rem" }}
+              >
+                <input
+                  type="number"
+                  value="0"
+                  disabled
+                  style={{
+                    flex: 2, // input takes 2/3
+                    padding: "0.5rem",
+                    backgroundColor: "rgba(255,255,255,0.1)",
+                    border: "1px solid #555",
+                    borderRadius: "5px",
+                    color: "#ccc",
+                  }}
+                />
+                <GreenButton style={{ flex: 1 }}>Buy</GreenButton>
+              </div>
             </div>
 
             <div style={{ marginBottom: "1rem" }}>
               <label>Goblin Points</label>
               <br />
-              <input
-                type="number"
-                value="0"
-                disabled
-                style={{
-                  width: "100%",
-                  padding: "0.5rem",
-                  marginTop: "0.3rem",
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                  border: "1px solid #555",
-                  borderRadius: "5px",
-                  color: "#ccc",
-                }}
-              />
+              <div
+                style={{ display: "flex", gap: "0.5rem", marginTop: "0.3rem" }}
+              >
+                <input
+                  type="number"
+                  value="0"
+                  disabled
+                  style={{
+                    flex: 2,
+                    padding: "0.5rem",
+                    backgroundColor: "rgba(255,255,255,0.1)",
+                    border: "1px solid #555",
+                    borderRadius: "5px",
+                    color: "#ccc",
+                  }}
+                />
+                <GreenButton style={{ flex: 1 }}>Buy</GreenButton>
+              </div>
             </div>
 
             <div style={{ marginBottom: "1rem" }}>
@@ -245,6 +253,15 @@ function ControlPanel({ user }) {
                 <p>
                   <strong>Class:</strong> {char.class}
                 </p>
+
+                {/* Action buttons */}
+                <div
+                  style={{ marginTop: "1rem", display: "flex", gap: "0.5rem" }}
+                >
+                  <GreenButton>Unstuck</GreenButton>
+                  <GreenButton>Evolve</GreenButton>
+                  <GreenButton>Reset</GreenButton>
+                </div>
               </div>
             ))}
           </div>
