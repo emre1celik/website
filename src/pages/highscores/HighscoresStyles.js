@@ -58,6 +58,22 @@ export const HighscoresBox = styled.div`
   &::-webkit-scrollbar-thumb:hover {
     background: #666;
   }
+
+  /* FADE OVERLAY */
+  &::after {
+    content: "";
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* height of the fade */
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    pointer-events: none; /* let clicks/scroll go through */
+  }
 `;
 
 export const HighscoresFilter = styled.div`
