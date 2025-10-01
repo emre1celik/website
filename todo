@@ -1,6 +1,6 @@
-- Control panel expansion
--- Display account name
--- Display account email
--- Display character names
---- Display character class
---- Display character stats (strenght, agility, energy, vitality, leadership if DL)
+- Control panel: Unstuck
+- Control panel: Evolve
+- Control panel: Grand Reset
+- Control panel: Change password
+- Control panel: Buy WCoin
+- Control panel: Buy Goblin Points

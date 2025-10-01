@@ -57,7 +57,7 @@ function Navigation({ user }) {
         </li>
         <li>
           <NavigationItemLink
-            href="https://discord.gg/NFwQxTJY"
+            href="https://discord.gg/EceQbCVgSy"
             target="_blank"
             rel="noopener noreferrer"
           >
