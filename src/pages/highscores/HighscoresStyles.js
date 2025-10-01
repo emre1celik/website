@@ -32,7 +32,6 @@ export const HighscoresBox = styled.div`
 
   max-height: 75vh;
   overflow-y: auto;
-  position: relative;
 
   background: linear-gradient(
       to bottom,
@@ -59,8 +58,9 @@ export const HighscoresBox = styled.div`
     background: #666;
   }
 `;
+
 export const BottomFade = styled.div`
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
   width: 100%;
