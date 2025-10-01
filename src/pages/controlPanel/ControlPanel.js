@@ -134,11 +134,11 @@ function ControlPanel({ user }) {
                 style={{ display: "flex", gap: "0.5rem", marginTop: "0.3rem" }}
               >
                 <input
-                  type="number"
+                  type="text"
                   value={profile.wcoin.toLocaleString()}
                   disabled
                   style={{
-                    flex: 2, // input takes 2/3
+                    flex: 2,
                     padding: "0.5rem",
                     backgroundColor: "rgba(255,255,255,0.1)",
                     border: "1px solid #555",
