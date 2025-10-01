@@ -240,6 +240,10 @@ function ControlPanel({ user }) {
                   cursor: "pointer",
                 }}
               >
+                <FontAwesomeIcon
+                  icon={faArrowsRotate}
+                  style={{ marginRight: "5px" }}
+                />
                 Update Password
               </button>
             </form>
