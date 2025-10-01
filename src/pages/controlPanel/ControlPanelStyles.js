@@ -31,7 +31,6 @@ export const ControlPanelBox = styled.div`
   padding: 2rem 3rem;
   border-radius: 10px;
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
@@ -44,7 +43,7 @@ export const ControlPanelBox = styled.div`
     width: 8px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #444;
+    background: #666;
     border-radius: 4px;
   }
   &::-webkit-scrollbar-thumb:hover {

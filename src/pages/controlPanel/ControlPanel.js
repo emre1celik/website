@@ -12,6 +12,7 @@ import Navigation from "../../components/navigation/Navigation";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faCog, faChartBar } from "@fortawesome/free-solid-svg-icons";
+import { BottomFade } from "../highscores/HighscoresStyles";
 
 const mockUser = {
   email: "test@test.com",
@@ -292,6 +293,7 @@ function ControlPanel({ user }) {
             <ControlPanelTabContent>
               {renderTabContent()}
             </ControlPanelTabContent>
+            <BottomFade />
           </ControlPanelBox>
         </ControlPanelContent>
 
