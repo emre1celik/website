@@ -298,7 +298,6 @@ function Highscores({ user }) {
               </>
             )}
           </HighscoresBox>
-          <BottomFade />
         </HighscoresContent>
 
         <Footer>

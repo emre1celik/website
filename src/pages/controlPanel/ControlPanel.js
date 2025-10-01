@@ -293,7 +293,6 @@ function ControlPanel({ user }) {
             <ControlPanelTabContent>
               {renderTabContent()}
             </ControlPanelTabContent>
-            <BottomFade />
           </ControlPanelBox>
         </ControlPanelContent>
 
