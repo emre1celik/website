@@ -48,10 +48,27 @@ function ControlPanel({ user }) {
   const [activeTab, setActiveTab] = useState("profile");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [profile, setProfile] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    axios
+      .get(`https://api.myramu.online/api/profile?account=${user}`)
+      .then((res) => {
+        setProfile(res.data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        //console.error(err);
+        setLoading(false);
+      });
+  }, [user]);
 
   const renderTabContent = () => {
     switch (activeTab) {
       case "profile":
+        if (loading) return <p>Loading...</p>;
+        if (!profile) return <p>Could not load profile.</p>;
         return (
           <div>
             <h3>Account Information</h3>
@@ -61,7 +78,7 @@ function ControlPanel({ user }) {
               <br />
               <input
                 type="text"
-                value={mockUser.email}
+                value={profile.email}
                 disabled
                 style={{
                   width: "100%",
@@ -80,7 +97,7 @@ function ControlPanel({ user }) {
               <br />
               <input
                 type="text"
-                value={mockUser.accountName}
+                value={profile.accountName}
                 disabled
                 style={{
                   width: "100%",
@@ -102,7 +119,7 @@ function ControlPanel({ user }) {
               >
                 <input
                   type="number"
-                  value="0"
+                  value={profile.wcoin}
                   disabled
                   style={{
                     flex: 2, // input takes 2/3
@@ -131,7 +148,7 @@ function ControlPanel({ user }) {
               >
                 <input
                   type="number"
-                  value="0"
+                  value={profile.goblin_points}
                   disabled
                   style={{
                     flex: 2,
@@ -157,7 +174,7 @@ function ControlPanel({ user }) {
               <br />
               <input
                 type="text"
-                value={mockUser.lastLogin}
+                value={profile.last_login}
                 disabled
                 style={{
                   width: "100%",
