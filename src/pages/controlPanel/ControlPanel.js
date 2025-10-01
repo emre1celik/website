@@ -132,7 +132,7 @@ function ControlPanel({ user }) {
               >
                 <input
                   type="number"
-                  value={profile.wcoin}
+                  value={profile.wcoin.toLocaleString()}
                   disabled
                   style={{
                     flex: 2, // input takes 2/3
@@ -161,7 +161,7 @@ function ControlPanel({ user }) {
               >
                 <input
                   type="number"
-                  value={profile.goblin_points}
+                  value={profile.goblin_points.toLocaleString()}
                   disabled
                   style={{
                     flex: 2,
