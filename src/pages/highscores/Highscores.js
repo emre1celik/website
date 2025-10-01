@@ -295,10 +295,10 @@ function Highscores({ user }) {
                     ))}
                   </tbody>
                 </HighscoresTable>
-                <BottomFade />
               </>
             )}
           </HighscoresBox>
+          <BottomFade />
         </HighscoresContent>
 
         <Footer>
