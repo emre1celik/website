@@ -25,13 +25,13 @@ const mockUser = {
       name: "Test",
       level: 401,
       reset: 3,
-      stats: { str: 1200, agi: 800, vit: 700, ene: 600, cmd: 0 },
+      class: "Dark Knight",
     },
     {
       name: "Test1",
       level: 350,
       reset: 1,
-      stats: { str: 200, agi: 1500, vit: 500, ene: 800, cmd: 0 },
+      class: "Dark Knight",
     },
   ],
 };
@@ -243,15 +243,8 @@ function ControlPanel({ user }) {
                   <strong>Resets:</strong> {char.reset}
                 </p>
                 <p>
-                  <strong>Characters:</strong>
+                  <strong>Class:</strong> {char.class}
                 </p>
-                <ul style={{ margin: 0, paddingLeft: "1.2rem" }}>
-                  <li>Strength: {char.stats.str}</li>
-                  <li>Agility: {char.stats.agi}</li>
-                  <li>Vitality: {char.stats.vit}</li>
-                  <li>Energy: {char.stats.ene}</li>
-                  <li>Command: {char.stats.cmd}</li>
-                </ul>
               </div>
             ))}
           </div>
