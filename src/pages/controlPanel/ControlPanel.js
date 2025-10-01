@@ -87,11 +87,30 @@ function ControlPanel({ user }) {
             </div>
 
             <div style={{ marginBottom: "1rem" }}>
-              <label>Join Date</label>
+              <label>WCoin</label>
               <br />
               <input
-                type="text"
-                value={mockUser.joinDate}
+                type="number"
+                value="0"
+                disabled
+                style={{
+                  width: "100%",
+                  padding: "0.5rem",
+                  marginTop: "0.3rem",
+                  backgroundColor: "rgba(255,255,255,0.1)",
+                  border: "1px solid #555",
+                  borderRadius: "5px",
+                  color: "#ccc",
+                }}
+              />
+            </div>
+
+            <div style={{ marginBottom: "1rem" }}>
+              <label>Goblin Points</label>
+              <br />
+              <input
+                type="number"
+                value="0"
                 disabled
                 style={{
                   width: "100%",
