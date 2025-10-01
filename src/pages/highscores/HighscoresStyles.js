@@ -32,6 +32,7 @@ export const HighscoresBox = styled.div`
 
   max-height: 75vh;
   overflow-y: auto;
+  position: relative;
 
   h2 {
     margin-bottom: 1.5rem;
@@ -49,6 +50,21 @@ export const HighscoresBox = styled.div`
   }
   &::-webkit-scrollbar-thumb:hover {
     background: #666;
+  }
+
+  &::after {
+    content: "";
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    pointer-events: none;
   }
 `;
 
