@@ -22,11 +22,9 @@ export const HighscoresContent = styled.main`
 `;
 
 export const HighscoresBox = styled.div`
-  background: rgba(0, 0, 0, 0.7);
   padding: 2rem 3rem;
   border-radius: 10px;
   width: 100%;
-  display: flex;
   flex-direction: column;
   align-items: center;
 
@@ -61,11 +59,11 @@ export const HighscoresBox = styled.div`
 
 export const BottomFade = styled.div`
   position: sticky;
-  bottom: 0;
+  bottom: -40px;
   left: 0;
   width: 100%;
   height: 50px;
-  pointer-events: none; /* don't block scroll/clicks */
+  pointer-events: none;
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
@@ -73,8 +71,9 @@ export const BottomFade = styled.div`
   );
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  z-index: 5; /* sits above table rows */
+  z-index: 5;
 `;
+
 export const HighscoresFilter = styled.div`
   margin-bottom: 1.5rem;
   display: flex;
