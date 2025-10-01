@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ControlPanelWrapper,
   ControlPanelContent,
@@ -52,16 +52,29 @@ function ControlPanel({ user }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get(`https://api.myramu.online/api/profile?account=${user}`)
-      .then((res) => {
-        setProfile(res.data);
+    const fetchProfile = async () => {
+      setLoading(true);
+      try {
+        const response = await fetch(
+          `https://api.myramu.online/api/profile?account=${user}`
+        );
+        const data = await response.json();
+
+        if (response.ok) {
+          setProfile(data);
+        } else {
+          console.error("Failed to load profile:", data.error);
+          setProfile(null);
+        }
+      } catch (err) {
+        console.error("Server error:", err);
+        setProfile(null);
+      } finally {
         setLoading(false);
-      })
-      .catch((err) => {
-        //console.error(err);
-        setLoading(false);
-      });
+      }
+    };
+
+    fetchProfile();
   }, [user]);
 
   const renderTabContent = () => {
