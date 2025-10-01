@@ -12,7 +12,12 @@ import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faCog, faChartBar } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faCog,
+  faChartBar,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 
 const mockUser = {
   email: "test@test.com",
@@ -105,7 +110,13 @@ function ControlPanel({ user }) {
                     color: "#ccc",
                   }}
                 />
-                <GreenButton style={{ flex: 1 }}>Buy</GreenButton>
+                <GreenButton style={{ flex: 1 }}>
+                  <FontAwesomeIcon
+                    icon={faCartShopping}
+                    style={{ marginRight: "5px" }}
+                  />
+                  Buy
+                </GreenButton>
               </div>
             </div>
 
@@ -128,7 +139,13 @@ function ControlPanel({ user }) {
                     color: "#ccc",
                   }}
                 />
-                <GreenButton style={{ flex: 1 }}>Buy</GreenButton>
+                <GreenButton style={{ flex: 1 }}>
+                  <FontAwesomeIcon
+                    icon={faCartShopping}
+                    style={{ marginRight: "5px" }}
+                  />
+                  Buy
+                </GreenButton>
               </div>
             </div>
 
@@ -315,7 +332,7 @@ function ControlPanel({ user }) {
                 onClick={() => setActiveTab("stats")}
               >
                 <FontAwesomeIcon icon={faChartBar} />
-                <span>Statistics</span>
+                <span>Characters</span>
               </ControlPanelTabButton>
             </ControlPanelTabs>
 
