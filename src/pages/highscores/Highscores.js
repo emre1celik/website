@@ -6,6 +6,7 @@ import {
   HighscoresFilter,
   HighscoresTable,
   RankIcon,
+  BottomFade,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -214,85 +215,88 @@ function Highscores({ user }) {
             ) : error ? (
               <p style={{ color: "red" }}>{error}</p>
             ) : (
-              <HighscoresTable>
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Name</th>
-                    <th>Class</th>
-                    <th>Resets</th>
-                    <th>Level</th>
-                    <th className="hideOnSmall">Strength</th>
-                    <th className="hideOnSmall">Agility</th>
-                    <th className="hideOnSmall">Vitality</th>
-                    <th className="hideOnSmall">Energy</th>
-                    <th className="hideOnSmall">Leadership</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {players.map((player, index) => (
-                    <tr key={index}>
-                      <td>
-                        {index + 1}{" "}
-                        {index === 0 && (
-                          <RankIcon style={{ color: "gold" }}>
-                            <FontAwesomeIcon icon={faCrown} />
-                          </RankIcon>
-                        )}
-                        {index === 1 && (
-                          <RankIcon style={{ color: "silver" }}>
-                            <FontAwesomeIcon icon={faCrown} />
-                          </RankIcon>
-                        )}
-                        {index === 2 && (
-                          <RankIcon style={{ color: "#cd7f32" }}>
-                            {" "}
-                            {/* bronze */}
-                            <FontAwesomeIcon icon={faCrown} />
-                          </RankIcon>
-                        )}
-                      </td>
-
-                      <td>{player.name}</td>
-                      <td>
-                        {(() => {
-                          const { icon, key } = getClassInfo(player.race);
-                          return (
-                            <img
-                              src={icon}
-                              alt={`Class ${player.race}`}
-                              title={classNamesMap[key] || "Unknown Class"}
-                              style={{
-                                width: "40px",
-                                height: "40px",
-                                cursor: "pointer",
-                              }}
-                            />
-                          );
-                        })()}
-                      </td>
-
-                      <td>{formatNumber(player.reset)}</td>
-                      <td>{formatNumber(player.level)}</td>
-                      <td className="hideOnSmall">
-                        {formatNumber(player.strength)}
-                      </td>
-                      <td className="hideOnSmall">
-                        {formatNumber(player.agility)}
-                      </td>
-                      <td className="hideOnSmall">
-                        {formatNumber(player.vitality)}
-                      </td>
-                      <td className="hideOnSmall">
-                        {formatNumber(player.energy)}
-                      </td>
-                      <td className="hideOnSmall">
-                        {formatNumber(player.leadership)}
-                      </td>
+              <>
+                <HighscoresTable>
+                  <thead>
+                    <tr>
+                      <th>Rank</th>
+                      <th>Name</th>
+                      <th>Class</th>
+                      <th>Resets</th>
+                      <th>Level</th>
+                      <th className="hideOnSmall">Strength</th>
+                      <th className="hideOnSmall">Agility</th>
+                      <th className="hideOnSmall">Vitality</th>
+                      <th className="hideOnSmall">Energy</th>
+                      <th className="hideOnSmall">Leadership</th>
                     </tr>
-                  ))}
-                </tbody>
-              </HighscoresTable>
+                  </thead>
+                  <tbody>
+                    {players.map((player, index) => (
+                      <tr key={index}>
+                        <td>
+                          {index + 1}{" "}
+                          {index === 0 && (
+                            <RankIcon style={{ color: "gold" }}>
+                              <FontAwesomeIcon icon={faCrown} />
+                            </RankIcon>
+                          )}
+                          {index === 1 && (
+                            <RankIcon style={{ color: "silver" }}>
+                              <FontAwesomeIcon icon={faCrown} />
+                            </RankIcon>
+                          )}
+                          {index === 2 && (
+                            <RankIcon style={{ color: "#cd7f32" }}>
+                              {" "}
+                              {/* bronze */}
+                              <FontAwesomeIcon icon={faCrown} />
+                            </RankIcon>
+                          )}
+                        </td>
+
+                        <td>{player.name}</td>
+                        <td>
+                          {(() => {
+                            const { icon, key } = getClassInfo(player.race);
+                            return (
+                              <img
+                                src={icon}
+                                alt={`Class ${player.race}`}
+                                title={classNamesMap[key] || "Unknown Class"}
+                                style={{
+                                  width: "40px",
+                                  height: "40px",
+                                  cursor: "pointer",
+                                }}
+                              />
+                            );
+                          })()}
+                        </td>
+
+                        <td>{formatNumber(player.reset)}</td>
+                        <td>{formatNumber(player.level)}</td>
+                        <td className="hideOnSmall">
+                          {formatNumber(player.strength)}
+                        </td>
+                        <td className="hideOnSmall">
+                          {formatNumber(player.agility)}
+                        </td>
+                        <td className="hideOnSmall">
+                          {formatNumber(player.vitality)}
+                        </td>
+                        <td className="hideOnSmall">
+                          {formatNumber(player.energy)}
+                        </td>
+                        <td className="hideOnSmall">
+                          {formatNumber(player.leadership)}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </HighscoresTable>
+                <BottomFade />
+              </>
             )}
           </HighscoresBox>
         </HighscoresContent>

@@ -58,25 +58,23 @@ export const HighscoresBox = styled.div`
   &::-webkit-scrollbar-thumb:hover {
     background: #666;
   }
-
-  /* FADE OVERLAY */
-  &::after {
-    content: "";
-    display: block;
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px; /* height of the fade */
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.8) 100%
-    );
-    pointer-events: none; /* let clicks/scroll go through */
-  }
 `;
-
+export const BottomFade = styled.div`
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  pointer-events: none; /* don't block scroll/clicks */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 5; /* sits above table rows */
+`;
 export const HighscoresFilter = styled.div`
   margin-bottom: 1.5rem;
   display: flex;
