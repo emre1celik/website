@@ -60,7 +60,7 @@ export const HighscoresBox = styled.div`
   }
 `;
 export const BottomFade = styled.div`
-  position: sticky;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
