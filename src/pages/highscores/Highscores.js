@@ -130,7 +130,7 @@ function Highscores({ user }) {
       setError("");
 
       try {
-        let url = "https://api.myramu.online/api/highscores";
+        let url = "https://api.myramu.online/api/top-players";
 
         if (selectedClass !== "all") {
           const classData = classIconMap[selectedClass];
