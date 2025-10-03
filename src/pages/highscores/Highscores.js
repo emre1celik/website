@@ -6,6 +6,7 @@ import {
   HighscoresFilter,
   HighscoresTable,
   RankIcon,
+  GlowingName,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -254,7 +255,9 @@ function Highscores({ user }) {
                           )}
                         </td>
 
-                        <td>{player.name}</td>
+                        <td>
+                          <GlowingName rank={index}>{player.name}</GlowingName>
+                        </td>
                         <td>
                           {(() => {
                             const { icon, key } = getClassInfo(player.race);

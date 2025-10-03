@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import backgroundImg from "../../assets/images/2151470664.jpg";
 
 export const HighscoresWrapper = styled.div`
@@ -19,6 +19,45 @@ export const HighscoresContent = styled.main`
   justify-content: center;
   align-items: flex-start;
   padding: 2rem;
+`;
+
+const goldGlow = keyframes`
+  0% { text-shadow: 0 0 5px gold, 0 0 10px gold; }
+  50% { text-shadow: 0 0 20px orange, 0 0 30px gold; }
+  100% { text-shadow: 0 0 5px gold, 0 0 10px gold; }
+`;
+
+const silverGlow = keyframes`
+  0% { text-shadow: 0 0 5px silver, 0 0 10px silver; }
+  50% { text-shadow: 0 0 20px #dcdcdc, 0 0 30px silver; }
+  100% { text-shadow: 0 0 5px silver, 0 0 10px silver; }
+`;
+
+const bronzeGlow = keyframes`
+  0% { text-shadow: 0 0 5px #cd7f32, 0 0 10px #cd7f32; }
+  50% { text-shadow: 0 0 20px #a0522d, 0 0 30px #cd7f32; }
+  100% { text-shadow: 0 0 5px #cd7f32, 0 0 10px #cd7f32; }
+`;
+
+export const GlowingName = styled.span`
+  ${({ rank }) =>
+    rank === 0 &&
+    `
+      color: gold;
+      animation: ${goldGlow} 2s ease-in-out infinite alternate;
+    `}
+  ${({ rank }) =>
+    rank === 1 &&
+    `
+      color: silver;
+      animation: ${silverGlow} 2s ease-in-out infinite alternate;
+    `}
+  ${({ rank }) =>
+    rank === 2 &&
+    `
+      color: #cd7f32;
+      animation: ${bronzeGlow} 2s ease-in-out infinite alternate;
+    `}
 `;
 
 export const HighscoresBox = styled.div`
