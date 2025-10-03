@@ -114,7 +114,7 @@ function Highscores({ user }) {
       }
     }, [data]);
 
-    return data ? <canvas ref={canvasRef} width={128} height={128} /> : null;
+    return data ? <canvas ref={canvasRef} width={64} height={64} /> : null;
   }
 
   const classIconMap = {
@@ -480,7 +480,7 @@ function Highscores({ user }) {
                         <tr>
                           <th>Rank</th>
                           <th>Character</th>
-                          <th>Race</th>
+                          <th>Class</th>
                           <th>Event</th>
                           <th>Event Ground</th>
                           <th>Score</th>
