@@ -18,7 +18,7 @@ import {
   faTrophy,
   faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { useRef } from "react";
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";
 import ElfIcon from "../../assets/images/classes/elf.png";
@@ -69,6 +69,56 @@ function Highscores({ user }) {
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
   };
+
+  function GuildEmblem({ data }) {
+    const canvasRef = useRef(null);
+
+    useEffect(() => {
+      if (!data) return;
+
+      const ctx = canvasRef.current.getContext("2d");
+      const size = 8;
+      const scale = 16; // zoom factor
+
+      // Convert decimal array into pixel indices
+      const pixels = [];
+      for (let byte of data) {
+        const high = byte >> 4;
+        const low = byte & 0x0f;
+        pixels.push(high, low);
+      }
+
+      const palette = [
+        "transparent",
+        "#000000",
+        "#ffffff",
+        "#ff0000",
+        "#00ff00",
+        "#0000ff",
+        "#ffff00",
+        "#00ffff",
+        "#ff00ff",
+        "#c0c0c0",
+        "#808080",
+        "#800000",
+        "#008000",
+        "#000080",
+        "#808000",
+        "#800080",
+      ];
+
+      ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+
+      pixels.forEach((colorIndex, i) => {
+        const x = i % size;
+        const y = Math.floor(i / size);
+        ctx.fillStyle = palette[colorIndex];
+        ctx.fillRect(x * scale, y * scale, scale, scale);
+      });
+    }, [data]);
+
+    return <canvas ref={canvasRef} width={128} height={128} />;
+  }
 
   const classIconMap = {
     dw: {
@@ -538,7 +588,9 @@ function Highscores({ user }) {
                             </td>
                             <td>{guild.master_name}</td>
                             <td>{formatNumber(guild.score)}</td>
-                            <td>{guild.emblem}</td>
+                            <td>
+                              <GuildEmblem data={guild.emblem} />
+                            </td>
                           </tr>
                         ))}
                       </tbody>
