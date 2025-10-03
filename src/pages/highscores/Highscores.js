@@ -69,24 +69,16 @@ function Highscores({ user }) {
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
   };
-
   function GuildEmblem({ data }) {
     const canvasRef = useRef(null);
 
     useEffect(() => {
-      if (!data) return;
+      if (!data || !canvasRef.current) return;
 
       const ctx = canvasRef.current.getContext("2d");
-      const size = 8;
+      const size = 8; // emblem is 8x8
       const scale = 16; // zoom factor
-
-      // Convert decimal array into pixel indices
-      const pixels = [];
-      for (let byte of data) {
-        const high = byte >> 4;
-        const low = byte & 0x0f;
-        pixels.push(high, low);
-      }
+      ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
 
       const palette = [
         "transparent",
@@ -107,17 +99,22 @@ function Highscores({ user }) {
         "#800080",
       ];
 
-      ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+      for (let y = 0; y < size; y++) {
+        for (let x = 0; x < size; x += 2) {
+          const byte = data[y]; // 1 byte per row for 2 pixels?
+          const high = byte >> 4;
+          const low = byte & 0x0f;
 
-      pixels.forEach((colorIndex, i) => {
-        const x = i % size;
-        const y = Math.floor(i / size);
-        ctx.fillStyle = palette[colorIndex];
-        ctx.fillRect(x * scale, y * scale, scale, scale);
-      });
+          ctx.fillStyle = palette[high];
+          ctx.fillRect(x * scale, y * scale, scale, scale);
+
+          ctx.fillStyle = palette[low];
+          ctx.fillRect((x + 1) * scale, y * scale, scale, scale);
+        }
+      }
     }, [data]);
 
-    return <canvas ref={canvasRef} width={128} height={128} />;
+    return data ? <canvas ref={canvasRef} width={128} height={128} /> : null;
   }
 
   const classIconMap = {
