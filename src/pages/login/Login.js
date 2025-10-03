@@ -40,7 +40,7 @@ function Login({ user, onLogin }) {
         setMessage("✅ Logged in successfully!");
         navigate("/control-panel");
       } else {
-        setMessage(data.error || "❌ Invalid username or password");
+        setMessage("❌ Invalid username or password");
       }
     } catch (err) {
       setMessage("❌ Server error: " + err.message);
