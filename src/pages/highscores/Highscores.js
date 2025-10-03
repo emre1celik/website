@@ -13,6 +13,12 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCrown, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUsers,
+  faTrophy,
+  faShieldAlt,
+} from "@fortawesome/free-solid-svg-icons";
+
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";
 import ElfIcon from "../../assets/images/classes/elf.png";
@@ -29,12 +35,24 @@ import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
 
 import DefaultIcon from "../../assets/images/classes/default.png";
+import {
+  ControlPanelTabButton,
+  ControlPanelTabContent,
+  ControlPanelTabs,
+} from "../controlPanel/ControlPanelStyles";
 
 function Highscores({ user }) {
   const [selectedClass, setSelectedClass] = useState("all");
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [activeTab, setActiveTab] = useState("players"); // default tab
+  const [events, setEvents] = useState([]);
+  const [guilds, setGuilds] = useState([]);
+  const [loadingEvents, setLoadingEvents] = useState(false);
+  const [loadingGuilds, setLoadingGuilds] = useState(false);
+  const [errorEvents, setErrorEvents] = useState("");
+  const [errorGuilds, setErrorGuilds] = useState("");
   const classNamesMap = {
     dw: "Dark Wizard",
     dk: "Dark Knight",
@@ -123,6 +141,40 @@ function Highscores({ user }) {
   function formatNumber(num) {
     return num?.toLocaleString("en-US");
   }
+  useEffect(() => {
+    const fetchEvents = async () => {
+      setLoadingEvents(true);
+      setErrorEvents("");
+      try {
+        const res = await fetch("https://api.myramu.online/api/top-events");
+        const data = await res.json();
+        if (res.ok) setEvents(data.top_events || []);
+        else setErrorEvents(data.error || "Failed to fetch top events");
+      } catch (err) {
+        setErrorEvents("Server error: " + err.message);
+      } finally {
+        setLoadingEvents(false);
+      }
+    };
+
+    const fetchGuilds = async () => {
+      setLoadingGuilds(true);
+      setErrorGuilds("");
+      try {
+        const res = await fetch("https://api.myramu.online/api/top-guilds");
+        const data = await res.json();
+        if (res.ok) setGuilds(data.top_guilds || []);
+        else setErrorGuilds(data.error || "Failed to fetch top guilds");
+      } catch (err) {
+        setErrorGuilds("Server error: " + err.message);
+      } finally {
+        setLoadingGuilds(false);
+      }
+    };
+
+    fetchEvents();
+    fetchGuilds();
+  }, []);
 
   useEffect(() => {
     const fetchHighscores = async () => {
@@ -178,127 +230,258 @@ function Highscores({ user }) {
 
         <HighscoresContent>
           <HighscoresBox>
-            <h2>Highscores - Top Players</h2>
-
-            <HighscoresFilter>
-              <label>Class:</label>
-              <div
-                style={{ display: "flex", alignItems: "center", gap: "8px" }}
+            <h2>Highscores</h2>
+            <ControlPanelTabs>
+              <ControlPanelTabButton
+                active={activeTab === "players"}
+                onClick={() => setActiveTab("players")}
               >
-                <img
-                  src={
-                    selectedClass === "all"
-                      ? DefaultIcon
-                      : classIconMap[selectedClass].icon
-                  }
-                  alt={selectedClass}
-                  style={{ width: "28px", height: "28px" }}
-                />
-                <select
-                  value={selectedClass}
-                  onChange={(e) => setSelectedClass(e.target.value)}
-                >
-                  <option value="all">All</option>
-                  {Object.keys(classIconMap).map((key) => (
-                    <option key={key} value={key}>
-                      {classNamesMap[key] || key}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </HighscoresFilter>
+                <FontAwesomeIcon icon={faUsers} />
+                <span>Top Players</span>
+              </ControlPanelTabButton>
 
-            {loading ? (
-              <p>
-                <FontAwesomeIcon icon={faSpinner} spin /> Loading highscores...
-              </p>
-            ) : error ? (
-              <p style={{ color: "red" }}>{error}</p>
-            ) : (
-              <>
-                <HighscoresTable>
-                  <thead>
-                    <tr>
-                      <th>Rank</th>
-                      <th>Name</th>
-                      <th>Class</th>
-                      <th>Resets</th>
-                      <th>Level</th>
-                      <th className="hideOnSmall">Strength</th>
-                      <th className="hideOnSmall">Agility</th>
-                      <th className="hideOnSmall">Vitality</th>
-                      <th className="hideOnSmall">Energy</th>
-                      <th className="hideOnSmall">Leadership</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {players.map((player, index) => (
-                      <tr key={index}>
-                        <td>
-                          {index + 1}{" "}
-                          {index === 0 && (
-                            <RankIcon style={{ color: "gold" }}>
-                              <FontAwesomeIcon icon={faCrown} />
-                            </RankIcon>
-                          )}
-                          {index === 1 && (
-                            <RankIcon style={{ color: "silver" }}>
-                              <FontAwesomeIcon icon={faCrown} />
-                            </RankIcon>
-                          )}
-                          {index === 2 && (
-                            <RankIcon style={{ color: "#cd7f32" }}>
-                              {" "}
-                              {/* bronze */}
-                              <FontAwesomeIcon icon={faCrown} />
-                            </RankIcon>
-                          )}
-                        </td>
+              <ControlPanelTabButton
+                active={activeTab === "events"}
+                onClick={() => setActiveTab("events")}
+              >
+                <FontAwesomeIcon icon={faTrophy} />
+                <span>Top Events</span>
+              </ControlPanelTabButton>
 
-                        <td>
-                          <GlowingName rank={index}>{player.name}</GlowingName>
-                        </td>
-                        <td>
-                          {(() => {
-                            const { icon, key } = getClassInfo(player.race);
-                            return (
-                              <img
-                                src={icon}
-                                alt={`Class ${player.race}`}
-                                title={classNamesMap[key] || "Unknown Class"}
-                                style={{
-                                  width: "40px",
-                                  height: "40px",
-                                  cursor: "pointer",
-                                }}
-                              />
-                            );
-                          })()}
-                        </td>
+              <ControlPanelTabButton
+                active={activeTab === "guilds"}
+                onClick={() => setActiveTab("guilds")}
+              >
+                <FontAwesomeIcon icon={faShieldAlt} />
+                <span>Top Guilds</span>
+              </ControlPanelTabButton>
+            </ControlPanelTabs>
 
-                        <td>{formatNumber(player.reset)}</td>
-                        <td>{formatNumber(player.level)}</td>
-                        <td className="hideOnSmall">
-                          {formatNumber(player.strength)}
-                        </td>
-                        <td className="hideOnSmall">
-                          {formatNumber(player.agility)}
-                        </td>
-                        <td className="hideOnSmall">
-                          {formatNumber(player.vitality)}
-                        </td>
-                        <td className="hideOnSmall">
-                          {formatNumber(player.energy)}
-                        </td>
-                        <td className="hideOnSmall">
-                          {formatNumber(player.leadership)}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </HighscoresTable>
-              </>
-            )}
+            <ControlPanelTabContent>
+              {activeTab === "players" && (
+                <>
+                  {loading ? (
+                    <p>
+                      <FontAwesomeIcon icon={faSpinner} spin /> Loading top
+                      players...
+                    </p>
+                  ) : errorEvents ? (
+                    <p style={{ color: "red" }}>{error}</p>
+                  ) : (
+                    <>
+                      <HighscoresFilter>
+                        {" "}
+                        <label>Class:</label>{" "}
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: "8px",
+                          }}
+                        >
+                          {" "}
+                          <img
+                            src={
+                              selectedClass === "all"
+                                ? DefaultIcon
+                                : classIconMap[selectedClass].icon
+                            }
+                            alt={selectedClass}
+                            style={{ width: "28px", height: "28px" }}
+                          />{" "}
+                          <select
+                            value={selectedClass}
+                            onChange={(e) => setSelectedClass(e.target.value)}
+                          >
+                            {" "}
+                            <option value="all">All</option>{" "}
+                            {Object.keys(classIconMap).map((key) => (
+                              <option key={key} value={key}>
+                                {" "}
+                                {classNamesMap[key] || key}{" "}
+                              </option>
+                            ))}{" "}
+                          </select>{" "}
+                        </div>{" "}
+                      </HighscoresFilter>{" "}
+                      <HighscoresTable>
+                        <thead>
+                          <tr>
+                            <th>Rank</th>
+                            <th>Name</th>
+                            <th>Class</th>
+                            <th>Resets</th>
+                            <th>Level</th>
+                            <th className="hideOnSmall">Strength</th>
+                            <th className="hideOnSmall">Agility</th>
+                            <th className="hideOnSmall">Vitality</th>
+                            <th className="hideOnSmall">Energy</th>
+                            <th className="hideOnSmall">Leadership</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {players.map((player, index) => (
+                            <tr key={index}>
+                              <td>
+                                {index + 1}{" "}
+                                {index === 0 && (
+                                  <RankIcon style={{ color: "gold" }}>
+                                    <FontAwesomeIcon icon={faCrown} />
+                                  </RankIcon>
+                                )}
+                                {index === 1 && (
+                                  <RankIcon style={{ color: "silver" }}>
+                                    <FontAwesomeIcon icon={faCrown} />
+                                  </RankIcon>
+                                )}
+                                {index === 2 && (
+                                  <RankIcon style={{ color: "#cd7f32" }}>
+                                    {" "}
+                                    {/* bronze */}
+                                    <FontAwesomeIcon icon={faCrown} />
+                                  </RankIcon>
+                                )}
+                              </td>
+
+                              <td>
+                                <GlowingName rank={index}>
+                                  {player.name}
+                                </GlowingName>
+                              </td>
+                              <td>
+                                {(() => {
+                                  const { icon, key } = getClassInfo(
+                                    player.race
+                                  );
+                                  return (
+                                    <img
+                                      src={icon}
+                                      alt={`Class ${player.race}`}
+                                      title={
+                                        classNamesMap[key] || "Unknown Class"
+                                      }
+                                      style={{
+                                        width: "40px",
+                                        height: "40px",
+                                        cursor: "pointer",
+                                      }}
+                                    />
+                                  );
+                                })()}
+                              </td>
+
+                              <td>{formatNumber(player.reset)}</td>
+                              <td>{formatNumber(player.level)}</td>
+                              <td className="hideOnSmall">
+                                {formatNumber(player.strength)}
+                              </td>
+                              <td className="hideOnSmall">
+                                {formatNumber(player.agility)}
+                              </td>
+                              <td className="hideOnSmall">
+                                {formatNumber(player.vitality)}
+                              </td>
+                              <td className="hideOnSmall">
+                                {formatNumber(player.energy)}
+                              </td>
+                              <td className="hideOnSmall">
+                                {formatNumber(player.leadership)}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </HighscoresTable>
+                    </>
+                  )}
+                </>
+              )}
+
+              {activeTab === "events" && (
+                <>
+                  {loadingEvents ? (
+                    <p>
+                      <FontAwesomeIcon icon={faSpinner} spin /> Loading top
+                      events...
+                    </p>
+                  ) : errorEvents ? (
+                    <p style={{ color: "red" }}>{errorEvents}</p>
+                  ) : (
+                    <HighscoresTable>
+                      <thead>
+                        <tr>
+                          <th>Rank</th>
+                          <th>Character</th>
+                          <th>Race</th>
+                          <th>Event ID</th>
+                          <th>Event Ground</th>
+                          <th>Score</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {events.map((event, index) => (
+                          <tr key={index}>
+                            <td>{index + 1}</td>
+                            <td>{event.char_name}</td>
+                            <td>
+                              {(() => {
+                                const { icon, key } = getClassInfo(event.race);
+                                return (
+                                  <img
+                                    src={icon}
+                                    alt={key}
+                                    title={classNamesMap[key] || "Unknown"}
+                                    style={{ width: "32px", height: "32px" }}
+                                  />
+                                );
+                              })()}
+                            </td>
+                            <td>{event.event_id}</td>
+                            <td>{event.event_ground}</td>
+                            <td>{formatNumber(event.score)}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </HighscoresTable>
+                  )}
+                </>
+              )}
+
+              {activeTab === "guilds" && (
+                <>
+                  {loadingGuilds ? (
+                    <p>
+                      <FontAwesomeIcon icon={faSpinner} spin /> Loading top
+                      guilds...
+                    </p>
+                  ) : errorGuilds ? (
+                    <p style={{ color: "red" }}>{errorGuilds}</p>
+                  ) : (
+                    <HighscoresTable>
+                      <thead>
+                        <tr>
+                          <th>Rank</th>
+                          <th>Guild Name</th>
+                          <th>Master</th>
+                          <th>Score</th>
+                          <th>Emblem</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {guilds.map((guild, index) => (
+                          <tr key={index}>
+                            <td>{index + 1}</td>
+                            <td>{guild.guild_name}</td>
+                            <td>{guild.master_name}</td>
+                            <td>{formatNumber(guild.score)}</td>
+                            <td>{guild.emblem}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </HighscoresTable>
+                  )}
+                </>
+              )}
+            </ControlPanelTabContent>
           </HighscoresBox>
         </HighscoresContent>
 
