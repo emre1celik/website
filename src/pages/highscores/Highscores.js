@@ -184,6 +184,11 @@ function Highscores({ user }) {
     }
     return { icon: DefaultIcon, key: "unknown" };
   }
+  const eventMap = {
+    0: "Blood Castle",
+    1: "Devil Square",
+    // Add other event IDs here if needed
+  };
 
   function formatNumber(num) {
     return num?.toLocaleString("en-US");
@@ -476,7 +481,7 @@ function Highscores({ user }) {
                           <th>Rank</th>
                           <th>Character</th>
                           <th>Race</th>
-                          <th>Event ID</th>
+                          <th>Event</th>
                           <th>Event Ground</th>
                           <th>Score</th>
                         </tr>
@@ -523,7 +528,10 @@ function Highscores({ user }) {
                                 );
                               })()}
                             </td>
-                            <td>{event.event_id}</td>
+                            <td>
+                              {eventMap[event.event_id] ||
+                                `Unknown (${event.event_id})`}
+                            </td>
                             <td>{event.event_ground}</td>
                             <td>{formatNumber(event.score)}</td>
                           </tr>
