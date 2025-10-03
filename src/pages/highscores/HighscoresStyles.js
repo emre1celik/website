@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 import backgroundImg from "../../assets/images/2151470664.jpg";
 
 export const HighscoresWrapper = styled.div`
@@ -42,19 +42,19 @@ const bronzeGlow = keyframes`
 export const GlowingName = styled.span`
   ${({ rank }) =>
     rank === 0 &&
-    `
+    css`
       color: gold;
       animation: ${goldGlow} 2s ease-in-out infinite alternate;
     `}
   ${({ rank }) =>
     rank === 1 &&
-    `
+    css`
       color: silver;
       animation: ${silverGlow} 2s ease-in-out infinite alternate;
     `}
   ${({ rank }) =>
     rank === 2 &&
-    `
+    css`
       color: #cd7f32;
       animation: ${bronzeGlow} 2s ease-in-out infinite alternate;
     `}
