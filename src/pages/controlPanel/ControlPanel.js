@@ -46,7 +46,7 @@ function ControlPanel({ user }) {
   const [characters, setCharacters] = useState([]);
   const [charsLoading, setCharsLoading] = useState(true);
   const [passwordMessage, setPasswordMessage] = useState(null); // { type: "success"|"error", text: string }
-
+  const [changingPassword, setChangingPassword] = useState(false);
   const classNamesMap = {
     dw: "Dark Wizard",
     dk: "Dark Knight",
