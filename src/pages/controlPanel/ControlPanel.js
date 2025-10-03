@@ -45,6 +45,7 @@ function ControlPanel({ user }) {
   const [loading, setLoading] = useState(true);
   const [characters, setCharacters] = useState([]);
   const [charsLoading, setCharsLoading] = useState(true);
+  const [passwordMessage, setPasswordMessage] = useState(null); // { type: "success"|"error", text: string }
 
   const classNamesMap = {
     dw: "Dark Wizard",
@@ -153,9 +154,12 @@ function ControlPanel({ user }) {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      alert("❌ Passwords do not match!");
+      setPasswordMessage({ type: "error", text: "❌ Passwords do not match!" });
       return;
     }
+
+    setChangingPassword(true);
+    setPasswordMessage(null); // clear old messages
 
     const token = localStorage.getItem("apiToken");
     try {
@@ -177,19 +181,26 @@ function ControlPanel({ user }) {
       const data = await response.json();
 
       if (response.ok) {
-        alert("✅ " + data.message);
+        setPasswordMessage({ type: "success", text: "✅ " + data.message });
         setPassword("");
         setConfirmPassword("");
       } else {
-        alert(
-          "❌ " +
+        setPasswordMessage({
+          type: "error",
+          text:
+            "❌ " +
             (data.error ||
               data.errors?.new_password?.[0] ||
-              "Failed to update password")
-        );
+              "Failed to update password"),
+        });
       }
     } catch (err) {
-      alert("❌ Server error: " + err.message);
+      setPasswordMessage({
+        type: "error",
+        text: "❌ Server error: " + err.message,
+      });
+    } finally {
+      setChangingPassword(false);
     }
   }
 
@@ -368,21 +379,45 @@ function ControlPanel({ user }) {
 
               <button
                 type="submit"
+                disabled={changingPassword}
                 style={{
                   padding: "0.7rem 1.5rem",
-                  backgroundColor: "#4caf50",
+                  backgroundColor: changingPassword ? "#666" : "#4caf50",
                   border: "none",
                   borderRadius: "5px",
                   color: "#fff",
-                  cursor: "pointer",
+                  cursor: changingPassword ? "not-allowed" : "pointer",
                 }}
               >
                 <FontAwesomeIcon
                   icon={faArrowsRotate}
                   style={{ marginRight: "5px" }}
                 />
-                Update Password
+                {changingPassword ? "Updating..." : "Update Password"}
               </button>
+
+              {passwordMessage && (
+                <div
+                  style={{
+                    marginTop: "1rem",
+                    padding: "0.7rem",
+                    borderRadius: "5px",
+                    backgroundColor:
+                      passwordMessage.type === "success"
+                        ? "rgba(76, 175, 80, 0.2)"
+                        : "rgba(244, 67, 54, 0.2)",
+                    color:
+                      passwordMessage.type === "success"
+                        ? "#4caf50"
+                        : "#f44336",
+                    border: `1px solid ${
+                      passwordMessage.type === "success" ? "#4caf50" : "#f44336"
+                    }`,
+                  }}
+                >
+                  {passwordMessage.text}
+                </div>
+              )}
             </form>
           </div>
         );
