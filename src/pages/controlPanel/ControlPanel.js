@@ -149,6 +149,50 @@ function ControlPanel({ user }) {
     fetchProfile();
   }, [user]);
 
+  async function onChangePasswordSubmit(e) {
+    e.preventDefault();
+
+    if (password !== confirmPassword) {
+      alert("❌ Passwords do not match!");
+      return;
+    }
+
+    const token = localStorage.getItem("apiToken");
+    try {
+      const response = await fetch(
+        "https://api.myramu.online/api/change-password",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            new_password: password,
+            new_password_confirmation: confirmPassword,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert("✅ " + data.message);
+        setPassword("");
+        setConfirmPassword("");
+      } else {
+        alert(
+          "❌ " +
+            (data.error ||
+              data.errors?.new_password?.[0] ||
+              "Failed to update password")
+        );
+      }
+    } catch (err) {
+      alert("❌ Server error: " + err.message);
+    }
+  }
+
   const renderTabContent = () => {
     switch (activeTab) {
       case "profile":
@@ -279,16 +323,7 @@ function ControlPanel({ user }) {
         return (
           <div>
             <h3>Change Password</h3>
-            <form
-              onSubmit={(e) => {
-                e.preventDefault();
-                if (password !== confirmPassword) {
-                  alert("Passwords do not match!");
-                  return;
-                }
-                alert("Password changed successfully!");
-              }}
-            >
+            <form onSubmit={(e) => onChangePasswordSubmit(e)}>
               <div style={{ marginBottom: "1rem" }}>
                 <label htmlFor="password">New Password</label>
                 <br />
