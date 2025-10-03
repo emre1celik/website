@@ -420,8 +420,32 @@ function Highscores({ user }) {
                       <tbody>
                         {events.map((event, index) => (
                           <tr key={index}>
-                            <td>{index + 1}</td>
-                            <td>{event.char_name}</td>
+                            <td>
+                              {index + 1}{" "}
+                              {index === 0 && (
+                                <RankIcon style={{ color: "gold" }}>
+                                  <FontAwesomeIcon icon={faCrown} />
+                                </RankIcon>
+                              )}
+                              {index === 1 && (
+                                <RankIcon style={{ color: "silver" }}>
+                                  <FontAwesomeIcon icon={faCrown} />
+                                </RankIcon>
+                              )}
+                              {index === 2 && (
+                                <RankIcon style={{ color: "#cd7f32" }}>
+                                  {" "}
+                                  {/* bronze */}
+                                  <FontAwesomeIcon icon={faCrown} />
+                                </RankIcon>
+                              )}
+                            </td>
+
+                            <td>
+                              <GlowingName rank={index}>
+                                {event.char_name}
+                              </GlowingName>
+                            </td>
                             <td>
                               {(() => {
                                 const { icon, key } = getClassInfo(event.race);
@@ -469,8 +493,32 @@ function Highscores({ user }) {
                       <tbody>
                         {guilds.map((guild, index) => (
                           <tr key={index}>
-                            <td>{index + 1}</td>
-                            <td>{guild.guild_name}</td>
+                            <td>
+                              {index + 1}{" "}
+                              {index === 0 && (
+                                <RankIcon style={{ color: "gold" }}>
+                                  <FontAwesomeIcon icon={faCrown} />
+                                </RankIcon>
+                              )}
+                              {index === 1 && (
+                                <RankIcon style={{ color: "silver" }}>
+                                  <FontAwesomeIcon icon={faCrown} />
+                                </RankIcon>
+                              )}
+                              {index === 2 && (
+                                <RankIcon style={{ color: "#cd7f32" }}>
+                                  {" "}
+                                  {/* bronze */}
+                                  <FontAwesomeIcon icon={faCrown} />
+                                </RankIcon>
+                              )}
+                            </td>
+
+                            <td>
+                              <GlowingName rank={index}>
+                                {guild.guild_name}
+                              </GlowingName>
+                            </td>
                             <td>{guild.master_name}</td>
                             <td>{formatNumber(guild.score)}</td>
                             <td>{guild.emblem}</td>
