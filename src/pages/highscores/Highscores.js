@@ -114,7 +114,7 @@ function Highscores({ user }) {
       }
     }, [data]);
 
-    return data ? <canvas ref={canvasRef} width={64} height={64} /> : null;
+    return data ? <canvas ref={canvasRef} width={32} height={32} /> : null;
   }
 
   const classIconMap = {
