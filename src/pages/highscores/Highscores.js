@@ -163,8 +163,25 @@ function Highscores({ user }) {
       try {
         const res = await fetch("https://api.myramu.online/api/top-guilds");
         const data = await res.json();
-        if (res.ok) setGuilds(data.top_guilds || []);
-        else setErrorGuilds(data.error || "Failed to fetch top guilds");
+
+        if (res.ok) {
+          const decodedGuilds = (data.top_guilds || []).map((guild) => {
+            // decode Base64
+            let name = "";
+            try {
+              name = atob(guild.guild_name); // Base64 → binary string
+              name = name.replace(/\0+$/, ""); // remove trailing nulls
+            } catch (e) {
+              name = guild.guild_name; // fallback if decode fails
+            }
+
+            return { ...guild, guild_name: name };
+          });
+
+          setGuilds(decodedGuilds);
+        } else {
+          setErrorGuilds(data.error || "Failed to fetch top guilds");
+        }
       } catch (err) {
         setErrorGuilds("Server error: " + err.message);
       } finally {
