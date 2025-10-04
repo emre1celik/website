@@ -36,8 +36,10 @@ import LwIcon from "../../assets/images/classes/lw.png";
 import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
 import DefaultIcon from "../../assets/images/classes/default.png";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 function ControlPanel({ user }) {
+  const [characterActionMessage, setCharacterActionMessage] = useState(null);
   const [activeTab, setActiveTab] = useState("profile");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -64,18 +66,16 @@ function ControlPanel({ user }) {
     ik: "Illusion Knight",
   };
   const [actionLoading, setActionLoading] = useState({});
-  const [actionMessage, setActionMessage] = useState({});
-  // Helper function to perform actions
   async function handleCharacterAction(characterName, actionType) {
     const token = localStorage.getItem("apiToken");
     const key = `${characterName}_${actionType}`;
 
     setActionLoading((prev) => ({ ...prev, [key]: true }));
-    setActionMessage((prev) => ({ ...prev, [key]: null }));
+    setCharacterActionMessage(null); // clear previous message
 
     try {
       const response = await fetch(
-        `https://api.myramu.online/api/${actionType}`, // 'unstuck', 'evolve', 'grand-reset'
+        `https://api.myramu.online/api/${actionType}`,
         {
           method: "POST",
           headers: {
@@ -89,32 +89,27 @@ function ControlPanel({ user }) {
       const data = await response.json();
 
       if (response.ok) {
-        setActionMessage((prev) => ({
-          ...prev,
-          [key]: { type: "success", text: "✅ " + data.message },
-        }));
-
-        // Optionally, refresh characters after action
-        const updatedChars = await fetchCharacters();
-        setCharacters(updatedChars);
+        setCharacterActionMessage({
+          type: "success",
+          text: "✅ " + data.message,
+        });
+        await fetchCharacters(); // refresh list
       } else {
-        setActionMessage((prev) => ({
-          ...prev,
-          [key]: {
-            type: "error",
-            text: "❌ " + (data.error || "Action failed"),
-          },
-        }));
+        setCharacterActionMessage({
+          type: "error",
+          text: "❌ " + (data.error || "Action failed"),
+        });
       }
     } catch (err) {
-      setActionMessage((prev) => ({
-        ...prev,
-        [key]: { type: "error", text: "❌ Server error: " + err.message },
-      }));
+      setCharacterActionMessage({
+        type: "error",
+        text: "❌ Server error: " + err.message,
+      });
     } finally {
       setActionLoading((prev) => ({ ...prev, [key]: false }));
     }
   }
+
   const classIconMap = {
     dw: { ids: [0, 1, 3, 7, 15], icon: DwIcon },
     dk: { ids: [16, 17, 19, 23, 31], icon: DkIcon },
@@ -483,6 +478,32 @@ function ControlPanel({ user }) {
         return (
           <div>
             <h3>Character Statistics</h3>
+            {characterActionMessage && (
+              <div
+                style={{
+                  width: "100%",
+                  marginBottom: "1rem",
+                  padding: "0.7rem",
+                  borderRadius: "5px",
+                  backgroundColor:
+                    characterActionMessage.type === "success"
+                      ? "rgba(76, 175, 80, 0.2)"
+                      : "rgba(244, 67, 54, 0.2)",
+                  color:
+                    characterActionMessage.type === "success"
+                      ? "#4caf50"
+                      : "#f44336",
+                  border: `1px solid ${
+                    characterActionMessage.type === "success"
+                      ? "#4caf50"
+                      : "#f44336"
+                  }`,
+                }}
+              >
+                {characterActionMessage.text}
+              </div>
+            )}
+
             {characters.map((char, idx) => {
               const classInfo = getClassInfo(char.race);
               return (
@@ -553,39 +574,16 @@ function ControlPanel({ user }) {
                             }
                           >
                             <FontAwesomeIcon
-                              icon={iconMap[action]}
-                              spin={actionLoading[key]}
+                              icon={
+                                actionLoading[key] ? faSpinner : iconMap[action]
+                              }
+                              spin={actionLoading[key]} // spin only when loading
                               style={{ marginRight: "5px" }}
                             />
                             {actionLoading[key]
                               ? "Processing..."
                               : labelMap[action]}
                           </GreenButton>
-                          {actionMessage[key] && (
-                            <div
-                              style={{
-                                marginTop: "0.5rem",
-                                padding: "0.5rem",
-                                borderRadius: "5px",
-                                backgroundColor:
-                                  actionMessage[key].type === "success"
-                                    ? "rgba(76, 175, 80, 0.2)"
-                                    : "rgba(244, 67, 54, 0.2)",
-                                color:
-                                  actionMessage[key].type === "success"
-                                    ? "#4caf50"
-                                    : "#f44336",
-                                border: `1px solid ${
-                                  actionMessage[key].type === "success"
-                                    ? "#4caf50"
-                                    : "#f44336"
-                                }`,
-                                fontSize: "0.85rem",
-                              }}
-                            >
-                              {actionMessage[key].text}
-                            </div>
-                          )}
                         </div>
                       );
                     })}
