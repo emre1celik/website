@@ -7,6 +7,7 @@ export const NavigationWrapper = styled.nav`
   padding: 1rem 3rem;
   background: rgba(0, 0, 0, 0.5);
   color: white;
+  user-select: none;
 `;
 
 export const NavigationLogo = styled.a`

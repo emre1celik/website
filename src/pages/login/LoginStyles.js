@@ -10,7 +10,8 @@ export const LoginWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  font-family: 'AlbertusMedium', Arial, sans-serif;
+  font-family: "AlbertusMedium", Arial, sans-serif;
+  user-select: none;
 `;
 
 export const LoginContent = styled.main`
@@ -28,7 +29,7 @@ export const LoginContent = styled.main`
 `;
 
 export const LoginBox = styled.div`
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 3rem 2rem;
   border-radius: 10px;
   width: 100%;
@@ -56,7 +57,7 @@ export const LoginBox = styled.div`
       padding: 0.75rem 1rem;
       border: none;
       border-radius: 5px;
-      font-family: 'AlbertusMedium', Arial, sans-serif;
+      font-family: "AlbertusMedium", Arial, sans-serif;
       font-size: 1rem;
 
       &:focus {
@@ -103,7 +104,7 @@ export const LoginBox = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 3px;
   }
 `;

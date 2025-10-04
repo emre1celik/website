@@ -13,6 +13,7 @@ export const EventsWrapper = styled.div`
   background-repeat: no-repeat;
   color: white;
   font-family: "AlbertusMedium", Arial, sans-serif;
+  user-select: none;
 `;
 
 // Main content area

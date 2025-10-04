@@ -10,6 +10,7 @@ export const DownloadsWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  user-select: none;
 `;
 
 export const DownloadsHero = styled.header`

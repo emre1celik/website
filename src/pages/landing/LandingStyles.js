@@ -11,7 +11,8 @@ export const LandingWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  font-family: 'AlbertusMedium', Arial, sans-serif;
+  font-family: "AlbertusMedium", Arial, sans-serif;
+  user-select: none;
 `;
 
 export const LandingHero = styled.header`
@@ -92,7 +93,7 @@ export const LandingButton = styled.button`
 export const LandingFooter = styled.footer`
   text-align: center;
   padding: 1rem;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
   position: relative;
   z-index: 2;

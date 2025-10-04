@@ -10,7 +10,8 @@ export const NotFoundWrapper = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  font-family: 'AlbertusMedium', Arial, sans-serif;
+  user-select: none;
+  font-family: "AlbertusMedium", Arial, sans-serif;
 `;
 
 export const NotFoundContent = styled.header`

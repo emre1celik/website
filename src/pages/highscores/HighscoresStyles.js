@@ -11,6 +11,7 @@ export const HighscoresWrapper = styled.div`
   background-repeat: no-repeat;
   color: white;
   font-family: "AlbertusMedium", Arial, sans-serif;
+  user-select: none;
 `;
 
 export const HighscoresContent = styled.main`
