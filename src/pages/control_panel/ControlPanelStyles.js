@@ -50,6 +50,7 @@ export const ControlPanelBox = styled.div`
   align-items: center;
   box-sizing: border-box;
   width: 700px;
+  height: 700px;
 
   max-height: 75vh;
   overflow-y: auto;
