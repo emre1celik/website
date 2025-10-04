@@ -478,7 +478,32 @@ function ControlPanel({ user }) {
         return (
           <div>
             <h3>Character Statistics</h3>
-
+            {characterActionMessage && (
+              <div
+                style={{
+                  width: "100%",
+                  marginBottom: "1rem",
+                  padding: "0.7rem",
+                  borderRadius: "5px",
+                  marginTop: "15px",
+                  backgroundColor:
+                    characterActionMessage.type === "success"
+                      ? "rgba(76, 175, 80, 0.2)"
+                      : "rgba(244, 67, 54, 0.2)",
+                  color:
+                    characterActionMessage.type === "success"
+                      ? "#4caf50"
+                      : "#f44336",
+                  border: `1px solid ${
+                    characterActionMessage.type === "success"
+                      ? "#4caf50"
+                      : "#f44336"
+                  }`,
+                }}
+              >
+                {characterActionMessage.text}
+              </div>
+            )}
             {characters.map((char, idx) => {
               const classInfo = getClassInfo(char.race);
               return (
@@ -562,32 +587,6 @@ function ControlPanel({ user }) {
                         </div>
                       );
                     })}
-                    {characterActionMessage && (
-                      <div
-                        style={{
-                          width: "100%",
-                          marginBottom: "1rem",
-                          padding: "0.7rem",
-                          borderRadius: "5px",
-                          marginTop: "15px",
-                          backgroundColor:
-                            characterActionMessage.type === "success"
-                              ? "rgba(76, 175, 80, 0.2)"
-                              : "rgba(244, 67, 54, 0.2)",
-                          color:
-                            characterActionMessage.type === "success"
-                              ? "#4caf50"
-                              : "#f44336",
-                          border: `1px solid ${
-                            characterActionMessage.type === "success"
-                              ? "#4caf50"
-                              : "#f44336"
-                          }`,
-                        }}
-                      >
-                        {characterActionMessage.text}
-                      </div>
-                    )}
                   </div>
                 </div>
               );
