@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useRef } from "react";
 import {
   ControlPanelWrapper,
   ControlPanelContent,
@@ -49,6 +50,8 @@ function ControlPanel({ user }) {
   const [charsLoading, setCharsLoading] = useState(true);
   const [passwordMessage, setPasswordMessage] = useState(null);
   const [changingPassword, setChangingPassword] = useState(false);
+  const tabContentRef = useRef(null);
+
   const classNamesMap = {
     dw: "Dark Wizard",
     dk: "Dark Knight",
@@ -598,6 +601,11 @@ function ControlPanel({ user }) {
         return null;
     }
   };
+  useEffect(() => {
+    if (characterActionMessage && tabContentRef.current) {
+      tabContentRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [characterActionMessage]);
 
   return (
     <>
@@ -646,7 +654,7 @@ function ControlPanel({ user }) {
               </ControlPanelTabButton>
             </ControlPanelTabs>
 
-            <ControlPanelTabContent>
+            <ControlPanelTabContent ref={tabContentRef}>
               {renderTabContent()}
             </ControlPanelTabContent>
           </ControlPanelBox>
