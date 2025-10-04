@@ -33,7 +33,7 @@ export const EventsBox = styled.div`
   flex-direction: column;
   align-items: center;
   display: flex;
-  width: 800px;
+  max-width: 600px;
 
   max-height: 75vh;
   overflow-y: auto;
