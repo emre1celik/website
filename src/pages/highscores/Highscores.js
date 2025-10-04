@@ -340,11 +340,12 @@ function Highscores({ user }) {
                     <>
                       <HighscoresFilter>
                         {" "}
-                        <label>Class:</label>{" "}
+                        <label>Filter by class:</label>{" "}
                         <div
                           style={{
                             display: "flex",
                             alignItems: "center",
+                            justifyContent: "center",
                             gap: "8px",
                           }}
                         >
