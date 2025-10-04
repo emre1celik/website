@@ -71,6 +71,7 @@ export const HighscoresBox = styled.div`
 
   max-height: 75vh;
   overflow-y: auto;
+  height: 700px;
 
   background: linear-gradient(
       to bottom,
