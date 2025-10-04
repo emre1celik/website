@@ -25,8 +25,21 @@ import {
 function Navigation({ user }) {
   return (
     <NavigationWrapper>
-      <NavigationLogo as={Link} to="/">
-        MyraMU
+      <NavigationLogo
+        as={Link}
+        to="/"
+        style={{ display: "flex", alignItems: "center" }}
+      >
+        {/* Logo to favicon */}
+        <img
+          src="/favicon.png"
+          alt="MyraMU Logo"
+          style={{
+            width: "30px",
+            marginRight: "10px",
+          }}
+        />
+        <div>MyraMU</div>
       </NavigationLogo>
 
       <NavigationLinks>
