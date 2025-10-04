@@ -45,7 +45,7 @@ function ControlPanel({ user }) {
   const [loading, setLoading] = useState(true);
   const [characters, setCharacters] = useState([]);
   const [charsLoading, setCharsLoading] = useState(true);
-  const [passwordMessage, setPasswordMessage] = useState(null); // { type: "success"|"error", text: string }
+  const [passwordMessage, setPasswordMessage] = useState(null);
   const [changingPassword, setChangingPassword] = useState(false);
   const classNamesMap = {
     dw: "Dark Wizard",
@@ -63,7 +63,58 @@ function ControlPanel({ user }) {
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
   };
+  const [actionLoading, setActionLoading] = useState({});
+  const [actionMessage, setActionMessage] = useState({});
+  // Helper function to perform actions
+  async function handleCharacterAction(characterName, actionType) {
+    const token = localStorage.getItem("apiToken");
+    const key = `${characterName}_${actionType}`;
 
+    setActionLoading((prev) => ({ ...prev, [key]: true }));
+    setActionMessage((prev) => ({ ...prev, [key]: null }));
+
+    try {
+      const response = await fetch(
+        `https://api.myramu.online/api/${actionType}`, // 'unstuck', 'evolve', 'grand-reset'
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ character_name: characterName }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setActionMessage((prev) => ({
+          ...prev,
+          [key]: { type: "success", text: "✅ " + data.message },
+        }));
+
+        // Optionally, refresh characters after action
+        const updatedChars = await fetchCharacters();
+        setCharacters(updatedChars);
+      } else {
+        setActionMessage((prev) => ({
+          ...prev,
+          [key]: {
+            type: "error",
+            text: "❌ " + (data.error || "Action failed"),
+          },
+        }));
+      }
+    } catch (err) {
+      setActionMessage((prev) => ({
+        ...prev,
+        [key]: { type: "error", text: "❌ Server error: " + err.message },
+      }));
+    } finally {
+      setActionLoading((prev) => ({ ...prev, [key]: false }));
+    }
+  }
   const classIconMap = {
     dw: { ids: [0, 1, 3, 7, 15], icon: DwIcon },
     dk: { ids: [16, 17, 19, 23, 31], icon: DkIcon },
@@ -89,35 +140,38 @@ function ControlPanel({ user }) {
     }
     return { icon: DefaultIcon, key: "unknown" };
   }
+  // Inside your ControlPanel component:
 
-  useEffect(() => {
-    const fetchCharacters = async () => {
-      setCharsLoading(true);
-      const token = localStorage.getItem("apiToken");
+  // 1️⃣ Define fetchCharacters as a reusable function
+  const fetchCharacters = async () => {
+    setCharsLoading(true);
+    const token = localStorage.getItem("apiToken");
 
-      try {
-        const response = await fetch(
-          "https://api.myramu.online/api/characters",
-          {
-            headers: { Authorization: `Bearer ${token}` },
-          }
-        );
+    try {
+      const response = await fetch("https://api.myramu.online/api/characters", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
 
-        const data = await response.json();
-        if (response.ok) {
-          setCharacters(data.characters);
-        } else {
-          console.error("Failed to load characters:", data.error);
-          setCharacters([]);
-        }
-      } catch (err) {
-        console.error("Server error:", err);
+      const data = await response.json();
+      if (response.ok) {
+        setCharacters(data.characters);
+        return data.characters; // return updated characters
+      } else {
+        console.error("Failed to load characters:", data.error);
         setCharacters([]);
-      } finally {
-        setCharsLoading(false);
+        return [];
       }
-    };
+    } catch (err) {
+      console.error("Server error:", err);
+      setCharacters([]);
+      return [];
+    } finally {
+      setCharsLoading(false);
+    }
+  };
 
+  // 2️⃣ useEffect calls fetchCharacters on mount/user change
+  useEffect(() => {
     fetchCharacters();
   }, [user]);
 
@@ -474,27 +528,67 @@ function ControlPanel({ user }) {
                       gap: "0.5rem",
                     }}
                   >
-                    <GreenButton>
-                      <FontAwesomeIcon
-                        icon={faLocationCrosshairs}
-                        style={{ marginRight: "5px" }}
-                      />
-                      Unstuck
-                    </GreenButton>
-                    <GreenButton>
-                      <FontAwesomeIcon
-                        icon={faUpLong}
-                        style={{ marginRight: "5px" }}
-                      />
-                      Evolve
-                    </GreenButton>
-                    <GreenButton>
-                      <FontAwesomeIcon
-                        icon={faArrowsRotate}
-                        style={{ marginRight: "5px" }}
-                      />
-                      Grand Reset
-                    </GreenButton>
+                    {["unstuck", "evolve", "grand-reset"].map((action) => {
+                      const key = `${char.name}_${action}`;
+                      const iconMap = {
+                        unstuck: faLocationCrosshairs,
+                        evolve: faUpLong,
+                        "grand-reset": faArrowsRotate,
+                      };
+                      const labelMap = {
+                        unstuck: "Unstuck",
+                        evolve: "Evolve",
+                        "grand-reset": "Grand Reset",
+                      };
+
+                      return (
+                        <div
+                          key={action}
+                          style={{ display: "flex", flexDirection: "column" }}
+                        >
+                          <GreenButton
+                            disabled={actionLoading[key]}
+                            onClick={() =>
+                              handleCharacterAction(char.name, action)
+                            }
+                          >
+                            <FontAwesomeIcon
+                              icon={iconMap[action]}
+                              spin={actionLoading[key]}
+                              style={{ marginRight: "5px" }}
+                            />
+                            {actionLoading[key]
+                              ? "Processing..."
+                              : labelMap[action]}
+                          </GreenButton>
+                          {actionMessage[key] && (
+                            <div
+                              style={{
+                                marginTop: "0.5rem",
+                                padding: "0.5rem",
+                                borderRadius: "5px",
+                                backgroundColor:
+                                  actionMessage[key].type === "success"
+                                    ? "rgba(76, 175, 80, 0.2)"
+                                    : "rgba(244, 67, 54, 0.2)",
+                                color:
+                                  actionMessage[key].type === "success"
+                                    ? "#4caf50"
+                                    : "#f44336",
+                                border: `1px solid ${
+                                  actionMessage[key].type === "success"
+                                    ? "#4caf50"
+                                    : "#f44336"
+                                }`,
+                                fontSize: "0.85rem",
+                              }}
+                            >
+                              {actionMessage[key].text}
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               );
