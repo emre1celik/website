@@ -114,11 +114,21 @@ export const ControlPanelTabButton = styled.button`
 `;
 
 export const ControlPanelTabContent = styled.div`
-  width: 100%;
-  color: #ccc;
-  height: 500px; // or whatever fits your layout
+  height: 500px; // or whatever height you need
   overflow-y: auto;
-  scroll-behavior: smooth; // optional
+  scroll-behavior: smooth;
+
+  /* Hide default scrollbar in WebKit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  /* Hide scrollbar in Firefox */
+  scrollbar-width: none;
+
+  /* Hide scrollbar in IE/Edge */
+  -ms-overflow-style: none;
 `;
 
 export const ControlPanelFooter = styled.footer`
