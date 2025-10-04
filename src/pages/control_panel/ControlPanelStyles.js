@@ -116,6 +116,9 @@ export const ControlPanelTabButton = styled.button`
 export const ControlPanelTabContent = styled.div`
   width: 100%;
   color: #ccc;
+  height: 500px; // or whatever fits your layout
+  overflow-y: auto;
+  scroll-behavior: smooth; // optional
 `;
 
 export const ControlPanelFooter = styled.footer`
