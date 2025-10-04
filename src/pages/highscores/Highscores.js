@@ -39,7 +39,7 @@ import {
   ControlPanelTabButton,
   ControlPanelTabContent,
   ControlPanelTabs,
-} from "../controlPanel/ControlPanelStyles";
+} from "../control_panel/ControlPanelStyles";
 
 function Highscores({ user }) {
   const [selectedClass, setSelectedClass] = useState("all");

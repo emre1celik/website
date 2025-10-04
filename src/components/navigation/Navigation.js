@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faCalendarAlt,
   faDownload,
   faHome,
   faMedal,
@@ -53,6 +54,14 @@ function Navigation({ user }) {
               <FontAwesomeIcon icon={faMedal} />
             </NavigationIcon>
             <NavigationLabel>Highscores</NavigationLabel>
+          </NavigationItemLink>
+        </li>
+        <li>
+          <NavigationItemLink as={Link} to="/events">
+            <NavigationIcon className="small">
+              <FontAwesomeIcon icon={faCalendarAlt} />
+            </NavigationIcon>
+            <NavigationLabel>Events</NavigationLabel>
           </NavigationItemLink>
         </li>
         <li>
