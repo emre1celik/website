@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarAlt,
@@ -23,6 +23,8 @@ import {
 } from "./NavigationStyles";
 
 function Navigation({ user }) {
+  const location = useLocation();
+
   return (
     <NavigationWrapper>
       <NavigationLogo
@@ -44,7 +46,11 @@ function Navigation({ user }) {
 
       <NavigationLinks>
         <li>
-          <NavigationItemLink as={Link} to="/">
+          <NavigationItemLink
+            as={Link}
+            to="/"
+            $active={location.pathname === "/"}
+          >
             <NavigationIcon>
               <FontAwesomeIcon icon={faHome} />
             </NavigationIcon>
@@ -53,7 +59,11 @@ function Navigation({ user }) {
         </li>
 
         <li>
-          <NavigationItemLink as={Link} to="/downloads">
+          <NavigationItemLink
+            as={Link}
+            to="/downloads"
+            $active={location.pathname === "/downloads"}
+          >
             <NavigationIcon className="small">
               <FontAwesomeIcon icon={faDownload} />
             </NavigationIcon>
@@ -62,7 +72,11 @@ function Navigation({ user }) {
         </li>
 
         <li>
-          <NavigationItemLink as={Link} to="/highscores">
+          <NavigationItemLink
+            as={Link}
+            to="/highscores"
+            $active={location.pathname === "/highscores"}
+          >
             <NavigationIcon className="small">
               <FontAwesomeIcon icon={faMedal} />
             </NavigationIcon>
@@ -70,7 +84,11 @@ function Navigation({ user }) {
           </NavigationItemLink>
         </li>
         <li>
-          <NavigationItemLink as={Link} to="/events">
+          <NavigationItemLink
+            as={Link}
+            to="/events"
+            $active={location.pathname === "/events"}
+          >
             <NavigationIcon className="small">
               <FontAwesomeIcon icon={faCalendarAlt} />
             </NavigationIcon>
@@ -92,7 +110,11 @@ function Navigation({ user }) {
 
         {!user ? (
           <NavigationLoginLink>
-            <NavigationItemLink as={Link} to="/login">
+            <NavigationItemLink
+              as={Link}
+              to="/login"
+              $active={location.pathname === "/login"}
+            >
               <NavigationIcon>
                 <FontAwesomeIcon icon={faRightToBracket} />
               </NavigationIcon>

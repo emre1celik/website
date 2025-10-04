@@ -53,7 +53,7 @@ export const NavigationItemLink = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: ${(props) => (props.$active ? "#4caf50" : "white")};
   font-weight: bold;
   transition: color 0.3s;
 
