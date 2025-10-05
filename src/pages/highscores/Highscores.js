@@ -496,7 +496,6 @@ function Highscores({ user }) {
                             <th>Character</th>
                             <th>Class</th>
                             <th>Event</th>
-                            <th>Event Ground</th>
                             <th>Score</th>
                           </tr>
                         </thead>
@@ -554,7 +553,6 @@ function Highscores({ user }) {
                                   {eventMap[event.event_id] ||
                                     `Unknown (${event.event_id})`}
                                 </td>
-                                <td>{event.event_ground}</td>
                                 <td>{formatNumber(event.score)}</td>
                               </tr>
                             ))}
