@@ -331,10 +331,21 @@ function Highscores({ user }) {
               {activeTab === "players" && (
                 <>
                   {loading ? (
-                    <p>
-                      <FontAwesomeIcon icon={faSpinner} spin /> Loading top
-                      players...
-                    </p>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        minHeight: "150px",
+                      }}
+                    >
+                      <FontAwesomeIcon
+                        icon={faSpinner}
+                        spin
+                        style={{ marginRight: "8px" }}
+                      />
+                      Loading top players...
+                    </div>
                   ) : errorEvents ? (
                     <p style={{ color: "red" }}>{error}</p>
                   ) : (
@@ -470,10 +481,21 @@ function Highscores({ user }) {
               {activeTab === "events" && (
                 <>
                   {loadingEvents ? (
-                    <p>
-                      <FontAwesomeIcon icon={faSpinner} spin /> Loading top
-                      events...
-                    </p>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        minHeight: "150px",
+                      }}
+                    >
+                      <FontAwesomeIcon
+                        icon={faSpinner}
+                        spin
+                        style={{ marginRight: "8px" }}
+                      />
+                      Loading top events...
+                    </div>
                   ) : errorEvents ? (
                     <p style={{ color: "red" }}>{errorEvents}</p>
                   ) : (
@@ -566,10 +588,21 @@ function Highscores({ user }) {
               {activeTab === "guilds" && (
                 <>
                   {loadingGuilds ? (
-                    <p>
-                      <FontAwesomeIcon icon={faSpinner} spin /> Loading top
-                      guilds...
-                    </p>
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        minHeight: "150px",
+                      }}
+                    >
+                      <FontAwesomeIcon
+                        icon={faSpinner}
+                        spin
+                        style={{ marginRight: "8px" }}
+                      />
+                      Loading top guilds...
+                    </div>
                   ) : errorGuilds ? (
                     <p style={{ color: "red" }}>{errorGuilds}</p>
                   ) : (
