@@ -121,6 +121,7 @@ export const HighscoresFilter = styled.div`
   display: flex;
   gap: 1rem;
   align-items: center;
+  justify-content: center;
 
   label {
     font-weight: bold;

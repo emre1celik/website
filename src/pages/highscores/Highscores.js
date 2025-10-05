@@ -42,7 +42,7 @@ import {
 } from "../control_panel/ControlPanelStyles";
 
 function Highscores({ user }) {
-  const [selectedClass, setSelectedClass] = useState("all");
+  const [selectedClass, setSelectedClass] = useState("1");
   const [players, setPlayers] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState("all");
   const [loading, setLoading] = useState(false);
@@ -484,7 +484,6 @@ function Highscores({ user }) {
                           value={selectedEvent}
                           onChange={(e) => setSelectedEvent(e.target.value)}
                         >
-                          <option value="all">All</option>
                           <option value="0">Blood Castle</option>
                           <option value="1">Devil Square</option>
                         </select>
@@ -505,7 +504,6 @@ function Highscores({ user }) {
                           {events
                             .filter(
                               (event) =>
-                                selectedEvent === "all" ||
                                 String(event.event_id) === selectedEvent
                             )
                             .map((event, index) => (
