@@ -252,9 +252,7 @@ function Events({ user }) {
                       </td>
                       <td>
                         {isNow ? (
-                          <GlowingName rank={eventRanks[eventName] ?? 1}>
-                            Now!
-                          </GlowingName>
+                          <GlowingName rank={1}>Now!</GlowingName>
                         ) : (
                           formatCountdown(nextTime)
                         )}
