@@ -42,9 +42,9 @@ import {
 } from "../control_panel/ControlPanelStyles";
 
 function Highscores({ user }) {
-  const [selectedClass, setSelectedClass] = useState("1");
+  const [selectedClass, setSelectedClass] = useState("all");
   const [players, setPlayers] = useState([]);
-  const [selectedEvent, setSelectedEvent] = useState("all");
+  const [selectedEvent, setSelectedEvent] = useState("1");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState("players"); // default tab
