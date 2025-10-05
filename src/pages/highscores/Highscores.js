@@ -44,6 +44,7 @@ import {
 function Highscores({ user }) {
   const [selectedClass, setSelectedClass] = useState("all");
   const [players, setPlayers] = useState([]);
+  const [selectedEvent, setSelectedEvent] = useState("all");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [activeTab, setActiveTab] = useState("players"); // default tab
@@ -476,69 +477,91 @@ function Highscores({ user }) {
                   ) : errorEvents ? (
                     <p style={{ color: "red" }}>{errorEvents}</p>
                   ) : (
-                    <HighscoresTable>
-                      <thead>
-                        <tr>
-                          <th>Rank</th>
-                          <th>Character</th>
-                          <th>Class</th>
-                          <th>Event</th>
-                          <th>Event Ground</th>
-                          <th>Score</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {events.map((event, index) => (
-                          <tr key={index}>
-                            <td>
-                              {index + 1}{" "}
-                              {index === 0 && (
-                                <RankIcon style={{ color: "gold" }}>
-                                  <FontAwesomeIcon icon={faCrown} />
-                                </RankIcon>
-                              )}
-                              {index === 1 && (
-                                <RankIcon style={{ color: "silver" }}>
-                                  <FontAwesomeIcon icon={faCrown} />
-                                </RankIcon>
-                              )}
-                              {index === 2 && (
-                                <RankIcon style={{ color: "#cd7f32" }}>
-                                  {" "}
-                                  {/* bronze */}
-                                  <FontAwesomeIcon icon={faCrown} />
-                                </RankIcon>
-                              )}
-                            </td>
+                    <>
+                      <HighscoresFilter>
+                        <label>Filter by event:</label>
+                        <select
+                          value={selectedEvent}
+                          onChange={(e) => setSelectedEvent(e.target.value)}
+                        >
+                          <option value="all">All</option>
+                          <option value="0">Blood Castle</option>
+                          <option value="1">Devil Square</option>
+                        </select>
+                      </HighscoresFilter>
 
-                            <td>
-                              <GlowingName rank={index}>
-                                {event.char_name}
-                              </GlowingName>
-                            </td>
-                            <td>
-                              {(() => {
-                                const { icon, key } = getClassInfo(event.race);
-                                return (
-                                  <img
-                                    src={icon}
-                                    alt={key}
-                                    title={classNamesMap[key] || "Unknown"}
-                                    style={{ width: "32px", height: "32px" }}
-                                  />
-                                );
-                              })()}
-                            </td>
-                            <td>
-                              {eventMap[event.event_id] ||
-                                `Unknown (${event.event_id})`}
-                            </td>
-                            <td>{event.event_ground}</td>
-                            <td>{formatNumber(event.score)}</td>
+                      <HighscoresTable>
+                        <thead>
+                          <tr>
+                            <th>Rank</th>
+                            <th>Character</th>
+                            <th>Class</th>
+                            <th>Event</th>
+                            <th>Event Ground</th>
+                            <th>Score</th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </HighscoresTable>
+                        </thead>
+                        <tbody>
+                          {events
+                            .filter(
+                              (event) =>
+                                selectedEvent === "all" ||
+                                String(event.event_id) === selectedEvent
+                            )
+                            .map((event, index) => (
+                              <tr key={index}>
+                                <td>
+                                  {index + 1}
+                                  {index === 0 && (
+                                    <RankIcon style={{ color: "gold" }}>
+                                      <FontAwesomeIcon icon={faCrown} />
+                                    </RankIcon>
+                                  )}
+                                  {index === 1 && (
+                                    <RankIcon style={{ color: "silver" }}>
+                                      <FontAwesomeIcon icon={faCrown} />
+                                    </RankIcon>
+                                  )}
+                                  {index === 2 && (
+                                    <RankIcon style={{ color: "#cd7f32" }}>
+                                      <FontAwesomeIcon icon={faCrown} />
+                                    </RankIcon>
+                                  )}
+                                </td>
+                                <td>
+                                  <GlowingName rank={index}>
+                                    {event.char_name}
+                                  </GlowingName>
+                                </td>
+                                <td>
+                                  {(() => {
+                                    const { icon, key } = getClassInfo(
+                                      event.race
+                                    );
+                                    return (
+                                      <img
+                                        src={icon}
+                                        alt={key}
+                                        title={classNamesMap[key] || "Unknown"}
+                                        style={{
+                                          width: "32px",
+                                          height: "32px",
+                                        }}
+                                      />
+                                    );
+                                  })()}
+                                </td>
+                                <td>
+                                  {eventMap[event.event_id] ||
+                                    `Unknown (${event.event_id})`}
+                                </td>
+                                <td>{event.event_ground}</td>
+                                <td>{formatNumber(event.score)}</td>
+                              </tr>
+                            ))}
+                        </tbody>
+                      </HighscoresTable>
+                    </>
                   )}
                 </>
               )}
