@@ -88,10 +88,28 @@ function Downloads({ user }) {
             </DownloadsNote>
 
             <DownloadsNote>
-              💡 You can edit the file <strong>LauncherOption.if</strong> inside
-              the client files to change the resolution. Set{" "}
-              <strong>DevModeIndex=</strong> to anywhere between 0-9 for
-              resolution changes.
+              <strong>Resolution change:</strong> You can edit the file
+              <strong>LauncherOption.if</strong> inside the client files to
+              change the resolution. Set <strong>DevModeIndex</strong>= to
+              anywhere between 0-9 for resolution changes.
+              <br />
+              <br />
+              0: 800x600 (4:3)
+              <br />
+              1: 1024x768 (4:3)
+              <br />
+              2: 1152x900 (4:3)
+              <br />
+              3: 1280x720 (16:9)
+              <br />
+              4: 1280x800 (16:9)
+              <br />
+              5: 1280x920 (4:3)
+              <br />
+              6: 1440x900 (16:10)
+              <br />
+              <br />
+              WindowMode:1 On, or 0 Off
             </DownloadsNote>
           </DownloadsBox>
         </DownloadsHero>

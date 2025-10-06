@@ -37,6 +37,16 @@ export const DownloadsBox = styled.div`
   max-height: 75vh;
   overflow-y: auto;
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
 
   h2 {
     margin-bottom: 2rem;
