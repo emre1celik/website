@@ -1,6 +1,6 @@
 // eslint-disable-next-line
 export default {
-  olPanel: {
+  controlPanel: {
     loading: "Ielādē...",
     notLoad: "Nevarēja ielādēt profilu.",
     hello: "Sveiki, {user}!",
