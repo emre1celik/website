@@ -392,7 +392,7 @@ function Highscores({ user }) {
                             <th>Rank</th>
                             <th>Name</th>
                             <th>Class</th>
-                            <th>Resets</th>
+                            <th>(Grand) Resets</th>
                             <th>Level</th>
                             <th className="hideOnSmall">Strength</th>
                             <th className="hideOnSmall">Agility</th>
@@ -452,7 +452,10 @@ function Highscores({ user }) {
                                 })()}
                               </td>
 
-                              <td>{formatNumber(player.reset)}</td>
+                              <td>
+                                {formatNumber(player.grand_reset)}{" "}
+                                {formatNumber(player.reset)}
+                              </td>
                               <td>{formatNumber(player.level)}</td>
                               <td className="hideOnSmall">
                                 {formatNumber(player.strength)}
