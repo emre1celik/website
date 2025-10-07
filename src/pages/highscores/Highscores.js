@@ -255,6 +255,7 @@ function Highscores({ user }) {
 
     fetchEvents();
     fetchGuilds();
+    // eslint-disable-next-line
   }, []);
 
   useEffect(() => {

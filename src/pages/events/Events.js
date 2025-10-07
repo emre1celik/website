@@ -135,17 +135,6 @@ const eventSchedule = {
   "Illusion Temple": ["22:30"],
 };
 
-// Glowing name rank (optional visual styling)
-const eventRanks = {
-  "Blood Castle": 0,
-  "Devil Square": 1,
-  "Chaos Castle": 2,
-  "White Wizard": 3,
-  "Red Dragon": 4,
-  "Golden Invasion": 5,
-  "Muun Invasion": 6,
-};
-
 const allEvents = { ...eventSchedule, ...invasionSchedule };
 
 const NOW_WINDOW_MS = 5 * 60 * 1000; // 5 minutes
