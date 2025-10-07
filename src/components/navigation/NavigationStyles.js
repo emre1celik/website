@@ -98,12 +98,12 @@ export const NavigationLabel = styled.span`
 
 export const CollapsedMenu = styled.ul`
   position: absolute;
-  top: 70px; /* adjust based on nav height */
+  top: 70px;
   right: 3rem;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);
   list-style: none;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   display: flex;
   flex-direction: column;

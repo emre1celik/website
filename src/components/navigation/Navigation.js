@@ -163,6 +163,7 @@ function Navigation({ user }) {
               onClick={() => setMenuOpen(false)}
               $active={location.pathname === "/"}
             >
+              <FontAwesomeIcon icon={faHome} style={{ marginRight: "10px" }} />{" "}
               {translate("navigation.home")}
             </NavigationItemLink>
           </li>
@@ -173,6 +174,10 @@ function Navigation({ user }) {
               onClick={() => setMenuOpen(false)}
               $active={location.pathname === "/downloads"}
             >
+              <FontAwesomeIcon
+                icon={faDownload}
+                style={{ marginRight: "10px" }}
+              />
               {translate("navigation.download")}
             </NavigationItemLink>
           </li>
@@ -183,6 +188,7 @@ function Navigation({ user }) {
               onClick={() => setMenuOpen(false)}
               $active={location.pathname === "/highscores"}
             >
+              <FontAwesomeIcon icon={faMedal} style={{ marginRight: "10px" }} />
               {translate("navigation.highscores")}
             </NavigationItemLink>
           </li>
@@ -193,6 +199,10 @@ function Navigation({ user }) {
               onClick={() => setMenuOpen(false)}
               $active={location.pathname === "/events"}
             >
+              <FontAwesomeIcon
+                icon={faCalendarAlt}
+                style={{ marginRight: "10px" }}
+              />
               {translate("navigation.events")}
             </NavigationItemLink>
           </li>
@@ -202,6 +212,7 @@ function Navigation({ user }) {
               target="_blank"
               rel="noopener noreferrer"
             >
+              <FontAwesomeIcon icon={faUsers} style={{ marginRight: "10px" }} />
               {translate("navigation.community")}
             </NavigationItemLink>
           </li>
@@ -213,6 +224,10 @@ function Navigation({ user }) {
                 onClick={() => setMenuOpen(false)}
                 $active={location.pathname === "/login"}
               >
+                <FontAwesomeIcon
+                  icon={faRightToBracket}
+                  style={{ marginRight: "10px" }}
+                />
                 {translate("navigation.login")}
               </NavigationItemLink>
             </li>
@@ -223,6 +238,7 @@ function Navigation({ user }) {
                 to="/control-panel"
                 onClick={() => setMenuOpen(false)}
               >
+                <FontAwesomeIcon icon={faUser} />
                 {user}
               </NavigationItemLink>
             </li>
