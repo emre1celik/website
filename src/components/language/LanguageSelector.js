@@ -58,7 +58,7 @@ function LanguageSelector() {
           border: "2px solid #232323ff",
           borderRadius: "8px",
           padding: "0.3rem 0.6rem",
-          backgroundColor: "rgba(0,0,0,0.2)",
+          backgroundColor: "rgba(0,0,0,0.8)",
           cursor: "pointer",
         }}
       >
@@ -76,14 +76,15 @@ function LanguageSelector() {
         <div
           style={{
             position: "absolute",
-            top: "100%",
+            top: "150%",
             left: 0,
             width: "100%",
-            backgroundColor: "#232323ff",
-            border: "1px solid #767676ff",
+            backgroundColor: "rgba(0, 0, 0, 0.8)",
+            backdropFilter: "blur(10px)",
+            border: "2px solid #232323ff",
             borderRadius: "8px",
             marginTop: "0.3rem",
-            zIndex: 10,
+            zIndex: 99999,
           }}
         >
           {languages.map((lang) => (

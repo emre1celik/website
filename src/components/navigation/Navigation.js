@@ -1,6 +1,8 @@
+import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faBars,
   faCalendarAlt,
   faDownload,
   faHome,
@@ -9,7 +11,10 @@ import {
   faUser,
   faUsers,
 } from "@fortawesome/free-solid-svg-icons";
+import LanguageSelector from "../language/LanguageSelector";
+import { useTranslation } from "../../context/TranslationContext";
 import {
+  NavigationWrapper,
   NavigationLogo,
   NavigationLinks,
   NavigationItemLink,
@@ -19,34 +24,34 @@ import {
   NavigationUserName,
   NavigationLabel,
   NavigationLoginLink,
-  NavigationWrapper,
+  HamburgerButton,
+  CollapsedMenu,
 } from "./NavigationStyles";
-import LanguageSelector from "../language/LanguageSelector";
-import { useTranslation } from "../../context/TranslationContext";
 
 function Navigation({ user }) {
   const location = useLocation();
   const { translate } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef();
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   return (
     <NavigationWrapper>
-      <NavigationLogo
-        as={Link}
-        to="/"
-        style={{ display: "flex", alignItems: "center" }}
-      >
-        {/* Logo to favicon */}
-        <img
-          src="/favicon.png"
-          alt="MyraMU Logo"
-          style={{
-            width: "30px",
-            marginRight: "10px",
-          }}
-        />
+      <NavigationLogo as={Link} to="/">
         <div>MyraMU</div>
       </NavigationLogo>
 
+      {/* Regular navigation links */}
       <NavigationLinks>
         <li>
           <NavigationItemLink
@@ -60,14 +65,13 @@ function Navigation({ user }) {
             <NavigationLabel>{translate("navigation.home")}</NavigationLabel>
           </NavigationItemLink>
         </li>
-
         <li>
           <NavigationItemLink
             as={Link}
             to="/downloads"
             $active={location.pathname === "/downloads"}
           >
-            <NavigationIcon className="small">
+            <NavigationIcon>
               <FontAwesomeIcon icon={faDownload} />
             </NavigationIcon>
             <NavigationLabel>
@@ -75,14 +79,13 @@ function Navigation({ user }) {
             </NavigationLabel>
           </NavigationItemLink>
         </li>
-
         <li>
           <NavigationItemLink
             as={Link}
             to="/highscores"
             $active={location.pathname === "/highscores"}
           >
-            <NavigationIcon className="small">
+            <NavigationIcon>
               <FontAwesomeIcon icon={faMedal} />
             </NavigationIcon>
             <NavigationLabel>
@@ -96,7 +99,7 @@ function Navigation({ user }) {
             to="/events"
             $active={location.pathname === "/events"}
           >
-            <NavigationIcon className="small">
+            <NavigationIcon>
               <FontAwesomeIcon icon={faCalendarAlt} />
             </NavigationIcon>
             <NavigationLabel>{translate("navigation.events")}</NavigationLabel>
@@ -140,8 +143,95 @@ function Navigation({ user }) {
             </NavigationItemLink>
           </NavigationUserInfo>
         )}
-        <LanguageSelector />
+        <li>
+          <LanguageSelector />
+        </li>
+
+        {/* Hamburger icon for small screens */}
+        <HamburgerButton onClick={() => setMenuOpen((prev) => !prev)}>
+          <FontAwesomeIcon icon={faBars} size="lg" />
+        </HamburgerButton>
       </NavigationLinks>
+
+      {/* Collapsed menu for mobile */}
+      {menuOpen && (
+        <CollapsedMenu ref={menuRef}>
+          <li>
+            <NavigationItemLink
+              as={Link}
+              to="/"
+              onClick={() => setMenuOpen(false)}
+              $active={location.pathname === "/"}
+            >
+              {translate("navigation.home")}
+            </NavigationItemLink>
+          </li>
+          <li>
+            <NavigationItemLink
+              as={Link}
+              to="/downloads"
+              onClick={() => setMenuOpen(false)}
+              $active={location.pathname === "/downloads"}
+            >
+              {translate("navigation.download")}
+            </NavigationItemLink>
+          </li>
+          <li>
+            <NavigationItemLink
+              as={Link}
+              to="/highscores"
+              onClick={() => setMenuOpen(false)}
+              $active={location.pathname === "/highscores"}
+            >
+              {translate("navigation.highscores")}
+            </NavigationItemLink>
+          </li>
+          <li>
+            <NavigationItemLink
+              as={Link}
+              to="/events"
+              onClick={() => setMenuOpen(false)}
+              $active={location.pathname === "/events"}
+            >
+              {translate("navigation.events")}
+            </NavigationItemLink>
+          </li>
+          <li>
+            <NavigationItemLink
+              href="https://discord.gg/EceQbCVgSy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {translate("navigation.community")}
+            </NavigationItemLink>
+          </li>
+          {!user ? (
+            <li>
+              <NavigationItemLink
+                as={Link}
+                to="/login"
+                onClick={() => setMenuOpen(false)}
+                $active={location.pathname === "/login"}
+              >
+                {translate("navigation.login")}
+              </NavigationItemLink>
+            </li>
+          ) : (
+            <li>
+              <NavigationItemLink
+                as={Link}
+                to="/control-panel"
+                onClick={() => setMenuOpen(false)}
+              >
+                {user}
+              </NavigationItemLink>
+            </li>
+          )}
+          <li>
+            <LanguageSelector />
+          </li>
+        </CollapsedMenu>
+      )}
     </NavigationWrapper>
   );
 }

@@ -6,6 +6,8 @@ export const NavigationWrapper = styled.nav`
   align-items: center;
   padding: 1rem 3rem;
   background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  z-index: 999;
   color: white;
   user-select: none;
 `;
@@ -15,6 +17,17 @@ export const NavigationLogo = styled.a`
   font-weight: bold;
   text-decoration: none;
   color: white;
+`;
+export const HamburgerButton = styled.button`
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 `;
 
 export const NavigationLoginLink = styled.li`
@@ -37,14 +50,9 @@ export const NavigationLinks = styled.ul`
   padding: 0;
   align-items: center;
 
-  @media (max-width: 630px) {
+  @media (max-width: 800px) {
     li {
       display: none;
-    }
-
-    ${NavigationLoginLink},
-    ${NavigationUserInfo} {
-      display: flex;
     }
   }
 `;
@@ -83,7 +91,34 @@ export const NavigationUserName = styled.span`
 `;
 
 export const NavigationLabel = styled.span`
-  @media (max-width: 970px) {
+  @media (max-width: 1200px) {
     display: none;
+  }
+`;
+
+export const CollapsedMenu = styled.ul`
+  position: absolute;
+  top: 70px; /* adjust based on nav height */
+  right: 3rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  list-style: none;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  ${NavigationItemLink} {
+    font-weight: bold;
+    &:hover {
+      color: #4caf50;
+    }
   }
 `;
