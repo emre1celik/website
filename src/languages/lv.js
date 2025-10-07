@@ -1,8 +1,14 @@
 // eslint-disable-next-line
 export default {
-  controlPanel: {
-    hello: "Sveiks, {user}!",
-    tabs: { profile: "Profils", settings: "Iestatījumi", stats: "Varoņi" },
+  olPanel: {
+    loading: "Ielādē...",
+    notLoad: "Nevarēja ielādēt profilu.",
+    hello: "Sveiki, {user}!",
+    tabs: {
+      profile: "Profils",
+      settings: "Iestatījumi",
+      stats: "Rakstzīmes",
+    },
     profile: {
       accountInformation: "Konts informācija",
       email: "E-pasts",
@@ -17,24 +23,10 @@ export default {
       newPassword: "Jauna parole",
       confirmPassword: "Apstiprināt paroli",
       updatePassword: "Atjaunināt paroli",
-      updating: "Atjaunina...",
+      updating: "Atjaunināšana...",
+      updated: "Atjaunināts",
       passwordMismatch: "❌ Paroles nesakrīt!",
       serverError: "❌ Servera kļūda: {error}",
-    },
-    stats: {
-      characterStatistics: "Varoņu statistika",
-      loadingCharacters: "Ielādē varoņus...",
-      noCharacters: "Nav atrasti varoņi.",
-      name: "Vārds",
-      level: "Līmenis",
-      resets: "Atjaunošanas",
-      race: "Rase",
-      actions: {
-        unstuck: "Atbrīvot",
-        evolve: "Attīstīt",
-        grandReset: "Lielā Atiestatīšana",
-        processing: "Apstrādā...",
-      },
     },
   },
   downloads: {

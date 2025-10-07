@@ -1,11 +1,17 @@
 // eslint-disable-next-line
 export default {
   controlPanel: {
-    hello: "Cześć, {user}!",
-    tabs: { profile: "Profil", settings: "Ustawienia", stats: "Postacie" },
+    loading: "Ładowanie...",
+    notLoad: "Nie można załadować profilu.",
+    hello: "Witaj, {user}!",
+    tabs: {
+      profile: "Profil",
+      settings: "Ustawienia",
+      stats: "Postacie",
+    },
     profile: {
       accountInformation: "Informacje o koncie",
-      email: "Email",
+      email: "E-mail",
       accountName: "Nazwa konta",
       wcoin: "WCoin",
       goblinPoints: "Punkty Goblina",
@@ -17,24 +23,10 @@ export default {
       newPassword: "Nowe hasło",
       confirmPassword: "Potwierdź hasło",
       updatePassword: "Aktualizuj hasło",
-      updating: "Aktualizowanie...",
-      passwordMismatch: "❌ Hasła nie są zgodne!",
+      updating: "Aktualizacja...",
+      updated: "Zaktualizowano",
+      passwordMismatch: "❌ Hasła nie pasują!",
       serverError: "❌ Błąd serwera: {error}",
-    },
-    stats: {
-      characterStatistics: "Statystyki postaci",
-      loadingCharacters: "Ładowanie postaci...",
-      noCharacters: "Nie znaleziono postaci.",
-      name: "Nazwa",
-      level: "Poziom",
-      resets: "Reset",
-      race: "Rasa",
-      actions: {
-        unstuck: "Odblokuj",
-        evolve: "Ewolucja",
-        grandReset: "Wielki reset",
-        processing: "Przetwarzanie...",
-      },
     },
   },
   downloads: {

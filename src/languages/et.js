@@ -1,12 +1,18 @@
 // eslint-disable-next-line
 export default {
   controlPanel: {
+    loading: "Laadimine...",
+    notLoad: "Profiili ei saanud laadida.",
     hello: "Tere, {user}!",
-    tabs: { profile: "Profiil", settings: "Seaded", stats: "Tegelased" },
+    tabs: {
+      profile: "Profiil",
+      settings: "Seaded",
+      stats: "Tegelased",
+    },
     profile: {
-      accountInformation: "Konto info",
+      accountInformation: "Kontoandmed",
       email: "E-post",
-      accountName: "Konto nimi",
+      accountName: "Kasutajanimi",
       wcoin: "WCoin",
       goblinPoints: "Goblin punktid",
       lastLogin: "Viimane sisselogimine",
@@ -18,23 +24,9 @@ export default {
       confirmPassword: "Kinnita parool",
       updatePassword: "Uuenda parool",
       updating: "Uuendamine...",
-      passwordMismatch: "❌ Paroolid ei kattu!",
+      updated: "Uuendatud",
+      passwordMismatch: "❌ Paroolid ei ühti!",
       serverError: "❌ Serveri viga: {error}",
-    },
-    stats: {
-      characterStatistics: "Tegelase statistika",
-      loadingCharacters: "Laaditakse tegelasi...",
-      noCharacters: "Tegelasi ei leitud.",
-      name: "Nimi",
-      level: "Tase",
-      resets: "Taaskäivitused",
-      race: "Rass",
-      actions: {
-        unstuck: "Vabasta",
-        evolve: "Arene",
-        grandReset: "Suur taaskäivitamine",
-        processing: "Töötlemine...",
-      },
     },
   },
   downloads: {

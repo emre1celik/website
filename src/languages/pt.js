@@ -1,43 +1,33 @@
 // eslint-disable-next-line
 export default {
-  controlPanel: {
-    hello: "Olá, {user}!",
-    tabs: {
-      profile: "Perfil",
-      settings: "Configurações",
-      stats: "Personagens",
-    },
-    profile: {
-      accountInformation: "Informações da Conta",
-      email: "Email",
-      accountName: "Nome da Conta",
-      wcoin: "WCoin",
-      goblinPoints: "Pontos de Goblin",
-      lastLogin: "Último Login",
-      buy: "Comprar",
-    },
-    settings: {
-      changePassword: "Alterar Senha",
-      newPassword: "Nova Senha",
-      confirmPassword: "Confirmar Senha",
-      updatePassword: "Atualizar Senha",
-      updating: "Atualizando...",
-      passwordMismatch: "❌ Senhas não coincidem!",
-      serverError: "❌ Erro do servidor: {error}",
-    },
-    stats: {
-      characterStatistics: "Estatísticas dos Personagens",
-      loadingCharacters: "Carregando personagens...",
-      noCharacters: "Nenhum personagem encontrado.",
-      name: "Nome",
-      level: "Nível",
-      resets: "Resets",
-      race: "Raça",
-      actions: {
-        unstuck: "Desbloquear",
-        evolve: "Evoluir",
-        grandReset: "Grande Reset",
-        processing: "Processando...",
+  pt: {
+    controlPanel: {
+      loading: "Carregando...",
+      notLoad: "Não foi possível carregar o perfil.",
+      hello: "Olá, {user}!",
+      tabs: {
+        profile: "Perfil",
+        settings: "Configurações",
+        stats: "Personagens",
+      },
+      profile: {
+        accountInformation: "Informações da conta",
+        email: "Email",
+        accountName: "Nome da conta",
+        wcoin: "WCoin",
+        goblinPoints: "Pontos de Goblin",
+        lastLogin: "Último login",
+        buy: "Comprar",
+      },
+      settings: {
+        changePassword: "Alterar senha",
+        newPassword: "Nova senha",
+        confirmPassword: "Confirmar senha",
+        updatePassword: "Atualizar senha",
+        updating: "Atualizando...",
+        updated: "Atualizado",
+        passwordMismatch: "❌ Senhas não coincidem!",
+        serverError: "❌ Erro do servidor: {error}",
       },
     },
   },

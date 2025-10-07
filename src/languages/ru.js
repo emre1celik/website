@@ -1,10 +1,16 @@
 // eslint-disable-next-line
 export default {
   controlPanel: {
+    loading: "Загрузка...",
+    notLoad: "Не удалось загрузить профиль.",
     hello: "Привет, {user}!",
-    tabs: { profile: "Профиль", settings: "Настройки", stats: "Персонажи" },
+    tabs: {
+      profile: "Профиль",
+      settings: "Настройки",
+      stats: "Персонажи",
+    },
     profile: {
-      accountInformation: "Информация о аккаунте",
+      accountInformation: "Информация аккаунта",
       email: "Электронная почта",
       accountName: "Имя аккаунта",
       wcoin: "WCoin",
@@ -15,26 +21,12 @@ export default {
     settings: {
       changePassword: "Сменить пароль",
       newPassword: "Новый пароль",
-      confirmPassword: "Подтвердить пароль",
+      confirmPassword: "Подтвердите пароль",
       updatePassword: "Обновить пароль",
       updating: "Обновление...",
+      updated: "Обновлено",
       passwordMismatch: "❌ Пароли не совпадают!",
       serverError: "❌ Ошибка сервера: {error}",
-    },
-    stats: {
-      characterStatistics: "Статистика персонажей",
-      loadingCharacters: "Загрузка персонажей...",
-      noCharacters: "Персонажи не найдены.",
-      name: "Имя",
-      level: "Уровень",
-      resets: "Сбросы",
-      race: "Класс",
-      actions: {
-        unstuck: "Разблокировать",
-        evolve: "Эволюция",
-        grandReset: "Гранд Сброс",
-        processing: "Обработка...",
-      },
     },
   },
   downloads: {
