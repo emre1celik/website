@@ -66,7 +66,7 @@ export const GlowingName = styled.span`
       animation: ${bronzeGlow} 2s ease-in-out infinite alternate;
     `}
   ${({ rank }) =>
-    rank === 3 &&
+    (rank === 3 || (rank >= 4 && rank <= 25)) &&
     css`
       color: #4caf50;
       animation: ${greenGlow} 2s ease-in-out infinite alternate;
