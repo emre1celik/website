@@ -98,7 +98,7 @@ export const NavigationLabel = styled.span`
 
 export const CollapsedMenu = styled.ul`
   position: absolute;
-  top: 70px;
+  top: 60px;
   right: 3rem;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(10px);

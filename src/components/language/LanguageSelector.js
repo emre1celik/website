@@ -76,14 +76,13 @@ function LanguageSelector() {
         <div
           style={{
             position: "absolute",
-            top: "150%",
+            top: "100%",
             left: 0,
             width: "100%",
             backgroundColor: "rgba(0, 0, 0, 0.8)",
             backdropFilter: "blur(10px)",
             border: "2px solid #232323ff",
             borderRadius: "8px",
-            marginTop: "0.3rem",
             zIndex: 99999,
           }}
         >
