@@ -40,6 +40,12 @@ const bronzeGlow = keyframes`
   100% { text-shadow: 0 0 5px #cd7f32, 0 0 10px #cd7f32; }
 `;
 
+const greenGlow = keyframes`
+  0% { text-shadow: 0 0 5px #4caf50, 0 0 10px #4caf50; }
+  50% { text-shadow: 0 0 20px #388e3c, 0 0 30px #4caf50; }
+  100% { text-shadow: 0 0 5px #4caf50, 0 0 10px #4caf50; }
+`;
+
 export const GlowingName = styled.span`
   ${({ rank }) =>
     rank === 0 &&
@@ -58,6 +64,12 @@ export const GlowingName = styled.span`
     css`
       color: #cd7f32;
       animation: ${bronzeGlow} 2s ease-in-out infinite alternate;
+    `}
+  ${({ rank }) =>
+    rank === 3 &&
+    css`
+      color: #4caf50;
+      animation: ${greenGlow} 2s ease-in-out infinite alternate;
     `}
 `;
 
