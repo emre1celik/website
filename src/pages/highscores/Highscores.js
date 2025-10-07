@@ -453,9 +453,13 @@ function Highscores({ user }) {
                               </td>
 
                               <td>
-                                ({formatNumber(player.grand_reset)})
-                                {formatNumber(player.reset)}
+                                {player.grand_reset > 0
+                                  ? `(${formatNumber(
+                                      player.grand_reset
+                                    )}) ${formatNumber(player.reset)}`
+                                  : `${formatNumber(player.reset)}`}
                               </td>
+
                               <td>{formatNumber(player.level)}</td>
                               <td className="hideOnSmall">
                                 {formatNumber(player.strength)}
