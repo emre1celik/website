@@ -28,6 +28,21 @@ export default {
       passwordMismatch: "❌ Hasła nie pasują!",
       serverError: "❌ Błąd serwera: {error}",
     },
+    stats: {
+      characterStatistics: "Statystyki postaci",
+      loadingCharacters: "Ładowanie postaci...",
+      noCharacters: "Nie znaleziono postaci.",
+      name: "Nazwa",
+      level: "Poziom",
+      resets: "Resetowania",
+      race: "Rasa",
+      actions: {
+        unstuck: "Odblokuj",
+        evolve: "Ewolucja",
+        grandReset: "Wielki reset",
+        processing: "Przetwarzanie...",
+      },
+    },
   },
   downloads: {
     title: "Mirrory pobierania",

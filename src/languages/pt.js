@@ -29,6 +29,21 @@ export default {
         passwordMismatch: "❌ Senhas não coincidem!",
         serverError: "❌ Erro do servidor: {error}",
       },
+      stats: {
+        characterStatistics: "Estatísticas do personagem",
+        loadingCharacters: "Carregando personagens...",
+        noCharacters: "Nenhum personagem encontrado.",
+        name: "Nome",
+        level: "Nível",
+        resets: "Resets",
+        race: "Raça",
+        actions: {
+          unstuck: "Destravar",
+          evolve: "Evoluir",
+          grandReset: "Grande reset",
+          processing: "Processando...",
+        },
+      },
     },
   },
   downloads: {

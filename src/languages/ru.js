@@ -28,6 +28,21 @@ export default {
       passwordMismatch: "❌ Пароли не совпадают!",
       serverError: "❌ Ошибка сервера: {error}",
     },
+    stats: {
+      characterStatistics: "Статистика персонажей",
+      loadingCharacters: "Загрузка персонажей...",
+      noCharacters: "Персонажи не найдены.",
+      name: "Имя",
+      level: "Уровень",
+      resets: "Сбросы",
+      race: "Раса",
+      actions: {
+        unstuck: "Разблокировать",
+        evolve: "Эволюция",
+        grandReset: "Гранд-сброс",
+        processing: "Обработка...",
+      },
+    },
   },
   downloads: {
     title: "Зеркала загрузки",

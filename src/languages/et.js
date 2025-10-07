@@ -28,6 +28,21 @@ export default {
       passwordMismatch: "❌ Paroolid ei ühti!",
       serverError: "❌ Serveri viga: {error}",
     },
+    stats: {
+      characterStatistics: "Tegelase statistika",
+      loadingCharacters: "Tegelasi laadimas...",
+      noCharacters: "Tegelasi ei leitud.",
+      name: "Nimi",
+      level: "Tase",
+      resets: "Lähtestamised",
+      race: "Rass",
+      actions: {
+        unstuck: "Vabasta",
+        evolve: "Arenda",
+        grandReset: "Suur lähtestamine",
+        processing: "Töötlemine...",
+      },
+    },
   },
   downloads: {
     title: "Allalaadimise peeglid",

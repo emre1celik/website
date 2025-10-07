@@ -28,6 +28,21 @@ export default {
       passwordMismatch: "❌ Şifreler eşleşmiyor!",
       serverError: "❌ Sunucu hatası: {error}",
     },
+    stats: {
+      characterStatistics: "Karakter İstatistikleri",
+      loadingCharacters: "Karakterler yükleniyor...",
+      noCharacters: "Karakter bulunamadı.",
+      name: "İsim",
+      level: "Seviye",
+      resets: "Sıfırlamalar",
+      race: "Irk",
+      actions: {
+        unstuck: "Kurtar",
+        evolve: "Evrimle",
+        grandReset: "Büyük Sıfırlama",
+        processing: "İşleniyor...",
+      },
+    },
   },
   downloads: {
     title: "İndirme Yansımaları",

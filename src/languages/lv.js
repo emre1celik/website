@@ -28,6 +28,21 @@ export default {
       passwordMismatch: "❌ Paroles nesakrīt!",
       serverError: "❌ Servera kļūda: {error}",
     },
+    stats: {
+      characterStatistics: "Rakstzīmju statistika",
+      loadingCharacters: "Ielādē rakstzīmes...",
+      noCharacters: "Rakstzīmes nav atrastas.",
+      name: "Vārds",
+      level: "Līmenis",
+      resets: "Atjaunojumi",
+      race: "Rase",
+      actions: {
+        unstuck: "Atbrīvot",
+        evolve: "Attīstīt",
+        grandReset: "Lielais atiestatījums",
+        processing: "Apstrādā...",
+      },
+    },
   },
   downloads: {
     title: "Lejupielādes spoguļi",

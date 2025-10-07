@@ -28,6 +28,21 @@ export default {
       passwordMismatch: "❌ ¡Las contraseñas no coinciden!",
       serverError: "❌ Error del servidor: {error}",
     },
+    stats: {
+      characterStatistics: "Estadísticas del personaje",
+      loadingCharacters: "Cargando personajes...",
+      noCharacters: "No se encontraron personajes.",
+      name: "Nombre",
+      level: "Nivel",
+      resets: "Reinicios",
+      race: "Raza",
+      actions: {
+        unstuck: "Desatascar",
+        evolve: "Evolucionar",
+        grandReset: "Gran reinicio",
+        processing: "Procesando...",
+      },
+    },
   },
   downloads: {
     title: "Espejos de descarga",
