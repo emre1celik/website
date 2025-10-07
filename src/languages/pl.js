@@ -36,6 +36,7 @@ export default {
       level: "Poziom",
       resets: "Resetowania",
       race: "Rasa",
+      processing: "Przetwarzanie...",
       actions: {
         unstuck: "Odblokuj",
         evolve: "Ewolucja",

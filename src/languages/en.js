@@ -36,6 +36,7 @@ export default {
       level: "Level",
       resets: "Resets",
       race: "Race",
+      processing: "Processing...",
       actions: {
         unstuck: "Unstuck",
         evolve: "Evolve",

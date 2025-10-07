@@ -36,6 +36,7 @@ export default {
       level: "Seviye",
       resets: "Sıfırlamalar",
       race: "Irk",
+      processing: "İşleniyor...",
       actions: {
         unstuck: "Kurtar",
         evolve: "Evrimle",

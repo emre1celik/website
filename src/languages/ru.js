@@ -36,6 +36,7 @@ export default {
       level: "Уровень",
       resets: "Сбросы",
       race: "Раса",
+      processing: "Обработка...",
       actions: {
         unstuck: "Разблокировать",
         evolve: "Эволюция",

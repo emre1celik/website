@@ -36,6 +36,7 @@ export default {
       level: "Tase",
       resets: "Lähtestamised",
       race: "Rass",
+      processing: "Töötlemine...",
       actions: {
         unstuck: "Vabasta",
         evolve: "Arenda",

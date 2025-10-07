@@ -35,6 +35,7 @@ export default {
       name: "Nombre",
       level: "Nivel",
       resets: "Reinicios",
+      processing: "Procesando...",
       race: "Raza",
       actions: {
         unstuck: "Desatascar",

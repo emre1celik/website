@@ -36,6 +36,7 @@ export default {
       level: "Līmenis",
       resets: "Atjaunojumi",
       race: "Rase",
+      processing: "Apstrādā...",
       actions: {
         unstuck: "Atbrīvot",
         evolve: "Attīstīt",
