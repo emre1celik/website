@@ -10,8 +10,12 @@ import {
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "../../context/TranslationContext";
+import TranslatedHTML from "../../components/language/TranslatedHTML";
 
 function Downloads({ user }) {
+  const { translate } = useTranslation();
+
   const mirrors = [
     {
       name: "Google Drive",
@@ -51,12 +55,8 @@ function Downloads({ user }) {
 
         <DownloadsHero>
           <DownloadsBox>
-            <h2>Download Mirrors</h2>
-            <p>
-              Choose a mirror to download the client. All links point to the
-              same latest version.
-            </p>
-
+            <h2>{translate("downloads.title")}</h2>
+            <p>{translate("downloads.description")}</p>
             <ul
               style={{
                 listStyle: "none",
@@ -80,43 +80,14 @@ function Downloads({ user }) {
                 </li>
               ))}
             </ul>
-
+            <DownloadsNote>{translate("downloads.note1")}</DownloadsNote>
             <DownloadsNote>
-              ⚠️ Note: You may need to exclude <strong>main.exe</strong> from
-              your firewall or turn it off temporarily for the client to
-              connect.
-            </DownloadsNote>
-
-            <DownloadsNote>
-              <strong>Resolution change:</strong> You can edit the file
-              <strong>LauncherOption.if</strong> inside the client files to
-              change the resolution. Set <strong>DevModeIndex</strong>= to
-              anywhere between 0-9 for resolution changes.
-              <br />
-              <br />
-              0: 800x600 (4:3)
-              <br />
-              1: 1024x768 (4:3)
-              <br />
-              2: 1152x900 (4:3)
-              <br />
-              3: 1280x720 (16:9)
-              <br />
-              4: 1280x800 (16:9)
-              <br />
-              5: 1280x920 (4:3)
-              <br />
-              6: 1440x900 (16:10)
-              <br />
-              <br />
-              WindowMode:1 On, or 0 Off
+              <TranslatedHTML entity="downloads.note2_desc" />
             </DownloadsNote>
           </DownloadsBox>
         </DownloadsHero>
 
-        <Footer>
-          <p>© 2025 MyraMU. All rights reserved.</p>
-        </Footer>
+        <Footer />
       </DownloadsWrapper>
     </>
   );

@@ -72,11 +72,11 @@ export const LandingButton = styled.button`
   }
 
   &.download {
-    background-color: #ff4c4c;
+    background-color: #4caf50;
     color: white;
 
     &:hover {
-      background-color: #e04343;
+      background-color: #449d46;
     }
   }
 

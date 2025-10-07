@@ -1,14 +1,22 @@
 import { useEffect, useState } from "react";
-import { CookieBannerWrapper, CookieButton, CookieButtonGroup, CookieOverlay } from "./CookieBannerStyles";
+import {
+  CookieBannerWrapper,
+  CookieButton,
+  CookieButtonGroup,
+  CookieOverlay,
+} from "./CookieBannerStyles";
+import LanguageSelector from "../language/LanguageSelector";
+import { useTranslation } from "../../context/TranslationContext";
 
 /**
  * A simple cookie banner component.
- * Author: Zamorock 
+ * Author: Zamorock
  * Date: 2025-09-26
  * License: MIT
  */
 function CookieBanner() {
   const [visible, setVisible] = useState(false);
+  const { translate } = useTranslation();
 
   /**
    * If the user clicks the accept button, set a cookie in local storage and hide the banner.
@@ -43,16 +51,14 @@ function CookieBanner() {
     <>
       <CookieOverlay />
       <CookieBannerWrapper>
-        <p>
-          Our website uses cookies to enhance your browsing experience, analyze site traffic, and personalize content. 
-          By clicking accept you consent to the use of all cookies.
-        </p>
+        <LanguageSelector />
+        <p>{translate("cookie.message")}</p>
         <CookieButtonGroup>
           <CookieButton onClick={handleAccept}>
-            Accept
+            {translate("cookie.accept")}
           </CookieButton>
           <CookieButton onClick={handleDecline}>
-            Decline
+            {translate("cookie.decline")}
           </CookieButton>
         </CookieButtonGroup>
       </CookieBannerWrapper>

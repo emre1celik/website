@@ -1,11 +1,13 @@
+import { useTranslation } from "../../context/TranslationContext";
 import { FooterWrapper } from "./FooterStyles";
 
 function Footer() {
+  const { translate } = useTranslation();
   return (
     <FooterWrapper>
-      <p>© 2025 MyraMU. All rights reserved.</p>
+      <p>{translate("footer.rights")}</p>
     </FooterWrapper>
-  )
+  );
 }
 
 export default Footer;

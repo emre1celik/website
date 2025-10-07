@@ -6,8 +6,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { LoginWrapper, LoginContent, LoginBox } from "./LoginStyles";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "../../context/TranslationContext";
 
 function Login({ user, onLogin }) {
+  const { translate } = useTranslation();
   const [form, setForm] = useState({ username: "", password: "" });
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -37,13 +39,13 @@ function Login({ user, onLogin }) {
         const { token } = data;
         localStorage.setItem("apiToken", token);
         onLogin(data.username);
-        setMessage("✅ Logged in successfully!");
+        setMessage(translate("login.success"));
         navigate("/control-panel");
       } else {
-        setMessage("❌ Invalid username or password");
+        setMessage(translate("login.invalid"));
       }
     } catch (err) {
-      setMessage("❌ Server error: " + err.message);
+      setMessage(translate("login.serverError", { error: err.message }));
     } finally {
       setLoading(false);
     }
@@ -71,12 +73,12 @@ function Login({ user, onLogin }) {
 
         <LoginContent>
           <LoginBox>
-            <h2>Login</h2>
+            <h2>{translate("login.header")}</h2>
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
                 name="username"
-                placeholder="Username"
+                placeholder={translate("login.username")}
                 value={form.username}
                 onChange={handleChange}
                 required
@@ -84,25 +86,29 @@ function Login({ user, onLogin }) {
               <input
                 type="password"
                 name="password"
-                placeholder="Password"
+                placeholder={translate("login.password")}
                 value={form.password}
                 onChange={handleChange}
                 required
               />
               <button type="submit" disabled={loading}>
-                {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Login"}
+                {loading ? (
+                  <FontAwesomeIcon icon={faSpinner} spin />
+                ) : (
+                  translate("login.button")
+                )}
               </button>
             </form>
 
             {message && <p>{message}</p>}
 
             <p>
-              Don’t have an account?{" "}
+              {translate("login.noAccount")}{" "}
               <Link
                 to="/register"
                 style={{ textDecoration: "none", color: "#4caf50" }}
               >
-                Register here
+                {translate("login.registerHere")}
               </Link>
             </p>
           </LoginBox>

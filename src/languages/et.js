@@ -1,0 +1,78 @@
+// eslint-disable-next-line
+export default {
+  downloads: {
+    title: "Allalaadimise peeglid",
+    description:
+      "Vali peegel, et klient alla laadida. Kõik lingid viivad uusima versioonini.",
+    note1:
+      "⚠️ Märkus: Võid vajada faili main.exe väljaarvamist oma tulemüürist või selle ajutist väljalülitamist, et klient saaks ühenduda.",
+    note2_desc: `
+      <strong>Resolutsiooni muutmine:</strong> Sa saad muuta faili
+      <strong>LauncherOption.if</strong> klientkaustas, et muuta ekraani resolutsiooni. Määra <strong>DevModeIndex</strong>= väärtus vahemikus 0–9, et muuta resolutsiooni.
+      <br /><br />
+      0: 800x600 (4:3)<br />
+      1: 1024x768 (4:3)<br />
+      2: 1152x900 (4:3)<br />
+      3: 1280x720 (16:9)<br />
+      4: 1280x800 (16:9)<br />
+      5: 1280x920 (4:3)<br />
+      6: 1440x900 (16:10)<br /><br />
+      WindowMode:1 sees, 0 väljas
+    `,
+  },
+  login: {
+    header: "Logi sisse",
+    username: "Kasutajanimi",
+    password: "Parool",
+    button: "Logi sisse",
+    success: "✅ Edukas sisselogimine!",
+    invalid: "❌ Vale kasutajanimi või parool",
+    serverError: "❌ Serveri viga: {error}",
+    noAccount: "Kas sul pole kontot?",
+    registerHere: "Registreeru siin",
+  },
+
+  register: {
+    header: "Loo Konto",
+    username: "Kasutajanimi",
+    email: "E-post",
+    password: "Parool",
+    confirmPassword: "Kinnita parool",
+    button: "Registreeri",
+    passwordMismatch: "❌ Paroolid ei ühti!",
+    success: "✅ Konto edukalt loodud!",
+    somethingWrong: "❌ Midagi läks valesti",
+    serverError: "❌ Serveri viga: {error}",
+    alreadyAccount: "Kas sul on juba konto?",
+    loginHere: "Logi sisse siit",
+    legal: "Konto loomisel nõustud meie {terms} ja {privacy}.",
+    terms: "Kasutustingimused",
+    privacy: "Privaatsuspoliitika",
+  },
+  navigation: {
+    home: "Avaleht",
+    download: "Laadi alla",
+    highscores: "Tabelid",
+    events: "Üritused",
+    community: "Kogukond",
+    login: "Logi sisse",
+  },
+  cookie: {
+    message:
+      "Meie veebileht kasutab küpsiseid, et parandada teie sirvimiskogemust, analüüsida saidi liiklust ja kohandada sisu. Nupu 'Nõustu' klõpsamisel annate nõusoleku kõigi küpsiste kasutamiseks.",
+    accept: "Nõustu",
+    decline: "Keeldu",
+  },
+
+  landing: {
+    heading: "Tere tulemast MyraMU-sse!",
+    subheading: "Koge ülimat MU online seiklust.",
+    download: "Laadi alla",
+    client: "Klient",
+    register: "Registreeru",
+    account: "Konto",
+  },
+  footer: {
+    rights: "© 2025 MyraMU. Kõik õigused kaitstud.",
+  },
+};

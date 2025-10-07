@@ -9,8 +9,12 @@ import {
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "../../context/TranslationContext";
+import { Link } from "react-router-dom";
+import TranslatedJSX from "../../components/language/TranslatedJSX";
 
 function Register({ user }) {
+  const { translate } = useTranslation();
   const [form, setForm] = useState({
     username: "",
     email: "",
@@ -20,12 +24,13 @@ function Register({ user }) {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) =>
+    setForm({ ...form, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (form.password !== form.confirmPassword) {
-      setMessage("❌ Passwords do not match!");
+      setMessage(translate("register.passwordMismatch"));
       return;
     }
 
@@ -45,14 +50,14 @@ function Register({ user }) {
 
       const data = await response.json();
 
-      if (response.ok) setMessage("✅ Account created successfully!");
+      if (response.ok) setMessage(translate("register.success"));
       else if (data.errors) {
         if (data.errors.account) setMessage("❌ " + data.errors.account[0]);
         else if (data.errors.email) setMessage("❌ " + data.errors.email[0]);
-        else setMessage("❌ Something went wrong");
-      } else setMessage("❌ Something went wrong");
+        else setMessage(translate("register.somethingWrong"));
+      } else setMessage(translate("register.somethingWrong"));
     } catch (err) {
-      setMessage("❌ Server error: " + err.message);
+      setMessage(translate("register.serverError", { error: err.message }));
     } finally {
       setLoading(false);
     }
@@ -61,7 +66,9 @@ function Register({ user }) {
   return (
     <>
       <Helmet>
-        <title>Myra MuOnline - Register Account | Season 19 Episode 2-3 | MU Online</title>
+        <title>
+          Myra MuOnline - Register Account | Season 19 Episode 2-3 | MU Online
+        </title>
         <meta
           name="description"
           content="Create your Myra MuOnline account now! Join Season 19 Episode 2-3 and play on the best MU Online private server. Register quickly and start your adventure."
@@ -71,18 +78,18 @@ function Register({ user }) {
           content="mu online register, myra mu register, mu online account, myra season 19 register, myra private server registration"
         />
       </Helmet>
-      
+
       <RegisterWrapper>
         <Navigation user={user} />
 
         <RegisterContent>
           <RegisterBox>
-            <h2>Create an Account</h2>
+            <h2>{translate("register.header")}</h2>
             <form onSubmit={handleSubmit}>
               <input
                 type="text"
                 name="username"
-                placeholder="Username"
+                placeholder={translate("register.username")}
                 value={form.username}
                 onChange={handleChange}
                 required
@@ -90,7 +97,7 @@ function Register({ user }) {
               <input
                 type="email"
                 name="email"
-                placeholder="Email"
+                placeholder={translate("register.email")}
                 value={form.email}
                 onChange={handleChange}
                 required
@@ -98,7 +105,7 @@ function Register({ user }) {
               <input
                 type="password"
                 name="password"
-                placeholder="Password"
+                placeholder={translate("register.password")}
                 value={form.password}
                 onChange={handleChange}
                 required
@@ -106,20 +113,50 @@ function Register({ user }) {
               <input
                 type="password"
                 name="confirmPassword"
-                placeholder="Confirm Password"
+                placeholder={translate("register.confirmPassword")}
                 value={form.confirmPassword}
                 onChange={handleChange}
                 required
               />
               <button type="submit" disabled={loading}>
-                {loading ? <FontAwesomeIcon icon={faSpinner} spin /> : "Register"}
+                {loading ? (
+                  <FontAwesomeIcon icon={faSpinner} spin />
+                ) : (
+                  translate("register.button")
+                )}
               </button>
 
               <p>
-                Already have an account? <a href="/login" style={{ textDecoration: "none", color: "#4caf50" }}>Login here</a>
+                {translate("register.alreadyAccount")}{" "}
+                <Link
+                  to="/login"
+                  style={{ textDecoration: "none", color: "#4caf50" }}
+                >
+                  {translate("register.loginHere")}
+                </Link>
               </p>
               <p style={{ marginTop: 0 }}>
-                By creating an account, you agree to our <a href="/terms" style={{ textDecoration: "none", color: "#4caf50" }}>Terms & Conditions</a> and <a href="/privacy" style={{ textDecoration: "none", color: "#4caf50" }}>Privacy Policy</a>.
+                <TranslatedJSX
+                  entity="register.legal"
+                  replacements={{
+                    terms: (
+                      <Link
+                        to="/terms"
+                        style={{ textDecoration: "none", color: "#4caf50" }}
+                      >
+                        {translate("register.terms")}
+                      </Link>
+                    ),
+                    privacy: (
+                      <Link
+                        to="/privacy"
+                        style={{ textDecoration: "none", color: "#4caf50" }}
+                      >
+                        {translate("register.privacy")}
+                      </Link>
+                    ),
+                  }}
+                />
               </p>
             </form>
 

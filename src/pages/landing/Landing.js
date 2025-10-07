@@ -11,8 +11,11 @@ import {
 } from "./LandingStyles";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "../../context/TranslationContext";
 
 function Landing({ user }) {
+  const { translate } = useTranslation();
+
   return (
     <>
       <Helmet>
@@ -34,20 +37,26 @@ function Landing({ user }) {
         <Navigation user={user} />
 
         <LandingHero>
-          <h1>Welcome to MyraMU!</h1>
-          <p>Experience the ultimate MU online adventure.</p>
+          <h1>{translate("landing.heading")}</h1>
+          <p>{translate("landing.subheading")}</p>
 
           <LandingButtons>
             <Link to="/downloads" style={{ textDecoration: "none" }}>
               <LandingButton className="download">
                 <ResponsiveIcon icon={faDownload} />
-                Download <LandingButtonLabel>Client</LandingButtonLabel>
+                {translate("landing.download")}{" "}
+                <LandingButtonLabel>
+                  {translate("landing.client")}
+                </LandingButtonLabel>
               </LandingButton>
             </Link>
             <Link to="/register" style={{ textDecoration: "none" }}>
               <LandingButton className="register">
                 <ResponsiveIcon icon={faUserPlus} />
-                Register <LandingButtonLabel>Account</LandingButtonLabel>
+                {translate("landing.register")}{" "}
+                <LandingButtonLabel>
+                  {translate("landing.account")}
+                </LandingButtonLabel>
               </LandingButton>
             </Link>
           </LandingButtons>

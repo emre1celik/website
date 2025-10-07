@@ -21,9 +21,12 @@ import {
   NavigationLoginLink,
   NavigationWrapper,
 } from "./NavigationStyles";
+import LanguageSelector from "../language/LanguageSelector";
+import { useTranslation } from "../../context/TranslationContext";
 
 function Navigation({ user }) {
   const location = useLocation();
+  const { translate } = useTranslation();
 
   return (
     <NavigationWrapper>
@@ -54,7 +57,7 @@ function Navigation({ user }) {
             <NavigationIcon>
               <FontAwesomeIcon icon={faHome} />
             </NavigationIcon>
-            <NavigationLabel>Home</NavigationLabel>
+            <NavigationLabel>{translate("navigation.home")}</NavigationLabel>
           </NavigationItemLink>
         </li>
 
@@ -67,7 +70,9 @@ function Navigation({ user }) {
             <NavigationIcon className="small">
               <FontAwesomeIcon icon={faDownload} />
             </NavigationIcon>
-            <NavigationLabel>Download</NavigationLabel>
+            <NavigationLabel>
+              {translate("navigation.download")}
+            </NavigationLabel>
           </NavigationItemLink>
         </li>
 
@@ -80,7 +85,9 @@ function Navigation({ user }) {
             <NavigationIcon className="small">
               <FontAwesomeIcon icon={faMedal} />
             </NavigationIcon>
-            <NavigationLabel>Highscores</NavigationLabel>
+            <NavigationLabel>
+              {translate("navigation.highscores")}
+            </NavigationLabel>
           </NavigationItemLink>
         </li>
         <li>
@@ -92,7 +99,7 @@ function Navigation({ user }) {
             <NavigationIcon className="small">
               <FontAwesomeIcon icon={faCalendarAlt} />
             </NavigationIcon>
-            <NavigationLabel>Events</NavigationLabel>
+            <NavigationLabel>{translate("navigation.events")}</NavigationLabel>
           </NavigationItemLink>
         </li>
         <li>
@@ -104,7 +111,9 @@ function Navigation({ user }) {
             <NavigationIcon>
               <FontAwesomeIcon icon={faUsers} />
             </NavigationIcon>
-            <NavigationLabel>Community</NavigationLabel>
+            <NavigationLabel>
+              {translate("navigation.community")}
+            </NavigationLabel>
           </NavigationItemLink>
         </li>
 
@@ -118,7 +127,7 @@ function Navigation({ user }) {
               <NavigationIcon>
                 <FontAwesomeIcon icon={faRightToBracket} />
               </NavigationIcon>
-              <NavigationLabel>Login</NavigationLabel>
+              <NavigationLabel>{translate("navigation.login")}</NavigationLabel>
             </NavigationItemLink>
           </NavigationLoginLink>
         ) : (
@@ -131,6 +140,7 @@ function Navigation({ user }) {
             </NavigationItemLink>
           </NavigationUserInfo>
         )}
+        <LanguageSelector />
       </NavigationLinks>
     </NavigationWrapper>
   );
