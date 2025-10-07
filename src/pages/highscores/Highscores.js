@@ -40,8 +40,10 @@ import {
   ControlPanelTabContent,
   ControlPanelTabs,
 } from "../control_panel/ControlPanelStyles";
+import { useTranslation } from "../../context/TranslationContext";
 
 function Highscores({ user }) {
+  const { translate } = useTranslation();
   const [selectedClass, setSelectedClass] = useState("all");
   const [players, setPlayers] = useState([]);
   const [selectedEvent, setSelectedEvent] = useState("1");
@@ -202,9 +204,14 @@ function Highscores({ user }) {
         const res = await fetch("https://api.myramu.online/api/top-events");
         const data = await res.json();
         if (res.ok) setEvents(data.top_events || []);
-        else setErrorEvents(data.error || "Failed to fetch top events");
+        else
+          setErrorEvents(
+            translate("highscores.serverError").replace("{error}", data.error)
+          );
       } catch (err) {
-        setErrorEvents("Server error: " + err.message);
+        setErrorEvents(
+          translate("highscores.serverError").replace("{error}", err.message)
+        );
       } finally {
         setLoadingEvents(false);
       }
@@ -233,10 +240,14 @@ function Highscores({ user }) {
 
           setGuilds(decodedGuilds);
         } else {
-          setErrorGuilds(data.error || "Failed to fetch top guilds");
+          setErrorGuilds(
+            translate("highscores.serverError").replace("{error}", data.error)
+          );
         }
       } catch (err) {
-        setErrorGuilds("Server error: " + err.message);
+        setErrorGuilds(
+          translate("highscores.serverError").replace("{error}", err.message)
+        );
       } finally {
         setLoadingGuilds(false);
       }
@@ -268,10 +279,14 @@ function Highscores({ user }) {
         if (response.ok) {
           setPlayers(data.players || []);
         } else {
-          setError(data.error || "Failed to fetch highscores");
+          setError(
+            translate("highscores.serverError").replace("{error}", data.error)
+          );
         }
       } catch (err) {
-        setError("Server error: " + err.message);
+        setError(
+          translate("highscores.serverError").replace("{error}", err.message)
+        );
       } finally {
         setLoading(false);
       }
@@ -300,14 +315,14 @@ function Highscores({ user }) {
 
         <HighscoresContent>
           <HighscoresBox>
-            <h2>Highscores</h2>
+            <h2>{translate("highscores.title")}</h2>
             <ControlPanelTabs>
               <ControlPanelTabButton
                 active={activeTab === "players"}
                 onClick={() => setActiveTab("players")}
               >
                 <FontAwesomeIcon icon={faUsers} />
-                <span>Top Players</span>
+                <span>{translate("highscores.topPlayers")}</span>
               </ControlPanelTabButton>
 
               <ControlPanelTabButton
@@ -315,7 +330,7 @@ function Highscores({ user }) {
                 onClick={() => setActiveTab("events")}
               >
                 <FontAwesomeIcon icon={faTrophy} />
-                <span>Top Events</span>
+                <span>{translate("highscores.topEvents")}</span>
               </ControlPanelTabButton>
 
               <ControlPanelTabButton
@@ -323,7 +338,7 @@ function Highscores({ user }) {
                 onClick={() => setActiveTab("guilds")}
               >
                 <FontAwesomeIcon icon={faShieldAlt} />
-                <span>Top Guilds</span>
+                <span>{translate("highscores.topGuilds")}</span>
               </ControlPanelTabButton>
             </ControlPanelTabs>
 
@@ -344,7 +359,7 @@ function Highscores({ user }) {
                         spin
                         style={{ marginRight: "8px" }}
                       />
-                      Loading top players...
+                      {translate("highscores.loadingPlayers")}
                     </div>
                   ) : errorEvents ? (
                     <p style={{ color: "red" }}>{error}</p>
@@ -352,7 +367,9 @@ function Highscores({ user }) {
                     <>
                       <HighscoresFilter>
                         {" "}
-                        <label>Filter by class:</label>{" "}
+                        <label>
+                          {translate("highscores.filterByClass")}
+                        </label>{" "}
                         <div
                           style={{
                             display: "flex",
@@ -376,7 +393,9 @@ function Highscores({ user }) {
                             onChange={(e) => setSelectedClass(e.target.value)}
                           >
                             {" "}
-                            <option value="all">All</option>{" "}
+                            <option value="all">
+                              {translate("highscores.all")}
+                            </option>{" "}
                             {Object.keys(classIconMap).map((key) => (
                               <option key={key} value={key}>
                                 {" "}
@@ -389,16 +408,26 @@ function Highscores({ user }) {
                       <HighscoresTable>
                         <thead>
                           <tr>
-                            <th>Rank</th>
-                            <th>Name</th>
-                            <th>Class</th>
-                            <th>(Grand) Resets</th>
-                            <th>Level</th>
-                            <th className="hideOnSmall">Strength</th>
-                            <th className="hideOnSmall">Agility</th>
-                            <th className="hideOnSmall">Vitality</th>
-                            <th className="hideOnSmall">Energy</th>
-                            <th className="hideOnSmall">Leadership</th>
+                            <th>{translate("highscores.rank")}</th>
+                            <th>{translate("highscores.name")}</th>
+                            <th>{translate("highscores.class")}</th>
+                            <th>{translate("highscores.resets")}</th>
+                            <th>{translate("highscores.level")}</th>
+                            <th className="hideOnSmall">
+                              {translate("highscores.strength")}
+                            </th>
+                            <th className="hideOnSmall">
+                              {translate("highscores.agility")}
+                            </th>
+                            <th className="hideOnSmall">
+                              {translate("highscores.vitality")}
+                            </th>
+                            <th className="hideOnSmall">
+                              {translate("highscores.energy")}
+                            </th>
+                            <th className="hideOnSmall">
+                              {translate("highscores.leadership")}
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
@@ -507,14 +536,14 @@ function Highscores({ user }) {
                         spin
                         style={{ marginRight: "8px" }}
                       />
-                      Loading top events...
+                      {translate("highscores.loadingEvents")}
                     </div>
                   ) : errorEvents ? (
                     <p style={{ color: "red" }}>{errorEvents}</p>
                   ) : (
                     <>
                       <HighscoresFilter>
-                        <label>Filter by event:</label>
+                        <label>{translate("highscores.filterByEvent")}</label>
                         <select
                           value={selectedEvent}
                           onChange={(e) => setSelectedEvent(e.target.value)}
@@ -527,11 +556,11 @@ function Highscores({ user }) {
                       <HighscoresTable>
                         <thead>
                           <tr>
-                            <th>Rank</th>
-                            <th>Character</th>
-                            <th>Class</th>
-                            <th>Event</th>
-                            <th>Score</th>
+                            <th>{translate("highscores.rank")}</th>
+                            <th>{translate("highscores.character")}</th>
+                            <th>{translate("highscores.class")}</th>
+                            <th>{translate("highscores.event")}</th>
+                            <th>{translate("highscores.score")}</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -614,7 +643,7 @@ function Highscores({ user }) {
                         spin
                         style={{ marginRight: "8px" }}
                       />
-                      Loading top guilds...
+                      {translate("highscores.loadingGuilds")}
                     </div>
                   ) : errorGuilds ? (
                     <p style={{ color: "red" }}>{errorGuilds}</p>
@@ -622,11 +651,11 @@ function Highscores({ user }) {
                     <HighscoresTable>
                       <thead>
                         <tr>
-                          <th>Rank</th>
-                          <th>Guild Name</th>
-                          <th>Master</th>
-                          <th>Score</th>
-                          <th>Emblem</th>
+                          <th>{translate("highscores.rank")}</th>
+                          <th>{translate("highscores.guildName")}</th>
+                          <th>{translate("highscores.master")}</th>
+                          <th>{translate("highscores.score")}</th>
+                          <th>{translate("highscores.emblem")}</th>
                         </tr>
                       </thead>
                       <tbody>

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, useEffect } from "react";
 
 import en from "../languages/en";
 import es from "../languages/es";
@@ -14,7 +14,15 @@ const translations = { en, es, et, lv, pl, pt, ru, tr };
 const TranslationContext = createContext();
 
 export const TranslationProvider = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  // Load language from localStorage if available
+  const [language, setLanguage] = useState(() => {
+    return localStorage.getItem("language") || "en";
+  });
+
+  // Whenever language changes, save it to localStorage
+  useEffect(() => {
+    localStorage.setItem("language", language);
+  }, [language]);
 
   const translate = (key) => {
     const parts = key.split(".");
@@ -23,10 +31,9 @@ export const TranslationProvider = ({ children }) => {
       translations[language]
     );
 
-    // Ensure result is always a string
     if (typeof result === "string") return result;
-    if (result === undefined || result === null) return key; // fallback
-    return String(result); // convert other types (number, etc.) to string
+    if (result === undefined || result === null) return key;
+    return String(result);
   };
 
   return (
