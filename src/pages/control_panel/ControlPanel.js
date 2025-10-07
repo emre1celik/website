@@ -38,8 +38,10 @@ import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
 import DefaultIcon from "../../assets/images/classes/default.png";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "../../context/TranslationContext";
 
 function ControlPanel({ user }) {
+  const { translate } = useTranslation();
   const [characterActionMessage, setCharacterActionMessage] = useState(null);
   const [activeTab, setActiveTab] = useState("profile");
   const [password, setPassword] = useState("");
@@ -138,9 +140,7 @@ function ControlPanel({ user }) {
     }
     return { icon: DefaultIcon, key: "unknown" };
   }
-  // Inside your ControlPanel component:
 
-  // 1️⃣ Define fetchCharacters as a reusable function
   const fetchCharacters = async () => {
     setCharsLoading(true);
     const token = localStorage.getItem("apiToken");
@@ -155,12 +155,12 @@ function ControlPanel({ user }) {
         setCharacters(data.characters);
         return data.characters; // return updated characters
       } else {
-        console.error("Failed to load characters:", data.error);
+        //console.error("Failed to load characters:", data.error);
         setCharacters([]);
         return [];
       }
     } catch (err) {
-      console.error("Server error:", err);
+      //console.error("Server error:", err);
       setCharacters([]);
       return [];
     } finally {
@@ -188,11 +188,11 @@ function ControlPanel({ user }) {
         if (response.ok) {
           setProfile(data);
         } else {
-          console.error("Failed to load profile:", data.error);
+          //console.error("Failed to load profile:", data.error);
           setProfile(null);
         }
       } catch (err) {
-        console.error("Server error:", err);
+        //console.error("Server error:", err);
         setProfile(null);
       } finally {
         setLoading(false);
@@ -259,14 +259,14 @@ function ControlPanel({ user }) {
   const renderTabContent = () => {
     switch (activeTab) {
       case "profile":
-        if (loading) return <p>Loading...</p>;
-        if (!profile) return <p>Could not load profile.</p>;
+        if (loading) return <p>{translate("controlPanel.loading")}</p>;
+        if (!profile) return <p>{translate("controlPanel.notLoad")}</p>;
         return (
           <div>
-            <h3>Account Information</h3>
+            <h3>{translate("controlPanel.profile.accountInformation")}</h3>
 
             <div style={{ marginBottom: "1rem" }}>
-              <label>Email</label>
+              <label>{translate("controlPanel.profile.email")}</label>
               <br />
               <input
                 type="text"
@@ -285,7 +285,7 @@ function ControlPanel({ user }) {
             </div>
 
             <div style={{ marginBottom: "1rem" }}>
-              <label>Account Name</label>
+              <label>{translate("controlPanel.profile.accountName")}</label>
               <br />
               <input
                 type="text"
@@ -304,7 +304,7 @@ function ControlPanel({ user }) {
             </div>
 
             <div style={{ marginBottom: "1rem" }}>
-              <label>WCoin</label>
+              <label>{translate("controlPanel.profile.wcoin")}</label>
               <br />
               <div
                 style={{ display: "flex", gap: "0.5rem", marginTop: "0.3rem" }}
@@ -327,13 +327,13 @@ function ControlPanel({ user }) {
                     icon={faCartShopping}
                     style={{ marginRight: "5px" }}
                   />
-                  Buy
+                  {translate("controlPanel.profile.buy")}
                 </GreenButton>
               </div>
             </div>
 
             <div style={{ marginBottom: "1rem" }}>
-              <label>Goblin Points</label>
+              <label>{translate("controlPanel.profile.goblinPoints")}</label>
               <br />
               <div
                 style={{ display: "flex", gap: "0.5rem", marginTop: "0.3rem" }}
@@ -356,13 +356,13 @@ function ControlPanel({ user }) {
                     icon={faCartShopping}
                     style={{ marginRight: "5px" }}
                   />
-                  Buy
+                  {translate("controlPanel.profile.buy")}
                 </GreenButton>
               </div>
             </div>
 
             <div style={{ marginBottom: "1rem" }}>
-              <label>Last Login</label>
+              <label>{translate("controlPanel.profile.lastLogin")}</label>
               <br />
               <input
                 type="text"
@@ -385,10 +385,12 @@ function ControlPanel({ user }) {
       case "settings":
         return (
           <div>
-            <h3>Change Password</h3>
+            <h3>{translate("controlPanel.settings.changePassword")}</h3>
             <form onSubmit={(e) => onChangePasswordSubmit(e)}>
               <div style={{ marginBottom: "1rem" }}>
-                <label htmlFor="password">New Password</label>
+                <label htmlFor="password">
+                  {translate("controlPanel.settings.newPassword")}
+                </label>
                 <br />
                 <input
                   id="password"
@@ -409,7 +411,9 @@ function ControlPanel({ user }) {
               </div>
 
               <div style={{ marginBottom: "1rem" }}>
-                <label htmlFor="confirmPassword">Confirm Password</label>
+                <label htmlFor="confirmPassword">
+                  {translate("controlPanel.settings.confirmPassword")}
+                </label>
                 <br />
                 <input
                   id="confirmPassword"
@@ -445,7 +449,9 @@ function ControlPanel({ user }) {
                   icon={faArrowsRotate}
                   style={{ marginRight: "5px" }}
                 />
-                {changingPassword ? "Updating..." : "Update Password"}
+                {changingPassword
+                  ? translate("controlPanel.settings.updating")
+                  : translate("controlPanel.settings.updated")}
               </button>
 
               {passwordMessage && (
@@ -475,12 +481,14 @@ function ControlPanel({ user }) {
         );
 
       case "stats":
-        if (charsLoading) return <p>Loading characters...</p>;
-        if (!characters.length) return <p>No characters found.</p>;
+        if (charsLoading)
+          return <p>{translate("controlPanel.stats.loadingCharacters")}</p>;
+        if (!characters.length)
+          return <p>{translate("controlPanel.stats.noCharacters")}</p>;
 
         return (
           <div>
-            <h3>Character Statistics</h3>
+            <h3>{translate("controlPanel.stats.characterStatistics")}</h3>
             {characterActionMessage && (
               <div
                 style={{
@@ -521,16 +529,19 @@ function ControlPanel({ user }) {
                   }}
                 >
                   <p>
-                    <strong>Name:</strong> {char.name}
+                    <strong>{translate("controlPanel.stats.name")}:</strong>{" "}
+                    {char.name}
                   </p>
                   <p>
-                    <strong>Level:</strong> {char.level}
+                    <strong>{translate("controlPanel.stats.level")}:</strong>{" "}
+                    {char.level}
                   </p>
                   <p>
-                    <strong>Resets:</strong> {char.reset}
+                    <strong>{translate("controlPanel.stats.resets")}:</strong>{" "}
+                    {char.reset}
                   </p>
                   <p>
-                    <strong>Race:</strong>{" "}
+                    <strong>{translate("controlPanel.stats.race")}:</strong>{" "}
                     <img
                       src={classInfo.icon}
                       alt={classInfo.key}
@@ -560,9 +571,13 @@ function ControlPanel({ user }) {
                         "grand-reset": faArrowsRotate,
                       };
                       const labelMap = {
-                        unstuck: "Unstuck",
-                        evolve: "Evolve",
-                        "grand-reset": "Grand Reset",
+                        unstuck: translate(
+                          "controlPanel.stats.actions.unstuck"
+                        ),
+                        evolve: translate("controlPanel.stats.actions.evolve"),
+                        "grand-reset": translate(
+                          "controlPanel.stats.actions.grandReset"
+                        ),
                       };
 
                       return (
@@ -584,7 +599,7 @@ function ControlPanel({ user }) {
                               style={{ marginRight: "5px" }}
                             />
                             {actionLoading[key]
-                              ? "Processing..."
+                              ? translate("controlPanel.stats.processing")
                               : labelMap[action]}
                           </GreenButton>
                         </div>
@@ -626,7 +641,7 @@ function ControlPanel({ user }) {
 
         <ControlPanelContent>
           <ControlPanelBox>
-            <h2>Hello, {user}!</h2>
+            <h2>{translate("controlPanel.hello").replace("{user}", user)}</h2>
 
             <ControlPanelTabs>
               <ControlPanelTabButton
@@ -634,7 +649,7 @@ function ControlPanel({ user }) {
                 onClick={() => setActiveTab("profile")}
               >
                 <FontAwesomeIcon icon={faUser} />
-                <span>Profile</span>
+                <span>{translate("controlPanel.tabs.profile")}</span>
               </ControlPanelTabButton>
 
               <ControlPanelTabButton
@@ -642,7 +657,7 @@ function ControlPanel({ user }) {
                 onClick={() => setActiveTab("settings")}
               >
                 <FontAwesomeIcon icon={faCog} />
-                <span>Settings</span>
+                <span>{translate("controlPanel.tabs.settings")}</span>
               </ControlPanelTabButton>
 
               <ControlPanelTabButton
@@ -650,7 +665,7 @@ function ControlPanel({ user }) {
                 onClick={() => setActiveTab("stats")}
               >
                 <FontAwesomeIcon icon={faChartBar} />
-                <span>Characters</span>
+                <span>{translate("controlPanel.tabs.stats")}</span>
               </ControlPanelTabButton>
             </ControlPanelTabs>
 

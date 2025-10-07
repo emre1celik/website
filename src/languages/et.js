@@ -1,5 +1,42 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    hello: "Tere, {user}!",
+    tabs: { profile: "Profiil", settings: "Seaded", stats: "Tegelased" },
+    profile: {
+      accountInformation: "Konto info",
+      email: "E-post",
+      accountName: "Konto nimi",
+      wcoin: "WCoin",
+      goblinPoints: "Goblin punktid",
+      lastLogin: "Viimane sisselogimine",
+      buy: "Osta",
+    },
+    settings: {
+      changePassword: "Muuda parooli",
+      newPassword: "Uus parool",
+      confirmPassword: "Kinnita parool",
+      updatePassword: "Uuenda parool",
+      updating: "Uuendamine...",
+      passwordMismatch: "❌ Paroolid ei kattu!",
+      serverError: "❌ Serveri viga: {error}",
+    },
+    stats: {
+      characterStatistics: "Tegelase statistika",
+      loadingCharacters: "Laaditakse tegelasi...",
+      noCharacters: "Tegelasi ei leitud.",
+      name: "Nimi",
+      level: "Tase",
+      resets: "Taaskäivitused",
+      race: "Rass",
+      actions: {
+        unstuck: "Vabasta",
+        evolve: "Arene",
+        grandReset: "Suur taaskäivitamine",
+        processing: "Töötlemine...",
+      },
+    },
+  },
   downloads: {
     title: "Allalaadimise peeglid",
     description:
@@ -60,6 +97,18 @@ export default {
     guildName: "Gildi nimi",
     master: "Meister",
     emblem: "Embleem",
+  },
+  notFound: {
+    header: "404 - Lehte Ei Leitud",
+    message: "Ups! Me ei leia lehte, mida otsid.",
+  },
+  events: {
+    title: "Eelseisvad Sündmused",
+    event: "Üritus",
+    nextStart: "Järgmine Algus",
+    timeRemaining: "Aega Jäänud",
+    now: "Nüüd!",
+    currentGameTime: "Praegune Mänguaeg",
   },
   register: {
     header: "Loo Konto",

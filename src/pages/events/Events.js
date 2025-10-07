@@ -4,6 +4,7 @@ import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { EventsBox, EventsContent, EventsWrapper } from "./EventsStyles";
 import GameTimer from "../../components/game_timer/GameTimer";
+import { useTranslation } from "../../context/TranslationContext";
 const invasionSchedule = {
   "White Wizard": [
     "00:00",
@@ -213,19 +214,21 @@ function Events({ user }) {
     return () => clearInterval(interval);
   }, []);
 
+  const { translate } = useTranslation();
+
   return (
     <EventsWrapper>
       <Navigation user={user} />
       <EventsContent>
         <EventsBox>
-          <h2>Upcoming Events</h2>
+          <h2>{translate("events.title")}</h2>
           <GameTimer />
           <HighscoresTable>
             <thead>
               <tr>
-                <th>Event</th>
-                <th>Next Start</th>
-                <th>Time Remaining</th>
+                <th>{translate("events.event")}</th>
+                <th>{translate("events.nextStart")}</th>
+                <th>{translate("events.timeRemaining")}</th>
               </tr>
             </thead>
             <tbody>
@@ -252,7 +255,9 @@ function Events({ user }) {
                       </td>
                       <td>
                         {isNow ? (
-                          <GlowingName rank={1}>Now!</GlowingName>
+                          <GlowingName rank={1}>
+                            {translate("now")}!
+                          </GlowingName>
                         ) : (
                           formatCountdown(nextTime)
                         )}

@@ -1,5 +1,46 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    hello: "Olá, {user}!",
+    tabs: {
+      profile: "Perfil",
+      settings: "Configurações",
+      stats: "Personagens",
+    },
+    profile: {
+      accountInformation: "Informações da Conta",
+      email: "Email",
+      accountName: "Nome da Conta",
+      wcoin: "WCoin",
+      goblinPoints: "Pontos de Goblin",
+      lastLogin: "Último Login",
+      buy: "Comprar",
+    },
+    settings: {
+      changePassword: "Alterar Senha",
+      newPassword: "Nova Senha",
+      confirmPassword: "Confirmar Senha",
+      updatePassword: "Atualizar Senha",
+      updating: "Atualizando...",
+      passwordMismatch: "❌ Senhas não coincidem!",
+      serverError: "❌ Erro do servidor: {error}",
+    },
+    stats: {
+      characterStatistics: "Estatísticas dos Personagens",
+      loadingCharacters: "Carregando personagens...",
+      noCharacters: "Nenhum personagem encontrado.",
+      name: "Nome",
+      level: "Nível",
+      resets: "Resets",
+      race: "Raça",
+      actions: {
+        unstuck: "Desbloquear",
+        evolve: "Evoluir",
+        grandReset: "Grande Reset",
+        processing: "Processando...",
+      },
+    },
+  },
   downloads: {
     title: "Espelhos de download",
     description:
@@ -48,6 +89,18 @@ export default {
     guildName: "Nome da Guilda",
     master: "Mestre",
     emblem: "Emblema",
+  },
+  notFound: {
+    header: "404 - Página Não Encontrada",
+    message: "Ops! Não conseguimos encontrar a página que você procura.",
+  },
+  events: {
+    title: "Próximos Eventos",
+    event: "Evento",
+    nextStart: "Próximo Início",
+    timeRemaining: "Tempo Restante",
+    now: "Agora!",
+    currentGameTime: "Hora Atual do Jogo",
   },
   register: {
     header: "Criar Conta",

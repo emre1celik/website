@@ -1,5 +1,42 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    hello: "Привет, {user}!",
+    tabs: { profile: "Профиль", settings: "Настройки", stats: "Персонажи" },
+    profile: {
+      accountInformation: "Информация о аккаунте",
+      email: "Электронная почта",
+      accountName: "Имя аккаунта",
+      wcoin: "WCoin",
+      goblinPoints: "Очки Гоблина",
+      lastLogin: "Последний вход",
+      buy: "Купить",
+    },
+    settings: {
+      changePassword: "Сменить пароль",
+      newPassword: "Новый пароль",
+      confirmPassword: "Подтвердить пароль",
+      updatePassword: "Обновить пароль",
+      updating: "Обновление...",
+      passwordMismatch: "❌ Пароли не совпадают!",
+      serverError: "❌ Ошибка сервера: {error}",
+    },
+    stats: {
+      characterStatistics: "Статистика персонажей",
+      loadingCharacters: "Загрузка персонажей...",
+      noCharacters: "Персонажи не найдены.",
+      name: "Имя",
+      level: "Уровень",
+      resets: "Сбросы",
+      race: "Класс",
+      actions: {
+        unstuck: "Разблокировать",
+        evolve: "Эволюция",
+        grandReset: "Гранд Сброс",
+        processing: "Обработка...",
+      },
+    },
+  },
   downloads: {
     title: "Зеркала загрузки",
     description:
@@ -48,6 +85,18 @@ export default {
     guildName: "Название Гильдии",
     master: "Мастер",
     emblem: "Эмблема",
+  },
+  notFound: {
+    header: "404 - Страница Не Найдена",
+    message: "Упс! Мы не можем найти страницу, которую вы ищете.",
+  },
+  events: {
+    title: "Предстоящие События",
+    event: "Событие",
+    nextStart: "Следующее Начало",
+    timeRemaining: "Оставшееся Время",
+    now: "Сейчас!",
+    currentGameTime: "Текущее Время Игры",
   },
   register: {
     header: "Создать Аккаунт",

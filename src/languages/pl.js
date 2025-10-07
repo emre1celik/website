@@ -1,5 +1,42 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    hello: "Cześć, {user}!",
+    tabs: { profile: "Profil", settings: "Ustawienia", stats: "Postacie" },
+    profile: {
+      accountInformation: "Informacje o koncie",
+      email: "Email",
+      accountName: "Nazwa konta",
+      wcoin: "WCoin",
+      goblinPoints: "Punkty Goblina",
+      lastLogin: "Ostatnie logowanie",
+      buy: "Kup",
+    },
+    settings: {
+      changePassword: "Zmień hasło",
+      newPassword: "Nowe hasło",
+      confirmPassword: "Potwierdź hasło",
+      updatePassword: "Aktualizuj hasło",
+      updating: "Aktualizowanie...",
+      passwordMismatch: "❌ Hasła nie są zgodne!",
+      serverError: "❌ Błąd serwera: {error}",
+    },
+    stats: {
+      characterStatistics: "Statystyki postaci",
+      loadingCharacters: "Ładowanie postaci...",
+      noCharacters: "Nie znaleziono postaci.",
+      name: "Nazwa",
+      level: "Poziom",
+      resets: "Reset",
+      race: "Rasa",
+      actions: {
+        unstuck: "Odblokuj",
+        evolve: "Ewolucja",
+        grandReset: "Wielki reset",
+        processing: "Przetwarzanie...",
+      },
+    },
+  },
   downloads: {
     title: "Mirrory pobierania",
     description:
@@ -48,6 +85,18 @@ export default {
     guildName: "Nazwa Gildii",
     master: "Mistrz",
     emblem: "Emblemat",
+  },
+  notFound: {
+    header: "404 - Strona Nie Znaleziona",
+    message: "Ups! Nie możemy znaleźć strony, której szukasz.",
+  },
+  events: {
+    title: "Nadchodzące Wydarzenia",
+    event: "Wydarzenie",
+    nextStart: "Następny Start",
+    timeRemaining: "Pozostały Czas",
+    now: "Teraz!",
+    currentGameTime: "Aktualny Czas Gry",
   },
   register: {
     header: "Utwórz Konto",

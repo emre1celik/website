@@ -1,5 +1,42 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    hello: "¡Hola, {user}!",
+    tabs: { profile: "Perfil", settings: "Configuración", stats: "Personajes" },
+    profile: {
+      accountInformation: "Información de la Cuenta",
+      email: "Correo Electrónico",
+      accountName: "Nombre de la Cuenta",
+      wcoin: "WCoin",
+      goblinPoints: "Puntos de Goblin",
+      lastLogin: "Último Acceso",
+      buy: "Comprar",
+    },
+    settings: {
+      changePassword: "Cambiar Contraseña",
+      newPassword: "Nueva Contraseña",
+      confirmPassword: "Confirmar Contraseña",
+      updatePassword: "Actualizar Contraseña",
+      updating: "Actualizando...",
+      passwordMismatch: "❌ ¡Las contraseñas no coinciden!",
+      serverError: "❌ Error del servidor: {error}",
+    },
+    stats: {
+      characterStatistics: "Estadísticas del Personaje",
+      loadingCharacters: "Cargando personajes...",
+      noCharacters: "No se encontraron personajes.",
+      name: "Nombre",
+      level: "Nivel",
+      resets: "Reinicios",
+      race: "Raza",
+      actions: {
+        unstuck: "Desatascar",
+        evolve: "Evolucionar",
+        grandReset: "Gran Reinicio",
+        processing: "Procesando...",
+      },
+    },
+  },
   downloads: {
     title: "Espejos de descarga",
     description:
@@ -20,6 +57,18 @@ export default {
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 Activado, o 0 Desactivado
     `,
+  },
+  events: {
+    title: "Próximos Eventos",
+    event: "Evento",
+    nextStart: "Próximo Inicio",
+    timeRemaining: "Tiempo Restante",
+    now: "¡Ahora!",
+    currentGameTime: "Hora Actual del Juego",
+  },
+  notFound: {
+    header: "404 - Página No Encontrada",
+    message: "¡Ups! No podemos encontrar la página que buscas.",
   },
   highscores: {
     serverError: "Error del servidor: {error}",

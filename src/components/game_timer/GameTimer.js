@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useTranslation } from "../../context/TranslationContext";
 
 function GameTimer() {
   const [currentTime, setCurrentTime] = useState(new Date());
@@ -11,9 +12,11 @@ function GameTimer() {
     return () => clearInterval(interval);
   }, []);
 
+  const { translate } = useTranslation();
+
   return (
     <div style={{ marginBottom: "5px" }}>
-      Current Game Time: {currentTime.toLocaleTimeString()}{" "}
+      {translate("events.currentGameTime")}: {currentTime.toLocaleTimeString()}{" "}
       {/* or toLocaleString() */}
     </div>
   );

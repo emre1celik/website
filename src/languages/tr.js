@@ -1,5 +1,42 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    hello: "Merhaba, {user}!",
+    tabs: { profile: "Profil", settings: "Ayarlar", stats: "Karakterler" },
+    profile: {
+      accountInformation: "Hesap Bilgileri",
+      email: "E-posta",
+      accountName: "Hesap Adı",
+      wcoin: "WCoin",
+      goblinPoints: "Goblin Puanı",
+      lastLogin: "Son Giriş",
+      buy: "Satın Al",
+    },
+    settings: {
+      changePassword: "Parolayı Değiştir",
+      newPassword: "Yeni Parola",
+      confirmPassword: "Parolayı Onayla",
+      updatePassword: "Parolayı Güncelle",
+      updating: "Güncelleniyor...",
+      passwordMismatch: "❌ Parolalar eşleşmiyor!",
+      serverError: "❌ Sunucu hatası: {error}",
+    },
+    stats: {
+      characterStatistics: "Karakter İstatistikleri",
+      loadingCharacters: "Karakterler yükleniyor...",
+      noCharacters: "Karakter bulunamadı.",
+      name: "İsim",
+      level: "Seviye",
+      resets: "Resetler",
+      race: "Sınıf",
+      actions: {
+        unstuck: "Sıkışmış",
+        evolve: "Evrimle",
+        grandReset: "Büyük Reset",
+        processing: "İşleniyor...",
+      },
+    },
+  },
   downloads: {
     title: "İndirme Yansımaları",
     description:
@@ -19,6 +56,18 @@ export default {
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 Açık, 0 Kapalı
     `,
+  },
+  events: {
+    title: "Gelecek Etkinlikler",
+    event: "Etkinlik",
+    nextStart: "Başlangıç",
+    timeRemaining: "Kalan Süre",
+    now: "Şimdi!",
+    currentGameTime: "Mevcut Oyun Süresi",
+  },
+  notFound: {
+    header: "404 - Sayfa Bulunamadı",
+    message: "Hata! Aradığınız sayfayı bulamıyoruz.",
   },
   highscores: {
     serverError: "Sunucu hatası: {error}",

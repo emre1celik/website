@@ -1,5 +1,42 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    hello: "Sveiks, {user}!",
+    tabs: { profile: "Profils", settings: "Iestatījumi", stats: "Varoņi" },
+    profile: {
+      accountInformation: "Konts informācija",
+      email: "E-pasts",
+      accountName: "Konts nosaukums",
+      wcoin: "WCoin",
+      goblinPoints: "Goblin punkti",
+      lastLogin: "Pēdējā pieslēgšanās",
+      buy: "Pirkt",
+    },
+    settings: {
+      changePassword: "Mainīt paroli",
+      newPassword: "Jauna parole",
+      confirmPassword: "Apstiprināt paroli",
+      updatePassword: "Atjaunināt paroli",
+      updating: "Atjaunina...",
+      passwordMismatch: "❌ Paroles nesakrīt!",
+      serverError: "❌ Servera kļūda: {error}",
+    },
+    stats: {
+      characterStatistics: "Varoņu statistika",
+      loadingCharacters: "Ielādē varoņus...",
+      noCharacters: "Nav atrasti varoņi.",
+      name: "Vārds",
+      level: "Līmenis",
+      resets: "Atjaunošanas",
+      race: "Rase",
+      actions: {
+        unstuck: "Atbrīvot",
+        evolve: "Attīstīt",
+        grandReset: "Lielā Atiestatīšana",
+        processing: "Apstrādā...",
+      },
+    },
+  },
   downloads: {
     title: "Lejupielādes spoguļi",
     description:
@@ -56,6 +93,18 @@ export default {
     guildName: "Gildes nosaukums",
     master: "Meistars",
     emblem: "Emblēma",
+  },
+  notFound: {
+    header: "404 - Lapa Nav Atrasta",
+    message: "Ups! Mēs nevaram atrast lapu, kuru meklējat.",
+  },
+  events: {
+    title: "Nākamie Notikumi",
+    event: "Notikums",
+    nextStart: "Nākamā Sākšana",
+    timeRemaining: "Atlikušais Laiks",
+    now: "Tagad!",
+    currentGameTime: "Pašreizējais Spēles Laiks",
   },
   register: {
     header: "Izveidot Kontu",

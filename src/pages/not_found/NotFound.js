@@ -2,8 +2,11 @@ import { NotFoundWrapper, NotFoundContent } from "./NotFoundStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
+import { useTranslation } from "../../context/TranslationContext";
 
 function NotFound({ user }) {
+  const { translate } = useTranslation();
+
   return (
     <>
       <Helmet>
@@ -17,13 +20,13 @@ function NotFound({ user }) {
           content="mu online 404, myra mu not found, page missing mu online, myra season 19 ep2 not found"
         />
       </Helmet>
-      
+
       <NotFoundWrapper>
         <Navigation user={user} />
 
         <NotFoundContent>
-          <h1>404 - Page Not Found</h1>
-          <p>Oops! We can’t find the page you’re looking for.</p>
+          <h1>{translate("notFound.header")}</h1>
+          <p>{translate("notFound.message")}</p>
         </NotFoundContent>
 
         <Footer>

@@ -1,5 +1,49 @@
 // eslint-disable-next-line
 export default {
+  controlPanel: {
+    loading: "Loading...",
+    notLoad: "Could not load profile.",
+    hello: "Hello, {user}!",
+    tabs: {
+      profile: "Profile",
+      settings: "Settings",
+      stats: "Characters",
+    },
+    profile: {
+      accountInformation: "Account Information",
+      email: "Email",
+      accountName: "Account Name",
+      wcoin: "WCoin",
+      goblinPoints: "Goblin Points",
+      lastLogin: "Last Login",
+      buy: "Buy",
+    },
+    settings: {
+      changePassword: "Change Password",
+      newPassword: "New Password",
+      confirmPassword: "Confirm Password",
+      updatePassword: "Update Password",
+      updating: "Updating...",
+      updated: "Updated",
+      passwordMismatch: "❌ Passwords do not match!",
+      serverError: "❌ Server error: {error}",
+    },
+    stats: {
+      characterStatistics: "Character Statistics",
+      loadingCharacters: "Loading characters...",
+      noCharacters: "No characters found.",
+      name: "Name",
+      level: "Level",
+      resets: "Resets",
+      race: "Race",
+      actions: {
+        unstuck: "Unstuck",
+        evolve: "Evolve",
+        grandReset: "Grand Reset",
+        processing: "Processing...",
+      },
+    },
+  },
   downloads: {
     title: "Download Mirrors",
     description:
@@ -47,6 +91,18 @@ export default {
     serverError: "❌ Server error: {error}",
     noAccount: "Don’t have an account?",
     registerHere: "Register here",
+  },
+  events: {
+    title: "Upcoming Events",
+    event: "Event",
+    nextStart: "Next Start",
+    timeRemaining: "Time Remaining",
+    now: "Now!",
+    currentGameTime: "Current Game Time",
+  },
+  notFound: {
+    header: "404 - Page Not Found",
+    message: "Oops! We can’t find the page you’re looking for.",
   },
   highscores: {
     serverError: "Server error: {error}",
