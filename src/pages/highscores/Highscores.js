@@ -655,7 +655,7 @@ function Highscores({ user }) {
                           <th>{translate("highscores.rank")}</th>
                           <th>{translate("highscores.guildName")}</th>
                           <th>{translate("highscores.master")}</th>
-                          <th>{translate("highscores.score")}</th>
+                          <th>{translate("highscores.resets")}</th>
                           <th>{translate("highscores.emblem")}</th>
                         </tr>
                       </thead>
