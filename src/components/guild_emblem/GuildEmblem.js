@@ -18,8 +18,8 @@ function GuildEmblem({ data, scale = 16 }) {
     [
       "rgba(0,0,0,0)", // 0 transparent
       "#000000", // 1 black
-      "#FFFFFF", // 2 white
-      "#FFD700", // 3 red
+      "#7D7D7D", // 2 white
+      "#FFFFFF", // 3 red
       "#FF3B3B", // 4 orange
       "#FF9A00", // 5 bright yellow
       "#D9D9D9", // 6 light gray (sword)
