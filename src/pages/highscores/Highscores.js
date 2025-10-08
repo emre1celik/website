@@ -73,9 +73,9 @@ function Highscores({ user }) {
     ik: "Illusion Knight",
   };
   function GuildEmblem({ data }) {
-    const canvasRef = React.useRef(null);
+    const canvasRef = useRef(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
       if (!data || !canvasRef.current) return;
 
       const ctx = canvasRef.current.getContext("2d");
