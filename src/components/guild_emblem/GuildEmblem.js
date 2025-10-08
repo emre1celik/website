@@ -16,60 +16,22 @@ function GuildEmblem({ data, scale = 16 }) {
   const palettes = [
     // palette 0: default attempt
     [
-      "rgba(0,0,0,0)", // 0 transparent
-      "#000000", // 1 black
-      "#7D7D7D", // 2 white
-      "#FFFFFF", // 3 red
-      "#FF3B3B", // 4 orange
-      "#FF9A00", // 5 bright yellow
-      "#D9D9D9", // 6 light gray (sword)
-      "#7D7D7D", // 7 medium gray
-      "#1F1F1F", // 8 dark gray
-      "#CFCFCF", // 9 light silver
-      "#8C8C8C", // 10 gray
-      "#6A2600", // 11 brown/maroon
-      "#007F00", // 12 dark green
-      "#000080", // 13 navy
-      "#FFCC66", // 14 warm light (yellow/orange)
-      "#800080", // 15 purple
-    ],
-    // palette 1: tuned variant (often matches bright orange sword)
-    [
-      "rgba(0,0,0,0)",
-      "#090909",
-      "#FFFFFF",
-      "#D80000",
-      "#FF7A00",
-      "#FFC400",
-      "#E6E6E6",
-      "#8A8A8A",
-      "#222222",
-      "#EDEDED",
-      "#9A9A9A",
-      "#5C1A1A",
-      "#0B7A07",
-      "#001E9B",
-      "#FFDAA1",
-      "#991F6F",
-    ],
-    // palette 2: alternate (brighter)
-    [
-      "rgba(0,0,0,0)",
-      "#000000",
-      "#FCFCFC",
-      "#FF0000",
-      "#FF8C00",
-      "#FFFF00",
-      "#E0E0E0",
-      "#B3B3B3",
-      "#2B2B2B",
-      "#D4D4D4",
-      "#808080",
-      "#7A0000",
-      "#006400",
-      "#00008B",
-      "#FFB84D",
-      "#800080",
+      "rgba(0,0,0,0)", // 0
+      "#000000", // 1
+      "#7D7D7D", // 2
+      "#FFFFFF", // 3
+      "#FF3B3B", // 4
+      "#FF9A00", // 5
+      "#f0e442ff", // 6 light gray (sword)
+      "#2ff443ff", // 7 medium gray
+      "#3c5e0cff", // 8 dark gray
+      "#47c073ff", // 9 light silver
+      "#54afb8ff", // 10 gray
+      "#3570b3ff", // 11 brown/maroon
+      "#00027fff", // 12 dark green
+      "#923ab8ff", // 13 navy
+      "#ff66d9ff", // 14 warm light (yellow/orange)
+      "#80003eff", // 15 purple
     ],
   ];
 
@@ -159,17 +121,12 @@ function GuildEmblem({ data, scale = 16 }) {
     <div style={{ display: "inline-block", textAlign: "center" }}>
       <canvas
         ref={canvasRef}
-        onClick={() => setPaletteIdx((i) => (i + 1) % palettes.length)}
         style={{
           cursor: "pointer",
           imageRendering: "pixelated",
           borderRadius: 4,
         }}
-        title="Click to cycle palettes (try different ones to match in-game colors)"
       />
-      <div style={{ fontSize: 11, marginTop: 6 }}>
-        Palette {paletteIdx + 1} / {palettes.length} — click emblem to change
-      </div>
     </div>
   );
 }

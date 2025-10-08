@@ -645,7 +645,7 @@ function Highscores({ user }) {
                             <td>{guild.master_name}</td>
                             <td>{formatNumber(Number(guild.total_resets))}</td>
                             <td>
-                              <GuildEmblem data={guild.emblem} scale={12} />
+                              <GuildEmblem data={guild.emblem} scale={4} />
                             </td>
                           </tr>
                         ))}
