@@ -41,6 +41,7 @@ import {
   ControlPanelTabs,
 } from "../control_panel/ControlPanelStyles";
 import { useTranslation } from "../../context/TranslationContext";
+import GuildEmblem from "./GuildEmblem";
 
 function Highscores({ user }) {
   const { translate } = useTranslation();
@@ -72,68 +73,6 @@ function Highscores({ user }) {
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
   };
-  function GuildEmblem({ data }) {
-    const canvasRef = useRef(null);
-
-    useEffect(() => {
-      if (!data || !canvasRef.current) return;
-
-      const ctx = canvasRef.current.getContext("2d");
-      const size = 8; // 8x8 pixels
-      const scale = 16; // zoom for visibility
-      const canvasSize = size * scale;
-      canvasRef.current.width = canvasSize;
-      canvasRef.current.height = canvasSize;
-      ctx.clearRect(0, 0, canvasSize, canvasSize);
-
-      // color palette used in MU Online
-      const palette = [
-        "transparent", // 0
-        "#000000", // 1 - black
-        "#ffffff", // 2 - white
-        "#ff0000", // 3 - red
-        "#00ff00", // 4 - green
-        "#0000ff", // 5 - blue
-        "#ffff00", // 6 - yellow
-        "#00ffff", // 7 - cyan
-        "#ff00ff", // 8 - magenta
-        "#c0c0c0", // 9 - light gray
-        "#808080", // 10 - gray
-        "#800000", // 11 - maroon
-        "#008000", // 12 - dark green
-        "#000080", // 13 - navy
-        "#808000", // 14 - olive
-        "#800080", // 15 - purple
-      ];
-
-      // convert "53 51 51 65 ..." → [53, 51, 51, 65, ...]
-      const bytes = data
-        .trim()
-        .split(/\s+/)
-        .map((b) => parseInt(b, 10))
-        .filter((b) => !isNaN(b));
-
-      // Each byte encodes 2 pixels (4 bits each)
-      let byteIndex = 0;
-      for (let y = 0; y < size; y++) {
-        for (let x = 0; x < size; x += 2) {
-          const byte = bytes[byteIndex++];
-          if (byte === undefined) continue;
-
-          const high = (byte >> 4) & 0x0f;
-          const low = byte & 0x0f;
-
-          ctx.fillStyle = palette[high] || "transparent";
-          ctx.fillRect(x * scale, y * scale, scale, scale);
-
-          ctx.fillStyle = palette[low] || "transparent";
-          ctx.fillRect((x + 1) * scale, y * scale, scale, scale);
-        }
-      }
-    }, [data]);
-
-    return data ? <canvas ref={canvasRef} /> : null;
-  }
 
   const classIconMap = {
     dw: {
@@ -706,7 +645,7 @@ function Highscores({ user }) {
                             <td>{guild.master_name}</td>
                             <td>{formatNumber(Number(guild.total_resets))}</td>
                             <td>
-                              <GuildEmblem data={guild.emblem} />
+                              <GuildEmblem data={guild.emblem} scale={12} />
                             </td>
                           </tr>
                         ))}
