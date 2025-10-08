@@ -73,51 +73,66 @@ function Highscores({ user }) {
     ik: "Illusion Knight",
   };
   function GuildEmblem({ data }) {
-    const canvasRef = useRef(null);
+    const canvasRef = React.useRef(null);
 
-    useEffect(() => {
+    React.useEffect(() => {
       if (!data || !canvasRef.current) return;
 
       const ctx = canvasRef.current.getContext("2d");
-      const size = 8; // emblem is 8x8
-      const scale = 16; // zoom factor
-      ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+      const size = 8; // 8x8 pixels
+      const scale = 16; // zoom for visibility
+      const canvasSize = size * scale;
+      canvasRef.current.width = canvasSize;
+      canvasRef.current.height = canvasSize;
+      ctx.clearRect(0, 0, canvasSize, canvasSize);
 
+      // color palette used in MU Online
       const palette = [
-        "transparent",
-        "#000000",
-        "#ffffff",
-        "#ff0000",
-        "#00ff00",
-        "#0000ff",
-        "#ffff00",
-        "#00ffff",
-        "#ff00ff",
-        "#c0c0c0",
-        "#808080",
-        "#800000",
-        "#008000",
-        "#000080",
-        "#808000",
-        "#800080",
+        "transparent", // 0
+        "#000000", // 1 - black
+        "#ffffff", // 2 - white
+        "#ff0000", // 3 - red
+        "#00ff00", // 4 - green
+        "#0000ff", // 5 - blue
+        "#ffff00", // 6 - yellow
+        "#00ffff", // 7 - cyan
+        "#ff00ff", // 8 - magenta
+        "#c0c0c0", // 9 - light gray
+        "#808080", // 10 - gray
+        "#800000", // 11 - maroon
+        "#008000", // 12 - dark green
+        "#000080", // 13 - navy
+        "#808000", // 14 - olive
+        "#800080", // 15 - purple
       ];
 
+      // convert "53 51 51 65 ..." → [53, 51, 51, 65, ...]
+      const bytes = data
+        .trim()
+        .split(/\s+/)
+        .map((b) => parseInt(b, 10))
+        .filter((b) => !isNaN(b));
+
+      // Each byte encodes 2 pixels (4 bits each)
+      let byteIndex = 0;
       for (let y = 0; y < size; y++) {
         for (let x = 0; x < size; x += 2) {
-          const byte = data[y]; // 1 byte per row for 2 pixels?
-          const high = byte >> 4;
+          const byte = bytes[byteIndex++];
+          if (byte === undefined) continue;
+
+          const high = (byte >> 4) & 0x0f;
           const low = byte & 0x0f;
 
-          ctx.fillStyle = palette[high];
+          ctx.fillStyle = palette[high] || "transparent";
           ctx.fillRect(x * scale, y * scale, scale, scale);
 
-          ctx.fillStyle = palette[low];
+          ctx.fillStyle = palette[low] || "transparent";
           ctx.fillRect((x + 1) * scale, y * scale, scale, scale);
         }
       }
     }, [data]);
 
-    return data ? <canvas ref={canvasRef} width={32} height={32} /> : null;
+    return data ? <canvas ref={canvasRef} /> : null;
   }
 
   const classIconMap = {
