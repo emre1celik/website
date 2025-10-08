@@ -41,7 +41,7 @@ import {
   ControlPanelTabs,
 } from "../control_panel/ControlPanelStyles";
 import { useTranslation } from "../../context/TranslationContext";
-import GuildEmblem from "./GuildEmblem";
+import GuildEmblem from "../../components/guild_emblem/GuildEmblem";
 
 function Highscores({ user }) {
   const { translate } = useTranslation();
