@@ -50,9 +50,9 @@ export default {
     description:
       "Izvēlies spoguli, lai lejupielādētu klientu. Visi saites norāda uz jaunāko versiju.",
     note1:
-      "⚠️ Piezīme: Iespējams, tev būs jāizslēdz main.exe no ugunsmūra vai īslaicīgi jāizslēdz tas, lai klients varētu izveidot savienojumu.",
+      "<strong>⚠️</strong> Piezīme: Iespējams, tev būs jāizslēdz main.exe no ugunsmūra vai īslaicīgi jāizslēdz tas, lai klients varētu izveidot savienojumu.",
     note2_desc: `
-      <strong>Ekrāna izšķirtspējas maiņa:</strong> Tu vari rediģēt failu
+      <strong>⚠️ Ekrāna izšķirtspējas maiņa:</strong> Tu vari rediģēt failu
       <strong>LauncherOption.if</strong> klienta mapē, lai mainītu izšķirtspēju. Iestati <strong>DevModeIndex</strong>= vērtību no 0 līdz 9.
       <br /><br />
       0: 800x600 (4:3)<br />
@@ -63,6 +63,9 @@ export default {
       5: 1280x920 (4:3)<br />
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 Ieslēgts, 0 Izslēgts
+    `,
+    note3_desc: `
+      <strong>⚠️ Fonta problēma:</strong> Ja spēlē neredzi fontu un tekstu, bet tikai kvadrātus, aizver spēles klientu. Lejupielādē trūkstošo fontu šeit (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) un noklikšķini, lai to instalētu. Pēc tam restartē spēles klientu.
     `,
   },
   navigation: {

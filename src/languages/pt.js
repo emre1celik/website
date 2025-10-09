@@ -52,9 +52,9 @@ export default {
     description:
       "Escolha um espelho para baixar o cliente. Todos os links apontam para a versão mais recente.",
     note1:
-      "⚠️ Nota: Pode ser necessário excluir o main.exe do seu firewall ou desativá-lo temporariamente para que o cliente se conecte.",
+      "<strong>⚠️ Nota:</strong> Pode ser necessário excluir o main.exe do seu firewall ou desativá-lo temporariamente para que o cliente se conecte.",
     note2_desc: `
-      <strong>Alterar resolução:</strong> Você pode editar o arquivo
+      <strong>⚠️ Alterar resolução:</strong> Você pode editar o arquivo
       <strong>LauncherOption.if</strong> dentro dos arquivos do cliente para alterar a resolução. Defina <strong>DevModeIndex</strong>= entre 0 e 9.
       <br /><br />
       0: 800x600 (4:3)<br />
@@ -65,6 +65,9 @@ export default {
       5: 1280x920 (4:3)<br />
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 Ligado, 0 Desligado
+    `,
+    note3_desc: `
+      <strong>⚠️ Problema de fonte:</strong> Se você não consegue ver a fonte e o texto no jogo, mas apenas quadrados, feche o cliente do jogo. Baixe a fonte ausente aqui (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) e clique para instalá-la. Depois reinicie o cliente do jogo.
     `,
   },
   highscores: {

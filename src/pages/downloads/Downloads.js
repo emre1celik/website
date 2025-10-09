@@ -80,7 +80,11 @@ function Downloads({ user }) {
                 </li>
               ))}
             </ul>
-            <DownloadsNote>{translate("downloads.note1")}</DownloadsNote>
+            <DownloadsNote>
+              <TranslatedHTML entity="downloads.note1" /></DownloadsNote>
+            <DownloadsNote>
+              <TranslatedHTML entity="downloads.note3_desc" />
+            </DownloadsNote>
             <DownloadsNote>
               <TranslatedHTML entity="downloads.note2_desc" />
             </DownloadsNote>

@@ -18,7 +18,6 @@ import {
   faTrophy,
   faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import { useRef } from "react";
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";
 import ElfIcon from "../../assets/images/classes/elf.png";
