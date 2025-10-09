@@ -259,8 +259,8 @@ function ControlPanel({ user }) {
   const renderTabContent = () => {
     switch (activeTab) {
       case "profile":
-        if (loading) return <p>{translate("controlPanel.loading")}</p>;
-        if (!profile) return <p>{translate("controlPanel.notLoad")}</p>;
+        if (loading) return <p><FontAwesomeIcon icon={faSpinner} spin /> {translate("controlPanel.loading")}</p>;
+        if (!profile) return <p><FontAwesomeIcon icon={faSpinner} spin /> {translate("controlPanel.notLoad")}</p>;
         return (
           <div>
             <h3>{translate("controlPanel.profile.accountInformation")}</h3>
@@ -482,9 +482,9 @@ function ControlPanel({ user }) {
 
       case "stats":
         if (charsLoading)
-          return <p>{translate("controlPanel.stats.loadingCharacters")}</p>;
+          return <p><FontAwesomeIcon icon={faSpinner} spin /> {translate("controlPanel.stats.loadingCharacters")}</p>;
         if (!characters.length)
-          return <p>{translate("controlPanel.stats.noCharacters")}</p>;
+          return <p><FontAwesomeIcon icon={faSpinner} spin /> {translate("controlPanel.stats.noCharacters")}</p>;
 
         return (
           <div>
@@ -554,58 +554,7 @@ function ControlPanel({ user }) {
                     />
                     {classNamesMap[classInfo.key] || "Unknown"}
                   </p>
-
-                  {/* Action buttons */}
-                  <div
-                    style={{
-                      marginTop: "1rem",
-                      display: "flex",
-                      gap: "0.5rem",
-                    }}
-                  >
-                    {["unstuck", "evolve", "grand-reset"].map((action) => {
-                      const key = `${char.name}_${action}`;
-                      const iconMap = {
-                        unstuck: faLocationCrosshairs,
-                        evolve: faUpLong,
-                        "grand-reset": faArrowsRotate,
-                      };
-                      const labelMap = {
-                        unstuck: translate(
-                          "controlPanel.stats.actions.unstuck"
-                        ),
-                        evolve: translate("controlPanel.stats.actions.evolve"),
-                        "grand-reset": translate(
-                          "controlPanel.stats.actions.grandReset"
-                        ),
-                      };
-
-                      return (
-                        <div
-                          key={action}
-                          style={{ display: "flex", flexDirection: "column" }}
-                        >
-                          <GreenButton
-                            disabled={actionLoading[key]}
-                            onClick={() =>
-                              handleCharacterAction(char.name, action)
-                            }
-                          >
-                            <FontAwesomeIcon
-                              icon={
-                                actionLoading[key] ? faSpinner : iconMap[action]
-                              }
-                              spin={actionLoading[key]} // spin only when loading
-                              style={{ marginRight: "5px" }}
-                            />
-                            {actionLoading[key]
-                              ? translate("controlPanel.stats.processing")
-                              : labelMap[action]}
-                          </GreenButton>
-                        </div>
-                      );
-                    })}
-                  </div>{/* Mount model selector (only if player has a mount) */}
+                  {/* Mount model selector (only if player has a mount) */}
                   {char.giant_model !== null && (
                     <div style={{ marginTop: "1rem" }}>
                       <label
@@ -674,6 +623,57 @@ function ControlPanel({ user }) {
                     </div>
                   )}
 
+                  {/* Action buttons */}
+                  <div
+                    style={{
+                      marginTop: "1rem",
+                      display: "flex",
+                      gap: "0.5rem",
+                    }}
+                  >
+                    {["unstuck", "evolve", "grand-reset"].map((action) => {
+                      const key = `${char.name}_${action}`;
+                      const iconMap = {
+                        unstuck: faLocationCrosshairs,
+                        evolve: faUpLong,
+                        "grand-reset": faArrowsRotate,
+                      };
+                      const labelMap = {
+                        unstuck: translate(
+                          "controlPanel.stats.actions.unstuck"
+                        ),
+                        evolve: translate("controlPanel.stats.actions.evolve"),
+                        "grand-reset": translate(
+                          "controlPanel.stats.actions.grandReset"
+                        ),
+                      };
+
+                      return (
+                        <div
+                          key={action}
+                          style={{ display: "flex", flexDirection: "column" }}
+                        >
+                          <GreenButton
+                            disabled={actionLoading[key]}
+                            onClick={() =>
+                              handleCharacterAction(char.name, action)
+                            }
+                          >
+                            <FontAwesomeIcon
+                              icon={
+                                actionLoading[key] ? faSpinner : iconMap[action]
+                              }
+                              spin={actionLoading[key]} // spin only when loading
+                              style={{ marginRight: "5px" }}
+                            />
+                            {actionLoading[key]
+                              ? translate("controlPanel.stats.processing")
+                              : labelMap[action]}
+                          </GreenButton>
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               );
             })}
