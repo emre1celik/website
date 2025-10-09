@@ -605,7 +605,75 @@ function ControlPanel({ user }) {
                         </div>
                       );
                     })}
-                  </div>
+                  </div>{/* Mount model selector (only if player has a mount) */}
+                  {char.giant_model !== null && (
+                    <div style={{ marginTop: "1rem" }}>
+                      <label
+                        style={{
+                          display: "block",
+                          marginBottom: "0.3rem",
+                          color: "#ccc",
+                        }}
+                      >
+                        🐴 Giant Mount Model:
+                      </label>
+                      <select
+                        value={char.giant_model}
+                        onChange={async (e) => {
+                          const newModel = parseInt(e.target.value);
+                          const token = localStorage.getItem("apiToken");
+
+                          try {
+                            const response = await fetch(
+                              "https://api.myramu.online/api/change-giant-model",
+                              {
+                                method: "POST",
+                                headers: {
+                                  "Content-Type": "application/json",
+                                  Authorization: `Bearer ${token}`,
+                                },
+                                body: JSON.stringify({
+                                  character_name: char.name,
+                                  giant_model: newModel,
+                                }),
+                              }
+                            );
+
+                            const data = await response.json();
+                            if (response.ok) {
+                              setCharacterActionMessage({
+                                type: "success",
+                                text: "✅ " + data.message,
+                              });
+                              await fetchCharacters(); // refresh after change
+                            } else {
+                              setCharacterActionMessage({
+                                type: "error",
+                                text: "❌ " + (data.error || "Failed to update mount"),
+                              });
+                            }
+                          } catch (err) {
+                            setCharacterActionMessage({
+                              type: "error",
+                              text: "❌ Server error: " + err.message,
+                            });
+                          }
+                        }}
+                        style={{
+                          padding: "0.4rem",
+                          borderRadius: "5px",
+                          border: "1px solid #555",
+                          backgroundColor: "rgba(255,255,255,0.1)",
+                          color: "#ccc",
+                        }}
+                      >
+                        <option value={1}>Model 1</option>
+                        <option value={2}>Model 2</option>
+                        <option value={3}>Model 3</option>
+                      </select>
+                    </div>
+                  )}
+
                 </div>
               );
             })}
