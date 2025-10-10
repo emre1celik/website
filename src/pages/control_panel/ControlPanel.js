@@ -115,6 +115,47 @@ function ControlPanel({ user }) {
     }
   }
 
+  async function changeMount(e, character) {
+    const newModel = parseInt(e.target.value);
+    const token = localStorage.getItem("apiToken");
+
+    try {
+      const response = await fetch(
+        "https://api.myramu.online/api/change-giant-model",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            character_name: character.name,
+            giant_model: newModel,
+          }),
+        }
+      );
+
+      const data = await response.json();
+      if (response.ok) {
+        setCharacterActionMessage({
+          type: "success",
+          text: "✅ " + data.message,
+        });
+        await fetchCharacters(); // refresh after change
+      } else {
+        setCharacterActionMessage({
+          type: "error",
+          text: "❌ " + (data.error || "Failed to update mount"),
+        });
+      }
+    } catch (err) {
+      setCharacterActionMessage({
+        type: "error",
+        text: "❌ Server error: " + err.message,
+      });
+    }
+  }
+
   const classIconMap = {
     dw: { ids: [0, 1, 3, 7, 15], icon: DwIcon },
     dk: { ids: [16, 17, 19, 23, 31], icon: DkIcon },
@@ -554,6 +595,7 @@ function ControlPanel({ user }) {
                     />
                     {classNamesMap[classInfo.key] || "Unknown"}
                   </p>
+                  
                   {/* Mount model selector (only if player has a mount) */}
                   {char.giant_model !== null && (
                     <div style={{ marginTop: "1rem" }}>
@@ -564,50 +606,11 @@ function ControlPanel({ user }) {
                           color: "#ccc",
                         }}
                       >
-                        🐴 Giant Mount Model:
+                        (5th class) Giant Mount:
                       </label>
                       <select
                         value={char.giant_model}
-                        onChange={async (e) => {
-                          const newModel = parseInt(e.target.value);
-                          const token = localStorage.getItem("apiToken");
-
-                          try {
-                            const response = await fetch(
-                              "https://api.myramu.online/api/change-giant-model",
-                              {
-                                method: "POST",
-                                headers: {
-                                  "Content-Type": "application/json",
-                                  Authorization: `Bearer ${token}`,
-                                },
-                                body: JSON.stringify({
-                                  character_name: char.name,
-                                  giant_model: newModel,
-                                }),
-                              }
-                            );
-
-                            const data = await response.json();
-                            if (response.ok) {
-                              setCharacterActionMessage({
-                                type: "success",
-                                text: "✅ " + data.message,
-                              });
-                              await fetchCharacters(); // refresh after change
-                            } else {
-                              setCharacterActionMessage({
-                                type: "error",
-                                text: "❌ " + (data.error || "Failed to update mount"),
-                              });
-                            }
-                          } catch (err) {
-                            setCharacterActionMessage({
-                              type: "error",
-                              text: "❌ Server error: " + err.message,
-                            });
-                          }
-                        }}
+                        onChange={(e) => changeMount(e, char)}
                         style={{
                           padding: "0.4rem",
                           borderRadius: "5px",
