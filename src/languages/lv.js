@@ -76,6 +76,7 @@ export default {
     events: "Pasākumi",
     community: "Kopiena",
     login: "Ienākt",
+    info: "Ceļveži",
   },
   highscores: {
     serverError: "Servera kļūda: {error}",

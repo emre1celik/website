@@ -146,6 +146,7 @@ export default {
     events: "Üritused",
     community: "Kogukond",
     login: "Logi sisse",
+    info: "Juhendid",
   },
   cookie: {
     message:

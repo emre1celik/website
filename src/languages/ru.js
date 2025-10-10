@@ -145,6 +145,7 @@ export default {
     events: "События",
     community: "Сообщество",
     login: "Войти",
+    info: "Гайды",
   },
   cookie: {
     message:

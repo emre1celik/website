@@ -145,6 +145,7 @@ export default {
     events: "Etkinlikler",
     community: "Topluluk",
     login: "Giriş",
+    info: "Rehberler",
   },
   cookie: {
     message:

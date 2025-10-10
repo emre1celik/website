@@ -85,6 +85,7 @@ export default {
     events: "Events",
     community: "Community",
     login: "Login",
+    info: "Guides",
   },
   login: {
     header: "Login",

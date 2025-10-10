@@ -147,6 +147,7 @@ export default {
     events: "Eventos",
     community: "Comunidade",
     login: "Entrar",
+    info: "Guias",
   },
   cookie: {
     message:
