@@ -24,6 +24,7 @@ export default function ControlPanelStats({ characters, charsLoading, characterA
 
       {characters.map((char) => {
         const classInfo = getClassInfo(char.race);
+        const mountKey = `${char.name}_change-mount`;
 
         return (
           <div key={char.name} style={{ marginBottom: "1.5rem", padding: "1rem", border: "1px solid #555", borderRadius: "8px", background: "rgba(255,255,255,0.05)" }}>
@@ -37,25 +38,41 @@ export default function ControlPanelStats({ characters, charsLoading, characterA
             </p>
 
             {char.giant_model !== null && (
-              <div>
-                <label style={{ color: "#ccc", fontWeight: "bold", marginRight: "15px" }}>
+              <div
+                style={{
+                  marginTop: "1rem",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                }}
+              >
+                <label style={{ color: "#ccc", fontWeight: "bold" }}>
                   (5th class) Giant Mount:
                 </label>
-                <select
-                  value={char.giant_model}
-                  onChange={(e) => changeMount(e, char)}
-                  style={{
-                    padding: "0.2rem",
-                    borderRadius: "5px",
-                    border: "1px solid #555",
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                    color: "#ccc"
-                  }}
-                >
-                  <option value={1}>Model 1</option>
-                  <option value={2}>Model 2</option>
-                  <option value={3}>Model 3</option>
-                </select>
+
+                {actionLoading[mountKey] ? (
+                  <FontAwesomeIcon
+                    icon={faSpinner}
+                    spin
+                    style={{ color: "#ccc", fontSize: "1.2rem" }}
+                  />
+                ) : (
+                  <select
+                    value={char.giant_model}
+                    onChange={(e) => changeMount(e, char)}
+                    style={{
+                      padding: "0.3rem",
+                      borderRadius: "5px",
+                      border: "1px solid #555",
+                      backgroundColor: "rgba(255,255,255,0.1)",
+                      color: "#ccc",
+                    }}
+                  >
+                    <option value={1}>Model 1</option>
+                    <option value={2}>Model 2</option>
+                    <option value={3}>Model 3</option>
+                  </select>
+                )}
               </div>
             )}
 
