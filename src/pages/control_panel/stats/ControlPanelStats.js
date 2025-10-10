@@ -37,15 +37,15 @@ export default function ControlPanelStats({ characters, charsLoading, characterA
             </p>
 
             {char.giant_model !== null && (
-              <div style={{ marginTop: "1rem", display: "flex", alignItems: "center", gap: "0.5rem" }}>
-                <label style={{ color: "#ccc" }}>
+              <div>
+                <label style={{ color: "#ccc", fontWeight: "bold", marginRight: "5px" }}>
                   (5th class) Giant Mount:
                 </label>
                 <select
                   value={char.giant_model}
                   onChange={(e) => changeMount(e, char)}
                   style={{
-                    padding: "0.4rem",
+                    padding: "0.2rem",
                     borderRadius: "5px",
                     border: "1px solid #555",
                     backgroundColor: "rgba(255,255,255,0.1)",
