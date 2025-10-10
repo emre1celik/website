@@ -38,7 +38,7 @@ export default function ControlPanelStats({ characters, charsLoading, characterA
 
             {char.giant_model !== null && (
               <div>
-                <label style={{ color: "#ccc", fontWeight: "bold", marginRight: "5px" }}>
+                <label style={{ color: "#ccc", fontWeight: "bold", marginRight: "15px" }}>
                   (5th class) Giant Mount:
                 </label>
                 <select
