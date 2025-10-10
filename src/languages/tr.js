@@ -37,6 +37,7 @@ export default {
       resets: "Sıfırlamalar",
       race: "Irk",
       processing: "İşleniyor...",
+      giant_mount: "(5. sınıf) Dev Binek",
       actions: {
         unstuck: "Kurtar",
         evolve: "Evrimle",

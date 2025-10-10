@@ -38,6 +38,7 @@ export default {
         resets: "Resets",
         race: "Raça",
         processing: "Processando...",
+        giant_mount: "(5ª classe) Montaria Gigante",
         actions: {
           unstuck: "Destravar",
           evolve: "Evoluir",

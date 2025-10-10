@@ -47,7 +47,7 @@ export default function ControlPanelStats({ characters, charsLoading, characterA
                 }}
               >
                 <label style={{ color: "#ccc", fontWeight: "bold" }}>
-                  (5th class) Giant Mount:
+                  {translate("controlPanel.stats.giant_mount")}
                 </label>
 
                 {actionLoading[mountKey] ? (

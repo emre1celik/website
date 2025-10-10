@@ -37,6 +37,7 @@ export default {
       resets: "Сбросы",
       race: "Раса",
       processing: "Обработка...",
+      giant_mount: "(5-й класс) Гигантский скакун",
       actions: {
         unstuck: "Разблокировать",
         evolve: "Эволюция",
