@@ -182,6 +182,7 @@ export const HighscoresTable = styled.table`
   width: 100%;
   border-collapse: collapse;
   text-align: center;
+  font-size: 12px;
 
   th,
   td {
