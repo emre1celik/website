@@ -37,6 +37,7 @@ export default {
       resets: "Lähtestamised",
       race: "Rass",
       processing: "Töötlemine...",
+      giant_mount: "(5. klass) Hiiglaslik ratsu",
       actions: {
         unstuck: "Vabasta",
         evolve: "Arenda",
@@ -50,9 +51,9 @@ export default {
     description:
       "Vali peegel, et klient alla laadida. Kõik lingid viivad uusima versioonini.",
     note1:
-      "⚠️ Märkus: Võid vajada faili main.exe väljaarvamist oma tulemüürist või selle ajutist väljalülitamist, et klient saaks ühenduda.",
+      "<strong>⚠️ Märkus:</strong> Võid vajada faili main.exe väljaarvamist oma tulemüürist või selle ajutist väljalülitamist, et klient saaks ühenduda.",
     note2_desc: `
-      <strong>Resolutsiooni muutmine:</strong> Sa saad muuta faili
+      <strong>⚠️ Resolutsiooni muutmine:</strong> Sa saad muuta faili
       <strong>LauncherOption.if</strong> klientkaustas, et muuta ekraani resolutsiooni. Määra <strong>DevModeIndex</strong>= väärtus vahemikus 0–9, et muuta resolutsiooni.
       <br /><br />
       0: 800x600 (4:3)<br />
@@ -63,6 +64,9 @@ export default {
       5: 1280x920 (4:3)<br />
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 sees, 0 väljas
+    `,
+    note3_desc: `
+      <strong>⚠️ Kirjatüübi probleem:</strong> Kui mängus ei näe kirjatüüpi ja teksti, vaid ainult ruute, sulge mänguklient. Laadi puuduv kirjatüüp siit (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) ja installimiseks klõpsake sellel. Pärast seda taaskäivitage mänguklient.
     `,
   },
   login: {
@@ -142,6 +146,7 @@ export default {
     events: "Üritused",
     community: "Kogukond",
     login: "Logi sisse",
+    info: "Juhendid",
   },
   cookie: {
     message:

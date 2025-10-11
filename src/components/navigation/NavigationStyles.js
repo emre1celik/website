@@ -25,7 +25,7 @@ export const HamburgerButton = styled.button`
   color: white;
   cursor: pointer;
 
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     display: block;
   }
 `;
@@ -50,7 +50,7 @@ export const NavigationLinks = styled.ul`
   padding: 0;
   align-items: center;
 
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     li {
       display: none;
     }
@@ -91,7 +91,7 @@ export const NavigationUserName = styled.span`
 `;
 
 export const NavigationLabel = styled.span`
-  @media (max-width: 1200px) {
+  @media (max-width: 1250px) {
     display: none;
   }
 `;

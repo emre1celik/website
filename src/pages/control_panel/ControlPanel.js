@@ -7,7 +7,6 @@ import {
   ControlPanelTabs,
   ControlPanelTabButton,
   ControlPanelTabContent,
-  GreenButton,
 } from "./ControlPanelStyles";
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
@@ -17,10 +16,6 @@ import {
   faUser,
   faCog,
   faChartBar,
-  faCartShopping,
-  faLocationCrosshairs,
-  faUpLong,
-  faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";
@@ -37,8 +32,10 @@ import LwIcon from "../../assets/images/classes/lw.png";
 import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
 import DefaultIcon from "../../assets/images/classes/default.png";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "../../context/TranslationContext";
+import ControlPanelProfile from "./profile/ControlPanelProfile";
+import ControlPanelSettings from "./settings/ControlPanelSettings";
+import ControlPanelStats from "./stats/ControlPanelStats";
 
 function ControlPanel({ user }) {
   const { translate } = useTranslation();
@@ -71,6 +68,7 @@ function ControlPanel({ user }) {
     ik: "Illusion Knight",
   };
   const [actionLoading, setActionLoading] = useState({});
+
   async function handleCharacterAction(characterName, actionType) {
     const token = localStorage.getItem("apiToken");
     const key = `${characterName}_${actionType}`;
@@ -112,6 +110,47 @@ function ControlPanel({ user }) {
       });
     } finally {
       setActionLoading((prev) => ({ ...prev, [key]: false }));
+    }
+  }
+
+  async function changeMount(e, character) {
+    const newModel = parseInt(e.target.value);
+    const token = localStorage.getItem("apiToken");
+
+    try {
+      const response = await fetch(
+        "https://api.myramu.online/api/change-giant-model",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            character_name: character.name,
+            giant_model: newModel,
+          }),
+        }
+      );
+
+      const data = await response.json();
+      if (response.ok) {
+        setCharacterActionMessage({
+          type: "success",
+          text: "✅ " + data.message,
+        });
+        await fetchCharacters(); // refresh after change
+      } else {
+        setCharacterActionMessage({
+          type: "error",
+          text: "❌ " + (data.error || "Failed to update mount"),
+        });
+      }
+    } catch (err) {
+      setCharacterActionMessage({
+        type: "error",
+        text: "❌ Server error: " + err.message,
+      });
     }
   }
 
@@ -256,371 +295,31 @@ function ControlPanel({ user }) {
     }
   }
 
-  const renderTabContent = () => {
-    switch (activeTab) {
-      case "profile":
-        if (loading) return <p>{translate("controlPanel.loading")}</p>;
-        if (!profile) return <p>{translate("controlPanel.notLoad")}</p>;
-        return (
-          <div>
-            <h3>{translate("controlPanel.profile.accountInformation")}</h3>
-
-            <div style={{ marginBottom: "1rem" }}>
-              <label>{translate("controlPanel.profile.email")}</label>
-              <br />
-              <input
-                type="text"
-                value={profile.email}
-                disabled
-                style={{
-                  width: "100%",
-                  padding: "0.5rem",
-                  marginTop: "0.3rem",
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                  border: "1px solid #555",
-                  borderRadius: "5px",
-                  color: "#ccc",
-                }}
-              />
-            </div>
-
-            <div style={{ marginBottom: "1rem" }}>
-              <label>{translate("controlPanel.profile.accountName")}</label>
-              <br />
-              <input
-                type="text"
-                value={profile.accountName}
-                disabled
-                style={{
-                  width: "100%",
-                  padding: "0.5rem",
-                  marginTop: "0.3rem",
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                  border: "1px solid #555",
-                  borderRadius: "5px",
-                  color: "#ccc",
-                }}
-              />
-            </div>
-
-            <div style={{ marginBottom: "1rem" }}>
-              <label>{translate("controlPanel.profile.wcoin")}</label>
-              <br />
-              <div
-                style={{ display: "flex", gap: "0.5rem", marginTop: "0.3rem" }}
-              >
-                <input
-                  type="text"
-                  value={profile.wcoin.toLocaleString()}
-                  disabled
-                  style={{
-                    flex: 2,
-                    padding: "0.5rem",
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                    border: "1px solid #555",
-                    borderRadius: "5px",
-                    color: "#ccc",
-                  }}
-                />
-                <GreenButton style={{ flex: 1 }}>
-                  <FontAwesomeIcon
-                    icon={faCartShopping}
-                    style={{ marginRight: "5px" }}
-                  />
-                  {translate("controlPanel.profile.buy")}
-                </GreenButton>
-              </div>
-            </div>
-
-            <div style={{ marginBottom: "1rem" }}>
-              <label>{translate("controlPanel.profile.goblinPoints")}</label>
-              <br />
-              <div
-                style={{ display: "flex", gap: "0.5rem", marginTop: "0.3rem" }}
-              >
-                <input
-                  type="number"
-                  value={profile.goblin_points.toLocaleString()}
-                  disabled
-                  style={{
-                    flex: 2,
-                    padding: "0.5rem",
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                    border: "1px solid #555",
-                    borderRadius: "5px",
-                    color: "#ccc",
-                  }}
-                />
-                <GreenButton style={{ flex: 1 }}>
-                  <FontAwesomeIcon
-                    icon={faCartShopping}
-                    style={{ marginRight: "5px" }}
-                  />
-                  {translate("controlPanel.profile.buy")}
-                </GreenButton>
-              </div>
-            </div>
-
-            <div style={{ marginBottom: "1rem" }}>
-              <label>{translate("controlPanel.profile.lastLogin")}</label>
-              <br />
-              <input
-                type="text"
-                value={profile.last_login}
-                disabled
-                style={{
-                  width: "100%",
-                  padding: "0.5rem",
-                  marginTop: "0.3rem",
-                  backgroundColor: "rgba(255,255,255,0.1)",
-                  border: "1px solid #555",
-                  borderRadius: "5px",
-                  color: "#ccc",
-                }}
-              />
-            </div>
-          </div>
-        );
-
-      case "settings":
-        return (
-          <div>
-            <h3>{translate("controlPanel.settings.changePassword")}</h3>
-            <form onSubmit={(e) => onChangePasswordSubmit(e)}>
-              <div style={{ marginBottom: "1rem" }}>
-                <label htmlFor="password">
-                  {translate("controlPanel.settings.newPassword")}
-                </label>
-                <br />
-                <input
-                  id="password"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem",
-                    marginTop: "0.3rem",
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                    border: "1px solid #555",
-                    borderRadius: "5px",
-                    color: "#ccc",
-                  }}
-                />
-              </div>
-
-              <div style={{ marginBottom: "1rem" }}>
-                <label htmlFor="confirmPassword">
-                  {translate("controlPanel.settings.confirmPassword")}
-                </label>
-                <br />
-                <input
-                  id="confirmPassword"
-                  type="password"
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  required
-                  style={{
-                    width: "100%",
-                    padding: "0.5rem",
-                    marginTop: "0.3rem",
-                    backgroundColor: "rgba(255,255,255,0.1)",
-                    border: "1px solid #555",
-                    borderRadius: "5px",
-                    color: "#ccc",
-                  }}
-                />
-              </div>
-
-              <button
-                type="submit"
-                disabled={changingPassword}
-                style={{
-                  padding: "0.7rem 1.5rem",
-                  backgroundColor: changingPassword ? "#666" : "#4caf50",
-                  border: "none",
-                  borderRadius: "5px",
-                  color: "#fff",
-                  cursor: changingPassword ? "not-allowed" : "pointer",
-                }}
-              >
-                <FontAwesomeIcon
-                  icon={faArrowsRotate}
-                  style={{ marginRight: "5px" }}
-                />
-                {changingPassword
-                  ? translate("controlPanel.settings.updating")
-                  : translate("controlPanel.settings.updated")}
-              </button>
-
-              {passwordMessage && (
-                <div
-                  style={{
-                    marginTop: "1rem",
-                    padding: "0.7rem",
-                    borderRadius: "5px",
-                    backgroundColor:
-                      passwordMessage.type === "success"
-                        ? "rgba(76, 175, 80, 0.2)"
-                        : "rgba(244, 67, 54, 0.2)",
-                    color:
-                      passwordMessage.type === "success"
-                        ? "#4caf50"
-                        : "#f44336",
-                    border: `1px solid ${
-                      passwordMessage.type === "success" ? "#4caf50" : "#f44336"
-                    }`,
-                  }}
-                >
-                  {passwordMessage.text}
-                </div>
-              )}
-            </form>
-          </div>
-        );
-
-      case "stats":
-        if (charsLoading)
-          return <p>{translate("controlPanel.stats.loadingCharacters")}</p>;
-        if (!characters.length)
-          return <p>{translate("controlPanel.stats.noCharacters")}</p>;
-
-        return (
-          <div>
-            <h3>{translate("controlPanel.stats.characterStatistics")}</h3>
-            {characterActionMessage && (
-              <div
-                style={{
-                  width: "100%",
-                  marginBottom: "1rem",
-                  padding: "0.7rem",
-                  borderRadius: "5px",
-                  marginTop: "15px",
-                  backgroundColor:
-                    characterActionMessage.type === "success"
-                      ? "rgba(76, 175, 80, 0.2)"
-                      : "rgba(244, 67, 54, 0.2)",
-                  color:
-                    characterActionMessage.type === "success"
-                      ? "#4caf50"
-                      : "#f44336",
-                  border: `1px solid ${
-                    characterActionMessage.type === "success"
-                      ? "#4caf50"
-                      : "#f44336"
-                  }`,
-                }}
-              >
-                {characterActionMessage.text}
-              </div>
-            )}
-            {characters.map((char, idx) => {
-              const classInfo = getClassInfo(char.race);
-              return (
-                <div
-                  key={idx}
-                  style={{
-                    marginBottom: "1.5rem",
-                    padding: "1rem",
-                    border: "1px solid #555",
-                    borderRadius: "8px",
-                    background: "rgba(255,255,255,0.05)",
-                  }}
-                >
-                  <p>
-                    <strong>{translate("controlPanel.stats.name")}:</strong>{" "}
-                    {char.name}
-                  </p>
-                  <p>
-                    <strong>{translate("controlPanel.stats.level")}:</strong>{" "}
-                    {char.level}
-                  </p>
-                  <p>
-                    <strong>{translate("controlPanel.stats.resets")}:</strong>{" "}
-                    {char.reset}
-                  </p>
-                  <p>
-                    <strong>{translate("controlPanel.stats.race")}:</strong>{" "}
-                    <img
-                      src={classInfo.icon}
-                      alt={classInfo.key}
-                      style={{
-                        width: "24px",
-                        height: "24px",
-                        marginRight: "6px",
-                        verticalAlign: "middle",
-                      }}
-                    />
-                    {classNamesMap[classInfo.key] || "Unknown"}
-                  </p>
-
-                  {/* Action buttons */}
-                  <div
-                    style={{
-                      marginTop: "1rem",
-                      display: "flex",
-                      gap: "0.5rem",
-                    }}
-                  >
-                    {["unstuck", "evolve", "grand-reset"].map((action) => {
-                      const key = `${char.name}_${action}`;
-                      const iconMap = {
-                        unstuck: faLocationCrosshairs,
-                        evolve: faUpLong,
-                        "grand-reset": faArrowsRotate,
-                      };
-                      const labelMap = {
-                        unstuck: translate(
-                          "controlPanel.stats.actions.unstuck"
-                        ),
-                        evolve: translate("controlPanel.stats.actions.evolve"),
-                        "grand-reset": translate(
-                          "controlPanel.stats.actions.grandReset"
-                        ),
-                      };
-
-                      return (
-                        <div
-                          key={action}
-                          style={{ display: "flex", flexDirection: "column" }}
-                        >
-                          <GreenButton
-                            disabled={actionLoading[key]}
-                            onClick={() =>
-                              handleCharacterAction(char.name, action)
-                            }
-                          >
-                            <FontAwesomeIcon
-                              icon={
-                                actionLoading[key] ? faSpinner : iconMap[action]
-                              }
-                              spin={actionLoading[key]} // spin only when loading
-                              style={{ marginRight: "5px" }}
-                            />
-                            {actionLoading[key]
-                              ? translate("controlPanel.stats.processing")
-                              : labelMap[action]}
-                          </GreenButton>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        );
-
-      default:
-        return null;
-    }
-  };
   useEffect(() => {
     if (characterActionMessage && tabContentRef.current) {
       tabContentRef.current.scrollTo({ top: 0, behavior: "smooth" });
     }
   }, [characterActionMessage]);
+
+  function renderTabContent() {
+    switch (activeTab) {
+      case "profile":
+        return <ControlPanelProfile profile={profile} translate={translate} loading={loading} />;
+      case "settings":
+        return <ControlPanelSettings
+          password={password} confirmPassword={confirmPassword}
+          setPassword={setPassword} setConfirmPassword={setConfirmPassword}
+          changingPassword={changingPassword} passwordMessage={passwordMessage}
+          onChangePasswordSubmit={onChangePasswordSubmit} translate={translate} />;
+      case "stats":
+        return <ControlPanelStats
+          characters={characters} charsLoading={charsLoading}
+          characterActionMessage={characterActionMessage} actionLoading={actionLoading}
+          handleCharacterAction={handleCharacterAction} changeMount={changeMount}
+          translate={translate} getClassInfo={getClassInfo} classNamesMap={classNamesMap} />;
+      default: return null;
+    }
+  };
 
   return (
     <>

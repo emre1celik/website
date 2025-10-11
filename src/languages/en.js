@@ -37,6 +37,7 @@ export default {
       resets: "Resets",
       race: "Race",
       processing: "Processing...",
+      giant_mount: "(5th class) Giant Mount",
       actions: {
         unstuck: "Unstuck",
         evolve: "Evolve",
@@ -50,9 +51,9 @@ export default {
     description:
       "Choose a mirror to download the client. All links point to the same latest version.",
     note1:
-      "⚠️ Note: You may need to exclude main.exe from your firewall or turn it off temporarily for the client to connect.",
+      "<strong>⚠️ Note:</strong> You may need to exclude main.exe from your firewall or turn it off temporarily for the client to connect.",
     note2_desc: `
-      <strong>Resolution change:</strong> You can edit the file
+      <strong>⚠️ Resolution change:</strong> You can edit the file
       <strong>LauncherOption.if</strong> inside the client files to
       change the resolution. Set <strong>DevModeIndex</strong>= to anywhere between 0-9 for resolution changes.
       <br /><br />
@@ -64,6 +65,9 @@ export default {
       5: 1280x920 (4:3)<br />
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 On, or 0 Off
+    `,
+    note3_desc: `
+      <strong>⚠️ Font issue:</strong> If you cannot see font and text ingame, but only squares, close the game client. Download the missing font here (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) and click it to install it. Restart the game client afterwards.
     `,
   },
   landing: {
@@ -81,6 +85,7 @@ export default {
     events: "Events",
     community: "Community",
     login: "Login",
+    info: "Guides",
   },
   login: {
     header: "Login",

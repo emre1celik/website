@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
   faCalendarAlt,
+  faCircleInfo,
   faDownload,
   faHome,
   faMedal,
@@ -107,6 +108,18 @@ function Navigation({ user }) {
         </li>
         <li>
           <NavigationItemLink
+            as={Link}
+            to="/info"
+            $active={location.pathname === "/info"}
+          >
+            <NavigationIcon>
+              <FontAwesomeIcon icon={faCircleInfo} />
+            </NavigationIcon>
+            <NavigationLabel>{translate("navigation.info")}</NavigationLabel>
+          </NavigationItemLink>
+        </li>
+        <li>
+          <NavigationItemLink
             href="https://discord.gg/EceQbCVgSy"
             target="_blank"
             rel="noopener noreferrer"
@@ -204,6 +217,20 @@ function Navigation({ user }) {
                 style={{ marginRight: "10px" }}
               />
               {translate("navigation.events")}
+            </NavigationItemLink>
+          </li>
+          <li>
+            <NavigationItemLink
+              as={Link}
+              to="/info"
+              onClick={() => setMenuOpen(false)}
+              $active={location.pathname === "/info"}
+            >
+              <FontAwesomeIcon
+                icon={faCircleInfo}
+                style={{ marginRight: "10px" }}
+              />
+              {translate("navigation.info")}
             </NavigationItemLink>
           </li>
           <li>

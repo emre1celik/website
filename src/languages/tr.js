@@ -37,6 +37,7 @@ export default {
       resets: "Sıfırlamalar",
       race: "Irk",
       processing: "İşleniyor...",
+      giant_mount: "(5. sınıf) Dev Binek",
       actions: {
         unstuck: "Kurtar",
         evolve: "Evrimle",
@@ -50,9 +51,9 @@ export default {
     description:
       "İstemciyi indirmek için bir yansı seçin. Tüm bağlantılar en son sürüme yönlendirir.",
     note1:
-      "⚠️ Not: İstemcinin bağlanabilmesi için main.exe dosyasını güvenlik duvarından hariç tutmanız veya geçici olarak devre dışı bırakmanız gerekebilir.",
+      "<strong>⚠️</strong> Not: İstemcinin bağlanabilmesi için main.exe dosyasını güvenlik duvarından hariç tutmanız veya geçici olarak devre dışı bırakmanız gerekebilir.",
     note2_desc: `
-      <strong>Çözünürlük değiştirme:</strong> Ekran çözünürlüğünü değiştirmek için
+      <strong>⚠️ Çözünürlük değiştirme:</strong> Ekran çözünürlüğünü değiştirmek için
       <strong>LauncherOption.if</strong> dosyasını düzenleyebilirsiniz. <strong>DevModeIndex</strong>= değerini 0–9 arasında ayarlayın.
       <br /><br />
       0: 800x600 (4:3)<br />
@@ -63,6 +64,9 @@ export default {
       5: 1280x920 (4:3)<br />
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 Açık, 0 Kapalı
+    `,
+    note3_desc: `
+      <strong>⚠️ Yazı tipi sorunu:</strong> Oyunda yazı tipini ve metni göremiyor, sadece kareler görüyorsanız, oyun istemcisini kapatın. Eksik yazı tipini buradan indirin (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) ve kurmak için tıklayın. Ardından oyun istemcisini yeniden başlatın.
     `,
   },
   events: {
@@ -141,6 +145,7 @@ export default {
     events: "Etkinlikler",
     community: "Topluluk",
     login: "Giriş",
+    info: "Rehberler",
   },
   cookie: {
     message:

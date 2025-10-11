@@ -37,6 +37,7 @@ export default {
       resets: "Reinicios",
       processing: "Procesando...",
       race: "Raza",
+      giant_mount: "(5ª clase) Montura Gigante",
       actions: {
         unstuck: "Desatascar",
         evolve: "Evolucionar",
@@ -50,9 +51,9 @@ export default {
     description:
       "Elige un espejo para descargar el cliente. Todos los enlaces apuntan a la misma versión más reciente.",
     note1:
-      "⚠️ Nota: Es posible que necesites excluir main.exe de tu firewall o desactivarlo temporalmente para que el cliente se conecte.",
+      "<strong>⚠️ Nota:</strong> Es posible que necesites excluir main.exe de tu firewall o desactivarlo temporalmente para que el cliente se conecte.",
     note2_desc: `
-      <strong>Cambio de resolución:</strong> Puedes editar el archivo
+      <strong>⚠️ Cambio de resolución:</strong> Puedes editar el archivo
       <strong>LauncherOption.if</strong> dentro de los archivos del cliente para
       cambiar la resolución. Configura <strong>DevModeIndex</strong>= en cualquier valor entre 0 y 9 para cambiar la resolución.
       <br /><br />
@@ -64,6 +65,9 @@ export default {
       5: 1280x920 (4:3)<br />
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 Activado, o 0 Desactivado
+    `,
+    note3_desc: `
+      <strong>⚠️ Problema de fuente:</strong> Si no puedes ver la fuente y el texto en el juego, pero solo ves cuadros, cierra el cliente del juego. Descarga la fuente faltante aquí (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) y haz clic para instalarla. Luego reinicia el cliente del juego.
     `,
   },
   events: {
@@ -143,6 +147,7 @@ export default {
     events: "Eventos",
     community: "Comunidad",
     login: "Iniciar sesión",
+    info: "Guías",
   },
   cookie: {
     message:

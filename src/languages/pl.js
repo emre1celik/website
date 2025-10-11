@@ -36,6 +36,7 @@ export default {
       level: "Poziom",
       resets: "Resetowania",
       race: "Rasa",
+      giant_mount: "(5 klasa) Gigantyczny Wierzchowiec",
       processing: "Przetwarzanie...",
       actions: {
         unstuck: "Odblokuj",
@@ -50,9 +51,9 @@ export default {
     description:
       "Wybierz mirror, aby pobrać klienta. Wszystkie linki prowadzą do najnowszej wersji.",
     note1:
-      "⚠️ Uwaga: Może być konieczne wykluczenie pliku main.exe z zapory ogniowej lub tymczasowe jej wyłączenie, aby klient mógł się połączyć.",
+      "<strong>⚠️</strong> Uwaga: Może być konieczne wykluczenie pliku main.exe z zapory ogniowej lub tymczasowe jej wyłączenie, aby klient mógł się połączyć.",
     note2_desc: `
-      <strong>Zmiana rozdzielczości:</strong> Możesz edytować plik
+      <strong>⚠️ Zmiana rozdzielczości:</strong> Możesz edytować plik
       <strong>LauncherOption.if</strong> w folderze klienta, aby zmienić rozdzielczość. Ustaw <strong>DevModeIndex</strong>= na wartość od 0 do 9.
       <br /><br />
       0: 800x600 (4:3)<br />
@@ -63,6 +64,9 @@ export default {
       5: 1280x920 (4:3)<br />
       6: 1440x900 (16:10)<br /><br />
       WindowMode:1 Włączony, 0 Wyłączony
+    `,
+    note3_desc: `
+      <strong>⚠️ Problem z czcionką:</strong> Jeśli nie widzisz czcionki i tekstu w grze, a jedynie kwadraty, zamknij klienta gry. Pobierz brakującą czcionkę tutaj (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) i kliknij, aby ją zainstalować. Następnie uruchom ponownie klienta gry.
     `,
   },
   highscores: {
@@ -141,6 +145,7 @@ export default {
     events: "Wydarzenia",
     community: "Społeczność",
     login: "Zaloguj się",
+    info: "Poradniki",
   },
   cookie: {
     message:
