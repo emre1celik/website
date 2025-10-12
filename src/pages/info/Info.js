@@ -160,17 +160,18 @@ function Info({ user }) {
           <ul style={{ listStyleType: "none" }}>
             <li>
               <strong>2nd Class Change (NPC Sebina, Devias)</strong>: At level
-              150, talk to NPC Sebina in Devias. Then bring class-specific
-              items:
+              150, talk to NPC Sebina in Devias. Then bring class-specific items
+              (can be bought from NPC Lumen barmaid in Lorencia):
+              <br />
               <br />
               <ul style={{ listStyleType: "none" }}>
                 <li>Dark Knight / Slayer: Broken Sword</li>
+                <br />
                 <li>Dark Wizard / Rune Mage: Soul Shard</li>
+                <br />
                 <li>Elf: Tear of Elf</li>
               </ul>
-              Those items drop from monsters in Lost Tower, Atlans, etc.
-              Completing this grants the 2nd class, wings of level 2, stronger
-              gear, etc.
+              <br />
             </li>
             <br />
             <hr style={{ borderColor: "#4caf50" }} />
@@ -178,7 +179,8 @@ function Info({ user }) {
             <li>
               <strong>3rd Class Change (NPC Apostle Devin, CryWolf)</strong>:
               Must be level 400 and have completed Marlon quest. Quest has three
-              parts:
+              parts (items can be bought from NPC Lumen barmaid in Lorencia):
+              <br />
               <br />
               <ol style={{ listStyleType: "none" }}>
                 <li>
@@ -186,11 +188,13 @@ function Info({ user }) {
                   (Tarkan), Horn of Hell Maine (Aida), Feather of Phoenix
                   (Icarus)
                 </li>
+                <br />
                 <li>
                   Level 400, pay 7,000,000 Zen, enter Balgass Barracks map via
                   Werewolf Guardsman in Crywolf, kill 20 each of Balram, Death
                   Spirit, Soram.
                 </li>
+                <br />
                 <li>
                   Enter Refuge (via Gatekeeper inside Barracks), kill 1 Dark Elf
                   Hero. Reward: third class change, additional stat points,
@@ -219,16 +223,19 @@ function Info({ user }) {
               <strong>Blood Castle</strong> and <strong>Devil Square</strong> —
               top Ruud reward events
             </li>
+            <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
               <strong>Golden Invasions</strong> — hunt Golden Dragons and Titans
               for bonus Ruud
             </li>
+            <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
               <strong>Majestic Maps</strong> — defeat Elite Monsters for endgame
               Ruud farming
             </li>
+            <br />
             <li>
               <FontAwesomeIcon
                 icon={faHandsHelping}
@@ -257,31 +264,32 @@ function Info({ user }) {
               <strong>Item Upgrade Success Rates:</strong>
               <ul style={{ listStyleType: "none" }}>
                 <li>+1 ~ +6 → 100%</li>
-                <li>+7 → 90%</li>
-                <li>+8 → 80%</li>
-                <li>+9 → 70%</li>
-                <li>+10 → 60%</li>
-                <li>+11 → 50%</li>
-                <li>+12 → 45%</li>
-                <li>+13 → 40%</li>
-                <li>+14 → 35%</li>
-                <li>+15 → 30%</li>
+                <li>+7 → 100%</li>
+                <li>+8 → 100%</li>
+                <li>+9 → 100%</li>
+                <li>+10 → 100%</li>
+                <li>+11 → 100%</li>
+                <li>+12 → 100%</li>
+                <li>+13 → 100%</li>
+                <li>+14 → 100%</li>
+                <li>+15 → 100%</li>
               </ul>
             </li>
+            <br />
             <li>
               <strong>Wings Creation:</strong> 60% base success
             </li>
+            <br />
             <li>
-              <strong>2nd Wings:</strong> 50% success
+              <strong>2nd Wings:</strong> 80% base success
             </li>
+            <br />
             <li>
-              <strong>3rd Wings:</strong> 40% success
+              <strong>3rd Wings:</strong> 60% base success
             </li>
+            <br />
             <li>
-              <strong>Condor Feather:</strong> 40% success
-            </li>
-            <li>
-              <strong>Level 4 & 5 Wings:</strong> 30% success
+              <strong>4th & 5th Wings:</strong> 30% base success
             </li>
           </ul>
         </>
