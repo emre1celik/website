@@ -100,6 +100,7 @@ export const ControlPanelTabButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  font-size: 16px;
 
   span {
     display: inline; /* default show text */

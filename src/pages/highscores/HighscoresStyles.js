@@ -74,7 +74,7 @@ export const GlowingName = styled.span`
 `;
 
 export const HighscoresBox = styled.div`
-  padding: 2rem 3rem;
+  padding: 1rem;
   border-radius: 10px;
   width: 100%;
   flex-direction: column;
@@ -182,7 +182,6 @@ export const HighscoresTable = styled.table`
   width: 100%;
   border-collapse: collapse;
   text-align: center;
-  font-size: 12px;
 
   th,
   td {

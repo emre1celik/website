@@ -27,7 +27,7 @@ export const EventsContent = styled.main`
 
 // Container box
 export const EventsBox = styled.div`
-  padding: 2rem 3rem;
+  padding: 1rem;
   border-radius: 10px;
   width: 100%;
   flex-direction: column;

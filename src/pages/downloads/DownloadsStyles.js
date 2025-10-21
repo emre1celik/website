@@ -27,7 +27,7 @@ export const DownloadsHero = styled.header`
 
 export const DownloadsBox = styled.div`
   background: rgba(0, 0, 0, 0.7);
-  padding: 2rem 3rem;
+  padding: 1rem;
   border-radius: 10px;
   max-width: 600px;
   width: 100%;
