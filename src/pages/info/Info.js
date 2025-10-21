@@ -287,7 +287,9 @@ function Info({ user }) {
       icon: faGlassWhiskey,
       content: (
         <>
-          <p>{translate("chaosCombination.intro")}</p>
+          <p>
+            <TranslatedHTML entity="chaosCombination.intro" />
+          </p>
 
           <ul style={{ listStyleType: "none" }}>
             <li>
