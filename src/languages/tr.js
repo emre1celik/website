@@ -1,5 +1,22 @@
 // eslint-disable-next-line
 export default {
+  chaosCombination: {
+    title: "Kaos Kombinasyon Oranları",
+    intro:
+      "<strong>Kaos Kombinasyonu</strong>, kanatlar ve güçlü silahlar dahil olmak üzere üst düzey eşyaları üretmek ve yükseltmek için kullanılan bir sistemdir. Bu işlemi <strong>Noria Goblini</strong> gibi özel NPC'lerde veya Lorencia ve Devias'taki benzer NPC'lerde yapabilirsiniz. Doğru malzemeleri kullanmak ve başarı oranlarını anlamak, şansınızı en üst düzeye çıkarmak için çok önemlidir.",
+    upgradeRates: "Eşya Yükseltme Başarı Oranları:",
+    wings1_description:
+      "<strong>Kanat Oluşturma Başarı Oranı:</strong> %60 temel başarı. İpuçları: Başarılı Kaos kombinasyonu eşyaları kullanarak şansı artırın ve daha iyi sonuçlar için yüksek seviyeli haritalarda deneyin.",
+    wings2_description:
+      "<strong>2. Seviye Kanat Başarı Oranı:</strong> %80 temel başarı. Daha yüksek güvenilirlik için ek güçlendirme taşları kullanmanız önerilir.",
+    wings3_description:
+      "<strong>3. Seviye Kanat Başarı Oranı:</strong> %60 temel başarı. Dikkatli olun, başarısızlık bazı malzemelerin kaybolmasına neden olabilir.",
+    wings4_description:
+      "<strong>4. ve 5. Seviye Kanat Başarı Oranı:</strong> %30 temel başarı. Yüksek risk, yüksek ödül — birden fazla eşya seti hazırlayın ve şans artırıcı bufflarla birleştirmeyi düşünün.",
+    tips: "<strong>Kaos Kombinasyonu İpuçları:</strong> Her zaman malzeme oranlarınızı kontrol edin, mümkünse daha yüksek seviyeli bileşenler kullanın ve bonus başarı buffları sağlayan günlük görevleri veya etkinlikleri tamamlayın. Kaos Kombinasyonu ile üretilen üst düzey kanatlar ve silahlar, son oyun ilerlemesi için gereklidir.",
+    outro:
+      "Kaos Kombinasyonunu başarılı bir şekilde kullanmak, ekipmanınızı yalnızca geliştirmekle kalmaz, aynı zamanda yüksek seviyeli haritalarda ve PvP savaşlarında stratejik bir avantaj sağlar. Yeterli malzeme toplayın ve kombinasyonlarınızı dikkatlice planlayın — yüksek seviyeli bir kombinasyonda başarısızlık pahalıya mal olabilir, bu yüzden hazırlık çok önemlidir!",
+  },
   ruud: {
     title: "Ruud Nasıl Elde Edilir",
     intro:

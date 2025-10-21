@@ -1,5 +1,22 @@
 // eslint-disable-next-line
 export default {
+  chaosCombination: {
+    title: "Chaos Combination Rates",
+    intro:
+      "<strong>Chaos Combination</strong> is the system used to craft and upgrade high-tier items, including wings and powerful weapons. You can perform Chaos Combinations at special NPCs like the <strong>Noria Goblin</strong>, located in Noria, or similar NPCs in Lorencia and Devias. Using the correct materials and understanding success rates is crucial to maximize your chances.",
+    upgradeRates: "Item Upgrade Success Rates:",
+    wings1_description:
+      "<strong>Wings Creation Success Rates:</strong> 60% base success. Tips: Use successful Chaos combination items to increase chance, and try in high-level maps for better outcomes.",
+    wings2_description:
+      "<strong>2nd Wings Success Rates:</strong> 80% base success. Recommended to use additional enhancement stones for higher reliability.",
+    wings3_description:
+      "<strong>3rd Wings Success Rates:</strong> 60% base success. Be cautious, as failure can consume some materials.",
+    wings4_description:
+      "<strong>4th & 5th Wings Success Rates:</strong> 30% base success. High-risk, high-reward — prepare multiple sets of items and consider combining with luck-enhancing buffs.",
+    tips: "<strong>Tips for Chaos Combination:</strong> Always check your material ratios, use higher-tier ingredients when possible, and consider completing daily quests or events that provide bonus success buffs. High-tier wings and weapons crafted via Chaos Combination are essential for endgame progression.",
+    outro:
+      "Successfully using Chaos Combination not only upgrades your equipment but also provides a strategic advantage in high-level maps and PvP battles. Remember to gather sufficient materials and plan your combinations carefully — failing a high-tier combination can be costly, so preparation is key!",
+  },
   ruud: {
     title: "How to Get Ruud",
     intro:

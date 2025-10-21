@@ -1,5 +1,22 @@
 // eslint-disable-next-line
 export default {
+  chaosCombination: {
+    title: "Taxas de Combinação do Caos",
+    intro:
+      "<strong>Combinação do Caos</strong> é o sistema usado para criar e aprimorar itens de alto nível, incluindo asas e armas poderosas. Você pode realizar Combinações do Caos em NPCs especiais como o <strong>Goblin de Noria</strong>, localizado em Noria, ou NPCs semelhantes em Lorencia e Devias. Usar os materiais corretos e entender as taxas de sucesso é essencial para maximizar suas chances.",
+    upgradeRates: "Taxas de Sucesso de Aprimoramento de Itens:",
+    wings1_description:
+      "<strong>Taxa de Sucesso na Criação de Asas:</strong> 60% de sucesso base. Dicas: use itens de combinação bem-sucedidos para aumentar as chances e tente em mapas de alto nível para melhores resultados.",
+    wings2_description:
+      "<strong>Taxa de Sucesso das Asas de 2º Nível:</strong> 80% de sucesso base. Recomenda-se usar pedras de aprimoramento adicionais para maior confiabilidade.",
+    wings3_description:
+      "<strong>Taxa de Sucesso das Asas de 3º Nível:</strong> 60% de sucesso base. Tenha cuidado, pois a falha pode consumir alguns materiais.",
+    wings4_description:
+      "<strong>Taxa de Sucesso das Asas de 4º e 5º Nível:</strong> 30% de sucesso base. Alto risco, alta recompensa — prepare vários conjuntos de itens e considere combinar com buffs de sorte.",
+    tips: "<strong>Dicas para Combinação do Caos:</strong> Sempre verifique suas proporções de materiais, use ingredientes de nível superior quando possível e complete missões diárias ou eventos que forneçam bônus de sucesso. As asas e armas de alto nível criadas pela Combinação do Caos são essenciais para o progresso no fim do jogo.",
+    outro:
+      "Usar com sucesso a Combinação do Caos não apenas aprimora seu equipamento, mas também fornece vantagem estratégica em mapas de alto nível e batalhas PvP. Lembre-se de reunir materiais suficientes e planejar cuidadosamente suas combinações — falhar em uma combinação de alto nível pode ser caro, então a preparação é fundamental!",
+  },
   ruud: {
     title: "Como Obter Ruud",
     intro:

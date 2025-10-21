@@ -1,5 +1,22 @@
 // eslint-disable-next-line
 export default {
+  chaosCombination: {
+    title: "Kaose Kombineerimise Määrad",
+    intro:
+      "<strong>Kaose Kombineerimine</strong> on süsteem, mida kasutatakse kõrgetasemeliste esemete, sealhulgas tiibade ja võimsate relvade loomiseks ja täiustamiseks. Seda saab teha spetsiaalsete NPCde juures, nagu <strong>Noria Goblin</strong> Noria linnas, või sarnaste NPCde juures Lorencias ja Deviases. Õigete materjalide kasutamine ja edumäärade mõistmine on edu saavutamiseks hädavajalik.",
+    upgradeRates: "Esemete Uuendamise Edu Määrad:",
+    wings1_description:
+      "<strong>Tiibade Loomise Edu Määr:</strong> 60% baasõnnestumine. Nõuanded: kasuta edukaid kaose kombineerimise esemeid võimaluse suurendamiseks ja proovi kõrgetasemelistel kaartidel paremate tulemuste saamiseks.",
+    wings2_description:
+      "<strong>2. taseme tiibade edu määr:</strong> 80% baasõnnestumine. Soovitatav on kasutada täiendavaid täiustuskive suurema kindluse tagamiseks.",
+    wings3_description:
+      "<strong>3. taseme tiibade edu määr:</strong> 60% baasõnnestumine. Ole ettevaatlik, kuna ebaõnnestumine võib osa materjale kulutada.",
+    wings4_description:
+      "<strong>4. ja 5. taseme tiibade edu määr:</strong> 30% baasõnnestumine. Kõrge risk, kõrge tasu — valmista mitu esemekomplekti ja kaalu õnnetõstebuffide kasutamist.",
+    tips: "<strong>Kaose Kombineerimise Nõuanded:</strong> Kontrolli alati materjalide suhteid, kasuta võimaluse korral kõrgema taseme koostisosi ja lõpeta igapäevased missioonid või sündmused, mis pakuvad lisabuffe. Kaose Kombineerimise kaudu loodud kõrgetasemelised tiivad ja relvad on lõppmängus edasiliikumiseks hädavajalikud.",
+    outro:
+      "Kaose Kombineerimise edukas kasutamine mitte ainult ei paranda sinu varustust, vaid annab strateegilise eelise kõrgetasemelistel kaartidel ja PvP lahingutes. Kogu piisavalt materjale ja planeeri hoolikalt — kõrgetasemelise kombinatsiooni ebaõnnestumine võib olla kulukas, nii et ettevalmistus on võtmetähtsusega!",
+  },
   ruud: {
     title: "Kuidas saada Ruudi",
     intro:

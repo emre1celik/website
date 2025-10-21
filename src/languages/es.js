@@ -1,5 +1,22 @@
 // eslint-disable-next-line
 export default {
+  chaosCombination: {
+    title: "Tasas de Combinación del Caos",
+    intro:
+      "<strong>La Combinación del Caos</strong> es el sistema utilizado para crear y mejorar objetos de alto nivel, incluidas alas y armas poderosas. Puedes realizar combinaciones del caos en NPCs especiales como el <strong>Goblin de Noria</strong>, ubicado en Noria, o en NPCs similares en Lorencia y Devias. Usar los materiales correctos y entender las tasas de éxito es crucial para maximizar tus posibilidades.",
+    upgradeRates: "Tasas de Éxito de Mejora de Objetos:",
+    wings1_description:
+      "<strong>Tasa de Éxito de Creación de Alas:</strong> 60% de éxito base. Consejos: Usa objetos de combinación exitosos del caos para aumentar la probabilidad, e intenta en mapas de alto nivel para mejores resultados.",
+    wings2_description:
+      "<strong>Tasa de Éxito de Alas de 2º Nivel:</strong> 80% de éxito base. Se recomienda usar piedras de mejora adicionales para mayor fiabilidad.",
+    wings3_description:
+      "<strong>Tasa de Éxito de Alas de 3º Nivel:</strong> 60% de éxito base. Ten precaución, ya que el fallo puede consumir algunos materiales.",
+    wings4_description:
+      "<strong>Tasa de Éxito de Alas de 4º y 5º Nivel:</strong> 30% de éxito base. Alto riesgo, alta recompensa — prepara múltiples conjuntos de objetos y considera combinar con buffs de suerte.",
+    tips: "<strong>Consejos para la Combinación del Caos:</strong> Verifica siempre tus proporciones de materiales, usa ingredientes de nivel superior cuando sea posible y completa misiones diarias o eventos que otorguen bonificaciones de éxito. Las alas y armas de alto nivel creadas mediante la Combinación del Caos son esenciales para el progreso en el final del juego.",
+    outro:
+      "Usar con éxito la Combinación del Caos no solo mejora tu equipo, sino que también te da una ventaja estratégica en mapas de alto nivel y batallas PvP. Recuerda reunir suficientes materiales y planificar tus combinaciones cuidadosamente — fallar una combinación de alto nivel puede ser costoso, ¡así que la preparación es clave!",
+  },
   ruud: {
     title: "Cómo obtener Ruud",
     intro:

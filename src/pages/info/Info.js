@@ -25,6 +25,7 @@ import {
   faRedo,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "../../context/TranslationContext";
+import tr from "../../languages/tr";
 
 function Info({ user }) {
   const { translate } = useTranslation();
@@ -281,22 +282,15 @@ function Info({ user }) {
       ),
     },
     {
-      title: "Chaos Combination Rates",
+      title: translate("chaosCombination.title"),
       icon: faGlassWhiskey,
       content: (
         <>
-          <p>
-            <strong>Chaos Combination</strong> is the system used to craft and
-            upgrade high-tier items, including wings and powerful weapons. You
-            can perform Chaos Combinations at special NPCs like the{" "}
-            <strong>Noria Goblin</strong>, located in Noria, or similar NPCs in
-            Lorencia and Devias. Using the correct materials and understanding
-            success rates is crucial to maximize your chances.
-          </p>
+          <p>{translate("chaosCombination.intro")}</p>
 
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <strong>Item Upgrade Success Rates:</strong>
+              <strong>{translate("chaosCombination.upgradeRates")}</strong>
               <ul style={{ listStyleType: "none" }}>
                 <li>+1 ~ +6 → 100%</li>
                 <li>+7 → 100%</li>
@@ -311,44 +305,18 @@ function Info({ user }) {
               </ul>
             </li>
             <br />
-            <li>
-              <strong>Wings Creation:</strong> 60% base success. Tips: Use
-              successful Chaos combination items to increase chance, and try in
-              high-level maps for better outcomes.
-            </li>
+            <li>{translate("chaosCombination.wings1_description")}</li>
             <br />
-            <li>
-              <strong>2nd Wings:</strong> 80% base success. Recommended to use
-              additional enhancement stones for higher reliability.
-            </li>
+            <li>{translate("chaosCombination.wings2_description")}</li>
             <br />
-            <li>
-              <strong>3rd Wings:</strong> 60% base success. Be cautious, as
-              failure can consume some materials.
-            </li>
+            <li>{translate("chaosCombination.wings3_description")}</li>
             <br />
-            <li>
-              <strong>4th & 5th Wings:</strong> 30% base success. High-risk,
-              high-reward — prepare multiple sets of items and consider
-              combining with luck-enhancing buffs.
-            </li>
+            <li>{translate("chaosCombination.wings4_description")}</li>
             <br />
-            <li>
-              <strong>Tips for Chaos Combination:</strong> Always check your
-              material ratios, use higher-tier ingredients when possible, and
-              consider completing daily quests or events that provide bonus
-              success buffs. High-tier wings and weapons crafted via Chaos
-              Combination are essential for endgame progression.
-            </li>
+            <li>{translate("chaosCombination.tips")}</li>
           </ul>
 
-          <p>
-            Successfully using Chaos Combination not only upgrades your
-            equipment but also provides a strategic advantage in high-level maps
-            and PvP battles. Remember to gather sufficient materials and plan
-            your combinations carefully — failing a high-tier combination can be
-            costly, so preparation is key!
-          </p>
+          <p>{translate("chaosCombination.outro")}</p>
         </>
       ),
     },

@@ -1,5 +1,22 @@
 // eslint-disable-next-line
 export default {
+  chaosCombination: {
+    title: "Szanse Kombinacji Chaosu",
+    intro:
+      "<strong>Kombinacja Chaosu</strong> to system używany do tworzenia i ulepszania przedmiotów wysokiego poziomu, w tym skrzydeł i potężnej broni. Można ją wykonać u specjalnych NPC, takich jak <strong>Goblin z Norii</strong>, znajdujący się w Norii, lub podobnych NPC w Lorencji i Devias. Używanie odpowiednich materiałów i zrozumienie szans powodzenia jest kluczem do sukcesu.",
+    upgradeRates: "Szanse Ulepszenia Przedmiotów:",
+    wings1_description:
+      "<strong>Szanse Stworzenia Skrzydeł:</strong> 60% bazowego powodzenia. Wskazówki: użyj udanych przedmiotów kombinacji chaosu, aby zwiększyć szansę, i próbuj na mapach wysokiego poziomu dla lepszych wyników.",
+    wings2_description:
+      "<strong>Szanse na Skrzydła 2. Poziomu:</strong> 80% bazowego powodzenia. Zaleca się użycie dodatkowych kamieni ulepszeń dla większej pewności.",
+    wings3_description:
+      "<strong>Szanse na Skrzydła 3. Poziomu:</strong> 60% bazowego powodzenia. Uważaj, ponieważ niepowodzenie może zużyć część materiałów.",
+    wings4_description:
+      "<strong>Szanse na Skrzydła 4. i 5. Poziomu:</strong> 30% bazowego powodzenia. Wysokie ryzyko, wysoka nagroda — przygotuj kilka zestawów przedmiotów i rozważ użycie buffów zwiększających szczęście.",
+    tips: "<strong>Wskazówki dotyczące Kombinacji Chaosu:</strong> Zawsze sprawdzaj proporcje materiałów, używaj składników wyższego poziomu, gdy to możliwe, i wykonuj codzienne zadania lub wydarzenia, które zapewniają dodatkowe buffy powodzenia. Skrzydła i broń wysokiego poziomu tworzone za pomocą Kombinacji Chaosu są niezbędne do postępu w końcowej fazie gry.",
+    outro:
+      "Pomyślne użycie Kombinacji Chaosu nie tylko ulepsza twoje wyposażenie, ale także zapewnia przewagę strategiczną na mapach wysokiego poziomu i w walkach PvP. Pamiętaj, aby zebrać wystarczającą ilość materiałów i dokładnie zaplanować swoje kombinacje — nieudana próba może być kosztowna, więc przygotowanie jest kluczowe!",
+  },
   ruud: {
     title: "Jak zdobyć Ruud",
     intro:

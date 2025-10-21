@@ -1,5 +1,22 @@
 // eslint-disable-next-line
 export default {
+  chaosCombination: {
+    title: "Haosa Kombinācijas Likmes",
+    intro:
+      "<strong>Haosa Kombinācija</strong> ir sistēma, ko izmanto, lai izgatavotu un uzlabotu augsta līmeņa priekšmetus, tostarp spārnus un spēcīgus ieročus. To var veikt īpašos NPC, piemēram, <strong>Noria Goblin</strong> Norijā, vai līdzīgos NPC Lorenciā un Deviā. Pareizu materiālu izmantošana un veiksmes likmju izpratne ir būtiska, lai maksimizētu savas iespējas.",
+    upgradeRates: "Priekšmetu Uzlabošanas Veiksmes Likmes:",
+    wings1_description:
+      "<strong>Spārnu Izveides Veiksmes Likme:</strong> 60% pamata veiksme. Padomi: izmanto veiksmīgas haosa kombinācijas priekšmetus, lai palielinātu iespēju, un mēģini augsta līmeņa kartēs labākiem rezultātiem.",
+    wings2_description:
+      "<strong>2. līmeņa Spārnu Veiksmes Likme:</strong> 80% pamata veiksme. Ieteicams izmantot papildu uzlabošanas akmeņus lielākai drošībai.",
+    wings3_description:
+      "<strong>3. līmeņa Spārnu Veiksmes Likme:</strong> 60% pamata veiksme. Esi uzmanīgs, jo neveiksme var patērēt dažus materiālus.",
+    wings4_description:
+      "<strong>4. un 5. līmeņa Spārnu Veiksmes Likme:</strong> 30% pamata veiksme. Augsts risks, augsta atlīdzība — sagatavo vairākus priekšmetu komplektus un apsver laimes buffu izmantošanu.",
+    tips: "<strong>Padomi Haosa Kombinācijai:</strong> Vienmēr pārbaudi materiālu proporcijas, izmanto augstāka līmeņa sastāvdaļas, ja iespējams, un pabeidz ikdienas uzdevumus vai notikumus, kas dod bonusu veiksmei. Augsta līmeņa spārni un ieroči, kas izveidoti ar Haosa Kombināciju, ir būtiski spēles beigu progresam.",
+    outro:
+      "Veiksmīga Haosa Kombinācijas izmantošana ne tikai uzlabo tavu aprīkojumu, bet arī sniedz stratēģisku priekšrocību augsta līmeņa kartēs un PvP cīņās. Atceries savākt pietiekami daudz materiālu un rūpīgi plānot kombinācijas — neveiksmīga kombinācija var būt dārga, tāpēc sagatavošanās ir svarīga!",
+  },
   ruud: {
     title: "Kā iegūt Ruud",
     intro:
