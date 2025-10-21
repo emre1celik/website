@@ -1,5 +1,23 @@
 // eslint-disable-next-line
 export default {
+  ruud: {
+    title: "Kā iegūt Ruud",
+    intro:
+      "Ruud ir vērtīga valūta, ko izmanto, lai iegādātos Senos un Izcilus beigu spēles aprīkojumus. To var izmantot arī priekšmetu uzlabošanai, jājamdzīvnieku pastiprināšanai un retu izstrādes materiālu maiņai. Labākie veidi, kā iegūt Ruud, ir:",
+    list: {
+      bloodCastle:
+        "<strong>Blood Castle</strong> un <strong>Devil Square</strong> — labākie Ruud balvu pasākumi; atkārto tos katru dienu, lai iegūtu maksimālu peļņu.",
+      goldenInvasions:
+        "<strong>Zelta iebrukumi</strong> — medī Zelta Pūķus, Titanus un citus mini-bosus, lai iegūtu papildu Ruud un retas mantas.",
+      majesticMaps:
+        "<strong>Majestātiskās kartes</strong> — sakauj Elites Briesmoņus un Pasaules Bossus augsta līmeņa kartēs, lai iegūtu beigu spēles Ruud.",
+      castleSiege:
+        "<strong>Piliens aplenkums</strong> — pievienojies savai ģildei īpašās reidos, lai iegūtu kopīgas Ruud balvas un papildu laupījumu.",
+      ruudNPC:
+        "Izmanto savu Ruud pie <strong>Ruud NPC</strong>, lai iegādātos spēcīgus senos ieročus, bruņas un uzlabošanas materiālus.",
+    },
+    tip: "<em>Padoms:</em> Vienmēr pārbaudi <strong>notikumu taimerus</strong> labākajām Ruud iespējām! Koncentrējies uz augsta līmeņa izaicinājumiem — jo spēcīgāki briesmoņi, jo lielākas Ruud balvas. Ruud taupīšana <strong>ierobežota laika priekšmetiem</strong> var maksimāli palielināt tavu spēku.",
+  },
   questsEvo: {
     title: "Misijas un Evolūcija",
     intro:

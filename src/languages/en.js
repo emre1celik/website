@@ -1,5 +1,23 @@
 // eslint-disable-next-line
 export default {
+  ruud: {
+    title: "How to Get Ruud",
+    intro:
+      "Ruud is a valuable currency used to purchase Ancient and Excellent Endgame Equipment. It can also be used for upgrading certain items, enhancing mounts, and exchanging for rare crafting materials. The best ways to farm Ruud include:",
+    list: {
+      bloodCastle:
+        "<strong>Blood Castle</strong> and <strong>Devil Square</strong> — top Ruud reward events; repeat runs daily for maximum profit.",
+      goldenInvasions:
+        "<strong>Golden Invasions</strong> — hunt Golden Dragons, Titans, and other mini-bosses for bonus Ruud and rare loot.",
+      majesticMaps:
+        "<strong>Majestic Maps</strong> — defeat Elite Monsters and World Bosses in high-level maps for endgame Ruud farming.",
+      castleSiege:
+        "<strong>Castle Siege</strong> — join your guild in special raids for shared Ruud rewards and bonus loot.",
+      ruudNPC:
+        "Use your Ruud at the <strong>Ruud NPC</strong> to buy powerful ancient weapons, armors, and upgrade materials.",
+    },
+    tip: "<em>Tip:</em> Always check <strong>Event Timers</strong> for the best Ruud opportunities! Focus on high-level challenges — the stronger the monsters, the greater the Ruud rewards. Also, saving Ruud for <strong>limited-time items</strong> can maximize your endgame power.",
+  },
   questsEvo: {
     title: "Quests & Evolution",
     intro:

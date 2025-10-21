@@ -1,5 +1,23 @@
 // eslint-disable-next-line
 export default {
+  ruud: {
+    title: "Jak zdobyć Ruud",
+    intro:
+      "Ruud to cenna waluta używana do zakupu Starożytnego i Doskonałego wyposażenia końcowego. Można jej również używać do ulepszania przedmiotów, wzmacniania wierzchowców oraz wymiany na rzadkie materiały rzemieślnicze. Najlepsze sposoby zdobywania Ruud to:",
+    list: {
+      bloodCastle:
+        "<strong>Blood Castle</strong> i <strong>Devil Square</strong> — najlepsze wydarzenia z nagrodami Ruud; powtarzaj je codziennie, aby uzyskać maksymalny zysk.",
+      goldenInvasions:
+        "<strong>Złote Inwazje</strong> — poluj na Złote Smoki, Tytanów i inne mini-bossy, aby zdobyć dodatkowy Ruud i rzadki łup.",
+      majesticMaps:
+        "<strong>Majestatyczne Mapy</strong> — pokonuj Elitarnych Potworów i Bossów Świata na mapach wysokiego poziomu, aby zdobywać Ruud końcowej gry.",
+      castleSiege:
+        "<strong>Oblężenie Zamku</strong> — dołącz do swojej gildii w specjalnych najazdach, aby zdobyć wspólne nagrody Ruud i dodatkowy łup.",
+      ruudNPC:
+        "Użyj swojego Ruud u <strong>NPC Ruud</strong>, aby kupić potężną starożytną broń, zbroje i materiały ulepszające.",
+    },
+    tip: "<em>Wskazówka:</em> Zawsze sprawdzaj <strong>Timery Wydarzeń</strong> dla najlepszych okazji Ruud! Skup się na wyzwaniach wysokiego poziomu — im silniejsze potwory, tym większe nagrody Ruud. Oszczędzanie Ruud na <strong>przedmioty limitowane</strong> może zmaksymalizować twoją moc w końcowej grze.",
+  },
   questsEvo: {
     title: "Questy i Ewolucja",
     intro:

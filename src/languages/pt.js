@@ -1,5 +1,23 @@
 // eslint-disable-next-line
 export default {
+  ruud: {
+    title: "Como Obter Ruud",
+    intro:
+      "Ruud é uma moeda valiosa usada para comprar Equipamentos Antigos e Excelentes de fim de jogo. Também pode ser usada para aprimorar certos itens, fortalecer montarias e trocar por materiais raros de criação. As melhores formas de obter Ruud incluem:",
+    list: {
+      bloodCastle:
+        "<strong>Blood Castle</strong> e <strong>Devil Square</strong> — os melhores eventos de recompensas Ruud; repita diariamente para obter o máximo lucro.",
+      goldenInvasions:
+        "<strong>Invasões Douradas</strong> — cace Dragões Dourados, Titãs e outros mini-chefes para obter Ruud bônus e saques raros.",
+      majesticMaps:
+        "<strong>Mapas Majestosos</strong> — derrote Monstros de Elite e Chefes Mundiais em mapas de alto nível para cultivar Ruud de fim de jogo.",
+      castleSiege:
+        "<strong>Cerco ao Castelo</strong> — junte-se à sua guilda em invasões especiais para recompensas Ruud compartilhadas e saques extras.",
+      ruudNPC:
+        "Use seu Ruud no <strong>NPC Ruud</strong> para comprar armas antigas poderosas, armaduras e materiais de aprimoramento.",
+    },
+    tip: "<em>Dica:</em> Verifique sempre os <strong>Temporizadores de Eventos</strong> para as melhores oportunidades de Ruud! Foque em desafios de alto nível — quanto mais fortes os monstros, maiores as recompensas de Ruud. Guardar Ruud para <strong>itens por tempo limitado</strong> pode maximizar seu poder final.",
+  },
   questsEvo: {
     title: "Missões e Evolução",
     intro:

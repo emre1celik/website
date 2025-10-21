@@ -1,5 +1,23 @@
 // eslint-disable-next-line
 export default {
+  ruud: {
+    title: "Kuidas saada Ruudi",
+    intro:
+      "Ruud on väärtuslik valuuta, mida kasutatakse Vana ja Suurepärase lõppmängu varustuse ostmiseks. Seda saab kasutada ka esemete uuendamiseks, ratsude tugevdamiseks ja haruldaste meisterdusmaterjalide vahetamiseks. Parimad viisid Ruudi kogumiseks on:",
+    list: {
+      bloodCastle:
+        "<strong>Blood Castle</strong> ja <strong>Devil Square</strong> — parimad Ruudi preemiaüritused; tee neid iga päev maksimaalse kasumi saamiseks.",
+      goldenInvasions:
+        "<strong>Kuldsed sissetungid</strong> — jahti Kulddraakoneid, Titaneid ja muid mini-bosse, et saada lisaruudi ja haruldasi esemeid.",
+      majesticMaps:
+        "<strong>Majesteetlikud kaardid</strong> — alista Eliitkoletised ja Maailma Bossid kõrgetasemelistel kaartidel lõppmängu Ruudi jaoks.",
+      castleSiege:
+        "<strong>Lossipiiramine</strong> — liitu oma gildi erirünnakutel, et saada jagatud Ruudi ja lisasaaki.",
+      ruudNPC:
+        "Kasuta oma Ruudi <strong>Ruudi NPC</strong> juures, et osta võimsaid antiikrelvi, soomuseid ja täiendusmaterjale.",
+    },
+    tip: "<em>Nõuanne:</em> Kontrolli alati <strong>ürituste taimerit</strong> parimate Ruudi võimaluste jaoks! Keskendu kõrgetasemelistele väljakutsetele — mida tugevamad on koletised, seda suuremad on Ruudi preemiad. Ruudi säästmine <strong>piiratud aja esemete</strong> jaoks võib maksimeerida sinu lõppmängu jõu.",
+  },
   questsEvo: {
     title: "Küsimused ja Evolutsioon",
     intro:

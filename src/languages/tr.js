@@ -1,5 +1,23 @@
 // eslint-disable-next-line
 export default {
+  ruud: {
+    title: "Ruud Nasıl Elde Edilir",
+    intro:
+      "Ruud, Kadim ve Mükemmel son seviye ekipman satın almak için kullanılan değerli bir para birimidir. Ayrıca belirli eşyaları geliştirmek, binekleri güçlendirmek ve nadir üretim malzemeleriyle takas yapmak için de kullanılabilir. Ruud kazanmanın en iyi yolları şunlardır:",
+    list: {
+      bloodCastle:
+        "<strong>Blood Castle</strong> ve <strong>Devil Square</strong> — en iyi Ruud ödül etkinlikleridir; maksimum kazanç için her gün tekrar edin.",
+      goldenInvasions:
+        "<strong>Altın İstilalar</strong> — bonus Ruud ve nadir ganimetler için Altın Ejderhaları, Titanları ve diğer mini patronları avlayın.",
+      majesticMaps:
+        "<strong>Görkemli Haritalar</strong> — son oyun Ruud kazanmak için yüksek seviyeli haritalarda Elit Canavarları ve Dünya Patronlarını yenin.",
+      castleSiege:
+        "<strong>Kale Kuşatması</strong> — paylaşılmış Ruud ödülleri ve ekstra ganimet için loncanızla özel baskınlara katılın.",
+      ruudNPC:
+        "Ruud’unuzu <strong>Ruud NPC</strong>’sinde kullanarak güçlü kadim silahlar, zırhlar ve geliştirme malzemeleri satın alın.",
+    },
+    tip: "<em>İpucu:</em> En iyi Ruud fırsatları için her zaman <strong>Etkinlik Zamanlayıcılarını</strong> kontrol edin! Yüksek seviyeli mücadelelere odaklanın — canavarlar ne kadar güçlü olursa, Ruud ödülleri de o kadar fazla olur. Ayrıca <strong>sınırlı süreli eşyalar</strong> için Ruud biriktirmek, son seviye gücünüzü en üst düzeye çıkarabilir.",
+  },
   questsEvo: {
     title: "Görevler ve Evrim",
     intro:

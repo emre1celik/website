@@ -239,40 +239,30 @@ function Info({ user }) {
       ),
     },
     {
-      title: "How to Get Ruud",
+      title: translate("ruud.title"),
       icon: faCoins,
       content: (
         <>
-          <p>
-            Ruud is a valuable currency used to purchase{" "}
-            <strong>Ancient</strong> and{" "}
-            <strong>Excellent Endgame Equipment</strong>. It can also be used
-            for upgrading certain items, enhancing mounts, and exchanging for
-            rare crafting materials. The best ways to farm Ruud include:
-          </p>
+          <p>{translate("ruud.intro")}</p>
           <ul style={{ listStyleType: "none" }}>
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <strong>Blood Castle</strong> and <strong>Devil Square</strong> —
-              top Ruud reward events; repeat runs daily for maximum profit.
+              {translate("ruud.list.bloodCastle")}
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <strong>Golden Invasions</strong> — hunt Golden Dragons, Titans,
-              and other mini-bosses for bonus Ruud and rare loot.
+              {translate("ruud.list.goldenInvasions")}
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <strong>Majestic Maps</strong> — defeat Elite Monsters and World
-              Bosses in high-level maps for endgame Ruud farming.
+              {translate("ruud.list.majesticMaps")}
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <strong>Castle Siege</strong> — join your guild in special raids
-              for shared Ruud rewards and bonus loot.
+              {translate("ruud.list.castleSiege")}
             </li>
             <br />
             <li>
@@ -280,17 +270,12 @@ function Info({ user }) {
                 icon={faHandsHelping}
                 style={{ marginRight: "6px" }}
               />
-              Use your Ruud at the <strong>Ruud NPC</strong> to buy powerful
-              ancient weapons, armors, and upgrade materials.
+              {translate("ruud.list.ruudNPC")}
             </li>
           </ul>
           <p className="footer-note">
             <FontAwesomeIcon icon={faStar} style={{ marginRight: "6px" }} />
-            <em>Tip:</em> Always check <strong>Event Timers</strong> for the
-            best Ruud opportunities! Focus on high-level challenges — the
-            stronger the monsters, the greater the Ruud rewards. Also, saving
-            Ruud for <strong>limited-time items</strong> can maximize your
-            endgame power.
+            {translate("ruud.tip")}
           </p>
         </>
       ),
