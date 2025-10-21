@@ -1,25 +1,65 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner, faLocationCrosshairs, faUpLong, faArrowsRotate } from "@fortawesome/free-solid-svg-icons";
-import { GreenButton } from "../ControlPanelStyles";
+import {
+  faSpinner,
+  faLocationCrosshairs,
+  faUpLong,
+  faArrowsRotate,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  ControlPanelStatsButtonText,
+  GreenButton,
+} from "../ControlPanelStyles";
 
-export default function ControlPanelStats({ characters, charsLoading, characterActionMessage, actionLoading, handleCharacterAction, translate, getClassInfo, classNamesMap, changeMount }) {
-  if (charsLoading) return <p><FontAwesomeIcon icon={faSpinner} spin /> {translate("controlPanel.stats.loadingCharacters")}</p>;
-  if (!characters.length) return <p><FontAwesomeIcon icon={faSpinner} spin /> {translate("controlPanel.stats.noCharacters")}</p>;
+export default function ControlPanelStats({
+  characters,
+  charsLoading,
+  characterActionMessage,
+  actionLoading,
+  handleCharacterAction,
+  translate,
+  getClassInfo,
+  classNamesMap,
+  changeMount,
+}) {
+  if (charsLoading)
+    return (
+      <p>
+        <FontAwesomeIcon icon={faSpinner} spin />{" "}
+        {translate("controlPanel.stats.loadingCharacters")}
+      </p>
+    );
+  if (!characters.length)
+    return (
+      <p>
+        <FontAwesomeIcon icon={faSpinner} spin />{" "}
+        {translate("controlPanel.stats.noCharacters")}
+      </p>
+    );
 
   return (
     <div>
       <h3>{translate("controlPanel.stats.characterStatistics")}</h3>
       {characterActionMessage && (
-        <div style={{
-          width: "100%",
-          marginBottom: "1rem",
-          padding: "0.7rem",
-          borderRadius: "5px",
-          marginTop: "15px",
-          backgroundColor: characterActionMessage.type === "success" ? "rgba(76, 175, 80, 0.2)" : "rgba(244, 67, 54, 0.2)",
-          color: characterActionMessage.type === "success" ? "#4caf50" : "#f44336",
-          border: `1px solid ${characterActionMessage.type === "success" ? "#4caf50" : "#f44336"}`
-        }}>{characterActionMessage.text}</div>
+        <div
+          style={{
+            width: "100%",
+            marginBottom: "1rem",
+            padding: "0.7rem",
+            borderRadius: "5px",
+            marginTop: "15px",
+            backgroundColor:
+              characterActionMessage.type === "success"
+                ? "rgba(76, 175, 80, 0.2)"
+                : "rgba(244, 67, 54, 0.2)",
+            color:
+              characterActionMessage.type === "success" ? "#4caf50" : "#f44336",
+            border: `1px solid ${
+              characterActionMessage.type === "success" ? "#4caf50" : "#f44336"
+            }`,
+          }}
+        >
+          {characterActionMessage.text}
+        </div>
       )}
 
       {characters.map((char) => {
@@ -27,13 +67,40 @@ export default function ControlPanelStats({ characters, charsLoading, characterA
         const mountKey = `${char.name}_change-mount`;
 
         return (
-          <div key={char.name} style={{ marginBottom: "1.5rem", padding: "1rem", border: "1px solid #555", borderRadius: "8px", background: "rgba(255,255,255,0.05)" }}>
-            <p><strong>{translate("controlPanel.stats.name")}:</strong> {char.name}</p>
-            <p><strong>{translate("controlPanel.stats.level")}:</strong> {char.level}</p>
-            <p><strong>{translate("controlPanel.stats.resets")}:</strong> {char.reset}</p>
+          <div
+            key={char.name}
+            style={{
+              marginBottom: "1.5rem",
+              padding: "1rem",
+              border: "1px solid #555",
+              borderRadius: "8px",
+              background: "rgba(255,255,255,0.05)",
+            }}
+          >
+            <p>
+              <strong>{translate("controlPanel.stats.name")}:</strong>{" "}
+              {char.name}
+            </p>
+            <p>
+              <strong>{translate("controlPanel.stats.level")}:</strong>{" "}
+              {char.level}
+            </p>
+            <p>
+              <strong>{translate("controlPanel.stats.resets")}:</strong>{" "}
+              {char.reset}
+            </p>
             <p>
               <strong>{translate("controlPanel.stats.race")}:</strong>
-              <img src={classInfo.icon} alt={classInfo.key} style={{ width: "24px", height: "24px", marginRight: "6px", verticalAlign: "middle" }} />
+              <img
+                src={classInfo.icon}
+                alt={classInfo.key}
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  marginRight: "6px",
+                  verticalAlign: "middle",
+                }}
+              />
               {classNamesMap[classInfo.key] || "Unknown"}
             </p>
 
@@ -79,17 +146,35 @@ export default function ControlPanelStats({ characters, charsLoading, characterA
             <div style={{ marginTop: "1rem", display: "flex", gap: "0.5rem" }}>
               {["unstuck", "evolve", "grand-reset"].map((action) => {
                 const key = `${char.name}_${action}`;
-                const iconMap = { unstuck: faLocationCrosshairs, evolve: faUpLong, "grand-reset": faArrowsRotate };
+                const iconMap = {
+                  unstuck: faLocationCrosshairs,
+                  evolve: faUpLong,
+                  "grand-reset": faArrowsRotate,
+                };
                 const labelMap = {
                   unstuck: translate("controlPanel.stats.actions.unstuck"),
                   evolve: translate("controlPanel.stats.actions.evolve"),
-                  "grand-reset": translate("controlPanel.stats.actions.grandReset")
+                  "grand-reset": translate(
+                    "controlPanel.stats.actions.grandReset"
+                  ),
                 };
 
                 return (
-                  <GreenButton key={action} disabled={actionLoading[key]} onClick={() => handleCharacterAction(char.name, action)}>
-                    <FontAwesomeIcon icon={actionLoading[key] ? faSpinner : iconMap[action]} spin={actionLoading[key]} style={{ marginRight: "5px" }} />
-                    {actionLoading[key] ? translate("controlPanel.stats.processing") : labelMap[action]}
+                  <GreenButton
+                    key={action}
+                    disabled={actionLoading[key]}
+                    onClick={() => handleCharacterAction(char.name, action)}
+                  >
+                    <FontAwesomeIcon
+                      icon={actionLoading[key] ? faSpinner : iconMap[action]}
+                      spin={actionLoading[key]}
+                      style={{ marginRight: "5px" }}
+                    />
+                    <ControlPanelStatsButtonText>
+                      {actionLoading[key]
+                        ? translate("controlPanel.stats.processing")
+                        : labelMap[action]}
+                    </ControlPanelStatsButtonText>
                   </GreenButton>
                 );
               })}

@@ -85,6 +85,12 @@ export const ControlPanelTabs = styled.div`
   width: 100%;
 `;
 
+export const ControlPanelStatsButtonText = styled.span`
+  @media (max-width: 600px) {
+    display: none;
+  }
+`;
+
 export const ControlPanelTabButton = styled.button`
   flex: 1;
   padding: 0.75rem 1.5rem;

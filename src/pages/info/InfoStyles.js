@@ -27,10 +27,10 @@ export const InfoHero = styled.header`
 
 export const InfoBox = styled.div`
   background: rgba(0, 0, 0, 0.7);
-  padding: 1rem;
+  padding: 2rem;
   text-align: center;
   border-radius: 10px;
-  max-width: 800px;
+  max-width: 600px;
   width: 100%;
   font-size: 14px;
   text-align: left;
