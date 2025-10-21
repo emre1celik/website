@@ -66,7 +66,7 @@ export const NavigationItemLink = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    color: #b0b0b0;
+    color: #4caf50;
   }
 `;
 
@@ -98,16 +98,17 @@ export const NavigationLabel = styled.span`
 
 export const CollapsedMenu = styled.ul`
   position: absolute;
-  top: 60px;
+  top: 55px;
   right: 3rem;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(12px);
   list-style: none;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   z-index: 1000;
 
   li {
