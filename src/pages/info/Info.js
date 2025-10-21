@@ -26,6 +26,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "../../context/TranslationContext";
 import tr from "../../languages/tr";
+import TranslatedHTML from "../../components/language/TranslatedHTML";
 
 function Info({ user }) {
   const { translate } = useTranslation();
@@ -248,22 +249,22 @@ function Info({ user }) {
           <ul style={{ listStyleType: "none" }}>
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              {translate("ruud.list.bloodCastle")}
+              <TranslatedHTML entity="ruud.list.bloodCastle" />
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              {translate("ruud.list.goldenInvasions")}
+              <TranslatedHTML entity="ruud.list.goldenInvasions" />
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              {translate("ruud.list.majesticMaps")}
+              <TranslatedHTML entity="ruud.list.majesticMaps" />
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              {translate("ruud.list.castleSiege")}
+              <TranslatedHTML entity="ruud.list.castleSiege" />
             </li>
             <br />
             <li>
@@ -271,12 +272,12 @@ function Info({ user }) {
                 icon={faHandsHelping}
                 style={{ marginRight: "6px" }}
               />
-              {translate("ruud.list.ruudNPC")}
+              <TranslatedHTML entity="ruud.list.ruudNPC" />
             </li>
           </ul>
           <p className="footer-note">
             <FontAwesomeIcon icon={faStar} style={{ marginRight: "6px" }} />
-            {translate("ruud.tip")}
+            <TranslatedHTML entity="ruud.tip" />
           </p>
         </>
       ),
@@ -305,18 +306,28 @@ function Info({ user }) {
               </ul>
             </li>
             <br />
-            <li>{translate("chaosCombination.wings1_description")}</li>
+            <li>
+              <TranslatedHTML entity="chaosCombination.wings1_description" />
+            </li>
             <br />
-            <li>{translate("chaosCombination.wings2_description")}</li>
+            <li>
+              <TranslatedHTML entity="chaosCombination.wings2_description" />
+            </li>
             <br />
-            <li>{translate("chaosCombination.wings3_description")}</li>
+            <li>
+              <TranslatedHTML entity="chaosCombination.wings3_description" />
+            </li>
             <br />
-            <li>{translate("chaosCombination.wings4_description")}</li>
+            <li>
+              <TranslatedHTML entity="chaosCombination.wings4_description" />
+            </li>
             <br />
-            <li>{translate("chaosCombination.tips")}</li>
+            <li>
+              <TranslatedHTML entity="chaosCombination.tips" />
+            </li>
           </ul>
 
-          <p>{translate("chaosCombination.outro")}</p>
+          <TranslatedHTML entity="chaosCombination.outro" />
         </>
       ),
     },

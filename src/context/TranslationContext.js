@@ -31,12 +31,7 @@ export const TranslationProvider = ({ children }) => {
       translations[language]
     );
 
-    if (typeof result === "string") {
-      if (/<[a-z][\s\S]*>/i.test(result)) {
-        return <span dangerouslySetInnerHTML={{ __html: result }} />;
-      }
-      return result;
-    }
+    if (typeof result === "string") return result;
     if (result === undefined || result === null) return key;
     return String(result);
   };
