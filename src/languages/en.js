@@ -3,6 +3,18 @@ export default {
   guide: {
     intro:
       "Here you’ll find everything you need to know — from server details and gear progression to Chaos Machine crafting and Ruud farming tips. Whether you’re a new adventurer or a returning veteran, this page will help you power up efficiently and enjoy every part of your journey on our server!",
+    gear: {
+      title: "Weapons & Gear",
+      intro:
+        "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). After this you can:",
+      list: {
+        hunt: "Hunt monsters and bosses to drop Excellent option items (minimum 3-4 options). You can also hunt Kundun boss in Kalima for Excellent and Ancient option items.",
+        seedCapsules:
+          "OR collect Seed Capsules for 5 slot socket weapons and armor. The capsules also drop seeds that you can insert into the slots.",
+        bloodangel:
+          "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events. Upgrade it through tiers to evolve into higher sets. This is the best armor; this armor has excellent and ancient options. The full upgrade path is:",
+      },
+    },
     serverInfo: {
       title: "Server Information & Settings",
       intro:

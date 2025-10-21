@@ -3,7 +3,18 @@ export default {
   guide: {
     intro:
       "Burada ihtiyacınız olan her şeyi bulabilirsiniz — sunucu detaylarından ve ekipman ilerlemesinden Chaos Machine yapımına ve Ruud çiftçiliği ipuçlarına kadar. İster yeni bir maceracı olun, ister geri dönen bir veteranken, bu sayfa karakterinizi verimli bir şekilde güçlendirmenize ve sunucumuzdaki yolculuğunuzun her anının tadını çıkarmanıza yardımcı olacaktır!",
-
+    gear: {
+      title: "Silahlar ve Ekipman",
+      intro:
+        "Maceranıza Lorencia, Noria veya Elbeland'daki NPC dükkanlarını ziyaret ederek temel başlangıç ekipmanını alarak başlayın (minimap'i açmak için TAB tuşuna basın). Bundan sonra şunları yapabilirsiniz:",
+      list: {
+        hunt: "Canavarları ve bossları avlayarak Excellent özellikli eşyalar düşürün (minimum 3-4 opsiyon). Kalima'daki Kundun bossunu da avlayarak Excellent ve Ancient opsiyonlu eşyalar elde edebilirsiniz.",
+        seedCapsules:
+          "VEYA 5 slotlu silahlar ve zırhlar için Seed Capsule toplayın. Kapsüller ayrıca slotlara yerleştirilebilecek tohumlar verir.",
+        bloodangel:
+          "VEYA Bloodangel Set yolculuğunuza başlayın — Elbeland NPC Priest James'den alınabilir. Bunun için Ruud gerekir, tüm etkinliklerden toplanabilir. Seti seviyelere göre yükselterek daha güçlü setlere evrimleştirin. Bu en iyi zırhtır; Excellent ve Ancient opsiyonları vardır. Tam yükseltme yolu:",
+      },
+    },
     serverInfo: {
       title: "Sunucu Bilgileri ve Ayarları",
       intro:

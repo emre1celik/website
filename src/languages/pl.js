@@ -3,7 +3,18 @@ export default {
   guide: {
     intro:
       "Tutaj znajdziesz wszystko, co musisz wiedzieć — od szczegółów serwera i progresji ekwipunku, po tworzenie w Chaos Machine i wskazówki dotyczące farmienia Ruud. Niezależnie od tego, czy jesteś nowym poszukiwaczem przygód, czy powracającym weteranem, ta strona pomoże Ci efektywnie rozwijać postać i cieszyć się każdą częścią przygody na naszym serwerze!",
-
+    gear: {
+      title: "Broń i ekwipunek",
+      intro:
+        "Rozpocznij swoją przygodę, odwiedzając sklepy NPC w Lorencia, Noria lub Elbeland, aby zdobyć podstawowy ekwipunek startowy (naciśnij TAB, aby otworzyć minimapę). Po tym możesz:",
+      list: {
+        hunt: "Poluj na potwory i bossów, aby zdobyć przedmioty z opcją Excellent (minimum 3-4 opcje). Możesz również polować na bossa Kundun w Kalimie, aby zdobyć przedmioty Excellent i Ancient.",
+        seedCapsules:
+          "LUB zbierz Seed Capsules na broń i zbroję z 5 slotami. Kapsuły również zostawiają nasiona, które możesz włożyć w sloty.",
+        bloodangel:
+          "LUB rozpocznij swoją przygodę z zestawem Bloodangel — dostępny u NPC Priest James w Elbeland. Potrzebujesz do tego Ruud, które można zebrać podczas wszystkich wydarzeń. Ulepszaj zestaw przez poziomy, aby ewoluować do wyższych zestawów. To najlepsza zbroja; posiada opcje Excellent i Ancient. Pełna ścieżka ulepszeń to:",
+      },
+    },
     serverInfo: {
       title: "Informacje o serwerze i ustawienia",
       intro:

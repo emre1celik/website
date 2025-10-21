@@ -127,31 +127,14 @@ function Info({ user }) {
       icon: faShieldAlt,
       content: (
         <>
-          <p>
-            Start your adventure by visiting the <strong>NPC Shops</strong> in{" "}
-            <em>Lorenica</em>, <em>Noria</em>, or <em>Elbeland</em> for basic
-            starter gear (press TAB to open minimap). After this you can:
-          </p>
+          <p>{translate("guide.gear.intro")}</p>
           <ul style={{ listStyleType: "none" }}>
-            <li>
-              Hunt monsters and bosses to drop{" "}
-              <strong>Excellent option items</strong>
-              (minimum 3-4 options). You can also hunt Kundun boss in Kalima for{" "}
-              <strong>Excellent and Ancient option items</strong>
-            </li>
+            <li>{translate("guide.gear.list.hunt")}</li>
+            <br />
+            <li>{translate("guide.gear.list.seedCapsules")}</li>
             <br />
             <li>
-              OR collect <strong>Seed Capsules</strong> for 5 slot socket
-              weapons and armor. The capsules also drop seeds that you can
-              insert into the slots.
-            </li>
-            <br />
-            <li>
-              OR begin your <strong>Bloodangel Set</strong> journey — available
-              from the <em>Elbeland NPC</em> Priest James. You need Ruud for
-              this, which can be collected from all events. Upgrade it through
-              tiers to evolve into higher sets. This is the best armor; this
-              armor has excellent and ancient options. The full upgrade path is:
+              {translate("guide.gear.list.bloodangel")}
               <br />
               <br />
               <ul>

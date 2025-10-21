@@ -3,7 +3,18 @@ export default {
   guide: {
     intro:
       "Aquí encontrarás todo lo que necesitas saber: desde detalles del servidor y progresión de equipo hasta la elaboración en la Máquina del Caos y consejos para farmear Ruud. Ya seas un aventurero nuevo o un veterano que regresa, ¡esta página te ayudará a mejorar de manera eficiente y disfrutar cada parte de tu aventura en nuestro servidor!",
-
+    gear: {
+      title: "Armas y Equipamiento",
+      intro:
+        "Comienza tu aventura visitando las tiendas NPC en Lorencia, Noria o Elbeland para obtener el equipo básico inicial (presiona TAB para abrir el minimapa). Después de esto puedes:",
+      list: {
+        hunt: "Caza monstruos y jefes para obtener objetos con opción Excellent (mínimo 3-4 opciones). También puedes cazar al jefe Kundun en Kalima para obtener objetos Excellent y Ancient.",
+        seedCapsules:
+          "O recolecta Seed Capsules para armas y armaduras con 5 ranuras. Las cápsulas también dejan semillas que puedes insertar en los slots.",
+        bloodangel:
+          "O comienza tu viaje con el Set Bloodangel — disponible con el NPC Priest James en Elbeland. Necesitas Ruud para esto, que se puede recolectar en todos los eventos. Mejóralo a través de niveles para evolucionar a sets superiores. Esta es la mejor armadura; tiene opciones Excellent y Ancient. La ruta completa de mejora es:",
+      },
+    },
     serverInfo: {
       title: "Información y Configuración del Servidor",
       intro:

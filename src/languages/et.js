@@ -3,7 +3,18 @@ export default {
   guide: {
     intro:
       "Siit leiad kõik, mida pead teadma — alates serveri detailidest ja varustuse arengust kuni Chaos Machine'i meisterdamise ja Ruudi kogumise näpunäideteni. Olenemata sellest, kas oled uus seikleja või kogenud veterann, aitab see leht sul tõhusalt areneda ja nautida iga osa oma teekonnast meie serveris!",
-
+    gear: {
+      title: "Relvad ja varustus",
+      intro:
+        "Alusta oma seiklust, külastades NPC poode Lorencias, Norias või Elbelandis, et saada algvarustust (TAB avab minimapi). Pärast seda saad:",
+      list: {
+        hunt: "Jahtige koletisi ja bosse, et saada Excellent valiku esemeid (vähemalt 3-4 valikut). Samuti saate jahtida Kundun bossi Kalimas Excellent ja Ancient esemeid saamiseks.",
+        seedCapsules:
+          "VÕI koguge Seed Capsule'id 5 pesaga relvade ja soomuste jaoks. Kapslid annavad ka seemneid, mida saate pesadesse paigaldada.",
+        bloodangel:
+          "VÕI alustage oma Bloodangel Set teekonda — saadaval Elbeland NPC Priest James'ilt. Selleks on vaja Ruud'i, mida saab koguda kõikidelt sündmustelt. Uuendage seda tasemete kaupa, et areneda kõrgemateks setideks. See on parim soomus; see soomus sisaldab Excellent ja Ancient valikuid. Täielik uuenduste tee on:",
+      },
+    },
     serverInfo: {
       title: "Serveri info ja seaded",
       intro:

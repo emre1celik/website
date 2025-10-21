@@ -3,7 +3,18 @@ export default {
   guide: {
     intro:
       "Šeit atradīsi visu, kas jāzina — no servera detaļām un aprīkojuma progresijas līdz Chaos Machine izveidei un Ruud vākšanas padomiem. Neatkarīgi no tā, vai esi jauns piedzīvotājs vai pieredzējis veterāns, šī lapa palīdzēs tev efektīvi progresēt un izbaudīt katru sava ceļojuma daļu mūsu serverī!",
-
+    gear: {
+      title: "Ieroči un aprīkojums",
+      intro:
+        "Sāciet savu piedzīvojumu, apmeklējot NPC veikalus Lorencā, Norijā vai Elbelandā, lai iegūtu sākotnējo aprīkojumu (nospiediet TAB, lai atvērtu minimapu). Pēc tam jūs varat:",
+      list: {
+        hunt: "Mediet monstrus un bossus, lai iegūtu Excellent opciju priekšmetus (vismaz 3-4 opcijas). Varat arī medīt Kundun bossu Kalimā, lai iegūtu Excellent un Ancient opcijas.",
+        seedCapsules:
+          "VAI savāciet Seed Capsules 5 spraugu ieročiem un bruņām. Kapsulas arī izdala sēklas, ko var ievietot spraugās.",
+        bloodangel:
+          "VAI sāciet savu Bloodangel Set ceļojumu — pieejams no Elbeland NPC Priest James. Tam jums būs nepieciešams Ruud, ko var savākt visos notikumos. Uzlabojiet to pa līmeņiem, lai evolūcētu uz augstākiem setiem. Šī ir labākā bruņa; tai ir Excellent un Ancient opcijas. Pilns uzlabojumu ceļš ir:",
+      },
+    },
     serverInfo: {
       title: "Servera informācija un iestatījumi",
       intro:
