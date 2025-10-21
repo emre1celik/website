@@ -326,7 +326,7 @@ export default {
   highscores: {
     serverError: "Error del servidor: {error}",
     title: "Clasificación",
-    topPlayers: "Mejores Jugadores",
+    topPlayers: "Jugadores Más Activos",
     topEvents: "Mejores Eventos",
     topGuilds: "Mejores Gremios",
     loadingPlayers: "Cargando los mejores jugadores...",

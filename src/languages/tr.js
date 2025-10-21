@@ -322,7 +322,7 @@ export default {
   highscores: {
     serverError: "Sunucu hatası: {error}",
     title: "Liderlik Tablosu",
-    topPlayers: "En İyi Oyuncular",
+    topPlayers: "En Aktif Oyuncular",
     topEvents: "En İyi Etkinlikler",
     topGuilds: "En İyi Loncalar",
     loadingPlayers: "En iyi oyuncular yükleniyor...",

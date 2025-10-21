@@ -323,7 +323,7 @@ export default {
   highscores: {
     serverError: "Serveri viga: {error}",
     title: "Parimad mängijad",
-    topPlayers: "Top Mängijad",
+    topPlayers: "Aktiivseimad Mängijad",
     topEvents: "Top Sündmused",
     topGuilds: "Top Gildid",
     loadingPlayers: "Laadimine parimad mängijad...",

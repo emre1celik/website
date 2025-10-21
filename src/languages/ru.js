@@ -311,7 +311,7 @@ export default {
   highscores: {
     serverError: "Ошибка сервера: {error}",
     title: "Таблица лидеров",
-    topPlayers: "Лучшие Игроки",
+    topPlayers: "Самые Активные Игроки",
     topEvents: "Лучшие События",
     topGuilds: "Лучшие Гильдии",
     loadingPlayers: "Загрузка лучших игроков...",

@@ -320,7 +320,7 @@ export default {
   highscores: {
     serverError: "Servera kļūda: {error}",
     title: "Līderu tabula",
-    topPlayers: "Labākie spēlētāji",
+    topPlayers: "Aktīvākie Spēlētāji",
     topEvents: "Labākie notikumi",
     topGuilds: "Labākie gildes",
     loadingPlayers: "Ielādē labākos spēlētājus...",
