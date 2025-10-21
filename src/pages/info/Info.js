@@ -33,6 +33,11 @@ function Info({ user }) {
       icon: faCog,
       content: (
         <>
+          <p>
+            Here are the key server rates, rewards, and useful commands to help
+            you progress efficiently. Keep track of event timers, reset rewards,
+            and boss respawns to maximize your gains.
+          </p>
           <ul style={{ listStyleType: "none" }}>
             <li>
               <FontAwesomeIcon
@@ -117,6 +122,11 @@ function Info({ user }) {
             <li>/offattack</li>
             <li>/clearinventory</li>
           </ul>
+          <p>
+            Use these rates and commands wisely to optimize your character
+            progression. Keep track of resets and rewards, and always plan
+            around events to maximize EXP and loot gains.
+          </p>
         </>
       ),
     },
@@ -132,21 +142,39 @@ function Info({ user }) {
           </p>
           <ul style={{ listStyleType: "none" }}>
             <li>
-              Hunt monsters to drop <strong>Excellent Items</strong> with great
-              options (minimum 3-4 options).
+              Hunt monsters and bosses to drop{" "}
+              <strong>Excellent option items</strong>
+              (minimum 3-4 options). You can also hunt Kundun boss in Kalima for{" "}
+              <strong>Excellent and Ancient option items</strong>
             </li>
             <br />
             <li>
-              OR check the <strong>X-Shop</strong> for Lucky and Premium sets
-              (press X in-game to open).
+              OR collect <strong>Seed Capsules</strong> for 5 slot socket
+              weapons and armor. The capsules also drop seeds that you can
+              insert into the slots.
             </li>
             <br />
             <li>
               OR begin your <strong>Bloodangel Set</strong> journey — available
-              from the <em>Elbeland NPC</em> Priest James, then upgrade it
-              through tiers to evolve into higher sets like Darkangel,
-              Holyangel, and beyond. This is the best armor; excellent and
-              ancient options.
+              from the <em>Elbeland NPC</em> Priest James. You need Ruud for
+              this, which can be collected from all events. Upgrade it through
+              tiers to evolve into higher sets. This is the best armor; this
+              armor has excellent and ancient options. The full upgrade path is:
+              <br />
+              <br />
+              <ul>
+                <li>Bloodangel</li>
+                <li>Darkangel</li>
+                <li>Holyangel</li>
+                <li>Awakening</li>
+                <li>Soul</li>
+                <li>Blue Eye</li>
+                <li>Silver Heart</li>
+                <li>Manticore</li>
+                <li>Brilliant</li>
+                <li>Apocalypse</li>
+                <li>Lightning</li>
+              </ul>
             </li>
           </ul>
         </>
@@ -157,9 +185,16 @@ function Info({ user }) {
       icon: faScroll,
       content: (
         <>
+          <p>
+            Quests and class advancements are the core progression system in MU.
+            Completing these quests unlocks higher classes, new skills, stat
+            points, and powerful equipment. Follow the NPC guidance carefully,
+            defeat the required monsters, and complete each stage to evolve your
+            character to the next class.
+          </p>
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <strong>2nd Class Change (NPC Sebina, Devias)</strong>: At level
+              <strong>2nd class change (NPC Sebina, Devias)</strong>: At level
               150, talk to NPC Sebina in Devias. Then bring class-specific items
               (can be bought from NPC Lumen barmaid in Lorencia):
               <br />
@@ -177,8 +212,8 @@ function Info({ user }) {
             <hr style={{ borderColor: "#4caf50" }} />
             <br />
             <li>
-              <strong>3rd Class Change (NPC Apostle Devin, CryWolf)</strong>:
-              Must be level 400 and have completed Marlon quest. Quest has three
+              <strong>3rd class change (NPC Apostle Devin, CryWolf)</strong>:
+              Must be level 400 and have completed 2nd quest. Quest has three
               parts (items can be bought from NPC Lumen barmaid in Lorencia):
               <br />
               <br />
@@ -202,6 +237,73 @@ function Info({ user }) {
                 </li>
               </ol>
             </li>
+            <br />
+            <hr style={{ borderColor: "#4caf50" }} />
+            <br />
+            <li>
+              <strong>4th class change (NPC Cent, Lorencia [131, 147])</strong>:
+              Must be level 800 and have completed 3rd quest. Quest has three
+              stages:
+              <br />
+              <br />
+              <ol style={{ listStyleType: "none" }}>
+                <li>
+                  Stage 1: Eligibility Test – Defeat Cent to pass the first
+                  test. Reward: +20 stat points.
+                </li>
+                <br />
+                <li>
+                  Stage 2: New Battle (1) – Defeat 5 Deep Dungeon Skeleton
+                  Warriors, 5 Cyclops, and 5 Ghost Monsters within 1 minute.
+                  Reward: +30 stat points.
+                </li>
+                <br />
+                <li>
+                  Stage 3: New Battle (2) – Defeat Cent again with stronger
+                  skills. Reward: +50 stat points, Scroll of Gray Oblivion,
+                  unlock 4th class, skill enhance tree.
+                </li>
+              </ol>
+              <br />
+              <strong>Rewards:</strong> +100 total stat points, 4th class
+              unlocked, skill enhance tree, Scroll of Gray Oblivion.
+            </li>
+            <br />
+            <hr style={{ borderColor: "#4caf50" }} />
+            <br />
+            <li>
+              <strong>5th class change (NPC Eunice, Devias [193, 12])</strong>:
+              Must be level 1,200 and have completed the 4th quest. Quest has
+              four parts:
+              <br />
+              <br />
+              <ol style={{ listStyleType: "none" }}>
+                <li>
+                  Wave 1: Receive <em>Extra Nuke DMG</em> buff and defeat Eunice
+                  within 1 minute.
+                </li>
+                <br />
+                <li>
+                  Wave 2: Receive <em>Extra Bolt DMG</em> buff and defeat Eunice
+                  within 1 minute.
+                </li>
+                <br />
+                <li>
+                  Wave 3: Receive <em>Extra Wide DMG</em> buff and defeat Eunice
+                  within 1 minute.
+                </li>
+                <br />
+                <li>
+                  Wave 4 (Mount Quest): Give Eunice 300{" "}
+                  <em>Jewel of Creation</em>, then defeat her on her Giant Mount
+                  within 1 minute to earn a random
+                  <strong> Giant Mount</strong>.
+                </li>
+              </ol>
+              <br />
+              Rewards: +200 stat points, unlock 5th skill tree, 3 Extra Ability
+              Cards (Nuke/Bolt/Wide), and access to Giant Mounts.
+            </li>
           </ul>
         </>
       ),
@@ -214,26 +316,33 @@ function Info({ user }) {
           <p>
             Ruud is a valuable currency used to purchase{" "}
             <strong>Ancient</strong> and{" "}
-            <strong>Excellent Endgame Equipment</strong>. The best ways to farm
-            Ruud include:
+            <strong>Excellent Endgame Equipment</strong>. It can also be used
+            for upgrading certain items, enhancing mounts, and exchanging for
+            rare crafting materials. The best ways to farm Ruud include:
           </p>
           <ul style={{ listStyleType: "none" }}>
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
               <strong>Blood Castle</strong> and <strong>Devil Square</strong> —
-              top Ruud reward events
+              top Ruud reward events; repeat runs daily for maximum profit.
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <strong>Golden Invasions</strong> — hunt Golden Dragons and Titans
-              for bonus Ruud
+              <strong>Golden Invasions</strong> — hunt Golden Dragons, Titans,
+              and other mini-bosses for bonus Ruud and rare loot.
             </li>
             <br />
             <li>
               <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <strong>Majestic Maps</strong> — defeat Elite Monsters for endgame
-              Ruud farming
+              <strong>Majestic Maps</strong> — defeat Elite Monsters and World
+              Bosses in high-level maps for endgame Ruud farming.
+            </li>
+            <br />
+            <li>
+              <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
+              <strong>Castle Siege</strong> — join your guild in special raids
+              for shared Ruud rewards and bonus loot.
             </li>
             <br />
             <li>
@@ -242,14 +351,16 @@ function Info({ user }) {
                 style={{ marginRight: "6px" }}
               />
               Use your Ruud at the <strong>Ruud NPC</strong> to buy powerful
-              ancient weapons and armors
+              ancient weapons, armors, and upgrade materials.
             </li>
           </ul>
           <p className="footer-note">
             <FontAwesomeIcon icon={faStar} style={{ marginRight: "6px" }} />
-            <em>Tip:</em> Always keep an eye on <strong>Event Timers</strong>{" "}
-            for the best Ruud opportunities! The stronger the challenge — the
-            greater the reward.
+            <em>Tip:</em> Always check <strong>Event Timers</strong> for the
+            best Ruud opportunities! Focus on high-level challenges — the
+            stronger the monsters, the greater the Ruud rewards. Also, saving
+            Ruud for <strong>limited-time items</strong> can maximize your
+            endgame power.
           </p>
         </>
       ),
@@ -259,6 +370,15 @@ function Info({ user }) {
       icon: faGlassWhiskey,
       content: (
         <>
+          <p>
+            <strong>Chaos Combination</strong> is the system used to craft and
+            upgrade high-tier items, including wings and powerful weapons. You
+            can perform Chaos Combinations at special NPCs like the{" "}
+            <strong>Noria Goblin</strong>, located in Noria, or similar NPCs in
+            Lorencia and Devias. Using the correct materials and understanding
+            success rates is crucial to maximize your chances.
+          </p>
+
           <ul style={{ listStyleType: "none" }}>
             <li>
               <strong>Item Upgrade Success Rates:</strong>
@@ -277,21 +397,43 @@ function Info({ user }) {
             </li>
             <br />
             <li>
-              <strong>Wings Creation:</strong> 60% base success
+              <strong>Wings Creation:</strong> 60% base success. Tips: Use
+              successful Chaos combination items to increase chance, and try in
+              high-level maps for better outcomes.
             </li>
             <br />
             <li>
-              <strong>2nd Wings:</strong> 80% base success
+              <strong>2nd Wings:</strong> 80% base success. Recommended to use
+              additional enhancement stones for higher reliability.
             </li>
             <br />
             <li>
-              <strong>3rd Wings:</strong> 60% base success
+              <strong>3rd Wings:</strong> 60% base success. Be cautious, as
+              failure can consume some materials.
             </li>
             <br />
             <li>
-              <strong>4th & 5th Wings:</strong> 30% base success
+              <strong>4th & 5th Wings:</strong> 30% base success. High-risk,
+              high-reward — prepare multiple sets of items and consider
+              combining with luck-enhancing buffs.
+            </li>
+            <br />
+            <li>
+              <strong>Tips for Chaos Combination:</strong> Always check your
+              material ratios, use higher-tier ingredients when possible, and
+              consider completing daily quests or events that provide bonus
+              success buffs. High-tier wings and weapons crafted via Chaos
+              Combination are essential for endgame progression.
             </li>
           </ul>
+
+          <p>
+            Successfully using Chaos Combination not only upgrades your
+            equipment but also provides a strategic advantage in high-level maps
+            and PvP battles. Remember to gather sufficient materials and plan
+            your combinations carefully — failing a high-tier combination can be
+            costly, so preparation is key!
+          </p>
         </>
       ),
     },
