@@ -57,18 +57,6 @@ function Navigation({ user }) {
         <li>
           <NavigationItemLink
             as={Link}
-            to="/"
-            $active={location.pathname === "/"}
-          >
-            <NavigationIcon>
-              <FontAwesomeIcon icon={faHome} />
-            </NavigationIcon>
-            <NavigationLabel>{translate("navigation.home")}</NavigationLabel>
-          </NavigationItemLink>
-        </li>
-        <li>
-          <NavigationItemLink
-            as={Link}
             to="/downloads"
             $active={location.pathname === "/downloads"}
           >
@@ -169,17 +157,6 @@ function Navigation({ user }) {
       {/* Collapsed menu for mobile */}
       {menuOpen && (
         <CollapsedMenu ref={menuRef}>
-          <li>
-            <NavigationItemLink
-              as={Link}
-              to="/"
-              onClick={() => setMenuOpen(false)}
-              $active={location.pathname === "/"}
-            >
-              <FontAwesomeIcon icon={faHome} style={{ marginRight: "10px" }} />{" "}
-              {translate("navigation.home")}
-            </NavigationItemLink>
-          </li>
           <li>
             <NavigationItemLink
               as={Link}
