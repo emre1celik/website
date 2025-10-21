@@ -1,50 +1,183 @@
 // eslint-disable-next-line
 export default {
-  pt: {
-    controlPanel: {
-      loading: "Carregando...",
-      notLoad: "Não foi possível carregar o perfil.",
-      hello: "Olá, {user}!",
-      tabs: {
-        profile: "Perfil",
-        settings: "Configurações",
-        stats: "Personagens",
+  guide: {
+    intro:
+      "Aqui você encontrará tudo o que precisa saber — desde detalhes do servidor e progressão de equipamentos até dicas de crafting na Chaos Machine e farm de Ruud. Seja você um aventureiro iniciante ou um veterano retornando, esta página ajudará você a evoluir de forma eficiente e aproveitar cada parte da sua jornada em nosso servidor!",
+
+    serverInfo: {
+      title: "Informações e Configurações do Servidor",
+      intro:
+        "Aqui estão as principais taxas do servidor, recompensas e comandos úteis para ajudá-lo a progredir de forma eficiente. Fique atento aos timers de eventos, recompensas de reset e respawns de chefes para maximizar seus ganhos.",
+      list: {
+        expRate: "Taxa de EXP: 5000x",
+        masterExp: "Master EXP: 9999x",
+        majesticExp: "Majestic EXP: 9999x",
+        excellentDrop: "Taxa de drop de Itens Excellent: 200%",
+        resetReward:
+          "Recompensa de Reset: 5 WCoins, 100 Pontos Goblin, 1,000 Ruud",
+        grandReset: "Requisito para Grand Reset: 100 resets",
+        grandResetReward:
+          "Recompensa de Grand Reset: 1,000 WCoins, 50,000 Pontos Goblin",
+        eventTimers: "Timers de Eventos: consulte o cronograma no site",
+        bossRespawns: "Respawns de Chefes: a cada hora",
+        commands: "Comandos:",
+        amount: "(quantidade)",
       },
-      profile: {
-        accountInformation: "Informações da conta",
-        email: "Email",
-        accountName: "Nome da conta",
-        wcoin: "WCoin",
-        goblinPoints: "Pontos de Goblin",
-        lastLogin: "Último login",
-        buy: "Comprar",
+      outro:
+        "Use essas taxas e comandos com sabedoria para otimizar o progresso do seu personagem. Acompanhe os resets e recompensas, e sempre planeje ao redor dos eventos para maximizar EXP e loot.",
+    },
+
+    weaponsGear: {
+      title: "Armas e Equipamentos",
+      intro:
+        "Comece sua aventura visitando as lojas de NPC em Lorencia, Noria ou Elbeland para obter equipamentos básicos iniciais (pressione TAB para abrir o minimapa). Depois disso você pode:",
+      list: [
+        "Caçar monstros e chefes para obter itens Excellent (mínimo de 3-4 opções). Também é possível caçar o chefe Kundun em Kalima para itens Excellent e Ancient.",
+        "OU coletar Seed Capsules para armas e armaduras de 5 slots. As cápsulas também soltam sementes que podem ser inseridas nos slots.",
+        "OU começar sua jornada com o Set Bloodangel — disponível com o NPC Priest James em Elbeland. Você precisará de Ruud, que pode ser coletado em todos os eventos. Melhore-o através dos níveis para evoluir para conjuntos superiores. Esta é a melhor armadura; possui opções Excellent e Ancient. Caminho completo de evolução: Bloodangel, Darkangel, Holyangel, Awakening, Soul, Blue Eye, Silver Heart, Manticore, Brilliant, Apocalypse, Lightning.",
+      ],
+    },
+
+    questsEvo: {
+      title: "Missões e Evolução",
+      intro:
+        "Missões e avanço de classe são o sistema central de progressão em MU. Completar essas missões desbloqueia classes superiores, novas habilidades, pontos de status e equipamentos poderosos. Siga cuidadosamente as instruções dos NPCs, derrote os monstros exigidos e complete cada etapa para evoluir seu personagem para a próxima classe.",
+
+      second: {
+        title: "2ª mudança de classe (NPC Sebina, Devias)",
+        level:
+          "No nível 150, fale com o NPC Sebina em Devias. Depois, traga os itens específicos da classe (podem ser comprados com o NPC Lumen, bartender em Lorencia):",
+        items: [
+          "Dark Knight / Slayer: Espada Quebrada",
+          "Dark Wizard / Rune Mage: Fragmento de Alma",
+          "Elf: Lágrima de Elfo",
+        ],
       },
-      settings: {
-        changePassword: "Alterar senha",
-        newPassword: "Nova senha",
-        confirmPassword: "Confirmar senha",
-        updatePassword: "Atualizar senha",
-        updating: "Atualizando...",
-        updated: "Atualizado",
-        passwordMismatch: "❌ Senhas não coincidem!",
-        serverError: "❌ Erro do servidor: {error}",
+
+      third: {
+        title: "3ª mudança de classe (NPC Apostle Devin, CryWolf)",
+        levelReq:
+          "Deve estar no nível 400 e ter concluído a 2ª missão. A missão tem três partes (itens podem ser comprados com o NPC Lumen, bartender em Lorencia):",
+        steps: [
+          "Traga 5,000,000 Zen e itens: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Pena de Fênix (Icarus).",
+          "Nível 400, pague 7,000,000 Zen, entre no mapa Balgass Barracks através do Werewolf Guardsman em Crywolf, mate 20 de cada: Balram, Death Spirit, Soram.",
+          "Entre no Refuge (através do Gatekeeper dentro do Barracks), mate 1 Dark Elf Hero. Recompensa: 3ª mudança de classe, pontos adicionais de status, desbloqueio da árvore de habilidades Master.",
+        ],
       },
-      stats: {
-        characterStatistics: "Estatísticas do personagem",
-        loadingCharacters: "Carregando personagens...",
-        noCharacters: "Nenhum personagem encontrado.",
-        name: "Nome",
-        level: "Nível",
-        resets: "Resets",
-        race: "Raça",
+
+      fourth: {
+        title: "4ª mudança de classe (NPC Cent, Lorencia [131, 147])",
+        levelReq:
+          "Deve estar no nível 800 e ter concluído a 3ª missão. A missão tem três etapas:",
+        stages: [
+          "Etapa 1: Teste de Elegibilidade – Derrote Cent para passar no primeiro teste. Recompensa: +20 pontos de status.",
+          "Etapa 2: Nova Batalha (1) – Derrote 5 Deep Dungeon Skeleton Warriors, 5 Cyclops e 5 Ghost Monsters em 1 minuto. Recompensa: +30 pontos de status.",
+          "Etapa 3: Nova Batalha (2) – Derrote Cent novamente com habilidades mais fortes. Recompensa: +50 pontos de status, Scroll of Gray Oblivion, desbloqueio da 4ª classe, árvore de aprimoramento de habilidades.",
+        ],
+        rewards:
+          "+100 pontos de status no total, 4ª classe desbloqueada, árvore de aprimoramento de habilidades, Scroll of Gray Oblivion.",
+      },
+
+      fifth: {
+        title: "5ª mudança de classe (NPC Eunice, Devias [193, 12])",
+        levelReq:
+          "Deve estar no nível 1,200 e ter concluído a 4ª missão. A missão tem quatro partes:",
+        waves: [
+          "Onda 1: Receba buff Extra Nuke DMG e derrote Eunice em 1 minuto.",
+          "Onda 2: Receba buff Extra Bolt DMG e derrote Eunice em 1 minuto.",
+          "Onda 3: Receba buff Extra Wide DMG e derrote Eunice em 1 minuto.",
+          "Onda 4 (Missão de Mount): Dê a Eunice 300 Jewel of Creation, depois derrote-a em seu Giant Mount em 1 minuto para ganhar um Giant Mount aleatório.",
+        ],
+        rewards:
+          "+200 pontos de status, desbloqueio da 5ª árvore de habilidades, 3 Extra Ability Cards (Nuke/Bolt/Wide) e acesso aos Giant Mounts.",
+      },
+    },
+
+    ruud: {
+      title: "Como obter Ruud",
+      intro:
+        "Ruud é uma moeda valiosa usada para comprar equipamentos Ancient e Excellent de endgame. Também pode ser usado para melhorar certos itens, aprimorar mounts e trocar por materiais raros de crafting. As melhores formas de farmar Ruud incluem:",
+      list: [
+        "Blood Castle e Devil Square — principais eventos com recompensa de Ruud; repita diariamente para lucro máximo.",
+        "Golden Invasions — caçar Golden Dragons, Titans e outros mini-bosses para bônus de Ruud e loot raro.",
+        "Majestic Maps — derrote Elite Monsters e World Bosses em mapas de alto nível para farm de Ruud de endgame.",
+        "Castle Siege — participe com sua guilda em raids especiais para recompensas de Ruud compartilhadas e loot adicional.",
+        "Use seu Ruud no NPC Ruud para comprar armas, armaduras e materiais de upgrade poderosos.",
+      ],
+      tip: "Dica: Sempre confira os Timers de Eventos para as melhores oportunidades de Ruud! Foque em desafios de alto nível — quanto mais fortes os monstros, maior a recompensa de Ruud. Também, economizar Ruud para itens temporários pode maximizar seu poder no endgame.",
+    },
+
+    chaos: {
+      title: "Taxas de Combinação do Chaos",
+      intro:
+        "Chaos Combination é o sistema usado para criar e aprimorar itens de alto nível, incluindo asas e armas poderosas. Você pode realizar Chaos Combination em NPCs especiais como o Noria Goblin, localizado em Noria, ou NPCs semelhantes em Lorencia e Devias. Usar os materiais corretos e entender as taxas de sucesso é crucial para maximizar suas chances.",
+      upgradeRates: [
+        "+1 ~ +6 → 100%",
+        "+7 → 100%",
+        "+8 → 100%",
+        "+9 → 100%",
+        "+10 → 100%",
+        "+11 → 100%",
+        "+12 → 100%",
+        "+13 → 100%",
+        "+14 → 100%",
+        "+15 → 100%",
+      ],
+      wings: [
+        "Criação de Asas: 60% de sucesso base. Dicas: Use itens de Chaos Combination bem-sucedidos para aumentar a chance e tente em mapas de alto nível para melhores resultados.",
+        "2ª Asa: 80% de sucesso base. Recomendado usar pedras de aprimoramento adicionais para maior confiabilidade.",
+        "3ª Asa: 60% de sucesso base. Tenha cuidado, pois falhas podem consumir alguns materiais.",
+        "4ª & 5ª Asas: 30% de sucesso base. Alto risco, alta recompensa — prepare vários conjuntos de materiais e considere buffs de sorte.",
+      ],
+      tips: "Dicas para Chaos Combination: Sempre verifique as proporções de materiais, use ingredientes de nível superior quando possível e considere completar missões diárias ou eventos que forneçam buffs de sucesso. Asas e armas de alto nível criadas via Chaos Combination são essenciais para a progressão do endgame.",
+      outro:
+        "Usar Chaos Combination com sucesso não apenas aprimora seu equipamento, mas também oferece vantagem estratégica em mapas de alto nível e batalhas PvP. Lembre-se de reunir materiais suficientes e planejar suas combinações cuidadosamente — falhar em combinações de alto nível pode ser caro, então preparação é fundamental!",
+    },
+  },
+
+  controlPanel: {
+    loading: "Carregando...",
+    notLoad: "Não foi possível carregar o perfil.",
+    hello: "Olá, {user}!",
+    tabs: {
+      profile: "Perfil",
+      settings: "Configurações",
+      stats: "Personagens",
+    },
+    profile: {
+      accountInformation: "Informações da conta",
+      email: "Email",
+      accountName: "Nome da conta",
+      wcoin: "WCoin",
+      goblinPoints: "Pontos de Goblin",
+      lastLogin: "Último login",
+      buy: "Comprar",
+    },
+    settings: {
+      changePassword: "Alterar senha",
+      newPassword: "Nova senha",
+      confirmPassword: "Confirmar senha",
+      updatePassword: "Atualizar senha",
+      updating: "Atualizando...",
+      updated: "Atualizado",
+      passwordMismatch: "❌ Senhas não coincidem!",
+      serverError: "❌ Erro do servidor: {error}",
+    },
+    stats: {
+      characterStatistics: "Estatísticas do personagem",
+      loadingCharacters: "Carregando personagens...",
+      noCharacters: "Nenhum personagem encontrado.",
+      name: "Nome",
+      level: "Nível",
+      resets: "Resets",
+      race: "Raça",
+      processing: "Processando...",
+      giant_mount: "(5ª classe) Montaria Gigante",
+      actions: {
+        unstuck: "Destravar",
+        evolve: "Evoluir",
+        grandReset: "Grande reset",
         processing: "Processando...",
-        giant_mount: "(5ª classe) Montaria Gigante",
-        actions: {
-          unstuck: "Destravar",
-          evolve: "Evoluir",
-          grandReset: "Grande reset",
-          processing: "Processando...",
-        },
       },
     },
   },

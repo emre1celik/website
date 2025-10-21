@@ -1,5 +1,138 @@
 // eslint-disable-next-line
 export default {
+  guide: {
+    intro:
+      "Siit leiad kõik, mida pead teadma — alates serveri detailidest ja varustuse arengust kuni Chaos Machine'i meisterdamise ja Ruudi kogumise näpunäideteni. Olenemata sellest, kas oled uus seikleja või kogenud veterann, aitab see leht sul tõhusalt areneda ja nautida iga osa oma teekonnast meie serveris!",
+
+    serverInfo: {
+      title: "Serveri info ja seaded",
+      intro:
+        "Siin on peamised serveri määrad, auhinnad ja kasulikud käsud, mis aitavad sul tõhusalt areneda. Jälgi sündmuste taimerit, reset-auhindu ja bosside taassünke, et maksimeerida oma kasu.",
+      list: {
+        expRate: "EXP määr: 5000x",
+        masterExp: "Meistri EXP: 9999x",
+        majesticExp: "Majestic EXP: 9999x",
+        excellentDrop: "Excellent eseme languse määr: 200%",
+        resetReward: "Reset-auhind: 5 WCoini, 100 Goblini punkti, 1,000 Ruudi",
+        grandReset: "Grand Reset nõue: 100 resetit",
+        grandResetReward:
+          "Grand Reset auhind: 1,000 WCoini, 50,000 Goblini punkti",
+        eventTimers: "Sündmuste taimerid: vaata veebilehe ajakava",
+        bossRespawns: "Bosside taassünnid: iga tund",
+        commands: "Käsud:",
+        amount: "(kogus)",
+      },
+      outro:
+        "Kasuta neid määra ja käske targalt, et optimeerida oma tegelase arengut. Jälgi reset-e ja auhindu ning planeeri sündmuste ümber, et maksimeerida EXP ja saaki.",
+    },
+
+    weaponsGear: {
+      title: "Relvad ja varustus",
+      intro:
+        "Alusta oma seiklust, külastades NPC poode Lorencias, Norias või Elbelandis, et saada algvarustust (vajuta TAB, et avada minimap). Pärast seda võid:",
+      list: [
+        "Küttida monsteri ja bosse, et saada Excellent iteme (vähemalt 3-4 omadust). Samuti võid küttida Kunduni bossi Kalimas Excellent ja Ancient itemite saamiseks.",
+        "Või koguda Seed Capsule’id 5-slot relvade ja soomuste jaoks. Kapslid annavad ka seemneid, mida saab slotidesse paigaldada.",
+        "Või alustada Bloodangel komplekti teekonda — saadaval NPC Priest James’ilt Elbelandis. Selleks on vaja Ruudi, mida saab koguda kõikidest sündmustest. Uuenda tasemete kaupa, et arendada kõrgemaid set’e. See on parim soomus; tal on excellent ja ancient omadused. Täielik arendusjärjestus: Bloodangel, Darkangel, Holyangel, Awakening, Soul, Blue Eye, Silver Heart, Manticore, Brilliant, Apocalypse, Lightning.",
+      ],
+    },
+
+    questsEvo: {
+      title: "Missioonid ja evolutsioon",
+      intro:
+        "Missioonid ja klassi arengud on MU põhiline progresioonisüsteem. Nende täitmine avab kõrgemaid klasse, uusi oskusi, statistika punkte ja võimsat varustust. Järgi NPC juhiseid hoolikalt, alista vajalikud monsterid ja lõpeta iga etapp, et oma tegelast järgmisesse klassi arendada.",
+
+      second: {
+        title: "2. klassi vahetus (NPC Sebina, Devias)",
+        level:
+          "150. tasemel räägi NPC Sebina’ga Devias. Seejärel too klassispetsiifilised esemed (saad osta NPC Lumen’ilt baarmenilt Lorencias):",
+        items: [
+          "Dark Knight / Slayer: Katkenud mõõk",
+          "Dark Wizard / Rune Mage: Hingetükk",
+          "Elf: Elfi pisar",
+        ],
+      },
+
+      third: {
+        title: "3. klassi vahetus (NPC Apostle Devin, CryWolf)",
+        levelReq:
+          "Peab olema 400. tasemel ja 2. missioon lõpetatud. Missioon koosneb kolmest osast (esemed saab osta NPC Lumen’ilt baarmenilt Lorencias):",
+        steps: [
+          "Too 5,000,000 Zen ja esemed: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Phoenix Sulg (Icarus).",
+          "Tase 400, maksa 7,000,000 Zen, siseneda Balgass Barracks kaardile Werewolf Guardsman’i kaudu Crywolf’is, tapa 20 Balram’i, Death Spirit’i ja Soram’i.",
+          "Siseneda Refuge’isse (värava kaudu Cuartelis), tapa 1 Dark Elf Hero. Auhind: 3. klassi vahetus, lisastatistikapunktid, Master oskuste puu avamine.",
+        ],
+      },
+
+      fourth: {
+        title: "4. klassi vahetus (NPC Cent, Lorencia [131, 147])",
+        levelReq:
+          "Peab olema 800. tasemel ja 3. missioon lõpetatud. Missioon koosneb kolmest etapist:",
+        stages: [
+          "Etapp 1: Sobivuse test – alista Cent, et läbida esimene test. Auhind: +20 statistika punkti.",
+          "Etapp 2: Uus lahing (1) – alista 5 Deep Dungeon Skeleton Warrior, 5 Cyclops ja 5 Ghost Monster 1 minuti jooksul. Auhind: +30 statistika punkti.",
+          "Etapp 3: Uus lahing (2) – alista Cent uuesti tugevamate oskustega. Auhind: +50 statistika punkti, Scroll of Gray Oblivion, 4. klassi avamine, oskuste täiustamise puu.",
+        ],
+        rewards:
+          "+100 statistika punkti kokku, 4. klass avatud, oskuste täiustamise puu, Scroll of Gray Oblivion.",
+      },
+
+      fifth: {
+        title: "5. klassi vahetus (NPC Eunice, Devias [193, 12])",
+        levelReq:
+          "Peab olema 1,200. tasemel ja 4. missioon lõpetatud. Missioon koosneb neljast osast:",
+        waves: [
+          "Laine 1: Saad Extra Nuke DMG buffi ja alista Eunice 1 minuti jooksul.",
+          "Laine 2: Saad Extra Bolt DMG buffi ja alista Eunice 1 minuti jooksul.",
+          "Laine 3: Saad Extra Wide DMG buffi ja alista Eunice 1 minuti jooksul.",
+          "Laine 4 (Mount Quest): Anna Eunice’ile 300 Jewel of Creation, seejärel alista ta tema Giant Mountil 1 minuti jooksul, et võita juhuslik Giant Mount.",
+        ],
+        rewards:
+          "+200 statistika punkti, 5. oskuste puu avamine, 3 Extra Ability Card (Nuke/Bolt/Wide) ja juurdepääs Giant Mount’idele.",
+      },
+    },
+
+    ruud: {
+      title: "Kuidas saada Ruudi",
+      intro:
+        "Ruud on väärtuslik valuuta, mida kasutatakse Ancient ja Excellent endgame varustuse ostmiseks. Seda saab kasutada ka teatud esemete uuendamiseks, mountide täiustamiseks ja haruldaste meisterdamismaterjalide vahetamiseks. Parimad viisid Ruudi kogumiseks on:",
+      list: [
+        "Blood Castle ja Devil Square — parimad Ruudi auhinda pakkuvad sündmused; korda neid igapäevaselt maksimaalse kasu saamiseks.",
+        "Golden Invasions — küttida Golden Dragons, Titans ja teisi mini-bosse, et saada lisaruudi ja haruldast loot’i.",
+        "Majestic Maps — alista Elite Monsters ja World Bossid kõrgetasemelistes kaartides endgame Ruudi farmimiseks.",
+        "Castle Siege — liitu oma guildiga erilistes rünnakutes, et jagada Ruudi auhindu ja saada lisasaaki.",
+        "Kasuta Ruudi NPC juures, et osta võimsad ancient relvad, soomused ja uuendusmaterjalid.",
+      ],
+      tip: "Nipp: Kontrolli alati Sündmuste Taimerit parimate Ruudi võimaluste jaoks! Keskendu kõrgetasemelistele väljakutsetele — mida tugevamad monsterid, seda rohkem Ruudi. Samuti võib Ruudi säästmine ajutiste esemete jaoks maksimeerida sinu endgame jõudu.",
+    },
+
+    chaos: {
+      title: "Chaos Kombinatsiooni määrad",
+      intro:
+        "Chaos Combination on süsteem, mida kasutatakse kõrgetasemeliste esemete meisterdamiseks ja uuendamiseks, sealhulgas tiivad ja võimsad relvad. Seda saab teha spetsiaalsete NPC-de juures nagu Noria Goblin Norias või sarnaste NPC-de juures Lorencias ja Devias. Õigete materjalide kasutamine ja eduvõimaluste mõistmine on oluline, et maksimeerida oma võimalusi.",
+      upgradeRates: [
+        "+1 ~ +6 → 100%",
+        "+7 → 100%",
+        "+8 → 100%",
+        "+9 → 100%",
+        "+10 → 100%",
+        "+11 → 100%",
+        "+12 → 100%",
+        "+13 → 100%",
+        "+14 → 100%",
+        "+15 → 100%",
+      ],
+      wings: [
+        "Tiibade loomine: 60% baas edu. Nõuanded: Kasuta edukate Chaos kombinatsiooni esemeteid, et tõsta võimalust, ja proovi kõrgetasemelistel kaartidel.",
+        "2. tiivad: 80% baas edu. Soovitatav kasutada lisatäiendamise kive parema usaldusväärsuse jaoks.",
+        "3. tiivad: 60% baas edu. Ole ettevaatlik, ebaõnnestumine võib tarbida mõnda materjali.",
+        "4. & 5. tiivad: 30% baas edu. Kõrge risk, kõrge tasu — valmista mitu esemete komplekti ja kaalu õnnetugevdavate buffide kasutamist.",
+      ],
+      tips: "Chaos Combination näpunäited: Kontrolli alati materjalide suhteid, kasuta võimalusel kõrgema taseme koostisosi ja täida igapäevased missioonid või sündmused, mis annavad boonused. Kõrgetasemelised tiivad ja relvad, mis on loodud Chaos Combination’i kaudu, on endgame progresiooniks hädavajalikud.",
+      outro:
+        "Chaos Combination’i edukas kasutamine mitte ainult ei uuenda sinu varustust, vaid annab ka strateegilise eelise kõrgetasemelistel kaartidel ja PvP lahingutes. Kogu piisavalt materjale ja planeeri kombinatsioonid hoolikalt — kõrgetasemelise kombinatsiooni ebaõnnestumine võib olla kulukas, seega on ettevalmistus võtmetähtsusega!",
+    },
+  },
   controlPanel: {
     loading: "Laadimine...",
     notLoad: "Profiili ei saanud laadida.",

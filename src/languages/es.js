@@ -1,5 +1,139 @@
 // eslint-disable-next-line
 export default {
+  guide: {
+    intro:
+      "Aquí encontrarás todo lo que necesitas saber: desde detalles del servidor y progresión de equipo hasta la elaboración en la Máquina del Caos y consejos para farmear Ruud. Ya seas un aventurero nuevo o un veterano que regresa, ¡esta página te ayudará a mejorar de manera eficiente y disfrutar cada parte de tu aventura en nuestro servidor!",
+
+    serverInfo: {
+      title: "Información y Configuración del Servidor",
+      intro:
+        "Aquí están las tasas clave del servidor, recompensas y comandos útiles para ayudarte a progresar eficientemente. Controla los temporizadores de eventos, recompensas de reinicio y respawns de jefes para maximizar tus ganancias.",
+      list: {
+        expRate: "Tasa de EXP: 5000x",
+        masterExp: "EXP de Maestro: 9999x",
+        majesticExp: "EXP Majestic: 9999x",
+        excellentDrop: "Tasa de Drop de Items Excelente: 200%",
+        resetReward:
+          "Recompensa por Reinicio: 5 WCoins, 100 Puntos de Goblin, 1,000 Ruud",
+        grandReset: "Requisito de Gran Reinicio: 100 reinicios",
+        grandResetReward:
+          "Recompensa de Gran Reinicio: 1,000 WCoins, 50,000 Puntos de Goblin",
+        eventTimers: "Temporizadores de Eventos: Consulta el horario en la web",
+        bossRespawns: "Respawns de Jefes: Cada hora",
+        commands: "Comandos:",
+        amount: "(cantidad)",
+      },
+      outro:
+        "Usa estas tasas y comandos sabiamente para optimizar la progresión de tu personaje. Lleva un control de los reinicios y recompensas, y siempre planifica en torno a los eventos para maximizar EXP y loot.",
+    },
+
+    weaponsGear: {
+      title: "Armas y Equipo",
+      intro:
+        "Comienza tu aventura visitando las Tiendas NPC en Lorencia, Noria o Elbeland para obtener equipo básico de inicio (presiona TAB para abrir el minimapa). Después de esto puedes:",
+      list: [
+        "Cazar monstruos y jefes para obtener items con opciones Excelente (mínimo 3-4 opciones). También puedes cazar al jefe Kundun en Kalima para items con opciones Excelente y Antiguas.",
+        "O recoger Cápsulas de Semilla para armas y armaduras con 5 ranuras. Las cápsulas también sueltan semillas que puedes insertar en las ranuras.",
+        "O comenzar tu camino con el Set Bloodangel — disponible con el NPC Sacerdote James en Elbeland. Necesitas Ruud para esto, que se puede recolectar en todos los eventos. Mejóralo por niveles hasta evolucionar a sets superiores. Esta es la mejor armadura; tiene opciones Excelente y Antiguas. La ruta completa de mejoras es: Bloodangel, Darkangel, Holyangel, Awakening, Soul, Blue Eye, Silver Heart, Manticore, Brilliant, Apocalypse, Lightning.",
+      ],
+    },
+
+    questsEvo: {
+      title: "Misiones y Evolución",
+      intro:
+        "Las misiones y avances de clase son el sistema de progresión central en MU. Completar estas misiones desbloquea clases superiores, nuevas habilidades, puntos de estadística y equipo poderoso. Sigue las indicaciones de los NPC cuidadosamente, derrota los monstruos requeridos y completa cada etapa para evolucionar tu personaje a la siguiente clase.",
+
+      second: {
+        title: "Cambio de 2da clase (NPC Sebina, Devias)",
+        level:
+          "A nivel 150, habla con NPC Sebina en Devias. Luego lleva los items específicos de clase (pueden comprarse al NPC Lumen, camarera en Lorencia):",
+        items: [
+          "Dark Knight / Slayer: Espada Rota",
+          "Dark Wizard / Rune Mage: Fragmento de Alma",
+          "Elfo: Lágrima de Elfo",
+        ],
+      },
+
+      third: {
+        title: "Cambio de 3ra clase (NPC Apóstol Devin, CryWolf)",
+        levelReq:
+          "Debes ser nivel 400 y haber completado la 2da misión. La misión tiene tres partes (los items pueden comprarse al NPC Lumen, camarera en Lorencia):",
+        steps: [
+          "Lleva 5,000,000 Zen y los items: Llama de la Muerte para Beam Knight (Tarkan), Cuerno del Infierno para Maine (Aida), Pluma de Fénix (Icarus).",
+          "Nivel 400, paga 7,000,000 Zen, entra al mapa Balgass Barracks vía el Guardia Hombre Lobo en Crywolf, mata 20 de cada uno: Balram, Death Spirit, Soram.",
+          "Entra al Refugio (vía el Portero dentro del Cuartel), mata 1 Héroe Elfo Oscuro. Recompensa: cambio a tercera clase, puntos de estadística adicionales, desbloqueo del árbol de habilidades Maestro.",
+        ],
+      },
+
+      fourth: {
+        title: "Cambio de 4ta clase (NPC Cent, Lorencia [131, 147])",
+        levelReq:
+          "Debes ser nivel 800 y haber completado la 3ra misión. La misión tiene tres etapas:",
+        stages: [
+          "Etapa 1: Prueba de Elegibilidad – Derrota a Cent para pasar la primera prueba. Recompensa: +20 puntos de estadística.",
+          "Etapa 2: Nueva Batalla (1) – Derrota 5 Guerreros Esqueleto de la Mazmorra Profunda, 5 Cíclopes y 5 Monstruos Fantasma en 1 minuto. Recompensa: +30 puntos de estadística.",
+          "Etapa 3: Nueva Batalla (2) – Derrota nuevamente a Cent con habilidades más fuertes. Recompensa: +50 puntos de estadística, Pergamino del Olvido Gris, desbloqueo de 4ta clase, árbol de mejora de habilidades.",
+        ],
+        rewards:
+          "+100 puntos de estadística totales, 4ta clase desbloqueada, árbol de mejora de habilidades, Pergamino del Olvido Gris.",
+      },
+
+      fifth: {
+        title: "Cambio de 5ta clase (NPC Eunice, Devias [193, 12])",
+        levelReq:
+          "Debes ser nivel 1,200 y haber completado la 4ta misión. La misión tiene cuatro partes:",
+        waves: [
+          "Ola 1: Recibe buff de DMG Extra Nuke y derrota a Eunice en 1 minuto.",
+          "Ola 2: Recibe buff de DMG Extra Bolt y derrota a Eunice en 1 minuto.",
+          "Ola 3: Recibe buff de DMG Extra Wide y derrota a Eunice en 1 minuto.",
+          "Ola 4 (Misión de Montura): Entrega a Eunice 300 Joyas de Creación, luego derrota a Eunice en su Montura Gigante en 1 minuto para ganar una Montura Gigante aleatoria.",
+        ],
+        rewards:
+          "+200 puntos de estadística, desbloqueo del 5to árbol de habilidades, 3 Cartas de Habilidad Extra (Nuke/Bolt/Wide), y acceso a Monturas Gigantes.",
+      },
+    },
+
+    ruud: {
+      title: "Cómo Conseguir Ruud",
+      intro:
+        "El Ruud es una moneda valiosa usada para comprar Equipamiento Excelente y Antiguo de Endgame. También se puede usar para mejorar ciertos items, mejorar monturas e intercambiar por materiales raros de crafting. Las mejores formas de farmear Ruud incluyen:",
+      list: [
+        "Blood Castle y Devil Square — eventos con la mejor recompensa de Ruud; repítelos diariamente para máximo beneficio.",
+        "Invasiones Doradas — caza Dragones Dorados, Titanes y otros mini-jefes para Ruud adicional y loot raro.",
+        "Mapas Majestic — derrota Monstruos Élite y Jefes Mundiales en mapas de alto nivel para farmear Ruud de endgame.",
+        "Asedio de Castillo — únete a tu guild en raids especiales para recompensas de Ruud compartidas y loot adicional.",
+        "Usa tu Ruud con el NPC Ruud para comprar armas antiguas poderosas, armaduras y materiales de mejora.",
+      ],
+      tip: "Consejo: ¡Revisa siempre los Temporizadores de Eventos para las mejores oportunidades de Ruud! Enfócate en desafíos de alto nivel — mientras más fuertes los monstruos, mayor la recompensa de Ruud. Además, ahorrar Ruud para items por tiempo limitado maximiza tu poder de endgame.",
+    },
+
+    chaos: {
+      title: "Tasas de Combinación de Caos",
+      intro:
+        "La Combinación de Caos es el sistema usado para crear y mejorar items de alto nivel, incluyendo alas y armas poderosas. Puedes realizar Combinaciones de Caos con NPCs especiales como el Goblin de Noria, ubicado en Noria, o NPCs similares en Lorencia y Devias. Usar los materiales correctos y entender las tasas de éxito es crucial para maximizar tus posibilidades.",
+      upgradeRates: [
+        "+1 ~ +6 → 100%",
+        "+7 → 100%",
+        "+8 → 100%",
+        "+9 → 100%",
+        "+10 → 100%",
+        "+11 → 100%",
+        "+12 → 100%",
+        "+13 → 100%",
+        "+14 → 100%",
+        "+15 → 100%",
+      ],
+      wings: [
+        "Creación de Alas: 60% de éxito base. Consejos: Usa items exitosos de Combinación de Caos para aumentar la probabilidad y prueba en mapas de alto nivel para mejores resultados.",
+        "2das Alas: 80% de éxito base. Se recomienda usar piedras de mejora adicionales para mayor fiabilidad.",
+        "3ras Alas: 60% de éxito base. Ten precaución, ya que el fallo puede consumir algunos materiales.",
+        "4tas y 5tas Alas: 30% de éxito base. Alto riesgo, alta recompensa — prepara múltiples sets de items y considera combinar con buffs de suerte.",
+      ],
+      tips: "Consejos para Combinación de Caos: Siempre revisa las proporciones de tus materiales, usa ingredientes de nivel superior cuando sea posible y completa misiones diarias o eventos que proporcionen buffs de éxito. Las alas y armas de alto nivel creadas mediante Combinación de Caos son esenciales para la progresión de endgame.",
+      outro:
+        "Usar exitosamente la Combinación de Caos no solo mejora tu equipo, sino que también proporciona ventaja estratégica en mapas de alto nivel y batallas PvP. Recuerda reunir suficientes materiales y planificar cuidadosamente tus combinaciones — fallar una combinación de alto nivel puede ser costoso, ¡así que la preparación es clave!",
+    },
+  },
   controlPanel: {
     loading: "Cargando...",
     notLoad: "No se pudo cargar el perfil.",

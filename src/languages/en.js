@@ -1,5 +1,133 @@
 // eslint-disable-next-line
 export default {
+  guide: {
+    intro:
+      "Here you’ll find everything you need to know — from server details and gear progression to Chaos Machine crafting and Ruud farming tips. Whether you’re a new adventurer or a returning veteran, this page will help you power up efficiently and enjoy every part of your journey on our server!",
+    serverInfo: {
+      title: "Server Information & Settings",
+      intro:
+        "Here are the key server rates, rewards, and useful commands to help you progress efficiently. Keep track of event timers, reset rewards, and boss respawns to maximize your gains.",
+      list: {
+        expRate: "EXP Rate: 5000x",
+        masterExp: "Master EXP: 9999x",
+        majesticExp: "Majestic EXP: 9999x",
+        excellentDrop: "Excellent Item Drop Rate: 200%",
+        resetReward: "Reset Reward: 5 WCoins, 100 Goblin Points, 1,000 Ruud",
+        grandReset: "Grand Reset requirement: 100 resets",
+        grandResetReward:
+          "Grand Reset Reward: 1,000 WCoins, 50,000 Goblin Points",
+        eventTimers: "Event Timers: Check website schedule",
+        bossRespawns: "Boss Respawns: Each hour",
+        commands: "Commands:",
+        amount: "(amount)",
+      },
+      outro:
+        "Use these rates and commands wisely to optimize your character progression. Keep track of resets and rewards, and always plan around events to maximize EXP and loot gains.",
+    },
+
+    weaponsGear: {
+      title: "Weapons & Gear",
+      intro:
+        "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). After this you can:",
+      list: [
+        "Hunt monsters and bosses to drop Excellent option items (minimum 3-4 options). You can also hunt Kundun boss in Kalima for Excellent and Ancient option items.",
+        "OR collect Seed Capsules for 5 slot socket weapons and armor. The capsules also drop seeds that you can insert into the slots.",
+        "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events. Upgrade it through tiers to evolve into higher sets. This is the best armor; this armor has excellent and ancient options. The full upgrade path is: Bloodangel, Darkangel, Holyangel, Awakening, Soul, Blue Eye, Silver Heart, Manticore, Brilliant, Apocalypse, Lightning.",
+      ],
+    },
+
+    questsEvo: {
+      title: "Quests & Evolution",
+      intro:
+        "Quests and class advancements are the core progression system in MU. Completing these quests unlocks higher classes, new skills, stat points, and powerful equipment. Follow the NPC guidance carefully, defeat the required monsters, and complete each stage to evolve your character to the next class.",
+      second: {
+        title: "2nd class change (NPC Sebina, Devias)",
+        level:
+          "At level 150, talk to NPC Sebina in Devias. Then bring class-specific items (can be bought from NPC Lumen barmaid in Lorencia):",
+        items: [
+          "Dark Knight / Slayer: Broken Sword",
+          "Dark Wizard / Rune Mage: Soul Shard",
+          "Elf: Tear of Elf",
+        ],
+      },
+      third: {
+        title: "3rd class change (NPC Apostle Devin, CryWolf)",
+        levelReq:
+          "Must be level 400 and have completed 2nd quest. Quest has three parts (items can be bought from NPC Lumen barmaid in Lorencia):",
+        steps: [
+          "Bring 5,000,000 Zen and items: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Feather of Phoenix (Icarus)",
+          "Level 400, pay 7,000,000 Zen, enter Balgass Barracks map via Werewolf Guardsman in Crywolf, kill 20 each of Balram, Death Spirit, Soram.",
+          "Enter Refuge (via Gatekeeper inside Barracks), kill 1 Dark Elf Hero. Reward: third class change, additional stat points, unlock Master skill tree.",
+        ],
+      },
+      fourth: {
+        title: "4th class change (NPC Cent, Lorencia [131, 147])",
+        levelReq:
+          "Must be level 800 and have completed 3rd quest. Quest has three stages:",
+        stages: [
+          "Stage 1: Eligibility Test – Defeat Cent to pass the first test. Reward: +20 stat points.",
+          "Stage 2: New Battle (1) – Defeat 5 Deep Dungeon Skeleton Warriors, 5 Cyclops, and 5 Ghost Monsters within 1 minute. Reward: +30 stat points.",
+          "Stage 3: New Battle (2) – Defeat Cent again with stronger skills. Reward: +50 stat points, Scroll of Gray Oblivion, unlock 4th class, skill enhance tree.",
+        ],
+        rewards:
+          "+100 total stat points, 4th class unlocked, skill enhance tree, Scroll of Gray Oblivion.",
+      },
+      fifth: {
+        title: "5th class change (NPC Eunice, Devias [193, 12])",
+        levelReq:
+          "Must be level 1,200 and have completed the 4th quest. Quest has four parts:",
+        waves: [
+          "Wave 1: Receive Extra Nuke DMG buff and defeat Eunice within 1 minute.",
+          "Wave 2: Receive Extra Bolt DMG buff and defeat Eunice within 1 minute.",
+          "Wave 3: Receive Extra Wide DMG buff and defeat Eunice within 1 minute.",
+          "Wave 4 (Mount Quest): Give Eunice 300 Jewel of Creation, then defeat her on her Giant Mount within 1 minute to earn a random Giant Mount.",
+        ],
+        rewards:
+          "+200 stat points, unlock 5th skill tree, 3 Extra Ability Cards (Nuke/Bolt/Wide), and access to Giant Mounts.",
+      },
+    },
+
+    ruud: {
+      title: "How to Get Ruud",
+      intro:
+        "Ruud is a valuable currency used to purchase Ancient and Excellent Endgame Equipment. It can also be used for upgrading certain items, enhancing mounts, and exchanging for rare crafting materials. The best ways to farm Ruud include:",
+      list: [
+        "Blood Castle and Devil Square — top Ruud reward events; repeat runs daily for maximum profit.",
+        "Golden Invasions — hunt Golden Dragons, Titans, and other mini-bosses for bonus Ruud and rare loot.",
+        "Majestic Maps — defeat Elite Monsters and World Bosses in high-level maps for endgame Ruud farming.",
+        "Castle Siege — join your guild in special raids for shared Ruud rewards and bonus loot.",
+        "Use your Ruud at the Ruud NPC to buy powerful ancient weapons, armors, and upgrade materials.",
+      ],
+      tip: "Tip: Always check Event Timers for the best Ruud opportunities! Focus on high-level challenges — the stronger the monsters, the greater the Ruud rewards. Also, saving Ruud for limited-time items can maximize your endgame power.",
+    },
+
+    chaos: {
+      title: "Chaos Combination Rates",
+      intro:
+        "Chaos Combination is the system used to craft and upgrade high-tier items, including wings and powerful weapons. You can perform Chaos Combinations at special NPCs like the Noria Goblin, located in Noria, or similar NPCs in Lorencia and Devias. Using the correct materials and understanding success rates is crucial to maximize your chances.",
+      upgradeRates: [
+        "+1 ~ +6 → 100%",
+        "+7 → 100%",
+        "+8 → 100%",
+        "+9 → 100%",
+        "+10 → 100%",
+        "+11 → 100%",
+        "+12 → 100%",
+        "+13 → 100%",
+        "+14 → 100%",
+        "+15 → 100%",
+      ],
+      wings: [
+        "Wings Creation: 60% base success. Tips: Use successful Chaos combination items to increase chance, and try in high-level maps for better outcomes.",
+        "2nd Wings: 80% base success. Recommended to use additional enhancement stones for higher reliability.",
+        "3rd Wings: 60% base success. Be cautious, as failure can consume some materials.",
+        "4th & 5th Wings: 30% base success. High-risk, high-reward — prepare multiple sets of items and consider combining with luck-enhancing buffs.",
+      ],
+      tips: "Tips for Chaos Combination: Always check your material ratios, use higher-tier ingredients when possible, and consider completing daily quests or events that provide bonus success buffs. High-tier wings and weapons crafted via Chaos Combination are essential for endgame progression.",
+      outro:
+        "Successfully using Chaos Combination not only upgrades your equipment but also provides a strategic advantage in high-level maps and PvP battles. Remember to gather sufficient materials and plan your combinations carefully — failing a high-tier combination can be costly, so preparation is key!",
+    },
+  },
   controlPanel: {
     loading: "Loading...",
     notLoad: "Could not load profile.",

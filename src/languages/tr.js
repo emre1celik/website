@@ -1,5 +1,137 @@
 // eslint-disable-next-line
 export default {
+  guide: {
+    intro:
+      "Burada ihtiyacınız olan her şeyi bulabilirsiniz — sunucu detaylarından ve ekipman ilerlemesinden Chaos Machine yapımına ve Ruud çiftçiliği ipuçlarına kadar. İster yeni bir maceracı olun, ister geri dönen bir veteranken, bu sayfa karakterinizi verimli bir şekilde güçlendirmenize ve sunucumuzdaki yolculuğunuzun her anının tadını çıkarmanıza yardımcı olacaktır!",
+
+    serverInfo: {
+      title: "Sunucu Bilgileri ve Ayarları",
+      intro:
+        "İşte verimli ilerlemenize yardımcı olacak temel sunucu oranları, ödüller ve yararlı komutlar. Etkinlik zamanlayıcılarını, reset ödüllerini ve boss respawnlarını takip ederek kazançlarınızı maksimuma çıkarın.",
+      list: {
+        expRate: "EXP Oranı: 5000x",
+        masterExp: "Master EXP: 9999x",
+        majesticExp: "Majestic EXP: 9999x",
+        excellentDrop: "Excellent Eşya Düşme Oranı: 200%",
+        resetReward: "Reset Ödülü: 5 WCoin, 100 Goblin Puanı, 1,000 Ruud",
+        grandReset: "Grand Reset Gereksinimi: 100 reset",
+        grandResetReward: "Grand Reset Ödülü: 1,000 WCoin, 50,000 Goblin Puanı",
+        eventTimers: "Etkinlik Zamanlayıcıları: web sitesinden kontrol edin",
+        bossRespawns: "Boss Yeniden Doğuşları: Her saat",
+        commands: "Komutlar:",
+        amount: "(miktar)",
+      },
+      outro:
+        "Karakter ilerlemenizi optimize etmek için bu oranları ve komutları akıllıca kullanın. Resetleri ve ödülleri takip edin ve EXP ile loot kazanımlarını maksimize etmek için etkinlikleri planlayın.",
+    },
+
+    weaponsGear: {
+      title: "Silahlar ve Ekipman",
+      intro:
+        "Maceranıza, Lorencia, Noria veya Elbeland'daki NPC Dükkanlarını ziyaret ederek temel başlangıç ekipmanını alarak başlayın (minimap'i açmak için TAB tuşuna basın). Bundan sonra şunları yapabilirsiniz:",
+      list: [
+        "Maksimum 3-4 opsiyon ile Excellent özellikli eşyalar düşürmek için canavarları ve bossları avlayın. Ayrıca Kalima'daki Kundun bossunu avlayarak Excellent ve Ancient opsiyonlu eşyalar elde edebilirsiniz.",
+        "VEYA 5 slotlu silah ve zırh için Seed Capsule toplayın. Kapsüller ayrıca slotlara yerleştirilebilecek tohumlar da bırakır.",
+        "VEYA Bloodangel Set yolculuğunuza başlayın — Elbeland NPC Priest James'den temin edilebilir. Bunun için Ruud gerekir, tüm etkinliklerden toplanabilir. Seti seviyelere göre yükselterek daha yüksek setlere evrimleştirin. Bu en iyi zırhtır; Excellent ve Ancient opsiyonlara sahiptir. Tam yükseltme yolu: Bloodangel, Darkangel, Holyangel, Awakening, Soul, Blue Eye, Silver Heart, Manticore, Brilliant, Apocalypse, Lightning.",
+      ],
+    },
+
+    questsEvo: {
+      title: "Görevler ve Evrim",
+      intro:
+        "Görevler ve sınıf gelişimi MU'daki temel ilerleme sistemidir. Bu görevleri tamamlamak, daha yüksek sınıfları, yeni becerileri, stat puanlarını ve güçlü ekipmanları açar. NPC talimatlarını dikkatle takip edin, gerekli canavarları yenin ve karakterinizi bir sonraki sınıfa evrimleştirmek için her aşamayı tamamlayın.",
+
+      second: {
+        title: "2. sınıf değişimi (NPC Sebina, Devias)",
+        level:
+          "Seviye 150'te, Devias'taki NPC Sebina ile konuşun. Ardından sınıfa özel eşyaları getirin (Lorencia'daki NPC Lumen barmenden satın alınabilir):",
+        items: [
+          "Dark Knight / Slayer: Kırık Kılıç",
+          "Dark Wizard / Rune Mage: Ruh Parçası",
+          "Elf: Elf Gözyaşı",
+        ],
+      },
+
+      third: {
+        title: "3. sınıf değişimi (NPC Apostle Devin, CryWolf)",
+        levelReq:
+          "Seviye 400 olmalı ve 2. görevi tamamlamış olmalısınız. Görev üç parçadan oluşur (eşyalar Lorencia'daki NPC Lumen barmenden alınabilir):",
+        steps: [
+          "5,000,000 Zen ve eşyaları getirin: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Phoenix Tüyü (Icarus).",
+          "Seviye 400, 7,000,000 Zen ödeyin, Crywolf'taki Werewolf Guardsman aracılığıyla Balgass Barracks haritasına girin, Balram, Death Spirit, Soram'dan 20'şer tane öldürün.",
+          "Refuge'a girin (Barracks içindeki Gatekeeper aracılığıyla), 1 Dark Elf Hero öldürün. Ödül: 3. sınıf değişimi, ek stat puanları, Master yetenek ağacının açılması.",
+        ],
+      },
+
+      fourth: {
+        title: "4. sınıf değişimi (NPC Cent, Lorencia [131, 147])",
+        levelReq:
+          "Seviye 800 olmalı ve 3. görevi tamamlamış olmalısınız. Görev üç aşamadan oluşur:",
+        stages: [
+          "Aşama 1: Uygunluk Testi – İlk testi geçmek için Cent'i yenin. Ödül: +20 stat puanı.",
+          "Aşama 2: Yeni Savaş (1) – 1 dakika içinde 5 Deep Dungeon Skeleton Warriors, 5 Cyclops ve 5 Ghost Monsters öldürün. Ödül: +30 stat puanı.",
+          "Aşama 3: Yeni Savaş (2) – Daha güçlü yeteneklerle Cent'i tekrar yenin. Ödül: +50 stat puanı, Scroll of Gray Oblivion, 4. sınıf açılır, yetenek geliştirme ağacı açılır.",
+        ],
+        rewards:
+          "Toplam +100 stat puanı, 4. sınıf açıldı, yetenek geliştirme ağacı, Scroll of Gray Oblivion.",
+      },
+
+      fifth: {
+        title: "5. sınıf değişimi (NPC Eunice, Devias [193, 12])",
+        levelReq:
+          "Seviye 1,200 olmalı ve 4. görevi tamamlamış olmalısınız. Görev dört bölümden oluşur:",
+        waves: [
+          "Dalga 1: Extra Nuke DMG buff'ı alın ve 1 dakika içinde Eunice'i yenin.",
+          "Dalga 2: Extra Bolt DMG buff'ı alın ve 1 dakika içinde Eunice'i yenin.",
+          "Dalga 3: Extra Wide DMG buff'ı alın ve 1 dakika içinde Eunice'i yenin.",
+          "Dalga 4 (Mount Görevi): Eunice'e 300 Jewel of Creation verin, ardından 1 dakika içinde dev Mount'unda yenerek rastgele bir Giant Mount kazanın.",
+        ],
+        rewards:
+          "+200 stat puanı, 5. yetenek ağacı açıldı, 3 Extra Ability Cards (Nuke/Bolt/Wide) ve Giant Mount erişimi.",
+      },
+    },
+
+    ruud: {
+      title: "Ruud Nasıl Elde Edilir",
+      intro:
+        "Ruud, Ancient ve Excellent endgame ekipmanları satın almak için kullanılan değerli bir para birimidir. Ayrıca bazı eşyaları yükseltmek, mountları geliştirmek ve nadir crafting materyalleri almak için kullanılabilir. Ruud çiftçiliğinin en iyi yolları şunlardır:",
+      list: [
+        "Blood Castle ve Devil Square — en iyi Ruud ödüllü etkinlikler; maksimum kazanç için günlük tekrarlayın.",
+        "Golden Invasions — bonus Ruud ve nadir loot için Golden Dragons, Titans ve diğer mini bossları avlayın.",
+        "Majestic Maps — yüksek seviyeli haritalarda Elite Monsters ve World Bossları yenerek endgame Ruud elde edin.",
+        "Castle Siege — özel baskınlara katılarak Ruud ödüllerini ve ekstra loot'u guild ile paylaşın.",
+        "Ruud'unuzu NPC Ruud'da güçlü ancient silahlar, zırhlar ve yükseltme malzemeleri almak için kullanın.",
+      ],
+      tip: "İpucu: En iyi Ruud fırsatları için her zaman Etkinlik Zamanlayıcılarını kontrol edin! Yüksek seviyeli zorluklara odaklanın — ne kadar güçlü canavarlar, o kadar fazla Ruud. Ayrıca sınırlı süreli eşyalar için Ruud biriktirmek endgame gücünüzü maksimize eder.",
+    },
+
+    chaos: {
+      title: "Chaos Combination Oranları",
+      intro:
+        "Chaos Combination, kanatlar ve güçlü silahlar dahil yüksek seviye eşyaları yapmak ve yükseltmek için kullanılan sistemdir. Chaos Combination'ı Noria Goblin gibi özel NPC'lerde veya Lorencia ve Devias'taki benzer NPC'lerde gerçekleştirebilirsiniz. Doğru malzemeleri kullanmak ve başarı oranlarını anlamak şansınızı maksimize etmek için önemlidir.",
+      upgradeRates: [
+        "+1 ~ +6 → 100%",
+        "+7 → 100%",
+        "+8 → 100%",
+        "+9 → 100%",
+        "+10 → 100%",
+        "+11 → 100%",
+        "+12 → 100%",
+        "+13 → 100%",
+        "+14 → 100%",
+        "+15 → 100%",
+      ],
+      wings: [
+        "Kanat Oluşturma: %60 temel başarı. İpuçları: Başarılı Chaos Combination eşyaları kullanın ve yüksek seviyeli haritalarda deneyin.",
+        "2. Kanatlar: %80 temel başarı. Daha yüksek güvenilirlik için ek geliştirme taşları kullanılması önerilir.",
+        "3. Kanatlar: %60 temel başarı. Dikkatli olun, başarısızlık bazı malzemeleri tüketebilir.",
+        "4. & 5. Kanatlar: %30 temel başarı. Yüksek risk, yüksek ödül — birden fazla malzeme seti hazırlayın ve şans artırıcı buffları düşünün.",
+      ],
+      tips: "Chaos Combination ipuçları: Malzeme oranlarını kontrol edin, mümkünse üst düzey malzemeler kullanın ve bonus başarı buffları sağlayan günlük görevleri veya etkinlikleri tamamlayın. Chaos Combination ile yapılan üst düzey kanatlar ve silahlar endgame ilerlemesi için gereklidir.",
+      outro:
+        "Chaos Combination'ı başarıyla kullanmak sadece ekipmanınızı yükseltmekle kalmaz, aynı zamanda yüksek seviye haritalarda ve PvP savaşlarında stratejik avantaj sağlar. Yeterli malzeme toplayın ve kombinasyonlarınızı dikkatlice planlayın — yüksek seviyeli kombinasyonlarda başarısızlık maliyetli olabilir, bu yüzden hazırlık çok önemlidir!",
+    },
+  },
   controlPanel: {
     loading: "Yükleniyor...",
     notLoad: "Profil yüklenemedi.",

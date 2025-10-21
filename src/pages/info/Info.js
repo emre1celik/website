@@ -24,114 +24,106 @@ import {
   faTerminal,
   faRedo,
 } from "@fortawesome/free-solid-svg-icons";
+import { useTranslation } from "../../context/TranslationContext";
 
 function Info({ user }) {
-  // 🔹 Array of guide sections (each with title, icon, and full content)
+  const { translate } = useTranslation();
+
   const sections = [
     {
-      title: "Server Information & Settings",
+      title: translate("guide.serverInfo.title"),
       icon: faCog,
       content: (
         <>
-          <p>
-            Here are the key server rates, rewards, and useful commands to help
-            you progress efficiently. Keep track of event timers, reset rewards,
-            and boss respawns to maximize your gains.
-          </p>
+          <p>{translate("guide.serverInfo.intro")}</p>
           <ul style={{ listStyleType: "none" }}>
             <li>
               <FontAwesomeIcon
                 icon={faBolt}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>EXP Rate:</strong> 5000x
+              {translate("guide.serverInfo.list.expRate")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faStar}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Master EXP:</strong> 9999x
+              {translate("guide.serverInfo.list.masterExp")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faCrown}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Majestic EXP:</strong> 9999x
+              {translate("guide.serverInfo.list.majesticExp")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faGem}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Excellent Item Drop Rate:</strong> 200%
+              {translate("guide.serverInfo.list.excellentDrop")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faGift}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Reset Reward:</strong> 5 WCoins, 100 Goblin Points, 1,000
-              Ruud
+              {translate("guide.serverInfo.list.resetReward")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faRedo}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Grand Reset:</strong> After 100 resets
+              {translate("guide.serverInfo.list.grandReset")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faTrophy}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Grand Reset Reward:</strong> 1,000 WCoins, 50,000 Goblin
-              Points
+              {translate("guide.serverInfo.list.grandResetReward")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faClock}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Event Timers:</strong> Check website schedule
+              {translate("guide.serverInfo.list.eventTimers")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faDragon}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Boss Respawns:</strong> Each hour
+              {translate("guide.serverInfo.list.bossRespawns")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faTerminal}
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
-              <strong>Commands:</strong>
+              {translate("guide.serverInfo.list.commands")}
             </li>
             <br />
-            <li>/addstr (amount)</li>
-            <li>/addagi (amount)</li>
-            <li>/addene (amount)</li>
-            <li>/addvit (amount)</li>
-            <li>/addcmd (amount)</li>
+            <li>/addstr {translate("guide.serverInfo.list.amount")}</li>
+            <li>/addagi {translate("guide.serverInfo.list.amount")}</li>
+            <li>/addene {translate("guide.serverInfo.list.amount")}</li>
+            <li>/addvit {translate("guide.serverInfo.list.amount")}</li>
+            <li>/addcmd {translate("guide.serverInfo.list.amount")}</li>
             <li>/reset</li>
             <li>/offstore</li>
             <li>/offattack</li>
             <li>/clearinventory</li>
           </ul>
-          <p>
-            Use these rates and commands wisely to optimize your character
-            progression. Keep track of resets and rewards, and always plan
-            around events to maximize EXP and loot gains.
-          </p>
+          <p>{translate("guide.serverInfo.outro")}</p>
         </>
       ),
     },
     {
-      title: "Weapons & Gear",
+      title: translate("guide.gear.title"),
       icon: faShieldAlt,
       content: (
         <>
@@ -457,14 +449,10 @@ function Info({ user }) {
         <Navigation user={user} />
         <InfoHero>
           <InfoBox>
-            <h2 style={{ textAlign: "center" }}>Guides</h2>
-            <p>
-              Here you’ll find everything you need to know — from server details
-              and gear progression to Chaos Machine crafting and Ruud farming
-              tips. Whether you’re a new adventurer or a returning veteran, this
-              page will help you power up efficiently and enjoy every part of
-              your journey on our server!
-            </p>
+            <h2 style={{ textAlign: "center" }}>
+              {translate("navigation.info")}
+            </h2>
+            <p>{translate("guide.intro")}</p>
 
             {/* Arrow Navigation and Title */}
             <div
