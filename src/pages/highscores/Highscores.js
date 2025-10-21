@@ -513,8 +513,8 @@ function Highscores({ user }) {
                             <th>{translate("highscores.rank")}</th>
                             <th>{translate("highscores.character")}</th>
                             <th>{translate("highscores.class")}</th>
-                            <th>{translate("highscores.event")}</th>
                             <th>{translate("highscores.score")}</th>
+                            <th>{translate("highscores.event")}</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -567,11 +567,11 @@ function Highscores({ user }) {
                                     );
                                   })()}
                                 </td>
+                                <td>{formatNumber(event.score)}</td>
                                 <td>
                                   {eventMap[event.event_id] ||
                                     `Unknown (${event.event_id})`}
                                 </td>
-                                <td>{formatNumber(event.score)}</td>
                               </tr>
                             ))}
                         </tbody>
