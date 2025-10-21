@@ -1,5 +1,65 @@
 // eslint-disable-next-line
 export default {
+  questsEvo: {
+    title: "Quests & Evolution",
+    intro:
+      "Quests and class advancements are the core progression system in MU. Completing these quests unlocks higher classes, new skills, stat points, and powerful equipment. Follow the NPC guidance carefully, defeat the required monsters, and complete each stage to evolve your character to the next class.",
+    secondClass: {
+      title: "2nd class change (NPC Sebina, Devias)",
+      level:
+        "At level 150, talk to NPC Sebina in Devias. Then bring class-specific items (can be bought from NPC Lumen barmaid in Lorencia):",
+      items: {
+        darkKnight: "Dark Knight / Slayer: Broken Sword",
+        darkWizard: "Dark Wizard / Rune Mage: Soul Shard",
+        elf: "Elf: Tear of Elf",
+      },
+    },
+    thirdClass: {
+      title: "3rd class change (NPC Apostle Devin, CryWolf)",
+      levelReq:
+        "Must be level 400 and have completed 2nd quest. Quest has three parts (items can be bought from NPC Lumen barmaid in Lorencia):",
+      steps: {
+        step1:
+          "Bring 5,000,000 Zen and items: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Feather of Phoenix (Icarus)",
+        step2:
+          "Level 400, pay 7,000,000 Zen, enter Balgass Barracks map via Werewolf Guardsman in Crywolf, kill 20 each of Balram, Death Spirit, Soram.",
+        step3:
+          "Enter Refuge (via Gatekeeper inside Barracks), kill 1 Dark Elf Hero. Reward: third class change, additional stat points, unlock Master skill tree.",
+      },
+    },
+    fourthClass: {
+      title: "4th class change (NPC Cent, Lorencia [131, 147])",
+      levelReq:
+        "Must be level 800 and have completed 3rd quest. Quest has three stages:",
+      stages: {
+        stage1:
+          "Stage 1: Eligibility Test – Defeat Cent to pass the first test. Reward: +20 stat points.",
+        stage2:
+          "Stage 2: New Battle (1) – Defeat 5 Deep Dungeon Skeleton Warriors, 5 Cyclops, and 5 Ghost Monsters within 1 minute. Reward: +30 stat points.",
+        stage3:
+          "Stage 3: New Battle (2) – Defeat Cent again with stronger skills. Reward: +50 stat points, Scroll of Gray Oblivion, unlock 4th class, skill enhance tree.",
+      },
+      rewards:
+        "+100 total stat points, 4th class unlocked, skill enhance tree, Scroll of Gray Oblivion.",
+    },
+    fifthClass: {
+      title: "5th class change (NPC Eunice, Devias [193, 12])",
+      levelReq:
+        "Must be level 1,200 and have completed the 4th quest. Quest has four parts:",
+      waves: {
+        wave1:
+          "Wave 1: Receive Extra Nuke DMG buff and defeat Eunice within 1 minute.",
+        wave2:
+          "Wave 2: Receive Extra Bolt DMG buff and defeat Eunice within 1 minute.",
+        wave3:
+          "Wave 3: Receive Extra Wide DMG buff and defeat Eunice within 1 minute.",
+        wave4:
+          "Wave 4 (Mount Quest): Give Eunice 300 Jewel of Creation, then defeat her on her Giant Mount within 1 minute to earn a random Giant Mount.",
+      },
+      rewards:
+        "Rewards: +200 stat points, unlock 5th skill tree, 3 Extra Ability Cards (Nuke/Bolt/Wide), and access to Giant Mounts.",
+    },
+  },
   guide: {
     intro:
       "Here you’ll find everything you need to know — from server details and gear progression to Chaos Machine crafting and Ruud farming tips. Whether you’re a new adventurer or a returning veteran, this page will help you power up efficiently and enjoy every part of your journey on our server!",

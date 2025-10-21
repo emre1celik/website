@@ -155,129 +155,84 @@ function Info({ user }) {
         </>
       ),
     },
+
     {
-      title: "Quests & Evolution",
+      title: translate("questsEvo.title"),
       icon: faScroll,
       content: (
         <>
-          <p>
-            Quests and class advancements are the core progression system in MU.
-            Completing these quests unlocks higher classes, new skills, stat
-            points, and powerful equipment. Follow the NPC guidance carefully,
-            defeat the required monsters, and complete each stage to evolve your
-            character to the next class.
-          </p>
+          <p>{translate("questsEvo.intro")}</p>
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <strong>2nd class change (NPC Sebina, Devias)</strong>: At level
-              150, talk to NPC Sebina in Devias. Then bring class-specific items
-              (can be bought from NPC Lumen barmaid in Lorencia):
+              <strong>{translate("questsEvo.secondClass.title")}</strong>:{" "}
+              {translate("questsEvo.secondClass.level")}
               <br />
               <br />
               <ul style={{ listStyleType: "none" }}>
-                <li>Dark Knight / Slayer: Broken Sword</li>
+                <li>{translate("questsEvo.secondClass.items.darkKnight")}</li>
                 <br />
-                <li>Dark Wizard / Rune Mage: Soul Shard</li>
+                <li>{translate("questsEvo.secondClass.items.darkWizard")}</li>
                 <br />
-                <li>Elf: Tear of Elf</li>
+                <li>{translate("questsEvo.secondClass.items.elf")}</li>
               </ul>
               <br />
             </li>
-            <br />
+
             <hr style={{ borderColor: "#4caf50" }} />
             <br />
+
             <li>
-              <strong>3rd class change (NPC Apostle Devin, CryWolf)</strong>:
-              Must be level 400 and have completed 2nd quest. Quest has three
-              parts (items can be bought from NPC Lumen barmaid in Lorencia):
+              <strong>{translate("questsEvo.thirdClass.title")}</strong>:{" "}
+              {translate("questsEvo.thirdClass.levelReq")}
               <br />
               <br />
               <ol style={{ listStyleType: "none" }}>
-                <li>
-                  Bring 5,000,000 Zen and items: Flame of Death Beam Knight
-                  (Tarkan), Horn of Hell Maine (Aida), Feather of Phoenix
-                  (Icarus)
-                </li>
+                <li>{translate("questsEvo.thirdClass.steps.step1")}</li>
                 <br />
-                <li>
-                  Level 400, pay 7,000,000 Zen, enter Balgass Barracks map via
-                  Werewolf Guardsman in Crywolf, kill 20 each of Balram, Death
-                  Spirit, Soram.
-                </li>
+                <li>{translate("questsEvo.thirdClass.steps.step2")}</li>
                 <br />
-                <li>
-                  Enter Refuge (via Gatekeeper inside Barracks), kill 1 Dark Elf
-                  Hero. Reward: third class change, additional stat points,
-                  unlock Master skill tree.
-                </li>
+                <li>{translate("questsEvo.thirdClass.steps.step3")}</li>
               </ol>
             </li>
-            <br />
+
             <hr style={{ borderColor: "#4caf50" }} />
             <br />
+
             <li>
-              <strong>4th class change (NPC Cent, Lorencia [131, 147])</strong>:
-              Must be level 800 and have completed 3rd quest. Quest has three
-              stages:
+              <strong>{translate("questsEvo.fourthClass.title")}</strong>:{" "}
+              {translate("questsEvo.fourthClass.levelReq")}
               <br />
               <br />
               <ol style={{ listStyleType: "none" }}>
-                <li>
-                  Stage 1: Eligibility Test – Defeat Cent to pass the first
-                  test. Reward: +20 stat points.
-                </li>
+                <li>{translate("questsEvo.fourthClass.stages.stage1")}</li>
                 <br />
-                <li>
-                  Stage 2: New Battle (1) – Defeat 5 Deep Dungeon Skeleton
-                  Warriors, 5 Cyclops, and 5 Ghost Monsters within 1 minute.
-                  Reward: +30 stat points.
-                </li>
+                <li>{translate("questsEvo.fourthClass.stages.stage2")}</li>
                 <br />
-                <li>
-                  Stage 3: New Battle (2) – Defeat Cent again with stronger
-                  skills. Reward: +50 stat points, Scroll of Gray Oblivion,
-                  unlock 4th class, skill enhance tree.
-                </li>
+                <li>{translate("questsEvo.fourthClass.stages.stage3")}</li>
               </ol>
               <br />
-              <strong>Rewards:</strong> +100 total stat points, 4th class
-              unlocked, skill enhance tree, Scroll of Gray Oblivion.
+              <strong>{translate("questsEvo.fourthClass.rewards")}</strong>
             </li>
-            <br />
+
             <hr style={{ borderColor: "#4caf50" }} />
             <br />
+
             <li>
-              <strong>5th class change (NPC Eunice, Devias [193, 12])</strong>:
-              Must be level 1,200 and have completed the 4th quest. Quest has
-              four parts:
+              <strong>{translate("questsEvo.fifthClass.title")}</strong>:{" "}
+              {translate("questsEvo.fifthClass.levelReq")}
               <br />
               <br />
               <ol style={{ listStyleType: "none" }}>
-                <li>
-                  Wave 1: Receive <em>Extra Nuke DMG</em> buff and defeat Eunice
-                  within 1 minute.
-                </li>
+                <li>{translate("questsEvo.fifthClass.waves.wave1")}</li>
                 <br />
-                <li>
-                  Wave 2: Receive <em>Extra Bolt DMG</em> buff and defeat Eunice
-                  within 1 minute.
-                </li>
+                <li>{translate("questsEvo.fifthClass.waves.wave2")}</li>
                 <br />
-                <li>
-                  Wave 3: Receive <em>Extra Wide DMG</em> buff and defeat Eunice
-                  within 1 minute.
-                </li>
+                <li>{translate("questsEvo.fifthClass.waves.wave3")}</li>
                 <br />
-                <li>
-                  Wave 4 (Mount Quest): Give Eunice 300{" "}
-                  <em>Jewel of Creation</em>, then defeat her on her Giant Mount
-                  within 1 minute to earn a random
-                  <strong> Giant Mount</strong>.
-                </li>
+                <li>{translate("questsEvo.fifthClass.waves.wave4")}</li>
               </ol>
               <br />
-              Rewards: +200 stat points, unlock 5th skill tree, 3 Extra Ability
-              Cards (Nuke/Bolt/Wide), and access to Giant Mounts.
+              {translate("questsEvo.fifthClass.rewards")}
             </li>
           </ul>
         </>

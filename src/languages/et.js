@@ -1,5 +1,65 @@
 // eslint-disable-next-line
 export default {
+  questsEvo: {
+    title: "Küsimused ja Evolutsioon",
+    intro:
+      "Küsimused ja klassi edusammud on MU põhikasvustrateegia süsteem. Nende täitmine avab kõrgemaid klasse, uusi oskusi, statistika punkte ja võimsat varustust. Järgige hoolikalt NPC juhiseid, alistage vajalikud koletised ja lõpetage iga etapp, et oma tegelast järgmisse klassi arendada.",
+    secondClass: {
+      title: "2. klassi muutus (NPC Sebina, Devias)",
+      level:
+        "Tasandil 150 rääkige Devias NPC Sebinaga. Seejärel tooge klassispetsiifilised esemed (saab osta Lorencia NPC Lumen baarmenilt):",
+      items: {
+        darkKnight: "Dark Knight / Slayer: Katkine mõõk",
+        darkWizard: "Dark Wizard / Rune Mage: Hinge tükk",
+        elf: "Elf: Elfi pisar",
+      },
+    },
+    thirdClass: {
+      title: "3. klassi muutus (NPC Apostle Devin, CryWolf)",
+      levelReq:
+        "Peate olema tasemel 400 ja olema lõpetanud 2. ülesande. Ülesanne koosneb kolmest osast (esemeid saab osta Lorencia NPC Lumen baarmenilt):",
+      steps: {
+        step1:
+          "Tooge 5,000,000 Zen ja esemed: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Phoenixi sulg (Icarus)",
+        step2:
+          "Tase 400, makske 7,000,000 Zen, sisenege Balgass Barracks kaardile Werewolf Guardsmani kaudu Crywolfis, tapke 20 iga Balram, Death Spirit, Soram.",
+        step3:
+          "Sisenge Refuge (Barracksi sissepääsu kaudu), tapke 1 Dark Elf Hero. Preemia: kolmanda klassi muutus, lisastatistikapunktid, avage Master oskuste puu.",
+      },
+    },
+    fourthClass: {
+      title: "4. klassi muutus (NPC Cent, Lorencia [131, 147])",
+      levelReq:
+        "Peate olema tasemel 800 ja olema lõpetanud 3. ülesande. Ülesanne koosneb kolmest etapist:",
+      stages: {
+        stage1:
+          "Etapp 1: Sobivuse test – alistage Cent, et läbida esimene test. Preemia: +20 statistika punkti.",
+        stage2:
+          "Etapp 2: Uus lahing (1) – alistage 5 Deep Dungeon Skeleton Warriors, 5 Cyclops ja 5 Ghost Monsters ühe minutiga. Preemia: +30 statistika punkti.",
+        stage3:
+          "Etapp 3: Uus lahing (2) – alistage Cent uuesti tugevamate oskustega. Preemia: +50 statistika punkti, Scroll of Gray Oblivion, avage 4. klass, oskuste täiustamise puu.",
+      },
+      rewards:
+        "+100 statistika punkti kokku, 4. klass avatud, oskuste täiustamise puu, Scroll of Gray Oblivion.",
+    },
+    fifthClass: {
+      title: "5. klassi muutus (NPC Eunice, Devias [193, 12])",
+      levelReq:
+        "Peate olema tasemel 1,200 ja olema lõpetanud 4. ülesande. Ülesanne koosneb neljast osast:",
+      waves: {
+        wave1:
+          "Laine 1: Saate Extra Nuke DMG buff ja alistage Eunice 1 minutiga.",
+        wave2:
+          "Laine 2: Saate Extra Bolt DMG buff ja alistage Eunice 1 minutiga.",
+        wave3:
+          "Laine 3: Saate Extra Wide DMG buff ja alistage Eunice 1 minutiga.",
+        wave4:
+          "Laine 4 (Mount Quest): Andke Eunice 300 Jewel of Creation, seejärel alistage tema Giant Mount 1 minutiga, et saada juhuslik Giant Mount.",
+      },
+      rewards:
+        "Preemiad: +200 statistika punkti, avage 5. oskuste puu, 3 Extra Ability Card (Nuke/Bolt/Wide) ja juurdepääs Giant Mountidele.",
+    },
+  },
   guide: {
     intro:
       "Siit leiad kõik, mida pead teadma — alates serveri detailidest ja varustuse arengust kuni Chaos Machine'i meisterdamise ja Ruudi kogumise näpunäideteni. Olenemata sellest, kas oled uus seikleja või kogenud veterann, aitab see leht sul tõhusalt areneda ja nautida iga osa oma teekonnast meie serveris!",

@@ -1,5 +1,65 @@
 // eslint-disable-next-line
 export default {
+  questsEvo: {
+    title: "Misiones y Evolución",
+    intro:
+      "Las misiones y los avances de clase son el sistema central de progresión en MU. Completar estas misiones desbloquea clases superiores, nuevas habilidades, puntos de estadística y equipo poderoso. Sigue cuidadosamente las instrucciones de los NPC, derrota a los monstruos requeridos y completa cada etapa para evolucionar tu personaje a la siguiente clase.",
+    secondClass: {
+      title: "Cambio a 2ª clase (NPC Sebina, Devias)",
+      level:
+        "A nivel 150, habla con el NPC Sebina en Devias. Luego trae los objetos específicos de clase (pueden comprarse al NPC Lumen en Lorencia):",
+      items: {
+        darkKnight: "Dark Knight / Slayer: Espada Rota",
+        darkWizard: "Dark Wizard / Rune Mage: Fragmento de Alma",
+        elf: "Elf: Lágrima de Elfo",
+      },
+    },
+    thirdClass: {
+      title: "Cambio a 3ª clase (NPC Apostle Devin, CryWolf)",
+      levelReq:
+        "Debes ser nivel 400 y haber completado la 2ª misión. La misión tiene tres partes (los objetos se pueden comprar al NPC Lumen en Lorencia):",
+      steps: {
+        step1:
+          "Lleva 5,000,000 Zen y objetos: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Pluma de Phoenix (Icarus)",
+        step2:
+          "Nivel 400, paga 7,000,000 Zen, entra al mapa Balgass Barracks vía Werewolf Guardsman en Crywolf, mata 20 de cada uno: Balram, Death Spirit, Soram.",
+        step3:
+          "Entra en Refuge (vía Gatekeeper dentro de Barracks), mata 1 Dark Elf Hero. Recompensa: cambio a 3ª clase, puntos de estadística adicionales, desbloquea árbol de habilidades Master.",
+      },
+    },
+    fourthClass: {
+      title: "Cambio a 4ª clase (NPC Cent, Lorencia [131, 147])",
+      levelReq:
+        "Debes ser nivel 800 y haber completado la 3ª misión. La misión tiene tres etapas:",
+      stages: {
+        stage1:
+          "Etapa 1: Prueba de Elegibilidad – Derrota a Cent para pasar la primera prueba. Recompensa: +20 puntos de estadística.",
+        stage2:
+          "Etapa 2: Nueva Batalla (1) – Derrota 5 Deep Dungeon Skeleton Warriors, 5 Cyclops y 5 Ghost Monsters en 1 minuto. Recompensa: +30 puntos de estadística.",
+        stage3:
+          "Etapa 3: Nueva Batalla (2) – Derrota a Cent nuevamente con habilidades más fuertes. Recompensa: +50 puntos de estadística, Scroll of Gray Oblivion, desbloquea 4ª clase, árbol de mejora de habilidades.",
+      },
+      rewards:
+        "+100 puntos de estadística total, 4ª clase desbloqueada, árbol de mejora de habilidades, Scroll of Gray Oblivion.",
+    },
+    fifthClass: {
+      title: "Cambio a 5ª clase (NPC Eunice, Devias [193, 12])",
+      levelReq:
+        "Debes ser nivel 1,200 y haber completado la 4ª misión. La misión tiene cuatro partes:",
+      waves: {
+        wave1:
+          "Ola 1: Recibe el buff Extra Nuke DMG y derrota a Eunice en 1 minuto.",
+        wave2:
+          "Ola 2: Recibe el buff Extra Bolt DMG y derrota a Eunice en 1 minuto.",
+        wave3:
+          "Ola 3: Recibe el buff Extra Wide DMG y derrota a Eunice en 1 minuto.",
+        wave4:
+          "Ola 4 (Quest Mount): Da a Eunice 300 Jewel of Creation, luego dérrota en su Giant Mount en 1 minuto para obtener un Giant Mount aleatorio.",
+      },
+      rewards:
+        "Recompensas: +200 puntos de estadística, desbloquea 5º árbol de habilidades, 3 Extra Ability Cards (Nuke/Bolt/Wide) y acceso a Giant Mounts.",
+    },
+  },
   guide: {
     intro:
       "Aquí encontrarás todo lo que necesitas saber: desde detalles del servidor y progresión de equipo hasta la elaboración en la Máquina del Caos y consejos para farmear Ruud. Ya seas un aventurero nuevo o un veterano que regresa, ¡esta página te ayudará a mejorar de manera eficiente y disfrutar cada parte de tu aventura en nuestro servidor!",
