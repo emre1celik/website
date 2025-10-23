@@ -438,11 +438,9 @@ function Highscores({ user }) {
                               <td>
                                 {player.grand_reset > 0 ? (
                                   <>
-                                    (
-                                    <GlowingName rank={3}>
-                                      {formatNumber(player.grand_reset)}
-                                    </GlowingName>
-                                    ) {formatNumber(player.reset)}
+                                    {formatNumber(
+                                      player.reset + player.grand_reset * 100
+                                    )}
                                   </>
                                 ) : (
                                   formatNumber(player.reset)
