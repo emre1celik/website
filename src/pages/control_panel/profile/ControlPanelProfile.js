@@ -7,8 +7,7 @@ export default function ControlPanelProfile({ profile, translate, loading }) {
     return (
       <p>
         <FontAwesomeIcon icon={faSpinner} spin />{" "}
-        {translate("controlPanel.loading")}{" "}
-        {translate("controlPanel.tabs.profile")}...
+        {translate("controlPanel.loading")}
       </p>
     );
   if (!profile)

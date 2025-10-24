@@ -230,6 +230,10 @@ export default function ControlPanelAchievements() {
                   border: `1px solid ${
                     messages[ach.key].type === "success" ? "#4caf50" : "#f44336"
                   }`,
+                  borderLeft:
+                    messages[ach.key].type === "success"
+                      ? "6px solid #4caf50"
+                      : "6px solid #f44336",
                 }}
               >
                 {messages[ach.key].type === "success" ? (
