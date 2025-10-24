@@ -241,7 +241,10 @@ function Navigation({ user }) {
                 to="/control-panel"
                 onClick={() => setMenuOpen(false)}
               >
-                <FontAwesomeIcon icon={faUser} />
+                <FontAwesomeIcon
+                  icon={faUser}
+                  style={{ marginRight: "10px" }}
+                />
                 {user}
               </NavigationItemLink>
             </li>
