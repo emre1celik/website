@@ -102,7 +102,8 @@ export default function ControlPanelStats({
                 style={{
                   width: "24px",
                   height: "24px",
-                  marginRight: "6px",
+                  marginRight: "2px",
+                  marginLeft: "2px",
                   verticalAlign: "middle",
                 }}
               />

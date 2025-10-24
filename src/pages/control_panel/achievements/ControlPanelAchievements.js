@@ -18,9 +18,12 @@ import ResetIcon from "../../../assets/images/classes/reset.png";
 import StatsIcon from "../../../assets/images/classes/stats.png";
 import CharactersIcon from "../../../assets/images/classes/characters.png";
 
-export default function ControlPanelAchievements() {
-  const [achievements, setAchievements] = useState([]);
-  const [loading, setLoading] = useState(true);
+export default function ControlPanelAchievements({
+  achievements,
+  loading,
+  setLoading,
+  setAchievements,
+}) {
   const [claimingKeys, setClaimingKeys] = useState([]);
   const [messages, setMessages] = useState({});
 

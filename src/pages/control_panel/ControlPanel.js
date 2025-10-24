@@ -219,10 +219,36 @@ function ControlPanel({ user }) {
       setCharsLoading(false);
     }
   };
+  const [achievements, setAchievements] = useState([]);
+  const [achievementsLoading, setAchievementsLoading] = useState(true);
+
+  const fetchAchievements = async () => {
+    setAchievementsLoading(true);
+    const token = localStorage.getItem("apiToken");
+    try {
+      const response = await fetch(
+        "https://api.myramu.online/api/achievements",
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
+      const data = await response.json();
+      if (response.ok) {
+        setAchievements(data.achievements);
+      } else {
+        setAchievements([]);
+      }
+    } catch (err) {
+      setAchievements([]);
+    } finally {
+      setAchievementsLoading(false);
+    }
+  };
 
   // 2️⃣ useEffect calls fetchCharacters on mount/user change
   useEffect(() => {
     fetchCharacters();
+    fetchAchievements();
   }, [user]);
 
   useEffect(() => {
@@ -352,7 +378,14 @@ function ControlPanel({ user }) {
           />
         );
       case "achievements":
-        return <ControlPanelAchievements />;
+        return (
+          <ControlPanelAchievements
+            achievements={achievements}
+            loading={achievementsLoading}
+            setLoading={setAchievementsLoading}
+            setAchievements={setAchievements}
+          />
+        );
       default:
         return null;
     }
