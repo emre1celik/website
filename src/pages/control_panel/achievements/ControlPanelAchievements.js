@@ -8,6 +8,8 @@ import {
   AchievementReward,
   GreenButton,
 } from "../ControlPanelStyles";
+import EventIcon from "../../../assets/images/classes/event.png";
+import ResetIcon from "../../../assets/images/classes/reset.png";
 
 export default function ControlPanelAchievements() {
   const [achievements, setAchievements] = useState([]);
@@ -49,13 +51,13 @@ export default function ControlPanelAchievements() {
   const getIcon = (type) => {
     switch (type) {
       case "reset":
-        return "/assets/images/classes/reset.png";
+        return <ResetIcon />;
       case "grand_reset":
-        return "/assets/images/classes/reset.png";
+        return <ResetIcon />;
       case "level":
-        return "/assets/images/classes/reset.png";
+        return <ResetIcon />;
       default:
-        return "/assets/images/classes/event.png";
+        return <EventIcon />;
     }
   };
 
