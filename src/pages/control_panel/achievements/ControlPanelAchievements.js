@@ -55,8 +55,18 @@ export default function ControlPanelAchievements() {
     fetchAchievements();
   }, []);
 
-  if (loading) return <p>Loading achievements...</p>;
-  if (!achievements?.length) return <p>No achievements found.</p>;
+  if (loading)
+    return (
+      <p>
+        <FontAwesomeIcon icon={faSpinner} spin /> Loading achievements...
+      </p>
+    );
+  if (!achievements?.length)
+    return (
+      <p>
+        <FontAwesomeIcon icon={faSpinner} spin /> No achievements found.
+      </p>
+    );
 
   const getIcon = (type) => {
     switch (type) {
@@ -105,6 +115,7 @@ export default function ControlPanelAchievements() {
               {ach.unlocked && !ach.claimed ? (
                 <GreenButton
                   onClick={() => console.log("Collect reward for:", ach.key)}
+                  style={{ marginTop: "5px" }}
                 >
                   <FontAwesomeIcon
                     icon={faTrophy}
