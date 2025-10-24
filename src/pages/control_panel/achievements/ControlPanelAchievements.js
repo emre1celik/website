@@ -163,7 +163,7 @@ export default function ControlPanelAchievements() {
             >
               <AchievementReward>
                 <FontAwesomeIcon icon={faGift} /> +
-                {ach.reward_ruud.toLocaleString()} Ruud
+                {ach.reward_ruud.toLocaleString()} WCoin
               </AchievementReward>
 
               {ach.unlocked && !ach.claimed ? (
