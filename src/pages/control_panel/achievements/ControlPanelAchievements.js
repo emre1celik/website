@@ -21,8 +21,15 @@ import CharactersIcon from "../../../assets/images/classes/characters.png";
 export default function ControlPanelAchievements() {
   const [achievements, setAchievements] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [claiming, setClaiming] = useState(false);
   const [claimingKeys, setClaimingKeys] = useState([]);
+  const [message, setMessage] = useState(null);
+
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => setMessage(null), 4000);
+      return () => clearTimeout(timer);
+    }
+  }, [message]);
 
   useEffect(() => {
     const fetchAchievements = async () => {
@@ -75,7 +82,7 @@ export default function ControlPanelAchievements() {
 
       if (response.ok) {
         const data = await response.json();
-        alert(data.message);
+        setMessage({ type: "success", text: data.message });
         setAchievements((prev) =>
           prev.map((ach) =>
             ach.key === milestoneKey ? { ...ach, claimed: true } : ach
@@ -89,11 +96,11 @@ export default function ControlPanelAchievements() {
         } catch (err) {
           console.error("Non-JSON response", err);
         }
-        alert(errorMsg);
+        setMessage({ type: "error", text: errorMsg });
       }
     } catch (err) {
       console.error(err);
-      alert("Server error while claiming reward");
+      setMessage({ type: "error", text: "Server error while claiming reward" });
     } finally {
       setClaimingKeys((prev) => prev.filter((k) => k !== milestoneKey));
     }
@@ -137,6 +144,27 @@ export default function ControlPanelAchievements() {
         awesome WCoin rewards and great item rewards. Keep playing and collect
         more rewards!
       </p>
+      {message && (
+        <div
+          style={{
+            width: "100%",
+            marginBottom: "1rem",
+            padding: "0.7rem",
+            borderRadius: "5px",
+            marginTop: "15px",
+            backgroundColor:
+              message.type === "success"
+                ? "rgba(76, 175, 80, 0.2)"
+                : "rgba(244, 67, 54, 0.2)",
+            color: message.type === "success" ? "#4caf50" : "#f44336",
+            border: `1px solid ${
+              message.type === "success" ? "#4caf50" : "#f44336"
+            }`,
+          }}
+        >
+          {message.text}
+        </div>
+      )}
       <AchievementList>
         {achievements.map((ach) => (
           <AchievementItem
