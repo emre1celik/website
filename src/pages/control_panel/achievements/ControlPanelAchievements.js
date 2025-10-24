@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrophy, faLock, faGift } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -8,14 +9,47 @@ import {
   GreenButton,
 } from "../ControlPanelStyles";
 
-export default function ControlPanelAchievements({ achievements, loading }) {
+export default function ControlPanelAchievements() {
+  const [achievements, setAchievements] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchAchievements = async () => {
+      setLoading(true);
+      const token = localStorage.getItem("apiToken");
+      try {
+        const response = await fetch(
+          "https://api.myramu.online/api/achievements",
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
+        const data = await response.json();
+
+        if (response.ok) {
+          setAchievements(data.achievements || []);
+        } else {
+          console.error("Failed to load achievements:", data.error);
+          setAchievements([]);
+        }
+      } catch (err) {
+        console.error("Server error:", err);
+        setAchievements([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchAchievements();
+  }, []);
+
   if (loading) return <p>Loading achievements...</p>;
   if (!achievements?.length) return <p>No achievements found.</p>;
 
   const getIcon = (type) => {
     switch (type) {
       case "reset":
-        return "/assets/icons/reset.png"; // replace with your icon paths
+        return "/assets/icons/reset.png";
       case "grand_reset":
         return "/assets/icons/grandreset.png";
       case "level":
