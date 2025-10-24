@@ -217,7 +217,6 @@ export default function ControlPanelAchievements() {
               <div
                 style={{
                   width: "100%",
-                  marginTop: "5px",
                   padding: "0.5rem",
                   borderRadius: "5px",
                   backgroundColor:

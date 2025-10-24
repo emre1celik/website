@@ -56,6 +56,10 @@ export default function ControlPanelStats({
             border: `1px solid ${
               characterActionMessage.type === "success" ? "#4caf50" : "#f44336"
             }`,
+            borderLeft:
+              characterActionMessage.type === "success"
+                ? "6px solid #4caf50"
+                : "6px solid #f44336",
           }}
         >
           {characterActionMessage.text}
