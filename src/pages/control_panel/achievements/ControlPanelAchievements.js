@@ -169,6 +169,7 @@ export default function ControlPanelAchievements() {
                   }`,
                 }}
               >
+                {messages[ach.key].type === "success" ? "✅ " : "❌ "}{" "}
                 {messages[ach.key].text}
               </div>
             )}
