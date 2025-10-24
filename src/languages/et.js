@@ -263,7 +263,7 @@ export default {
       confirmPassword: "Kinnita parool",
       updatePassword: "Uuenda parool",
       updating: "Uuendamine...",
-      updated: "Uuendatud",
+      updated: "Uuendama",
       passwordMismatch: "❌ Paroolid ei ühti!",
       serverError: "❌ Serveri viga: {error}",
     },

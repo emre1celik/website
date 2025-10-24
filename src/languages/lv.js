@@ -263,7 +263,7 @@ export default {
       confirmPassword: "Apstiprināt paroli",
       updatePassword: "Atjaunināt paroli",
       updating: "Atjaunināšana...",
-      updated: "Atjaunināts",
+      updated: "Atjaunināt",
       passwordMismatch: "❌ Paroles nesakrīt!",
       serverError: "❌ Servera kļūda: {error}",
     },

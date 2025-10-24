@@ -259,7 +259,7 @@ export default {
       confirmPassword: "Confirm Password",
       updatePassword: "Update Password",
       updating: "Updating...",
-      updated: "Updated",
+      updated: "Update",
       passwordMismatch: "❌ Passwords do not match!",
       serverError: "❌ Server error: {error}",
     },

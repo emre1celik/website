@@ -263,7 +263,7 @@ export default {
       confirmPassword: "Подтвердите пароль",
       updatePassword: "Обновить пароль",
       updating: "Обновление...",
-      updated: "Обновлено",
+      updated: "Oбновить",
       passwordMismatch: "❌ Пароли не совпадают!",
       serverError: "❌ Ошибка сервера: {error}",
     },

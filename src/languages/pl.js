@@ -263,7 +263,7 @@ export default {
       confirmPassword: "Potwierdź hasło",
       updatePassword: "Aktualizuj hasło",
       updating: "Aktualizacja...",
-      updated: "Zaktualizowano",
+      updated: "Aktualizować",
       passwordMismatch: "❌ Hasła nie pasują!",
       serverError: "❌ Błąd serwera: {error}",
     },

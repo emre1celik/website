@@ -262,7 +262,7 @@ export default {
       confirmPassword: "Şifreyi Onayla",
       updatePassword: "Şifreyi Güncelle",
       updating: "Güncelleniyor...",
-      updated: "Güncellendi",
+      updated: "Güncellemek",
       passwordMismatch: "❌ Şifreler eşleşmiyor!",
       serverError: "❌ Sunucu hatası: {error}",
     },

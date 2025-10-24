@@ -265,7 +265,7 @@ export default {
       confirmPassword: "Confirmar contraseña",
       updatePassword: "Actualizar contraseña",
       updating: "Actualizando...",
-      updated: "Actualizado",
+      updated: "Actualizar",
       passwordMismatch: "❌ ¡Las contraseñas no coinciden!",
       serverError: "❌ Error del servidor: {error}",
     },
