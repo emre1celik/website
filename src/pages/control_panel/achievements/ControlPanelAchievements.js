@@ -105,14 +105,6 @@ export default function ControlPanelAchievements() {
       }));
     } finally {
       setClaimingKeys((prev) => prev.filter((k) => k !== milestoneKey));
-      // Remove message after 4s
-      setTimeout(() => {
-        setMessages((prev) => {
-          const copy = { ...prev };
-          delete copy[milestoneKey];
-          return copy;
-        });
-      }, 4000);
     }
   };
 
