@@ -15,6 +15,8 @@ import {
 } from "../ControlPanelStyles";
 import EventIcon from "../../../assets/images/classes/event.png";
 import ResetIcon from "../../../assets/images/classes/reset.png";
+import StatsIcon from "../../../assets/images/classes/stats.png";
+import CharactersIcon from "../../../assets/images/classes/characters.png";
 
 export default function ControlPanelAchievements() {
   const [achievements, setAchievements] = useState([]);
@@ -79,7 +81,11 @@ export default function ControlPanelAchievements() {
         return ResetIcon;
       case "bloodcastle":
       case "devilsquare":
-        return EventIcon; // placeholder for now
+        return EventIcon;
+      case "characters":
+        return CharactersIcon;
+      case "stats":
+        return StatsIcon;
       default:
         return EventIcon;
     }
@@ -91,7 +97,8 @@ export default function ControlPanelAchievements() {
       <p>
         Your achievements count all your characters on this account! Every
         reset, Blood Castle victory, and Devil Square conquest adds up to unlock
-        awesome Ruud rewards. Keep playing and collect more rewards!
+        awesome Ruud rewards and great item rewards. Keep playing and collect
+        more rewards!
       </p>
       <AchievementList>
         {achievements.map((ach) => (
