@@ -29,7 +29,17 @@ export default function ControlPanelAchievements() {
         const data = await response.json();
 
         if (response.ok) {
-          setAchievements(data.achievements || []);
+          const achs = data.achievements.map((a) => ({
+            ...a,
+            type: a.key.startsWith("resets")
+              ? "resets"
+              : a.key.startsWith("bc")
+              ? "bloodcastle"
+              : a.key.startsWith("ds")
+              ? "devilsquare"
+              : "event",
+          }));
+          setAchievements(achs);
         } else {
           console.error("Failed to load achievements:", data.error);
           setAchievements([]);
@@ -52,6 +62,9 @@ export default function ControlPanelAchievements() {
     switch (type) {
       case "resets":
         return ResetIcon;
+      case "bloodcastle":
+      case "devilsquare":
+        return EventIcon; // placeholder for now
       default:
         return EventIcon;
     }
@@ -68,7 +81,7 @@ export default function ControlPanelAchievements() {
             unlocked={ach.unlocked}
           >
             <AchievementInfo claimed={ach.claimed} unlocked={ach.unlocked}>
-              <img src={getIcon(ach.key)} alt={ach.label} />
+              <img src={getIcon(ach.type)} alt={ach.label} />
               <div>
                 <h4>{ach.label}</h4>
                 <p>
