@@ -176,7 +176,7 @@ export const ControlPanelTabButton = styled.button`
     display: inline; /* default show text */
   }
 
-  @media (max-width: 550px) {
+  @media (max-width: 670px) {
     padding: 0.75rem;
     span {
       display: none; /* hide text */
