@@ -149,6 +149,8 @@ export default function ControlPanelAchievements() {
           style={{
             width: "100%",
             marginBottom: "1rem",
+            transition: "opacity 0.3s ease",
+            opacity: message ? 1 : 0,
             padding: "0.7rem",
             borderRadius: "5px",
             marginTop: "15px",
