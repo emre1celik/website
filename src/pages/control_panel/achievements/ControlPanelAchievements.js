@@ -36,17 +36,7 @@ export default function ControlPanelAchievements() {
         const data = await response.json();
 
         if (response.ok) {
-          const achs = data.achievements.map((a) => ({
-            ...a,
-            type: a.key.startsWith("resets")
-              ? "resets"
-              : a.key.startsWith("bc")
-              ? "bloodcastle"
-              : a.key.startsWith("ds")
-              ? "devilsquare"
-              : "event",
-          }));
-          setAchievements(achs);
+          setAchievements(data.achievements);
         } else {
           console.error("Failed to load achievements:", data.error);
           setAchievements([]);
