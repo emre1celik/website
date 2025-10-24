@@ -102,7 +102,12 @@ function ControlPanel({ user }) {
       } else {
         setCharacterActionMessage({
           type: "error",
-          text: "❌ " + (data.error || "Action failed"),
+          text: (
+            <>
+              <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+              {data.error || "Action failed"}
+            </>
+          ),
         });
       }
     } catch (err) {
@@ -145,7 +150,12 @@ function ControlPanel({ user }) {
       } else {
         setCharacterActionMessage({
           type: "error",
-          text: "❌ " + (data.error || "Failed to update mount"),
+          text: (
+            <>
+              <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+              {data.error || "Action failed"}
+            </>
+          ),
         });
       }
     } catch (err) {
