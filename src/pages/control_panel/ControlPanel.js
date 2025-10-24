@@ -392,15 +392,15 @@ function ControlPanel({ user }) {
                 <FontAwesomeIcon icon={faChartBar} />
                 <span>{translate("controlPanel.tabs.stats")}</span>
               </ControlPanelTabButton>
-            </ControlPanelTabs>
 
-            <ControlPanelTabButton
-              active={activeTab === "achievements"}
-              onClick={() => setActiveTab("achievements")}
-            >
-              <FontAwesomeIcon icon={faTrophy} />
-              <span>Rewards & Achievements</span>
-            </ControlPanelTabButton>
+              <ControlPanelTabButton
+                active={activeTab === "achievements"}
+                onClick={() => setActiveTab("achievements")}
+              >
+                <FontAwesomeIcon icon={faTrophy} />
+                <span>Rewards</span>
+              </ControlPanelTabButton>
+            </ControlPanelTabs>
 
             <ControlPanelTabContent ref={tabContentRef}>
               {renderTabContent()}
