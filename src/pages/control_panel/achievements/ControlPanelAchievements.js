@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrophy, faLock, faGift } from "@fortawesome/free-solid-svg-icons";
+import {
+  faTrophy,
+  faLock,
+  faGift,
+  faSpinner,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   AchievementList,
   AchievementItem,
@@ -82,7 +87,12 @@ export default function ControlPanelAchievements() {
 
   return (
     <div>
-      <h3>Rewards & Achievements</h3>
+      <h3>Rewards</h3>
+      <p>
+        Your achievements count all your characters on this account! Every
+        reset, Blood Castle victory, and Devil Square conquest adds up to unlock
+        awesome Ruud rewards. Keep playing and collect more rewards!
+      </p>
       <AchievementList>
         {achievements.map((ach) => (
           <AchievementItem
