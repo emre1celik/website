@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTrophy,
@@ -26,36 +26,6 @@ export default function ControlPanelAchievements({
 }) {
   const [claimingKeys, setClaimingKeys] = useState([]);
   const [messages, setMessages] = useState({});
-
-  useEffect(() => {
-    const fetchAchievements = async () => {
-      setLoading(true);
-      const token = localStorage.getItem("apiToken");
-      try {
-        const response = await fetch(
-          "https://api.myramu.online/api/achievements",
-          {
-            headers: { Authorization: `Bearer ${token}` },
-          }
-        );
-        const data = await response.json();
-
-        if (response.ok) {
-          setAchievements(data.achievements);
-        } else {
-          console.error("Failed to load achievements:", data.error);
-          setAchievements([]);
-        }
-      } catch (err) {
-        console.error("Server error:", err);
-        setAchievements([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchAchievements();
-  }, []);
 
   const claimReward = async (milestoneKey) => {
     if (claimingKeys.includes(milestoneKey)) return;
