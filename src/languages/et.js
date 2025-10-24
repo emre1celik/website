@@ -119,10 +119,10 @@ export default {
         masterExp: "Meistri EXP: 9999x",
         majesticExp: "Majestic EXP: 9999x",
         excellentDrop: "Excellent eseme languse määr: 200%",
-        resetReward: "Reset-auhind: 5 WCoini, 100 Goblini punkti, 1,000 Ruudi",
+        resetReward: "Reset-auhind: 5 WCoini, 100 Goblini punkti, 200 Ruudi",
         grandReset: "Grand Reset nõue: 100 resetit",
         grandResetReward:
-          "Grand Reset auhind: 1,000 WCoini, 50,000 Goblini punkti",
+          "Grand Reset auhind: 1,000 WCoini, 10,000 Goblini punkti",
         eventTimers: "Sündmuste taimerid: vaata veebilehe ajakava",
         bossRespawns: "Bosside taassünnid: iga tund",
         commands: "Käsud:",

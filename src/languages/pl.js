@@ -119,11 +119,10 @@ export default {
         masterExp: "Master EXP: 9999x",
         majesticExp: "Majestic EXP: 9999x",
         excellentDrop: "Szansa na przedmiot Excellent: 200%",
-        resetReward:
-          "Nagroda za reset: 5 WCoin, 100 Punktów Goblina, 1,000 Ruud",
+        resetReward: "Nagroda za reset: 5 WCoin, 100 Punktów Goblina, 200 Ruud",
         grandReset: "Wymaganie Grand Reset: 100 resetów",
         grandResetReward:
-          "Nagroda Grand Reset: 1,000 WCoin, 50,000 Punktów Goblina",
+          "Nagroda Grand Reset: 1,000 WCoin, 10,000 Punktów Goblina",
         eventTimers: "Timery wydarzeń: sprawdź harmonogram na stronie",
         bossRespawns: "Respawny bossów: co godzinę",
         commands: "Komendy:",

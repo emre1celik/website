@@ -121,10 +121,10 @@ export default {
         majesticExp: "EXP Majestic: 9999x",
         excellentDrop: "Tasa de Drop de Items Excelente: 200%",
         resetReward:
-          "Recompensa por Reinicio: 5 WCoins, 100 Puntos de Goblin, 1,000 Ruud",
+          "Recompensa por Reinicio: 5 WCoins, 100 Puntos de Goblin, 200 Ruud",
         grandReset: "Requisito de Gran Reinicio: 100 reinicios",
         grandResetReward:
-          "Recompensa de Gran Reinicio: 1,000 WCoins, 50,000 Puntos de Goblin",
+          "Recompensa de Gran Reinicio: 1,000 WCoins, 10,000 Puntos de Goblin",
         eventTimers: "Temporizadores de Eventos: Consulta el horario en la web",
         bossRespawns: "Respawns de Jefes: Cada hora",
         commands: "Comandos:",
