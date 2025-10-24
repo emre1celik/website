@@ -17,6 +17,7 @@ import EventIcon from "../../../assets/images/classes/event.png";
 import ResetIcon from "../../../assets/images/classes/reset.png";
 import StatsIcon from "../../../assets/images/classes/stats.png";
 import CharactersIcon from "../../../assets/images/classes/characters.png";
+import { useTranslation } from "../../../context/TranslationContext";
 
 export default function ControlPanelAchievements({
   achievements,
@@ -26,6 +27,7 @@ export default function ControlPanelAchievements({
 }) {
   const [claimingKeys, setClaimingKeys] = useState([]);
   const [messages, setMessages] = useState({});
+  const { translate } = useTranslation();
 
   const claimReward = async (milestoneKey) => {
     if (claimingKeys.includes(milestoneKey)) return;
@@ -84,7 +86,8 @@ export default function ControlPanelAchievements({
   if (loading)
     return (
       <p>
-        <FontAwesomeIcon icon={faSpinner} spin /> Loading achievements...
+        <FontAwesomeIcon icon={faSpinner} spin />{" "}
+        {translate("controlPanel.loading")}
       </p>
     );
   if (!achievements?.length)
