@@ -25,7 +25,6 @@ import {
   faRedo,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "../../context/TranslationContext";
-import tr from "../../languages/tr";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
 
 function Info({ user }) {

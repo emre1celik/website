@@ -6,7 +6,6 @@ import {
   faCalendarAlt,
   faCircleInfo,
   faDownload,
-  faHome,
   faMedal,
   faRightToBracket,
   faUser,
