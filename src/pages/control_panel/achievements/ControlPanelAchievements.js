@@ -22,7 +22,7 @@ export default function ControlPanelAchievements() {
   const [achievements, setAchievements] = useState([]);
   const [loading, setLoading] = useState(true);
   const [claimingKeys, setClaimingKeys] = useState([]);
-  const [message, setMessage] = useState(null);
+  const [messages, setMessages] = useState({});
 
   useEffect(() => {
     if (message) {
@@ -62,7 +62,7 @@ export default function ControlPanelAchievements() {
   }, []);
 
   const claimReward = async (milestoneKey) => {
-    if (claimingKeys.includes(milestoneKey)) return; // prevent double click
+    if (claimingKeys.includes(milestoneKey)) return;
     setClaimingKeys((prev) => [...prev, milestoneKey]);
 
     const token = localStorage.getItem("apiToken");
@@ -82,27 +82,44 @@ export default function ControlPanelAchievements() {
 
       if (response.ok) {
         const data = await response.json();
-        setMessage({ type: "success", text: data.message });
         setAchievements((prev) =>
           prev.map((ach) =>
             ach.key === milestoneKey ? { ...ach, claimed: true } : ach
           )
         );
+        setMessages((prev) => ({
+          ...prev,
+          [milestoneKey]: { type: "success", text: data.message },
+        }));
       } else {
         let errorMsg = "Failed to claim reward";
         try {
           const errData = await response.json();
           errorMsg = errData.error || errorMsg;
-        } catch (err) {
-          console.error("Non-JSON response", err);
-        }
-        setMessage({ type: "error", text: errorMsg });
+        } catch (err) {}
+        setMessages((prev) => ({
+          ...prev,
+          [milestoneKey]: { type: "error", text: errorMsg },
+        }));
       }
     } catch (err) {
-      console.error(err);
-      setMessage({ type: "error", text: "Server error while claiming reward" });
+      setMessages((prev) => ({
+        ...prev,
+        [milestoneKey]: {
+          type: "error",
+          text: "Server error while claiming reward",
+        },
+      }));
     } finally {
       setClaimingKeys((prev) => prev.filter((k) => k !== milestoneKey));
+      // Remove message after 4s
+      setTimeout(() => {
+        setMessages((prev) => {
+          const copy = { ...prev };
+          delete copy[milestoneKey];
+          return copy;
+        });
+      }, 4000);
     }
   };
 
@@ -144,95 +161,98 @@ export default function ControlPanelAchievements() {
         awesome WCoin rewards and great item rewards. Keep playing and collect
         more rewards!
       </p>
-      {message && (
-        <div
-          style={{
-            width: "100%",
-            marginBottom: "1rem",
-            transition: "opacity 0.3s ease",
-            opacity: message ? 1 : 0,
-            padding: "0.7rem",
-            borderRadius: "5px",
-            marginTop: "15px",
-            backgroundColor:
-              message.type === "success"
-                ? "rgba(76, 175, 80, 0.2)"
-                : "rgba(244, 67, 54, 0.2)",
-            color: message.type === "success" ? "#4caf50" : "#f44336",
-            border: `1px solid ${
-              message.type === "success" ? "#4caf50" : "#f44336"
-            }`,
-          }}
-        >
-          {message.text}
-        </div>
-      )}
       <AchievementList>
         {achievements.map((ach) => (
-          <AchievementItem
-            key={ach.key}
-            claimed={ach.claimed}
-            unlocked={ach.unlocked}
-          >
-            <AchievementInfo claimed={ach.claimed} unlocked={ach.unlocked}>
-              <img src={getIcon(ach.type)} alt={ach.label} />
-              <div>
-                <h4>{ach.label}</h4>
-                <p>
-                  Progress: {ach.progress.toLocaleString()} /{" "}
-                  {ach.required.toLocaleString()}
-                </p>
+          <>
+            {messages[ach.key] && (
+              <div
+                style={{
+                  width: "100%",
+                  marginTop: "5px",
+                  padding: "0.5rem",
+                  borderRadius: "5px",
+                  backgroundColor:
+                    messages[ach.key].type === "success"
+                      ? "rgba(76, 175, 80, 0.2)"
+                      : "rgba(244, 67, 54, 0.2)",
+                  color:
+                    messages[ach.key].type === "success"
+                      ? "#4caf50"
+                      : "#f44336",
+                  border: `1px solid ${
+                    messages[ach.key].type === "success" ? "#4caf50" : "#f44336"
+                  }`,
+                }}
+              >
+                {messages[ach.key].text}
               </div>
-            </AchievementInfo>
+            )}
 
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
-              }}
+            <AchievementItem
+              key={ach.key}
+              claimed={ach.claimed}
+              unlocked={ach.unlocked}
             >
-              <AchievementReward>
-                <FontAwesomeIcon icon={faGift} /> +
-                {ach.reward_ruud.toLocaleString()} WCoin
-              </AchievementReward>
+              <AchievementInfo claimed={ach.claimed} unlocked={ach.unlocked}>
+                <img src={getIcon(ach.type)} alt={ach.label} />
+                <div>
+                  <h4>{ach.label}</h4>
+                  <p>
+                    Progress: {ach.progress.toLocaleString()} /{" "}
+                    {ach.required.toLocaleString()}
+                  </p>
+                </div>
+              </AchievementInfo>
 
-              {ach.unlocked && !ach.claimed ? (
-                <GreenButton
-                  onClick={() => claimReward(ach.key)}
-                  style={{ marginTop: "5px" }}
-                  disabled={claimingKeys.includes(ach.key)}
-                >
-                  {claimingKeys.includes(ach.key) ? (
-                    <>
-                      <FontAwesomeIcon
-                        icon={faSpinner}
-                        spin
-                        style={{ marginRight: "5px" }}
-                      />
-                      Claiming...
-                    </>
-                  ) : (
-                    <>
-                      <FontAwesomeIcon
-                        icon={faTrophy}
-                        style={{ marginRight: "5px" }}
-                      />
-                      Collect
-                    </>
-                  )}
-                </GreenButton>
-              ) : ach.claimed ? (
-                <span style={{ color: "#4caf50", fontWeight: "bold" }}>
-                  Claimed
-                </span>
-              ) : (
-                <span style={{ color: "#888" }}>
-                  <FontAwesomeIcon icon={faLock} /> Locked
-                </span>
-              )}
-            </div>
-          </AchievementItem>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "flex-end",
+                }}
+              >
+                <AchievementReward>
+                  <FontAwesomeIcon icon={faGift} /> +
+                  {ach.reward_ruud.toLocaleString()} WCoin
+                </AchievementReward>
+
+                {ach.unlocked && !ach.claimed ? (
+                  <GreenButton
+                    onClick={() => claimReward(ach.key)}
+                    style={{ marginTop: "5px" }}
+                    disabled={claimingKeys.includes(ach.key)}
+                  >
+                    {claimingKeys.includes(ach.key) ? (
+                      <>
+                        <FontAwesomeIcon
+                          icon={faSpinner}
+                          spin
+                          style={{ marginRight: "5px" }}
+                        />
+                        Claiming...
+                      </>
+                    ) : (
+                      <>
+                        <FontAwesomeIcon
+                          icon={faTrophy}
+                          style={{ marginRight: "5px" }}
+                        />
+                        Collect
+                      </>
+                    )}
+                  </GreenButton>
+                ) : ach.claimed ? (
+                  <span style={{ color: "#4caf50", fontWeight: "bold" }}>
+                    Claimed
+                  </span>
+                ) : (
+                  <span style={{ color: "#888" }}>
+                    <FontAwesomeIcon icon={faLock} /> Locked
+                  </span>
+                )}
+              </div>
+            </AchievementItem>
+          </>
         ))}
       </AchievementList>
     </div>
