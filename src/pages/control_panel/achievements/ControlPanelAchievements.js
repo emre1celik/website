@@ -25,13 +25,6 @@ export default function ControlPanelAchievements() {
   const [messages, setMessages] = useState({});
 
   useEffect(() => {
-    if (message) {
-      const timer = setTimeout(() => setMessage(null), 4000);
-      return () => clearTimeout(timer);
-    }
-  }, [message]);
-
-  useEffect(() => {
     const fetchAchievements = async () => {
       setLoading(true);
       const token = localStorage.getItem("apiToken");
