@@ -134,7 +134,7 @@ export default function ControlPanelAchievements() {
       <p>
         Your achievements count all your characters on this account! Every
         reset, Blood Castle victory, and Devil Square conquest adds up to unlock
-        awesome Ruud rewards and great item rewards. Keep playing and collect
+        awesome WCoin rewards and great item rewards. Keep playing and collect
         more rewards!
       </p>
       <AchievementList>
@@ -149,7 +149,8 @@ export default function ControlPanelAchievements() {
               <div>
                 <h4>{ach.label}</h4>
                 <p>
-                  Progress: {ach.progress} / {ach.required}
+                  Progress: {ach.progress.toLocaleString()} /{" "}
+                  {ach.required.toLocaleString()}
                 </p>
               </div>
             </AchievementInfo>
