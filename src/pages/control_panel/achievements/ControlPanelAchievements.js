@@ -49,13 +49,13 @@ export default function ControlPanelAchievements() {
   const getIcon = (type) => {
     switch (type) {
       case "reset":
-        return "/assets/icons/reset.png";
+        return "/assets/images/classes/reset.png";
       case "grand_reset":
-        return "/assets/icons/grandreset.png";
+        return "/assets/images/classes/reset.png";
       case "level":
-        return "/assets/icons/level.png";
+        return "/assets/images/classes/reset.png";
       default:
-        return "/assets/icons/trophy.png";
+        return "/assets/images/classes/event.png";
     }
   };
 
