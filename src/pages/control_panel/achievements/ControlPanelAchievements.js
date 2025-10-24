@@ -169,7 +169,11 @@ export default function ControlPanelAchievements() {
                   }`,
                 }}
               >
-                {messages[ach.key].type === "success" ? "✅ " : "❌ "}{" "}
+                {messages[ach.key].type === "success" ? (
+                  <FontAwesomeIcon icon={faGift} />
+                ) : (
+                  <FontAwesomeIcon icon={faLock} />
+                )}{" "}
                 {messages[ach.key].text}
               </div>
             )}
