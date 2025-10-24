@@ -90,6 +90,70 @@ export const ControlPanelStatsButtonText = styled.span`
     display: none;
   }
 `;
+// === Achievements Tab Styles ===
+
+export const AchievementList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+`;
+
+export const AchievementItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid ${({ claimed }) => (claimed ? "#4caf50" : "#555")};
+  border-left: 6px solid
+    ${({ claimed, unlocked }) =>
+      claimed ? "#4caf50" : unlocked ? "#2196f3" : "#777"};
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.2s ease, border-color 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+`;
+
+export const AchievementInfo = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  img {
+    width: 40px;
+    height: 40px;
+    filter: ${({ claimed }) => (claimed ? "grayscale(0%)" : "grayscale(100%)")};
+    opacity: ${({ unlocked }) => (unlocked ? 1 : 0.5)};
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h4 {
+    margin: 0;
+    color: ${({ claimed }) => (claimed ? "#4caf50" : "#fff")};
+    font-size: 1.1rem;
+  }
+
+  p {
+    margin: 0;
+    color: #bbb;
+    font-size: 0.9rem;
+  }
+`;
+
+export const AchievementReward = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ccc;
+  font-size: 0.9rem;
+`;
 
 export const ControlPanelTabButton = styled.button`
   flex: 1;

@@ -1,111 +1,82 @@
-import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrophy, faLock, faGift } from "@fortawesome/free-solid-svg-icons";
+import {
+  AchievementList,
+  AchievementItem,
+  AchievementInfo,
+  AchievementReward,
+  GreenButton,
+} from "../ControlPanelStyles";
 
-function ControlPanelAchievements() {
-  const [achievements, setAchievements] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [message, setMessage] = useState(null);
-
-  useEffect(() => {
-    const fetchAchievements = async () => {
-      const token = localStorage.getItem("apiToken");
-      try {
-        const res = await fetch("https://api.myramu.online/api/achievements", {
-          headers: { Authorization: `Bearer ${token}` },
-        });
-        const data = await res.json();
-        if (res.ok) setAchievements(data.achievements);
-      } catch (err) {
-        console.error("Error fetching achievements:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchAchievements();
-  }, []);
-
-  async function claimReward(key) {
-    const token = localStorage.getItem("apiToken");
-    try {
-      const res = await fetch(
-        "https://api.myramu.online/api/achievements/claim",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${token}`,
-          },
-          body: JSON.stringify({ milestone_key: key }),
-        }
-      );
-      const data = await res.json();
-      if (res.ok) {
-        setMessage({ type: "success", text: "✅ " + data.message });
-        setAchievements((prev) =>
-          prev.map((a) => (a.key === key ? { ...a, claimed: true } : a))
-        );
-      } else {
-        setMessage({ type: "error", text: "❌ " + (data.error || "Failed") });
-      }
-    } catch (err) {
-      setMessage({ type: "error", text: "❌ " + err.message });
-    }
-  }
-
+export default function ControlPanelAchievements({ achievements, loading }) {
   if (loading) return <p>Loading achievements...</p>;
+  if (!achievements?.length) return <p>No achievements found.</p>;
+
+  const getIcon = (type) => {
+    switch (type) {
+      case "reset":
+        return "/assets/icons/reset.png"; // replace with your icon paths
+      case "grand_reset":
+        return "/assets/icons/grandreset.png";
+      case "level":
+        return "/assets/icons/level.png";
+      default:
+        return "/assets/icons/trophy.png";
+    }
+  };
 
   return (
-    <div className="p-4">
-      <h3 className="text-xl font-bold mb-4">Rewards & Achievements</h3>
-      {message && (
-        <p
-          className={`mb-4 ${
-            message.type === "success" ? "text-green-500" : "text-red-500"
-          }`}
-        >
-          {message.text}
-        </p>
-      )}
-
-      <ul className="space-y-3">
-        {achievements.map((a) => (
-          <li
-            key={a.key}
-            className={`p-3 rounded-xl border ${
-              a.claimed
-                ? "bg-green-100 border-green-300"
-                : !a.unlocked
-                ? "bg-gray-200 border-gray-400"
-                : a.reached
-                ? "bg-blue-100 border-blue-300"
-                : "bg-gray-100 border-gray-200"
-            }`}
+    <div>
+      <h3>Rewards & Achievements</h3>
+      <AchievementList>
+        {achievements.map((ach) => (
+          <AchievementItem
+            key={ach.id}
+            claimed={ach.claimed}
+            unlocked={ach.unlocked}
           >
-            <div className="flex justify-between items-center">
+            <AchievementInfo claimed={ach.claimed} unlocked={ach.unlocked}>
+              <img src={getIcon(ach.type)} alt={ach.name} />
               <div>
-                <p className="font-semibold">{a.label}</p>
-                <p className="text-sm text-gray-600">
-                  {a.progress.toLocaleString()} / {a.required.toLocaleString()}
-                </p>
-                <p className="text-sm">Reward: {a.reward_ruud} Ruud</p>
+                <h4>{ach.name}</h4>
+                <p>{ach.description}</p>
               </div>
-              {a.claimed ? (
-                <span className="text-green-600 font-bold">Claimed</span>
-              ) : a.reached && a.unlocked ? (
-                <button
-                  className="px-3 py-1 bg-blue-600 text-white rounded-md"
-                  onClick={() => claimReward(a.key)}
+            </AchievementInfo>
+
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "flex-end",
+              }}
+            >
+              <AchievementReward>
+                <FontAwesomeIcon icon={faGift} /> +{ach.reward} Ruud
+              </AchievementReward>
+
+              {ach.unlocked && !ach.claimed ? (
+                <GreenButton
+                  onClick={() => console.log("Collect reward for:", ach.id)}
                 >
-                  Claim
-                </button>
+                  <FontAwesomeIcon
+                    icon={faTrophy}
+                    style={{ marginRight: "5px" }}
+                  />
+                  Collect
+                </GreenButton>
+              ) : ach.claimed ? (
+                <span style={{ color: "#4caf50", fontWeight: "bold" }}>
+                  Claimed
+                </span>
               ) : (
-                <span className="text-gray-400 text-sm">Locked</span>
+                <span style={{ color: "#888" }}>
+                  <FontAwesomeIcon icon={faLock} /> Locked
+                </span>
               )}
             </div>
-          </li>
+          </AchievementItem>
         ))}
-      </ul>
+      </AchievementList>
     </div>
   );
 }
-
-export default ControlPanelAchievements;
