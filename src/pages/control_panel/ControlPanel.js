@@ -17,6 +17,7 @@ import {
   faCog,
   faChartBar,
   faTrophy,
+  faLock,
 } from "@fortawesome/free-solid-svg-icons";
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";
