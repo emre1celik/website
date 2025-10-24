@@ -112,7 +112,7 @@ export const AchievementItem = styled.div`
   border: 1px solid ${({ claimed }) => (claimed ? "#4caf50" : "#555")};
   border-left: 6px solid
     ${({ claimed, unlocked }) =>
-      claimed ? "#4caf50" : unlocked ? "#2196f3" : "#777"};
+      claimed ? "#4caf50" : unlocked ? "#4caf50" : "#777"};
   border-radius: 8px;
   padding: 1rem;
   transition: transform 0.2s ease, border-color 0.3s ease;
