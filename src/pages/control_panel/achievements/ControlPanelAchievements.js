@@ -172,11 +172,24 @@ export default function ControlPanelAchievements() {
                   style={{ marginTop: "5px" }}
                   disabled={claimingKeys.includes(ach.key)}
                 >
-                  <FontAwesomeIcon
-                    icon={faTrophy}
-                    style={{ marginRight: "5px" }}
-                  />
-                  Collect
+                  {claimingKeys.includes(ach.key) ? (
+                    <>
+                      <FontAwesomeIcon
+                        icon={faSpinner}
+                        spin
+                        style={{ marginRight: "5px" }}
+                      />
+                      Claiming...
+                    </>
+                  ) : (
+                    <>
+                      <FontAwesomeIcon
+                        icon={faTrophy}
+                        style={{ marginRight: "5px" }}
+                      />
+                      Collect
+                    </>
+                  )}
                 </GreenButton>
               ) : ach.claimed ? (
                 <span style={{ color: "#4caf50", fontWeight: "bold" }}>
