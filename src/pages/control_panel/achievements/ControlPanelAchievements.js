@@ -50,9 +50,7 @@ export default function ControlPanelAchievements() {
 
   const getIcon = (type) => {
     switch (type) {
-      case "reset":
-      case "grand_reset":
-      case "level":
+      case "resets":
         return ResetIcon;
       default:
         return EventIcon;
