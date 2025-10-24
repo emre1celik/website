@@ -72,7 +72,8 @@ export default function ControlPanelStats({
             style={{
               marginBottom: "1.5rem",
               padding: "1rem",
-              border: "1px solid #555",
+              border: "1px solid #4caf50",
+              borderLeft: "6px solid #4caf50",
               borderRadius: "8px",
               background: "rgba(255,255,255,0.05)",
             }}
