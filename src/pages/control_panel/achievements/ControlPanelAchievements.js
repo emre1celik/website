@@ -149,35 +149,6 @@ export default function ControlPanelAchievements() {
       <AchievementList>
         {achievements.map((ach) => (
           <>
-            {messages[ach.key] && (
-              <div
-                style={{
-                  width: "100%",
-                  marginTop: "5px",
-                  padding: "0.5rem",
-                  borderRadius: "5px",
-                  backgroundColor:
-                    messages[ach.key].type === "success"
-                      ? "rgba(76, 175, 80, 0.2)"
-                      : "rgba(244, 67, 54, 0.2)",
-                  color:
-                    messages[ach.key].type === "success"
-                      ? "#4caf50"
-                      : "#f44336",
-                  border: `1px solid ${
-                    messages[ach.key].type === "success" ? "#4caf50" : "#f44336"
-                  }`,
-                }}
-              >
-                {messages[ach.key].type === "success" ? (
-                  <FontAwesomeIcon icon={faGift} />
-                ) : (
-                  <FontAwesomeIcon icon={faLock} />
-                )}{" "}
-                {messages[ach.key].text}
-              </div>
-            )}
-
             <AchievementItem
               key={ach.key}
               claimed={ach.claimed}
@@ -242,6 +213,34 @@ export default function ControlPanelAchievements() {
                 )}
               </div>
             </AchievementItem>
+            {messages[ach.key] && (
+              <div
+                style={{
+                  width: "100%",
+                  marginTop: "5px",
+                  padding: "0.5rem",
+                  borderRadius: "5px",
+                  backgroundColor:
+                    messages[ach.key].type === "success"
+                      ? "rgba(76, 175, 80, 0.2)"
+                      : "rgba(244, 67, 54, 0.2)",
+                  color:
+                    messages[ach.key].type === "success"
+                      ? "#4caf50"
+                      : "#f44336",
+                  border: `1px solid ${
+                    messages[ach.key].type === "success" ? "#4caf50" : "#f44336"
+                  }`,
+                }}
+              >
+                {messages[ach.key].type === "success" ? (
+                  <FontAwesomeIcon icon={faGift} />
+                ) : (
+                  <FontAwesomeIcon icon={faLock} />
+                )}{" "}
+                {messages[ach.key].text}
+              </div>
+            )}
           </>
         ))}
       </AchievementList>
