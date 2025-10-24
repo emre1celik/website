@@ -57,6 +57,7 @@ export default function ControlPanelAchievements() {
     const token = localStorage.getItem("apiToken");
     if (claiming) return;
 
+    setClaiming(true);
     try {
       const response = await fetch(
         "https://api.myramu.online/api/achievements/claim",
@@ -69,25 +70,30 @@ export default function ControlPanelAchievements() {
           body: JSON.stringify({ milestone_key: milestoneKey }),
         }
       );
-      setClaiming(true);
-
-      const data = await response.json();
 
       if (response.ok) {
-        alert(data.message); // Or show a toast
-        // Refresh achievements to update claimed status
+        const data = await response.json();
+        alert(data.message);
         setAchievements((prev) =>
           prev.map((ach) =>
             ach.key === milestoneKey ? { ...ach, claimed: true } : ach
           )
         );
-        setClaiming(false);
       } else {
-        alert(data.error || "Failed to claim reward");
+        // Try to parse error message if JSON, otherwise fallback
+        let errorMsg = "Failed to claim reward";
+        try {
+          const errData = await response.json();
+          errorMsg = errData.error || errorMsg;
+        } catch (err) {
+          console.error("Non-JSON response", err);
+        }
+        alert(errorMsg);
       }
     } catch (err) {
       console.error(err);
       alert("Server error while claiming reward");
+    } finally {
       setClaiming(false);
     }
   };
