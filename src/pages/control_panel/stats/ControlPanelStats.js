@@ -135,9 +135,9 @@ export default function ControlPanelStats({
                       color: "#ccc",
                     }}
                   >
-                    <option value={1}>Model 1</option>
-                    <option value={2}>Model 2</option>
-                    <option value={3}>Model 3</option>
+                    <option value={1}>Silver Model</option>
+                    <option value={2}>Gold Model</option>
+                    <option value={3}>Blue Model</option>
                   </select>
                 )}
               </div>

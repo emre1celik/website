@@ -275,7 +275,7 @@ export default {
       level: "Poziom",
       resets: "Resetowania",
       race: "Rasa",
-      giant_mount: "(5 klasa) Gigantyczny Wierzchowiec",
+      giant_mount: "Gigantyczny Wierzchowiec:",
       processing: "Przetwarzanie...",
       actions: {
         unstuck: "Odblokuj",

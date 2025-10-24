@@ -276,7 +276,7 @@ export default {
       resets: "Lähtestamised",
       race: "Rass",
       processing: "Töötlemine...",
-      giant_mount: "(5. klass) Hiiglaslik ratsu",
+      giant_mount: "Hiiglaslik ratsu:",
       actions: {
         unstuck: "Vabasta",
         evolve: "Arenda",
