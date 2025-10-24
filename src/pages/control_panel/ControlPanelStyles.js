@@ -26,6 +26,11 @@ export const GreenButton = styled.button`
   &:hover {
     background-color: #45a049;
   }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
 `;
 
 export const ControlPanelContent = styled.main`
