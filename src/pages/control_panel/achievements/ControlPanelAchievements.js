@@ -65,15 +65,17 @@ export default function ControlPanelAchievements() {
       <AchievementList>
         {achievements.map((ach) => (
           <AchievementItem
-            key={ach.id}
+            key={ach.key}
             claimed={ach.claimed}
             unlocked={ach.unlocked}
           >
             <AchievementInfo claimed={ach.claimed} unlocked={ach.unlocked}>
-              <img src={getIcon(ach.type)} alt={ach.name} />
+              <img src={getIcon(ach.key)} alt={ach.label} />
               <div>
-                <h4>{ach.name}</h4>
-                <p>{ach.description}</p>
+                <h4>{ach.label}</h4>
+                <p>
+                  Progress: {ach.progress} / {ach.required}
+                </p>
               </div>
             </AchievementInfo>
 
@@ -85,12 +87,13 @@ export default function ControlPanelAchievements() {
               }}
             >
               <AchievementReward>
-                <FontAwesomeIcon icon={faGift} /> +{ach.reward} Ruud
+                <FontAwesomeIcon icon={faGift} /> +
+                {ach.reward_ruud.toLocaleString()} Ruud
               </AchievementReward>
 
               {ach.unlocked && !ach.claimed ? (
                 <GreenButton
-                  onClick={() => console.log("Collect reward for:", ach.id)}
+                  onClick={() => console.log("Collect reward for:", ach.key)}
                 >
                   <FontAwesomeIcon
                     icon={faTrophy}
