@@ -22,6 +22,7 @@ export default function ControlPanelAchievements() {
   const [achievements, setAchievements] = useState([]);
   const [loading, setLoading] = useState(true);
   const [claiming, setClaiming] = useState(false);
+  const [claimingKeys, setClaimingKeys] = useState([]);
 
   useEffect(() => {
     const fetchAchievements = async () => {
@@ -54,10 +55,11 @@ export default function ControlPanelAchievements() {
   }, []);
 
   const claimReward = async (milestoneKey) => {
-    const token = localStorage.getItem("apiToken");
-    if (claiming) return;
+    if (claimingKeys.includes(milestoneKey)) return; // prevent double click
+    setClaimingKeys((prev) => [...prev, milestoneKey]);
 
-    setClaiming(true);
+    const token = localStorage.getItem("apiToken");
+
     try {
       const response = await fetch(
         "https://api.myramu.online/api/achievements/claim",
@@ -80,7 +82,6 @@ export default function ControlPanelAchievements() {
           )
         );
       } else {
-        // Try to parse error message if JSON, otherwise fallback
         let errorMsg = "Failed to claim reward";
         try {
           const errData = await response.json();
@@ -94,7 +95,7 @@ export default function ControlPanelAchievements() {
       console.error(err);
       alert("Server error while claiming reward");
     } finally {
-      setClaiming(false);
+      setClaimingKeys((prev) => prev.filter((k) => k !== milestoneKey));
     }
   };
 
@@ -169,7 +170,7 @@ export default function ControlPanelAchievements() {
                 <GreenButton
                   onClick={() => claimReward(ach.key)}
                   style={{ marginTop: "5px" }}
-                  disabled={claiming}
+                  disabled={claimingKeys.includes(ach.key)}
                 >
                   <FontAwesomeIcon
                     icon={faTrophy}
