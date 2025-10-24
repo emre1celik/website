@@ -55,6 +55,22 @@ export default function ControlPanelAchievements({
             ach.key === milestoneKey ? { ...ach, claimed: true } : ach
           )
         );
+        // 🟢 fetch fresh achievements (unlocks the next ones automatically)
+        try {
+          const refresh = await fetch(
+            "https://api.myramu.online/api/achievements",
+            {
+              headers: { Authorization: `Bearer ${token}` },
+            }
+          );
+          const newData = await refresh.json();
+          if (refresh.ok) {
+            setAchievements(newData.achievements);
+          }
+        } catch (err) {
+          console.error("Failed to refresh achievements:", err);
+        }
+
         setMessages((prev) => ({
           ...prev,
           [milestoneKey]: { type: "success", text: data.message },
