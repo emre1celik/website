@@ -21,6 +21,7 @@ import CharactersIcon from "../../../assets/images/classes/characters.png";
 export default function ControlPanelAchievements() {
   const [achievements, setAchievements] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [claiming, setClaiming] = useState(false);
 
   useEffect(() => {
     const fetchAchievements = async () => {
@@ -51,6 +52,45 @@ export default function ControlPanelAchievements() {
 
     fetchAchievements();
   }, []);
+
+  const claimReward = async (milestoneKey) => {
+    const token = localStorage.getItem("apiToken");
+    if (claiming) return;
+
+    try {
+      const response = await fetch(
+        "https://api.myramu.online/api/achievements/claim",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({ milestone_key: milestoneKey }),
+        }
+      );
+      setClaiming(true);
+
+      const data = await response.json();
+
+      if (response.ok) {
+        alert(data.message); // Or show a toast
+        // Refresh achievements to update claimed status
+        setAchievements((prev) =>
+          prev.map((ach) =>
+            ach.key === milestoneKey ? { ...ach, claimed: true } : ach
+          )
+        );
+        setClaiming(false);
+      } else {
+        alert(data.error || "Failed to claim reward");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Server error while claiming reward");
+      setClaiming(false);
+    }
+  };
 
   if (loading)
     return (
@@ -121,8 +161,9 @@ export default function ControlPanelAchievements() {
 
               {ach.unlocked && !ach.claimed ? (
                 <GreenButton
-                  onClick={() => console.log("Collect reward for:", ach.key)}
+                  onClick={() => claimReward(ach.key)}
                   style={{ marginTop: "5px" }}
+                  disabled={claiming}
                 >
                   <FontAwesomeIcon
                     icon={faTrophy}
