@@ -143,7 +143,7 @@ function Highscores({ user }) {
   const eventMap = {
     0: "Blood Castle",
     1: "Devil Square",
-    // Add other event IDs here if needed
+    2: "Chaos Castle",
   };
 
   function formatNumber(num) {
@@ -502,6 +502,7 @@ function Highscores({ user }) {
                         >
                           <option value="0">Blood Castle</option>
                           <option value="1">Devil Square</option>
+                          <option value="1">Chaos Castle</option>
                         </select>
                       </HighscoresFilter>
 
