@@ -16,6 +16,7 @@ import {
   faUser,
   faCog,
   faChartBar,
+  faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";
@@ -36,6 +37,7 @@ import { useTranslation } from "../../context/TranslationContext";
 import ControlPanelProfile from "./profile/ControlPanelProfile";
 import ControlPanelSettings from "./settings/ControlPanelSettings";
 import ControlPanelStats from "./stats/ControlPanelStats";
+import ControlPanelAchievements from "./achievements/ControlPanelAchievements";
 
 function ControlPanel({ user }) {
   const { translate } = useTranslation();
@@ -304,22 +306,46 @@ function ControlPanel({ user }) {
   function renderTabContent() {
     switch (activeTab) {
       case "profile":
-        return <ControlPanelProfile profile={profile} translate={translate} loading={loading} />;
+        return (
+          <ControlPanelProfile
+            profile={profile}
+            translate={translate}
+            loading={loading}
+          />
+        );
       case "settings":
-        return <ControlPanelSettings
-          password={password} confirmPassword={confirmPassword}
-          setPassword={setPassword} setConfirmPassword={setConfirmPassword}
-          changingPassword={changingPassword} passwordMessage={passwordMessage}
-          onChangePasswordSubmit={onChangePasswordSubmit} translate={translate} />;
+        return (
+          <ControlPanelSettings
+            password={password}
+            confirmPassword={confirmPassword}
+            setPassword={setPassword}
+            setConfirmPassword={setConfirmPassword}
+            changingPassword={changingPassword}
+            passwordMessage={passwordMessage}
+            onChangePasswordSubmit={onChangePasswordSubmit}
+            translate={translate}
+          />
+        );
       case "stats":
-        return <ControlPanelStats
-          characters={characters} charsLoading={charsLoading}
-          characterActionMessage={characterActionMessage} actionLoading={actionLoading}
-          handleCharacterAction={handleCharacterAction} changeMount={changeMount}
-          translate={translate} getClassInfo={getClassInfo} classNamesMap={classNamesMap} />;
-      default: return null;
+        return (
+          <ControlPanelStats
+            characters={characters}
+            charsLoading={charsLoading}
+            characterActionMessage={characterActionMessage}
+            actionLoading={actionLoading}
+            handleCharacterAction={handleCharacterAction}
+            changeMount={changeMount}
+            translate={translate}
+            getClassInfo={getClassInfo}
+            classNamesMap={classNamesMap}
+          />
+        );
+      case "achievements":
+        return <ControlPanelAchievements />;
+      default:
+        return null;
     }
-  };
+  }
 
   return (
     <>
@@ -367,6 +393,14 @@ function ControlPanel({ user }) {
                 <span>{translate("controlPanel.tabs.stats")}</span>
               </ControlPanelTabButton>
             </ControlPanelTabs>
+
+            <ControlPanelTabButton
+              active={activeTab === "achievements"}
+              onClick={() => setActiveTab("achievements")}
+            >
+              <FontAwesomeIcon icon={faTrophy} />
+              <span>Rewards & Achievements</span>
+            </ControlPanelTabButton>
 
             <ControlPanelTabContent ref={tabContentRef}>
               {renderTabContent()}
