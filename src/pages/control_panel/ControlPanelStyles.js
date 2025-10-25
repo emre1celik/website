@@ -206,7 +206,6 @@ export const MountSelector = styled.div`
 export const CharacterActions = styled.div`
   margin-top: 1rem;
   display: flex;
-  flex-direction: column;
   gap: 0.5rem;
   width: 100%;
 `;
