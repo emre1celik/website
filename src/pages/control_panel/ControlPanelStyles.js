@@ -164,6 +164,44 @@ export const CharacterStats = styled.div`
     color: #fff;
   }
 `;
+export const MountSelector = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #555;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  color: #ccc;
+  font-size: 0.95rem;
+  width: fit-content;
+
+  label {
+    color: #4caf50;
+    font-weight: bold;
+  }
+
+  select {
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: none;
+    font-family: inherit;
+  }
+
+  select:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  select option {
+    background: #222;
+    color: #fff;
+  }
+`;
 
 export const CharacterActions = styled.div`
   margin-top: 1rem;

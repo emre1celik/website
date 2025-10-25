@@ -12,6 +12,7 @@ import {
   CharacterStats,
   ControlPanelStatsButtonText,
   GreenButton,
+  MountSelector,
 } from "../ControlPanelStyles";
 
 export default function ControlPanelStats({
@@ -94,30 +95,25 @@ export default function ControlPanelStats({
                 {char.reset}
               </p>
               {char.giant_model !== null && (
-                <p>
-                  <strong>
-                    {translate("controlPanel.stats.giant_mount")}:
-                  </strong>{" "}
+                <MountSelector>
+                  <label>{translate("controlPanel.stats.giant_mount")}:</label>
                   {actionLoading[mountKey] ? (
-                    <FontAwesomeIcon icon={faSpinner} spin />
+                    <FontAwesomeIcon
+                      icon={faSpinner}
+                      spin
+                      style={{ color: "#ccc" }}
+                    />
                   ) : (
                     <select
                       value={char.giant_model}
                       onChange={(e) => changeMount(e, char)}
-                      style={{
-                        padding: "0.3rem",
-                        borderRadius: "5px",
-                        border: "1px solid #555",
-                        backgroundColor: "rgba(255,255,255,0.1)",
-                        color: "#ccc",
-                      }}
                     >
                       <option value={1}>Silver</option>
                       <option value={2}>Gold</option>
                       <option value={3}>Blue</option>
                     </select>
                   )}
-                </p>
+                </MountSelector>
               )}
             </CharacterStats>
 
