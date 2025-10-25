@@ -103,6 +103,75 @@ export const AchievementList = styled.div`
   gap: 1rem;
   width: 100%;
 `;
+export const CharacterCard = styled.div`
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid #4caf50;
+  border-left: 6px solid #4caf50;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.08);
+  }
+`;
+
+export const CharacterHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+
+  h4 {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #4caf50;
+  }
+
+  .class-info {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 1rem;
+    color: #ccc;
+
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+`;
+
+export const CharacterStats = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.5rem;
+  color: #ccc;
+  font-size: 0.95rem;
+
+  p {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+  }
+
+  strong {
+    color: #fff;
+  }
+`;
+
+export const CharacterActions = styled.div`
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+`;
 
 export const AchievementItem = styled.div`
   display: flex;

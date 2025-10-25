@@ -6,6 +6,10 @@ import {
   faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import {
+  CharacterActions,
+  CharacterCard,
+  CharacterHeader,
+  CharacterStats,
   ControlPanelStatsButtonText,
   GreenButton,
 } from "../ControlPanelStyles";
@@ -71,92 +75,53 @@ export default function ControlPanelStats({
         const mountKey = `${char.name}_change-mount`;
 
         return (
-          <div
-            key={char.name}
-            style={{
-              marginBottom: "1.5rem",
-              padding: "1rem",
-              border: "1px solid #4caf50",
-              borderLeft: "6px solid #4caf50",
-              borderRadius: "8px",
-              background: "rgba(255,255,255,0.05)",
-            }}
-          >
-            <p>
-              <strong>{translate("controlPanel.stats.name")}:</strong>{" "}
-              {char.name}
-            </p>
-            <p>
-              <strong>{translate("controlPanel.stats.level")}:</strong>{" "}
-              {char.level}
-            </p>
-            <p>
-              <strong>{translate("controlPanel.stats.resets")}:</strong>{" "}
-              {char.reset}
-            </p>
-            <p>
-              <strong>{translate("controlPanel.stats.race")}:</strong>
-              <img
-                src={classInfo.icon}
-                alt={classInfo.key}
-                style={{
-                  width: "24px",
-                  height: "24px",
-                  marginRight: "2px",
-                  marginLeft: "2px",
-                  verticalAlign: "middle",
-                }}
-              />
-              {classNamesMap[classInfo.key] || "Unknown"}
-            </p>
-
-            {char.giant_model !== null && (
-              <div
-                style={{
-                  marginTop: "1rem",
-                  display: "flex",
-                  alignItems: "center",
-                  gap: "0.5rem",
-                }}
-              >
-                <label style={{ color: "#ccc", fontWeight: "bold" }}>
-                  {translate("controlPanel.stats.giant_mount")}
-                </label>
-
-                {actionLoading[mountKey] ? (
-                  <FontAwesomeIcon
-                    icon={faSpinner}
-                    spin
-                    style={{ color: "#ccc", fontSize: "1.2rem" }}
-                  />
-                ) : (
-                  <select
-                    value={char.giant_model}
-                    onChange={(e) => changeMount(e, char)}
-                    style={{
-                      padding: "0.3rem",
-                      borderRadius: "5px",
-                      border: "1px solid #555",
-                      backgroundColor: "rgba(255,255,255,0.1)",
-                      color: "#ccc",
-                    }}
-                  >
-                    <option value={1}>Silver Model</option>
-                    <option value={2}>Gold Model</option>
-                    <option value={3}>Blue Model</option>
-                  </select>
-                )}
+          <CharacterCard key={char.name}>
+            <CharacterHeader>
+              <h4>{char.name}</h4>
+              <div className="class-info">
+                <img src={classInfo.icon} alt={classInfo.key} />
+                <span>{classNamesMap[classInfo.key] || "Unknown"}</span>
               </div>
-            )}
+            </CharacterHeader>
 
-            <div
-              style={{
-                marginTop: "1rem",
-                display: "flex",
-                gap: "0.5rem",
-                width: "100%",
-              }}
-            >
+            <CharacterStats>
+              <p>
+                <strong>{translate("controlPanel.stats.level")}:</strong>{" "}
+                {char.level}
+              </p>
+              <p>
+                <strong>{translate("controlPanel.stats.resets")}:</strong>{" "}
+                {char.reset}
+              </p>
+              {char.giant_model !== null && (
+                <p>
+                  <strong>
+                    {translate("controlPanel.stats.giant_mount")}:
+                  </strong>{" "}
+                  {actionLoading[mountKey] ? (
+                    <FontAwesomeIcon icon={faSpinner} spin />
+                  ) : (
+                    <select
+                      value={char.giant_model}
+                      onChange={(e) => changeMount(e, char)}
+                      style={{
+                        padding: "0.3rem",
+                        borderRadius: "5px",
+                        border: "1px solid #555",
+                        backgroundColor: "rgba(255,255,255,0.1)",
+                        color: "#ccc",
+                      }}
+                    >
+                      <option value={1}>Silver</option>
+                      <option value={2}>Gold</option>
+                      <option value={3}>Blue</option>
+                    </select>
+                  )}
+                </p>
+              )}
+            </CharacterStats>
+
+            <CharacterActions>
               {["unstuck", "evolve", "grand-reset"].map((action) => {
                 const key = `${char.name}_${action}`;
                 const iconMap = {
@@ -192,8 +157,8 @@ export default function ControlPanelStats({
                   </GreenButton>
                 );
               })}
-            </div>
-          </div>
+            </CharacterActions>
+          </CharacterCard>
         );
       })}
     </div>
