@@ -92,7 +92,10 @@ export default function ControlPanelProfile({
               color: "#ccc",
             }}
           />
-          <GreenButton style={{ flex: 1 }}>
+          <GreenButton
+            style={{ flex: 1 }}
+            onClick={() => alert("This function doesn't work yet!")}
+          >
             <FontAwesomeIcon
               icon={faCartShopping}
               style={{ marginRight: "5px" }}
