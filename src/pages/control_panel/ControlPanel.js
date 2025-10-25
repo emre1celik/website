@@ -14,7 +14,6 @@ import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
-  faCog,
   faChartBar,
   faTrophy,
   faLock,
@@ -36,7 +35,6 @@ import IkIcon from "../../assets/images/classes/ik.png";
 import DefaultIcon from "../../assets/images/classes/default.png";
 import { useTranslation } from "../../context/TranslationContext";
 import ControlPanelProfile from "./profile/ControlPanelProfile";
-import ControlPanelSettings from "./settings/ControlPanelSettings";
 import ControlPanelStats from "./stats/ControlPanelStats";
 import ControlPanelAchievements from "./achievements/ControlPanelAchievements";
 
@@ -348,11 +346,6 @@ function ControlPanel({ user }) {
             profile={profile}
             translate={translate}
             loading={loading}
-          />
-        );
-      case "settings":
-        return (
-          <ControlPanelSettings
             password={password}
             confirmPassword={confirmPassword}
             setPassword={setPassword}
@@ -360,7 +353,6 @@ function ControlPanel({ user }) {
             changingPassword={changingPassword}
             passwordMessage={passwordMessage}
             onChangePasswordSubmit={onChangePasswordSubmit}
-            translate={translate}
           />
         );
       case "stats":
@@ -419,14 +411,6 @@ function ControlPanel({ user }) {
               >
                 <FontAwesomeIcon icon={faUser} />
                 <span>{translate("controlPanel.tabs.profile")}</span>
-              </ControlPanelTabButton>
-
-              <ControlPanelTabButton
-                active={activeTab === "settings"}
-                onClick={() => setActiveTab("settings")}
-              >
-                <FontAwesomeIcon icon={faCog} />
-                <span>{translate("controlPanel.tabs.settings")}</span>
               </ControlPanelTabButton>
 
               <ControlPanelTabButton
