@@ -282,7 +282,15 @@ function ControlPanel({ user }) {
     e.preventDefault();
 
     if (password !== confirmPassword) {
-      setPasswordMessage({ type: "error", text: "❌ Passwords do not match!" });
+      setPasswordMessage({
+        type: "error",
+        text: (
+          <>
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+            Passwords do not match!
+          </>
+        ),
+      });
       return;
     }
 
