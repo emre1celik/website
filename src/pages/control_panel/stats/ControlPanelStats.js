@@ -153,7 +153,6 @@ export default function ControlPanelStats({
               style={{
                 marginTop: "1rem",
                 display: "flex",
-                flexDirection: "row",
                 gap: "0.5rem",
                 width: "100%",
               }}
