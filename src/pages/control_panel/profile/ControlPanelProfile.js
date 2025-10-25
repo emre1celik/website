@@ -200,6 +200,7 @@ export default function ControlPanelProfile({
             borderRadius: "5px",
             color: "#fff",
             cursor: changingPassword ? "not-allowed" : "pointer",
+            width: "100%",
           }}
         >
           <FontAwesomeIcon
