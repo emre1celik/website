@@ -96,7 +96,7 @@ export default function ControlPanelStats({
               </p>
               {char.giant_model !== null && (
                 <MountSelector>
-                  <label>{translate("controlPanel.stats.giant_mount")}:</label>
+                  <label>{translate("controlPanel.stats.giant_mount")}</label>
                   {actionLoading[mountKey] ? (
                     <FontAwesomeIcon
                       icon={faSpinner}
