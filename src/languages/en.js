@@ -240,7 +240,7 @@ export default {
     notLoad: "Could not load profile.",
     hello: "Hello, {user}!",
     tabs: {
-      profile: "Profile",
+      profile: "Account",
       settings: "Settings",
       stats: "Characters",
     },
