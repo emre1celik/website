@@ -153,7 +153,7 @@ export default function ControlPanelStats({
               style={{
                 marginTop: "1rem",
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: "row",
                 gap: "0.5rem",
                 width: "100%",
               }}
@@ -178,6 +178,7 @@ export default function ControlPanelStats({
                     key={action}
                     disabled={actionLoading[key]}
                     onClick={() => handleCharacterAction(char.name, action)}
+                    style={{ width: "100%" }}
                   >
                     <FontAwesomeIcon
                       icon={actionLoading[key] ? faSpinner : iconMap[action]}
