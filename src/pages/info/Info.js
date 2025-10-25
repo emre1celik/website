@@ -351,7 +351,7 @@ function Info({ user }) {
       <InfoWrapper>
         <Navigation user={user} />
         <InfoHero>
-          <InfoBox>
+          <InfoBox className="custom-scroll-area">
             <h2 style={{ textAlign: "center" }}>
               {translate("navigation.info")}
             </h2>

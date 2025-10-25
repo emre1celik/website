@@ -149,7 +149,15 @@ export default function ControlPanelStats({
               </div>
             )}
 
-            <div style={{ marginTop: "1rem", display: "flex", gap: "0.5rem" }}>
+            <div
+              style={{
+                marginTop: "1rem",
+                display: "flex",
+                flexDirection: "column",
+                gap: "0.5rem",
+                width: "100%",
+              }}
+            >
               {["unstuck", "evolve", "grand-reset"].map((action) => {
                 const key = `${char.name}_${action}`;
                 const iconMap = {
