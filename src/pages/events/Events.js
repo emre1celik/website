@@ -136,7 +136,7 @@ const eventSchedule = {
 };
 
 const allEvents = { ...eventSchedule, ...invasionSchedule };
-const SERVER_UTC_OFFSET = 1; // change to match your real offset
+const SERVER_UTC_OFFSET = -1; // your server offset
 
 function getServerNow() {
   const now = new Date();
@@ -152,12 +152,13 @@ function getServerNow() {
     )
   );
 
-  // Apply offset (in hours)
+  // Apply server offset
   utcNow.setHours(utcNow.getHours() + SERVER_UTC_OFFSET);
   return utcNow;
 }
 
 const NOW_WINDOW_MS = 5 * 60 * 1000; // 5 minutes
+
 function getNextEventTime(times) {
   const now = getServerNow();
   let nextEvent = null;
@@ -167,6 +168,7 @@ function getNextEventTime(times) {
 
     if (typeof t === "string") {
       const [hours, minutes] = t.split(":").map(Number);
+      // Start with server "today"
       eventTime = new Date(now);
       eventTime.setHours(hours, minutes, 0, 0);
     } else if (typeof t === "object" && t.time) {
@@ -180,7 +182,7 @@ function getNextEventTime(times) {
       }
     }
 
-    // Only move to next day if more than NOW_WINDOW_MS passed
+    // If the event already passed, move it to the next day
     if (eventTime < now && now - eventTime > NOW_WINDOW_MS) {
       eventTime.setDate(eventTime.getDate() + 1);
     }
@@ -262,7 +264,6 @@ function Events({ user }) {
                         {nextTime.toLocaleTimeString([], {
                           hour: "2-digit",
                           minute: "2-digit",
-                          timeZone: "UTC",
                         })}
                       </td>
                       <td>
