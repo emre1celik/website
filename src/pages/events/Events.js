@@ -136,11 +136,11 @@ const eventSchedule = {
 };
 
 const allEvents = { ...eventSchedule, ...invasionSchedule };
+const SERVER_UTC_OFFSET = 1; // change to match your real offset
+
 function getServerNow() {
-  // Always return current time in UTC, ignoring local DST
   const now = new Date();
-  // Construct a new Date object representing the same UTC time
-  return new Date(
+  const utcNow = new Date(
     Date.UTC(
       now.getUTCFullYear(),
       now.getUTCMonth(),
@@ -151,6 +151,10 @@ function getServerNow() {
       now.getUTCMilliseconds()
     )
   );
+
+  // Apply offset (in hours)
+  utcNow.setHours(utcNow.getHours() + SERVER_UTC_OFFSET);
+  return utcNow;
 }
 
 const NOW_WINDOW_MS = 5 * 60 * 1000; // 5 minutes
