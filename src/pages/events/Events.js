@@ -136,10 +136,26 @@ const eventSchedule = {
 };
 
 const allEvents = { ...eventSchedule, ...invasionSchedule };
+function getServerNow() {
+  // Always return current time in UTC, ignoring local DST
+  const now = new Date();
+  // Construct a new Date object representing the same UTC time
+  return new Date(
+    Date.UTC(
+      now.getUTCFullYear(),
+      now.getUTCMonth(),
+      now.getUTCDate(),
+      now.getUTCHours(),
+      now.getUTCMinutes(),
+      now.getUTCSeconds(),
+      now.getUTCMilliseconds()
+    )
+  );
+}
 
 const NOW_WINDOW_MS = 5 * 60 * 1000; // 5 minutes
 function getNextEventTime(times) {
-  const now = new Date();
+  const now = getServerNow();
   let nextEvent = null;
 
   for (const t of times) {
@@ -173,7 +189,8 @@ function getNextEventTime(times) {
 
 // Countdown logic
 function formatCountdown(nextEvent) {
-  const now = new Date();
+  const now = getServerNow();
+
   const diff = nextEvent - now;
 
   if (diff <= NOW_WINDOW_MS && diff >= -NOW_WINDOW_MS) return "Now!"; // 5-min window
@@ -225,7 +242,8 @@ function Events({ user }) {
                 .map((eventName) => {
                   const nextTime = nextEvents[eventName];
                   if (!nextTime) return null;
-                  const diff = nextTime - new Date();
+                  const diff = nextTime - getServerNow();
+
                   return { eventName, nextTime, diff };
                 })
                 .filter(Boolean)
@@ -240,6 +258,7 @@ function Events({ user }) {
                         {nextTime.toLocaleTimeString([], {
                           hour: "2-digit",
                           minute: "2-digit",
+                          timeZone: "UTC",
                         })}
                       </td>
                       <td>
