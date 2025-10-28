@@ -93,6 +93,7 @@ function Register({ user }) {
                 value={form.username}
                 onChange={handleChange}
                 required
+                maxLength={10}
               />
               <input
                 type="email"
