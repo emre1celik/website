@@ -8,8 +8,9 @@ import pl from "../languages/pl";
 import pt from "../languages/pt";
 import ru from "../languages/ru";
 import tr from "../languages/tr";
+import vi from "../languages/vi";
 
-const translations = { en, es, et, lv, pl, pt, ru, tr };
+const translations = { en, es, et, lv, pl, pt, ru, tr, vi };
 
 const TranslationContext = createContext();
 

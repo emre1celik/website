@@ -8,6 +8,7 @@ import flagPL from "../../assets/flags/pl.png";
 import flagPT from "../../assets/flags/pt.png";
 import flagRU from "../../assets/flags/ru.png";
 import flagTR from "../../assets/flags/tr.png";
+import flagVI from "../../assets/flags/vi.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -25,6 +26,7 @@ function LanguageSelector() {
     { code: "pt", name: "Português", flag: flagPT },
     { code: "ru", name: "Русский", flag: flagRU },
     { code: "tr", name: "Türkçe", flag: flagTR },
+    { code: "vi", name: "Tiếng Việt", flag: flagVI },
   ];
 
   const current = languages.find((l) => l.code === language);
@@ -57,12 +59,17 @@ function LanguageSelector() {
           gap: "0.5rem",
           border: "2px solid #232323ff",
           borderRadius: "8px",
-          padding: "0.3rem 0.6rem",
           backgroundColor: "rgba(0,0,0,0.8)",
           cursor: "pointer",
+          padding: current.code === "vi" ? "0.5rem 0.5rem" : "0.3rem 0.6rem",
         }}
       >
-        <img src={current.flag} alt={current.name} width="25" height="25" />
+        <img
+          src={current.flag}
+          alt={current.name}
+          width="25"
+          height={current.code === "vi" ? "15" : "25"}
+        />
         <span style={{ color: "white", fontWeight: "bold" }}>
           {current.name}
         </span>
@@ -104,7 +111,12 @@ function LanguageSelector() {
                 color: "white",
               }}
             >
-              <img src={lang.flag} alt={lang.name} width="25" height="25" />
+              <img
+                src={lang.flag}
+                alt={lang.name}
+                width="25"
+                height={lang.code === "vi" ? "15" : "25"}
+              />
               <span>{lang.name}</span>
             </div>
           ))}
