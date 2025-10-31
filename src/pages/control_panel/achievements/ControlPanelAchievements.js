@@ -96,12 +96,12 @@ export default function ControlPanelAchievements({
       vi: "Khóa mốc không hợp lệ",
     },
   };
-
   const claimReward = async (milestoneKey) => {
     if (claimingKeys.includes(milestoneKey)) return;
     setClaimingKeys((prev) => [...prev, milestoneKey]);
 
     const token = localStorage.getItem("apiToken");
+    const lang = localStorage.getItem("lang") || "en";
 
     try {
       const response = await fetch(
@@ -117,12 +117,12 @@ export default function ControlPanelAchievements({
       );
 
       let backendMsg = "Failed to claim reward";
+      let translatedMsg = backendMsg;
+      let type = "error";
+
       try {
         const data = await response.json();
         backendMsg = data.error || data.message || backendMsg;
-
-        const lang = localStorage.getItem("lang") || "en";
-        let translatedMsg = backendMsg;
 
         // Handle dynamic reward messages
         if (backendMsg.startsWith("Reward claimed successfully! +")) {
@@ -131,49 +131,44 @@ export default function ControlPanelAchievements({
             rewardTranslations["Reward claimed successfully! +"][lang] +
             reward +
             " WCoin";
+          type = "success";
         } else if (rewardTranslations[backendMsg]) {
-          translatedMsg = rewardTranslations[backendMsg][lang];
-        }
-
-        // Update achievements if success
-        if (response.ok) {
-          setAchievements((prev) =>
-            prev.map((ach) =>
-              ach.key === milestoneKey ? { ...ach, claimed: true } : ach
-            )
-          );
-
-          // Optional: fetch fresh achievements
-          try {
-            const refresh = await fetch(
-              "https://api.myramu.online/api/achievements",
-              { headers: { Authorization: `Bearer ${token}` } }
-            );
-            const newData = await refresh.json();
-            if (refresh.ok) setAchievements(newData.achievements);
-          } catch (err) {
-            console.error("Failed to refresh achievements:", err);
-          }
-
-          setMessages((prev) => ({
-            ...prev,
-            [milestoneKey]: { type: "success", text: translatedMsg },
-          }));
-        } else {
-          setMessages((prev) => ({
-            ...prev,
-            [milestoneKey]: { type: "error", text: translatedMsg },
-          }));
+          translatedMsg = rewardTranslations[backendMsg][lang] || backendMsg;
+          type = backendMsg === "Unauthorized" ? "error" : "error"; // all others are errors
+        } else if (response.ok) {
+          translatedMsg = backendMsg; // fallback for unexpected success messages
+          type = "success";
         }
       } catch (err) {
-        setMessages((prev) => ({
-          ...prev,
-          [milestoneKey]: {
-            type: "error",
-            text: "Server error while claiming reward",
-          },
-        }));
+        translatedMsg = "Server error while claiming reward";
+        type = "error";
       }
+
+      // Update achievements if success
+      if (type === "success") {
+        setAchievements((prev) =>
+          prev.map((ach) =>
+            ach.key === milestoneKey ? { ...ach, claimed: true } : ach
+          )
+        );
+
+        // Optional: refresh achievements
+        try {
+          const refresh = await fetch(
+            "https://api.myramu.online/api/achievements",
+            { headers: { Authorization: `Bearer ${token}` } }
+          );
+          const newData = await refresh.json();
+          if (refresh.ok) setAchievements(newData.achievements);
+        } catch (err) {
+          console.error("Failed to refresh achievements:", err);
+        }
+      }
+
+      setMessages((prev) => ({
+        ...prev,
+        [milestoneKey]: { type, text: translatedMsg },
+      }));
     } catch (err) {
       setMessages((prev) => ({
         ...prev,
