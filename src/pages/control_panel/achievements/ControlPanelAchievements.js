@@ -131,13 +131,8 @@ export default function ControlPanelAchievements({
 
   return (
     <div>
-      <h3>Rewards</h3>
-      <p>
-        Your achievements count all your characters on this account! Every
-        reset, Blood Castle victory, and Devil Square conquest adds up to unlock
-        awesome WCoin rewards and great item rewards. Keep playing and collect
-        more rewards!
-      </p>
+      <h3>{translate("controlPanel.rewards.title")}</h3>
+      <p>{translate("controlPanel.rewards.description")}</p>
       <AchievementList>
         {achievements.map((ach) => (
           <>
@@ -151,7 +146,8 @@ export default function ControlPanelAchievements({
                 <div>
                   <h4>{ach.label}</h4>
                   <p>
-                    Progress: {ach.progress.toLocaleString()} /{" "}
+                    {translate("controlPanel.rewards.progress")}:{" "}
+                    {ach.progress.toLocaleString()} /{" "}
                     {ach.required.toLocaleString()}
                   </p>
                 </div>
@@ -182,7 +178,7 @@ export default function ControlPanelAchievements({
                           spin
                           style={{ marginRight: "5px" }}
                         />
-                        Claiming...
+                        {translate("controlPanel.rewards.claiming")}
                       </>
                     ) : (
                       <>
@@ -190,17 +186,18 @@ export default function ControlPanelAchievements({
                           icon={faTrophy}
                           style={{ marginRight: "5px" }}
                         />
-                        Collect
+                        {translate("controlPanel.rewards.claim")}
                       </>
                     )}
                   </GreenButton>
                 ) : ach.claimed ? (
                   <span style={{ color: "#4caf50", fontWeight: "bold" }}>
-                    Claimed
+                    {translate("controlPanel.rewards.claimed")}
                   </span>
                 ) : (
                   <span style={{ color: "#888" }}>
-                    <FontAwesomeIcon icon={faLock} /> Locked
+                    <FontAwesomeIcon icon={faLock} />{" "}
+                    {translate("controlPanel.rewards.locked")}
                   </span>
                 )}
               </div>

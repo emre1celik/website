@@ -248,6 +248,18 @@ export default {
       settings: "Seaded",
       stats: "Tegelased",
     },
+    rewards: {
+      title: "Preemiad",
+      description:
+        "Sinu saavutused arvestavad kõiki selle konto tegelasi! Iga reset, Blood Castle'i võit ja Devil Square'i vallutus lisab väärtuslikke WCoini ja ägedaid esemeid. Jätka mängimist ja kogu rohkem preemiaid!",
+      resets: "Resetid",
+      claim: "Kogumine",
+      claiming: "Kogumine...",
+      claimed: "Kogutud",
+      score: "Skoor",
+      progress: "Edusamm",
+      locked: "Lukustatud",
+    },
     profile: {
       accountInformation: "Kontoandmed",
       email: "E-post",

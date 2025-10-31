@@ -235,6 +235,18 @@ export default {
       settings: "Cài đặt",
       stats: "Nhân vật",
     },
+    rewards: {
+      title: "Phần Thưởng",
+      description:
+        "Thành tích của bạn được tính cho tất cả các nhân vật trên tài khoản này! Mỗi lần reset, chiến thắng Blood Castle, và chinh phục Devil Square đều cộng dồn để mở khóa WCoin tuyệt vời và phần thưởng item xịn. Tiếp tục chơi và thu thập thêm phần thưởng!",
+      resets: "Resets",
+      claim: "Nhận",
+      claiming: "Đang nhận...",
+      claimed: "Đã nhận",
+      score: "Điểm",
+      progress: "Tiến trình",
+      locked: "Khóa",
+    },
     profile: {
       accountInformation: "Thông tin tài khoản",
       email: "Email",

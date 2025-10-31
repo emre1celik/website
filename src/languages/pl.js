@@ -248,6 +248,18 @@ export default {
       settings: "Ustawienia",
       stats: "Postacie",
     },
+    rewards: {
+      title: "Nagrody",
+      description:
+        "Twoje osiągnięcia liczą się dla wszystkich postaci na tym koncie! Każdy reset, zwycięstwo w Blood Castle i zdobycie Devil Square dodają punkty, aby odblokować świetne nagrody WCoin i przedmioty. Graj dalej i zbieraj nagrody!",
+      resets: "Resety",
+      claim: "Odbierz",
+      claiming: "Odbieranie...",
+      claimed: "Odebrane",
+      score: "Wynik",
+      progress: "Postęp",
+      locked: "Zablokowane",
+    },
     profile: {
       accountInformation: "Informacje o koncie",
       email: "E-mail",

@@ -250,6 +250,18 @@ export default {
       settings: "Configuración",
       stats: "Personajes",
     },
+    rewards: {
+      title: "Recompensas",
+      description:
+        "¡Tus logros cuentan todos los personajes de esta cuenta! Cada reinicio, victoria en Blood Castle y conquista de Devil Square suma para desbloquear increíbles recompensas de WCoin y geniales items. ¡Sigue jugando y recolecta más recompensas!",
+      resets: "Reinicios",
+      claim: "Cobrar",
+      claiming: "Cobrándolo...",
+      claimed: "Cobrado",
+      score: "Puntuación",
+      progress: "Progreso",
+      locked: "Bloqueado",
+    },
     profile: {
       accountInformation: "Información de la cuenta",
       email: "Correo electrónico",

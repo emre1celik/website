@@ -248,6 +248,18 @@ export default {
       settings: "Iestatījumi",
       stats: "Rakstzīmes",
     },
+    rewards: {
+      title: "Atlīdzības",
+      description:
+        "Tavi sasniegumi tiek skaitīti visiem šī konta varoņiem! Katrs reset, Blood Castle uzvara un Devil Square iekarošana summējas, lai atbloķētu lieliskas WCoin balvas un itemus. Turpini spēlēt un vāc vairāk atlīdzību!",
+      resets: "Reseti",
+      claim: "Saņemt",
+      claiming: "Saņem...",
+      claimed: "Saņemts",
+      score: "Rezultāts",
+      progress: "Progres",
+      locked: "Bloķēts",
+    },
     profile: {
       accountInformation: "Konts informācija",
       email: "E-pasts",

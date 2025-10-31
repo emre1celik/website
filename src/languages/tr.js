@@ -247,6 +247,18 @@ export default {
       settings: "Ayarlar",
       stats: "Karakterler",
     },
+    rewards: {
+      title: "Ödüller",
+      description:
+        "Başarılarınız bu hesaptaki tüm karakterler için sayılır! Her reset, Blood Castle zaferi ve Devil Square zaferi, harika WCoin ödülleri ve değerli itemler kazanmanızı sağlar. Oynamaya devam edin ve daha fazla ödül toplayın!",
+      resets: "Resetler",
+      claim: "Al",
+      claiming: "Alınıyor...",
+      claimed: "Alındı",
+      score: "Skor",
+      progress: "İlerleme",
+      locked: "Kilitli",
+    },
     profile: {
       accountInformation: "Hesap Bilgileri",
       email: "E-posta",

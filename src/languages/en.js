@@ -244,6 +244,18 @@ export default {
       settings: "Settings",
       stats: "Characters",
     },
+    rewards: {
+      title: "Rewards",
+      description:
+        "Your achievements count all your characters on this account! Every reset, Blood Castle victory, and Devil Square conquest adds up to unlock awesome WCoin rewards and great item rewards. Keep playing and collect more rewards!",
+      resets: "Resets",
+      claim: "Collect",
+      claiming: "Collecting...",
+      claimed: "Claimed",
+      score: "Score",
+      progress: "Progress",
+      locked: "Locked",
+    },
     profile: {
       accountInformation: "Account Information",
       email: "Email",
