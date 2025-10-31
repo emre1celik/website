@@ -122,7 +122,7 @@ export default function ControlPanelAchievements({
 
       try {
         const data = await response.json();
-        backendMsg = data.error || data.message || backendMsg;
+        backendMsg = (data.error || data.message || backendMsg).trim(); // trim whitespace
 
         // Handle dynamic reward messages
         if (backendMsg.startsWith("Reward claimed successfully! +")) {
@@ -132,12 +132,13 @@ export default function ControlPanelAchievements({
             reward +
             " WCoin";
           type = "success";
-        } else if (rewardTranslations[backendMsg]) {
-          translatedMsg = rewardTranslations[backendMsg][lang] || backendMsg;
-          type = backendMsg === "Unauthorized" ? "error" : "error"; // all others are errors
-        } else if (response.ok) {
-          translatedMsg = backendMsg; // fallback for unexpected success messages
-          type = "success";
+        } else {
+          // Map static messages using trimmed key
+          const key = backendMsg;
+          if (rewardTranslations[key]) {
+            translatedMsg = rewardTranslations[key][lang] || backendMsg;
+          }
+          type = response.ok ? "success" : "error";
         }
       } catch (err) {
         translatedMsg = "Server error while claiming reward";
