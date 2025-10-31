@@ -28,6 +28,74 @@ export default function ControlPanelAchievements({
   const [claimingKeys, setClaimingKeys] = useState([]);
   const [messages, setMessages] = useState({});
   const { translate } = useTranslation();
+  const rewardTranslations = {
+    "Reward claimed successfully! +": {
+      en: "Reward claimed successfully! +",
+      es: "¡Recompensa obtenida con éxito! +",
+      et: "Preemia edukalt kätte saadud! +",
+      lv: "Atlīdzība veiksmīgi saņemta! +",
+      pl: "Nagroda została pomyślnie odebrana! +",
+      pt: "Recompensa obtida com sucesso! +",
+      ru: "Награда успешно получена! +",
+      tr: "Ödül başarıyla alındı! +",
+      vi: "Nhận phần thưởng thành công! +",
+    },
+    Unauthorized: {
+      en: "Unauthorized",
+      es: "No autorizado",
+      et: "Luba puudub",
+      lv: "Neautorizēts",
+      pl: "Nieautoryzowany",
+      pt: "Não autorizado",
+      ru: "Не авторизован",
+      tr: "Yetkisiz",
+      vi: "Không được phép",
+    },
+    "Reward already claimed": {
+      en: "Reward already claimed",
+      es: "Recompensa ya obtenida",
+      et: "Preemia juba saadud",
+      lv: "Atlīdzība jau saņemta",
+      pl: "Nagroda już odebrana",
+      pt: "Recompensa já recebida",
+      ru: "Награда уже получена",
+      tr: "Ödül zaten alındı",
+      vi: "Phần thưởng đã nhận",
+    },
+    "Milestone not yet completed": {
+      en: "Milestone not yet completed",
+      es: "Hito aún no completado",
+      et: "Sõlm pole veel lõpetatud",
+      lv: "Posms vēl nav pabeigts",
+      pl: "Kamień milowy jeszcze nie ukończony",
+      pt: "Marco ainda não concluído",
+      ru: "Этап еще не завершен",
+      tr: "Kilometre taşı henüz tamamlanmadı",
+      vi: "Mục tiêu chưa hoàn thành",
+    },
+    "You need to logout from the game first": {
+      en: "You need to logout from the game first",
+      es: "Necesitas desconectarte del juego primero",
+      et: "Peate esmalt mängust välja logima",
+      lv: "Vispirms jums jāizrakstās no spēles",
+      pl: "Musisz najpierw wylogować się z gry",
+      pt: "Você precisa sair do jogo primeiro",
+      ru: "Вам нужно выйти из игры",
+      tr: "Önce oyundan çıkmanız gerekiyor",
+      vi: "Bạn cần đăng xuất khỏi trò chơi trước",
+    },
+    "Invalid milestone key": {
+      en: "Invalid milestone key",
+      es: "Clave de hito inválida",
+      et: "Vigane sõlmevõti",
+      lv: "Nederīga posma atslēga",
+      pl: "Nieprawidłowy klucz kamienia milowego",
+      pt: "Chave de marco inválida",
+      ru: "Неверный ключ этапа",
+      tr: "Geçersiz kilometre taşı anahtarı",
+      vi: "Khóa mốc không hợp lệ",
+    },
+  };
 
   const claimReward = async (milestoneKey) => {
     if (claimingKeys.includes(milestoneKey)) return;
@@ -48,42 +116,62 @@ export default function ControlPanelAchievements({
         }
       );
 
-      if (response.ok) {
+      let backendMsg = "Failed to claim reward";
+      try {
         const data = await response.json();
-        setAchievements((prev) =>
-          prev.map((ach) =>
-            ach.key === milestoneKey ? { ...ach, claimed: true } : ach
-          )
-        );
-        // 🟢 fetch fresh achievements (unlocks the next ones automatically)
-        try {
-          const refresh = await fetch(
-            "https://api.myramu.online/api/achievements",
-            {
-              headers: { Authorization: `Bearer ${token}` },
-            }
-          );
-          const newData = await refresh.json();
-          if (refresh.ok) {
-            setAchievements(newData.achievements);
-          }
-        } catch (err) {
-          console.error("Failed to refresh achievements:", err);
+        backendMsg = data.error || data.message || backendMsg;
+
+        const lang = localStorage.getItem("lang") || "en";
+        let translatedMsg = backendMsg;
+
+        // Handle dynamic reward messages
+        if (backendMsg.startsWith("Reward claimed successfully! +")) {
+          const reward = backendMsg.split("+")[1];
+          translatedMsg =
+            rewardTranslations["Reward claimed successfully! +"][lang] +
+            reward +
+            " WCoin";
+        } else if (rewardTranslations[backendMsg]) {
+          translatedMsg = rewardTranslations[backendMsg][lang];
         }
 
+        // Update achievements if success
+        if (response.ok) {
+          setAchievements((prev) =>
+            prev.map((ach) =>
+              ach.key === milestoneKey ? { ...ach, claimed: true } : ach
+            )
+          );
+
+          // Optional: fetch fresh achievements
+          try {
+            const refresh = await fetch(
+              "https://api.myramu.online/api/achievements",
+              { headers: { Authorization: `Bearer ${token}` } }
+            );
+            const newData = await refresh.json();
+            if (refresh.ok) setAchievements(newData.achievements);
+          } catch (err) {
+            console.error("Failed to refresh achievements:", err);
+          }
+
+          setMessages((prev) => ({
+            ...prev,
+            [milestoneKey]: { type: "success", text: translatedMsg },
+          }));
+        } else {
+          setMessages((prev) => ({
+            ...prev,
+            [milestoneKey]: { type: "error", text: translatedMsg },
+          }));
+        }
+      } catch (err) {
         setMessages((prev) => ({
           ...prev,
-          [milestoneKey]: { type: "success", text: data.message },
-        }));
-      } else {
-        let errorMsg = "Failed to claim reward";
-        try {
-          const errData = await response.json();
-          errorMsg = errData.error || errorMsg;
-        } catch (err) {}
-        setMessages((prev) => ({
-          ...prev,
-          [milestoneKey]: { type: "error", text: errorMsg },
+          [milestoneKey]: {
+            type: "error",
+            text: "Server error while claiming reward",
+          },
         }));
       }
     } catch (err) {
