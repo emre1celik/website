@@ -26,7 +26,7 @@ function LanguageSelector() {
     { code: "pt", name: "Português", flag: flagPT },
     { code: "ru", name: "Русский", flag: flagRU },
     { code: "tr", name: "Türkçe", flag: flagTR },
-    { code: "vi", name: "Tiếng Việt", flag: flagVI },
+    { code: "vi", name: "Việt", flag: flagVI },
   ];
 
   const current = languages.find((l) => l.code === language);
