@@ -122,12 +122,10 @@ export default function ControlPanelStats({
                 const key = `${char.name}_${action}`;
                 const iconMap = {
                   unstuck: faLocationCrosshairs,
-                  evolve: faUpLong,
                   "grand-reset": faArrowsRotate,
                 };
                 const labelMap = {
                   unstuck: translate("controlPanel.stats.actions.unstuck"),
-                  evolve: translate("controlPanel.stats.actions.evolve"),
                   "grand-reset": translate(
                     "controlPanel.stats.actions.grandReset"
                   ),
