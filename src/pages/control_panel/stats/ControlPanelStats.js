@@ -118,7 +118,7 @@ export default function ControlPanelStats({
             </CharacterStats>
 
             <CharacterActions>
-              {["unstuck", "evolve", "grand-reset"].map((action) => {
+              {["unstuck", "grand-reset"].map((action) => {
                 const key = `${char.name}_${action}`;
                 const iconMap = {
                   unstuck: faLocationCrosshairs,
