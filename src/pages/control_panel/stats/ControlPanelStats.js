@@ -94,6 +94,21 @@ export default function ControlPanelStats({
                 <strong>{translate("controlPanel.stats.resets")}:</strong>{" "}
                 {char.reset}
               </p>
+              <p>
+                <strong>Strength:</strong> {char.strength}
+              </p>
+              <p>
+                <strong>Agility:</strong> {char.agility}
+              </p>
+              <p>
+                <strong>Vitality:</strong> {char.vitality}
+              </p>
+              <p>
+                <strong>Energy:</strong> {char.energy}
+              </p>
+              <p>
+                <strong>Leadership:</strong> {char.leadership}
+              </p>
               {char.giant_model !== null && (
                 <MountSelector>
                   <label>{translate("controlPanel.stats.giant_mount")}</label>
