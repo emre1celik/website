@@ -290,7 +290,7 @@ export default {
       resets: "Reinicios",
       processing: "Procesando...",
       race: "Raza",
-      giant_mount: "Montura Gigante:",
+      giant_mount: "Montura:",
       actions: {
         unstuck: "Desatascar",
         evolve: "Evolucionar",

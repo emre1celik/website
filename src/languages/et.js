@@ -288,7 +288,7 @@ export default {
       resets: "Lähtestamised",
       race: "Rass",
       processing: "Töötlemine...",
-      giant_mount: "Hiiglaslik ratsu:",
+      giant_mount: "Ratsu:",
       actions: {
         unstuck: "Vabasta",
         evolve: "Arenda",

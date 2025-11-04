@@ -287,7 +287,7 @@ export default {
       resets: "Sıfırlamalar",
       race: "Irk",
       processing: "İşleniyor...",
-      giant_mount: "Dev Binek:",
+      giant_mount: "Dev:",
       actions: {
         unstuck: "Kurtar",
         evolve: "Evrimle",

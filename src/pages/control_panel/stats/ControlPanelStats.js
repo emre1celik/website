@@ -106,9 +106,11 @@ export default function ControlPanelStats({
               <p>
                 <strong>Energy:</strong> {char.energy}
               </p>
-              <p>
-                <strong>Leadership:</strong> {char.leadership}
-              </p>
+              {char.leadership > 0 && (
+                <p>
+                  <strong>Leadership:</strong> {char.leadership}
+                </p>
+              )}
               {char.giant_model !== null && (
                 <MountSelector>
                   <label>{translate("controlPanel.stats.giant_mount")}</label>

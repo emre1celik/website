@@ -286,7 +286,7 @@ export default {
       name: "Vārds",
       level: "Līmenis",
       resets: "Atjaunojumi",
-      giant_mount: "Milzu braucamdzīvnieks:",
+      giant_mount: "Milzus:",
       race: "Rase",
       processing: "Apstrādā...",
       actions: {

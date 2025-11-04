@@ -284,7 +284,7 @@ export default {
       resets: "Resets",
       race: "Race",
       processing: "Processing...",
-      giant_mount: "Giant Mount:",
+      giant_mount: "Mount:",
       actions: {
         unstuck: "Unstuck",
         evolve: "Evolve",

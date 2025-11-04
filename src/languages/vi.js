@@ -275,7 +275,7 @@ export default {
       resets: "Reset",
       race: "Chủng tộc",
       processing: "Đang xử lý...",
-      giant_mount: "Thú cưỡi khổng lồ:",
+      giant_mount: "Thú:",
       actions: {
         unstuck: "Thoát kẹt",
         evolve: "Tiến hóa",

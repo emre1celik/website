@@ -290,7 +290,7 @@ export default {
       resets: "Resets",
       race: "Raça",
       processing: "Processando...",
-      giant_mount: "Montaria Gigante:",
+      giant_mount: "Montaria:",
       actions: {
         unstuck: "Destravar",
         evolve: "Evoluir",
