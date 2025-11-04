@@ -331,7 +331,7 @@ export default {
     rank: "Ранг",
     name: "Имя",
     class: "Класс",
-    resets: "(Grand) Сбросы",
+    resets: "Сбросы",
     level: "Уровень",
     strength: "Сила",
     agility: "Ловкость",

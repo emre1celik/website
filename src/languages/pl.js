@@ -331,7 +331,7 @@ export default {
     rank: "Pozycja",
     name: "Nazwa",
     class: "Klasa",
-    resets: "(Grand) Reset",
+    resets: "Reset",
     level: "Poziom",
     strength: "Siła",
     agility: "Zręczność",

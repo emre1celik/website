@@ -343,7 +343,7 @@ export default {
     name: "İsim",
     all: "Hepsi",
     class: "Sınıf",
-    resets: "(Grand) Sıfırlamalar",
+    resets: "Sıfırlamalar",
     level: "Seviye",
     strength: "Güç",
     agility: "Çeviklik",

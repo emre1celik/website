@@ -333,7 +333,7 @@ export default {
     rank: "Posição",
     name: "Nome",
     class: "Classe",
-    resets: "(Grand) Resets",
+    resets: "Resets",
     level: "Nível",
     strength: "Força",
     agility: "Agilidade",

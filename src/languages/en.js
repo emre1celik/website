@@ -369,7 +369,7 @@ export default {
     rank: "Rank",
     name: "Name",
     class: "Class",
-    resets: "(Grand) Resets",
+    resets: "Resets",
     level: "Level",
     strength: "Strength",
     agility: "Agility",

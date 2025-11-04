@@ -359,7 +359,7 @@ export default {
     rank: "Hạng",
     name: "Tên",
     class: "Class",
-    resets: "(Grand) Reset",
+    resets: "Reset",
     level: "Cấp",
     strength: "Sức mạnh",
     agility: "Nhanh nhẹn",

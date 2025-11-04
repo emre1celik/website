@@ -340,7 +340,7 @@ export default {
     rank: "Rangs",
     name: "Vārds",
     class: "Klase",
-    resets: "(Grand) Atiestatījumi",
+    resets: "Atiestatījumi",
     level: "Līmenis",
     strength: "Spēks",
     agility: "Veiklība",

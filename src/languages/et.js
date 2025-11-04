@@ -343,7 +343,7 @@ export default {
     rank: "Koht",
     name: "Nimi",
     class: "Klass",
-    resets: "(Grand) Lähtestamised",
+    resets: "Lähtestamised",
     level: "Tase",
     strength: "Jõud",
     all: "Kõik",

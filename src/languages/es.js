@@ -347,7 +347,7 @@ export default {
     rank: "Rango",
     name: "Nombre",
     class: "Clase",
-    resets: "(Grand) Reinicios",
+    resets: "Reinicios",
     level: "Nivel",
     strength: "Fuerza",
     agility: "Agilidad",
