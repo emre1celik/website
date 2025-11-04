@@ -49,7 +49,7 @@ function Highscores({ user }) {
   const [selectedEvent, setSelectedEvent] = useState("1");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [activeTab, setActiveTab] = useState("players"); // default tab
+  const [activeTab, setActiveTab] = useState("events"); // default tab
   const [events, setEvents] = useState([]);
   const [guilds, setGuilds] = useState([]);
   const [loadingEvents, setLoadingEvents] = useState(false);
@@ -513,7 +513,6 @@ function Highscores({ user }) {
                             <th>{translate("highscores.character")}</th>
                             <th>{translate("highscores.class")}</th>
                             <th>{translate("highscores.score")}</th>
-                            <th>{translate("highscores.event")}</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -567,10 +566,6 @@ function Highscores({ user }) {
                                   })()}
                                 </td>
                                 <td>{formatNumber(event.score)}</td>
-                                <td>
-                                  {eventMap[event.event_id] ||
-                                    `Unknown (${event.event_id})`}
-                                </td>
                               </tr>
                             ))}
                         </tbody>
