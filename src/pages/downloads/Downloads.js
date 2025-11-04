@@ -24,12 +24,12 @@ function Downloads({ user }) {
     },
     {
       name: "MEGA.nz",
-      url: "https://mega.nz/file/VCNmFJTJ#Yf3BO-2D5AVbwscOUNXxwZTFOW9_jKSwXqJjqeMYcAk",
+      url: "https://mega.nz/file/AeVyCKpB#qRWIaKH4zrz6S5QdS6D2nS5BlQO8PfQZWpotodV_5hg",
       icon: faCloud,
     },
     {
       name: "MediaFire",
-      url: "https://www.mediafire.com/file/umahy656t784skz/MyraMU.rar/file",
+      url: "https://www.mediafire.com/file/hmliu45ibhg26qr/MyraMU.rar/file",
       icon: faFile,
     },
   ];
