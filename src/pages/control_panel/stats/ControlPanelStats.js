@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSpinner,
   faLocationCrosshairs,
-  faUpLong,
   faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import {

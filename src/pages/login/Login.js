@@ -11,7 +11,7 @@ import { useTranslation } from "../../context/TranslationContext";
 function Login({ user, onLogin }) {
   const { translate } = useTranslation();
   const [form, setForm] = useState({ username: "", password: "" });
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState({ text: "", type: "" });
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -21,7 +21,7 @@ function Login({ user, onLogin }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setMessage("");
+    setMessage({ text: "", type: "" }); // ✅ reset correctly
 
     try {
       const response = await fetch("https://api.myramu.online/api/login", {
@@ -39,13 +39,16 @@ function Login({ user, onLogin }) {
         const { token } = data;
         localStorage.setItem("apiToken", token);
         onLogin(data.username);
-        setMessage(translate("login.success"));
+        setMessage({ text: translate("login.success"), type: "success" });
         navigate("/control-panel");
       } else {
-        setMessage(translate("login.invalid"));
+        setMessage({ text: translate("login.invalid"), type: "error" });
       }
     } catch (err) {
-      setMessage(translate("login.serverError", { error: err.message }));
+      setMessage({
+        text: translate("login.serverError", { error: err.message }),
+        type: "error",
+      });
     } finally {
       setLoading(false);
     }
@@ -100,7 +103,30 @@ function Login({ user, onLogin }) {
               </button>
             </form>
 
-            {message && <p>{message}</p>}
+            {message.text && (
+              <div
+                style={{
+                  width: "100%",
+                  padding: "0.7rem",
+                  borderRadius: "5px",
+                  marginTop: "15px",
+                  backgroundColor:
+                    message.type === "success"
+                      ? "rgba(76, 175, 80, 0.2)"
+                      : "rgba(244, 67, 54, 0.2)",
+                  color: message.type === "success" ? "#4caf50" : "#f44336",
+                  border: `1px solid ${
+                    message.type === "success" ? "#4caf50" : "#f44336"
+                  }`,
+                  borderLeft:
+                    message.type === "success"
+                      ? "6px solid #4caf50"
+                      : "6px solid #f44336",
+                }}
+              >
+                {message.text}
+              </div>
+            )}
 
             <p>
               {translate("login.noAccount")}{" "}

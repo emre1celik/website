@@ -21,7 +21,7 @@ function Register({ user }) {
     password: "",
     confirmPassword: "",
   });
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState({ text: "", type: "" });
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) =>
@@ -29,13 +29,18 @@ function Register({ user }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Password mismatch
     if (form.password !== form.confirmPassword) {
-      setMessage(translate("register.passwordMismatch"));
+      setMessage({
+        text: translate("register.passwordMismatch"),
+        type: "error",
+      });
       return;
     }
 
     setLoading(true);
-    setMessage("");
+    setMessage({ text: "", type: "" });
 
     try {
       const response = await fetch("https://api.myramu.online/api/register", {
@@ -50,14 +55,29 @@ function Register({ user }) {
 
       const data = await response.json();
 
-      if (response.ok) setMessage(translate("register.success"));
-      else if (data.errors) {
-        if (data.errors.account) setMessage("❌ " + data.errors.account[0]);
-        else if (data.errors.email) setMessage("❌ " + data.errors.email[0]);
-        else setMessage(translate("register.somethingWrong"));
-      } else setMessage(translate("register.somethingWrong"));
+      if (response.ok) {
+        setMessage({ text: translate("register.success"), type: "success" });
+      } else if (data.errors) {
+        if (data.errors.account)
+          setMessage({ text: data.errors.account[0], type: "error" });
+        else if (data.errors.email)
+          setMessage({ text: data.errors.email[0], type: "error" });
+        else
+          setMessage({
+            text: translate("register.somethingWrong"),
+            type: "error",
+          });
+      } else {
+        setMessage({
+          text: translate("register.somethingWrong"),
+          type: "error",
+        });
+      }
     } catch (err) {
-      setMessage(translate("register.serverError", { error: err.message }));
+      setMessage({
+        text: translate("register.serverError", { error: err.message }),
+        type: "error",
+      });
     } finally {
       setLoading(false);
     }
@@ -119,6 +139,7 @@ function Register({ user }) {
                 onChange={handleChange}
                 required
               />
+
               <button type="submit" disabled={loading}>
                 {loading ? (
                   <FontAwesomeIcon icon={faSpinner} spin />
@@ -127,6 +148,30 @@ function Register({ user }) {
                 )}
               </button>
 
+              {message.text && (
+                <div
+                  style={{
+                    width: "100%",
+                    padding: "0.7rem",
+                    borderRadius: "5px",
+                    marginTop: "15px",
+                    backgroundColor:
+                      message.type === "success"
+                        ? "rgba(76, 175, 80, 0.2)"
+                        : "rgba(244, 67, 54, 0.2)",
+                    color: message.type === "success" ? "#4caf50" : "#f44336",
+                    border: `1px solid ${
+                      message.type === "success" ? "#4caf50" : "#f44336"
+                    }`,
+                    borderLeft:
+                      message.type === "success"
+                        ? "6px solid #4caf50"
+                        : "6px solid #f44336",
+                  }}
+                >
+                  {message.text}
+                </div>
+              )}
               <p>
                 {translate("register.alreadyAccount")}{" "}
                 <Link
@@ -136,6 +181,7 @@ function Register({ user }) {
                   {translate("register.loginHere")}
                 </Link>
               </p>
+
               <p style={{ marginTop: 0 }}>
                 <TranslatedJSX
                   entity="register.legal"
@@ -160,8 +206,6 @@ function Register({ user }) {
                 />
               </p>
             </form>
-
-            {message && <p>{message}</p>}
           </RegisterBox>
         </RegisterContent>
 

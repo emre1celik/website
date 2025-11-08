@@ -140,11 +140,6 @@ function Highscores({ user }) {
     }
     return { icon: DefaultIcon, key: "unknown" };
   }
-  const eventMap = {
-    0: "Blood Castle",
-    1: "Devil Square",
-    2: "Chaos Castle",
-  };
 
   function formatNumber(num) {
     return num?.toLocaleString("en-US");
