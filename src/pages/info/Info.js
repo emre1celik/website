@@ -118,6 +118,10 @@ function Info({ user }) {
             <li>/offstore</li>
             <li>/offattack</li>
             <li>/clearinventory</li>
+            <li>/clearextinventory</li>
+            <li>/cleargremorycase</li>
+            <li>/cleareventinventory</li>
+            <li>/clearemuuninventory</li>
           </ul>
           <p>{translate("guide.serverInfo.outro")}</p>
         </>
