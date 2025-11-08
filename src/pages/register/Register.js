@@ -113,6 +113,7 @@ function Register({ user }) {
                 value={form.username}
                 onChange={handleChange}
                 required
+                minLength={6}
                 maxLength={10}
               />
               <input
@@ -129,6 +130,7 @@ function Register({ user }) {
                 placeholder={translate("register.password")}
                 value={form.password}
                 onChange={handleChange}
+                minLength={6}
                 required
               />
               <input
