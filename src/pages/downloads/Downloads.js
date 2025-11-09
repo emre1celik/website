@@ -24,7 +24,7 @@ function Downloads({ user }) {
     },
     {
       name: "MEGA.nz",
-      url: "https://mega.nz/file/AeVyCKpB#qRWIaKH4zrz6S5QdS6D2nS5BlQO8PfQZWpotodV_5hg",
+      url: "https://mega.nz/file/hP0zHKRS#VGa5xRo45hCe6HFbaP6du_38349JJrNzdzD_AQ_NWe8",
       icon: faCloud,
     },
     {
