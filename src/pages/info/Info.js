@@ -23,6 +23,7 @@ import {
   faClock,
   faTerminal,
   faRedo,
+  faFistRaised,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
@@ -58,6 +59,13 @@ function Info({ user }) {
                 style={{ color: "#4caf50", marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.majesticExp")}
+            </li>
+            <li>
+              <FontAwesomeIcon
+                icon={faFistRaised}
+                style={{ color: "#4caf50", marginRight: "8px" }}
+              />
+              Maximum stats: 65,000
             </li>
             <li>
               <FontAwesomeIcon
