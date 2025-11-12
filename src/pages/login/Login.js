@@ -15,8 +15,14 @@ function Login({ user, onLogin }) {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+
+    setForm({
+      ...form,
+      [name]: name === "username" ? value.toLowerCase() : value,
+    });
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
