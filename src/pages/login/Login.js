@@ -28,7 +28,7 @@ function Login({ user, onLogin }) {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          account: form.username,
+          account: form.username.toLowerCase(),
           password: form.password,
         }),
       });
