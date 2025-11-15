@@ -18,17 +18,32 @@ function Downloads({ user }) {
 
   const mirrors = [
     {
-      name: "Google Drive",
-      url: "https://drive.google.com/file/d/1ednW_xQsh0xlBhg-5KpH1GcJ6JrEoCv5/view?usp=sharing",
+      name: "Google Drive (1,7 GB Full)",
+      url: "https://drive.google.com/file/d/1COtXeSKISrPAJGtONO7rSWyR__o0h084/view?usp=sharing",
       icon: faCloud,
     },
     {
-      name: "MEGA.nz",
+      name: "Google Drive (1.2 GB No Sound & Music)",
+      url: "https://drive.google.com/file/d/16tXi4TdifJt9KzsE-LnY7oTMz2EHK1J6/view?usp=sharing",
+      icon: faCloud,
+    },
+    {
+      name: "MEGA.nz (1,7 GB Full)",
       url: "https://mega.nz/file/hP0zHKRS#VGa5xRo45hCe6HFbaP6du_38349JJrNzdzD_AQ_NWe8",
       icon: faCloud,
     },
     {
-      name: "MediaFire",
+      name: "MEGA.nz (1.2 GB No Sound & Music)",
+      url: "https://mega.nz/file/hP0zHKRS#VGa5xRo45hCe6HFbaP6du_38349JJrNzdzD_AQ_NWe8",
+      icon: faCloud,
+    },
+    {
+      name: "MediaFire (1,7 GB Full)",
+      url: "https://www.mediafire.com/file/hmliu45ibhg26qr/MyraMU.rar/file",
+      icon: faFile,
+    },
+    {
+      name: "MediaFire (1.2 GB No Sound & Music)",
       url: "https://www.mediafire.com/file/hmliu45ibhg26qr/MyraMU.rar/file",
       icon: faFile,
     },
@@ -56,7 +71,6 @@ function Downloads({ user }) {
         <DownloadsHero>
           <DownloadsBox>
             <h2>{translate("downloads.title")}</h2>
-            <p>{translate("downloads.description")}</p>
             <ul
               style={{
                 listStyle: "none",
