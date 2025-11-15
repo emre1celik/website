@@ -29,12 +29,12 @@ function Downloads({ user }) {
     },
     {
       name: "MEGA.nz (1,7 GB Full)",
-      url: "https://mega.nz/file/hP0zHKRS#VGa5xRo45hCe6HFbaP6du_38349JJrNzdzD_AQ_NWe8",
+      url: "https://mega.nz/file/BHsCTSoK#41EFK7k3SkZFYSJA6ejvBNcrfKNuEdbKcdYoFPvCOtg",
       icon: faCloud,
     },
     {
       name: "MEGA.nz (1.2 GB No Sound & Music)",
-      url: "https://mega.nz/file/hP0zHKRS#VGa5xRo45hCe6HFbaP6du_38349JJrNzdzD_AQ_NWe8",
+      url: "https://mega.nz/file/ZL9GVKCB#SoTIHBsyySV2BhiB-XeK26v5Wa0B3y0Ks2p1z4b29mI",
       icon: faCloud,
     },
     {
@@ -44,7 +44,7 @@ function Downloads({ user }) {
     },
     {
       name: "MediaFire (1.2 GB No Sound & Music)",
-      url: "https://www.mediafire.com/file/hmliu45ibhg26qr/MyraMU.rar/file",
+      url: "https://www.mediafire.com/file/w5uodq26nxrkcxq/Myra+MU+Online+(No+Sound).rar/file",
       icon: faFile,
     },
   ];
