@@ -39,7 +39,7 @@ function Downloads({ user }) {
     },
     {
       name: "MediaFire (1,7 GB Full)",
-      url: "https://www.mediafire.com/file/hmliu45ibhg26qr/MyraMU.rar/file",
+      url: "https://www.mediafire.com/file/7582addza0w9z43/Myra+MU+Online.rar/file",
       icon: faFile,
     },
     {
