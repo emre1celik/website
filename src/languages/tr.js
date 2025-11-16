@@ -298,6 +298,8 @@ export default {
   },
   downloads: {
     title: "İndirme Yansımaları",
+    full_client: "Tam İstemci",
+    no_sound_client: "Sessiz İstemci",
     description:
       "İstemciyi indirmek için bir yansı seçin. Tüm bağlantılar en son sürüme yönlendirir.",
     note1:

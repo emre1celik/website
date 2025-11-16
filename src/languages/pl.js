@@ -298,6 +298,8 @@ export default {
     },
   },
   downloads: {
+    full_client: "Pełny Klient",
+    no_sound_client: "Klient Bez Dźwięku",
     title: "Mirrory pobierania",
     description:
       "Wybierz mirror, aby pobrać klienta. Wszystkie linki prowadzą do najnowszej wersji.",

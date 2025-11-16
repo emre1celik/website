@@ -301,6 +301,8 @@ export default {
   },
   downloads: {
     title: "Espelhos de download",
+    full_client: "Cliente Completo",
+    no_sound_client: "Cliente Sem Som",
     description:
       "Escolha um espelho para baixar o cliente. Todos os links apontam para a versão mais recente.",
     note1:

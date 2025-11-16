@@ -299,6 +299,8 @@ export default {
   },
   downloads: {
     title: "Lejupielādes spoguļi",
+    full_client: "Pilnais Klients",
+    no_sound_client: "Klients Bez Skaņas",
     description:
       "Izvēlies spoguli, lai lejupielādētu klientu. Visi saites norāda uz jaunāko versiju.",
     note1:

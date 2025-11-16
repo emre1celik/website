@@ -285,6 +285,8 @@ export default {
     },
   },
   downloads: {
+    full_client: "Bản Đầy Đủ",
+    no_sound_client: "Bản Không Âm Thanh",
     title: "Link tải client",
     description:
       "Chọn link để tải client. Tất cả các link đều trỏ đến phiên bản mới nhất.",

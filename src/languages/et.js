@@ -299,6 +299,8 @@ export default {
   },
   downloads: {
     title: "Allalaadimise peeglid",
+    full_client: "Täisversioon",
+    no_sound_client: "Versioon ilma helita",
     description:
       "Vali peegel, et klient alla laadida. Kõik lingid viivad uusima versioonini.",
     note1:

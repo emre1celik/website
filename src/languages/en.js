@@ -295,6 +295,8 @@ export default {
   },
   downloads: {
     title: "Download Mirrors",
+    full_client: "Full Client",
+    no_sound_client: "No Sound Client",
     description:
       "Choose a mirror to download the client. All links point to the same latest version.",
     note1:
