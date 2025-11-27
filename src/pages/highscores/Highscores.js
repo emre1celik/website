@@ -49,7 +49,7 @@ function Highscores({ user }) {
   const [selectedEvent, setSelectedEvent] = useState("1");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [activeTab, setActiveTab] = useState("events"); // default tab
+  const [activeTab, setActiveTab] = useState("players"); // default tab
   const [events, setEvents] = useState([]);
   const [guilds, setGuilds] = useState([]);
   const [loadingEvents, setLoadingEvents] = useState(false);
