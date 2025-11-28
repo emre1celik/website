@@ -17,6 +17,7 @@ import {
   faChartBar,
   faTrophy,
   faLock,
+  faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";
@@ -59,7 +60,19 @@ function ControlPanel({ user }) {
   async function handlePaymentCapture(orderId) {
     setActiveTab("profile");
     setOpenDonateModal(true); // open modal automatically
-    setPaymentMessage({ type: "loading", text: "Finalizing payment..." });
+    setPaymentMessage({
+      type: "loading",
+      text: (
+        <>
+          <FontAwesomeIcon
+            icon={faSpinner}
+            spin
+            style={{ marginRight: "8px" }}
+          />
+          Finalizing your payment...
+        </>
+      ),
+    });
 
     try {
       const response = await fetch(
@@ -76,7 +89,16 @@ function ControlPanel({ user }) {
       if (response.ok) {
         setPaymentMessage({
           type: "success",
-          text: "🎉 Payment successful! WCoin has been added.",
+          text: (
+            <>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                style={{ marginRight: "8px", color: "#4caf50" }}
+              />
+              Your payment was successful! Thank you for supporting the server.
+              WCoin has been added.
+            </>
+          ),
         });
 
         // refresh profile to update WCoin
