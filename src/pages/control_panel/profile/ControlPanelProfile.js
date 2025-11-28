@@ -3,6 +3,7 @@ import {
   faCartShopping,
   faSpinner,
   faArrowsRotate,
+  faSackDollar,
 } from "@fortawesome/free-solid-svg-icons";
 import { GreenButton } from "../ControlPanelStyles";
 import { useEffect, useState } from "react";
@@ -327,7 +328,10 @@ export default function ControlPanelProfile({
               maxWidth: "400px",
             }}
           >
-            <h3 style={{ marginBottom: "1rem" }}>Buy WCoin</h3>
+            <h3 style={{ marginBottom: "1rem" }}>
+              <FontAwesomeIcon icon={faSackDollar} />
+              Buy WCoin
+            </h3>
             {paymentMessage && (
               <div
                 style={{
