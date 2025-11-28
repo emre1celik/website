@@ -89,10 +89,11 @@ function ControlPanel({ user }) {
         );
         const updatedProfile = await profileRes.json();
         setProfile(updatedProfile);
+        window.history.replaceState({}, "", "/control-panel");
       } else {
         setPaymentMessage({
           type: "error",
-          text: "❌ " + (data.error || "Payment could not be completed."),
+          text: "❌ Something went wrong while processing your payment. If you were charged, your WCoin has already been delivered.",
         });
       }
     } catch (err) {
