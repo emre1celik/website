@@ -105,10 +105,9 @@ function ControlPanel({ user }) {
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
-    const paymentStatus = params.get("payment");
     const orderId = params.get("token");
 
-    if (paymentStatus === "success" && orderId) {
+    if (location.pathname === "/payment-success" && orderId) {
       handlePaymentCapture(orderId);
     }
   }, [location]);
