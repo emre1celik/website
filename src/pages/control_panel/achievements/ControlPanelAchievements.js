@@ -101,10 +101,20 @@ export default function ControlPanelAchievements({
 
   if (loading)
     return (
-      <p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "150px",
+          fontSize: "1rem",
+          color: "#ccc",
+          gap: "8px",
+        }}
+      >
         <FontAwesomeIcon icon={faSpinner} spin />{" "}
         {translate("controlPanel.loading")}
-      </p>
+      </div>
     );
   if (!achievements?.length)
     return (

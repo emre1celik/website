@@ -27,17 +27,37 @@ export default function ControlPanelStats({
 }) {
   if (charsLoading)
     return (
-      <p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "150px",
+          fontSize: "1rem",
+          color: "#ccc",
+          gap: "8px",
+        }}
+      >
         <FontAwesomeIcon icon={faSpinner} spin />{" "}
         {translate("controlPanel.stats.loadingCharacters")}
-      </p>
+      </div>
     );
   if (!characters.length)
     return (
-      <p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "150px",
+          fontSize: "1rem",
+          color: "#ccc",
+          gap: "8px",
+        }}
+      >
         <FontAwesomeIcon icon={faSpinner} spin />{" "}
         {translate("controlPanel.stats.noCharacters")}
-      </p>
+      </div>
     );
 
   return (

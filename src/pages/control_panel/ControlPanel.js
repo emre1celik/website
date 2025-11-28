@@ -18,6 +18,7 @@ import {
   faTrophy,
   faLock,
   faSpinner,
+  faCheckCircle,
 } from "@fortawesome/free-solid-svg-icons";
 import DwIcon from "../../assets/images/classes/dw.png";
 import DkIcon from "../../assets/images/classes/dk.png";

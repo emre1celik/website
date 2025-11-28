@@ -68,17 +68,37 @@ export default function ControlPanelProfile({
 
   if (loading)
     return (
-      <p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "150px",
+          fontSize: "1rem",
+          color: "#ccc",
+          gap: "8px",
+        }}
+      >
         <FontAwesomeIcon icon={faSpinner} spin />{" "}
         {translate("controlPanel.loading")}
-      </p>
+      </div>
     );
   if (!profile)
     return (
-      <p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "150px",
+          fontSize: "1rem",
+          color: "#ccc",
+          gap: "8px",
+        }}
+      >
         <FontAwesomeIcon icon={faSpinner} spin />{" "}
         {translate("controlPanel.notLoad")}
-      </p>
+      </div>
     );
 
   return (
