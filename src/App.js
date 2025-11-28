@@ -32,6 +32,8 @@ function App() {
               user ? <ControlPanel user={user} /> : <Login onLogin={setUser} />
             }
           />
+          <Route path="/payment-success" element={<ControlPanelPayment />} />
+          <Route path="/payment-cancel" element={<ControlPanelPayment />} />
           <Route path="/downloads" element={<Downloads user={user} />} />
           <Route path="/highscores" element={<Highscores user={user} />} />
           <Route path="/events" element={<Events user={user} />} />
