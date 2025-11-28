@@ -44,6 +44,7 @@ function Login({ user, onLogin }) {
       if (response.ok) {
         const { token } = data;
         localStorage.setItem("apiToken", token);
+        localStorage.setItem("username", data.username);
         onLogin(data.username);
         setMessage({ text: translate("login.success"), type: "success" });
         navigate("/control-panel");

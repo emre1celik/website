@@ -16,6 +16,15 @@ import ControlPanelPayment from "./pages/control_panel/profile/ControlPanelPayme
 function App() {
   const [user, setUser] = useState(null);
 
+  useEffect(() => {
+    const token = localStorage.getItem("apiToken");
+    const username = localStorage.getItem("username");
+
+    if (token && username) {
+      setUser(username);
+    }
+  }, []);
+
   return (
     <TranslationProvider>
       <Router>
