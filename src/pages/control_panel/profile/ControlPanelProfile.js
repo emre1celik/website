@@ -329,8 +329,7 @@ export default function ControlPanelProfile({
             }}
           >
             <h3 style={{ marginBottom: "1rem" }}>
-              <FontAwesomeIcon icon={faSackDollar} />
-              Buy WCoin
+              <FontAwesomeIcon icon={faSackDollar} /> Buy WCoin
             </h3>
             {paymentMessage && (
               <div
