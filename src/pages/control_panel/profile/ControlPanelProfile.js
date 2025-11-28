@@ -5,6 +5,7 @@ import {
   faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import { GreenButton } from "../ControlPanelStyles";
+import { useState } from "react";
 
 export default function ControlPanelProfile({
   profile,
@@ -18,6 +19,45 @@ export default function ControlPanelProfile({
   passwordMessage,
   onChangePasswordSubmit,
 }) {
+  const [showDonateModal, setShowDonateModal] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState(null);
+  const [payLoading, setPayLoading] = useState(false);
+
+  async function handleBuyWcoin() {
+    if (!selectedPackage) return;
+    setPayLoading(true);
+
+    const token = localStorage.getItem("apiToken");
+
+    try {
+      const response = await fetch(
+        "https://api.myramu.online/api/create-payment",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify({
+            package: selectedPackage,
+          }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok && data.url) {
+        window.location.href = data.url; // redirect to Stripe/PayPal checkout
+      } else {
+        alert(data.error || "Payment creation failed.");
+      }
+    } catch (err) {
+      alert("Server error: " + err.message);
+    } finally {
+      setPayLoading(false);
+    }
+  }
+
   if (loading)
     return (
       <p>
@@ -94,7 +134,7 @@ export default function ControlPanelProfile({
           />
           <GreenButton
             style={{ flex: 1 }}
-            onClick={() => alert("This function doesn't work yet!")}
+            onClick={() => setShowDonateModal(true)}
           >
             <FontAwesomeIcon
               icon={faCartShopping}
@@ -235,6 +275,87 @@ export default function ControlPanelProfile({
           </div>
         )}
       </form>
+      {showDonateModal && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            backgroundColor: "rgba(0,0,0,0.7)",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 999,
+          }}
+        >
+          <div
+            style={{
+              backgroundColor: "#1e1e1e",
+              padding: "2rem",
+              borderRadius: "10px",
+              width: "90%",
+              maxWidth: "400px",
+            }}
+          >
+            <h3 style={{ marginBottom: "1rem" }}>Buy WCoin</h3>
+
+            <div style={{ marginBottom: "1rem" }}>
+              <label>Select Package</label>
+              <select
+                value={selectedPackage || ""}
+                onChange={(e) => setSelectedPackage(e.target.value)}
+                style={{
+                  width: "100%",
+                  padding: "0.5rem",
+                  backgroundColor: "#111",
+                  color: "#ccc",
+                  border: "1px solid #444",
+                  borderRadius: "5px",
+                  marginTop: "0.3rem",
+                }}
+              >
+                <option value="">Choose...</option>
+                <option value="500">€5 — 500 WCoin</option>
+                <option value="1100">€10 — 1100 WCoin</option>
+                <option value="2300">€20 — 2300 WCoin</option>
+                <option value="6000">€50 — 6000 WCoin</option>
+              </select>
+            </div>
+
+            <button
+              disabled={!selectedPackage || payLoading}
+              onClick={handleBuyWcoin}
+              style={{
+                padding: "0.7rem 1rem",
+                backgroundColor: selectedPackage ? "#4caf50" : "#444",
+                border: "none",
+                color: "#fff",
+                width: "100%",
+                marginBottom: "0.5rem",
+                cursor: selectedPackage ? "pointer" : "not-allowed",
+              }}
+            >
+              {payLoading ? "Processing..." : "Continue to Payment"}
+            </button>
+
+            <button
+              onClick={() => setShowDonateModal(false)}
+              style={{
+                width: "100%",
+                padding: "0.7rem 1rem",
+                backgroundColor: "#555",
+                border: "none",
+                color: "#fff",
+                cursor: "pointer",
+              }}
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
