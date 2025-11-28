@@ -37,6 +37,7 @@ import { useTranslation } from "../../context/TranslationContext";
 import ControlPanelProfile from "./profile/ControlPanelProfile";
 import ControlPanelStats from "./stats/ControlPanelStats";
 import ControlPanelAchievements from "./achievements/ControlPanelAchievements";
+import { useLocation } from "react-router-dom";
 
 function ControlPanel({ user }) {
   const { translate } = useTranslation();
@@ -51,6 +52,66 @@ function ControlPanel({ user }) {
   const [passwordMessage, setPasswordMessage] = useState(null);
   const [changingPassword, setChangingPassword] = useState(false);
   const tabContentRef = useRef(null);
+  const location = useLocation();
+  const [paymentMessage, setPaymentMessage] = useState(null);
+  const [openDonateModal, setOpenDonateModal] = useState(false);
+
+  async function handlePaymentCapture(orderId) {
+    setActiveTab("profile");
+    setOpenDonateModal(true); // open modal automatically
+    setPaymentMessage({ type: "loading", text: "Finalizing payment..." });
+
+    try {
+      const response = await fetch(
+        "https://api.myramu.online/api/paypal/capture",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ order_id: orderId }),
+        }
+      );
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setPaymentMessage({
+          type: "success",
+          text: "🎉 Payment successful! WCoin has been added.",
+        });
+
+        // refresh profile to update WCoin
+        const token = localStorage.getItem("apiToken");
+        const profileRes = await fetch(
+          "https://api.myramu.online/api/profile",
+          {
+            headers: { Authorization: `Bearer ${token}` },
+          }
+        );
+        const updatedProfile = await profileRes.json();
+        setProfile(updatedProfile);
+      } else {
+        setPaymentMessage({
+          type: "error",
+          text: "❌ " + (data.error || "Payment could not be completed."),
+        });
+      }
+    } catch (err) {
+      setPaymentMessage({
+        type: "error",
+        text: "❌ Server error: " + err.message,
+      });
+    }
+  }
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const paymentStatus = params.get("payment");
+    const orderId = params.get("token");
+
+    if (paymentStatus === "success" && orderId) {
+      handlePaymentCapture(orderId);
+    }
+  }, [location]);
 
   const classNamesMap = {
     dw: "Dark Wizard",
@@ -361,6 +422,9 @@ function ControlPanel({ user }) {
             changingPassword={changingPassword}
             passwordMessage={passwordMessage}
             onChangePasswordSubmit={onChangePasswordSubmit}
+            paymentMessage={paymentMessage}
+            openDonateModal={openDonateModal}
+            setOpenDonateModal={setOpenDonateModal}
           />
         );
       case "stats":

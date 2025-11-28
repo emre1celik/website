@@ -5,7 +5,7 @@ import {
   faArrowsRotate,
 } from "@fortawesome/free-solid-svg-icons";
 import { GreenButton } from "../ControlPanelStyles";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ControlPanelProfile({
   profile,
@@ -18,8 +18,16 @@ export default function ControlPanelProfile({
   changingPassword,
   passwordMessage,
   onChangePasswordSubmit,
+  paymentMessage,
+  openDonateModal,
+  setOpenDonateModal,
 }) {
-  const [showDonateModal, setShowDonateModal] = useState(false);
+  const [showDonateModal, setShowDonateModal] = useState(openDonateModal);
+
+  useEffect(() => {
+    if (openDonateModal) setShowDonateModal(true);
+  }, [openDonateModal]);
+
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [payLoading, setPayLoading] = useState(false);
 
@@ -300,6 +308,32 @@ export default function ControlPanelProfile({
             }}
           >
             <h3 style={{ marginBottom: "1rem" }}>Buy WCoin</h3>
+            {paymentMessage && (
+              <div
+                style={{
+                  padding: "0.7rem",
+                  borderRadius: "5px",
+                  marginBottom: "1rem",
+                  backgroundColor:
+                    paymentMessage.type === "success"
+                      ? "rgba(76, 175, 80, 0.2)"
+                      : paymentMessage.type === "error"
+                      ? "rgba(244, 67, 54, 0.2)"
+                      : "rgba(255,255,255,0.1)",
+                  color:
+                    paymentMessage.type === "success"
+                      ? "#4caf50"
+                      : paymentMessage.type === "error"
+                      ? "#f44336"
+                      : "#ccc",
+                  border: `1px solid ${
+                    paymentMessage.type === "success" ? "#4caf50" : "#f44336"
+                  }`,
+                }}
+              >
+                {paymentMessage.text}
+              </div>
+            )}
 
             <div style={{ marginBottom: "1rem" }}>
               <label>Select Package</label>
@@ -335,9 +369,14 @@ export default function ControlPanelProfile({
                 width: "100%",
                 marginBottom: "0.5rem",
                 cursor: selectedPackage ? "pointer" : "not-allowed",
+                borderRadius: "8px",
               }}
             >
-              {payLoading ? "Processing..." : "Continue to Payment"}
+              {payLoading ? (
+                <FontAwesomeIcon icon={faSpinner} spin />
+              ) : (
+                "Continue to Payment"
+              )}
             </button>
 
             <button
@@ -349,6 +388,7 @@ export default function ControlPanelProfile({
                 border: "none",
                 color: "#fff",
                 cursor: "pointer",
+                borderRadius: "8px",
               }}
             >
               Cancel
