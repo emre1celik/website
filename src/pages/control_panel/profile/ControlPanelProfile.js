@@ -400,7 +400,10 @@ export default function ControlPanelProfile({
             </button>
 
             <button
-              onClick={() => setShowDonateModal(false)}
+              onClick={() => {
+                setShowDonateModal(false);
+                setOpenDonateModal(false); // ← important!
+              }}
               style={{
                 width: "100%",
                 padding: "0.7rem 1rem",

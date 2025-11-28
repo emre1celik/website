@@ -502,7 +502,11 @@ function ControlPanel({ user }) {
             <ControlPanelTabs>
               <ControlPanelTabButton
                 active={activeTab === "profile"}
-                onClick={() => setActiveTab("profile")}
+                onClick={() => {
+                  setActiveTab("profile");
+                  setOpenDonateModal(false);
+                  setPaymentMessage(null);
+                }}
               >
                 <FontAwesomeIcon icon={faUser} />
                 <span>{translate("controlPanel.tabs.profile")}</span>
@@ -510,7 +514,11 @@ function ControlPanel({ user }) {
 
               <ControlPanelTabButton
                 active={activeTab === "stats"}
-                onClick={() => setActiveTab("stats")}
+                onClick={() => {
+                  setActiveTab("stats");
+                  setOpenDonateModal(false);
+                  setPaymentMessage(null);
+                }}
               >
                 <FontAwesomeIcon icon={faChartBar} />
                 <span>{translate("controlPanel.tabs.stats")}</span>
@@ -518,7 +526,11 @@ function ControlPanel({ user }) {
 
               <ControlPanelTabButton
                 active={activeTab === "achievements"}
-                onClick={() => setActiveTab("achievements")}
+                onClick={() => {
+                  setActiveTab("achievements");
+                  setOpenDonateModal(false);
+                  setPaymentMessage(null);
+                }}
               >
                 <FontAwesomeIcon icon={faTrophy} />
                 <span>Rewards</span>
