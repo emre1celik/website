@@ -446,6 +446,11 @@ function ControlPanel({ user }) {
             paymentMessage={paymentMessage}
             openDonateModal={openDonateModal}
             setOpenDonateModal={setOpenDonateModal}
+            onLogout={() => {
+              // clears the user globally
+              localStorage.removeItem("apiToken");
+              window.location.reload(); // simplest way to force Navigation to update
+            }}
           />
         );
       case "stats":

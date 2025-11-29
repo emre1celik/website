@@ -24,6 +24,7 @@ export default function ControlPanelProfile({
   paymentMessage,
   openDonateModal,
   setOpenDonateModal,
+  onLogout,
 }) {
   const [showDonateModal, setShowDonateModal] = useState(openDonateModal);
 
@@ -107,6 +108,7 @@ export default function ControlPanelProfile({
 
   function handleLogout() {
     localStorage.removeItem("apiToken");
+    if (typeof onLogout === "function") onLogout(); // ← notify parent
     navigate("/login");
   }
 
