@@ -4,9 +4,11 @@ import {
   faSpinner,
   faArrowsRotate,
   faSackDollar,
+  faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 import { GreenButton } from "../ControlPanelStyles";
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function ControlPanelProfile({
   profile,
@@ -32,6 +34,7 @@ export default function ControlPanelProfile({
   const [selectedPackage, setSelectedPackage] = useState(null);
   const [payLoading, setPayLoading] = useState(false);
 
+  const navigate = useNavigate();
   async function handleBuyWcoin() {
     if (!selectedPackage) return;
     setPayLoading(true);
@@ -101,6 +104,11 @@ export default function ControlPanelProfile({
         {translate("controlPanel.notLoad")}
       </div>
     );
+
+  function handleLogout() {
+    localStorage.removeItem("apiToken");
+    navigate("/login");
+  }
 
   return (
     <div>
@@ -192,6 +200,25 @@ export default function ControlPanelProfile({
             }}
           />
         </div>
+      </div>
+
+      <div style={{ marginBottom: "1rem" }}>
+        <label>{translate("controlPanel.profile.lastLogin")}</label>
+        <br />
+        <input
+          type="text"
+          value={profile.last_login}
+          disabled
+          style={{
+            width: "100%",
+            padding: "0.5rem",
+            marginTop: "0.3rem",
+            backgroundColor: "rgba(255,255,255,0.1)",
+            border: "1px solid #555",
+            borderRadius: "5px",
+            color: "#ccc",
+          }}
+        />
       </div>
 
       <div style={{ marginBottom: "1rem" }}>
