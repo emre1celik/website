@@ -85,8 +85,6 @@ function ControlPanel({ user }) {
         }
       );
 
-      const data = await response.json();
-
       if (response.ok) {
         setPaymentMessage({
           type: "success",
