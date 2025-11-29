@@ -221,24 +221,26 @@ export default function ControlPanelProfile({
         />
       </div>
 
-      <div style={{ marginBottom: "1rem" }}>
-        <label>{translate("controlPanel.profile.lastLogin")}</label>
-        <br />
-        <input
-          type="text"
-          value={profile.last_login}
-          disabled
-          style={{
-            width: "100%",
-            padding: "0.5rem",
-            marginTop: "0.3rem",
-            backgroundColor: "rgba(255,255,255,0.1)",
-            border: "1px solid #555",
-            borderRadius: "5px",
-            color: "#ccc",
-          }}
+      <button
+        onClick={handleLogout}
+        style={{
+          padding: "0.7rem 1.5rem",
+          backgroundColor: "#c62828", // red logout button
+          border: "none",
+          borderRadius: "5px",
+          color: "#fff",
+          cursor: "pointer",
+          width: "100%",
+          marginBottom: "1rem",
+          marginTop: "0.5rem",
+        }}
+      >
+        <FontAwesomeIcon
+          icon={faRightFromBracket}
+          style={{ marginRight: "8px" }}
         />
-      </div>
+        Logout
+      </button>
 
       <hr style={{ borderColor: "#333", margin: "2rem 0" }} />
       <h3>{translate("controlPanel.settings.changePassword")}</h3>
