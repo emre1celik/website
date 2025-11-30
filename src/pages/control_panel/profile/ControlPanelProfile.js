@@ -227,7 +227,7 @@ export default function ControlPanelProfile({
         onClick={handleLogout}
         style={{
           padding: "0.7rem 1.5rem",
-          backgroundColor: "#c24646ff", // red logout button
+          backgroundColor: "#4caf50", // red logout button
           border: "none",
           borderRadius: "5px",
           color: "#fff",
