@@ -20,6 +20,18 @@ export const RegisterContent = styled.main`
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  animation: fadeInUp 0.8s ease both;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   box-sizing: border-box;
   position: relative;
   min-height: 0; /* crucial for flex children with overflow */

@@ -33,6 +33,18 @@ export const InfoBox = styled.div`
   max-width: 600px;
   width: 100%;
   font-size: 14px;
+  animation: fadeInUp 0.8s ease both;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   text-align: left;
   display: flex;
   flex-direction: column;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const NavigationWrapper = styled.nav`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,6 +19,7 @@ export const NavigationLogo = styled.a`
   text-decoration: none;
   color: white;
 `;
+
 export const HamburgerButton = styled.button`
   display: none;
   background: none;
@@ -51,9 +53,7 @@ export const NavigationLinks = styled.ul`
   align-items: center;
 
   @media (max-width: 850px) {
-    li {
-      display: none;
-    }
+    display: none;
   }
 `;
 
@@ -84,7 +84,6 @@ export const NavigationUserIcon = styled(NavigationIcon)`
   color: #4caf50;
 `;
 
-/* User name */
 export const NavigationUserName = styled.span`
   font-weight: bold;
   color: white;
@@ -95,31 +94,63 @@ export const NavigationLabel = styled.span`
     display: none;
   }
 `;
+export const MobileDrawer = styled.ul`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
 
-export const CollapsedMenu = styled.ul`
-  position: absolute;
-  top: 55px;
-  right: 3rem;
-  background: rgba(0, 0, 0, 0.9);
+  margin: 0; /* ✅ kill default UL margin */
+  padding: 1.5rem 1.5rem 2rem;
+
+  background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(12px);
   list-style: none;
-  padding: 1.5rem;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  z-index: 1000;
+  gap: 1.25rem;
+  z-index: 2000;
+
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  transform: ${({ $open }) => ($open ? "translateY(0)" : "translateY(-120%)")};
+  transition: transform 0.1s ease;
+
+  opacity: ${({ $open }) => ($open ? 1 : 0)};
+  pointer-events: ${({ $open }) => ($open ? "auto" : "none")};
+  padding-left: 55px;
 
   li {
     display: flex;
     align-items: center;
   }
+`;
 
-  ${NavigationItemLink} {
-    font-weight: bold;
-    &:hover {
-      color: #4caf50;
-    }
-  }
+export const DrawerHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+`;
+
+export const DrawerLogo = styled(NavigationLogo)`
+  font-size: 2rem;
+`;
+
+export const DrawerCloseButton = styled.button`
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem;
+  line-height: 1;
+`;
+
+export const DrawerBackdrop = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1500;
 `;

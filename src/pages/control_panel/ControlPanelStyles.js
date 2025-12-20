@@ -40,6 +40,18 @@ export const ControlPanelContent = styled.main`
   align-items: flex-start;
   padding: 2rem;
   box-sizing: border-box;
+  animation: fadeInUp 0.8s ease both;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   @media (max-width: 432px) {
     padding: 1rem;

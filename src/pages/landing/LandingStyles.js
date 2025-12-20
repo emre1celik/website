@@ -25,19 +25,33 @@ export const LandingHero = styled.header`
   padding: 2rem;
   box-sizing: border-box;
   position: relative;
+  animation: fadeInUp 0.8s ease both;
 
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   @media (max-width: 432px) {
     padding: 1rem;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
     margin-bottom: 2rem;
+    max-width: 600px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
   }
 `;
 
@@ -77,6 +91,7 @@ export const LandingButton = styled.button`
 
     &:hover {
       background-color: #449d46;
+      transform: translateY(-2px) scale(1.02);
     }
   }
 
@@ -86,6 +101,7 @@ export const LandingButton = styled.button`
 
     &:hover {
       background-color: #449d46;
+      transform: translateY(-2px) scale(1.02);
     }
   }
 `;

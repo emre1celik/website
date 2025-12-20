@@ -18,6 +18,18 @@ export const NotFoundContent = styled.header`
   flex: 1;
   display: flex;
   flex-direction: column;
+  animation: fadeInUp 0.8s ease both;
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   justify-content: center;
   align-items: center;
   text-align: center;
