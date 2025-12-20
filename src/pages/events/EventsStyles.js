@@ -1,6 +1,5 @@
 // src/pages/events/EventsStyles.js
 import styled from "styled-components";
-import backgroundImg from "../../assets/images/2151470664.jpg";
 
 // Page wrapper with background
 export const EventsWrapper = styled.div`

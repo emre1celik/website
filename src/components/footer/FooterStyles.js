@@ -19,7 +19,7 @@ export const ThemeSwitcher = styled.div`
   display: flex;
   justify-content: center;
   gap: 0.5rem;
-  margin-top: 0.1rem;
+  margin-top: 0.5rem;
 `;
 
 export const ThemeButton = styled.button`

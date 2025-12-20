@@ -1,32 +1,41 @@
-/* App.css - minimal global styles */
+/* App.css */
 
-/* Reset and global box-sizing */
+/* Reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Ensure full height for the root elements */
+/* Full height */
 html, body, #root {
   height: 100%;
-  font-family: 'AlbertusMedium', Arial, sans-serif; /* fallback in case styled-components fail */
+  font-family: 'AlbertusMedium', Arial, sans-serif;
   color: white;
-  background-color: #000; /* fallback background */
+  background-color: #000;
 }
 
-/* Links: remove default underline globally */
+/* Smooth transitions for theme-related properties */
+* {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Links */
 a {
   text-decoration: none;
-  color: inherit; /* use current text color unless overridden */
+  color: inherit;
 }
 
-/* Optional: smooth scroll for all scrollable boxes */
+/* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Optional: default button styles (can override in styled-components if needed) */
+/* Buttons */
 button {
   font-family: 'AlbertusMedium', Arial, sans-serif;
   cursor: pointer;
@@ -34,7 +43,14 @@ button {
   outline: none;
 }
 
-/* Optional: default input styles */
+/* Inputs */
 input, select, textarea {
   font-family: 'AlbertusMedium', Arial, sans-serif;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
 }

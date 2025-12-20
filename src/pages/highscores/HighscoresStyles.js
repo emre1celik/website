@@ -1,5 +1,4 @@
 import styled, { keyframes, css } from "styled-components";
-import backgroundImg from "../../assets/images/2151470664.jpg";
 
 export const HighscoresWrapper = styled.div`
   display: flex;

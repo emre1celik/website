@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import backgroundImg from "../assets/images/2151470664.jpg";
 import AlbertusFont from "../assets/fonts/albertusmedium_regular.ttf";
 
 const GlobalStyles = createGlobalStyle`

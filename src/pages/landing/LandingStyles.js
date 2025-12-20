@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/images/2151470664.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const LandingWrapper = styled.div`
