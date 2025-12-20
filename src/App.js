@@ -27,7 +27,7 @@ function App() {
     }
   }, []);
 
-  const [theme, setTheme] = useState(greenTheme);
+  const [theme, setTheme] = useState(redTheme);
 
   return (
     <TranslationProvider>
