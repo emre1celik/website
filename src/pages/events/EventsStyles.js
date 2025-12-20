@@ -7,7 +7,7 @@ export const EventsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${backgroundImg});
+  background-image: url(${({ theme }) => theme.background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

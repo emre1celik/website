@@ -41,7 +41,7 @@ import ControlPanelStats from "./stats/ControlPanelStats";
 import ControlPanelAchievements from "./achievements/ControlPanelAchievements";
 import { useLocation } from "react-router-dom";
 
-function ControlPanel({ user }) {
+function ControlPanel({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
   const [characterActionMessage, setCharacterActionMessage] = useState(null);
   const [activeTab, setActiveTab] = useState("profile");
@@ -546,9 +546,7 @@ function ControlPanel({ user }) {
           </ControlPanelBox>
         </ControlPanelContent>
 
-        <Footer>
-          <p>© 2025 MyraMU. All rights reserved.</p>
-        </Footer>
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </ControlPanelWrapper>
     </>
   );

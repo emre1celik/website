@@ -11,6 +11,8 @@ import CookieBanner from "./components/cookies/CookieBanner";
 import Events from "./pages/events/Events";
 import { TranslationProvider } from "./context/TranslationContext";
 import Info from "./pages/info/Info";
+import { greenTheme, blueTheme, redTheme } from "./styles/ThemeStyles";
+import { ThemeProvider } from "styled-components";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -24,37 +26,135 @@ function App() {
     }
   }, []);
 
+  const [theme, setTheme] = useState(greenTheme);
+
   return (
     <TranslationProvider>
       <Router>
         <CookieBanner />
-        <Routes>
-          <Route path="/" element={<Landing user={user} />} />
-          <Route path="/register" element={<Register user={user} />} />
-          <Route
-            path="/login"
-            element={<Login onLogin={setUser} user={user} />}
-          />
-          <Route
-            path="/control-panel"
-            element={
-              user ? <ControlPanel user={user} /> : <Login onLogin={setUser} />
-            }
-          />
-          <Route
-            path="/payment-success"
-            element={<ControlPanel user={user} />}
-          />
-          <Route
-            path="/payment-cancel"
-            element={<ControlPanel user={user} />}
-          />
-          <Route path="/downloads" element={<Downloads user={user} />} />
-          <Route path="/highscores" element={<Highscores user={user} />} />
-          <Route path="/events" element={<Events user={user} />} />
-          <Route path="/info" element={<Info user={user} />} />
-          <Route path="*" element={<NotFound user={user} />} />
-        </Routes>
+        <ThemeProvider theme={theme}>
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Landing
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/register"
+              element={
+                <Register
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/login"
+              element={
+                <Login
+                  onLogin={setUser}
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/control-panel"
+              element={
+                user ? (
+                  <ControlPanel
+                    user={user}
+                    currentTheme={theme}
+                    onThemeChange={setTheme}
+                  />
+                ) : (
+                  <Login
+                    onLogin={setUser}
+                    currentTheme={theme}
+                    onThemeChange={setTheme}
+                  />
+                )
+              }
+            />
+            <Route
+              path="/payment-success"
+              element={
+                <ControlPanel
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/payment-cancel"
+              element={
+                <ControlPanel
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/downloads"
+              element={
+                <Downloads
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/highscores"
+              element={
+                <Highscores
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/events"
+              element={
+                <Events
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="/info"
+              element={
+                <Info
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+            <Route
+              path="*"
+              element={
+                <NotFound
+                  user={user}
+                  currentTheme={theme}
+                  onThemeChange={setTheme}
+                />
+              }
+            />
+          </Routes>
+        </ThemeProvider>
       </Router>
     </TranslationProvider>
   );

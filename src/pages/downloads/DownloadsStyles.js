@@ -1,15 +1,14 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/images/2151470664.jpg";
 
 export const DownloadsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${backgroundImg});
+  background-image: url(${({ theme }) => theme.background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: ${({ theme }) => theme.text};
   user-select: none;
 `;
 

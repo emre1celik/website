@@ -209,7 +209,7 @@ function formatCountdown(nextEvent) {
   return `${hours}h ${minutes}m ${seconds}s`;
 }
 
-function Events({ user }) {
+function Events({ user, currentTheme, onThemeChange }) {
   const [nextEvents, setNextEvents] = useState({});
 
   useEffect(() => {
@@ -282,9 +282,7 @@ function Events({ user }) {
           </HighscoresTable>
         </EventsBox>
       </EventsContent>
-      <Footer>
-        <p>© 2025 MyraMU. All rights reserved.</p>
-      </Footer>
+      <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
     </EventsWrapper>
   );
 }

@@ -13,7 +13,7 @@ import { useTranslation } from "../../context/TranslationContext";
 import { Link } from "react-router-dom";
 import TranslatedJSX from "../../components/language/TranslatedJSX";
 
-function Register({ user }) {
+function Register({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
   const [form, setForm] = useState({
     username: "",
@@ -217,9 +217,7 @@ function Register({ user }) {
           </RegisterBox>
         </RegisterContent>
 
-        <Footer>
-          <p>© 2025 MyraMU. All rights reserved.</p>
-        </Footer>
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </RegisterWrapper>
     </>
   );

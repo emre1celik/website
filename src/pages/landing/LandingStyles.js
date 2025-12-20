@@ -6,11 +6,11 @@ export const LandingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${backgroundImg});
+  background-image: url(${({ theme }) => theme.background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: ${({ theme }) => theme.text};
   font-family: "AlbertusMedium", Arial, sans-serif;
   user-select: none;
 `;
@@ -77,32 +77,15 @@ export const LandingButton = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: white;
+  background: ${({ theme }) => theme.primary};
   transition: 0.3s, transform 0.2s;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 
   &:hover {
-    transform: translateY(-2px);
+    background: ${({ theme }) => theme.primaryHover};
+    transform: translateY(-2px) scale(1.02);
     box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6);
-  }
-
-  &.download {
-    background-color: #449d46;
-    color: white;
-
-    &:hover {
-      background-color: #449d46;
-      transform: translateY(-2px) scale(1.02);
-    }
-  }
-
-  &.register {
-    background-color: #449d46;
-    color: white;
-
-    &:hover {
-      background-color: #449d46;
-      transform: translateY(-2px) scale(1.02);
-    }
   }
 `;
 

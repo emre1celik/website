@@ -8,7 +8,7 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
 
-function Login({ user, onLogin }) {
+function Login({ user, onLogin, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
   const [form, setForm] = useState({ username: "", password: "" });
   const [message, setMessage] = useState({ text: "", type: "" });
@@ -147,9 +147,7 @@ function Login({ user, onLogin }) {
           </LoginBox>
         </LoginContent>
 
-        <Footer>
-          <p>© 2025 MyraMU. All rights reserved.</p>
-        </Footer>
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </LoginWrapper>
     </>
   );

@@ -42,7 +42,7 @@ import {
 import { useTranslation } from "../../context/TranslationContext";
 import GuildEmblem from "../../components/guild_emblem/GuildEmblem";
 
-function Highscores({ user }) {
+function Highscores({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
   const [selectedClass, setSelectedClass] = useState("all");
   const [players, setPlayers] = useState([]);
@@ -646,9 +646,7 @@ function Highscores({ user }) {
           </HighscoresBox>
         </HighscoresContent>
 
-        <Footer>
-          <p>© 2025 MyraMU. All rights reserved.</p>
-        </Footer>
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </HighscoresWrapper>
     </>
   );

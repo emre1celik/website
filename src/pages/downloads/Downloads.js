@@ -13,7 +13,7 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
 
-function Downloads({ user }) {
+function Downloads({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
 
   const fullMirrors = [
@@ -125,8 +125,7 @@ function Downloads({ user }) {
             </DownloadsNote>
           </DownloadsBox>
         </DownloadsHero>
-
-        <Footer />
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </DownloadsWrapper>
     </>
   );

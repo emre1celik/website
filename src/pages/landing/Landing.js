@@ -12,8 +12,7 @@ import {
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
-
-function Landing({ user }) {
+function Landing({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
 
   return (
@@ -61,10 +60,7 @@ function Landing({ user }) {
             </Link>
           </LandingButtons>
         </LandingHero>
-
-        <Footer>
-          <p>© 2025 MyraMU. All rights reserved.</p>
-        </Footer>
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </LandingWrapper>
     </>
   );

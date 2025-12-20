@@ -27,7 +27,7 @@ import {
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
 
-function Info({ user }) {
+function Info({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
 
   const sections = [
@@ -406,7 +406,8 @@ function Info({ user }) {
             </div>
           </InfoBox>
         </InfoHero>
-        <Footer />
+
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </InfoWrapper>
     </>
   );

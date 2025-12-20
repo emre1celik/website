@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
 
-function NotFound({ user }) {
+function NotFound({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
 
   return (
@@ -29,9 +29,7 @@ function NotFound({ user }) {
           <p>{translate("notFound.message")}</p>
         </NotFoundContent>
 
-        <Footer>
-          <p>© 2025 MyraMU. All rights reserved.</p>
-        </Footer>
+        <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </NotFoundWrapper>
     </>
   );
