@@ -85,12 +85,12 @@ export const LoginBox = styled.div`
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      background-color: #4caf50;
+      background-color: ${({ theme }) => theme.primary};
       color: white;
       transition: 0.3s;
 
       &:hover {
-        background-color: #449d46;
+        background-color: ${({ theme }) => theme.primaryHover};
       }
 
       &:disabled {
@@ -105,7 +105,7 @@ export const LoginBox = styled.div`
       margin-top: 0.5rem;
 
       a {
-        color: #4caf50;
+        color: ${({ theme }) => theme.primary};
         text-decoration: underline;
       }
     }

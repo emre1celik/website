@@ -121,9 +121,14 @@ function Login({ user, onLogin, currentTheme, onThemeChange }) {
                     message.type === "success"
                       ? "rgba(76, 175, 80, 0.2)"
                       : "rgba(244, 67, 54, 0.2)",
-                  color: message.type === "success" ? "#4caf50" : "#f44336",
+                  color:
+                    message.type === "success"
+                      ? currentTheme.primary
+                      : "#f44336",
                   border: `1px solid ${
-                    message.type === "success" ? "#4caf50" : "#f44336"
+                    message.type === "success"
+                      ? currentTheme.primary
+                      : "#f44336"
                   }`,
                   borderLeft:
                     message.type === "success"
@@ -139,7 +144,7 @@ function Login({ user, onLogin, currentTheme, onThemeChange }) {
               {translate("login.noAccount")}{" "}
               <Link
                 to="/register"
-                style={{ textDecoration: "none", color: "#4caf50" }}
+                style={{ textDecoration: "none", color: currentTheme.primary }}
               >
                 {translate("login.registerHere")}
               </Link>

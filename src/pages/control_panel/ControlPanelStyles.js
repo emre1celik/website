@@ -1,35 +1,39 @@
 import styled from "styled-components";
-import backgroundImg from "../../assets/images/2151470664.jpg";
 
 export const ControlPanelWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${({ theme }) => theme?.background});
+  background-image: url(${({ theme }) => theme?.background || "none"});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: white;
+  color: ${({ theme }) => theme?.text || "#fff"};
   font-family: "AlbertusMedium", Arial, sans-serif;
   user-select: none;
 `;
 
 export const GreenButton = styled.button`
   padding: 0.7rem 1.5rem;
-  background-color: ${({ theme }) => theme.primary};
+  background-color: ${({ theme }) => theme?.primary || "#4caf50"};
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   color: #fff;
   cursor: pointer;
-  transition: background 0.3s;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.primary};
+    background-color: ${({ theme }) => theme?.primary || "#4caf50"};
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
 
   &:disabled {
     opacity: 0.6;
     cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
   }
 `;
 
@@ -61,16 +65,19 @@ export const ControlPanelContent = styled.main`
 export const ControlPanelBox = styled.div`
   background: rgba(0, 0, 0, 0.7);
   padding: 2rem 3rem;
-  border-radius: 10px;
-  width: 100%;
+  border-radius: 12px;
+  width: 700px;
+  max-width: 100%;
+  height: 700px;
+  max-height: 75vh;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  width: 700px;
-  height: 700px;
-
-  max-height: 75vh;
   overflow-y: auto;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -79,24 +86,16 @@ export const ControlPanelBox = styled.div`
     background: #666;
     border-radius: 4px;
   }
-  &::-webkit-scrollbar-thumb:hover {
-    background: #666;
-  }
-
-  &:hover {
-    color: #fff;
-  }
 
   h2 {
     margin-bottom: 2rem;
     font-size: 2rem;
-    color: white;
+    color: #fff;
   }
 `;
 
 export const ControlPanelTabs = styled.div`
   display: flex;
-  gap: 0;
   margin-bottom: 1.5rem;
   border-bottom: 2px solid #555;
   width: 100%;
@@ -107,7 +106,8 @@ export const ControlPanelStatsButtonText = styled.span`
     display: none;
   }
 `;
-// === Achievements Tab Styles ===
+
+// === Achievements & Characters ===
 
 export const AchievementList = styled.div`
   display: flex;
@@ -115,11 +115,12 @@ export const AchievementList = styled.div`
   gap: 1rem;
   width: 100%;
 `;
+
 export const CharacterCard = styled.div`
   margin-bottom: 1.5rem;
   padding: 1.5rem;
-  border: 1px solid #4caf50;
-  border-left: 6px solid #4caf50;
+  border: 1px solid ${({ theme }) => theme?.primary || "#4caf50"};
+  border-left: 6px solid ${({ theme }) => theme?.primary || "#4caf50"};
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
@@ -141,7 +142,7 @@ export const CharacterHeader = styled.div`
   h4 {
     margin: 0;
     font-size: 1.4rem;
-    color: #4caf50;
+    color: ${({ theme }) => theme?.primary || "#4caf50"};
   }
 
   .class-info {
@@ -176,6 +177,7 @@ export const CharacterStats = styled.div`
     color: #fff;
   }
 `;
+
 export const MountSelector = styled.div`
   display: flex;
   align-items: center;
@@ -189,7 +191,7 @@ export const MountSelector = styled.div`
   width: fit-content;
 
   label {
-    color: #4caf50;
+    color: ${({ theme }) => theme?.primary || "#4caf50"};
     font-weight: bold;
   }
 
@@ -203,10 +205,10 @@ export const MountSelector = styled.div`
     cursor: pointer;
     appearance: none;
     font-family: inherit;
-  }
 
-  select:hover {
-    background: rgba(255, 255, 255, 0.05);
+    &:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
   }
 
   select option {
@@ -227,10 +229,11 @@ export const AchievementItem = styled.div`
   align-items: center;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.05);
-  border: 1px solid ${({ claimed }) => (claimed ? "#4caf50" : "#555")};
+  border: 1px solid
+    ${({ claimed, theme }) => (claimed ? theme?.primary || "#4caf50" : "#555")};
   border-left: 6px solid
-    ${({ claimed, unlocked }) =>
-      claimed ? "#4caf50" : unlocked ? "#4caf50" : "#777"};
+    ${({ claimed, unlocked, theme }) =>
+      claimed || unlocked ? theme?.primary || "#4caf50" : "#777"};
   border-radius: 8px;
   padding: 1rem;
   transition: transform 0.2s ease, border-color 0.3s ease;
@@ -259,7 +262,8 @@ export const AchievementInfo = styled.div`
 
   h4 {
     margin: 0;
-    color: ${({ claimed }) => (claimed ? "#4caf50" : "#fff")};
+    color: ${({ claimed, theme }) =>
+      claimed ? theme?.primary || "#4caf50" : "#fff"};
     font-size: 1.1rem;
   }
 
@@ -283,12 +287,15 @@ export const ControlPanelTabButton = styled.button`
   padding: 0.75rem 1.5rem;
   background: transparent;
   border: none;
-  border-bottom: ${({ active }) =>
-    active ? "4px solid #4caf50" : "4px solid transparent"};
+  border-bottom: ${({ active, theme }) =>
+    active
+      ? `4px solid ${theme?.primary || "#4caf50"}`
+      : "4px solid transparent"};
   color: ${({ active }) => (active ? "#fff" : "#bbb")};
   font-weight: ${({ active }) => (active ? "bold" : "normal")};
   cursor: pointer;
   transition: all 0.3s;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -296,13 +303,14 @@ export const ControlPanelTabButton = styled.button`
   font-size: 16px;
 
   span {
-    display: inline; /* default show text */
+    display: inline;
   }
 
   @media (max-width: 670px) {
     padding: 0.75rem;
+
     span {
-      display: none; /* hide text */
+      display: none;
     }
   }
 `;
