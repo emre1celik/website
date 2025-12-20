@@ -344,7 +344,6 @@ export default function ControlPanelProfile({
             left: 0,
             width: "100%",
             height: "100%",
-            backgroundColor: "rgba(0,0,0,0.7)",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -358,6 +357,7 @@ export default function ControlPanelProfile({
               borderRadius: "10px",
               width: "90%",
               maxWidth: "400px",
+              boxShadow: "0 0 10px rgba(0,0,0,0.5)",
             }}
           >
             <h3 style={{ marginBottom: "1rem" }}>
