@@ -14,6 +14,11 @@ import Info from "./pages/info/Info";
 import { greenTheme, blueTheme, redTheme } from "./styles/ThemeStyles";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
+const themes = {
+  green: greenTheme,
+  blue: blueTheme,
+  red: redTheme,
+};
 
 function App() {
   const [user, setUser] = useState(null);
@@ -27,8 +32,16 @@ function App() {
     }
   }, []);
 
-  const [theme, setTheme] = useState(redTheme);
+  const [theme, setTheme] = useState(() => {
+    const saved = localStorage.getItem("theme");
+    return themes[saved] || redTheme;
+  });
 
+  useEffect(() => {
+    if (theme?.name) {
+      localStorage.setItem("theme", theme.name);
+    }
+  }, [theme]);
   return (
     <TranslationProvider>
       <Router>
