@@ -41,70 +41,70 @@ function Info({ user, currentTheme, onThemeChange }) {
             <li>
               <FontAwesomeIcon
                 icon={faBolt}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.expRate")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faStar}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.masterExp")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faCrown}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.majesticExp")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faGem}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.excellentDrop")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faGift}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.resetReward")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faRedo}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.grandReset")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faTrophy}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.grandResetReward")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faClock}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.eventTimers")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faDragon}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.bossRespawns")}
             </li>
             <li>
               <FontAwesomeIcon
                 icon={faTerminal}
-                style={{ color: "#4caf50", marginRight: "8px" }}
+                style={{ color: currentTheme.primary, marginRight: "8px" }}
               />
               {translate("guide.serverInfo.list.commands")}
             </li>
@@ -183,7 +183,7 @@ function Info({ user, currentTheme, onThemeChange }) {
               <br />
             </li>
 
-            <hr style={{ borderColor: "#4caf50" }} />
+            <hr style={{ borderColor: currentTheme.primary }} />
             <br />
 
             <li>
@@ -200,7 +200,7 @@ function Info({ user, currentTheme, onThemeChange }) {
               </ol>
             </li>
 
-            <hr style={{ borderColor: "#4caf50" }} />
+            <hr style={{ borderColor: currentTheme.primary }} />
             <br />
 
             <li>
@@ -219,7 +219,7 @@ function Info({ user, currentTheme, onThemeChange }) {
               <strong>{translate("questsEvo.fourthClass.rewards")}</strong>
             </li>
 
-            <hr style={{ borderColor: "#4caf50" }} />
+            <hr style={{ borderColor: currentTheme.primary }} />
             <br />
 
             <li>
@@ -375,14 +375,14 @@ function Info({ user, currentTheme, onThemeChange }) {
                 onClick={handlePrev}
                 style={{
                   cursor: "pointer",
-                  color: "#4caf50",
+                  color: currentTheme.primary,
                   fontSize: "1.5rem",
                 }}
               />
               <h3 style={{ display: "flex", alignItems: "center" }}>
                 <FontAwesomeIcon
                   icon={current.icon}
-                  style={{ marginRight: "8px", color: "#4caf50" }}
+                  style={{ marginRight: "8px", color: currentTheme.primary }}
                 />
                 {current.title}
               </h3>
@@ -391,13 +391,13 @@ function Info({ user, currentTheme, onThemeChange }) {
                 onClick={handleNext}
                 style={{
                   cursor: "pointer",
-                  color: "#4caf50",
+                  color: currentTheme.primary,
                   fontSize: "1.5rem",
                 }}
               />
             </div>
 
-            <hr style={{ width: "100%", borderColor: "#4caf50" }} />
+            <hr style={{ width: "100%", borderColor: currentTheme.primary }} />
 
             <div
               style={{ marginTop: "1rem", transition: "all 0.3s ease-in-out" }}

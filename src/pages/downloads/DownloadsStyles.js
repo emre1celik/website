@@ -4,7 +4,7 @@ export const DownloadsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${({ theme }) => theme.background});
+  background-image: url(${({ theme }) => theme?.background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,14 +86,16 @@ export const DownloadsMirrorButton = styled.a`
     padding: 0.75rem 3rem;
     border: none;
     border-radius: 5px;
-    background-color: #4caf50;
+
+    background: ${({ theme }) => theme.primary};
     color: white;
     font-weight: bold;
     cursor: pointer;
-    transition: 0.3s, transform 0.2s;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
 
     &:hover {
-      transform: translateY(-2px);
+      background: ${({ theme }) => theme.primaryHover};
+      transform: translateY(-2px) scale(1.02);
       box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6);
     }
   }

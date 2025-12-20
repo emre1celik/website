@@ -7,7 +7,7 @@ export const EventsWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${({ theme }) => theme.background});
+  background-image: url(${({ theme }) => theme?.background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -108,7 +108,7 @@ export const EventCard = styled.div`
   h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: #4caf50;
+    color: ${({ theme }) => theme.primary};
   }
 
   p {

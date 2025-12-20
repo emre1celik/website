@@ -13,6 +13,7 @@ import { TranslationProvider } from "./context/TranslationContext";
 import Info from "./pages/info/Info";
 import { greenTheme, blueTheme, redTheme } from "./styles/ThemeStyles";
 import { ThemeProvider } from "styled-components";
+import GlobalStyles from "./styles/GlobalStyles";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -33,6 +34,7 @@ function App() {
       <Router>
         <CookieBanner />
         <ThemeProvider theme={theme}>
+          <GlobalStyles />
           <Routes>
             <Route
               path="/"

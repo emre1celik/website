@@ -5,7 +5,7 @@ export const ControlPanelWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${({ theme }) => theme.background});
+  background-image: url(${({ theme }) => theme?.background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -16,7 +16,7 @@ export const ControlPanelWrapper = styled.div`
 
 export const GreenButton = styled.button`
   padding: 0.7rem 1.5rem;
-  background-color: #4caf50;
+  background-color: ${({ theme }) => theme.primary};
   border: none;
   border-radius: 5px;
   color: #fff;
@@ -24,7 +24,7 @@ export const GreenButton = styled.button`
   transition: background 0.3s;
 
   &:hover {
-    background-color: #45a049;
+    background-color: ${({ theme }) => theme.primary};
   }
 
   &:disabled {

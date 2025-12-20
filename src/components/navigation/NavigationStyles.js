@@ -61,12 +61,12 @@ export const NavigationItemLink = styled.a`
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: ${(props) => (props.$active ? "#4caf50" : "white")};
+  color: ${({ $active, theme }) => ($active ? theme.primary : theme.text)};
   font-weight: bold;
   transition: color 0.3s;
 
   &:hover {
-    color: #4caf50;
+    color: ${({ theme }) => theme.primaryHover};
   }
 `;
 
@@ -81,7 +81,7 @@ export const NavigationIcon = styled.span`
 `;
 
 export const NavigationUserIcon = styled(NavigationIcon)`
-  color: #4caf50;
+  color: ${({ theme }) => theme.primary};
 `;
 
 export const NavigationUserName = styled.span`
@@ -142,10 +142,14 @@ export const DrawerLogo = styled(NavigationLogo)`
 export const DrawerCloseButton = styled.button`
   background: none;
   border: none;
-  color: white;
+  color: ${({ theme }) => theme.text};
   cursor: pointer;
   padding: 0.25rem;
   line-height: 1;
+
+  &:hover {
+    color: ${({ theme }) => theme.primary};
+  }
 `;
 
 export const DrawerBackdrop = styled.div`

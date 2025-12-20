@@ -5,7 +5,7 @@ export const HighscoresWrapper = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(${({ theme }) => theme.background});
+  background-image: url(${({ theme }) => theme?.background});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,36 +52,36 @@ const bronzeGlow = keyframes`
   100% { text-shadow: 0 0 5px #cd7f32, 0 0 10px #cd7f32; }
 `;
 
-const greenGlow = keyframes`
-  0% { text-shadow: 0 0 5px #4caf50, 0 0 10px #4caf50; }
-  50% { text-shadow: 0 0 20px #388e3c, 0 0 30px #4caf50; }
-  100% { text-shadow: 0 0 5px #4caf50, 0 0 10px #4caf50; }
+const themeGlow = (theme) => keyframes`
+  0% { text-shadow: 0 0 5px ${theme.primary}, 0 0 10px ${theme.primary}; }
+  50% { text-shadow: 0 0 20px ${theme.primaryHover}, 0 0 30px ${theme.primary}; }
+  100% { text-shadow: 0 0 5px ${theme.primary}, 0 0 10px ${theme.primary}; }
 `;
 
 export const GlowingName = styled.span`
-  ${({ rank }) =>
+  ${({ rank, theme }) =>
     rank === 0 &&
     css`
       color: gold;
       animation: ${goldGlow} 2s ease-in-out infinite alternate;
     `}
-  ${({ rank }) =>
+  ${({ rank, theme }) =>
     rank === 1 &&
     css`
       color: silver;
       animation: ${silverGlow} 2s ease-in-out infinite alternate;
     `}
-  ${({ rank }) =>
+  ${({ rank, theme }) =>
     rank === 2 &&
     css`
       color: #cd7f32;
       animation: ${bronzeGlow} 2s ease-in-out infinite alternate;
     `}
-  ${({ rank }) =>
+  ${({ rank, theme }) =>
     (rank === 3 || (rank >= 4 && rank <= 25)) &&
     css`
-      color: #4caf50;
-      animation: ${greenGlow} 2s ease-in-out infinite alternate;
+      color: ${theme.primary};
+      animation: ${themeGlow(theme)} 2s ease-in-out infinite alternate;
     `}
 `;
 
@@ -150,16 +150,21 @@ export const HighscoresFilter = styled.div`
 
   label {
     font-weight: bold;
-    color: #fff;
+    color: ${({ theme }) => theme.text};
   }
 
   select {
-    background: #222;
-    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    color: ${({ theme }) => theme.text};
     padding: 0.5rem;
     border-radius: 5px;
-    border: 1px solid #555;
+    border: 1px solid ${({ theme }) => theme.primary};
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px ${({ theme }) => theme.primary};
+    }
   }
 `;
 
@@ -203,7 +208,7 @@ export const HighscoresTable = styled.table`
   }
 
   th {
-    color: #4caf50;
+    color: ${({ theme }) => theme.primary};
     text-transform: uppercase;
   }
 
