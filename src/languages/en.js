@@ -316,7 +316,7 @@ export default {
       WindowMode:1 On, or 0 Off
     `,
     note3_desc: `
-      <strong>⚠️ Font issue:</strong> If you cannot see font and text ingame, but only squares, close the game client. Download the missing font here (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) and click it to install it. Restart the game client afterwards.
+      <strong>⚠️ Font issue:</strong> If you cannot see font and text ingame, but only squares, close the game client. Download the missing font here (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) and click it to install it. Restart the game client afterwards.
     `,
   },
   landing: {

@@ -322,7 +322,7 @@ export default {
       WindowMode:1 Activado, o 0 Desactivado
     `,
     note3_desc: `
-      <strong>⚠️ Problema de fuente:</strong> Si no puedes ver la fuente y el texto en el juego, pero solo ves cuadros, cierra el cliente del juego. Descarga la fuente faltante aquí (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) y haz clic para instalarla. Luego reinicia el cliente del juego.
+      <strong>⚠️ Problema de fuente:</strong> Si no puedes ver la fuente y el texto en el juego, pero solo ves cuadros, cierra el cliente del juego. Descarga la fuente faltante aquí (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) y haz clic para instalarla. Luego reinicia el cliente del juego.
     `,
   },
   events: {

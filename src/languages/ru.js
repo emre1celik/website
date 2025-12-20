@@ -319,7 +319,7 @@ export default {
       WindowMode:1 Вкл, 0 Выкл
     `,
     note3_desc: `
-      <strong>⚠️ Проблема со шрифтом:</strong> Если вы не видите шрифт и текст в игре, а только квадраты, закройте игровой клиент. Скачайте недостающий шрифт здесь (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) и установите его. Затем перезапустите игровой клиент.
+      <strong>⚠️ Проблема со шрифтом:</strong> Если вы не видите шрифт и текст в игре, а только квадраты, закройте игровой клиент. Скачайте недостающий шрифт здесь (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) и установите его. Затем перезапустите игровой клиент.
     `,
   },
   highscores: {

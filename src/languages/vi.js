@@ -306,7 +306,7 @@ export default {
       WindowMode:1 Bật, 0 Tắt
     `,
     note3_desc: `
-      <strong>⚠️ Lỗi font:</strong> Nếu bạn thấy ký tự bị lỗi (ô vuông), hãy tắt game, tải font (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) và cài đặt, sau đó mở lại game.
+      <strong>⚠️ Lỗi font:</strong> Nếu bạn thấy ký tự bị lỗi (ô vuông), hãy tắt game, tải font (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) và cài đặt, sau đó mở lại game.
     `,
   },
   landing: {

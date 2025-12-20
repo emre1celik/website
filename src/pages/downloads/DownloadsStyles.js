@@ -109,4 +109,16 @@ export const DownloadsNote = styled.p`
   strong {
     color: #fff;
   }
+
+  a.theme-link {
+    color: ${({ theme }) => theme?.primary || "#4caf50"};
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+
+    &:hover {
+      text-decoration: underline;
+      opacity: 0.9;
+    }
+  }
 `;

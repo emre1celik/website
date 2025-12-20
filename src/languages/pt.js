@@ -321,7 +321,7 @@ export default {
       WindowMode:1 Ligado, 0 Desligado
     `,
     note3_desc: `
-      <strong>⚠️ Problema de fonte:</strong> Se você não consegue ver a fonte e o texto no jogo, mas apenas quadrados, feche o cliente do jogo. Baixe a fonte ausente aqui (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) e clique para instalá-la. Depois reinicie o cliente do jogo.
+      <strong>⚠️ Problema de fonte:</strong> Se você não consegue ver a fonte e o texto no jogo, mas apenas quadrados, feche o cliente do jogo. Baixe a fonte ausente aqui (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) e clique para instalá-la. Depois reinicie o cliente do jogo.
     `,
   },
   highscores: {

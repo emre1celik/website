@@ -319,7 +319,7 @@ export default {
       WindowMode:1 sees, 0 väljas
     `,
     note3_desc: `
-      <strong>⚠️ Kirjatüübi probleem:</strong> Kui mängus ei näe kirjatüüpi ja teksti, vaid ainult ruute, sulge mänguklient. Laadi puuduv kirjatüüp siit (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) ja installimiseks klõpsake sellel. Pärast seda taaskäivitage mänguklient.
+      <strong>⚠️ Kirjatüübi probleem:</strong> Kui mängus ei näe kirjatüüpi ja teksti, vaid ainult ruute, sulge mänguklient. Laadi puuduv kirjatüüp siit (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) ja installimiseks klõpsake sellel. Pärast seda taaskäivitage mänguklient.
     `,
   },
   login: {

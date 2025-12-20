@@ -319,7 +319,7 @@ export default {
       WindowMode:1 Włączony, 0 Wyłączony
     `,
     note3_desc: `
-      <strong>⚠️ Problem z czcionką:</strong> Jeśli nie widzisz czcionki i tekstu w grze, a jedynie kwadraty, zamknij klienta gry. Pobierz brakującą czcionkę tutaj (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) i kliknij, aby ją zainstalować. Następnie uruchom ponownie klienta gry.
+      <strong>⚠️ Problem z czcionką:</strong> Jeśli nie widzisz czcionki i tekstu w grze, a jedynie kwadraty, zamknij klienta gry. Pobierz brakującą czcionkę tutaj (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) i kliknij, aby ją zainstalować. Następnie uruchom ponownie klienta gry.
     `,
   },
   highscores: {

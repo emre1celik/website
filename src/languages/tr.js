@@ -318,7 +318,7 @@ export default {
       WindowMode:1 Açık, 0 Kapalı
     `,
     note3_desc: `
-      <strong>⚠️ Yazı tipi sorunu:</strong> Oyunda yazı tipini ve metni göremiyor, sadece kareler görüyorsanız, oyun istemcisini kapatın. Eksik yazı tipini buradan indirin (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) ve kurmak için tıklayın. Ardından oyun istemcisini yeniden başlatın.
+      <strong>⚠️ Yazı tipi sorunu:</strong> Oyunda yazı tipini ve metni göremiyor, sadece kareler görüyorsanız, oyun istemcisini kapatın. Eksik yazı tipini buradan indirin (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) ve kurmak için tıklayın. Ardından oyun istemcisini yeniden başlatın.
     `,
   },
   events: {

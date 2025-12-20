@@ -319,7 +319,7 @@ export default {
       WindowMode:1 Ieslēgts, 0 Izslēgts
     `,
     note3_desc: `
-      <strong>⚠️ Fonta problēma:</strong> Ja spēlē neredzi fontu un tekstu, bet tikai kvadrātus, aizver spēles klientu. Lejupielādē trūkstošo fontu šeit (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: green;">ArialUni</a>) un noklikšķini, lai to instalētu. Pēc tam restartē spēles klientu.
+      <strong>⚠️ Fonta problēma:</strong> Ja spēlē neredzi fontu un tekstu, bet tikai kvadrātus, aizver spēles klientu. Lejupielādē trūkstošo fontu šeit (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) un noklikšķini, lai to instalētu. Pēc tam restartē spēles klientu.
     `,
   },
   navigation: {
