@@ -24,6 +24,7 @@ export default function ControlPanelStats({
   getClassInfo,
   classNamesMap,
   changeMount,
+  currentTheme,
 }) {
   if (charsLoading)
     return (

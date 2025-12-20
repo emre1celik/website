@@ -25,6 +25,7 @@ export default function ControlPanelProfile({
   openDonateModal,
   setOpenDonateModal,
   onLogout,
+  currentTheme,
 }) {
   const [showDonateModal, setShowDonateModal] = useState(openDonateModal);
 
@@ -227,7 +228,7 @@ export default function ControlPanelProfile({
         onClick={handleLogout}
         style={{
           padding: "0.7rem 1.5rem",
-          backgroundColor: "#4caf50", // red logout button
+          backgroundColor: currentTheme.primary, // red logout button
           border: "none",
           borderRadius: "5px",
           color: "#fff",
@@ -298,7 +299,7 @@ export default function ControlPanelProfile({
           disabled={changingPassword}
           style={{
             padding: "0.7rem 1.5rem",
-            backgroundColor: changingPassword ? "#666" : "#4caf50",
+            backgroundColor: changingPassword ? "#666" : currentTheme.primary,
             border: "none",
             borderRadius: "5px",
             color: "#fff",
@@ -417,7 +418,9 @@ export default function ControlPanelProfile({
               onClick={handleBuyWcoin}
               style={{
                 padding: "0.7rem 1rem",
-                backgroundColor: selectedPackage ? "#4caf50" : "#444",
+                backgroundColor: selectedPackage
+                  ? currentTheme.primary
+                  : "#444",
                 border: "none",
                 color: "#fff",
                 width: "100%",

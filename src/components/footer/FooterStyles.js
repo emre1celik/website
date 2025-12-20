@@ -19,11 +19,12 @@ export const ThemeSwitcher = styled.div`
   display: flex;
   justify-content: center;
   gap: 0.5rem;
+  margin-top: 0.1rem;
 `;
 
 export const ThemeButton = styled.button`
-  width: 22px;
-  height: 22px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.6);
   background: ${({ $color }) => $color};

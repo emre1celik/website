@@ -451,6 +451,7 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
               localStorage.removeItem("apiToken");
               window.location.reload(); // simplest way to force Navigation to update
             }}
+            currentTheme={currentTheme}
           />
         );
       case "stats":
@@ -465,6 +466,7 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
             translate={translate}
             getClassInfo={getClassInfo}
             classNamesMap={classNamesMap}
+            currentTheme={currentTheme}
           />
         );
       case "achievements":
@@ -474,6 +476,7 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
             loading={achievementsLoading}
             setLoading={setAchievementsLoading}
             setAchievements={setAchievements}
+            currentTheme={currentTheme}
           />
         );
       default:

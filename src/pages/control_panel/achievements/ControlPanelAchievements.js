@@ -24,6 +24,7 @@ export default function ControlPanelAchievements({
   loading,
   setLoading,
   setAchievements,
+  currentTheme,
 }) {
   const [claimingKeys, setClaimingKeys] = useState([]);
   const [messages, setMessages] = useState({});
@@ -201,7 +202,9 @@ export default function ControlPanelAchievements({
                     )}
                   </GreenButton>
                 ) : ach.claimed ? (
-                  <span style={{ color: "#4caf50", fontWeight: "bold" }}>
+                  <span
+                    style={{ color: currentTheme.primary, fontWeight: "bold" }}
+                  >
                     {translate("controlPanel.rewards.claimed")}
                   </span>
                 ) : (
