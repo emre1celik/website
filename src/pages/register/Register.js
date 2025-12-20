@@ -184,7 +184,10 @@ function Register({ user, currentTheme, onThemeChange }) {
                 {translate("register.alreadyAccount")}{" "}
                 <Link
                   to="/login"
-                  style={{ textDecoration: "none", color: "#4caf50" }}
+                  style={{
+                    textDecoration: "none",
+                    color: currentTheme.primary,
+                  }}
                 >
                   {translate("register.loginHere")}
                 </Link>
@@ -197,7 +200,10 @@ function Register({ user, currentTheme, onThemeChange }) {
                     terms: (
                       <Link
                         to="/terms"
-                        style={{ textDecoration: "none", color: "#4caf50" }}
+                        style={{
+                          textDecoration: "none",
+                          color: currentTheme.primary,
+                        }}
                       >
                         {translate("register.terms")}
                       </Link>
@@ -205,7 +211,10 @@ function Register({ user, currentTheme, onThemeChange }) {
                     privacy: (
                       <Link
                         to="/privacy"
-                        style={{ textDecoration: "none", color: "#4caf50" }}
+                        style={{
+                          textDecoration: "none",
+                          color: currentTheme.primary,
+                        }}
                       >
                         {translate("register.privacy")}
                       </Link>
