@@ -109,7 +109,6 @@ const eventSchedule = {
   "Illusion Temple": ["22:30"],
 
   "Arka War": [{ dayOfWeek: 4, time: "22:00" }], // Thursday
-  "Castle Deep": [{ time: "13:00" }, { time: "23:00" }],
   CryWolf: [
     { dayOfWeek: 0, time: "21:25" },
     { dayOfWeek: 1, time: "20:44" },
@@ -266,11 +265,6 @@ function Events({ user, currentTheme, onThemeChange }) {
       enter: "Automatic invasion",
       where: "Lorencia",
       rewards: "Muun eggs",
-    },
-    "Castle Deep": {
-      enter: "Enter via Castle Deep NPC / Event Portal",
-      where: "Castle Deep map",
-      rewards: "Excellent items, Jewels, Zen",
     },
     "Arka War": {
       enter: "Guild registration required",
