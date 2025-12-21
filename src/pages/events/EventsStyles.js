@@ -1,7 +1,6 @@
 // src/pages/events/EventsStyles.js
 import styled from "styled-components";
 
-// Page wrapper with background
 export const EventsWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,7 +14,6 @@ export const EventsWrapper = styled.div`
   user-select: none;
 `;
 
-// Main content area
 export const EventsContent = styled.main`
   flex: 1;
   display: flex;
@@ -36,7 +34,6 @@ export const EventsContent = styled.main`
   }
 `;
 
-// Container box
 export const EventsBox = styled.div`
   padding: 1rem;
   border-radius: 10px;
@@ -45,7 +42,6 @@ export const EventsBox = styled.div`
   align-items: center;
   display: flex;
   max-width: 600px;
-
   max-height: 75vh;
   overflow-y: auto;
 
@@ -70,54 +66,67 @@ export const EventsBox = styled.div`
     background: #666;
     border-radius: 4px;
   }
-  &::-webkit-scrollbar-thumb:hover {
-    background: #666;
+`;
+
+/* 🔹 Tooltip styles */
+
+export const EventNameWrapper = styled.div`
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: help;
+
+  color: #ffffffff;
+  font-weight: 600;
+  border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: #ffffffff;
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    transform: scale(1.03);
+  }
+
+  &:hover > div {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -10px);
   }
 `;
 
-// Fade effect for bottom scroll
-export const BottomFade = styled.div`
-  position: sticky;
-  bottom: -40px;
-  left: 0;
-  width: 100%;
-  height: 50px;
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.85) 100%
-  );
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  z-index: 5;
-`;
-
-// Event countdown box
-export const EventCard = styled.div`
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid #444;
+export const Tooltip = styled.div`
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid #555;
   border-radius: 8px;
-  padding: 1rem 2rem;
-  margin-bottom: 1.5rem;
-  width: 100%;
-  max-width: 600px;
-  text-align: center;
+  padding: 0.55rem;
+  width: 180px;
+  font-size: 0.8rem;
+  color: #fff;
+  z-index: 9999;
+  pointer-events: none;
+  text-shadow: none;
+  font-weight: normal;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
 
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+  strong {
     color: ${({ theme }) => theme.primary};
+    display: block;
+    margin-bottom: 0.25rem;
   }
 
-  p {
-    font-size: 1.2rem;
-    color: #fff;
-    margin: 0.25rem 0;
+  span {
+    display: block;
+    margin-bottom: 0.25rem;
   }
 `;
 
-// Timer styling
 export const Timer = styled.span`
   font-size: 1.5rem;
   font-weight: bold;

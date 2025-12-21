@@ -2,11 +2,24 @@ import { useState, useEffect } from "react";
 import { HighscoresTable, GlowingName } from "../highscores/HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
-import { EventsBox, EventsContent, EventsWrapper } from "./EventsStyles";
+import {
+  EventNameWrapper,
+  EventsBox,
+  EventsContent,
+  EventsWrapper,
+  Tooltip,
+} from "./EventsStyles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faDoorOpen,
+  faMapMarkedAlt,
+  faTrophy,
+} from "@fortawesome/free-solid-svg-icons";
+
 import GameTimer from "../../components/game_timer/GameTimer";
 import { useTranslation } from "../../context/TranslationContext";
 const invasionSchedule = {
-  "White Wizard": [
+  "Erohim Invasion": [
     "00:00",
     "02:00",
     "04:00",
@@ -19,7 +32,7 @@ const invasionSchedule = {
     "19:00",
     "22:00",
   ],
-  "Red Dragon": [
+  "Red Dragon Invasion": [
     "01:30",
     "03:30",
     "05:30",
@@ -31,6 +44,19 @@ const invasionSchedule = {
     "18:30",
     "20:30",
     "23:30",
+  ],
+  "Balrog Invasion": [
+    "00:30",
+    "02:30",
+    "04:30",
+    "06:30",
+    "08:30",
+    "10:30",
+    "13:30",
+    "15:30",
+    "17:30",
+    "19:30",
+    "22:30",
   ],
   "Golden Invasion": ["07:00", "11:00"],
   "Muun Invasion": [
@@ -153,19 +179,20 @@ function getNextEventTime(times) {
   return nextEvent;
 }
 
-// Countdown logic
 function formatCountdown(nextEvent) {
   const now = getServerNow();
-
   const diff = nextEvent - now;
 
-  if (diff <= NOW_WINDOW_MS && diff >= -NOW_WINDOW_MS) return "Now!"; // 5-min window
+  // Show "Now!" only AFTER event start, up to +5 min
+  if (diff <= 0 && diff >= -NOW_WINDOW_MS) return "Now!";
+
   if (diff < -NOW_WINDOW_MS) return "0h 0m 0s";
 
   const totalSeconds = Math.floor(diff / 1000);
   const hours = Math.floor(totalSeconds / 3600);
   const minutes = Math.floor((totalSeconds % 3600) / 60);
   const seconds = totalSeconds % 60;
+
   return `${hours}h ${minutes}m ${seconds}s`;
 }
 
@@ -188,6 +215,69 @@ function Events({ user, currentTheme, onThemeChange }) {
 
   const { translate } = useTranslation();
 
+  const eventInfo = {
+    "Blood Castle": {
+      enter: "Blood Castle Ticket, buy from NPC Lumen Barmaid",
+      where: "Event Square (Press CTRL+T ingame)",
+      rewards: "Fast reset, Ruud, Jewels",
+    },
+    "Devil Square": {
+      enter: "Devil Square Ticket, buy from NPC Lumen Barmaid",
+      where: "Event Square (Press CTRL+T ingame)",
+      rewards: "Fast reset, Ruud, Jewels",
+    },
+    "Chaos Castle": {
+      enter: "Armor of Guardsman, buy from NPC Lumen Barmaid",
+      where: "Event Square (Press CTRL+T ingame)",
+      rewards: "Ruud, Jewels",
+    },
+    "Illusion Temple": {
+      enter: "Illusion Temple Ticket, buy from NPC Lumen Barmaid",
+      where: "Event Square (Press CTRL+T ingame)",
+      rewards: "Ruud, Jewels",
+    },
+    CryWolf: {
+      enter: "Automatic",
+      where: "Crywolf Fortress",
+      rewards: "All monster health decrease -10% buff",
+    },
+    "Erohim Invasion": {
+      enter: "Automatic invasion",
+      where: "Lorencia",
+      rewards: "3-5,000 Ruud, Jewels, Accesories, Ancient items",
+    },
+    "Balrog Invasion": {
+      enter: "Automatic invasion",
+      where: "Lorencia",
+      rewards: "1-2,000 Ruud, Jewels, Accesories, Ancient items",
+    },
+
+    "Red Dragon Invasion": {
+      enter: "Automatic invasion",
+      where: "Lorencia",
+      rewards: "1-2,000 Ruud, Jewels, Accesories, Ancient items",
+    },
+    "Golden Invasion": {
+      enter: "Automatic invasion",
+      where: "Lorencia",
+      rewards: "1-2,000 Ruud, Jewels, Accesories, Ancient items",
+    },
+    "Muun Invasion": {
+      enter: "Automatic invasion",
+      where: "Lorencia",
+      rewards: "Muun eggs",
+    },
+    "Castle Deep": {
+      enter: "Enter via Castle Deep NPC / Event Portal",
+      where: "Castle Deep map",
+      rewards: "Excellent items, Jewels, Zen",
+    },
+    "Arka War": {
+      enter: "Guild registration required",
+      where: "Arka War battlefield",
+      rewards: "Guild rewards, Jewels, Zen",
+    },
+  };
   return (
     <EventsWrapper>
       <Navigation user={user} />
@@ -209,17 +299,50 @@ function Events({ user, currentTheme, onThemeChange }) {
                   const nextTime = nextEvents[eventName];
                   if (!nextTime) return null;
                   const diff = nextTime - getServerNow();
-
                   return { eventName, nextTime, diff };
                 })
                 .filter(Boolean)
-                .sort((a, b) => a.diff - b.diff) // sort by time remaining
+                .sort((a, b) => a.diff - b.diff)
                 .map(({ eventName, nextTime, diff }) => {
-                  const isNow = diff <= NOW_WINDOW_MS && diff >= -NOW_WINDOW_MS;
+                  const isNow = diff <= 0 && diff >= -NOW_WINDOW_MS;
+                  const info = eventInfo[eventName];
 
                   return (
                     <tr key={eventName}>
-                      <td>{eventName}</td>
+                      <td>
+                        <EventNameWrapper>
+                          {eventName}
+                          {info && (
+                            <Tooltip>
+                              <strong>{eventName}</strong>
+
+                              <span>
+                                <FontAwesomeIcon
+                                  icon={faDoorOpen}
+                                  style={{ marginRight: "6px" }}
+                                />
+                                <b>Enter:</b> {info.enter}
+                              </span>
+
+                              <span>
+                                <FontAwesomeIcon
+                                  icon={faMapMarkedAlt}
+                                  style={{ marginRight: "6px" }}
+                                />
+                                <b>Where:</b> {info.where}
+                              </span>
+
+                              <span>
+                                <FontAwesomeIcon
+                                  icon={faTrophy}
+                                  style={{ marginRight: "6px" }}
+                                />
+                                <b>Rewards:</b> {info.rewards}
+                              </span>
+                            </Tooltip>
+                          )}
+                        </EventNameWrapper>
+                      </td>
                       <td>
                         {nextTime.toLocaleTimeString([], {
                           hour: "2-digit",
