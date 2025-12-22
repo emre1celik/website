@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCloud, faFile } from "@fortawesome/free-solid-svg-icons";
+import { faCloud, faDownload, faFile } from "@fortawesome/free-solid-svg-icons";
 import {
   DownloadsWrapper,
   DownloadsHero,
@@ -34,24 +34,6 @@ function Downloads({ user, currentTheme, onThemeChange }) {
     },
   ];
 
-  const noSoundMirrors = [
-    {
-      name: "Google Drive (1.2 GB)",
-      url: "https://drive.google.com/file/d/16tXi4TdifJt9KzsE-LnY7oTMz2EHK1J6/view?usp=sharing",
-      icon: faCloud,
-    },
-    {
-      name: "MEGA.nz (1.2 GB)",
-      url: "https://mega.nz/file/ZL9GVKCB#SoTIHBsyySV2BhiB-XeK26v5Wa0B3y0Ks2p1z4b29mI",
-      icon: faCloud,
-    },
-    {
-      name: "MediaFire (1.2 GB)",
-      url: "https://www.mediafire.com/file/w5uodq26nxrkcxq/Myra+MU+Online+(No+Sound).rar/file",
-      icon: faFile,
-    },
-  ];
-
   return (
     <>
       <Helmet>
@@ -67,7 +49,6 @@ function Downloads({ user, currentTheme, onThemeChange }) {
           <DownloadsBox>
             <h2>{translate("downloads.title")}</h2>
 
-            <h3>{translate("downloads.full_client")}</h3>
             <ul
               style={{
                 listStyle: "none",
@@ -77,43 +58,29 @@ function Downloads({ user, currentTheme, onThemeChange }) {
               }}
             >
               {fullMirrors.map((mirror, idx) => (
-                <li key={idx} style={{ margin: "1rem 0" }}>
+                <li key={idx} style={{ margin: "0.3rem 0" }}>
                   <DownloadsMirrorButton
                     href={mirror.url}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <button>
-                      <FontAwesomeIcon icon={mirror.icon} /> {mirror.name}
+                      <span className="left">
+                        <FontAwesomeIcon icon={mirror.icon} />
+                        {mirror.name}
+                      </span>
+                      <span className="right">
+                        <FontAwesomeIcon
+                          icon={faDownload}
+                          style={{ color: currentTheme.primary }}
+                        />
+                      </span>
                     </button>
                   </DownloadsMirrorButton>
                 </li>
               ))}
             </ul>
 
-            <h3>{translate("downloads.no_sound_client")}</h3>
-            <ul
-              style={{
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
-                width: "100%",
-              }}
-            >
-              {noSoundMirrors.map((mirror, idx) => (
-                <li key={idx} style={{ margin: "1rem 0" }}>
-                  <DownloadsMirrorButton
-                    href={mirror.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <button>
-                      <FontAwesomeIcon icon={mirror.icon} /> {mirror.name}
-                    </button>
-                  </DownloadsMirrorButton>
-                </li>
-              ))}
-            </ul>
             <DownloadsNote>
               <TranslatedHTML entity="downloads.note1" />
             </DownloadsNote>

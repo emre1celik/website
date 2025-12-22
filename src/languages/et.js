@@ -315,7 +315,7 @@ export default {
       3: 1280x720 (16:9)<br />
       4: 1280x800 (16:9)<br />
       5: 1280x920 (4:3)<br />
-      6: 1440x900 (16:10)<br /><br />
+      6: 1440x900 (16:10)<br />
       WindowMode:1 sees, 0 väljas
     `,
     note3_desc: `

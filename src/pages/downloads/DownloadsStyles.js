@@ -71,32 +71,58 @@ export const DownloadsBox = styled.div`
     color: #ccc;
   }
 `;
-
 export const DownloadsMirrorButton = styled.a`
   text-decoration: none;
   width: 100%;
-  margin: 1rem 0;
+  margin: 0.4rem 0;
+  display: block;
 
   button {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    padding: 0.75rem 3rem;
-    border: none;
-    border-radius: 5px;
+    justify-content: space-between;
 
-    background: ${({ theme }) => theme.primary};
-    color: white;
-    font-weight: bold;
+    gap: 0.75rem;
+    padding: 0.6rem 1rem;
+
+    border: 1px solid grey;
+    border-radius: 8px;
+
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(0, 0, 0, 0.4)
+    );
+
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+
+    backdrop-filter: blur(2px);
+    transition: all 0.25s ease;
 
     &:hover {
-      background: ${({ theme }) => theme.primaryHover};
-      transform: translateY(-2px) scale(1.02);
-      box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.6);
+      background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(0, 0, 0, 0.6)
+      );
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+      border-color: ${({ theme }) => theme.primary};
+    }
+
+    span.left {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    span.right {
+      opacity: 0.7;
+      font-size: 0.85rem;
     }
   }
 `;
