@@ -13,6 +13,10 @@ export default {
     next: "Next",
     page: "Page",
     of: "of",
+    source: {
+      map: "(Location)",
+      bag: "(Reward)",
+    },
   },
 
   chaosCombination: {

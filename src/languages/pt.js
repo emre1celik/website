@@ -309,6 +309,11 @@ export default {
     droprate: "Taxa de drop",
     minLevel: "Nível mínimo do monstro",
     prev: "Anterior",
+    source: {
+      map: "(Localização)",
+      bag: "(Recompensa)",
+    },
+
     next: "Próxima",
     page: "Página",
     of: "de",

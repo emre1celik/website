@@ -297,6 +297,10 @@ export default {
     next: "Sau",
     page: "Trang",
     of: "trên",
+    source: {
+      map: "(Vị trí)",
+      bag: "(Phần thưởng)",
+    },
   },
 
   downloads: {

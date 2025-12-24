@@ -389,7 +389,9 @@ function Info({ user, currentTheme, onThemeChange }) {
                         icon={res.source === "map" ? faMapMarkedAlt : faBoxOpen}
                         style={{ marginRight: "6px" }}
                       />
-
+                      {res.source === "map"
+                        ? translate("dropSearch.source.map")
+                        : translate("dropSearch.source.bag")}{" "}
                       {res.item}
                       <span style={{ marginLeft: "auto", opacity: 0.7 }}>
                         {isOpen ? "−" : "+"}

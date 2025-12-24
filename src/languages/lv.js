@@ -308,6 +308,11 @@ export default {
     minLevel: "Minimālais monstra līmenis",
     prev: "Iepriekšējā",
     next: "Nākamā",
+    source: {
+      map: "(Atrašanās vieta)",
+      bag: "(Atlīdzība)",
+    },
+
     page: "Lapa",
     of: "no",
   },

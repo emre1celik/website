@@ -309,6 +309,11 @@ export default {
     prev: "Eelmine",
     next: "Järgmine",
     page: "Leht",
+    source: {
+      map: "(Asukoht)",
+      bag: "(Preemia)",
+    },
+
     of: "/",
   },
 

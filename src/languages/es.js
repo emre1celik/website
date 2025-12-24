@@ -311,6 +311,11 @@ export default {
     prev: "Anterior",
     next: "Siguiente",
     page: "Página",
+    source: {
+      map: "(Ubicación)",
+      bag: "(Recompensa)",
+    },
+
     of: "de",
   },
 

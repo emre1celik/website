@@ -308,6 +308,11 @@ export default {
     minLevel: "Minimalny poziom potwora",
     prev: "Poprzednia",
     next: "Następna",
+    source: {
+      map: "(Lokalizacja)",
+      bag: "(Nagroda)",
+    },
+
     page: "Strona",
     of: "z",
   },

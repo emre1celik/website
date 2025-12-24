@@ -309,6 +309,10 @@ export default {
     next: "Sonraki",
     page: "Sayfa",
     of: "/",
+    source: {
+      map: "(Konum)",
+      bag: "(Ödül)",
+    },
   },
 
   downloads: {
