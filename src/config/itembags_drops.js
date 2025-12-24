@@ -641,7 +641,6 @@ const drops = [
     item: "Ancient Icarus Scroll",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
@@ -766,7 +765,6 @@ const drops = [
     item: "Antonia's Sword",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Core Magriffy", rate: 32000 },
       { name: "Cursed Santa", rate: 20000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
@@ -1502,7 +1500,6 @@ const drops = [
     item: "Arca's Prophecy",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Core Magriffy", rate: 32000 },
       { name: "Cursed Santa", rate: 20000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
@@ -1736,7 +1733,6 @@ const drops = [
     item: "Awakening",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
       { name: "Deep Dungeon Gorgon", rate: 1000 },
@@ -3036,7 +3032,6 @@ const drops = [
     item: "Blue Eye Blade",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3045,7 +3040,6 @@ const drops = [
     item: "Blue Eye Bow",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3054,7 +3048,6 @@ const drops = [
     item: "Blue Eye Claws",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3063,7 +3056,6 @@ const drops = [
     item: "Blue Eye Elf Armor (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3074,7 +3066,6 @@ const drops = [
     item: "Blue Eye Elf Armor (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3085,7 +3076,6 @@ const drops = [
     item: "Blue Eye Elf Boots (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3096,7 +3086,6 @@ const drops = [
     item: "Blue Eye Elf Boots (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3107,7 +3096,6 @@ const drops = [
     item: "Blue Eye Elf Gloves (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3118,7 +3106,6 @@ const drops = [
     item: "Blue Eye Elf Gloves (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3129,7 +3116,6 @@ const drops = [
     item: "Blue Eye Elf Helm (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3140,7 +3126,6 @@ const drops = [
     item: "Blue Eye Elf Helm (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3151,7 +3136,6 @@ const drops = [
     item: "Blue Eye Elf Pants (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3162,7 +3146,6 @@ const drops = [
     item: "Blue Eye Elf Pants (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3173,7 +3156,6 @@ const drops = [
     item: "Blue Eye Fighter Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3184,7 +3166,6 @@ const drops = [
     item: "Blue Eye Fighter Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3195,7 +3176,6 @@ const drops = [
     item: "Blue Eye Fighter Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3206,7 +3186,6 @@ const drops = [
     item: "Blue Eye Fighter Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3217,7 +3196,6 @@ const drops = [
     item: "Blue Eye Gun",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3226,7 +3204,6 @@ const drops = [
     item: "Blue Eye Gun Crusher Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3235,7 +3212,6 @@ const drops = [
     item: "Blue Eye Gun Crusher Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3244,7 +3220,6 @@ const drops = [
     item: "Blue Eye Gun Crusher Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3253,7 +3228,6 @@ const drops = [
     item: "Blue Eye Gun Crusher Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3262,7 +3236,6 @@ const drops = [
     item: "Blue Eye Gun Crusher Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3271,7 +3244,6 @@ const drops = [
     item: "Blue Eye Illusion Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3280,7 +3252,6 @@ const drops = [
     item: "Blue Eye Illusion Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3289,7 +3260,6 @@ const drops = [
     item: "Blue Eye Illusion Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3298,7 +3268,6 @@ const drops = [
     item: "Blue Eye Illusion Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3307,7 +3276,6 @@ const drops = [
     item: "Blue Eye Illusion Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3316,7 +3284,6 @@ const drops = [
     item: "Blue Eye Knight Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
@@ -3327,7 +3294,6 @@ const drops = [
     item: "Blue Eye Knight Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
@@ -3338,7 +3304,6 @@ const drops = [
     item: "Blue Eye Knight Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
@@ -3349,7 +3314,6 @@ const drops = [
     item: "Blue Eye Knight Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
@@ -3360,7 +3324,6 @@ const drops = [
     item: "Blue Eye Knight Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
@@ -3371,7 +3334,6 @@ const drops = [
     item: "Blue Eye Lance",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3380,7 +3342,6 @@ const drops = [
     item: "Blue Eye Lancer Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3391,7 +3352,6 @@ const drops = [
     item: "Blue Eye Lancer Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3402,7 +3362,6 @@ const drops = [
     item: "Blue Eye Lancer Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3413,7 +3372,6 @@ const drops = [
     item: "Blue Eye Lancer Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3430,7 +3388,6 @@ const drops = [
     item: "Blue Eye Lancer Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3441,7 +3398,6 @@ const drops = [
     item: "Blue Eye Lord Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3452,7 +3408,6 @@ const drops = [
     item: "Blue Eye Lord Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3463,7 +3418,6 @@ const drops = [
     item: "Blue Eye Lord Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3474,7 +3428,6 @@ const drops = [
     item: "Blue Eye Lord Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3485,7 +3438,6 @@ const drops = [
     item: "Blue Eye Lord Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3496,7 +3448,6 @@ const drops = [
     item: "Blue Eye Mage Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3505,7 +3456,6 @@ const drops = [
     item: "Blue Eye Mage Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3514,7 +3464,6 @@ const drops = [
     item: "Blue Eye Mage Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3523,7 +3472,6 @@ const drops = [
     item: "Blue Eye Mage Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3532,7 +3480,6 @@ const drops = [
     item: "Blue Eye Mage Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3541,7 +3488,6 @@ const drops = [
     item: "Blue Eye Magic Armor (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3552,7 +3498,6 @@ const drops = [
     item: "Blue Eye Magic Armor (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3563,7 +3508,6 @@ const drops = [
     item: "Blue Eye Magic Boots (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3574,7 +3518,6 @@ const drops = [
     item: "Blue Eye Magic Boots (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3585,7 +3528,6 @@ const drops = [
     item: "Blue Eye Magic Gloves (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3596,7 +3538,6 @@ const drops = [
     item: "Blue Eye Magic Gloves (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3607,7 +3548,6 @@ const drops = [
     item: "Blue Eye Magic Pants (A)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3618,7 +3558,6 @@ const drops = [
     item: "Blue Eye Magic Pants (B)",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3629,7 +3568,6 @@ const drops = [
     item: "Blue Eye Magic Sword",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3638,7 +3576,6 @@ const drops = [
     item: "Blue Eye Orb",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3647,7 +3584,6 @@ const drops = [
     item: "Blue Eye Quiver",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3656,7 +3592,6 @@ const drops = [
     item: "Blue Eye Rune Mace",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3665,7 +3600,6 @@ const drops = [
     item: "Blue Eye Runist Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3676,7 +3610,6 @@ const drops = [
     item: "Blue Eye Runist Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3687,7 +3620,6 @@ const drops = [
     item: "Blue Eye Runist Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3698,7 +3630,6 @@ const drops = [
     item: "Blue Eye Runist Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3709,7 +3640,6 @@ const drops = [
     item: "Blue Eye Runist Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3720,7 +3650,6 @@ const drops = [
     item: "Blue Eye Scepter",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3729,7 +3658,6 @@ const drops = [
     item: "Blue Eye Short Sword",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3738,7 +3666,6 @@ const drops = [
     item: "Blue Eye Slayer Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3747,7 +3674,6 @@ const drops = [
     item: "Blue Eye Slayer Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3756,7 +3682,6 @@ const drops = [
     item: "Blue Eye Slayer Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3765,7 +3690,6 @@ const drops = [
     item: "Blue Eye Slayer Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3774,7 +3698,6 @@ const drops = [
     item: "Blue Eye Slayer Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3783,7 +3706,6 @@ const drops = [
     item: "Blue Eye Staff",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 15000 },
       { name: "Elite Underground Dreadfear", rate: 15000 },
       { name: "Elite Underground Persona", rate: 15000 },
     ],
@@ -3792,7 +3714,6 @@ const drops = [
     item: "Blue Eye Summoner Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3803,7 +3724,6 @@ const drops = [
     item: "Blue Eye Summoner Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3814,7 +3734,6 @@ const drops = [
     item: "Blue Eye Summoner Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3825,7 +3744,6 @@ const drops = [
     item: "Blue Eye Summoner Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3836,7 +3754,6 @@ const drops = [
     item: "Blue Eye Summoner Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3847,7 +3764,6 @@ const drops = [
     item: "Blue Eye Sword",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3856,7 +3772,6 @@ const drops = [
     item: "Blue Eye White Wizard Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3865,7 +3780,6 @@ const drops = [
     item: "Blue Eye White Wizard Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3874,7 +3788,6 @@ const drops = [
     item: "Blue Eye White Wizard Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3883,7 +3796,6 @@ const drops = [
     item: "Blue Eye White Wizard Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3892,7 +3804,6 @@ const drops = [
     item: "Blue Eye White Wizard Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
@@ -3901,7 +3812,6 @@ const drops = [
     item: "Blue Eye Wizard Armor",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3912,7 +3822,6 @@ const drops = [
     item: "Blue Eye Wizard Boots",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3923,7 +3832,6 @@ const drops = [
     item: "Blue Eye Wizard Gloves",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3934,7 +3842,6 @@ const drops = [
     item: "Blue Eye Wizard Helm",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -3945,7 +3852,6 @@ const drops = [
     item: "Blue Eye Wizard Pants",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
@@ -4132,7 +4038,6 @@ const drops = [
     item: "Book of Blue Eye",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "Elite Underground Persona", rate: 10000 },
     ],
@@ -4441,7 +4346,6 @@ const drops = [
     item: "Brave Hero Elixir",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
@@ -8724,7 +8628,6 @@ const drops = [
     item: "Empire Guardians' Stronghold",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
@@ -9314,7 +9217,6 @@ const drops = [
     item: "Frost Soul",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
       { name: "Deep Dungeon Gorgon", rate: 1000 },
@@ -9722,7 +9624,6 @@ const drops = [
     item: "Gladiator's Dagger",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
@@ -11542,7 +11443,6 @@ const drops = [
     item: "Holyangel Spirit",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
       { name: "Deep Dungeon Gorgon", rate: 1000 },
@@ -12195,7 +12095,6 @@ const drops = [
     item: "Jewel of Bless",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -12551,7 +12450,6 @@ const drops = [
     item: "Jewel of Creation",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -12727,7 +12625,6 @@ const drops = [
     item: "Jewel of Harmony",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Balrog", rate: 10000 },
       { name: "Blessing Box", rate: 5000 },
       { name: "Blue Chocolate Box", rate: 10000 },
@@ -12868,7 +12765,6 @@ const drops = [
     item: "Jewel of Life",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -13061,7 +12957,6 @@ const drops = [
     item: "Jewel of Soul",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 1000 },
       { name: "Baseball Lower Case", rate: 1000 },
@@ -13496,7 +13391,6 @@ const drops = [
     item: "Kundun's Madness Blade",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
@@ -13563,7 +13457,6 @@ const drops = [
     item: "Kundun's Magic Spell Scroll",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
@@ -13630,7 +13523,6 @@ const drops = [
     item: "Kundun's Seal Scroll",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Core Magriffy", rate: 32000 },
       { name: "Cursed Santa", rate: 20000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
@@ -16590,7 +16482,6 @@ const drops = [
     item: "Merciless Gladiator's Dagger",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
@@ -19359,7 +19250,6 @@ const drops = [
     item: "Sealed Stone Shard",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
       { name: "Deep Dungeon Gorgon", rate: 1000 },
@@ -22752,7 +22642,6 @@ const drops = [
     item: "Stick of Blue Eye",
     minLevel: 1,
     maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
     ],
