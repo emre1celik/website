@@ -8,14 +8,14 @@ def normalize_bag_name(name: str) -> str:
     if not name:
         return name
 
+    # remove .xml extension (anywhere, case-insensitive)
+    name = re.sub(r"\.xml$", "", name, flags=re.IGNORECASE)
+
     # remove leading "Item" or "Monster"
     name = re.sub(r"^(Item|Monster)\s*", "", name)
 
-    # remove (NUMBER,NUMBER,NUMBER)
-    name = re.sub(r"\(\d+,\d+,\d+\)", "", name)
-
-    # remove (NUMBER)
-    name = re.sub(r"\(\d+\)", "", name)
+    # remove any (number), (number,number), (number,number,number)
+    name = re.sub(r"\(\d+(?:,\d+)*\)", "", name)
 
     # replace underscores with spaces
     name = name.replace("_", " ")

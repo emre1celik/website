@@ -1,25 +1,40 @@
 const drops = [
-  { item: "(Hero) Bloodangel Spirit", minLevel: 1, maps: [
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "20 Golden Sentence", minLevel: 1, maps: [
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "300 Article Earning", minLevel: 1, maps: [
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
-    ] },
-  { item: "5 Bless of Light (Greater)", minLevel: 1, maps: [
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "700 Article Earning", minLevel: 1, maps: [
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
-    ] },
-  { item: "Absolute Scepter", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+  {
+    item: "(Hero) Bloodangel Spirit",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "20 Golden Sentence",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "300 Article Earning",
+    minLevel: 1,
+    maps: [
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "5 Bless of Light (Greater)",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "700 Article Earning",
+    minLevel: 1,
+    maps: [
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Absolute Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -29,35 +44,33 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Adamantine Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Adamantine Armor",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -69,30 +82,28 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Adamantine Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Adamantine Boots",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -103,30 +114,28 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Adamantine Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Adamantine Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -137,28 +146,26 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Adamantine Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Adamantine Mask",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -170,30 +177,28 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Adamantine Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Adamantine Pants",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -204,8 +209,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Agnis Adamantine Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Agnis Adamantine Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -223,8 +232,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Agnis Adamantine Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Agnis Adamantine Mask",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -242,8 +255,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Agnis Adamantine Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Agnis Adamantine Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -261,8 +278,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Agnis Ring of Poison", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Agnis Ring of Poison",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -280,8 +301,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Aileen Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Aileen Bow",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -303,8 +328,12 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Alacran Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Alacran Lance",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -326,8 +355,12 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Alacran Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Alacran Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -349,59 +382,85 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Albatross Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Albatross Bow",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+      { name: "Moss Merchant", rate: 10000 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
-    ] },
-  { item: "Ambition Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Ambition Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Ambition Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Ambition Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Ambition Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Ambition Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Ambition Mask", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Ambition Mask",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Ambition Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Ambition Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Ambition Shield", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Ambition Shield",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -409,8 +468,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Anas Vis Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anas Vis Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -418,8 +481,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Anas Vis Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anas Vis Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -427,8 +494,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Anas Vis Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anas Vis Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -436,8 +507,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Anas Vis Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anas Vis Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -445,22 +520,32 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Ancestral Earring (L)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancestral Earring (L)",
+    minLevel: 1,
+    maps: [
       { name: "Lapidary Stone Box", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 100 },
-    ] },
-  { item: "Ancestral Earring (R)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancestral Earring (R)",
+    minLevel: 1,
+    maps: [
       { name: "Lapidary Stone Box", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 100 },
-    ] },
-  { item: "Ancient Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Armor",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -473,14 +558,16 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Ancient Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Boots",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -493,14 +580,16 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Ancient Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -513,14 +602,16 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Ancient Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Helm",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -533,16 +624,23 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Ancient Hero's Soul", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Hero's Soul",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 3500 },
       { name: "Event Raffle HitOrder 1", rate: 3500 },
       { name: "Event Raffle Lotto 1", rate: 3500 },
       { name: "Event Raffle Winner", rate: 3500 },
       { name: "Event ScrambleWord Level 1", rate: 3500 },
-      { name: "ResetSystem Milestone", rate: 3500 },
-    ] },
-  { item: "Ancient Icarus Scroll", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Icarus Scroll",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
@@ -579,12 +677,12 @@ const drops = [
       { name: "Kundun", rate: 16000 },
       { name: "Lord Silvester", rate: 8250 },
       { name: "Lord of Ferea", rate: 16000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -601,14 +699,16 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Ancient Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Pants",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -621,24 +721,25 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Ancient Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ancient Stick",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
       { name: "Green Box", rate: 15000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -650,13 +751,21 @@ const drops = [
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Angelic Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Angelic Staff",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
-    ] },
-  { item: "Antonia's Sword", minLevel: 1, maps: [
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Antonia's Sword",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Core Magriffy", rate: 32000 },
       { name: "Cursed Santa", rate: 20000 },
@@ -696,7 +805,7 @@ const drops = [
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 16000 },
       { name: "Normus", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 10000 },
       { name: "Sellihoden", rate: 10000 },
       { name: "Selupan", rate: 16000 },
@@ -713,8 +822,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 70 },
       { name: "[Lvl4] Monster Soul Converter", rate: 90 },
       { name: "[Lvl5] Monster Soul Converter", rate: 120 },
-    ] },
-  { item: "Antonia's Sword (I)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Antonia's Sword (I)",
+    minLevel: 1,
+    maps: [
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Gnome", rate: 5000 },
       { name: "Hellraiser", rate: 5000 },
@@ -726,8 +839,12 @@ const drops = [
       { name: "Sylphid", rate: 5000 },
       { name: "Ukanva", rate: 5000 },
       { name: "Undine", rate: 5000 },
-    ] },
-  { item: "Anubis Legendary Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anubis Legendary Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -745,8 +862,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Anubis Legendary Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anubis Legendary Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -764,8 +885,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Anubis Legendary Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anubis Legendary Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -783,8 +908,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Anubis Ring of Fire", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Anubis Ring of Fire",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -802,281 +931,467 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Apocalypse Blade", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Bow", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Claws", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Armor (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Armor (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Boots (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Boots (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Gloves (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Gloves (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Helm (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Helm (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Pants (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Elf Pants (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Fighter Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Fighter Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Fighter Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Fighter Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Gun", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Gun Crusher Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Gun Crusher Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Gun Crusher Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Gun Crusher Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Gun Crusher Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Illusion Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Illusion Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Illusion Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Illusion Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Illusion Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Knight Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 10000 },
-    ] },
-  { item: "Apocalypse Knight Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 10000 },
-    ] },
-  { item: "Apocalypse Knight Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 10000 },
-    ] },
-  { item: "Apocalypse Knight Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 10000 },
-    ] },
-  { item: "Apocalypse Knight Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 10000 },
-    ] },
-  { item: "Apocalypse Lance", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lance Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lancer Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lancer Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lancer Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lancer Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lord Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lord Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lord Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lord Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Lord Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Mage Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Mage Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Mage Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Mage Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Mage Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic 2H Sword", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Armor (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Armor (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Boots (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Boots (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Gloves (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Gloves (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Pants (A)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Pants (B)", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Magic Sword", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Orb", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Quiver", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Rune Mace", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Runist Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Runist Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Runist Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Runist Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Runist Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Scepter", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Short Sword", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Slayer Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Slayer Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Slayer Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Slayer Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Slayer Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Staff", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 15000 },
-    ] },
-  { item: "Apocalypse Summoner Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Summoner Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Summoner Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Summoner Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Summoner Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Sword", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse White Wizard Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse White Wizard Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse White Wizard Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse White Wizard Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse White Wizard Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Wizard Armor", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Wizard Boots", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Wizard Gloves", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Wizard Helm", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apocalypse Wizard Pants", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Apollo Pad Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Apocalypse Blade",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Bow",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Claws",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Armor (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Armor (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Boots (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Boots (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Gloves (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Gloves (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Helm (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Helm (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Pants (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Elf Pants (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Fighter Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Fighter Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Fighter Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Fighter Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Gun",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Gun Crusher Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Gun Crusher Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Gun Crusher Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Gun Crusher Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Illusion Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Illusion Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Illusion Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Illusion Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Illusion Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Knight Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 10000 }],
+  },
+  {
+    item: "Apocalypse Knight Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 10000 }],
+  },
+  {
+    item: "Apocalypse Knight Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 10000 }],
+  },
+  {
+    item: "Apocalypse Knight Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 10000 }],
+  },
+  {
+    item: "Apocalypse Knight Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 10000 }],
+  },
+  {
+    item: "Apocalypse Lance",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lance Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lancer Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lancer Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lancer Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lancer Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lord Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lord Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lord Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lord Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Lord Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Mage Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Mage Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Mage Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Mage Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Mage Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic 2H Sword",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Armor (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Armor (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Boots (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Boots (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Gloves (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Gloves (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Pants (A)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Pants (B)",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Magic Sword",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Orb",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Quiver",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Rune Mace",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Runist Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Runist Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Runist Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Runist Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Runist Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Scepter",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Short Sword",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Slayer Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Slayer Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Slayer Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Slayer Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Slayer Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Staff",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 15000 }],
+  },
+  {
+    item: "Apocalypse Summoner Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Summoner Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Summoner Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Summoner Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Summoner Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Sword",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse White Wizard Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse White Wizard Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse White Wizard Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse White Wizard Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse White Wizard Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Wizard Armor",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Wizard Boots",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Wizard Gloves",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Wizard Helm",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apocalypse Wizard Pants",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Apollo Pad Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -1084,8 +1399,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Apollo Pad Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Apollo Pad Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -1093,8 +1412,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Apollo Pad Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Apollo Pad Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -1102,8 +1425,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Apollo Pad Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Apollo Pad Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -1111,8 +1438,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Apollo Pendant of Ice", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Apollo Pendant of Ice",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -1120,8 +1451,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Apollo Ring of Magic", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Apollo Ring of Magic",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -1129,8 +1464,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Apollo Skull Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Apollo Skull Staff",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -1138,24 +1477,31 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Aquagold Crossbow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Aquagold Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Arca's Prophecy", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Arca's Prophecy",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Core Magriffy", rate: 32000 },
       { name: "Cursed Santa", rate: 20000 },
@@ -1192,12 +1538,12 @@ const drops = [
       { name: "Kundun", rate: 32000 },
       { name: "Lord Silvester", rate: 16001 },
       { name: "Lord of Ferea", rate: 32000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 16000 },
       { name: "Normus", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 10000 },
       { name: "Sellihoden", rate: 10000 },
       { name: "Selupan", rate: 16000 },
@@ -1214,8 +1560,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 70 },
       { name: "[Lvl4] Monster Soul Converter", rate: 90 },
       { name: "[Lvl5] Monster Soul Converter", rate: 120 },
-    ] },
-  { item: "Arquebus", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Arquebus",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -1223,13 +1573,16 @@ const drops = [
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
-    ] },
-  { item: "Arrow Viper Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Arrow Viper Bow",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -1246,21 +1599,28 @@ const drops = [
       { name: "Medusa", rate: 600 },
       { name: "Mix Senior Reward", rate: 10000 },
       { name: "Nightmare", rate: 20000 },
-      { name: "ResetSystem Regular", rate: 200 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Artifact Enchantment Stone", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Artifact Enchantment Stone",
+    minLevel: 1,
+    maps: [
       { name: "Artifact Enchantment Stone Box", rate: 10000 },
       { name: "Event ImperialGuardian1 Reward", rate: 6000 },
       { name: "Spider Artifact 6 7 Box", rate: 10000 },
       { name: "Spider Artifact Box", rate: 10000 },
-    ] },
-  { item: "Ashcrow Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ashcrow Armor",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -1270,14 +1630,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Ashcrow Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ashcrow Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -1285,14 +1648,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Ashcrow Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ashcrow Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -1300,14 +1666,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Ashcrow Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ashcrow Helm",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -1315,14 +1684,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Ashcrow Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ashcrow Pants",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -1331,8 +1703,12 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Attribute Magic Book", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Attribute Magic Book",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -1354,8 +1730,12 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Awakening", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Awakening",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
@@ -1396,30 +1776,48 @@ const drops = [
       { name: "Sylphid", rate: 1000 },
       { name: "Ukanva", rate: 1000 },
       { name: "Undine", rate: 1000 },
-    ] },
-  { item: "Bael", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bael",
+    minLevel: 1,
+    maps: [
       { name: "Tempest Muun Box (Amplified)", rate: 10000 },
       { name: "Tempest Muun Box (Wide)", rate: 10000 },
       { name: "Tempest Muun Egg (Amplified)", rate: 10000 },
       { name: "Tempest Muun Egg (Wide)", rate: 10000 },
-    ] },
-  { item: "Bael (Evolved)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bael (Evolved)",
+    minLevel: 1,
+    maps: [
       { name: "Tempest Muun Box (Amplified)", rate: 10000 },
       { name: "Tempest Muun Box (Wide)", rate: 10000 },
       { name: "Tempest Muun Egg (Amplified)", rate: 10000 },
       { name: "Tempest Muun Egg (Wide)", rate: 10000 },
-    ] },
-  { item: "Balrog", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Battle Axe", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Balrog",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Battle Axe",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Battle Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Battle Bow",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -1428,64 +1826,78 @@ const drops = [
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Battle Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Battle Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Behemoth", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Berdysh", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Behemoth",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Berdysh",
+    minLevel: 1,
+    maps: [
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Bill of Balrog", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bill of Balrog",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Kundun Box+2", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
-      { name: "MossMerchant01.xml", rate: 10000 },
+
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Binding Earring (L)", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 10000 },
-    ] },
-  { item: "Black Dragon Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Binding Earring (L)",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 10000 }],
+  },
+  {
+    item: "Black Dragon Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -1497,20 +1909,20 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Black Dragon Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Black Dragon Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -1521,20 +1933,20 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Black Dragon Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Black Dragon Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -1545,20 +1957,20 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Black Dragon Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Black Dragon Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -1569,20 +1981,20 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Black Dragon Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Black Dragon Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -1593,9 +2005,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Blade", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 70000 },
+    ],
+  },
+  {
+    item: "Blade",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
@@ -1603,66 +2018,104 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bless of Light (Greater)", minLevel: 1, maps: [
-      { name: "(13,350) Roomy Egg", rate: 2000 },
-      { name: "(14,261) Guardsmans Box", rate: 2000 },
-      { name: "(14,262) Guardman Captains Box", rate: 2000 },
+    ],
+  },
+  {
+    item: "Bless of Light (Greater)",
+    minLevel: 1,
+    maps: [
+      { name: "Guardman Captains Box", rate: 2000 },
+      { name: "Guardsmans Box", rate: 2000 },
       { name: "Lapidary Stone Box", rate: 700 },
       { name: "Mastery Box (Greater)", rate: 1000 },
       { name: "Mastery Box (Minor)", rate: 1000 },
       { name: "Mastery Box (Standard)", rate: 1000 },
-    ] },
-  { item: "Bless of Light (High)", minLevel: 1, maps: [
-      { name: "Snake Green", rate: 10 },
-    ] },
-  { item: "Bless of Light (Low Grade)", minLevel: 1, maps: [
-      { name: "(14,261) Guardsmans Box", rate: 10000 },
+      { name: "Roomy Egg", rate: 2000 },
+    ],
+  },
+  {
+    item: "Bless of Light (High)",
+    minLevel: 1,
+    maps: [{ name: "Snake Green", rate: 10 }],
+  },
+  {
+    item: "Bless of Light (Low Grade)",
+    minLevel: 1,
+    maps: [
+      { name: "Guardsmans Box", rate: 10000 },
       { name: "Mastery Box (Greater)", rate: 3000 },
       { name: "Mastery Box (Minor)", rate: 3000 },
       { name: "Mastery Box (Standard)", rate: 3000 },
-    ] },
-  { item: "Bless of Light (Lower)", minLevel: 1, maps: [
-      { name: "Snake Green", rate: 100 },
-    ] },
-  { item: "Bless of Light (Medium)", minLevel: 1, maps: [
-      { name: "Snake Green", rate: 10 },
-    ] },
-  { item: "Bless of Light (Middle Grade)", minLevel: 1, maps: [
-      { name: "(13,350) Roomy Egg", rate: 4500 },
-      { name: "(14,261) Guardsmans Box", rate: 4500 },
-      { name: "(14,262) Guardman Captains Box", rate: 4500 },
+    ],
+  },
+  {
+    item: "Bless of Light (Lower)",
+    minLevel: 1,
+    maps: [{ name: "Snake Green", rate: 100 }],
+  },
+  {
+    item: "Bless of Light (Medium)",
+    minLevel: 1,
+    maps: [{ name: "Snake Green", rate: 10 }],
+  },
+  {
+    item: "Bless of Light (Middle Grade)",
+    minLevel: 1,
+    maps: [
+      { name: "Guardman Captains Box", rate: 4500 },
+      { name: "Guardsmans Box", rate: 4500 },
       { name: "Mastery Box (Greater)", rate: 3000 },
       { name: "Mastery Box (Minor)", rate: 3000 },
       { name: "Mastery Box (Standard)", rate: 3000 },
-    ] },
-  { item: "Blessed Decoration Ring", minLevel: 1, maps: [
+      { name: "Roomy Egg", rate: 4500 },
+    ],
+  },
+  {
+    item: "Blessed Decoration Ring",
+    minLevel: 1,
+    maps: [
       { name: "Monkey Red", rate: 10000 },
       { name: "Snake Red", rate: 10000 },
-    ] },
-  { item: "Blessing of Spirit", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blessing of Spirit",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 1500 },
       { name: "Elemental Capsule (Earth)", rate: 1500 },
       { name: "Elemental Capsule (Fire)", rate: 1500 },
       { name: "Elemental Capsule (Normal)", rate: 1500 },
       { name: "Elemental Capsule (Water)", rate: 1500 },
       { name: "Elemental Capsule (Wind)", rate: 1500 },
-    ] },
-  { item: "Blood Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blood Blade",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Blood Earring (L)", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 10000 },
-    ] },
-  { item: "Blood Earring (R)", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 10000 },
-    ] },
-  { item: "Bloodangel Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blood Earring (L)",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 10000 }],
+  },
+  {
+    item: "Blood Earring (R)",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 10000 }],
+  },
+  {
+    item: "Bloodangel Blade",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -1673,8 +2126,12 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Bow",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -1685,8 +2142,12 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Claws",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -1697,86 +2158,142 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Elf Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Elf Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Elf Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Elf Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Elf Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Elf Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Elf Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Elf Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Elf Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Elf Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Fighter Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Fighter Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Fighter Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Fighter Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Fighter Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Fighter Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Fighter Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gladiator Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gladiator Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gladiator Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gladiator Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gladiator Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gladiator Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gladiator Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gladiator Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gun",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -1787,98 +2304,162 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Gun Crusher Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gun Crusher Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gun Crusher Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gun Crusher Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gun Crusher Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gun Crusher Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gun Crusher Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Gun Crusher Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Gun Crusher Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Illusion Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Illusion Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Illusion Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Illusion Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Illusion Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Illusion Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Illusion Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Illusion Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Illusion Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Illusion Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 17000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 17000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lance",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -1889,128 +2470,212 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Lancer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lancer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lancer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lancer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lancer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lancer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lancer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lancer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lancer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lancer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lemuria Mage Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lemuria Mage Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lemuria Mage Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lemuria Mage Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lemuria Mage Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lemuria Mage Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lemuria Mage Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lemuria Mage Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lemuria Mage Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lemuria Mage Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Light Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Light Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Light Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Light Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Light Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Light Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Light Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Light Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Light Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Light Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lord Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lord Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lord Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lord Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lord Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lord Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lord Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lord Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Lord Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Lord Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Magic 2H Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Magic 2H Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2021,8 +2686,12 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Magic Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Magic Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2033,8 +2702,12 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Orb",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2045,8 +2718,12 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2057,32 +2734,52 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Rune Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Rune Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Rune Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Rune Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Rune Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Rune Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Rune Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Rune Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2093,14 +2790,22 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Rune Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Rune Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2111,8 +2816,12 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2123,38 +2832,62 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Slayer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Slayer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Slayer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Slayer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Slayer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Slayer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Slayer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Slayer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Staff",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2165,8 +2898,12 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Stick",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2177,38 +2914,62 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Summoner Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Summoner Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2219,594 +2980,982 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Bloodangel Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Bloodangel Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bloodangel Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 12000 },
       { name: "Gorgon", rate: 7000 },
       { name: "Hydra", rate: 12000 },
       { name: "Ice Queen", rate: 7000 },
-    ] },
-  { item: "Blue Eye Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Blade",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Bow",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Claws",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Armor (A)", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
-      { name: "Elite Lizard King of Abyss", rate: 3000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Armor (B)", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
-      { name: "Elite Lizard King of Abyss", rate: 3000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Boots (A)", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
-      { name: "Elite Lizard King of Abyss", rate: 3000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Helm (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Helm (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Elf Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Helm (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Fighter Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Helm (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Fighter Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Fighter Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Elf Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Fighter Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Fighter Boots",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
+      { name: "Elite Lizard King of Abyss", rate: 3000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Fighter Helm",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
+      { name: "Elite Lizard King of Abyss", rate: 3000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Fighter Pants",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
+      { name: "Elite Lizard King of Abyss", rate: 3000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Gun",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Gun Crusher Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Gun Crusher Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Gun Crusher Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Gun Crusher Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Gun Crusher Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Gun Crusher Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Gun Crusher Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Gun Crusher Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Gun Crusher Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Illusion Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Illusion Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Illusion Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Illusion Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Illusion Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Illusion Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Illusion Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Illusion Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Illusion Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Illusion Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "Elite Underground Persona", rate: 10000 },
-    ] },
-  { item: "Blue Eye Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "Elite Underground Persona", rate: 10000 },
-    ] },
-  { item: "Blue Eye Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "Elite Underground Persona", rate: 10000 },
-    ] },
-  { item: "Blue Eye Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "Elite Underground Persona", rate: 10000 },
-    ] },
-  { item: "Blue Eye Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "Elite Underground Persona", rate: 10000 },
-    ] },
-  { item: "Blue Eye Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lance",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lancer Armor", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
-      { name: "Elite Lizard King of Abyss", rate: 3000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lancer Boots", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
-      { name: "Elite Lizard King of Abyss", rate: 3000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lancer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lancer Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lancer Helm", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lancer Helmet", minLevel: 1, maps: [
-      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
-      { name: "Elite Lizard King of Abyss", rate: 3000 },
-    ] },
-  { item: "Blue Eye Lancer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lancer Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lord Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lancer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lord Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lancer Helm",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Lancer Helmet",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
+      { name: "Elite Lizard King of Abyss", rate: 3000 },
+    ],
+  },
+  {
+    item: "Blue Eye Lancer Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lord Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lord Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lord Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lord Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Lord Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lord Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Mage Armor", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Mage Boots", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Mage Gloves", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Mage Helm", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Mage Pants", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Armor (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lord Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Armor (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Lord Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Boots (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Mage Armor",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Mage Boots",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Mage Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Mage Helm",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Mage Pants",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Magic Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Magic Sword", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Orb", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Quiver", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Rune Mace", minLevel: 1, maps: [
-      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
-      { name: "Elite Underground Dreadfear", rate: 5000 },
-      { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Runist Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Runist Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Runist Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Magic Sword",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Orb",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Quiver",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Rune Mace",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Runist Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Runist Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Runist Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Runist Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Runist Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Runist Helm",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
+      { name: "Elite Lizard King of Abyss", rate: 3000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Runist Pants",
+    minLevel: 1,
+    maps: [
+      { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 3000 },
+      { name: "Elite Lizard King of Abyss", rate: 3000 },
+      { name: "Elite Underground Dreadfear", rate: 5000 },
+      { name: "Elite Underground Persona", rate: 5000 },
+    ],
+  },
+  {
+    item: "Blue Eye Scepter",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Slayer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Slayer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Slayer Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Slayer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Slayer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Slayer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Slayer Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Slayer Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Staff",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 15000 },
       { name: "Elite Underground Dreadfear", rate: 15000 },
       { name: "Elite Underground Persona", rate: 15000 },
-    ] },
-  { item: "Blue Eye Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Summoner Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Summoner Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Sword",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye White Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye White Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye White Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye White Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye White Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye White Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye White Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye White Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye White Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye White Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Eye Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Eye Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 3000 },
       { name: "Elite Lizard King of Abyss", rate: 3000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Blue Moon Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Blue Moon Orb",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -2814,17 +3963,21 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Bluewing Crossbow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bluewing Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
@@ -2832,12 +3985,16 @@ const drops = [
       { name: "Red Chocolate Box", rate: 20000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Bone Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bone Armor",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -2847,8 +4004,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bone Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bone Blade",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -2872,12 +4033,16 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Bone Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bone Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -2887,8 +4052,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bone Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bone Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
@@ -2900,8 +4069,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bone Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bone Helm",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
@@ -2913,12 +4086,16 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bone Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bone Pants",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -2928,11 +4105,17 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Book of Apocalypse", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 10000 },
-    ] },
-  { item: "Book of Bloodangel", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Apocalypse",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 10000 }],
+  },
+  {
+    item: "Book of Bloodangel",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -2943,36 +4126,60 @@ const drops = [
       { name: "Kundun", rate: 40000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Book of Blue Eye", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Blue Eye",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "Elite Underground Persona", rate: 10000 },
-    ] },
-  { item: "Book of Brilliant", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Brilliant",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Book of Darkangel", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Darkangel",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Book of Holyangel", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Holyangel",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Book of Manticore", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Manticore",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Book of Neil", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Neil",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
@@ -2992,8 +4199,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 20000 },
       { name: "Mix ChaosCard Mini Reward", rate: 20000 },
       { name: "Mix ChaosCard Rare Reward", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Moon Rabbit", rate: 20000 },
       { name: "Pouch Of Blessing", rate: 20000 },
       { name: "Pouch of Blessing", rate: 20000 },
@@ -3003,8 +4209,12 @@ const drops = [
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Box", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Book of Samut", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Samut",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -3026,18 +4236,26 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Book of Shamut", minLevel: 1, maps: [
-      { name: "Kundun Box+2", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
-    ] },
-  { item: "Book of Silverheart", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Shamut",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+2", rate: 20000 }],
+  },
+  {
+    item: "Book of Silverheart",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
-    ] },
-  { item: "Book of Soul", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Book of Soul",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
       { name: "Elite Ashy Golem", rate: 10000 },
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
@@ -3045,12 +4263,20 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Box of Kundun+1", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Box of Kundun+1",
+    minLevel: 1,
+    maps: [
       { name: "Golden Goblin", rate: 10000 },
       { name: "Golden Rabbit", rate: 10000 },
-    ] },
-  { item: "Box of Kundun+4", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Box of Kundun+4",
+    minLevel: 1,
+    maps: [
       { name: "Golden Crust", rate: 10000 },
       { name: "Golden Dark Knight", rate: 10000 },
       { name: "Golden Devil", rate: 10000 },
@@ -3064,16 +4290,24 @@ const drops = [
       { name: "Golden Twin Tail", rate: 10000 },
       { name: "Golden Vepar", rate: 10000 },
       { name: "Golden Wheel", rate: 10000 },
-    ] },
-  { item: "Box of Kundun+5", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Box of Kundun+5",
+    minLevel: 1,
+    maps: [
       { name: "Golden Iron Knight", rate: 10000 },
       { name: "Golden Napin", rate: 10000 },
-    ] },
-  { item: "Brass Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brass Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
@@ -3081,12 +4315,16 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Brass Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brass Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
@@ -3094,12 +4332,16 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Brass Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brass Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
@@ -3107,8 +4349,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Brass Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brass Helm",
+    minLevel: 1,
+    maps: [
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
@@ -3116,12 +4362,16 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Brass Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brass Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 600 },
@@ -3129,9 +4379,13 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Brave Armor", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Brave Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -3139,9 +4393,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Brave Boots", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Brave Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -3149,9 +4407,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Brave Gloves", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Brave Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -3159,9 +4421,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Brave Helm", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Brave Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -3169,8 +4435,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Brave Hero Elixir", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brave Hero Elixir",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
@@ -3209,7 +4479,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -3226,9 +4496,13 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Brave Pants", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Brave Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -3236,338 +4510,562 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Brilliant Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Blade",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Bow",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Claws",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Armor (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Armor (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Boots (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Helm (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Helm (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Helm (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Helm (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Elf Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Elf Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Fighter Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Fighter Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Fighter Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Fighter Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Fighter Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Fighter Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Fighter Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Fighter Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Fighter Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Gun",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Gun Crusher Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Gun Crusher Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Gun Crusher Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Gun Crusher Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Gun Crusher Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Gun Crusher Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Gun Crusher Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Gun Crusher Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Gun Crusher Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Illusion Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Illusion Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Illusion Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Illusion Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Illusion Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Illusion Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Illusion Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Illusion Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Illusion Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Illusion Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 10000 },
       { name: "Elite Magma Gladiator", rate: 30000 },
       { name: "Elite Magma Hook", rate: 10000 },
       { name: "Elite Magma Shaman", rate: 10000 },
-    ] },
-  { item: "Brilliant Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Lance",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Lord Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Lord Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Lord Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Lord Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Lord Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Lord Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Lord Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Lord Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Lord Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Lord Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Mage Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Mage Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Mage Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Mage Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Mage Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Mage Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Mage Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Mage Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Mage Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Mage Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Armor (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Armor (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Boots (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Magic Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Magic Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Orb",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Orb (I)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Orb (I)",
+    minLevel: 1,
+    maps: [
       { name: "Boss Battle Bonus Box", rate: 100 },
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Gnome", rate: 5000 },
@@ -3580,202 +5078,331 @@ const drops = [
       { name: "Sylphid", rate: 5000 },
       { name: "Ukanva", rate: 5000 },
       { name: "Undine", rate: 5000 },
-    ] },
-  { item: "Brilliant Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Runist Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Runist Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Runist Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Runist Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Runist Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Runist Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Runist Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Runist Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Runist Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Runist Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Slayer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Slayer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Slayer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Slayer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Slayer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Slayer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Slayer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Slayer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Staff",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 15000 },
       { name: "Elite Magma Gladiator", rate: 45000 },
       { name: "Elite Magma Hook", rate: 15000 },
       { name: "Elite Magma Shaman", rate: 15000 },
-    ] },
-  { item: "Brilliant Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Summoner Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Summoner Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant White Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant White Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant White Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant White Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant White Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant White Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant White Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant White Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant White Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant White Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Brilliant Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Brilliant Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Broken Horn", minLevel: 1, maps: [
-      { name: "Dark Elf", rate: 10000 },
-    ] },
-  { item: "Bronze Armor", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Broken Horn",
+    minLevel: 1,
+    maps: [{ name: "Dark Elf", rate: 10000 }],
+  },
+  {
+    item: "Bronze Armor",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -3785,13 +5412,16 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bronze Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Bronze Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -3801,9 +5431,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bronze Gloves", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Bronze Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -3815,9 +5448,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bronze Helm", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Bronze Helm",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -3829,13 +5465,16 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bronze Pants", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Bronze Pants",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -3845,8 +5484,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Bronze Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Bronze Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Firecracker", rate: 20000 },
       { name: "Gold Medal", rate: 20000 },
@@ -3860,11 +5503,17 @@ const drops = [
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Buckler", minLevel: 1, maps: [
-      { name: "Kundun Box+1", rate: 10000 },
-    ] },
-  { item: "Burning Frere Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Buckler",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+1", rate: 10000 }],
+  },
+  {
+    item: "Burning Frere Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -3882,8 +5531,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Burning Frere Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Burning Frere Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -3901,8 +5554,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Burning Frere Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Burning Frere Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -3910,27 +5567,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Burning Frere Helmet", minLevel: 1, maps: [
-      { name: "Blessing Box", rate: 10000 },
-      { name: "Death King", rate: 5000 },
-      { name: "Dragon Red", rate: 10000 },
-      { name: "Erohim", rate: 10000 },
-      { name: "Fire Flame Ghost", rate: 10000 },
-      { name: "Firecracker", rate: 10000 },
-      { name: "Gold Medal", rate: 10000 },
-      { name: "Golden Budge Dragon", rate: 5000 },
-      { name: "Kundun", rate: 10000 },
-      { name: "Love Heart", rate: 10000 },
-      { name: "Luck Box", rate: 10000 },
-      { name: "Lunar Rabbit", rate: 5000 },
-      { name: "Moon Rabbit", rate: 5000 },
-      { name: "Pouch Of Blessing", rate: 5000 },
-      { name: "Pouch of Blessing", rate: 5000 },
-      { name: "Sacred Birth Star", rate: 10000 },
-      { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Burning Frere Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Burning Frere Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -3948,55 +5590,89 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Capsule (Fire)", minLevel: 1, maps: [
-      { name: "Element Box", rate: 10000 },
-    ] },
-  { item: "Capsule(Darkness)", minLevel: 1, maps: [
-      { name: "Element Box", rate: 10000 },
-    ] },
-  { item: "Capsule(Earth)", minLevel: 1, maps: [
-      { name: "Element Box", rate: 10000 },
-    ] },
-  { item: "Capsule(Water)", minLevel: 1, maps: [
-      { name: "Element Box", rate: 10000 },
-    ] },
-  { item: "Capsule(Wind)", minLevel: 1, maps: [
-      { name: "Element Box", rate: 10000 },
-    ] },
-  { item: "Card Deck", minLevel: 1, maps: [
-      { name: "Card Box", rate: 20000 },
-    ] },
-  { item: "Card Piece", minLevel: 1, maps: [
-      { name: "Card Box", rate: 20000 },
-    ] },
-  { item: "Celestial Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Burning Frere Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Blessing Box", rate: 10000 },
+      { name: "Death King", rate: 5000 },
+      { name: "Dragon Red", rate: 10000 },
+      { name: "Erohim", rate: 10000 },
+      { name: "Fire Flame Ghost", rate: 10000 },
+      { name: "Firecracker", rate: 10000 },
+      { name: "Gold Medal", rate: 10000 },
+      { name: "Golden Budge Dragon", rate: 5000 },
+      { name: "Kundun", rate: 10000 },
+      { name: "Love Heart", rate: 10000 },
+      { name: "Luck Box", rate: 10000 },
+      { name: "Lunar Rabbit", rate: 5000 },
+      { name: "Moon Rabbit", rate: 5000 },
+      { name: "Pouch Of Blessing", rate: 5000 },
+      { name: "Pouch of Blessing", rate: 5000 },
+      { name: "Sacred Birth Star", rate: 10000 },
+      { name: "Silver Medal", rate: 10000 },
+    ],
+  },
+  {
+    item: "Capsule (Fire)",
+    minLevel: 1,
+    maps: [{ name: "Element Box", rate: 10000 }],
+  },
+  {
+    item: "Capsule(Darkness)",
+    minLevel: 1,
+    maps: [{ name: "Element Box", rate: 10000 }],
+  },
+  {
+    item: "Capsule(Earth)",
+    minLevel: 1,
+    maps: [{ name: "Element Box", rate: 10000 }],
+  },
+  {
+    item: "Capsule(Water)",
+    minLevel: 1,
+    maps: [{ name: "Element Box", rate: 10000 }],
+  },
+  {
+    item: "Capsule(Wind)",
+    minLevel: 1,
+    maps: [{ name: "Element Box", rate: 10000 }],
+  },
+  { item: "Card Deck", minLevel: 1, maps: [{ name: "Card Box", rate: 20000 }] },
+  {
+    item: "Card Piece",
+    minLevel: 1,
+    maps: [{ name: "Card Box", rate: 20000 }],
+  },
+  {
+    item: "Celestial Bow",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Kundun", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -4006,26 +5682,42 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Celestial Bow ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Celestial Bow ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Chaos Dragon Axe ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chaos Dragon Axe ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Chaos Lighting Staff ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chaos Lighting Staff ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Chaos Lightning Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chaos Lightning Staff",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
@@ -4033,40 +5725,64 @@ const drops = [
       { name: "Luck Box", rate: 30000 },
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Chaos Nature Bow ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chaos Nature Bow ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Cherry Blossom Flower Petal", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Cherry Blossom Flower Petal",
+    minLevel: 1,
+    maps: [
       { name: "Cherry Blossom Play Box", rate: 1500 },
       { name: "Golden Box", rate: 10000 },
       { name: "Mix CherryBlossom White Reward", rate: 1500 },
-      { name: "MossMerchant07.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Cherry Blossom Rice Cake", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Cherry Blossom Rice Cake",
+    minLevel: 1,
+    maps: [
       { name: "Cherry Blossom Play Box", rate: 1000 },
       { name: "Golden Box", rate: 10000 },
       { name: "Mix CherryBlossom White Reward", rate: 1000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Cherry Blossom Wine", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Cherry Blossom Wine",
+    minLevel: 1,
+    maps: [
       { name: "Cherry Blossom Play Box", rate: 10000 },
       { name: "Golden Box", rate: 10000 },
       { name: "Mix CherryBlossom White Reward", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Chiron", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Christmas Firecracker", minLevel: 1, maps: [
-      { name: "NPC SantaClause2 Reward", rate: 10000 },
-    ] },
-  { item: "Chrome Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chiron",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Christmas Firecracker",
+    minLevel: 1,
+    maps: [{ name: "NPC SantaClause2 Reward", rate: 10000 }],
+  },
+  {
+    item: "Chrome Staff",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -4088,8 +5804,12 @@ const drops = [
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Chrono Red Wing Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chrono Red Wing Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -4107,8 +5827,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Chrono Red Wing Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chrono Red Wing Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -4126,8 +5850,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Chrono Red Wing Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chrono Red Wing Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -4145,8 +5873,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Chrono Ring of Magic", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Chrono Ring of Magic",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -4164,11 +5896,15 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Condor Feather", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Condor Feather",
+    minLevel: 1,
+    maps: [
       { name: "Monkey Red", rate: 10000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch of Blessing", rate: 5 },
       { name: "Roomy Card Box (Higher)", rate: 250 },
       { name: "Roomy Card Box (Medium)", rate: 250 },
@@ -4177,15 +5913,19 @@ const drops = [
       { name: "Sheep Red", rate: 5 },
       { name: "Sheep White", rate: 10000 },
       { name: "Snake Red", rate: 10000 },
-    ] },
-  { item: "Condor Flame", minLevel: 1, maps: [
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Condor Flame",
+    minLevel: 1,
+    maps: [
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
       { name: "Monkey Purple", rate: 10000 },
       { name: "Pouch of Blessing", rate: 20 },
       { name: "Sheep Green", rate: 10000 },
@@ -4193,24 +5933,38 @@ const drops = [
       { name: "Sheep Red", rate: 20 },
       { name: "Sheep White", rate: 10000 },
       { name: "Snake Purple", rate: 10000 },
-    ] },
-  { item: "Conqueror's Badge", minLevel: 1, maps: [
-      { name: "MossMerchant06.xml", rate: 10000 },
-    ] },
-  { item: "Constant Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Conqueror's Badge",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Constant Shield",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
       { name: "Elite Lizard King of Abyss", rate: 5000 },
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Crescent Axe", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Crescent Axe",
+    minLevel: 1,
+    maps: [
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Crimson Glory", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Crimson Glory",
+    minLevel: 1,
+    maps: [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
@@ -4219,18 +5973,22 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Crystal Morning Star", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Crystal Morning Star",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
@@ -4238,8 +5996,12 @@ const drops = [
       { name: "Red Chocolate Box", rate: 20000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Crystal Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Crystal Sword",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
@@ -4247,23 +6009,26 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 20000 },
+      { name: "Moss Merchant", rate: 20000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Dakia Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dakia Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -4271,86 +6036,128 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Dark Angel Alchemist Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Alchemist Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Alchemist Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Alchemist Helmet", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Alchemist Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Illusion Knight Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Illusion Knight Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Illusion Knight Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Illusion Knight Helmet", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Illusion Knight Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Light Wizard Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Light Wizard Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Light Wizard Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Light Wizard Helmet", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Light Wizard Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Mage Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Mage Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Mage Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Mage Helmet", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Angel Mage Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Dark Breaker", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Angel Alchemist Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Alchemist Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Alchemist Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Alchemist Helmet",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Alchemist Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Illusion Knight Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Illusion Knight Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Illusion Knight Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Illusion Knight Helmet",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Illusion Knight Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Light Wizard Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Light Wizard Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Light Wizard Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Light Wizard Helmet",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Light Wizard Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Mage Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Mage Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Mage Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Mage Helmet",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Angel Mage Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Dark Breaker",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
       { name: "Event LastManStanding Winner Reward", rate: 1 },
       { name: "Event Raffle HitOrder 2", rate: 1 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 1 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -4362,63 +6169,94 @@ const drops = [
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Dark Breaker ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Breaker ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Dark Devil Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Dark Devil Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Dark Devil Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Dark Devil Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Dark Devil Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Dark Devil Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Dark Devil Helm", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Dark Devil Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Dark Devil Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Dark Devil Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Dark Devil Shield", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Dark Devil Shield",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Dark Lord", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 60000 },
-    ] },
-  { item: "Dark Master Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Lord",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 60000 }],
+  },
+  {
+    item: "Dark Master Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4427,18 +6265,20 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Master Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Master Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4446,18 +6286,20 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Master Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Master Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4465,38 +6307,20 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Master Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Master Mask",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
-      { name: "Event IceWindCastle GuildMaster", rate: 10000 },
-      { name: "Event IceWindCastle GuildMember", rate: 10000 },
-      { name: "Event IceWindCastle Player", rate: 10000 },
-      { name: "Event LastManStanding Winner Reward", rate: 10000 },
-      { name: "Event Raffle HitOrder 2", rate: 10000 },
-      { name: "Event Raffle Lotto 2", rate: 10000 },
-      { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix Maple Leaf Reward", rate: 700 },
-      { name: "Mix Senior Reward", rate: 5000 },
-      { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Master Pants", minLevel: 1, maps: [
-      { name: "Balgass", rate: 10000 },
-      { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4505,108 +6329,146 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Phoenix Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Master Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Balgass", rate: 10000 },
+      { name: "Buff Gladiators Drop", rate: 1000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
+      { name: "Event IceWindCastle GuildMaster", rate: 10000 },
+      { name: "Event IceWindCastle GuildMember", rate: 10000 },
+      { name: "Event IceWindCastle Player", rate: 10000 },
+      { name: "Event LastManStanding Winner Reward", rate: 10000 },
+      { name: "Event Raffle HitOrder 2", rate: 10000 },
+      { name: "Event Raffle Lotto 2", rate: 10000 },
+      { name: "Event ScrambleWord Level 2", rate: 10000 },
+      { name: "Kundun", rate: 10000 },
+
+      { name: "Mix Maple Leaf Reward", rate: 700 },
+      { name: "Mix Senior Reward", rate: 5000 },
+      { name: "Red Box", rate: 10000 },
+    ],
+  },
+  {
+    item: "Dark Phoenix Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Phoenix Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Phoenix Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Phoenix Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Phoenix Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Phoenix Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Phoenix Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Phoenix Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Phoenix Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Reign Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Reign Blade",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -4630,21 +6492,24 @@ const drops = [
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Mix Senior Reward", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Dark Soul Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Soul Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4653,21 +6518,23 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Soul Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Soul Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4675,21 +6542,23 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Soul Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Soul Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4697,19 +6566,21 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Soul Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Soul Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4718,19 +6589,21 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Soul Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Soul Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -4739,14 +6612,17 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Dark Steel Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Steel Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -4754,19 +6630,22 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Steel Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Steel Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -4774,17 +6653,20 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Steel Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Steel Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -4792,17 +6674,20 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Steel Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Steel Mask",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -4810,17 +6695,20 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Steel Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Steel Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -4828,19 +6716,22 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Dark Stinger", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Stinger",
+    minLevel: 1,
+    maps: [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
@@ -4849,331 +6740,539 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Dark Transformation Ring", minLevel: 1, maps: [
-      { name: "MossMerchant07.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "Darkangel Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dark Transformation Ring",
+    minLevel: 1,
+    maps: [
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Darkangel Blade",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Bow",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Claws",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Elf Armor (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Armor (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Boots (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Boots (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Gloves (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Gloves (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Helm (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Helm (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Pants (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Elf Pants (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Fighter Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Fighter Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Fighter Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Fighter Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Elf Armor (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Armor (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Boots (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Boots (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Gloves (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Gloves (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Helm (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Helm (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Pants (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Elf Pants (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Fighter Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Fighter Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Fighter Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Fighter Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Gun",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Gun Crusher Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Gun Crusher Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Gun Crusher Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Gun Crusher Helmet", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Gun Crusher Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Knight Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Armor (Conviction)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Boots (Conviction)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Gloves (Conviction)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Helm (Conviction)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Knight Pants (Conviction)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Gun Crusher Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Gun Crusher Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Gun Crusher Helmet",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Gun Crusher Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Knight Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Armor (Conviction)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Boots (Conviction)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Gloves (Conviction)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Helm (Conviction)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Knight Pants (Conviction)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Lance",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Lancer Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lancer Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lancer Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lancer Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lancer Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lord Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lord Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lord Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lord Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Lord Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Magic 2H Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Lancer Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lancer Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lancer Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lancer Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lancer Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lord Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lord Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lord Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lord Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Lord Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Magic 2H Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Magic Armor (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Armor (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Boots (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Boots (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Gloves (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Gloves (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Pants (A)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Pants (B)", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 },
-    ] },
-  { item: "Darkangel Magic Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Magic Armor (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Armor (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Boots (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Boots (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Gloves (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Gloves (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Pants (A)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Pants (B)",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
+  },
+  {
+    item: "Darkangel Magic Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Orb",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Runist Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Runist Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Runist Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Runist Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Runist Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Runist Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Runist Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Runist Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Runist Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Runist Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Slayer Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Slayer Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Slayer Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Slayer Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Slayer Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Slayer Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Slayer Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Slayer Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Slayer Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Slayer Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Staff",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Stick",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Summoner Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Summoner Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Summoner Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Summoner Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Summoner Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Summoner Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Summoner Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Summoner Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Summoner Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Summoner Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Sword",
+    minLevel: 1,
+    maps: [
       { name: "Balrog", rate: 6000 },
       { name: "Hydra", rate: 6000 },
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
-    ] },
-  { item: "Darkangel Wizard Armor", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Wizard Boots", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Wizard Gloves", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Wizard Helm", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Darkangel Wizard Pants", minLevel: 1, maps: [
-      { name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 },
-    ] },
-  { item: "Daybreak", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Darkangel Wizard Armor",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Wizard Boots",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Wizard Gloves",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Wizard Helm",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Darkangel Wizard Pants",
+    minLevel: 1,
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
+  },
+  {
+    item: "Daybreak",
+    minLevel: 1,
+    maps: [
       { name: "Green Box", rate: 10000 },
       { name: "Mix Senior Reward", rate: 10000 },
-    ] },
-  { item: "Daze Earring (L)", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 10000 },
-    ] },
-  { item: "Daze Earring (R)", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 10000 },
-    ] },
-  { item: "Deadly Staff", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+    ],
+  },
+  {
+    item: "Daze Earring (L)",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 10000 }],
+  },
+  {
+    item: "Daze Earring (R)",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 10000 }],
+  },
+  {
+    item: "Deadly Staff",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -5183,21 +7282,29 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Decoration Ring", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Decoration Ring",
+    minLevel: 1,
+    maps: [
       { name: "Monkey Purple", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Snake Purple", rate: 10000 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Defense Medicine", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Defense Medicine",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 1", rate: 10000 },
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 3", rate: 10000 },
@@ -5207,16 +7314,20 @@ const drops = [
       { name: "Event PlayTime Round 7", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
       { name: "Event PlayTime Round 9", rate: 10000 },
-    ] },
-  { item: "Demon", minLevel: 1, maps: [
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
-    ] },
-  { item: "Demonic Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Demon",
+    minLevel: 1,
+    maps: [],
+  },
+  {
+    item: "Demonic Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -5224,16 +7335,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-    ] },
-  { item: "Demonic Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Demonic Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -5241,16 +7354,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-    ] },
-  { item: "Demonic Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Demonic Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -5258,16 +7373,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-    ] },
-  { item: "Demonic Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Demonic Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -5275,16 +7392,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-    ] },
-  { item: "Demonic Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Demonic Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -5292,20 +7411,21 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-    ] },
-  { item: "Demonic Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Demonic Stick",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -5319,21 +7439,27 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Desmodus", minLevel: 1, maps: [
-      { name: "Special Grain", rate: 10000 },
-    ] },
-  { item: "Destroy Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Desmodus",
+    minLevel: 1,
+    maps: [{ name: "Special Grain", rate: 10000 }],
+  },
+  {
+    item: "Destroy Armor",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5341,8 +7467,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Destroy Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Destroy Boots",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5350,8 +7480,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Destroy Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Destroy Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5359,8 +7493,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Destroy Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Destroy Pants",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5368,11 +7506,17 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Devil Wings", minLevel: 1, maps: [
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "Devil's Invitation", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Devil Wings",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Devil's Invitation",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
@@ -5387,8 +7531,12 @@ const drops = [
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Divine Archangel Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Divine Archangel Bow",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -5396,9 +7544,13 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Divine Armor", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Divine Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5406,9 +7558,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Divine Boots", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Divine Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5416,9 +7572,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Divine Gloves", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Divine Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5426,9 +7586,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Divine Helm", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Divine Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5436,8 +7600,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Divine Magic Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Divine Magic Gun",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -5445,9 +7613,13 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Divine Pants", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Divine Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5455,8 +7627,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Divine Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Divine Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -5464,8 +7640,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Divine Staff of Archangel", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Divine Staff of Archangel",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
@@ -5473,8 +7653,12 @@ const drops = [
       { name: "Luck Box", rate: 30000 },
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Divine Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Divine Stick",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -5482,11 +7666,17 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Divine Sword of Archangel", minLevel: 1, maps: [
-      { name: "MossMerchant06.xml", rate: 10000 },
-    ] },
-  { item: "Divine Sword of the Archangel", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Divine Sword of Archangel",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Divine Sword of the Archangel",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -5494,27 +7684,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Dorov Gru Hill Armor", minLevel: 1, maps: [
-      { name: "Blessing Box", rate: 10000 },
-      { name: "Death King", rate: 5000 },
-      { name: "Dragon Red", rate: 10000 },
-      { name: "Erohim", rate: 10000 },
-      { name: "Fire Flame Ghost", rate: 10000 },
-      { name: "Firecracker", rate: 10000 },
-      { name: "Gold Medal", rate: 10000 },
-      { name: "Golden Budge Dragon", rate: 5000 },
-      { name: "Kundun", rate: 10000 },
-      { name: "Love Heart", rate: 10000 },
-      { name: "Luck Box", rate: 10000 },
-      { name: "Lunar Rabbit", rate: 5000 },
-      { name: "Moon Rabbit", rate: 5000 },
-      { name: "Pouch Of Blessing", rate: 5000 },
-      { name: "Pouch of Blessing", rate: 5000 },
-      { name: "Sacred Birth Star", rate: 10000 },
-      { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Dorov Gru Hill Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dorov Gru Hill Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -5532,8 +7707,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Dorov Gru Hill Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dorov Gru Hill Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -5551,8 +7730,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Dorov Ring of Wind", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dorov Gru Hill Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -5570,38 +7753,69 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Double Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dorov Ring of Wind",
+    minLevel: 1,
+    maps: [
+      { name: "Blessing Box", rate: 10000 },
+      { name: "Death King", rate: 5000 },
+      { name: "Dragon Red", rate: 10000 },
+      { name: "Erohim", rate: 10000 },
+      { name: "Fire Flame Ghost", rate: 10000 },
+      { name: "Firecracker", rate: 10000 },
+      { name: "Gold Medal", rate: 10000 },
+      { name: "Golden Budge Dragon", rate: 5000 },
+      { name: "Kundun", rate: 10000 },
+      { name: "Love Heart", rate: 10000 },
+      { name: "Luck Box", rate: 10000 },
+      { name: "Lunar Rabbit", rate: 5000 },
+      { name: "Moon Rabbit", rate: 5000 },
+      { name: "Pouch Of Blessing", rate: 5000 },
+      { name: "Pouch of Blessing", rate: 5000 },
+      { name: "Sacred Birth Star", rate: 10000 },
+      { name: "Silver Medal", rate: 10000 },
+    ],
+  },
+  {
+    item: "Double Blade",
+    minLevel: 1,
+    maps: [
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Double Poleaxe", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Double Poleaxe",
+    minLevel: 1,
+    maps: [
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Dragon Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Armor",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -5610,24 +7824,26 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Dragon Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Boots",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -5636,24 +7852,26 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Dragon Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -5662,25 +7880,26 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Dragon Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Helm",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -5689,12 +7908,15 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Dragon Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -5704,13 +7926,15 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Dragon Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -5719,13 +7943,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Dragon Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -5734,13 +7960,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Dragon Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -5749,13 +7977,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Dragon Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -5764,32 +7994,36 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Dragon Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Lance",
+    minLevel: 1,
+    maps: [
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Dragon Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Pants",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -5798,8 +8032,12 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Dragon Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -5808,15 +8046,14 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+
       { name: "Firecracker", rate: 20000 },
       { name: "Gold Medal", rate: 20000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Love Heart", rate: 20000 },
       { name: "Luck Box", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -5828,12 +8065,20 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Dragon Slayer Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Slayer Shield",
+    minLevel: 1,
+    maps: [
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Dragon Soul Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Soul Staff",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blessing Box", rate: 30000 },
       { name: "Blue Chocolate Box", rate: 10000 },
@@ -5846,18 +8091,16 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
       { name: "Event LastManStanding Winner Reward", rate: 200 },
       { name: "Event Raffle HitOrder 2", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 200 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 200 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 30000 },
@@ -5875,14 +8118,13 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Moon Rabbit", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Sapi Queen", rate: 10000 },
@@ -5890,46 +8132,57 @@ const drops = [
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Dragon Soul Staff ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Soul Staff ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Dragon Spear", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Dragon Spear",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Duration Wing Box", minLevel: 1, maps: [
-      { name: "Event BlessingBox Kill", rate: 10000 },
-    ] },
-  { item: "Earring of Forefathers (Left)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Duration Wing Box",
+    minLevel: 1,
+    maps: [{ name: "Event BlessingBox Kill", rate: 10000 }],
+  },
+  {
+    item: "Earring of Forefathers (Left)",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 200 },
       { name: "Box of Kundun+3", rate: 3000 },
       { name: "Box of Kundun+4", rate: 4000 },
@@ -5945,8 +8198,12 @@ const drops = [
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Sacred Birth Star", rate: 200 },
       { name: "Silver Medal", rate: 200 },
-    ] },
-  { item: "Earring of Glory (Left)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Earring of Glory (Left)",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 4200 },
       { name: "Box of Kundun+3", rate: 63000 },
       { name: "Box of Kundun+4", rate: 84000 },
@@ -5962,14 +8219,22 @@ const drops = [
       { name: "Mix ChaosCard Rare Reward", rate: 210000 },
       { name: "Sacred Birth Star", rate: 4200 },
       { name: "Silver Medal", rate: 4200 },
-    ] },
-  { item: "Earring of Honor (L)", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 10000 },
-    ] },
-  { item: "Earring of Honor (R)", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 10000 },
-    ] },
-  { item: "Earring of Wrath (Left)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Earring of Honor (L)",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 10000 }],
+  },
+  {
+    item: "Earring of Honor (R)",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 10000 }],
+  },
+  {
+    item: "Earring of Wrath (Left)",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 200 },
       { name: "Box of Kundun+3", rate: 3000 },
       { name: "Box of Kundun+4", rate: 4000 },
@@ -5985,12 +8250,15 @@ const drops = [
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Sacred Birth Star", rate: 200 },
       { name: "Silver Medal", rate: 200 },
-    ] },
-  { item: "Eclipse Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eclipse Armor",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -6000,15 +8268,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Eclipse Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+    ],
+  },
+  {
+    item: "Eclipse Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -6016,15 +8286,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Eclipse Gloves", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+    ],
+  },
+  {
+    item: "Eclipse Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -6032,14 +8304,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Eclipse Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eclipse Helm",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -6047,14 +8322,17 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Eclipse Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eclipse Pants",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -6063,8 +8341,12 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "El Haz Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "El Haz Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -6086,15 +8368,23 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "El Hazard Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "El Hazard Shield",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
       { name: "Elite Lizard King of Abyss", rate: 5000 },
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Elemental Book", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elemental Book",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -6116,31 +8406,44 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Elemental Capsule(Normal)", minLevel: 1, maps: [
-      { name: "Element Box", rate: 10000 },
-    ] },
-  { item: "Elemental Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elemental Capsule(Normal)",
+    minLevel: 1,
+    maps: [{ name: "Element Box", rate: 10000 }],
+  },
+  {
+    item: "Elemental Mace",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Elemental Powder", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elemental Powder",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 10000 },
       { name: "Elemental Capsule (Earth)", rate: 10000 },
       { name: "Elemental Capsule (Fire)", rate: 10000 },
       { name: "Elemental Capsule (Normal)", rate: 10000 },
       { name: "Elemental Capsule (Water)", rate: 10000 },
       { name: "Elemental Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Elemental Rune", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elemental Rune",
+    minLevel: 1,
+    maps: [
       { name: "Boss Battle Bonus Box", rate: 30000 },
       { name: "Elemental Capsule (Darkness)", rate: 5000 },
       { name: "Elemental Capsule (Earth)", rate: 5000 },
@@ -6157,8 +8460,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 590 },
       { name: "[Lvl4] Monster Soul Converter", rate: 670 },
       { name: "[Lvl5] Monster Soul Converter", rate: 760 },
-    ] },
-  { item: "Elemental Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elemental Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
@@ -6177,8 +8484,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Moon Rabbit", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -6188,57 +8494,101 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Elemental Talisman of Chaos", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elemental Talisman of Chaos",
+    minLevel: 1,
+    maps: [{ name: "Elemental Talisman Box", rate: 500 }],
+  },
+  {
+    item: "Elemental Talisman of Luck",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Talisman Box", rate: 500 },
-    ] },
-  { item: "Elemental Talisman of Luck", minLevel: 1, maps: [
-      { name: "Elemental Talisman Box", rate: 500 },
-      { name: "MossMerchant07.xml", rate: 10000 },
-    ] },
-  { item: "Elite Healing Potion", minLevel: 1, maps: [
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Elite Healing Potion",
+    minLevel: 1,
+    maps: [
       { name: "Golden Box", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Elite Mana Potion", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elite Mana Potion",
+    minLevel: 1,
+    maps: [
       { name: "Golden Box", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Elixir", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elixir",
+    minLevel: 1,
+    maps: [
       { name: "Rooster Green", rate: 600 },
       { name: "Rooster Purple", rate: 600 },
       { name: "Rooster Red", rate: 600 },
       { name: "Rooster White", rate: 600 },
-    ] },
-  { item: "Elixir of Agility", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elixir of Agility",
+    minLevel: 1,
+    maps: [
       { name: "Boss Battle Bonus Box", rate: 9000 },
       { name: "Elixir Jar", rate: 10000 },
-    ] },
-  { item: "Elixir of Control", minLevel: 1, maps: [
-      { name: "Elixir Jar", rate: 10000 },
-    ] },
-  { item: "Elixir of Energy", minLevel: 1, maps: [
-      { name: "Elixir Jar", rate: 10000 },
-    ] },
-  { item: "Elixir of Health", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elixir of Control",
+    minLevel: 1,
+    maps: [{ name: "Elixir Jar", rate: 10000 }],
+  },
+  {
+    item: "Elixir of Energy",
+    minLevel: 1,
+    maps: [{ name: "Elixir Jar", rate: 10000 }],
+  },
+  {
+    item: "Elixir of Health",
+    minLevel: 1,
+    maps: [
       { name: "Boss Battle Bonus Box", rate: 9000 },
       { name: "Elixir Jar", rate: 10000 },
-    ] },
-  { item: "Elixir of Strength", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elixir of Strength",
+    minLevel: 1,
+    maps: [
       { name: "Boss Battle Bonus Box", rate: 9000 },
       { name: "Elixir Jar", rate: 10000 },
-    ] },
-  { item: "Elven Axe", minLevel: 1, maps: [
-      { name: "Heaven Box", rate: 10000 },
-    ] },
-  { item: "Elven Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elven Axe",
+    minLevel: 1,
+    maps: [{ name: "Heaven Box", rate: 10000 }],
+  },
+  {
+    item: "Elven Bow",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Elven Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Elven Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -6250,8 +8600,12 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Emile El Haz Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Emile El Haz Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6269,8 +8623,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Emile Kenaz Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Emile Kenaz Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6288,8 +8646,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Emile Kenaz Bandana", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Emile Kenaz Bandana",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6307,8 +8669,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Emile Kenaz Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Emile Kenaz Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -6316,8 +8682,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Emile Kenaz Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Emile Kenaz Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -6325,8 +8695,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Emile Kenaz Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Emile Kenaz Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6344,8 +8718,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Empire Guardians' Stronghold", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Empire Guardians' Stronghold",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
@@ -6385,7 +8763,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -6402,11 +8780,17 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Entro Magic Gun", minLevel: 1, maps: [
-      { name: "MossMerchant05.xml", rate: 10000 },
-    ] },
-  { item: "Entropy Magic Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Entro Magic Gun",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Entropy Magic Gun",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -6414,27 +8798,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Eplete Pendant of Lightning", minLevel: 1, maps: [
-      { name: "Blessing Box", rate: 10000 },
-      { name: "Death King", rate: 5000 },
-      { name: "Dragon Red", rate: 10000 },
-      { name: "Erohim", rate: 10000 },
-      { name: "Fire Flame Ghost", rate: 10000 },
-      { name: "Firecracker", rate: 10000 },
-      { name: "Gold Medal", rate: 10000 },
-      { name: "Golden Budge Dragon", rate: 5000 },
-      { name: "Kundun", rate: 10000 },
-      { name: "Love Heart", rate: 10000 },
-      { name: "Luck Box", rate: 10000 },
-      { name: "Lunar Rabbit", rate: 5000 },
-      { name: "Moon Rabbit", rate: 5000 },
-      { name: "Pouch Of Blessing", rate: 5000 },
-      { name: "Pouch of Blessing", rate: 5000 },
-      { name: "Sacred Birth Star", rate: 10000 },
-      { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Eplete Scale Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eplete Pendant of Lightning",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6452,8 +8821,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Eplete Scale Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eplete Scale Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6471,8 +8844,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Eplete Scale Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eplete Scale Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6490,8 +8867,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Eplete Scale Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eplete Scale Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6509,11 +8890,40 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Erohim's Nightmare", minLevel: 1, maps: [
-      { name: "Golden Tantalose", rate: 3000 },
-    ] },
-  { item: "Errtel Emblem", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eplete Scale Shield",
+    minLevel: 1,
+    maps: [
+      { name: "Blessing Box", rate: 10000 },
+      { name: "Death King", rate: 5000 },
+      { name: "Dragon Red", rate: 10000 },
+      { name: "Erohim", rate: 10000 },
+      { name: "Fire Flame Ghost", rate: 10000 },
+      { name: "Firecracker", rate: 10000 },
+      { name: "Gold Medal", rate: 10000 },
+      { name: "Golden Budge Dragon", rate: 5000 },
+      { name: "Kundun", rate: 10000 },
+      { name: "Love Heart", rate: 10000 },
+      { name: "Luck Box", rate: 10000 },
+      { name: "Lunar Rabbit", rate: 5000 },
+      { name: "Moon Rabbit", rate: 5000 },
+      { name: "Pouch Of Blessing", rate: 5000 },
+      { name: "Pouch of Blessing", rate: 5000 },
+      { name: "Sacred Birth Star", rate: 10000 },
+      { name: "Silver Medal", rate: 10000 },
+    ],
+  },
+  {
+    item: "Erohim's Nightmare",
+    minLevel: 1,
+    maps: [{ name: "Golden Tantalose", rate: 3000 }],
+  },
+  {
+    item: "Errtel Emblem",
+    minLevel: 1,
+    maps: [
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Gnome", rate: 5000 },
       { name: "Hellraiser", rate: 5000 },
@@ -6525,8 +8935,12 @@ const drops = [
       { name: "Sylphid", rate: 5000 },
       { name: "Ukanva", rate: 5000 },
       { name: "Undine", rate: 5000 },
-    ] },
-  { item: "Errtel of Anger", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Errtel of Anger",
+    minLevel: 1,
+    maps: [
       { name: "Box of Blessing", rate: 10000 },
       { name: "Elemental Capsule (Darkness)", rate: 7000 },
       { name: "Elemental Capsule (Earth)", rate: 7000 },
@@ -6538,9 +8952,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
-    ] },
-  { item: "Errtel of Blessing", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Errtel of Blessing",
+    minLevel: 1,
+    maps: [
       { name: "Box of Blessing", rate: 10000 },
       { name: "Elemental Capsule (Darkness)", rate: 7000 },
       { name: "Elemental Capsule (Earth)", rate: 7000 },
@@ -6552,9 +8969,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
-    ] },
-  { item: "Errtel of Divinity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Errtel of Divinity",
+    minLevel: 1,
+    maps: [
       { name: "Box of Blessing", rate: 10000 },
       { name: "Elemental Capsule (Darkness)", rate: 7000 },
       { name: "Elemental Capsule (Earth)", rate: 7000 },
@@ -6566,9 +8986,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
-    ] },
-  { item: "Errtel of Integrity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Errtel of Integrity",
+    minLevel: 1,
+    maps: [
       { name: "Box of Blessing", rate: 10000 },
       { name: "Elemental Capsule (Darkness)", rate: 7000 },
       { name: "Elemental Capsule (Earth)", rate: 7000 },
@@ -6580,87 +9003,127 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
-    ] },
-  { item: "Errtel of Radiance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Errtel of Radiance",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 7000 },
       { name: "Elemental Capsule (Earth)", rate: 7000 },
       { name: "Elemental Capsule (Fire)", rate: 7000 },
       { name: "Elemental Capsule (Normal)", rate: 10000 },
       { name: "Elemental Capsule (Water)", rate: 7000 },
       { name: "Elemental Capsule (Wind)", rate: 7000 },
-    ] },
-  { item: "Eternal Wing Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eternal Wing Armor",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Eternal Wing Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eternal Wing Boots",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Eternal Wing Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eternal Wing Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Eternal Wing Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eternal Wing Helm",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Eternal Wing Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eternal Wing Pants",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Eternal Wing Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Eternal Wing Stick",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Event Map Ticket", minLevel: 1, maps: [
-      { name: "PlayTime Box", rate: 10000 },
-    ] },
-  { item: "Evolution Stone", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Event Map Ticket",
+    minLevel: 1,
+    maps: [{ name: "PlayTime Box", rate: 10000 }],
+  },
+  {
+    item: "Evolution Stone",
+    minLevel: 1,
+    maps: [
       { name: "Fire Flame Ghost Egg", rate: 110 },
       { name: "Golden Goblin Egg", rate: 300 },
       { name: "Lucky Bag Egg", rate: 8000 },
       { name: "WereRabbit Egg", rate: 110 },
-    ] },
-  { item: "Expansion Scroll Radiance Slo", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Expansion Scroll Radiance Slo",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 1500 },
       { name: "Elemental Capsule (Earth)", rate: 1500 },
       { name: "Elemental Capsule (Fire)", rate: 1500 },
       { name: "Elemental Capsule (Water)", rate: 1500 },
       { name: "Elemental Capsule (Wind)", rate: 1500 },
-    ] },
-  { item: "Explosion Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Explosion Blade",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -6684,24 +9147,29 @@ const drops = [
       { name: "Moon Rabbit", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Falchion", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Falchion",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
-    ] },
-  { item: "Flail", minLevel: 1, maps: [
-      { name: "Heaven Box", rate: 10000 },
-    ] },
-  { item: "Flameberge", minLevel: 1, maps: [
+    ],
+  },
+  { item: "Flail", minLevel: 1, maps: [{ name: "Heaven Box", rate: 10000 }] },
+  {
+    item: "Flameberge",
+    minLevel: 1,
+    maps: [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
@@ -6710,8 +9178,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Flat Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Flat Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -6719,40 +9191,60 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Fragment of Radiance slot (1)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Fragment of Radiance slot (1)",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 1500 },
       { name: "Elemental Capsule (Earth)", rate: 1500 },
       { name: "Elemental Capsule (Fire)", rate: 1500 },
       { name: "Elemental Capsule (Normal)", rate: 1500 },
       { name: "Elemental Capsule (Water)", rate: 1500 },
       { name: "Elemental Capsule (Wind)", rate: 1500 },
-    ] },
-  { item: "Fragment of Radiance slot (2)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Fragment of Radiance slot (2)",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 1500 },
       { name: "Elemental Capsule (Earth)", rate: 1500 },
       { name: "Elemental Capsule (Fire)", rate: 1500 },
       { name: "Elemental Capsule (Normal)", rate: 1500 },
       { name: "Elemental Capsule (Water)", rate: 1500 },
       { name: "Elemental Capsule (Wind)", rate: 1500 },
-    ] },
-  { item: "Fragment of Radiance slot (3)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Fragment of Radiance slot (3)",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 1500 },
       { name: "Elemental Capsule (Earth)", rate: 1500 },
       { name: "Elemental Capsule (Fire)", rate: 1500 },
       { name: "Elemental Capsule (Normal)", rate: 1500 },
       { name: "Elemental Capsule (Water)", rate: 1500 },
       { name: "Elemental Capsule (Wind)", rate: 1500 },
-    ] },
-  { item: "Fragment of Radiance slot (4)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Fragment of Radiance slot (4)",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Darkness)", rate: 1500 },
       { name: "Elemental Capsule (Earth)", rate: 1500 },
       { name: "Elemental Capsule (Fire)", rate: 1500 },
       { name: "Elemental Capsule (Normal)", rate: 1500 },
       { name: "Elemental Capsule (Water)", rate: 1500 },
       { name: "Elemental Capsule (Wind)", rate: 1500 },
-    ] },
-  { item: "Frere Magic Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Frere Magic Gun",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -6769,14 +9261,18 @@ const drops = [
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Frost Barrier", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Frost Barrier",
+    minLevel: 1,
+    maps: [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
@@ -6785,13 +9281,17 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Frost Lightning", minLevel: 1, maps: [
-      { name: "God of Darkness", rate: 10000 },
-    ] },
-  { item: "Frost Mace", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+    ],
+  },
+  {
+    item: "Frost Lightning",
+    minLevel: 1,
+    maps: [{ name: "God of Darkness", rate: 10000 }],
+  },
+  {
+    item: "Frost Mace",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -6801,15 +9301,19 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Frost Soul", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Frost Soul",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
@@ -6849,8 +9353,12 @@ const drops = [
       { name: "Sylphid", rate: 1000 },
       { name: "Ukanva", rate: 1000 },
       { name: "Undine", rate: 1000 },
-    ] },
-  { item: "Gaia Golden Crossbow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaia Golden Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6868,8 +9376,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gaia Silk Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaia Silk Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6887,8 +9399,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gaia Silk Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaia Silk Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6906,8 +9422,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gaia Silk Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaia Silk Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6925,8 +9445,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gaia Silk Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaia Silk Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6944,8 +9468,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gaion Atlans Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaion Atlans Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6963,8 +9491,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gaion Atlans Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaion Atlans Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -6982,8 +9514,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gaion Atlans Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaion Atlans Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7001,8 +9537,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Gaion Pendant of Water", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gaion Pendant of Water",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7020,8 +9560,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Garuda Brass Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Garuda Brass Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7039,8 +9583,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Garuda Brass Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Garuda Brass Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7058,8 +9606,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Garuda Brass Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Garuda Brass Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7077,8 +9629,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Garuda Brass Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Garuda Brass Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7096,8 +9652,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Garuda Pendant of Fire", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Garuda Pendant of Fire",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7115,31 +9675,53 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Garuda's Feather", minLevel: 1, maps: [
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "Garuda's Flame", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Garuda's Feather",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Garuda's Flame",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 500 },
       { name: "Elite Devil Sorcerer", rate: 500 },
       { name: "Elite Devil Sword", rate: 500 },
-    ] },
-  { item: "Gemstone", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gemstone",
+    minLevel: 1,
+    maps: [
       { name: "Elegant Jewelry Case", rate: 10000 },
       { name: "Old Jewelry Case", rate: 10000 },
       { name: "Shining Jewelry Case", rate: 10000 },
       { name: "Steel Jewelry Case", rate: 10000 },
-    ] },
-  { item: "Giant Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Giant Sword",
+    minLevel: 1,
+    maps: [
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Giant Trident", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Giant Trident",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Gladiator's Dagger", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gladiator's Dagger",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
@@ -7179,7 +9761,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -7196,55 +9778,73 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Glorious Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Glorious Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
-    ] },
-  { item: "Glorious Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Glorious Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
-    ] },
-  { item: "Glorious Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Glorious Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
-    ] },
-  { item: "Glorious Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Glorious Mask",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
-    ] },
-  { item: "Glorious Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Glorious Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
-    ] },
-  { item: "Golden Cherry Blossom Branch", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Golden Cherry Blossom Branch",
+    minLevel: 1,
+    maps: [
       { name: "Cherry Blossom Play Box", rate: 4500 },
       { name: "Mix CherryBlossom White Reward", rate: 4500 },
-    ] },
-  { item: "Golden Crossbow", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 110000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Golden Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -7255,85 +9855,119 @@ const drops = [
       { name: "Green Box", rate: 300 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Golden Sentence", minLevel: 1, maps: [
-      { name: "Box of Blessing", rate: 8000 },
-    ] },
-  { item: "Gorgon Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Golden Sentence",
+    minLevel: 1,
+    maps: [{ name: "Box of Blessing", rate: 8000 }],
+  },
+  {
+    item: "Gorgon Staff",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Grace Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grace Armor",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Grace Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grace Boots",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Grace Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grace Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Grace Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grace Helm",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Grace Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grace Pants",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Grace Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grace Shield",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Grand Soul Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grand Soul Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -7341,16 +9975,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -7366,8 +9995,12 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Grand Soul Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grand Soul Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -7375,16 +10008,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -7399,8 +10027,12 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Grand Soul Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grand Soul Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -7408,16 +10040,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -7432,8 +10059,12 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Grand Soul Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grand Soul Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -7441,14 +10072,9 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -7464,8 +10090,12 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Grand Soul Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grand Soul Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -7473,16 +10103,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -7498,8 +10123,12 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Grand Soul Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grand Soul Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
@@ -7532,8 +10161,12 @@ const drops = [
       { name: "Shiny Earring Box (Right)", rate: 570 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Grand Viper Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grand Viper Staff",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -7557,13 +10190,16 @@ const drops = [
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Great Dragon Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Dragon Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -7575,16 +10211,18 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Great Dragon Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Dragon Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -7595,16 +10233,18 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
-    ] },
-  { item: "Great Dragon Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Dragon Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -7615,14 +10255,16 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
-    ] },
-  { item: "Great Dragon Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Dragon Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -7634,14 +10276,16 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
-    ] },
-  { item: "Great Dragon Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Dragon Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -7653,10 +10297,12 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
-    ] },
-  { item: "Great Hammer", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+    ],
+  },
+  {
+    item: "Great Hammer",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -7664,14 +10310,17 @@ const drops = [
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Great Lord Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Lord Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -7686,16 +10335,20 @@ const drops = [
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 20000 },
+      { name: "Moss Merchant", rate: 20000 },
       { name: "Nightmare", rate: 20000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Great Reign Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Reign Bow",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -7703,13 +10356,16 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Great Reign Crossbow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Reign Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -7722,60 +10378,72 @@ const drops = [
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
-    ] },
-  { item: "Great Reign Crossbow ", minLevel: 1, maps: [
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Great Reign Crossbow ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Great Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Kundun", rate: 10000 },
       { name: "Kundun Box+2", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Great Scepter ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Scepter ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Great Scythe", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Great Scythe",
+    minLevel: 1,
+    maps: [
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -7783,35 +10451,43 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Grow Lancer", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 100000 },
-    ] },
-  { item: "Guardian Angel", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Grow Lancer",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 100000 }],
+  },
+  {
+    item: "Guardian Angel",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Mix CherryBlossom Red Reward", rate: 10000 },
       { name: "NPC SantaClause1 Reward", rate: 4000 },
-    ] },
-  { item: "Guardian Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Guardian Armor",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -7822,24 +10498,26 @@ const drops = [
       { name: "Rooster White", rate: 300 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Guardian Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Guardian Boots",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -7850,27 +10528,31 @@ const drops = [
       { name: "Rooster White", rate: 300 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Guardian Enhanced Stone", minLevel: 1, maps: [
-      { name: "MossMerchant10.xml", rate: 10000 },
-    ] },
-  { item: "Guardian Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Guardian Enhanced Stone",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Guardian Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -7881,23 +10563,25 @@ const drops = [
       { name: "Rooster White", rate: 300 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Guardian Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Guardian Helm",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -7908,29 +10592,33 @@ const drops = [
       { name: "Rooster White", rate: 300 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Guardian Jewel", minLevel: 1, maps: [
-      { name: "MossMerchant09.xml", rate: 10000 },
-    ] },
-  { item: "Guardian Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Guardian Jewel",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Guardian Pants",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -7941,8 +10629,12 @@ const drops = [
       { name: "Rooster White", rate: 300 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Guardian Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Guardian Shield",
+    minLevel: 1,
+    maps: [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
@@ -7951,8 +10643,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Gywin Guardian Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gywin Guardian Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7970,8 +10666,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gywin Guardian Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gywin Guardian Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -7989,8 +10689,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gywin Guardian Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gywin Guardian Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8008,8 +10712,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gywin Pendant of Ability", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gywin Pendant of Ability",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8027,8 +10735,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Gywin Silver Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Gywin Silver Bow",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8046,9 +10758,13 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hades Armor", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Hades Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -8056,9 +10772,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Hades Boots", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Hades Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -8066,9 +10786,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Hades Gloves", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Hades Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -8076,9 +10800,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Hades Helm", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Hades Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -8086,9 +10814,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Hades Pants", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Hades Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -8096,46 +10828,78 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Halberd", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Halberd",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Heliacal Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Heliacal Sword",
+    minLevel: 1,
+    maps: [
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Hell Maine", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Hell Maine's Insanity", minLevel: 1, maps: [
-      { name: "Golden Erohim", rate: 2500 },
-    ] },
-  { item: "Hell Night Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Hell Maine",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Hell Maine's Insanity",
+    minLevel: 1,
+    maps: [{ name: "Golden Erohim", rate: 2500 }],
+  },
+  {
+    item: "Hell Night Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Hell Night Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Hell Night Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Hell Night Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Hell Night Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Hell Night Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Hell Night Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Heras Skull Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Heras Skull Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -8143,8 +10907,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Heras Sphinx Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Heras Sphinx Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -8152,8 +10920,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Heras Sphinx Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Heras Sphinx Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -8161,8 +10933,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Heras Sphinx Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Heras Sphinx Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -8170,8 +10946,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Heras Sphinx Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Heras Sphinx Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -8179,8 +10959,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Heras Sphinx Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Heras Sphinx Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -8188,8 +10972,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hero Elixir", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hero Elixir",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Normal)", rate: 500 },
       { name: "Lord Silvester", rate: 1600 },
       { name: "[Lvl 1] Soul Converter Box", rate: 300 },
@@ -8201,8 +10989,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Higher Magic Stone", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Higher Magic Stone",
+    minLevel: 1,
+    maps: [
       { name: "Cursed Santa", rate: 20000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
       { name: "Gnome", rate: 10000 },
@@ -8215,8 +11007,12 @@ const drops = [
       { name: "Sylphid", rate: 10000 },
       { name: "Ukanva", rate: 10000 },
       { name: "Undine", rate: 10000 },
-    ] },
-  { item: "Holy Spirit Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holy Spirit Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -8224,12 +11020,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -8237,8 +11032,12 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Holy Spirit Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holy Spirit Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -8246,20 +11045,23 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Holy Spirit Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holy Spirit Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -8267,20 +11069,23 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Holy Spirit Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holy Spirit Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -8288,10 +11093,9 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -8299,8 +11103,12 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Holy Spirit Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holy Spirit Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -8308,12 +11116,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -8321,13 +11128,14 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Holy Storm Claws", minLevel: 1, maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+    ],
+  },
+  {
+    item: "Holy Storm Claws",
+    minLevel: 1,
+    maps: [
       { name: "Green Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
@@ -8336,8 +11144,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Holy Storm Glove", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holy Storm Glove",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -8359,227 +11171,377 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Holyangel Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Blade",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Bow",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Claws",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Elf Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Elf Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Elf Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Elf Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Elf Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Fighter Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Fighter Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Fighter Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Fighter Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Elf Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Elf Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Elf Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Elf Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Elf Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Fighter Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Fighter Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Fighter Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Fighter Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Gun",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Gun Crusher Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Gun Crusher Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Gun Crusher Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Gun Crusher Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Gun Crusher Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Illusion Knight Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Illusion Knight Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Illusion Knight Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Illusion Knight Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Illusion Knight Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Knight Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Knight Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Knight Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Knight Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Knight Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Gun Crusher Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Gun Crusher Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Gun Crusher Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Gun Crusher Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Illusion Knight Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Illusion Knight Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Illusion Knight Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Illusion Knight Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Illusion Knight Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Knight Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Knight Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Knight Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Knight Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Knight Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lance",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Lancer Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lancer Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lancer Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lancer Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lancer Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lemuria Mage Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lemuria Mage Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lemuria Mage Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lemuria Mage Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lemuria Mage Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Light Wizard Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Light Wizard Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Light Wizard Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Light Wizard Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Light Wizard Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lord Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lord Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lord Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lord Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Lord Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Magic 2H Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Lancer Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lancer Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lancer Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lancer Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lancer Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lemuria Mage Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lemuria Mage Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lemuria Mage Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lemuria Mage Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lemuria Mage Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Light Wizard Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Light Wizard Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Light Wizard Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Light Wizard Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Light Wizard Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lord Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lord Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lord Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lord Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Lord Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Magic 2H Sword",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Magic Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Magic Sword",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Orb",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Slayer Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Slayer Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Slayer Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Slayer Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Slayer Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Spirit", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Slayer Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Slayer Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Slayer Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Slayer Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Slayer Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Spirit",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
@@ -8620,76 +11582,123 @@ const drops = [
       { name: "Sylphid", rate: 1000 },
       { name: "Ukanva", rate: 1000 },
       { name: "Undine", rate: 1000 },
-    ] },
-  { item: "Holyangel Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Staff",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Stick",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Summoner Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Summoner Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Summoner Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Summoner Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Summoner Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Summoner Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Summoner Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Summoner Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Summoner Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Summoner Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Sword",
+    minLevel: 1,
+    maps: [
       { name: "Kundun", rate: 30000 },
       { name: "Medusa", rate: 6000 },
       { name: "Selupan", rate: 10000 },
       { name: "Zaikan", rate: 6000 },
-    ] },
-  { item: "Holyangel Wizard Armor", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Wizard Boots", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Wizard Gloves", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Wizard Helm", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Holyangel Wizard Pants", minLevel: 1, maps: [
-      { name: "Zaikan", rate: 5000 },
-    ] },
-  { item: "Horn of Dinorant", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Holyangel Wizard Armor",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Wizard Boots",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Wizard Gloves",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Wizard Helm",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Holyangel Wizard Pants",
+    minLevel: 1,
+    maps: [{ name: "Zaikan", rate: 5000 }],
+  },
+  {
+    item: "Horn of Dinorant",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Mix CherryBlossom Red Reward", rate: 10000 },
-    ] },
-  { item: "Horn of Fenrir", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Horn of Fenrir",
+    minLevel: 1,
+    maps: [
       { name: "Monkey Red", rate: 10000 },
       { name: "Roomy Card Box (Higher)", rate: 1000 },
       { name: "Roomy Card Box (Medium)", rate: 1000 },
       { name: "Snake Red", rate: 10000 },
-    ] },
-  { item: "Horn of Uniria", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Horn of Uniria",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Mix CherryBlossom Red Reward", rate: 10000 },
-    ] },
-  { item: "Hurricane Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hurricane Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -8701,14 +11710,16 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
-    ] },
-  { item: "Hurricane Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hurricane Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -8720,14 +11731,16 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
-    ] },
-  { item: "Hurricane Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hurricane Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -8739,14 +11752,16 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
-    ] },
-  { item: "Hurricane Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hurricane Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -8758,12 +11773,17 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
-    ] },
-  { item: "Hydra", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Hyon Dragon Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hydra",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Hyon Dragon Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8781,8 +11801,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hyon Dragon Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hyon Dragon Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8800,8 +11824,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hyon Dragon Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hyon Dragon Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8819,8 +11847,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hyon Lightning Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hyon Lightning Sword",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8838,8 +11870,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hyperion Bronze Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hyperion Bronze Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8857,8 +11893,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hyperion Bronze Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hyperion Bronze Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8876,8 +11916,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Hyperion Bronze Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Hyperion Bronze Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -8895,8 +11939,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Ice Dragon", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ice Dragon",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 4000 },
       { name: "Elite Underground Dreadfear", rate: 2000 },
       { name: "Erohim", rate: 2000 },
@@ -8907,8 +11955,12 @@ const drops = [
       { name: "Lord of Ferea", rate: 4000 },
       { name: "Nix", rate: 2000 },
       { name: "Selupan", rate: 2000 },
-    ] },
-  { item: "Ice Dragon (Rare)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ice Dragon (Rare)",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 4000 },
       { name: "Elite Underground Dreadfear", rate: 2000 },
       { name: "Erohim", rate: 2000 },
@@ -8919,16 +11971,18 @@ const drops = [
       { name: "Lord of Ferea", rate: 4000 },
       { name: "Nix", rate: 2000 },
       { name: "Selupan", rate: 2000 },
-    ] },
-  { item: "Imp", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Imp",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1300 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 800 },
+      { name: "Event Chaos Castle 1", rate: 1300 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 800 },
       { name: "Event IceWindCastle GuildMember", rate: 800 },
@@ -8940,16 +11994,17 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 800 },
       { name: "Event Raffle Lotto 2", rate: 800 },
       { name: "Event ScrambleWord Level 2", rate: 800 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Heaven Box", rate: 10000 },
       { name: "Helper Ellen", rate: 10000 },
       { name: "Mix CherryBlossom Red Reward", rate: 10000 },
       { name: "NPC SantaClause1 Reward", rate: 4000 },
-      { name: "ResetSystem Regular", rate: 800 },
-    ] },
-  { item: "Inberial Staff", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+    ],
+  },
+  {
+    item: "Inberial Staff",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -8959,15 +12014,19 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Invisibility Cloak", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Invisibility Cloak",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
@@ -8982,16 +12041,15 @@ const drops = [
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Iris Armor", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Iris Armor",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -9003,18 +12061,17 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Iris Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Iris Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -9024,18 +12081,17 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Iris Gloves", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Iris Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -9045,18 +12101,17 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Iris Helm", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Iris Helm",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -9066,18 +12121,17 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Iris Pants", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Iris Pants",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -9088,8 +12142,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Iron Shield of the Magic", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Iron Shield of the Magic",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Capsule (Normal)", rate: 500 },
       { name: "Lord Silvester", rate: 1600 },
       { name: "[Lvl 1] Soul Converter Box", rate: 300 },
@@ -9101,31 +12159,43 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Jack O'Lantern Blessings", minLevel: 1, maps: [
-      { name: "Pumpkin of Luck", rate: 10000 },
-    ] },
-  { item: "Jack O'Lantern Cry", minLevel: 1, maps: [
-      { name: "Pumpkin of Luck", rate: 10000 },
-    ] },
-  { item: "Jack O'Lantern Drink", minLevel: 1, maps: [
-      { name: "Pumpkin of Luck", rate: 10000 },
-    ] },
-  { item: "Jack O'Lantern Food", minLevel: 1, maps: [
-      { name: "Pumpkin of Luck", rate: 10000 },
-    ] },
-  { item: "Jack O'Lantern Wrath", minLevel: 1, maps: [
-      { name: "Pumpkin of Luck", rate: 10000 },
-    ] },
-  { item: "Jack Olantern Ring", minLevel: 1, maps: [
-      { name: "Pumpkin of Luck", rate: 10000 },
-    ] },
-  { item: "Jewel of Bless", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Jack O'Lantern Blessings",
+    minLevel: 1,
+    maps: [{ name: "Pumpkin of Luck", rate: 10000 }],
+  },
+  {
+    item: "Jack O'Lantern Cry",
+    minLevel: 1,
+    maps: [{ name: "Pumpkin of Luck", rate: 10000 }],
+  },
+  {
+    item: "Jack O'Lantern Drink",
+    minLevel: 1,
+    maps: [{ name: "Pumpkin of Luck", rate: 10000 }],
+  },
+  {
+    item: "Jack O'Lantern Food",
+    minLevel: 1,
+    maps: [{ name: "Pumpkin of Luck", rate: 10000 }],
+  },
+  {
+    item: "Jack O'Lantern Wrath",
+    minLevel: 1,
+    maps: [{ name: "Pumpkin of Luck", rate: 10000 }],
+  },
+  {
+    item: "Jack Olantern Ring",
+    minLevel: 1,
+    maps: [{ name: "Pumpkin of Luck", rate: 10000 }],
+  },
+  {
+    item: "Jewel of Bless",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,259) Devils Box", rate: 10000 },
-      { name: "(14,260) High Devils Box", rate: 10000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -9143,6 +12213,7 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
+      { name: "Devils Box", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Elegant Jewelry Case", rate: 2000 },
       { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
@@ -9167,22 +12238,22 @@ const drops = [
       { name: "Erohim", rate: 10000 },
       { name: "Event AcheronGuardian Reward", rate: 19880 },
       { name: "Event ArcaBattle Winner GuildMaster Reward", rate: 10000 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
       { name: "Event CW Elf Altar", rate: 10000 },
       { name: "Event CW Hero List", rate: 10000 },
-      { name: "Event CastleSiege Winner Alliance GuildMaster Reward", rate: 10000 },
+      {
+        name: "Event CastleSiege Winner Alliance GuildMaster Reward",
+        rate: 10000,
+      },
       { name: "Event CastleSiege Winner Main GuildMaster Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 4480 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Chaos Castle 1", rate: 4480 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -9195,14 +12266,14 @@ const drops = [
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
       { name: "Event Raffle HitOrder 2", rate: 680 },
-      { name: "Event Raffle HitOrder 3", rate: 10000 },
+
       { name: "Event Raffle Lotto 2", rate: 680 },
-      { name: "Event Raffle Lotto 3", rate: 10000 },
+
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Fire Flame Ghost Egg", rate: 820 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Gnome", rate: 10000 },
       { name: "Goblin Treasure Box (Blue)", rate: 12625 },
       { name: "Goblin Treasure Box (Green)", rate: 12250 },
@@ -9236,8 +12307,10 @@ const drops = [
       { name: "Golden Wheel", rate: 10000 },
       { name: "Gorgon", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Hellraiser", rate: 10000 },
+      { name: "High Devils Box", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
       { name: "IllusionTemple Renewal 1", rate: 10000 },
@@ -9264,13 +12337,12 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 20000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -9282,10 +12354,11 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 11300 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Higher)", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 10000 },
       { name: "Roomy Card Box (Medium)", rate: 10000 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -9322,14 +12395,22 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 7000 },
       { name: "[Lvl4] Monster Soul Converter", rate: 6800 },
       { name: "[Lvl5] Monster Soul Converter", rate: 6600 },
-    ] },
-  { item: "Jewel of Bless x10", minLevel: 1, maps: [
-      { name: "MossMerchant08.xml", rate: 10000 },
-    ] },
-  { item: "Jewel of Bloodangel", minLevel: 1, maps: [
-      { name: "Gorgon", rate: 10000 },
-    ] },
-  { item: "Jewel of Chaos", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Jewel of Bless x10",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Jewel of Bloodangel",
+    minLevel: 1,
+    maps: [{ name: "Gorgon", rate: 10000 }],
+  },
+  {
+    item: "Jewel of Chaos",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 1000 },
       { name: "Baseball Lower Case", rate: 1000 },
       { name: "Baseball Senior Box", rate: 1000 },
@@ -9349,20 +12430,20 @@ const drops = [
       { name: "Earring Box of Fury (Right)", rate: 10000 },
       { name: "Elegant Jewelry Case", rate: 10000 },
       { name: "Event ArcaBattle Loser GuildMaster Reward", rate: 10000 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
-      { name: "Event CastleSiege Loser Alliance GuildMaster Reward", rate: 10000 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
+      {
+        name: "Event CastleSiege Loser Alliance GuildMaster Reward",
+        rate: 10000,
+      },
       { name: "Event CastleSiege Loser Main GuildMaster Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1180 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 1000 },
-      { name: "Event HideAndSeek Round 1", rate: 2000 },
-      { name: "Event HideAndSeek Round 2", rate: 1480 },
+      { name: "Event Chaos Castle 1", rate: 1180 },
+
       { name: "Event Higher Box", rate: 1000 },
       { name: "Event IceWindCastle GuildMaster", rate: 1480 },
       { name: "Event IceWindCastle GuildMember", rate: 1480 },
@@ -9373,13 +12454,13 @@ const drops = [
       { name: "Event Luxuary Box", rate: 1000 },
       { name: "Event Medium Box", rate: 1000 },
       { name: "Event Raffle HitOrder 2", rate: 1480 },
-      { name: "Event Raffle HitOrder 3", rate: 2000 },
+
       { name: "Event Raffle Lotto 2", rate: 1480 },
-      { name: "Event Raffle Lotto 3", rate: 2000 },
+
       { name: "Event ScrambleWord Level 2", rate: 1480 },
       { name: "Fire Flame Ghost Egg", rate: 1500 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 1000 },
+
       { name: "Ghost Horse Capsule", rate: 10000 },
       { name: "Gold Hell Maine", rate: 12400 },
       { name: "Gold Medal", rate: 5000 },
@@ -9418,14 +12499,13 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "NPC SantaClause1 Reward", rate: 10000 },
       { name: "Old Jewelry Case", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -9435,7 +12515,7 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1480 },
+
       { name: "Roomy Card Box (Lower)", rate: 2000 },
       { name: "Sacred Birth Star", rate: 5000 },
       { name: "Sapi Queen", rate: 230 },
@@ -9465,11 +12545,13 @@ const drops = [
       { name: "[Lvl5] Monster Soul Converter", rate: 3300 },
       { name: "[TEST] Mastery Armor Box", rate: 10000 },
       { name: "[TEST] Mastery Weapon Box", rate: 10000 },
-    ] },
-  { item: "Jewel of Creation", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Jewel of Creation",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -9509,16 +12591,14 @@ const drops = [
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1180 },
-      { name: "Event ChaosCastle 2", rate: 10000 },
-      { name: "Event ChaosCastle 3", rate: 10000 },
-      { name: "Event ChaosCastle 4", rate: 10000 },
-      { name: "Event ChaosCastle 5", rate: 10000 },
-      { name: "Event ChaosCastle 6", rate: 10000 },
-      { name: "Event ChaosCastle 7", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Chaos Castle 1", rate: 1180 },
+      { name: "Event Chaos Castle 2", rate: 10000 },
+      { name: "Event Chaos Castle 3", rate: 10000 },
+      { name: "Event Chaos Castle 4", rate: 10000 },
+      { name: "Event Chaos Castle 5", rate: 10000 },
+      { name: "Event Chaos Castle 6", rate: 10000 },
+      { name: "Event Chaos Castle 7", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -9533,7 +12613,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Gnome", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
       { name: "Gold Hell Maine", rate: 12400 },
@@ -9561,6 +12641,7 @@ const drops = [
       { name: "Golden Vepar", rate: 10000 },
       { name: "Golden Wheel", rate: 10000 },
       { name: "Gorgon", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Hellraiser", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
@@ -9578,15 +12659,14 @@ const drops = [
       { name: "Luck Box", rate: 5000 },
       { name: "Lunar Rabbit", rate: 10000 },
       { name: "Medusa", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -9595,9 +12675,10 @@ const drops = [
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Higher)", rate: 3500 },
       { name: "Roomy Card Box (Medium)", rate: 3500 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -9632,12 +12713,20 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 3500 },
       { name: "[Lvl4] Monster Soul Converter", rate: 3400 },
       { name: "[Lvl5] Monster Soul Converter", rate: 3300 },
-    ] },
-  { item: "Jewel of Guardian", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Jewel of Guardian",
+    minLevel: 1,
+    maps: [
       { name: "Box of Blessing", rate: 5500 },
       { name: "Power Chicken", rate: 7000 },
-    ] },
-  { item: "Jewel of Harmony", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Jewel of Harmony",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Balrog", rate: 10000 },
       { name: "Blessing Box", rate: 5000 },
@@ -9676,9 +12765,7 @@ const drops = [
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1300 },
-      { name: "Event Raffle HitOrder 3", rate: 1300 },
-      { name: "Event Raffle Lotto 3", rate: 1300 },
+
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 5000 },
       { name: "Gnome", rate: 10000 },
@@ -9731,12 +12818,11 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -9776,13 +12862,13 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 3500 },
       { name: "[Lvl4] Monster Soul Converter", rate: 3400 },
       { name: "[Lvl5] Monster Soul Converter", rate: 3300 },
-    ] },
-  { item: "Jewel of Life", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Jewel of Life",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,259) Devils Box", rate: 10000 },
-      { name: "(14,260) High Devils Box", rate: 10000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -9800,6 +12886,7 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
+      { name: "Devils Box", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Elegant Jewelry Case", rate: 1000 },
       { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
@@ -9823,24 +12910,21 @@ const drops = [
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
       { name: "Event AcheronGuardian Reward", rate: 19880 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1180 },
-      { name: "Event ChaosCastle 2", rate: 2000 },
-      { name: "Event ChaosCastle 3", rate: 2000 },
-      { name: "Event ChaosCastle 4", rate: 2000 },
-      { name: "Event ChaosCastle 5", rate: 2000 },
-      { name: "Event ChaosCastle 6", rate: 2000 },
-      { name: "Event ChaosCastle 7", rate: 2000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1180 },
+      { name: "Event Chaos Castle 2", rate: 2000 },
+      { name: "Event Chaos Castle 3", rate: 2000 },
+      { name: "Event Chaos Castle 4", rate: 2000 },
+      { name: "Event Chaos Castle 5", rate: 2000 },
+      { name: "Event Chaos Castle 6", rate: 2000 },
+      { name: "Event Chaos Castle 7", rate: 2000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -9851,14 +12935,14 @@ const drops = [
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
       { name: "Event Raffle HitOrder 2", rate: 680 },
-      { name: "Event Raffle HitOrder 3", rate: 10000 },
+
       { name: "Event Raffle Lotto 2", rate: 680 },
-      { name: "Event Raffle Lotto 3", rate: 10000 },
+
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Fire Flame Ghost Egg", rate: 1130 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Gnome", rate: 10000 },
       { name: "Goblin Treasure Box (Blue)", rate: 12625 },
       { name: "Goblin Treasure Box (Green)", rate: 12250 },
@@ -9891,7 +12975,9 @@ const drops = [
       { name: "Golden Wheel", rate: 10000 },
       { name: "Gorgon", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Hellraiser", rate: 10000 },
+      { name: "High Devils Box", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
       { name: "IllusionTemple Renewal 1", rate: 2600 },
@@ -9909,14 +12995,13 @@ const drops = [
       { name: "Lucky Bag Egg", rate: 4000 },
       { name: "Lunar Rabbit", rate: 10000 },
       { name: "Medusa", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -9927,8 +13012,9 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Lower)", rate: 10000 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -9964,20 +13050,18 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 3500 },
       { name: "[Lvl4] Monster Soul Converter", rate: 3400 },
       { name: "[Lvl5] Monster Soul Converter", rate: 3300 },
-    ] },
-  { item: "Jewel of Lightning", minLevel: 1, maps: [
-      { name: "God of Darkness", rate: 20000 },
-    ] },
-  { item: "Jewel of Soul", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Jewel of Lightning",
+    minLevel: 1,
+    maps: [{ name: "God of Darkness", rate: 20000 }],
+  },
+  {
+    item: "Jewel of Soul",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,254) Gift of Henchmen", rate: 10000 },
-      { name: "(14,256) Gift of Knights", rate: 10000 },
-      { name: "(14,257) Gift of High Knights", rate: 10000 },
-      { name: "(14,258) Minor Devils Box", rate: 10000 },
-      { name: "(14,259) Devils Box", rate: 10000 },
-      { name: "(14,260) High Devils Box", rate: 10000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 1000 },
       { name: "Baseball Lower Case", rate: 1000 },
@@ -9995,6 +13079,7 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
+      { name: "Devils Box", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Elegant Jewelry Case", rate: 2000 },
       { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
@@ -10018,18 +13103,15 @@ const drops = [
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
       { name: "Event AcheronGuardian Reward", rate: 19880 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 11180 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 1000 },
-      { name: "Event HideAndSeek Round 1", rate: 1300 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 11180 },
+
       { name: "Event Higher Box", rate: 1000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -10040,14 +13122,17 @@ const drops = [
       { name: "Event Luxuary Box", rate: 1000 },
       { name: "Event Medium Box", rate: 1000 },
       { name: "Event Raffle HitOrder 2", rate: 680 },
-      { name: "Event Raffle HitOrder 3", rate: 1300 },
+
       { name: "Event Raffle Lotto 2", rate: 680 },
-      { name: "Event Raffle Lotto 3", rate: 1300 },
+
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Fire Flame Ghost Egg", rate: 1250 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 1000 },
+
+      { name: "Gift of Henchmen", rate: 10000 },
+      { name: "Gift of High Knights", rate: 10000 },
+      { name: "Gift of Knights", rate: 10000 },
       { name: "Gnome", rate: 10000 },
       { name: "Goblin Treasure Box (Blue)", rate: 12625 },
       { name: "Goblin Treasure Box (Green)", rate: 12250 },
@@ -10080,8 +13165,10 @@ const drops = [
       { name: "Golden Wheel", rate: 10000 },
       { name: "Greater Evomon Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Hellraiser", rate: 10000 },
+      { name: "High Devils Box", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
       { name: "IllusionTemple Renewal 1", rate: 2000 },
@@ -10108,19 +13195,19 @@ const drops = [
       { name: "Mastery Box (Minor)", rate: 10000 },
       { name: "Mastery Box (Standard)", rate: 10000 },
       { name: "Medusa", rate: 60000 },
+      { name: "Minor Devils Box", rate: 10000 },
       { name: "Minor Evomon Box", rate: 10000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 20000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -10132,10 +13219,11 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 11300 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Higher)", rate: 2500 },
       { name: "Roomy Card Box (Lower)", rate: 1300 },
       { name: "Roomy Card Box (Medium)", rate: 2500 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -10173,8 +13261,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 3500 },
       { name: "[Lvl4] Monster Soul Converter", rate: 3400 },
       { name: "[Lvl5] Monster Soul Converter", rate: 3300 },
-    ] },
-  { item: "Kantana Plate Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kantana Plate Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -10192,8 +13284,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Kantana Plate Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kantana Plate Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -10211,8 +13307,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Kantana Plate Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kantana Plate Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -10230,8 +13330,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Kantana Ring of Poison", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kantana Ring of Poison",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -10249,8 +13353,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Kantana Ring of Wind", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kantana Ring of Wind",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -10268,9 +13376,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Katana", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+    ],
+  },
+  {
+    item: "Katana",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -10278,8 +13389,12 @@ const drops = [
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-    ] },
-  { item: "Knight Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Knight Blade",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
@@ -10287,9 +13402,8 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -10316,23 +13430,35 @@ const drops = [
       { name: "Nightmare", rate: 20000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Kris", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kris",
+    minLevel: 1,
+    maps: [
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
-    ] },
-  { item: "Kris ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kris ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 10000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Kukri Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kukri Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -10354,14 +13480,22 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Kundun", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Kundun's Greed", minLevel: 1, maps: [
-      { name: "Gold Hell Maine", rate: 2500 },
-    ] },
-  { item: "Kundun's Madness Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kundun",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Kundun's Greed",
+    minLevel: 1,
+    maps: [{ name: "Gold Hell Maine", rate: 2500 }],
+  },
+  {
+    item: "Kundun's Madness Blade",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
@@ -10406,7 +13540,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -10423,8 +13557,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Kundun's Magic Spell Scroll", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kundun's Magic Spell Scroll",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
@@ -10469,7 +13607,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -10486,8 +13624,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Kundun's Seal Scroll", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Kundun's Seal Scroll",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
       { name: "Core Magriffy", rate: 32000 },
       { name: "Cursed Santa", rate: 20000 },
@@ -10527,7 +13669,7 @@ const drops = [
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 16000 },
       { name: "Normus", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 10000 },
       { name: "Sellihoden", rate: 10000 },
       { name: "Selupan", rate: 16000 },
@@ -10544,11 +13686,17 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 70 },
       { name: "[Lvl4] Monster Soul Converter", rate: 90 },
       { name: "[Lvl5] Monster Soul Converter", rate: 120 },
-    ] },
-  { item: "Lapidary Stone", minLevel: 1, maps: [
-      { name: "Lapidary Stone Box", rate: 27000 },
-    ] },
-  { item: "Large Round Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lapidary Stone",
+    minLevel: 1,
+    maps: [{ name: "Lapidary Stone Box", rate: 27000 }],
+  },
+  {
+    item: "Large Round Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
@@ -10557,44 +13705,76 @@ const drops = [
       { name: "Luck Box", rate: 30000 },
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Larkan Axe", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Larkan Axe",
+    minLevel: 1,
+    maps: [
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Lazy Wind Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Lazy Wind Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Lazy Wind Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Lazy Wind Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Lazy Wind Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Lazy Wind Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Lazy Wind Helm", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Lazy Wind Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Lazy Wind Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Lazy Wind Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Lazy Wind Shield", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Lazy Wind Shield",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Leather Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Leather Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -10608,10 +13788,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Leather Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Leather Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -10625,10 +13809,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Leather Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Leather Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -10642,10 +13830,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Leather Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Leather Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -10659,10 +13851,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Leather Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Leather Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -10676,132 +13872,145 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Legendary Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Armor",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
-    ] },
-  { item: "Legendary Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Boots",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
-    ] },
-  { item: "Legendary Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
-    ] },
-  { item: "Legendary Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Helm",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
-    ] },
-  { item: "Legendary Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Pants",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
-    ] },
-  { item: "Legendary Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+
       { name: "Firecracker", rate: 20000 },
       { name: "Gold Medal", rate: 20000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Love Heart", rate: 20000 },
       { name: "Luck Box", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
@@ -10809,21 +14018,24 @@ const drops = [
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Legendary Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Staff",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blessing Box", rate: 30000 },
       { name: "Blue Ribbon Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
       { name: "Firecracker", rate: 30000 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Gold Medal", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
@@ -10836,17 +14048,25 @@ const drops = [
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Legendary Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Legendary Sword",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Lemuria's Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lemuria's Orb",
+    minLevel: 1,
+    maps: [
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Elemental Capsule (Darkness)", rate: 9000 },
       { name: "Elemental Capsule (Earth)", rate: 9000 },
@@ -10863,7 +14083,7 @@ const drops = [
       { name: "Hellraiser", rate: 5000 },
       { name: "Muff", rate: 5000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 10 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Silla", rate: 5000 },
@@ -10879,8 +14099,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Life Medicine", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Life Medicine",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 1", rate: 10000 },
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 3", rate: 10000 },
@@ -10890,12 +14114,15 @@ const drops = [
       { name: "Event PlayTime Round 7", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
       { name: "Event PlayTime Round 9", rate: 10000 },
-    ] },
-  { item: "Light Crossbow", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+    ],
+  },
+  {
+    item: "Light Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
@@ -10904,47 +14131,75 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Light Lord Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Light Lord Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Light Lord Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Light Lord Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Light Lord Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Light Lord Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Light Lord Helmet", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Light Lord Helmet",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Light Lord Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Light Lord Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Light Lord Shield", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Light Lord Shield",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Light Plate Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Light Plate Armor",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -10954,17 +14209,21 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Light Plate Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Light Plate Boots",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -10974,17 +14233,21 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Light Plate Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Light Plate Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -10994,17 +14257,21 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Light Plate Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Light Plate Mask",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -11014,17 +14281,21 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Light Plate Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Light Plate Pants",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -11034,39 +14305,50 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Light Saber", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Light Saber",
+    minLevel: 1,
+    maps: [
       { name: "Light Purple Candy Box", rate: 20000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Light Spear", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Light Spear",
+    minLevel: 1,
+    maps: [
       { name: "Light Purple Candy Box", rate: 20000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Lighting Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lighting Sword",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -11075,8 +14357,12 @@ const drops = [
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Lightning Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Blade",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11084,8 +14370,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Bow",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11093,8 +14383,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Claws",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11102,8 +14396,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Elf Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Elf Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 40000 },
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "God of Darkness", rate: 40000 },
@@ -11111,8 +14409,12 @@ const drops = [
       { name: "Lord Silvester", rate: 20000 },
       { name: "Lord of Ferea", rate: 40000 },
       { name: "Nix", rate: 20000 },
-    ] },
-  { item: "Lightning Elf Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Elf Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 40000 },
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "God of Darkness", rate: 40000 },
@@ -11120,8 +14422,12 @@ const drops = [
       { name: "Lord Silvester", rate: 20000 },
       { name: "Lord of Ferea", rate: 40000 },
       { name: "Nix", rate: 20000 },
-    ] },
-  { item: "Lightning Elf Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Elf Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 40000 },
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "God of Darkness", rate: 40000 },
@@ -11129,8 +14435,12 @@ const drops = [
       { name: "Lord Silvester", rate: 20000 },
       { name: "Lord of Ferea", rate: 40000 },
       { name: "Nix", rate: 20000 },
-    ] },
-  { item: "Lightning Elf Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Elf Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 40000 },
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "God of Darkness", rate: 40000 },
@@ -11138,8 +14448,12 @@ const drops = [
       { name: "Lord Silvester", rate: 20000 },
       { name: "Lord of Ferea", rate: 40000 },
       { name: "Nix", rate: 20000 },
-    ] },
-  { item: "Lightning Elf Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Elf Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 40000 },
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "God of Darkness", rate: 40000 },
@@ -11147,8 +14461,12 @@ const drops = [
       { name: "Lord Silvester", rate: 20000 },
       { name: "Lord of Ferea", rate: 40000 },
       { name: "Nix", rate: 20000 },
-    ] },
-  { item: "Lightning Fighter Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11156,8 +14474,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Fighter Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Fighter Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11165,8 +14487,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Fighter Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Fighter Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11174,8 +14500,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Fighter Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Fighter Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11183,8 +14513,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Fighter Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Fighter Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11192,8 +14526,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Gun",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11201,8 +14539,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Gun Crusher Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Gun Crusher Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11210,8 +14552,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Gun Crusher Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Gun Crusher Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11219,8 +14565,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Gun Crusher Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11228,8 +14578,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Gun Crusher Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Gun Crusher Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11237,8 +14591,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Gun Crusher Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Gun Crusher Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11246,8 +14604,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Illusion Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Illusion Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11255,8 +14617,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Illusion Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Illusion Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11264,8 +14630,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Illusion Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Illusion Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11273,8 +14643,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Illusion Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Illusion Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11282,8 +14656,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Illusion Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Illusion Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11291,8 +14669,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11300,8 +14682,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Armor (Belief) Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Armor (Belief) Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11309,8 +14695,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Armor (Belief) Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Armor (Belief) Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11318,8 +14708,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Armor (Belief) Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Armor (Belief) Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11327,8 +14721,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Armor (Belief) Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Armor (Belief) Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11336,8 +14734,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Armor (Belief) Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Armor (Belief) Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11345,8 +14747,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11354,8 +14760,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11363,8 +14773,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11372,8 +14786,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11381,8 +14799,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lance",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11390,8 +14812,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lancer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lancer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11399,8 +14825,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lancer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lancer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11408,8 +14838,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lancer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lancer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11417,8 +14851,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lancer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lancer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11426,8 +14864,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lancer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lancer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11435,8 +14877,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lord Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lord Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11444,8 +14890,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lord Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lord Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11453,8 +14903,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lord Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lord Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11462,8 +14916,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lord Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lord Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11471,8 +14929,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Lord Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Lord Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11480,8 +14942,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Mage Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Mage Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11489,8 +14955,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Mage Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Mage Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11498,8 +14968,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Mage Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Mage Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11507,8 +14981,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Mage Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Mage Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11516,8 +14994,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Mage Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Mage Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11525,8 +15007,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Magic 2H Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Magic 2H Sword",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11534,8 +15020,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Magic Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Magic Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11543,8 +15033,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Magic Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Magic Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11552,8 +15046,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Magic Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Magic Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11561,8 +15059,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Magic Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Magic Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11570,8 +15072,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Magic Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Magic Sword",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11579,8 +15085,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Orb",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11588,8 +15098,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11597,8 +15111,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11606,8 +15124,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Rune Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Rune Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11615,8 +15137,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Rune Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Rune Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11624,8 +15150,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Rune Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Rune Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11633,8 +15163,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Rune Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Rune Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11642,8 +15176,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Rune Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Rune Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11651,8 +15189,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11660,8 +15202,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11669,8 +15215,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Slayer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11678,8 +15228,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Slayer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Slayer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11687,8 +15241,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Slayer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Slayer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11696,8 +15254,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Slayer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Slayer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11705,8 +15267,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Slayer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11714,8 +15280,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Staff",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11723,8 +15293,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Stick",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11732,8 +15306,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11741,8 +15319,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11750,8 +15332,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11759,8 +15345,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Summoner Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Summoner Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11768,8 +15358,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11777,8 +15371,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Sword",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11786,8 +15384,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning White Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning White Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11795,8 +15397,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning White Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning White Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11804,8 +15410,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning White Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning White Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11813,8 +15423,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning White Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning White Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11822,8 +15436,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning White Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning White Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11831,8 +15449,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11840,8 +15462,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11849,8 +15475,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11858,8 +15488,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11867,8 +15501,12 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lightning Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lightning Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 20000 },
       { name: "Elite Underground Dreadfear", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
@@ -11876,27 +15514,39 @@ const drops = [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Lord of Ferea", rate: 20000 },
       { name: "Nix", rate: 10000 },
-    ] },
-  { item: "Lion Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lion Mask",
+    minLevel: 1,
+    maps: [
       { name: "Tempest Muun Box (Amplified)", rate: 10000 },
       { name: "Tempest Muun Box (Wide)", rate: 10000 },
       { name: "Tempest Muun Egg (Amplified)", rate: 10000 },
       { name: "Tempest Muun Egg (Wide)", rate: 10000 },
-    ] },
-  { item: "Lion Mask (Evolved)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lion Mask (Evolved)",
+    minLevel: 1,
+    maps: [
       { name: "Tempest Muun Box (Amplified)", rate: 10000 },
       { name: "Tempest Muun Box (Wide)", rate: 10000 },
       { name: "Tempest Muun Egg (Amplified)", rate: 10000 },
       { name: "Tempest Muun Egg (Wide)", rate: 10000 },
-    ] },
-  { item: "Loch's Feather", minLevel: 1, maps: [
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Loch's Feather",
+    minLevel: 1,
+    maps: [
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
       { name: "Monkey Purple", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Pouch of Blessing", rate: 50 },
@@ -11906,35 +15556,48 @@ const drops = [
       { name: "Sheep White", rate: 10000 },
       { name: "Snake Purple", rate: 10000 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Loggle", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Lord Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Loggle",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Lord Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Green Box", rate: 15000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
-      { name: "MossMerchant03.xml", rate: 20000 },
+      { name: "Moss Merchant", rate: 20000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
-    ] },
-  { item: "Lord Scepter ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lord Scepter ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Lord Silvester", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Lorencia Knights' Iron Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lord Silvester",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Lorencia Knights' Iron Shield",
+    minLevel: 1,
+    maps: [
       { name: "Lord Silvester", rate: 1600 },
       { name: "[Lvl 1] Soul Converter Box", rate: 300 },
       { name: "[Lvl 2] Soul Converter Box", rate: 320 },
@@ -11945,15 +15608,17 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Lost Map", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lost Map",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1500 },
-      { name: "Event Raffle HitOrder 3", rate: 1500 },
-      { name: "Event Raffle Lotto 3", rate: 1500 },
+
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
@@ -11963,45 +15628,77 @@ const drops = [
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1500 },
-    ] },
-  { item: "Lucky Bag Egg", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Lucky Bag Egg",
+    minLevel: 1,
+    maps: [
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Lunar Rabbit", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
-    ] },
-  { item: "Luki", minLevel: 1, maps: [
-      { name: "Golden Goblin Egg", rate: 2700 },
-    ] },
-  { item: "Lycan", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Magic Knight Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Luki",
+    minLevel: 1,
+    maps: [{ name: "Golden Goblin Egg", rate: 2700 }],
+  },
+  {
+    item: "Lycan",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Magic Knight Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Magic Knight Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Magic Knight Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Magic Knight Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Magic Knight Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Magic Knight Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Magic Knight Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Magic Knight Shield", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Magic Knight Shield",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Magic Scroll (Attributable)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Magic Scroll (Attributable)",
+    minLevel: 1,
+    maps: [
       { name: "[Lvl 1] Soul Converter Box", rate: 150 },
       { name: "[Lvl 2] Soul Converter Box", rate: 160 },
       { name: "[Lvl 3] Soul Converter Box", rate: 180 },
@@ -12011,8 +15708,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Magus Flare Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Magus Flare Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12030,8 +15731,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Magus Flare Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Magus Flare Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12049,8 +15754,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Magus Flare Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Magus Flare Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12068,8 +15777,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Magus Flare Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Magus Flare Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -12077,8 +15790,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Magus Flare Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Magus Flare Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12096,8 +15813,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Mana Medicine", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mana Medicine",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 1", rate: 10000 },
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 3", rate: 10000 },
@@ -12107,384 +15828,745 @@ const drops = [
       { name: "Event PlayTime Round 7", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
       { name: "Event PlayTime Round 9", rate: 10000 },
-    ] },
-  { item: "Manticore Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Blade",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Bow",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Claws",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Armor (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Armor (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Boots (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Helm (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Helm (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Helm (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Helm (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Elf Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Elf Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Fighter Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Fighter Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Fighter Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Fighter Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Fighter Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Fighter Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Fighter Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Fighter Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Fighter Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Gun",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Gun Crusher Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Gun Crusher Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Gun Crusher Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Gun Crusher Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Gun Crusher Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Gun Crusher Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Gun Crusher Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Gun Crusher Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Gun Crusher Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Illusion Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Illusion Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Illusion Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Illusion Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Illusion Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Illusion Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Illusion Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Illusion Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Illusion Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Illusion Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 10000 },
       { name: "Elite Storm Reaper", rate: 10000 },
-    ] },
-  { item: "Manticore Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Lance",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Lord Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Lord Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Lord Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Lord Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Lord Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Lord Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Lord Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Lord Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Lord Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Lord Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Mage Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Mage Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Mage Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Mage Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Mage Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Mage Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Mage Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Mage Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Mage Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Mage Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Armor (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Armor (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Boots (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Magic Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Magic Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Orb",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Runist Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Runist Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Runist Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Runist Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Runist Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Runist Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Runist Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Runist Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Runist Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Runist Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Slayer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Slayer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Slayer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Slayer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Slayer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Slayer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Slayer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Slayer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Staff",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 15000 },
       { name: "Elite Storm Reaper", rate: 15000 },
-    ] },
-  { item: "Manticore Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Summoner Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Summoner Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore White Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore White Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore White Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore White Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore White Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore White Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore White Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore White Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore White Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore White Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Manticore Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Manticore Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Maple Leaf", minLevel: 1, maps: [
-      { name: "Maple Play Box", rate: 17000 },
-    ] },
-  { item: "Master Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Maple Leaf",
+    minLevel: 1,
+    maps: [{ name: "Maple Play Box", rate: 17000 }],
+  },
+  {
+    item: "Master Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Monkey Green", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Mastery Reward Chest(100)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mastery Reward Chest(100)",
+    minLevel: 1,
+    maps: [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "Mastery Reward Chest(500)", minLevel: 1, maps: [
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Mastery Reward Chest(500)",
+    minLevel: 1,
+    maps: [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Medium Magic Stone", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Medium Magic Stone",
+    minLevel: 1,
+    maps: [
       { name: "Cursed Santa", rate: 20000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
       { name: "Gnome", rate: 10000 },
@@ -12497,11 +16579,17 @@ const drops = [
       { name: "Sylphid", rate: 10000 },
       { name: "Ukanva", rate: 10000 },
       { name: "Undine", rate: 10000 },
-    ] },
-  { item: "Medusa", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Merciless Gladiator's Dagger", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Medusa",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Merciless Gladiator's Dagger",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 16000 },
       { name: "Cursed Santa", rate: 10000 },
@@ -12540,7 +16628,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -12557,30 +16645,43 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Mini Robot Ring", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mini Robot Ring",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 1", rate: 10000 },
       { name: "Event PlayTime Round 10", rate: 10000 },
       { name: "Event PlayTime Round 4", rate: 10000 },
       { name: "Event PlayTime Round 7", rate: 10000 },
-    ] },
-  { item: "Miracle Staff", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 500 },
-      { name: "(14,260) High Devils Box", rate: 2000 },
-    ] },
-  { item: "Morning Star", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Miracle Staff",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 500 },
+      { name: "High Devils Box", rate: 2000 },
+    ],
+  },
+  {
+    item: "Morning Star",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Green Box", rate: 300 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
-    ] },
-  { item: "Mortal Black Origin Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mortal Black Origin Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12598,8 +16699,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Mortal Black Origin Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mortal Black Origin Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12617,8 +16722,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Mortal Black Origin Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mortal Black Origin Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12636,8 +16745,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Mortal Black Origin Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mortal Black Origin Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -12645,8 +16758,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Mortal Black Origin Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mortal Black Origin Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12664,8 +16781,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Muren's Book of Magic", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Muren's Book of Magic",
+    minLevel: 1,
+    maps: [
       { name: "[Lvl 1] Soul Converter Box", rate: 300 },
       { name: "[Lvl 2] Soul Converter Box", rate: 320 },
       { name: "[Lvl 3] Soul Converter Box", rate: 340 },
@@ -12675,8 +16796,12 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Myotis Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Myotis Orb",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -12684,34 +16809,54 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Mysterious Stone", minLevel: 1, maps: [
-      { name: "Mysterious Box", rate: 10000 },
-    ] },
-  { item: "Mystery Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Mysterious Stone",
+    minLevel: 1,
+    maps: [{ name: "Mysterious Box", rate: 10000 }],
+  },
+  {
+    item: "Mystery Stick",
+    minLevel: 1,
+    maps: [
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
-    ] },
-  { item: "Necklace of Agony", minLevel: 1, maps: [
-      { name: "IllusionTemple Renewal 6", rate: 200 },
-    ] },
-  { item: "Necklace of Lightning", minLevel: 1, maps: [
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
-    ] },
-  { item: "Nightmare", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Nikea Axe", minLevel: 1, maps: [
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Necklace of Agony",
+    minLevel: 1,
+    maps: [{ name: "IllusionTemple Renewal 6", rate: 200 }],
+  },
+  {
+    item: "Necklace of Lightning",
+    minLevel: 1,
+    maps: [
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Nightmare",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Nikea Axe",
+    minLevel: 1,
+    maps: [
       { name: "Light Purple Candy Box", rate: 20000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Nix", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Noble Pixie Armor", minLevel: 1, maps: [
+    ],
+  },
+  { item: "Nix", minLevel: 1, maps: [{ name: "Lucky Bag Egg", rate: 20000 }] },
+  {
+    item: "Noble Pixie Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12729,8 +16874,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Noble Pixie Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Noble Pixie Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12748,8 +16897,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Noble Pixie Market", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Noble Pixie Market",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12767,8 +16920,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Noble Pixie Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Noble Pixie Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -12786,8 +16943,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Norrwen's Bloodstring Lyra", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Norrwen's Bloodstring Lyra",
+    minLevel: 1,
+    maps: [
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Elemental Capsule (Darkness)", rate: 9000 },
       { name: "Elemental Capsule (Earth)", rate: 9000 },
@@ -12804,7 +16965,7 @@ const drops = [
       { name: "Hellraiser", rate: 5000 },
       { name: "Muff", rate: 5000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 10 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Silla", rate: 5000 },
@@ -12820,14 +16981,22 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Nymph", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Nymph",
+    minLevel: 1,
+    maps: [
       { name: "Fire Flame Ghost Egg", rate: 10000 },
       { name: "Golden Goblin Egg", rate: 10000 },
       { name: "Lucky Bag Egg", rate: 40000 },
       { name: "WereRabbit Egg", rate: 10000 },
-    ] },
-  { item: "Odin Wind Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Odin Wind Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -12835,8 +17004,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Odin Wind Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Odin Wind Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Firecracker", rate: 20000 },
       { name: "Gold Medal", rate: 20000 },
@@ -12844,8 +17017,12 @@ const drops = [
       { name: "Luck Box", rate: 20000 },
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Odin Wind Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Odin Wind Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -12853,8 +17030,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Odin Wind Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Odin Wind Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -12862,10 +17043,14 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Pad Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pad Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -12877,9 +17062,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Pad Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+    ],
+  },
+  {
+    item: "Pad Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -12891,10 +17079,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Pad Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pad Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -12906,10 +17098,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Pad Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pad Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -12921,9 +17117,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Pad Pants", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+    ],
+  },
+  {
+    item: "Pad Pants",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -12935,19 +17134,25 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Pantera Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pantera Claws",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Paul", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Pendant of Ability", minLevel: 1, maps: [
+    ],
+  },
+  { item: "Paul", minLevel: 1, maps: [{ name: "Lucky Bag Egg", rate: 20000 }] },
+  {
+    item: "Pendant of Ability",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -12957,8 +17162,12 @@ const drops = [
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Pendant of Fire", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pendant of Fire",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 1000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
@@ -12977,10 +17186,10 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 1000 },
@@ -12988,8 +17197,12 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 1000 },
-    ] },
-  { item: "Pendant of Ice", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pendant of Ice",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 1000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
@@ -13006,15 +17219,19 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 11000 },
+
       { name: "Mix Maple Leaf Reward", rate: 11000 },
       { name: "Sacred Birth Star", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 1000 },
-    ] },
-  { item: "Pendant of Lighting", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pendant of Lighting",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 100 },
       { name: "Baseball Lower Case", rate: 100 },
       { name: "Baseball Senior Box", rate: 100 },
@@ -13026,9 +17243,7 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 70000 },
-      { name: "Event Gift Box", rate: 100 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event Higher Box", rate: 100 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
@@ -13041,7 +17256,7 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Firecracker", rate: 1000 },
-      { name: "GM Gift Box", rate: 100 },
+
       { name: "Gold Medal", rate: 1000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
@@ -13051,18 +17266,22 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 1000 },
-    ] },
-  { item: "Pendant of Water", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pendant of Water",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -13072,20 +17291,28 @@ const drops = [
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Pendant of Wind", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pendant of Wind",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Pentagram Emblem", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pentagram Emblem",
+    minLevel: 1,
+    maps: [
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Gnome", rate: 5000 },
       { name: "Hellraiser", rate: 5000 },
@@ -13097,19 +17324,27 @@ const drops = [
       { name: "Sylphid", rate: 5000 },
       { name: "Ukanva", rate: 5000 },
       { name: "Undine", rate: 5000 },
-    ] },
-  { item: "Pet Panda", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pet Panda",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 10", rate: 10000 },
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 5", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
-    ] },
-  { item: "Pet Rudolph", minLevel: 1, maps: [
-      { name: "NPC SantaClause3 Reward", rate: 10000 },
-    ] },
-  { item: "Phantasmal Steed", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Pet Rudolph",
+    minLevel: 1,
+    maps: [{ name: "NPC SantaClause3 Reward", rate: 10000 }],
+  },
+  {
+    item: "Phantasmal Steed",
+    minLevel: 1,
+    maps: [
       { name: "Core Magriffy", rate: 4000 },
       { name: "Elite Underground Dreadfear", rate: 2000 },
       { name: "Erohim", rate: 2000 },
@@ -13120,8 +17355,12 @@ const drops = [
       { name: "Lord of Ferea", rate: 4000 },
       { name: "Nix", rate: 2000 },
       { name: "Selupan", rate: 2000 },
-    ] },
-  { item: "Phantom  Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Phantom  Armor",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13129,8 +17368,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Phantom  Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Phantom  Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13138,8 +17381,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Phantom  Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Phantom  Pants",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13147,8 +17394,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Phantom Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Phantom Boots",
+    minLevel: 1,
+    maps: [
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13156,11 +17407,17 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Phoenix Of Darknes", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 160000 },
-    ] },
-  { item: "Phoenix Soul Star", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Phoenix Of Darknes",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 160000 }],
+  },
+  {
+    item: "Phoenix Soul Star",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -13182,16 +17439,20 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Piercing Blade Glove", minLevel: 1, maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+    ],
+  },
+  {
+    item: "Piercing Blade Glove",
+    minLevel: 1,
+    maps: [
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
-    ] },
-  { item: "Piercing Glove", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Piercing Glove",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -13213,37 +17474,45 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Piercing Groove Armor", minLevel: 1, maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ] },
-  { item: "Piercing Groove Boots", minLevel: 1, maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ] },
-  { item: "Piercing Groove Helm", minLevel: 1, maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ] },
-  { item: "Piercing Groove Pants", minLevel: 1, maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ] },
-  { item: "Plate Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Piercing Groove Armor",
+    minLevel: 1,
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
+  },
+  {
+    item: "Piercing Groove Boots",
+    minLevel: 1,
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
+  },
+  {
+    item: "Piercing Groove Helm",
+    minLevel: 1,
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
+  },
+  {
+    item: "Piercing Groove Pants",
+    minLevel: 1,
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
+  },
+  {
+    item: "Plate Armor",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -13251,21 +17520,25 @@ const drops = [
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Plate Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Plate Boots",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -13273,21 +17546,25 @@ const drops = [
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Plate Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Plate Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -13295,17 +17572,21 @@ const drops = [
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Plate Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Plate Helm",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -13314,17 +17595,21 @@ const drops = [
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Plate Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Plate Pants",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -13333,11 +17618,14 @@ const drops = [
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Plate Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Plate Shield",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -13347,25 +17635,34 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-    ] },
-  { item: "Platina Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Platina Staff",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
-    ] },
-  { item: "Power Chicken Drink", minLevel: 1, maps: [
-      { name: "Power Chicken", rate: 16000 },
-    ] },
-  { item: "Power Medicine", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Power Chicken Drink",
+    minLevel: 1,
+    maps: [{ name: "Power Chicken", rate: 16000 }],
+  },
+  {
+    item: "Power Medicine",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 1", rate: 10000 },
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 3", rate: 10000 },
@@ -13375,8 +17672,12 @@ const drops = [
       { name: "Event PlayTime Round 7", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
       { name: "Event PlayTime Round 9", rate: 10000 },
-    ] },
-  { item: "Prickle Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Prickle Lance",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -13398,26 +17699,40 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Protection Ring", minLevel: 1, maps: [
-      { name: "IllusionTemple Renewal 6", rate: 400 },
-    ] },
-  { item: "Pumpy", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Rage Earring (L)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Protection Ring",
+    minLevel: 1,
+    maps: [{ name: "IllusionTemple Renewal 6", rate: 400 }],
+  },
+  {
+    item: "Pumpy",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Rage Earring (L)",
+    minLevel: 1,
+    maps: [
       { name: "Lapidary Stone Box", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 100 },
-    ] },
-  { item: "Rage Earring (R)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Rage Earring (R)",
+    minLevel: 1,
+    maps: [
       { name: "Lapidary Stone Box", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 100 },
       { name: "[Speed] Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Rapier", minLevel: 1, maps: [
-      { name: "Green Box", rate: 300 },
-    ] },
-  { item: "Raven Stick", minLevel: 1, maps: [
+    ],
+  },
+  { item: "Rapier", minLevel: 1, maps: [{ name: "Green Box", rate: 300 }] },
+  {
+    item: "Raven Stick",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -13439,23 +17754,30 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Rectuus Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Rectuus Lance",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Red Spirit Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Spirit Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -13464,21 +17786,23 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 1850 },
       { name: "Event ScrambleWord Level 2", rate: 1850 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
-    ] },
-  { item: "Red Spirit Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Spirit Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -13486,21 +17810,23 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1850 },
       { name: "Event Raffle Lotto 2", rate: 1850 },
       { name: "Event ScrambleWord Level 2", rate: 1850 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
-    ] },
-  { item: "Red Spirit Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Spirit Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -13508,21 +17834,23 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Red Spirit Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Spirit Helm",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -13530,21 +17858,23 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Red Spirit Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Spirit Pants",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -13553,118 +17883,148 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
-    ] },
-  { item: "Red Wing Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Wing Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Red Wing Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Wing Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Red Wing Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Wing Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 20000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Red Wing Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Wing Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Red Wing Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Wing Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Red Wing Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Red Wing Stick",
+    minLevel: 1,
+    maps: [
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Monkey Green", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
       { name: "Rooster White", rate: 300 },
-    ] },
-  { item: "Reset Fruit Control", minLevel: 1, maps: [
-      { name: "Power Chicken", rate: 2000 },
-    ] },
-  { item: "Reset Fruit Energy", minLevel: 1, maps: [
-      { name: "Power Chicken", rate: 2000 },
-    ] },
-  { item: "Reset Fruit Health", minLevel: 1, maps: [
-      { name: "Power Chicken", rate: 2000 },
-    ] },
-  { item: "Reset Fruit Quickness", minLevel: 1, maps: [
-      { name: "Power Chicken", rate: 2000 },
-    ] },
-  { item: "Reset Fruit Strength", minLevel: 1, maps: [
-      { name: "Power Chicken", rate: 2000 },
-    ] },
-  { item: "Ring of Earth", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Reset Fruit Control",
+    minLevel: 1,
+    maps: [{ name: "Power Chicken", rate: 2000 }],
+  },
+  {
+    item: "Reset Fruit Energy",
+    minLevel: 1,
+    maps: [{ name: "Power Chicken", rate: 2000 }],
+  },
+  {
+    item: "Reset Fruit Health",
+    minLevel: 1,
+    maps: [{ name: "Power Chicken", rate: 2000 }],
+  },
+  {
+    item: "Reset Fruit Quickness",
+    minLevel: 1,
+    maps: [{ name: "Power Chicken", rate: 2000 }],
+  },
+  {
+    item: "Reset Fruit Strength",
+    minLevel: 1,
+    maps: [{ name: "Power Chicken", rate: 2000 }],
+  },
+  {
+    item: "Ring of Earth",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Ring of Fire", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ring of Fire",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 1000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
@@ -13681,22 +18041,30 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Sacred Birth Star", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 1000 },
-    ] },
-  { item: "Ring of GM", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ring of GM",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 3", rate: 10000 },
       { name: "Event PlayTime Round 6", rate: 10000 },
       { name: "Event PlayTime Round 9", rate: 10000 },
-    ] },
-  { item: "Ring of Ice", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ring of Ice",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 100 },
       { name: "Baseball Lower Case", rate: 100 },
       { name: "Baseball Senior Box", rate: 100 },
@@ -13707,13 +18075,13 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 100 },
+
       { name: "Event Higher Box", rate: 100 },
       { name: "Event Lower Box", rate: 100 },
       { name: "Event Luxuary Box", rate: 100 },
       { name: "Event Medium Box", rate: 100 },
       { name: "Firecracker", rate: 1000 },
-      { name: "GM Gift Box", rate: 100 },
+
       { name: "Gold Medal", rate: 1000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
@@ -13723,7 +18091,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -13732,20 +18100,28 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 1000 },
-    ] },
-  { item: "Ring of Magic", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ring of Magic",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Ring of Poison", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ring of Poison",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 100 },
       { name: "Baseball Lower Case", rate: 100 },
       { name: "Baseball Senior Box", rate: 100 },
@@ -13757,13 +18133,13 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 20000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 100 },
+
       { name: "Event Higher Box", rate: 100 },
       { name: "Event Lower Box", rate: 100 },
       { name: "Event Luxuary Box", rate: 100 },
       { name: "Event Medium Box", rate: 100 },
       { name: "Firecracker", rate: 1000 },
-      { name: "GM Gift Box", rate: 100 },
+
       { name: "Gold Medal", rate: 1000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
@@ -13773,7 +18149,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 12000 },
+
       { name: "Mix Maple Leaf Reward", rate: 12000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -13782,25 +18158,35 @@ const drops = [
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 1000 },
-    ] },
-  { item: "Ring of Ultimatum", minLevel: 1, maps: [
-      { name: "IllusionTemple Renewal 6", rate: 200 },
-    ] },
-  { item: "Ring of Wind", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ring of Ultimatum",
+    minLevel: 1,
+    maps: [{ name: "IllusionTemple Renewal 6", rate: 200 }],
+  },
+  {
+    item: "Ring of Wind",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Royal Armor", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Royal Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13808,9 +18194,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Royal Boots", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Royal Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13818,9 +18208,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Royal Gloves", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Royal Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13828,9 +18222,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Royal Mask", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Royal Mask",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13838,8 +18236,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Royal Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Royal Orb",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -13847,9 +18249,13 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Royal Pants", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Royal Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -13857,10 +18263,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Rune Bastard Sword", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+    ],
+  },
+  {
+    item: "Rune Bastard Sword",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -13870,48 +18278,57 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Rune Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Rune Blade",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 20000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 20000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
       { name: "Event LastManStanding Winner Reward", rate: 1 },
       { name: "Event Raffle HitOrder 2", rate: 1 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 1 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Kundun", rate: 10000 },
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
-    ] },
-  { item: "Rune Blade ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Rune Blade ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Runedil's Goldentune Harp", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Runedil's Goldentune Harp",
+    minLevel: 1,
+    maps: [
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Elemental Capsule (Darkness)", rate: 9000 },
       { name: "Elemental Capsule (Earth)", rate: 9000 },
@@ -13928,7 +18345,7 @@ const drops = [
       { name: "Hellraiser", rate: 5000 },
       { name: "Muff", rate: 5000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 10 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Silla", rate: 5000 },
@@ -13944,23 +18361,37 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 180 },
       { name: "[Lvl4] Monster Soul Converter", rate: 200 },
       { name: "[Lvl5] Monster Soul Converter", rate: 230 },
-    ] },
-  { item: "Ruud Box (10)", minLevel: 1, maps: [
-      { name: "Mysterious Box", rate: 1500 },
-    ] },
-  { item: "Ruud Box (100)", minLevel: 1, maps: [
-      { name: "Mysterious Box", rate: 100 },
-    ] },
-  { item: "Ruud Box (1000)", minLevel: 1, maps: [
-      { name: "MossMerchant06.xml", rate: 10000 },
-    ] },
-  { item: "Ruud Box (50)", minLevel: 1, maps: [
-      { name: "Mysterious Box", rate: 400 },
-    ] },
-  { item: "Ruud Box(1000)", minLevel: 1, maps: [
-      { name: "MossMerchant07.xml", rate: 10000 },
-    ] },
-  { item: "Sacred Fire Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ruud Box (10)",
+    minLevel: 1,
+    maps: [{ name: "Mysterious Box", rate: 1500 }],
+  },
+  {
+    item: "Ruud Box (100)",
+    minLevel: 1,
+    maps: [{ name: "Mysterious Box", rate: 100 }],
+  },
+  {
+    item: "Ruud Box (1000)",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Ruud Box (50)",
+    minLevel: 1,
+    maps: [{ name: "Mysterious Box", rate: 400 }],
+  },
+  {
+    item: "Ruud Box(1000)",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Sacred Fire Armor",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -13973,8 +18404,12 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Sacred Fire Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sacred Fire Boots",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -13987,8 +18422,12 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Sacred Fire Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sacred Fire Helm",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -14001,8 +18440,12 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Sacred Fire Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sacred Fire Pants",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -14015,8 +18458,12 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Sacred Glove", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sacred Glove",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
@@ -14029,21 +18476,28 @@ const drops = [
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Safi", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Safi",
+    minLevel: 1,
+    maps: [
       { name: "Fire Flame Ghost Egg", rate: 90 },
       { name: "Golden Goblin Egg", rate: 10000 },
       { name: "Lucky Bag Egg", rate: 40000 },
       { name: "WereRabbit Egg", rate: 1000 },
-    ] },
-  { item: "Saint Crossbow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Saint Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 20000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -14055,18 +18509,24 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
-      { name: "MossMerchant05.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
-    ] },
-  { item: "Saint Crossbow ", minLevel: 1, maps: [
+
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Saint Crossbow ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Salamander Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Salamander Shield",
+    minLevel: 1,
+    maps: [
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
@@ -14075,14 +18535,19 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Savath", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Scale Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Savath",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Scale Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 130000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -14093,21 +18558,24 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Scale Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Scale Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -14120,9 +18588,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Scale Gloves", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Scale Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -14135,11 +18606,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Scale Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Scale Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 130000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -14150,23 +18624,26 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Scale Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Scale Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -14177,20 +18654,24 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Box", rate: 600 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Scroll of Blood", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Scroll of Blood",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
@@ -14199,20 +18680,28 @@ const drops = [
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Purple Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Scroll of Decay", minLevel: 1, maps: [
-      { name: "(14,254) Gift of Henchmen", rate: 10000 },
-      { name: "(14,256) Gift of Knights", rate: 10000 },
-      { name: "(14,257) Gift of High Knights", rate: 10000 },
-      { name: "(14,258) Minor Devils Box", rate: 10000 },
+    ],
+  },
+  {
+    item: "Scroll of Decay",
+    minLevel: 1,
+    maps: [
+      { name: "Gift of Henchmen", rate: 10000 },
+      { name: "Gift of High Knights", rate: 10000 },
+      { name: "Gift of Knights", rate: 10000 },
       { name: "Greater Evomon Box", rate: 10000 },
       { name: "Legendary Evomon Box", rate: 10000 },
       { name: "Luxurious Evomon Box", rate: 10000 },
       { name: "Magnificent Evomon Box", rate: 10000 },
+      { name: "Minor Devils Box", rate: 10000 },
       { name: "Minor Evomon Box", rate: 10000 },
       { name: "Standard Evomon Box", rate: 10000 },
-    ] },
-  { item: "Scroll of Etramu", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Scroll of Etramu",
+    minLevel: 1,
+    maps: [
       { name: "Rooster Green", rate: 600 },
       { name: "Rooster Purple", rate: 600 },
       { name: "Rooster Red", rate: 600 },
@@ -14226,474 +18715,650 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Scroll of Inferno", minLevel: 1, maps: [
-      { name: "(14,254) Gift of Henchmen", rate: 10000 },
-      { name: "(14,256) Gift of Knights", rate: 10000 },
-      { name: "(14,257) Gift of High Knights", rate: 10000 },
-      { name: "(14,258) Minor Devils Box", rate: 10000 },
+    ],
+  },
+  {
+    item: "Scroll of Inferno",
+    minLevel: 1,
+    maps: [
+      { name: "Gift of Henchmen", rate: 10000 },
+      { name: "Gift of High Knights", rate: 10000 },
+      { name: "Gift of Knights", rate: 10000 },
       { name: "Greater Evomon Box", rate: 10000 },
       { name: "Legendary Evomon Box", rate: 10000 },
       { name: "Luxurious Evomon Box", rate: 10000 },
       { name: "Magnificent Evomon Box", rate: 10000 },
+      { name: "Minor Devils Box", rate: 10000 },
       { name: "Minor Evomon Box", rate: 10000 },
       { name: "Standard Evomon Box", rate: 10000 },
-    ] },
-  { item: "Sculpture", minLevel: 1, maps: [
-      { name: "MossMerchant10.xml", rate: 10000 },
-    ] },
-  { item: "Seal of Ghost Horses", minLevel: 1, maps: [
-      { name: "MossMerchant10.xml", rate: 10000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Conquest", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sculpture",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Seal of Ghost Horses",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Conquest",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Destruction", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Destruction",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Element", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Extremity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Element",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Extremity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Flurry", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Flurry",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Fury", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Fury",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Hertless", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Hertless",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Honor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Honor",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Liberation ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Liberation ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Longing", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Ritual", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Longing",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Ritual",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Tenacity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Tenacity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Transcendence", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Transcendence",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 10000 },
       { name: "Event Raffle HitOrder 1", rate: 10000 },
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Twilight ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Twilight ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Armor of Vengeance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Armor of Vengeance",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Boots of Destruction", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Boots of Destruction",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Boots of Extremity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Boots of Extremity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Boots of Fury", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Boots of Fury",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Boots of Ritual", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Boots of Ritual",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Conquest", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Conquest",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Element", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Extremity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Element",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Extremity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Flurry", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Flurry",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Hertless", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Hertless",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Honor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Honor",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Liberation ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Liberation ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Longing", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Tenacity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Longing",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Tenacity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Transcendence", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Transcendence",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 10000 },
       { name: "Event Raffle HitOrder 1", rate: 10000 },
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Twilight ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Twilight ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Gloves of Vengeance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Gloves of Vengeance",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Conquest", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Conquest",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Destruction", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Destruction",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Flurry", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Flurry",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Fury", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Fury",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Hertless", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Hertless",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Honor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Honor",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Liberation ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Liberation ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Longing", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Ritual", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Longing",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Ritual",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Tenacity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Tenacity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Transcendence", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Transcendence",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 10000 },
       { name: "Event Raffle HitOrder 1", rate: 10000 },
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Twilight ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Twilight ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Helm of Vengeance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Helm of Vengeance",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Conquest", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Conquest",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Destruction", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Destruction",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Element", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Extremity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Element",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Extremity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Flurry", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Flurry",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Fury", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Fury",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Hertless", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Hertless",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Honor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Honor",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Liberation ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Liberation ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Longing", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Ritual", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Longing",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Ritual",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Tenacity", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Tenacity",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Transcendence", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Transcendence",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 10000 },
       { name: "Event Raffle HitOrder 1", rate: 10000 },
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Twilight ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Twilight ",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Angel Pants of Vengeance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Angel Pants of Vengeance",
+    minLevel: 1,
+    maps: [
       { name: "Event HideAndSeek Round 3", rate: 2000 },
       { name: "Event Raffle HitOrder 1", rate: 2000 },
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Blood Helm of Element", minLevel: 1, maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ] },
-  { item: "Sealed Stone Shard", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sealed Blood Helm of Element",
+    minLevel: 1,
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
+  },
+  {
+    item: "Sealed Stone Shard",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Core Magriffy", rate: 10000 },
       { name: "Cursed Santa", rate: 2000 },
@@ -14734,375 +19399,625 @@ const drops = [
       { name: "Sylphid", rate: 1000 },
       { name: "Ukanva", rate: 1000 },
       { name: "Undine", rate: 1000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 10]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 11]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 12]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 13]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 14]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 15]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 16]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 17]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 18]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 19]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 1]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 20]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 2]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 3]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 4]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 5]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 6]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 7]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 8]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Earth) [Step: 9]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Earth)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 10]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 11]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 12]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 13]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 14]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 15]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 16]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 17]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 18]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 19]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 1]", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 10]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 11]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 12]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 13]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 14]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 15]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 16]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 17]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 18]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 19]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 1]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 20]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 2]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 3]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 4]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 5]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 6]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 7]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 8]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Earth) [Step: 9]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Earth)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 10]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 11]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 12]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 13]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 14]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 15]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 16]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 17]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 18]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 19]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 1]",
+    minLevel: 1,
+    maps: [
       { name: "Mix LuckyCoin30", rate: 10000 },
       { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 20]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 2]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 3]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 4]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 5]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 6]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 7]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 8]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Fire) [Step: 9]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Fire)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 10]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 11]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 12]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 13]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 14]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 15]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 16]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 17]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 18]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 19]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 1]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 20]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 2]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 3]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 4]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 5]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 6]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 7]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 8]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Ice) [Step: 9]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Ice)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 10]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 11]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 12]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 13]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 14]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 15]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 16]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 17]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 18]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 19]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 1]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 20]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 2]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 3]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 4]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 5]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 6]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 7]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 8]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Lightning) [Step: 9]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Lightning)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 10]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 11]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 12]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 13]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 14]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 15]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 16]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 17]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 18]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 19]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 1]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 20]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 2]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 3]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 4]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 5]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 6]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 7]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 8]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Water) [Step: 9]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Water)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 10]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 11]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 12]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 13]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 14]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 15]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 16]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 17]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 18]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 19]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 1]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 20]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 2]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 3]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 4]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 5]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 6]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 7]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 8]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seed Sphere (Wind) [Step: 9]", minLevel: 1, maps: [
-      { name: "Seed Capsule (Wind)", rate: 10000 },
-    ] },
-  { item: "Seiren", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Selupan", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Semeden Red Wing Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 20]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 2]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 3]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 4]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 5]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 6]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 7]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 8]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Fire) [Step: 9]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Fire)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 10]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 11]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 12]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 13]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 14]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 15]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 16]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 17]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 18]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 19]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 1]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 20]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 2]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 3]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 4]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 5]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 6]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 7]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 8]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Ice) [Step: 9]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Ice)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 10]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 11]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 12]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 13]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 14]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 15]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 16]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 17]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 18]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 19]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 1]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 20]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 2]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 3]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 4]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 5]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 6]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 7]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 8]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Lightning) [Step: 9]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Lightning)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 10]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 11]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 12]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 13]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 14]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 15]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 16]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 17]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 18]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 19]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 1]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 20]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 2]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 3]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 4]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 5]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 6]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 7]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 8]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Water) [Step: 9]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Water)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 10]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 11]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 12]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 13]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 14]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 15]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 16]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 17]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 18]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 19]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 1]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 20]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 2]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 3]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 4]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 5]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 6]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 7]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 8]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seed Sphere (Wind) [Step: 9]",
+    minLevel: 1,
+    maps: [{ name: "Seed Capsule (Wind)", rate: 10000 }],
+  },
+  {
+    item: "Seiren",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Selupan",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Semeden Red Wing Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -15110,8 +20025,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Semeden Red Wing Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Semeden Red Wing Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -15119,8 +20038,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Semeden Red Wing Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Semeden Red Wing Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -15128,8 +20051,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Semeden Red Wing Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Semeden Red Wing Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -15137,9 +20064,13 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Seraphim Armor", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Seraphim Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -15147,9 +20078,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Seraphim Boots", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Seraphim Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -15157,9 +20092,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Seraphim Gloves", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Seraphim Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -15167,9 +20106,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Seraphim Helm", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Seraphim Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -15177,9 +20120,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Seraphim Pants", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Seraphim Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -15187,9 +20134,12 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Serpent Crossbow", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+    ],
+  },
+  {
+    item: "Serpent Crossbow",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -15199,10 +20149,14 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Serpent Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Serpent Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
@@ -15215,22 +20169,29 @@ const drops = [
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Serpent Spear", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Serpent Spear",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Serpent Staff", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+    ],
+  },
+  {
+    item: "Serpent Staff",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
@@ -15243,14 +20204,22 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Serpent Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Serpent Sword",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-    ] },
-  { item: "Shining Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Shining Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
@@ -15275,7 +20244,7 @@ const drops = [
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Mix Senior Reward", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
@@ -15284,75 +20253,100 @@ const drops = [
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Short Sword", minLevel: 1, maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix Maple Leaf Reward", rate: 700 },
-    ] },
-  { item: "Silk Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Short Sword",
+    minLevel: 1,
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 700 }],
+  },
+  {
+    item: "Silk Armor",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Silk Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silk Boots",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Silk Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silk Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Silk Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silk Helm",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Silk Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silk Pants",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Silver Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silver Bow",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
@@ -15363,56 +20357,49 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Silver Heart Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silver Heart Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 6000 },
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Blade",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Bow",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Claws", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Claws",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Elf Armor (A)", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Armor (B)", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Boots (A)", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15420,8 +20407,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15429,8 +20420,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15438,8 +20433,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Helm (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15447,8 +20446,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Helm (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15456,8 +20459,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15465,8 +20472,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Elf Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Helm (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15474,8 +20485,51 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Fighter Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Elf Helm (B)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Elf Pants (A)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Elf Pants (B)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15483,8 +20537,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Fighter Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Fighter Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15492,13 +20550,21 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Fighter Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Fighter Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Fighter Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Fighter Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15506,8 +20572,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Fighter Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Fighter Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15515,63 +20585,111 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Gun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Gun",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Gun Crusher Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Gun Crusher Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Gun Crusher Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Gun Crusher Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Gun Crusher Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Gun Crusher Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Gun Crusher Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Gun Crusher Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Gun Crusher Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Illusion Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Illusion Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Illusion Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Illusion Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Illusion Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Illusion Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Illusion Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Illusion Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Illusion Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Illusion Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15579,8 +20697,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15588,8 +20710,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15597,8 +20723,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Knight Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Knight Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15606,8 +20736,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 10000 },
       { name: "Elite Bloody Tantalus", rate: 10000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 10000 },
@@ -15615,79 +20749,71 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lance",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Lancer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lancer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 6000 },
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lancer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lancer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 6000 },
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lancer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lancer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 6000 },
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lancer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lancer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 6000 },
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lancer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lancer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Great Bahamut of Abyss", rate: 6000 },
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lord Armor", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lord Boots", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lord Gloves", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lord Helm", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Lord Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lord Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15695,33 +20821,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Mage Armor", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Mage Boots", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Mage Gloves", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Mage Helm", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Mage Pants", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Magic Armor (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lord Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15729,8 +20834,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Armor (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lord Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15738,8 +20847,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Boots (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lord Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15747,8 +20860,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Lord Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15756,8 +20873,57 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Mage Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Mage Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Mage Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Mage Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Mage Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Magic Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15765,8 +20931,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15774,8 +20944,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15783,8 +20957,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15792,28 +20970,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Magic Sword", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Orb", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Quiver", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Rune Mace", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Runist Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15821,8 +20983,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Runist Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15830,8 +20996,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Runist Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15839,8 +21009,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Runist Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15848,8 +21022,48 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Runist Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Magic Sword",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Orb",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Quiver",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Rune Mace",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Runist Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15857,48 +21071,136 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Runist Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Short Sword", minLevel: 1, maps: [
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Runist Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Slayer Armor", minLevel: 1, maps: [
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Runist Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Slayer Boots", minLevel: 1, maps: [
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Runist Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Slayer Gloves", minLevel: 1, maps: [
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Slayer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Slayer Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Slayer Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Slayer Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Slayer Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Staff",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 15000 },
       { name: "Elite Bloody Tantalus", rate: 15000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 15000 },
-    ] },
-  { item: "Silverheart Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15906,8 +21208,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15915,8 +21221,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15924,8 +21234,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Summoner Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Summoner Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15933,8 +21247,12 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -15942,70 +21260,66 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart White Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart White Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart White Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart White Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart White Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart White Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart White Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart White Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart White Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart White Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Wizard Armor", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Wizard Boots", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Wizard Gloves", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
-      { name: "Elite Scorched Warrior", rate: 3000 },
-      { name: "Elite Temple Gargoyle", rate: 3000 },
-      { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Silverheart Wizard Helm", minLevel: 1, maps: [
-      { name: "Elite Bloody Beam Knight", rate: 5000 },
-      { name: "Elite Bloody Tantalus", rate: 5000 },
-      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Silverheart Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Silverheart Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
@@ -16013,13 +21327,65 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 3000 },
       { name: "Elite Temple Gargoyle", rate: 3000 },
       { name: "Elite Temple Ogre", rate: 3000 },
-    ] },
-  { item: "Skull", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Skull Shield", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 70000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Silverheart Wizard Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Wizard Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Silverheart Wizard Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+    ],
+  },
+  {
+    item: "Silverheart Wizard Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Bloody Beam Knight", rate: 5000 },
+      { name: "Elite Bloody Tantalus", rate: 5000 },
+      { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
+      { name: "Elite Great Bahamut of Abyss", rate: 6000 },
+      { name: "Elite Scorched Warrior", rate: 3000 },
+      { name: "Elite Temple Gargoyle", rate: 3000 },
+      { name: "Elite Temple Ogre", rate: 3000 },
+    ],
+  },
+  {
+    item: "Skull",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Skull Shield",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -16030,27 +21396,34 @@ const drops = [
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-    ] },
-  { item: "Skull Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Skull Staff",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Box", rate: 300 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Small Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Small Shield",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Firecracker", rate: 20000 },
       { name: "Gold Medal", rate: 20000 },
@@ -16058,23 +21431,37 @@ const drops = [
       { name: "Luck Box", rate: 20000 },
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Snow Fairy", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Snow Fairy",
+    minLevel: 1,
+    maps: [
       { name: "Tempest Muun Box (Amplified)", rate: 10000 },
       { name: "Tempest Muun Box (Wide)", rate: 10000 },
       { name: "Tempest Muun Egg (Amplified)", rate: 10000 },
       { name: "Tempest Muun Egg (Wide)", rate: 10000 },
-    ] },
-  { item: "Snow Fairy (Evolved)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Snow Fairy (Evolved)",
+    minLevel: 1,
+    maps: [
       { name: "Tempest Muun Box (Amplified)", rate: 10000 },
       { name: "Tempest Muun Box (Wide)", rate: 10000 },
       { name: "Tempest Muun Egg (Amplified)", rate: 10000 },
       { name: "Tempest Muun Egg (Wide)", rate: 10000 },
-    ] },
-  { item: "Snowman Transformation Ring", minLevel: 1, maps: [
-      { name: "NPC SantaClause2 Reward", rate: 10000 },
-    ] },
-  { item: "Soleil Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Snowman Transformation Ring",
+    minLevel: 1,
+    maps: [{ name: "NPC SantaClause2 Reward", rate: 10000 }],
+  },
+  {
+    item: "Soleil Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -16098,148 +21485,33 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Solid Symbol", minLevel: 1, maps: [
-      { name: "IllusionTemple Renewal 6", rate: 200 },
-    ] },
-  { item: "Soul Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Solid Symbol",
+    minLevel: 1,
+    maps: [{ name: "IllusionTemple Renewal 6", rate: 200 }],
+  },
+  {
+    item: "Soul Blade",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Bow",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Claws", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-      { name: "Elite Great Bahamut of Abyss", rate: 15000 },
-      { name: "Elite Lizard King of Abyss", rate: 5000 },
-      { name: "Elite Scorched Warrior", rate: 5000 },
-      { name: "Elite Temple Gargoyle", rate: 5000 },
-      { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Soul Elf Armor (A)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Armor (B)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Boots (A)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Boots (B)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Gloves (A)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Gloves (B)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Helm (A)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Helm (B)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Pants (A)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Elf Pants (B)", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Fighter Armor", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Fighter Boots", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Fighter Helm", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Fighter Pants", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Gun", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Gun Crusher Armor", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Gun Crusher Boots", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Gun Crusher Gloves", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Gun Crusher Helm", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Gun Crusher Pants", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Illusion Armor", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Illusion Boots", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Illusion Gloves", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Illusion Helm", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Illusion Pants", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
-      { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Knight Armor", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
-      { name: "Elite Ashy Golem", rate: 10000 },
-    ] },
-  { item: "Soul Knight Boots", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
-      { name: "Elite Ashy Golem", rate: 10000 },
-    ] },
-  { item: "Soul Knight Gloves", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
-      { name: "Elite Ashy Golem", rate: 10000 },
-    ] },
-  { item: "Soul Knight Helm", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
-      { name: "Elite Ashy Golem", rate: 10000 },
-    ] },
-  { item: "Soul Knight Pants", minLevel: 1, maps: [
-      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
-      { name: "Elite Ashy Golem", rate: 10000 },
-    ] },
-  { item: "Soul Lance", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Claws",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
@@ -16247,100 +21519,252 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Soul Lancer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Armor (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lancer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Armor (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lancer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Boots (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lancer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Boots (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lancer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Gloves (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lord Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Gloves (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lord Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Helm (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lord Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Helm (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lord Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Pants (A)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Lord Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Elf Pants (B)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Mage Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Mage Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Fighter Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Mage Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Fighter Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Mage Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Fighter Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Mage Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Gun",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Armor (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Gun Crusher Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Armor (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Gun Crusher Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Boots (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Gun Crusher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Boots (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Gun Crusher Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Gloves (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Gun Crusher Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Gloves (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Illusion Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Pants (A)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Illusion Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Pants (B)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Illusion Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Magic Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Illusion Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Illusion Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Knight Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
+      { name: "Elite Ashy Golem", rate: 10000 },
+    ],
+  },
+  {
+    item: "Soul Knight Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
+      { name: "Elite Ashy Golem", rate: 10000 },
+    ],
+  },
+  {
+    item: "Soul Knight Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
+      { name: "Elite Ashy Golem", rate: 10000 },
+    ],
+  },
+  {
+    item: "Soul Knight Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
+      { name: "Elite Ashy Golem", rate: 10000 },
+    ],
+  },
+  {
+    item: "Soul Knight Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
+      { name: "Elite Ashy Golem", rate: 10000 },
+    ],
+  },
+  {
+    item: "Soul Lance",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
@@ -16348,12 +21772,196 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Soul Orb", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Lancer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Lancer Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lancer Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lancer Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lancer Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lord Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lord Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lord Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lord Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Lord Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Mage Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Mage Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Mage Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Mage Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Mage Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Armor (A)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Armor (B)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Boots (A)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Boots (B)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Gloves (A)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Gloves (B)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Pants (A)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Pants (B)",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Magic Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
@@ -16361,8 +21969,20 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Soul Rune Mace", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Orb",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
@@ -16370,80 +21990,169 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Soul Runist Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Rune Mace",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Runist Boots", minLevel: 1, maps: [
+      { name: "Elite Great Bahamut of Abyss", rate: 15000 },
+      { name: "Elite Lizard King of Abyss", rate: 5000 },
+      { name: "Elite Scorched Warrior", rate: 5000 },
+      { name: "Elite Temple Gargoyle", rate: 5000 },
+      { name: "Elite Temple Ogre", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Runist Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Runist Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Runist Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Runist Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Runist Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Runist Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Runist Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Scepter", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Runist Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Short Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Scepter",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Slayer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Short Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Slayer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Slayer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Slayer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Slayer Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Slayer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Slayer Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Staff", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Slayer Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
+      { name: "Elite Ashy Golem", rate: 5000 },
+    ],
+  },
+  {
+    item: "Soul Staff",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 15000 },
       { name: "Elite Ashy Golem", rate: 15000 },
-    ] },
-  { item: "Soul Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Summoner Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Summoner Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Sword", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Sword",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
       { name: "Elite Great Bahamut of Abyss", rate: 15000 },
@@ -16451,53 +22160,101 @@ const drops = [
       { name: "Elite Scorched Warrior", rate: 5000 },
       { name: "Elite Temple Gargoyle", rate: 5000 },
       { name: "Elite Temple Ogre", rate: 5000 },
-    ] },
-  { item: "Soul White Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul White Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul White Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul White Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul White Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul White Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul White Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul White Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul White Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul White Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Wizard Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Wizard Helm",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Soul Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Soul Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Spear", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spear",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Speed Medicine", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Speed Medicine",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 1", rate: 10000 },
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 3", rate: 10000 },
@@ -16507,8 +22264,12 @@ const drops = [
       { name: "Event PlayTime Round 7", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
       { name: "Event PlayTime Round 9", rate: 10000 },
-    ] },
-  { item: "Spell Medicine", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spell Medicine",
+    minLevel: 1,
+    maps: [
       { name: "Event PlayTime Round 1", rate: 10000 },
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 3", rate: 10000 },
@@ -16518,25 +22279,37 @@ const drops = [
       { name: "Event PlayTime Round 7", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
       { name: "Event PlayTime Round 9", rate: 10000 },
-    ] },
-  { item: "Sphere", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 55 },
-    ] },
-  { item: "Sphere (Di)", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 52 },
-    ] },
-  { item: "Sphere (Tetra)", minLevel: 1, maps: [
-      { name: "Lord Silvester", rate: 2000 },
-    ] },
-  { item: "Sphere (Tri)", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 51 },
-    ] },
-  { item: "Sphere Upgrade Rune", minLevel: 1, maps: [
-      { name: "Sphere Upgrade Rune Capsule", rate: 16000 },
-    ] },
-  { item: "Sphinx Armor", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Sphere",
+    minLevel: 1,
+    maps: [{ name: "Event Chaos Castle 1", rate: 55 }],
+  },
+  {
+    item: "Sphere (Di)",
+    minLevel: 1,
+    maps: [{ name: "Event Chaos Castle 1", rate: 52 }],
+  },
+  {
+    item: "Sphere (Tetra)",
+    minLevel: 1,
+    maps: [{ name: "Lord Silvester", rate: 2000 }],
+  },
+  {
+    item: "Sphere (Tri)",
+    minLevel: 1,
+    maps: [{ name: "Event Chaos Castle 1", rate: 51 }],
+  },
+  {
+    item: "Sphere Upgrade Rune",
+    minLevel: 1,
+    maps: [{ name: "Sphere Upgrade Rune Capsule", rate: 16000 }],
+  },
+  {
+    item: "Sphinx Armor",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -16548,18 +22321,20 @@ const drops = [
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Sphinx Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Sphinx Boots",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -16570,18 +22345,20 @@ const drops = [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Sphinx Gloves", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Sphinx Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -16592,41 +22369,20 @@ const drops = [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Sphinx Mask", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
-      { name: "Event IceWindCastle GuildMaster", rate: 1 },
-      { name: "Event IceWindCastle GuildMember", rate: 1 },
-      { name: "Event IceWindCastle Player", rate: 1 },
-      { name: "Event LastManStanding Winner Reward", rate: 1 },
-      { name: "Event Raffle HitOrder 2", rate: 1 },
-      { name: "Event Raffle Lotto 2", rate: 1 },
-      { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Kundun Box+1", rate: 10000 },
-      { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
-      { name: "Sheep Purple", rate: 10000 },
-      { name: "Sheep Red", rate: 10000 },
-      { name: "WarriorRing40", rate: 10000 },
-      { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Sphinx Pants", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Sphinx Mask",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -16638,43 +22394,90 @@ const drops = [
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Spider Artifact Fragment", minLevel: 1, maps: [
-      { name: "Event ImperialGuardian1 Reward", rate: 10000 },
-    ] },
-  { item: "Spider Artifact Type 1", minLevel: 1, maps: [
-      { name: "Spider Artifact Box", rate: 800 },
-    ] },
-  { item: "Spider Artifact Type 2", minLevel: 1, maps: [
-      { name: "Spider Artifact Box", rate: 800 },
-    ] },
-  { item: "Spider Artifact Type 3", minLevel: 1, maps: [
-      { name: "Spider Artifact Box", rate: 800 },
-    ] },
-  { item: "Spider Artifact Type 4", minLevel: 1, maps: [
-      { name: "Spider Artifact Box", rate: 800 },
-    ] },
-  { item: "Spider Artifact Type 5", minLevel: 1, maps: [
-      { name: "Spider Artifact Box", rate: 800 },
-    ] },
-  { item: "Spider Artifact Type 6", minLevel: 1, maps: [
-      { name: "Spider Artifact 6 7 Box", rate: 800 },
-    ] },
-  { item: "Spider Artifact Type 7", minLevel: 1, maps: [
-      { name: "Spider Artifact 6 7 Box", rate: 800 },
-    ] },
-  { item: "Spiked Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sphinx Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Event IceWindCastle GuildMaster", rate: 1 },
+      { name: "Event IceWindCastle GuildMember", rate: 1 },
+      { name: "Event IceWindCastle Player", rate: 1 },
+      { name: "Event LastManStanding Winner Reward", rate: 1 },
+      { name: "Event Raffle HitOrder 2", rate: 1 },
+      { name: "Event Raffle Lotto 2", rate: 1 },
+      { name: "Event ScrambleWord Level 2", rate: 1 },
+      { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
-    ] },
-  { item: "Spinel Orb", minLevel: 1, maps: [
+      { name: "Light Purple Candy Box", rate: 10000 },
+      { name: "Medusa", rate: 600 },
+
+      { name: "Mix Maple Leaf Reward", rate: 1000 },
+      { name: "Pink Chocolate Box", rate: 10000 },
+
+      { name: "Sheep Purple", rate: 10000 },
+      { name: "Sheep Red", rate: 10000 },
+      { name: "WarriorRing40", rate: 10000 },
+      { name: "WarriorRing80", rate: 10000 },
+    ],
+  },
+  {
+    item: "Spider Artifact Fragment",
+    minLevel: 1,
+    maps: [{ name: "Event ImperialGuardian1 Reward", rate: 10000 }],
+  },
+  {
+    item: "Spider Artifact Type 1",
+    minLevel: 1,
+    maps: [{ name: "Spider Artifact Box", rate: 800 }],
+  },
+  {
+    item: "Spider Artifact Type 2",
+    minLevel: 1,
+    maps: [{ name: "Spider Artifact Box", rate: 800 }],
+  },
+  {
+    item: "Spider Artifact Type 3",
+    minLevel: 1,
+    maps: [{ name: "Spider Artifact Box", rate: 800 }],
+  },
+  {
+    item: "Spider Artifact Type 4",
+    minLevel: 1,
+    maps: [{ name: "Spider Artifact Box", rate: 800 }],
+  },
+  {
+    item: "Spider Artifact Type 5",
+    minLevel: 1,
+    maps: [{ name: "Spider Artifact Box", rate: 800 }],
+  },
+  {
+    item: "Spider Artifact Type 6",
+    minLevel: 1,
+    maps: [{ name: "Spider Artifact 6 7 Box", rate: 800 }],
+  },
+  {
+    item: "Spider Artifact Type 7",
+    minLevel: 1,
+    maps: [{ name: "Spider Artifact 6 7 Box", rate: 800 }],
+  },
+  {
+    item: "Spiked Shield",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+1", rate: 10000 }],
+  },
+  {
+    item: "Spinel Orb",
+    minLevel: 1,
+    maps: [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
@@ -16689,128 +22492,154 @@ const drops = [
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Spirit Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spirit Armor",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Spirit Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spirit Boots",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Spirit Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spirit Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Spirit Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spirit Helm",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Spirit Map", minLevel: 1, maps: [
-      { name: "Event HideAndSeek Round 1", rate: 2000 },
-      { name: "Event Raffle HitOrder 3", rate: 2000 },
-      { name: "Event Raffle Lotto 3", rate: 2000 },
-      { name: "Roomy Card Box (Lower)", rate: 2000 },
-    ] },
-  { item: "Spirit Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spirit Map",
+    minLevel: 1,
+    maps: [{ name: "Roomy Card Box (Lower)", rate: 2000 }],
+  },
+  {
+    item: "Spirit Pants",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
-    ] },
-  { item: "Spirit Powder", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spirit Powder",
+    minLevel: 1,
+    maps: [
       { name: "Rooster Green", rate: 600 },
       { name: "Rooster Purple", rate: 600 },
       { name: "Rooster Red", rate: 600 },
       { name: "Rooster White", rate: 600 },
-    ] },
-  { item: "Spirit of Guardian", minLevel: 1, maps: [
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
-    ] },
-  { item: "Staff of Destruction", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Spirit of Guardian",
+    minLevel: 1,
+    maps: [],
+  },
+  {
+    item: "Staff of Destruction",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blessing Box", rate: 30000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
@@ -16818,11 +22647,10 @@ const drops = [
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Love Heart", rate: 30000 },
       { name: "Luck Box", rate: 30000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+      { name: "Moss Merchant", rate: 10000 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -16831,22 +22659,29 @@ const drops = [
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Medal", rate: 30000 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Staff of Destruction ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Staff of Destruction ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Staff of Kundun", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Staff of Kundun",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -16868,24 +22703,28 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 4500 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Staff of Resurrection", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Staff of Resurrection",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 30000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
       { name: "Kundun Box+2", rate: 20000 },
@@ -16902,67 +22741,114 @@ const drops = [
       { name: "Rooster White", rate: 300 },
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Medal", rate: 30000 },
-    ] },
-  { item: "Stick of Apocalypse", minLevel: 1, maps: [
-      { name: "Elite Twisted Crypta", rate: 5000 },
-    ] },
-  { item: "Stick of Blue Eye", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Stick of Apocalypse",
+    minLevel: 1,
+    maps: [{ name: "Elite Twisted Crypta", rate: 5000 }],
+  },
+  {
+    item: "Stick of Blue Eye",
+    minLevel: 1,
+    maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 5000 },
       { name: "Elite Underground Dreadfear", rate: 5000 },
       { name: "Elite Underground Persona", rate: 5000 },
-    ] },
-  { item: "Stick of Brilliant", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Stick of Brilliant",
+    minLevel: 1,
+    maps: [
       { name: "Elite Crimson Harpy", rate: 5000 },
       { name: "Elite Magma Gladiator", rate: 15000 },
       { name: "Elite Magma Hook", rate: 5000 },
       { name: "Elite Magma Shaman", rate: 5000 },
-    ] },
-  { item: "Stick of Manticore", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Stick of Manticore",
+    minLevel: 1,
+    maps: [
       { name: "Elite Storm Guard", rate: 5000 },
       { name: "Elite Storm Reaper", rate: 5000 },
-    ] },
-  { item: "Stick of Silverheart", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Stick of Silverheart",
+    minLevel: 1,
+    maps: [
       { name: "Elite Bloody Beam Knight", rate: 5000 },
       { name: "Elite Bloody Tantalus", rate: 5000 },
       { name: "Elite Bloody Wolf of Fresh Blood", rate: 5000 },
-    ] },
-  { item: "Stick of Soul", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Stick of Soul",
+    minLevel: 1,
+    maps: [
       { name: "Elite Ashy Bloody Witch Queen", rate: 5000 },
       { name: "Elite Ashy Golem", rate: 5000 },
-    ] },
-  { item: "Sticky Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Sticky Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Sticky Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Sticky Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Sticky Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Sticky Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Sticky Helm", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Sticky Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Sticky Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Sticky Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Storage Guardian", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Storm Blitz Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storage Guardian",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Storm Blitz Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -16970,16 +22856,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Storm Blitz Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Blitz Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -16987,16 +22875,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Storm Blitz Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Blitz Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17004,16 +22894,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Storm Blitz Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Blitz Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17021,16 +22913,18 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Storm Blitz Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Blitz Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17038,34 +22932,36 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Storm Blitz Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Blitz Stick",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
       { name: "Green Box", rate: 1000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Storm Crow Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Crow Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -17077,20 +22973,19 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Storm Crow Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Crow Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -17101,20 +22996,19 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Storm Crow Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Crow Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -17125,18 +23019,17 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Storm Crow Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Storm Crow Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -17148,11 +23041,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Storm Jahad Armor", minLevel: 1, maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Storm Jahad Armor",
+    minLevel: 1,
+    maps: [
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -17161,11 +23055,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Storm Jahad Boots", minLevel: 1, maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Storm Jahad Boots",
+    minLevel: 1,
+    maps: [
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -17174,11 +23069,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Storm Jahad Helm", minLevel: 1, maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Storm Jahad Helm",
+    minLevel: 1,
+    maps: [
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -17187,11 +23083,12 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Storm Jahad Pants", minLevel: 1, maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+    ],
+  },
+  {
+    item: "Storm Jahad Pants",
+    minLevel: 1,
+    maps: [
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -17200,66 +23097,113 @@ const drops = [
       { name: "Rooster Red", rate: 200 },
       { name: "Rooster White", rate: 200 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Stormwing Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Stormwing Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Stormwing Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Stormwing Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Stormwing Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Stormwing Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Stormwing Helm", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Stormwing Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Stormwing Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Stormwing Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Succubus Armor", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Succubus Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Succubus Boots", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Succubus Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Succubus Gloves", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Succubus Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Succubus Helm", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Succubus Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Succubus Pants", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+    ],
+  },
+  {
+    item: "Succubus Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
-    ] },
-  { item: "Summon Spirit Stick", minLevel: 1, maps: [
-      { name: "(14,259) Devils Box", rate: 500 },
-      { name: "(14,260) High Devils Box", rate: 2000 },
-    ] },
-  { item: "Sunlight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Summon Spirit Stick",
+    minLevel: 1,
+    maps: [
+      { name: "Devils Box", rate: 500 },
+      { name: "High Devils Box", rate: 2000 },
+    ],
+  },
+  {
+    item: "Sunlight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17270,13 +23214,15 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sunlight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sunlight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17285,13 +23231,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sunlight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sunlight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17300,13 +23248,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sunlight Mask", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sunlight Mask",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17315,13 +23265,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sunlight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sunlight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17330,14 +23282,17 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Suspicious Scrap of Paper", minLevel: 1, maps: [
-      { name: "Boss Battle Bonus Box", rate: 900 },
-    ] },
-  { item: "Sword Breaker", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+    ],
+  },
+  {
+    item: "Suspicious Scrap of Paper",
+    minLevel: 1,
+    maps: [{ name: "Boss Battle Bonus Box", rate: 900 }],
+  },
+  {
+    item: "Sword Breaker",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -17347,28 +23302,38 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Sword Dancer", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sword Dancer",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 10000 },
-    ] },
-  { item: "Sword of Assassin", minLevel: 1, maps: [
-      { name: "MossMerchant01.xml", rate: 10000 },
-    ] },
-  { item: "Sword of Destruction", minLevel: 1, maps: [
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Sword of Assassin",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Sword of Destruction",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blessing Box", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
@@ -17377,18 +23342,16 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -17396,14 +23359,12 @@ const drops = [
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -17415,16 +23376,24 @@ const drops = [
       { name: "Shiny Earring Box (Right)", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
       { name: "Snake Yellow", rate: 10000 },
-    ] },
-  { item: "Sword of Destruction ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sword of Destruction ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Sword of Salamander", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sword of Salamander",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -17434,8 +23403,12 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Sylph Wind Bow", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sylph Wind Bow",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -17459,11 +23432,15 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Sylphid Ray Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sylphid Ray Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17474,13 +23451,15 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sylphid Ray Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sylphid Ray Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17489,13 +23468,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sylphid Ray Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sylphid Ray Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17504,13 +23485,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sylphid Ray Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sylphid Ray Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17519,12 +23502,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Sylphid Ray Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Sylphid Ray Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -17533,12 +23519,14 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Symbol of Kundun", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 1300 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 800 },
+    ],
+  },
+  {
+    item: "Symbol of Kundun",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 1300 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 800 },
       { name: "Event IceWindCastle GuildMember", rate: 800 },
       { name: "Event IceWindCastle Player", rate: 800 },
@@ -17546,426 +23534,744 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 800 },
       { name: "Event Raffle Lotto 2", rate: 800 },
       { name: "Event ScrambleWord Level 2", rate: 800 },
-      { name: "ResetSystem Regular", rate: 800 },
-    ] },
-  { item: "Talisman Element Change", minLevel: 1, maps: [
-      { name: "Elemental Talisman Box", rate: 100 },
-    ] },
-  { item: "Talisman of Ascension I", minLevel: 1, maps: [
-      { name: "Event PlayTime Round 10", rate: 10000 },
-    ] },
-  { item: "Talisman of Ascension II", minLevel: 1, maps: [
-      { name: "PlayTime Special Box", rate: 10000 },
-    ] },
-  { item: "Talisman of Chaos Assembly", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Talisman Element Change",
+    minLevel: 1,
+    maps: [{ name: "Elemental Talisman Box", rate: 100 }],
+  },
+  {
+    item: "Talisman of Ascension I",
+    minLevel: 1,
+    maps: [{ name: "Event PlayTime Round 10", rate: 10000 }],
+  },
+  {
+    item: "Talisman of Ascension II",
+    minLevel: 1,
+    maps: [{ name: "PlayTime Special Box", rate: 10000 }],
+  },
+  {
+    item: "Talisman of Chaos Assembly",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Talisman Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 2000 },
-      { name: "MossMerchant02.xml", rate: 2000 },
-      { name: "MossMerchant03.xml", rate: 2000 },
-      { name: "MossMerchant04.xml", rate: 2000 },
-      { name: "MossMerchant05.xml", rate: 2000 },
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "Talisman of Luck", minLevel: 1, maps: [
+
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Talisman of Luck",
+    minLevel: 1,
+    maps: [
       { name: "Elemental Talisman Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 200 },
-      { name: "Event Raffle Lotto 3", rate: 200 },
-      { name: "MossMerchant01.xml", rate: 2000 },
-      { name: "MossMerchant02.xml", rate: 2000 },
-      { name: "MossMerchant03.xml", rate: 2000 },
-      { name: "MossMerchant04.xml", rate: 2000 },
-      { name: "MossMerchant05.xml", rate: 2000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 200 },
-    ] },
-  { item: "Tantalose's Punishment", minLevel: 1, maps: [
-      { name: "Golden Titan", rate: 4000 },
-    ] },
-  { item: "Tempest Evolution Stone", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Tantalose's Punishment",
+    minLevel: 1,
+    maps: [{ name: "Golden Titan", rate: 4000 }],
+  },
+  {
+    item: "Tempest Evolution Stone",
+    minLevel: 1,
+    maps: [
       { name: "Tempest Muun Egg (Amplified)", rate: 27600 },
       { name: "Tempest Muun Egg (Wide)", rate: 27600 },
       { name: "Tempest Muun Evolution Stone Box (Amplified)", rate: 30000 },
       { name: "Tempest Muun Evolution Stone Box (Wide)", rate: 30000 },
-    ] },
-  { item: "Temple Guard Elf Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Elf Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Elf Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Elf Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Elf Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Elf Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Elf Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Elf Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Elf Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Elf Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Fighter Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Fighter Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Fighter Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Fighter Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Fighter Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Fighter Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Fighter Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Fighter Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Guncrash Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Guncrash Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Guncrasher Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Guncrasher Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Guncrasher Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Guncrasher Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Guncrasher Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Guncrasher Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Guncrasher Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Guncrasher Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Illusion Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Illusion Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Illusion Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Illusion Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Illusion Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Illusion Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Illusion Knight Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Illusion Knight Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Illusion Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Illusion Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Armor (Conviction)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Armor (Conviction)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Boots (Conviction)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Boots (Conviction)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Gloves (Conviction)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Gloves (Conviction)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Helmet (Conviction)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Helmet (Conviction)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Knight Pants (Conviction)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Knight Pants (Conviction)",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lancer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lancer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lancer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lancer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lancer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lancer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lancer Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lancer Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lancer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lancer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Load Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Load Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lord Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lord Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lord Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lord Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lord Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lord Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Lord Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Lord Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Mage Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Mage Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Mage Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Mage Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Mage Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Mage Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Mage Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Mage Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Mage Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Mage Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Magic Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Magic Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Magic Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Magic Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Magic Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Magic Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Magic Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Magic Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 2200 },
       { name: "Elite Devil Sorcerer", rate: 2200 },
       { name: "Elite Devil Sword", rate: 2200 },
-    ] },
-  { item: "Temple Guard Rune Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Rune Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Rune Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Rune Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Rune Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Rune Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Rune Wizard Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Rune Wizard Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Rune Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Rune Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Slayer Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Slayer Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Slayer Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Slayer Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Slayer Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Slayer Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Slayer Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Slayer Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Slayer Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Slayer Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Summoner Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Summoner Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Summoner Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Summoner Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Summoner Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Summoner Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Summoner Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Summoner Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Summoner Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Summoner Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard White Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard White Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard White Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard White Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard White Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard White Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard White Wizard Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard White Wizard Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard White Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard White Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Wizard Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Wizard Armor",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Wizard Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Wizard Boots",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Wizard Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Wizard Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Wizard Helmet", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Wizard Helmet",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Temple Guard Wizard Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Temple Guard Wizard Pants",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 1100 },
       { name: "Elite Devil Sorcerer", rate: 1100 },
       { name: "Elite Devil Sword", rate: 1100 },
-    ] },
-  { item: "Tetra Crystal (Greater)", minLevel: 1, maps: [
-      { name: "Lord Silvester", rate: 500 },
-    ] },
-  { item: "Tetra Crystal (Minor)", minLevel: 1, maps: [
-      { name: "Lord Silvester", rate: 2000 },
-    ] },
-  { item: "Tetra Crystal (Standard)", minLevel: 1, maps: [
-      { name: "Lord Silvester", rate: 2000 },
-    ] },
-  { item: "Thoughtful Sage's Jewel", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Tetra Crystal (Greater)",
+    minLevel: 1,
+    maps: [{ name: "Lord Silvester", rate: 500 }],
+  },
+  {
+    item: "Tetra Crystal (Minor)",
+    minLevel: 1,
+    maps: [{ name: "Lord Silvester", rate: 2000 }],
+  },
+  {
+    item: "Tetra Crystal (Standard)",
+    minLevel: 1,
+    maps: [{ name: "Lord Silvester", rate: 2000 }],
+  },
+  {
+    item: "Thoughtful Sage's Jewel",
+    minLevel: 1,
+    maps: [
       { name: "Deep Dungeon Gorgon", rate: 5000 },
       { name: "Gnome", rate: 5000 },
       { name: "Hellraiser", rate: 5000 },
@@ -17986,19 +24292,24 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 340 },
       { name: "[Lvl4] Monster Soul Converter", rate: 380 },
       { name: "[Lvl5] Monster Soul Converter", rate: 410 },
-    ] },
-  { item: "Three Vacancies", minLevel: 1, maps: [
-      { name: "MossMerchant11.xml", rate: 10000 },
-    ] },
-  { item: "Thunder Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Three Vacancies",
+    minLevel: 1,
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
+  },
+  {
+    item: "Thunder Blade",
+    minLevel: 1,
+    maps: [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18011,62 +24322,56 @@ const drops = [
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
-    ] },
-  { item: "Thunder Blade ", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Thunder Blade ",
+    minLevel: 1,
+    maps: [
       { name: "Mix Chaos Card Reward", rate: 20000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-    ] },
-  { item: "Thunder Hawk Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Thunder Hawk Armor",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Thunder Hawk Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Thunder Hawk Boots",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix Maple Leaf Reward", rate: 700 },
-      { name: "Nightmare", rate: 10000 },
-      { name: "Orange Candy Box", rate: 10000 },
-      { name: "Red Chocolate Box", rate: 10000 },
-      { name: "Sapi Queen", rate: 570 },
-      { name: "Shiny Earring Box (Left)", rate: 570 },
-      { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Thunder Hawk Gloves", minLevel: 1, maps: [
-      { name: "Balgass", rate: 10000 },
-      { name: "Blue Ribbon Box", rate: 10000 },
-      { name: "Box of Kundun+3", rate: 10000 },
-      { name: "Box of Kundun+4", rate: 10000 },
-      { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -18074,29 +24379,55 @@ const drops = [
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Thunder Hawk Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Thunder Hawk Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
+      { name: "Mix Maple Leaf Reward", rate: 700 },
+      { name: "Nightmare", rate: 10000 },
+      { name: "Orange Candy Box", rate: 10000 },
+      { name: "Red Chocolate Box", rate: 10000 },
+      { name: "Sapi Queen", rate: 570 },
+      { name: "Shiny Earring Box (Left)", rate: 570 },
+      { name: "Shiny Earring Box (Right)", rate: 570 },
+    ],
+  },
+  {
+    item: "Thunder Hawk Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Balgass", rate: 10000 },
+      { name: "Blue Ribbon Box", rate: 10000 },
+      { name: "Box of Kundun+3", rate: 10000 },
+      { name: "Box of Kundun+4", rate: 10000 },
+      { name: "Box of Kundun+5", rate: 10000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
       { name: "Shiny Earring Box (Right)", rate: 570 },
-    ] },
-  { item: "Thunder Staff", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+    ],
+  },
+  {
+    item: "Thunder Staff",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -18106,12 +24437,17 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Tibetton", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Tiger Bow", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+    ],
+  },
+  {
+    item: "Tibetton",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Tiger Bow",
+    minLevel: 1,
+    maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -18122,41 +24458,61 @@ const drops = [
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Tigris Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Tigris Armor",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Tigris Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Tigris Boots",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Tigris Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Tigris Helm",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Tigris Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Tigris Pants",
+    minLevel: 1,
+    maps: [
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Titan  Armor", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Titan  Armor",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18164,9 +24520,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Titan  Gloves", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Titan  Gloves",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18174,9 +24534,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Titan  Helm", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Titan  Helm",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18184,9 +24548,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Titan  Pants", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Titan  Pants",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18194,9 +24562,13 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Titan Boots", minLevel: 1, maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+    ],
+  },
+  {
+    item: "Titan Boots",
+    minLevel: 1,
+    maps: [
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18204,26 +24576,37 @@ const drops = [
       { name: "Seed Capsule (Lightning)", rate: 5000 },
       { name: "Seed Capsule (Water)", rate: 5000 },
       { name: "Seed Capsule (Wind)", rate: 5000 },
-    ] },
-  { item: "Titan's Anger", minLevel: 1, maps: [
-      { name: "Golden Goblin", rate: 6000 },
-    ] },
-  { item: "Toby", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Tomahawk", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+    ],
+  },
+  {
+    item: "Titan's Anger",
+    minLevel: 1,
+    maps: [{ name: "Golden Goblin", rate: 6000 }],
+  },
+  { item: "Toby", minLevel: 1, maps: [{ name: "Lucky Bag Egg", rate: 20000 }] },
+  {
+    item: "Tomahawk",
+    minLevel: 1,
+    maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-    ] },
-  { item: "Tower Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Tower Shield",
+    minLevel: 1,
+    maps: [
       { name: "Light Purple Candy Box", rate: 20000 },
       { name: "Pink Chocolate Box", rate: 20000 },
-    ] },
-  { item: "Ultimate Magic Crystal", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Ultimate Magic Crystal",
+    minLevel: 1,
+    maps: [
       { name: "Cursed Santa", rate: 20000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
       { name: "Gnome", rate: 10000 },
@@ -18236,54 +24619,74 @@ const drops = [
       { name: "Sylphid", rate: 10000 },
       { name: "Ukanva", rate: 10000 },
       { name: "Undine", rate: 10000 },
-    ] },
-  { item: "Uriel's Feather", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Uriel's Feather",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 500 },
       { name: "Elite Devil Sorcerer", rate: 500 },
       { name: "Elite Devil Sword", rate: 500 },
-    ] },
-  { item: "Valiant Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Valiant Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
-    ] },
-  { item: "Valiant Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Valiant Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Red Box", rate: 5000 },
-    ] },
-  { item: "Valiant Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Valiant Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Red Box", rate: 5000 },
-    ] },
-  { item: "Valiant Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Valiant Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 5000 },
-    ] },
-  { item: "Vega Sacred Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vega Sacred Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18301,8 +24704,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Vega Sacred Glove", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vega Sacred Glove",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18320,8 +24727,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "Vega Sacred Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vega Sacred Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18339,8 +24750,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Vega Sacred Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vega Sacred Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18358,12 +24773,15 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Venom Mist Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Venom Mist Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18374,13 +24792,15 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Venom Mist Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Venom Mist Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18389,13 +24809,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Venom Mist Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Venom Mist Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18404,13 +24826,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Venom Mist Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Venom Mist Helm",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18419,13 +24843,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Venom Mist Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Venom Mist Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18434,9 +24860,12 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Vesper Night Wing Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vesper Night Wing Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18454,8 +24883,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Vesper Night Wing Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vesper Night Wing Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18473,8 +24906,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Vesper Night Wing Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vesper Night Wing Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18492,8 +24929,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Vesper Night Wing Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vesper Night Wing Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -18501,8 +24942,12 @@ const drops = [
       { name: "Luck Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Vesper Night Wing Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vesper Night Wing Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18520,9 +24965,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Vine Armor", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+    ],
+  },
+  {
+    item: "Vine Armor",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -18532,9 +24980,12 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Vine Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+    ],
+  },
+  {
+    item: "Vine Boots",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -18544,9 +24995,12 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Vine Gloves", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+    ],
+  },
+  {
+    item: "Vine Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -18556,9 +25010,12 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Vine Helm", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+    ],
+  },
+  {
+    item: "Vine Helm",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -18568,9 +25025,12 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Vine Pants", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+    ],
+  },
+  {
+    item: "Vine Pants",
+    minLevel: 1,
+    maps: [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -18580,27 +25040,45 @@ const drops = [
       { name: "Red Ribbon Box", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Violent Wind Armor", minLevel: 1, maps: [
-      { name: "Kundun Box+1", rate: 10000 },
-    ] },
-  { item: "Violent Wind Boots", minLevel: 1, maps: [
-      { name: "Kundun Box+1", rate: 10000 },
-    ] },
-  { item: "Violent Wind Gloves", minLevel: 1, maps: [
-      { name: "Kundun Box+1", rate: 10000 },
-    ] },
-  { item: "Violent Wind Helm", minLevel: 1, maps: [
-      { name: "Kundun Box+1", rate: 10000 },
-    ] },
-  { item: "Violent Wind Pants", minLevel: 1, maps: [
-      { name: "Kundun Box+1", rate: 10000 },
-    ] },
-  { item: "Violent Wind Stick", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Violent Wind Armor",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+1", rate: 10000 }],
+  },
+  {
+    item: "Violent Wind Boots",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+1", rate: 10000 }],
+  },
+  {
+    item: "Violent Wind Gloves",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+1", rate: 10000 }],
+  },
+  {
+    item: "Violent Wind Helm",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+1", rate: 10000 }],
+  },
+  {
+    item: "Violent Wind Pants",
+    minLevel: 1,
+    maps: [{ name: "Kundun Box+1", rate: 10000 }],
+  },
+  {
+    item: "Violent Wind Stick",
+    minLevel: 1,
+    maps: [
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
-    ] },
-  { item: "Vis Lance", minLevel: 1, maps: [
+      { name: "Moss Merchant", rate: 10000 },
+    ],
+  },
+  {
+    item: "Vis Lance",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -18622,8 +25100,12 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Vis Shield", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Vis Shield",
+    minLevel: 1,
+    maps: [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
@@ -18638,12 +25120,15 @@ const drops = [
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
-    ] },
-  { item: "Volcano Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Volcano Armor",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18654,13 +25139,15 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Volcano Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Volcano Boots",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18669,13 +25156,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Volcano Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Volcano Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18684,13 +25173,15 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "Volcano Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Volcano Pants",
+    minLevel: 1,
+    maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -18699,9 +25190,12 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
-    ] },
-  { item: "War Quiver", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "War Quiver",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -18723,8 +25217,12 @@ const drops = [
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Warriors Leather Armor", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Warriors Leather Armor",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18742,8 +25240,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Warriors Leather Boots", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Warriors Leather Boots",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18761,8 +25263,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Warriors Leather Gloves", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Warriors Leather Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18780,8 +25286,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Warriors Leather Helm", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Warriors Leather Helm",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18799,8 +25309,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Warriors Leather Pants", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Warriors Leather Pants",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18818,8 +25332,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Warriors Morning Star", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Warriors Morning Star",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18837,8 +25355,12 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "Warriors Ring of Ice", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Warriors Ring of Ice",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Death King", rate: 5000 },
       { name: "Dragon Red", rate: 10000 },
@@ -18856,13 +25378,17 @@ const drops = [
       { name: "Pouch of Blessing", rate: 5000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
-    ] },
-  { item: "William", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Wind Armor", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "William",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Wind Armor",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18872,15 +25398,17 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Wind Boots", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Wind Boots",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18890,15 +25418,17 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Wind Gloves", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Wind Gloves",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18908,15 +25438,17 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Wind Helm", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Wind Helm",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18926,15 +25458,17 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Wind Pants", minLevel: 1, maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+    ],
+  },
+  {
+    item: "Wind Pants",
+    minLevel: 1,
+    maps: [
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18944,38 +25478,56 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
-    ] },
-  { item: "Wings of Angel and Devil", minLevel: 1, maps: [
-      { name: "Third Wing Box", rate: 10000 },
-    ] },
-  { item: "Wings of Conqueror", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Wings of Angel and Devil",
+    minLevel: 1,
+    maps: [{ name: "Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "Wings of Conqueror",
+    minLevel: 1,
+    maps: [
       { name: "Event IllusionTemple League Tournament Win", rate: 10000 },
       { name: "Third Wing Box", rate: 10000 },
-    ] },
-  { item: "Witch", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Wizards Ring", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Witch",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Wizards Ring",
+    minLevel: 1,
+    maps: [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "PlayTime Box", rate: 10000 },
-    ] },
-  { item: "Wooparoo", minLevel: 1, maps: [
-      { name: "Lucky Bag Egg", rate: 20000 },
-    ] },
-  { item: "Zeno Blade", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "Wooparoo",
+    minLevel: 1,
+    maps: [{ name: "Lucky Bag Egg", rate: 20000 }],
+  },
+  {
+    item: "Zeno Blade",
+    minLevel: 1,
+    maps: [
       { name: "Blessing Box", rate: 20000 },
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
@@ -18997,26 +25549,42 @@ const drops = [
       { name: "Sacred Birth Star", rate: 20000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 20000 },
-    ] },
-  { item: "[Bound] 1st Wing (Cloak) Chaos Combination Amulet", minLevel: 1, maps: [
-      { name: "[Bound] Brilliant Amulet Box", rate: 10000 },
-    ] },
-  { item: "[Bound] 2nd Wing (Cloak) Chaos Combination Amulet", minLevel: 1, maps: [
-      { name: "[Bound] Brilliant Amulet Box", rate: 20000 },
-    ] },
-  { item: "[Bound] 3rd Wing (Cloak) Chaos Combination Amulet", minLevel: 1, maps: [
-      { name: "[Bound] Brilliant Amulet Box", rate: 20000 },
-    ] },
-  { item: "[Bound] 4th Wing (Cloak) Chaos Combination Amulet", minLevel: 1, maps: [
-      { name: "[Bound] Brilliant Amulet Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Bless of Light (Low Grade)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "[Bound] 1st Wing (Cloak) Chaos Combination Amulet",
+    minLevel: 1,
+    maps: [{ name: "[Bound] Brilliant Amulet Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] 2nd Wing (Cloak) Chaos Combination Amulet",
+    minLevel: 1,
+    maps: [{ name: "[Bound] Brilliant Amulet Box", rate: 20000 }],
+  },
+  {
+    item: "[Bound] 3rd Wing (Cloak) Chaos Combination Amulet",
+    minLevel: 1,
+    maps: [{ name: "[Bound] Brilliant Amulet Box", rate: 20000 }],
+  },
+  {
+    item: "[Bound] 4th Wing (Cloak) Chaos Combination Amulet",
+    minLevel: 1,
+    maps: [{ name: "[Bound] Brilliant Amulet Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Bless of Light (Low Grade)",
+    minLevel: 1,
+    maps: [
       { name: "Power Chicken", rate: 1000 },
       { name: "[Lvl 1] Soul Converter Box", rate: 13700 },
       { name: "[Lvl 2] Soul Converter Box", rate: 13600 },
       { name: "[Lvl1] Monster Soul Converter", rate: 27300 },
-    ] },
-  { item: "[Bound] Bless of Light (Middle)", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "[Bound] Bless of Light (Middle)",
+    minLevel: 1,
+    maps: [
       { name: "Box of Blessing", rate: 1500 },
       { name: "[Lvl 3] Soul Converter Box", rate: 13500 },
       { name: "[Lvl 4] Soul Converter Box", rate: 13400 },
@@ -19024,66 +25592,107 @@ const drops = [
       { name: "[Lvl3] Monster Soul Converter", rate: 13500 },
       { name: "[Lvl4] Monster Soul Converter", rate: 13400 },
       { name: "[Lvl5] Monster Soul Converter", rate: 13300 },
-    ] },
-  { item: "[Bound] Cape of Emperor", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Cape of Overrule", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Chaos Combination Amulet", minLevel: 1, maps: [
-      { name: "[Bound] Brilliant Amulet Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Cloak of Brilliance", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Cloak of Death", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Cloak of Transcendence", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Eternal Wings", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Event Wing Chaos Combination Amulet", minLevel: 1, maps: [
-      { name: "[Bound] Brilliant Amulet Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Monster Wings (Cloak) Chaos Combination Amulet", minLevel: 1, maps: [
-      { name: "[Bound] Brilliant Amulet Box", rate: 20000 },
-    ] },
-  { item: "[Bound] Temple Guard Reinforcement Stone", minLevel: 1, maps: [
+    ],
+  },
+  {
+    item: "[Bound] Cape of Emperor",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Cape of Overrule",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Chaos Combination Amulet",
+    minLevel: 1,
+    maps: [{ name: "[Bound] Brilliant Amulet Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Cloak of Brilliance",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Cloak of Death",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Cloak of Transcendence",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Eternal Wings",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Event Wing Chaos Combination Amulet",
+    minLevel: 1,
+    maps: [{ name: "[Bound] Brilliant Amulet Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Monster Wings (Cloak) Chaos Combination Amulet",
+    minLevel: 1,
+    maps: [{ name: "[Bound] Brilliant Amulet Box", rate: 20000 }],
+  },
+  {
+    item: "[Bound] Temple Guard Reinforcement Stone",
+    minLevel: 1,
+    maps: [
       { name: "Elite Devil Scythe", rate: 400 },
       { name: "Elite Devil Sorcerer", rate: 400 },
       { name: "Elite Devil Sword", rate: 400 },
-    ] },
-  { item: "[Bound] Wings of Curse", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Disillusion", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Eternal", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Guardian", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Hit", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Illusion", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Ruin", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Silence", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
-  { item: "[Bound] Wings of Storm", minLevel: 1, maps: [
-      { name: "[Bound] +13 Third Wing Box", rate: 10000 },
-    ] },
+    ],
+  },
+  {
+    item: "[Bound] Wings of Curse",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Disillusion",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Eternal",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Guardian",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Hit",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Illusion",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Ruin",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Silence",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
+  {
+    item: "[Bound] Wings of Storm",
+    minLevel: 1,
+    maps: [{ name: "[Bound] +13 Third Wing Box", rate: 10000 }],
+  },
 ];
 
 export default drops;

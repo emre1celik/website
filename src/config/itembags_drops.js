@@ -26216,9 +26216,9 @@ const drops = [
       { name: "[Lvl 3] Soul Converter Box", rate: 13500 },
       { name: "[Lvl 4] Soul Converter Box", rate: 13400 },
       { name: "[Lvl 5] Soul Converter Box", rate: 13300 },
-      { name: "[Lvl3] Monster Soul Converter", rate: 13500 },
-      { name: "[Lvl4] Monster Soul Converter", rate: 13400 },
-      { name: "[Lvl5] Monster Soul Converter", rate: 13300 },
+      { name: "[Lvl 3] Monster Soul Converter", rate: 13500 },
+      { name: "[Lvl 4] Monster Soul Converter", rate: 13400 },
+      { name: "[Lvl 5] Monster Soul Converter", rate: 13300 },
     ],
   },
   {
