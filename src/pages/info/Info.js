@@ -42,13 +42,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
-import drops from "../../config/drops";
+import monsterDrops from "../../config/map_drops";
+import bagDrops from "../../config/itembags_drops";
 import { faMapMarkedAlt, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 import { faSkull } from "@fortawesome/free-solid-svg-icons";
 
-console.log("Loaded drops:", drops);
-
 function Info({ user, currentTheme, onThemeChange }) {
+  const drops = [...monsterDrops, ...bagDrops];
   const { translate } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
   const [query, setQuery] = useState("");

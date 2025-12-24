@@ -824,7 +824,6 @@ const drops = [
       { name: "Ferea", rate: 525 },
       { name: "Ignis Volcano", rate: 525 },
       { name: "Kanturu Undergrounds", rate: 525 },
-      { name: "Kardamahal UnderGround Temple", rate: 1250 },
       { name: "Kubera Mine", rate: 525 },
       { name: "Nixies Lake", rate: 525 },
       { name: "Old Kethotum", rate: 525 },
@@ -850,7 +849,6 @@ const drops = [
       { name: "Ferea", rate: 525 },
       { name: "Ignis Volcano", rate: 525 },
       { name: "Kanturu Undergrounds", rate: 525 },
-      { name: "Kardamahal UnderGround Temple", rate: 1250 },
       { name: "Kubera Mine", rate: 525 },
       { name: "Nixies Lake", rate: 525 },
       { name: "Old Kethotum", rate: 525 },
@@ -6784,7 +6782,6 @@ const drops = [
       { name: "Icarus", rate: 100 },
       { name: "Kalima 4", rate: 100 },
       { name: "Kanturu", rate: 100 },
-      { name: "Kardamahal UnderGround Temple", rate: 139571 },
       { name: "Tarkan", rate: 100 },
     ] },
   { item: "Iris Armor", minLevel: 1, maps: [
@@ -6915,7 +6912,6 @@ const drops = [
       { name: "Ferea", rate: 525 },
       { name: "Ignis Volcano", rate: 525 },
       { name: "Kanturu Undergrounds", rate: 525 },
-      { name: "Kardamahal UnderGround Temple", rate: 1250 },
       { name: "Kubera Mine", rate: 525 },
       { name: "Nixies Lake", rate: 525 },
       { name: "Old Kethotum", rate: 525 },
@@ -7075,7 +7071,6 @@ const drops = [
       { name: "Ferea", rate: 525 },
       { name: "Ignis Volcano", rate: 525 },
       { name: "Kanturu Undergrounds", rate: 525 },
-      { name: "Kardamahal UnderGround Temple", rate: 1250 },
       { name: "Kubera Mine", rate: 525 },
       { name: "Nixies Lake", rate: 525 },
       { name: "Old Kethotum", rate: 525 },
@@ -7523,251 +7518,11 @@ const drops = [
       { name: "Swamp Of Peace", rate: 2 },
       { name: "Tarkan", rate: 689 },
     ] },
-  { item: "Lightning Alchemist Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Alchemist Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Alchemist Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Alchemist Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Alchemist Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Elf Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Elf Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Elf Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Elf Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Elf Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Fighter Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Fighter Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Fighter Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Fighter Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Gun Crusher Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Gun Crusher Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Gun Crusher Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Gun Crusher Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Gun Crusher Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Illusion Knight Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Illusion Knight Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Illusion Knight Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Illusion Knight Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Illusion Knight Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Armor (Belief)", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Boots (Belief)", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Gloves (Belief)", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Helmet (Belief)", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Knight Pants (Belief)", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lancer Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lancer Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lancer Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lancer Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lancer Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Light Wizard Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Light Wizard Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Light Wizard Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Light Wizard Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Light Wizard Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lord Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lord Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lord Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lord Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lord Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Lord Shield", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Mage Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Mage Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Mage Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Mage Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Mage Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Magic Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Magic Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Magic Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Magic Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Rune Wizard Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Rune Wizard Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Rune Wizard Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Rune Wizard Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Rune Wizard Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Shield", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
   { item: "Lightning Shock Parchment", minLevel: 1, maps: [
       { name: "Atlans", rate: 20000 },
       { name: "Kalima 2", rate: 2000 },
       { name: "Losttower", rate: 2000 },
       { name: "Stadium", rate: 20000 },
-    ] },
-  { item: "Lightning Slayer Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Slayer Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Slayer Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Slayer Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Slayer Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Summoner Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Summoner Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Summoner Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Summoner Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Summoner Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Wizard Armor", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Wizard Boots", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Wizard Gloves", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Wizard Helmet", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
-    ] },
-  { item: "Lightning Wizard Pants", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 2500 },
     ] },
   { item: "Loch's Feather", minLevel: 1, maps: [
       { name: "Icarus", rate: 500 },
@@ -9070,7 +8825,6 @@ const drops = [
       { name: "Kalima 1", rate: 5127 },
       { name: "Kalima 2", rate: 5170 },
       { name: "Kalima 3", rate: 4496 },
-      { name: "Kardamahal UnderGround Temple", rate: 139571 },
       { name: "Losttower", rate: 3839 },
       { name: "Stadium", rate: 4365 },
       { name: "Tarkan", rate: 50 },
@@ -9083,7 +8837,6 @@ const drops = [
       { name: "Kalima 1", rate: 5127 },
       { name: "Kalima 2", rate: 5170 },
       { name: "Kalima 3", rate: 4330 },
-      { name: "Kardamahal UnderGround Temple", rate: 139571 },
       { name: "Losttower", rate: 3839 },
       { name: "Stadium", rate: 4365 },
       { name: "Tarkan", rate: 50 },
@@ -9095,7 +8848,6 @@ const drops = [
       { name: "Elbeland", rate: 5248 },
       { name: "Kalima 1", rate: 4804 },
       { name: "Kalima 2", rate: 4835 },
-      { name: "Kardamahal UnderGround Temple", rate: 139571 },
       { name: "Losttower", rate: 50 },
       { name: "Stadium", rate: 50 },
       { name: "Tarkan", rate: 50 },
@@ -9108,7 +8860,6 @@ const drops = [
       { name: "Kalima 2", rate: 4647 },
       { name: "Kalima 3", rate: 4496 },
       { name: "Kalima 4", rate: 673 },
-      { name: "Kardamahal UnderGround Temple", rate: 139571 },
       { name: "Losttower", rate: 3839 },
       { name: "Stadium", rate: 50 },
       { name: "Tarkan", rate: 50 },
@@ -9120,7 +8871,6 @@ const drops = [
       { name: "Elbeland", rate: 5248 },
       { name: "Kalima 1", rate: 5145 },
       { name: "Kalima 2", rate: 4370 },
-      { name: "Kardamahal UnderGround Temple", rate: 139571 },
       { name: "Lorencia", rate: 5000 },
       { name: "Losttower", rate: 50 },
       { name: "Noria", rate: 5248 },
@@ -9139,7 +8889,6 @@ const drops = [
       { name: "Kalima 2", rate: 4788 },
       { name: "Kalima 3", rate: 4496 },
       { name: "Kalima 4", rate: 673 },
-      { name: "Kardamahal UnderGround Temple", rate: 139571 },
       { name: "Losttower", rate: 3839 },
       { name: "Stadium", rate: 4255 },
       { name: "Tarkan", rate: 50 },
@@ -12360,9 +12109,6 @@ const drops = [
     ] },
   { item: "[Bound] Apocalypse Chaos Guild Charm Fragment", minLevel: 1, maps: [
       { name: "Twisted Karutan", rate: 900 },
-    ] },
-  { item: "[Bound] Lightning Chaos Combination Amulet Fragment", minLevel: 1, maps: [
-      { name: "Kardamahal UnderGround Temple", rate: 9000 },
     ] },
   { item: "[Bound] Manticore Chaos Guild Charm Fragment", minLevel: 1, maps: [
       { name: "Tormenta Island", rate: 900 },
