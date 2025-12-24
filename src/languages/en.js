@@ -1,7 +1,7 @@
 // eslint-disable-next-line
 export default {
   dropSearch: {
-    title: "Drop Search",
+    title: "Drop Item Search",
     intro:
       "Search for an item to see more information about droprates, location and monsters. This data is collected from all maps and monsters in the server.",
     placeholder: "Enter item name...",
@@ -37,7 +37,7 @@ export default {
       "Successfully using Chaos Combination not only upgrades your equipment but also provides a strategic advantage in high-level maps and PvP battles. Remember to gather sufficient materials and plan your combinations carefully — failing a high-tier combination can be costly, so preparation is key!",
   },
   ruud: {
-    title: "How to Get Ruud",
+    title: "How to get Ruud",
     intro:
       "Ruud is a valuable currency used to purchase Ancient and Excellent Endgame Equipment. It can also be used for upgrading certain items, enhancing mounts, and exchanging for rare crafting materials. The best ways to farm Ruud include:",
     list: {
