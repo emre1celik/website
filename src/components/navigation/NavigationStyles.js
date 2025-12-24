@@ -66,7 +66,7 @@ export const NavigationItemLink = styled.a`
   transition: color 0.3s;
 
   &:hover {
-    color: ${({ theme }) => theme.primaryHover};
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
