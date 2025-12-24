@@ -48,7 +48,11 @@ import { faMapMarkedAlt, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
 import { faSkull } from "@fortawesome/free-solid-svg-icons";
 
 function Info({ user, currentTheme, onThemeChange }) {
-  const drops = [...monsterDrops, ...bagDrops];
+  const drops = [
+    ...monsterDrops.map((d) => ({ ...d, source: "map" })),
+    ...bagDrops.map((d) => ({ ...d, source: "bag" })),
+  ];
+
   const { translate } = useTranslation();
   const [openIndex, setOpenIndex] = useState(null);
   const [query, setQuery] = useState("");
@@ -80,8 +84,11 @@ function Info({ user, currentTheme, onThemeChange }) {
   };
   const rateToPercent = (rate) => {
     if (!rate) return "0%";
-    return `${(rate / 100).toFixed(rate % 100 === 0 ? 0 : 2)}%`;
+    const percent = rate / 100;
+    const capped = Math.min(percent, 100);
+    return `${capped.toFixed(capped % 1 === 0 ? 0 : 2)}%`;
   };
+
   const totalPages = Math.ceil(results.length / RESULTS_PER_PAGE);
   const pagedResults = results.slice(
     (page - 1) * RESULTS_PER_PAGE,
@@ -383,9 +390,10 @@ function Info({ user, currentTheme, onThemeChange }) {
                       }}
                     >
                       <FontAwesomeIcon
-                        icon={faBoxOpen}
+                        icon={res.source === "map" ? faMapMarkedAlt : faBoxOpen}
                         style={{ marginRight: "6px" }}
                       />
+
                       {res.item}
                       <span style={{ marginLeft: "auto", opacity: 0.7 }}>
                         {isOpen ? "−" : "+"}
