@@ -297,6 +297,21 @@ export default {
       },
     },
   },
+  dropSearch: {
+    title: "Drop Meklēšana",
+    intro:
+      "Meklē priekšmetu, lai redzētu informāciju par drop likmēm, atrašanās vietu un monstriem. Dati tiek apkopoti no visām kartēm un monstriem serverī.",
+    placeholder: "Ievadi priekšmeta nosaukumu...",
+    found: "Atrasti",
+    results: "rezultāti",
+    droprate: "Krišanas iespēja",
+    minLevel: "Minimālais monstra līmenis",
+    prev: "Iepriekšējā",
+    next: "Nākamā",
+    page: "Lapa",
+    of: "no",
+  },
+
   downloads: {
     title: "Lejupielādes spoguļi",
     full_client: "Pilnais Klients",

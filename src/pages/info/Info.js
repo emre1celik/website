@@ -355,18 +355,14 @@ function Info({ user, currentTheme, onThemeChange }) {
     },
     // 🔍 New Drop Search section
     {
-      title: "Drop Search",
+      title: translate("dropSearch.title"),
       icon: faSearch,
       content: (
         <>
-          <p>
-            Search for an item to see more information about droprates, location
-            and monsters. This data is collected from all maps and monsters in
-            the server.
-          </p>
+          <p>{translate("dropSearch.intro")}</p>
           <SearchInput
             type="text"
-            placeholder="Enter item name..."
+            placeholder={translate("dropSearch.placeholder")}
             value={query}
             onChange={(e) => handleSearch(e.target.value)}
           />
@@ -426,7 +422,8 @@ function Info({ user, currentTheme, onThemeChange }) {
                                   color: currentTheme.primary,
                                 }}
                               />
-                              {rateToPercent(map.rate)} droprate
+                              {rateToPercent(map.rate)}{" "}
+                              {translate("dropSearch.droprate")}
                             </li>
 
                             {res.minLevel > 0 && (
@@ -444,7 +441,8 @@ function Info({ user, currentTheme, onThemeChange }) {
                                       color: currentTheme.primary,
                                     }}
                                   />
-                                  Minimum Monster Level: {res.minLevel}
+                                  {translate("dropSearch.minLevel")}:{" "}
+                                  {res.minLevel}
                                 </span>
                               </li>
                             )}
@@ -468,11 +466,13 @@ function Info({ user, currentTheme, onThemeChange }) {
                   setOpenResult(null);
                 }}
               >
-                <FontAwesomeIcon icon={faArrowLeft} /> Previous
+                <FontAwesomeIcon icon={faArrowLeft} />{" "}
+                {translate("dropSearch.prev")}
               </PageButton>
 
               <PageInfo>
-                Page {page} / {totalPages}
+                {translate("dropSearch.page")} {page}{" "}
+                {translate("dropSearch.of")} {totalPages}
               </PageInfo>
 
               <PageButton
@@ -482,15 +482,16 @@ function Info({ user, currentTheme, onThemeChange }) {
                   setOpenResult(null);
                 }}
               >
-                Next <FontAwesomeIcon icon={faArrowRight} />
+                {translate("dropSearch.next")}{" "}
+                <FontAwesomeIcon icon={faArrowRight} />
               </PageButton>
             </Pagination>
           )}
 
           {query && (
             <p style={{ marginBottom: "0.5rem", color: "#aaa" }}>
-              Found <strong>{results.length}</strong> result
-              {results.length !== 1 ? "s" : ""}
+              {translate("dropSearch.found")} <strong>{results.length}</strong>{" "}
+              {translate("dropSearch.results")}
             </p>
           )}
         </>

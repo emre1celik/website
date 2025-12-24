@@ -297,6 +297,21 @@ export default {
       },
     },
   },
+  dropSearch: {
+    title: "Wyszukiwanie Dropów",
+    intro:
+      "Wyszukaj przedmiot, aby zobaczyć informacje o szansach dropu, lokalizacji i potworach. Dane pochodzą ze wszystkich map i potworów na serwerze.",
+    placeholder: "Wpisz nazwę przedmiotu...",
+    found: "Znaleziono",
+    results: "wyników",
+    droprate: "Szansa dropu",
+    minLevel: "Minimalny poziom potwora",
+    prev: "Poprzednia",
+    next: "Następna",
+    page: "Strona",
+    of: "z",
+  },
+
   downloads: {
     full_client: "Pełny Klient",
     no_sound_client: "Klient Bez Dźwięku",

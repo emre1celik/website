@@ -284,6 +284,21 @@ export default {
       },
     },
   },
+  dropSearch: {
+    title: "Tìm Kiếm Drop",
+    intro:
+      "Tìm vật phẩm để xem thông tin về tỷ lệ rơi, vị trí và quái vật. Dữ liệu được thu thập từ tất cả bản đồ và quái vật trên máy chủ.",
+    placeholder: "Nhập tên vật phẩm...",
+    found: "Tìm thấy",
+    results: "kết quả",
+    droprate: "Tỷ lệ rơi",
+    minLevel: "Cấp quái tối thiểu",
+    prev: "Trước",
+    next: "Sau",
+    page: "Trang",
+    of: "trên",
+  },
+
   downloads: {
     full_client: "Bản Đầy Đủ",
     no_sound_client: "Bản Không Âm Thanh",

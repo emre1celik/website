@@ -297,6 +297,21 @@ export default {
       },
     },
   },
+  dropSearch: {
+    title: "Dropi Otsing",
+    intro:
+      "Otsi eset, et näha rohkem infot droprate'i, asukoha ja koletiste kohta. Andmed kogutakse kõigilt serveri kaartidelt ja koletistelt.",
+    placeholder: "Sisesta eseme nimi...",
+    found: "Leitud",
+    results: "tulemust",
+    droprate: "Langemismäär",
+    minLevel: "Koletise miinimumtase",
+    prev: "Eelmine",
+    next: "Järgmine",
+    page: "Leht",
+    of: "/",
+  },
+
   downloads: {
     title: "Allalaadimise peeglid",
     full_client: "Täisversioon",

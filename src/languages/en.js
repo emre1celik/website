@@ -1,5 +1,20 @@
 // eslint-disable-next-line
 export default {
+  dropSearch: {
+    title: "Drop Search",
+    intro:
+      "Search for an item to see more information about droprates, location and monsters. This data is collected from all maps and monsters in the server.",
+    placeholder: "Enter item name...",
+    found: "Found",
+    results: "results",
+    droprate: "Droprate",
+    minLevel: "Minimum Monster Level",
+    prev: "Previous",
+    next: "Next",
+    page: "Page",
+    of: "of",
+  },
+
   chaosCombination: {
     title: "Chaos Combination Rates",
     intro:

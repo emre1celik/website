@@ -299,6 +299,21 @@ export default {
       },
     },
   },
+  dropSearch: {
+    title: "Busca de Drops",
+    intro:
+      "Procure um item para ver mais informações sobre taxa de drop, localização e monstros. Os dados são coletados de todos os mapas e monstros do servidor.",
+    placeholder: "Digite o nome do item...",
+    found: "Encontrados",
+    results: "resultados",
+    droprate: "Taxa de drop",
+    minLevel: "Nível mínimo do monstro",
+    prev: "Anterior",
+    next: "Próxima",
+    page: "Página",
+    of: "de",
+  },
+
   downloads: {
     title: "Espelhos de download",
     full_client: "Cliente Completo",

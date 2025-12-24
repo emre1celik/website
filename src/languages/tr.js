@@ -296,6 +296,21 @@ export default {
       },
     },
   },
+  dropSearch: {
+    title: "Drop Arama",
+    intro:
+      "Bir eşya arayarak droprate, konum ve canavar bilgilerini görüntüleyin. Bu veriler sunucudaki tüm haritalar ve canavarlardan toplanır.",
+    placeholder: "Eşya adını girin...",
+    found: "Bulunan",
+    results: "sonuç",
+    droprate: "Drop oranı",
+    minLevel: "Minimum Canavar Seviyesi",
+    prev: "Önceki",
+    next: "Sonraki",
+    page: "Sayfa",
+    of: "/",
+  },
+
   downloads: {
     title: "İndirme Yansımaları",
     full_client: "Tam İstemci",
