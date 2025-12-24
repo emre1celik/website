@@ -2,41 +2,39 @@ const drops = [
   {
     item: "(Hero) Bloodangel Spirit",
     minLevel: 1,
-    maps: [{ name: "MossMerchant11.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "20 Golden Sentence",
     minLevel: 1,
-    maps: [{ name: "MossMerchant11.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "300 Article Earning",
     minLevel: 1,
     maps: [
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
     item: "5 Bless of Light (Greater)",
     minLevel: 1,
-    maps: [{ name: "MossMerchant11.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "700 Article Earning",
     minLevel: 1,
     maps: [
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
     item: "Absolute Scepter",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -46,7 +44,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
@@ -64,21 +62,15 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -101,23 +93,17 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -139,23 +125,17 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -177,21 +157,15 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -214,23 +188,17 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -423,24 +391,22 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+      { name: "Moss Merchant", rate: 10000 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
     ],
   },
@@ -448,8 +414,8 @@ const drops = [
     item: "Ambition Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -457,8 +423,8 @@ const drops = [
     item: "Ambition Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -466,8 +432,8 @@ const drops = [
     item: "Ambition Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -475,8 +441,8 @@ const drops = [
     item: "Ambition Mask",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -484,8 +450,8 @@ const drops = [
     item: "Ambition Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -493,8 +459,8 @@ const drops = [
     item: "Ambition Shield",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -579,9 +545,7 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -603,9 +567,7 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -627,9 +589,7 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -651,9 +611,7 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -677,7 +635,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 3500 },
       { name: "Event Raffle Winner", rate: 3500 },
       { name: "Event ScrambleWord Level 1", rate: 3500 },
-      { name: "ResetSystem Milestone", rate: 3500 },
     ],
   },
   {
@@ -720,12 +677,12 @@ const drops = [
       { name: "Kundun", rate: 16000 },
       { name: "Lord Silvester", rate: 8250 },
       { name: "Lord of Ferea", rate: 16000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -751,9 +708,7 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -776,18 +731,15 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
       { name: "Green Box", rate: 15000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -807,7 +759,7 @@ const drops = [
     maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -853,7 +805,7 @@ const drops = [
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 16000 },
       { name: "Normus", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 10000 },
       { name: "Sellihoden", rate: 10000 },
       { name: "Selupan", rate: 16000 },
@@ -1535,12 +1487,11 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
@@ -1587,12 +1538,12 @@ const drops = [
       { name: "Kundun", rate: 32000 },
       { name: "Lord Silvester", rate: 16001 },
       { name: "Lord of Ferea", rate: 32000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 16000 },
       { name: "Normus", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 10000 },
       { name: "Sellihoden", rate: 10000 },
       { name: "Selupan", rate: 16000 },
@@ -1630,9 +1581,8 @@ const drops = [
     maps: [
       { name: "Blessing Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -1649,7 +1599,7 @@ const drops = [
       { name: "Medusa", rate: 600 },
       { name: "Mix Senior Reward", rate: 10000 },
       { name: "Nightmare", rate: 20000 },
-      { name: "ResetSystem Regular", rate: 200 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
     ],
@@ -1670,8 +1620,7 @@ const drops = [
     maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -1691,8 +1640,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -1710,8 +1658,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -1729,8 +1676,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -1748,8 +1694,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -1890,17 +1835,16 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -1926,16 +1870,15 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Kundun Box+2", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
-      { name: "MossMerchant01.xml", rate: 10000 },
+
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
     ],
@@ -1952,13 +1895,9 @@ const drops = [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -1979,15 +1918,11 @@ const drops = [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -2007,15 +1942,11 @@ const drops = [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -2035,15 +1966,11 @@ const drops = [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -2063,15 +1990,11 @@ const drops = [
       { name: "Balgass", rate: 10000 },
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -2088,7 +2011,6 @@ const drops = [
     item: "Blade",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 70000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
@@ -2102,13 +2024,13 @@ const drops = [
     item: "Bless of Light (Greater)",
     minLevel: 1,
     maps: [
-      { name: "(13,350) Roomy Egg", rate: 2000 },
-      { name: "(14,261) Guardsmans Box", rate: 2000 },
-      { name: "(14,262) Guardman Captains Box", rate: 2000 },
+      { name: "Guardman Captains Box", rate: 2000 },
+      { name: "Guardsmans Box", rate: 2000 },
       { name: "Lapidary Stone Box", rate: 700 },
       { name: "Mastery Box (Greater)", rate: 1000 },
       { name: "Mastery Box (Minor)", rate: 1000 },
       { name: "Mastery Box (Standard)", rate: 1000 },
+      { name: "Roomy Egg", rate: 2000 },
     ],
   },
   {
@@ -2120,7 +2042,7 @@ const drops = [
     item: "Bless of Light (Low Grade)",
     minLevel: 1,
     maps: [
-      { name: "(14,261) Guardsmans Box", rate: 10000 },
+      { name: "Guardsmans Box", rate: 10000 },
       { name: "Mastery Box (Greater)", rate: 3000 },
       { name: "Mastery Box (Minor)", rate: 3000 },
       { name: "Mastery Box (Standard)", rate: 3000 },
@@ -2140,12 +2062,12 @@ const drops = [
     item: "Bless of Light (Middle Grade)",
     minLevel: 1,
     maps: [
-      { name: "(13,350) Roomy Egg", rate: 4500 },
-      { name: "(14,261) Guardsmans Box", rate: 4500 },
-      { name: "(14,262) Guardman Captains Box", rate: 4500 },
+      { name: "Guardman Captains Box", rate: 4500 },
+      { name: "Guardsmans Box", rate: 4500 },
       { name: "Mastery Box (Greater)", rate: 3000 },
       { name: "Mastery Box (Minor)", rate: 3000 },
       { name: "Mastery Box (Standard)", rate: 3000 },
+      { name: "Roomy Egg", rate: 4500 },
     ],
   },
   {
@@ -4050,12 +3972,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 200 },
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
@@ -4072,7 +3994,7 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -4120,7 +4042,7 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -4173,7 +4095,7 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -4277,8 +4199,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 20000 },
       { name: "Mix ChaosCard Mini Reward", rate: 20000 },
       { name: "Mix ChaosCard Rare Reward", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Moon Rabbit", rate: 20000 },
       { name: "Pouch Of Blessing", rate: 20000 },
       { name: "Pouch of Blessing", rate: 20000 },
@@ -4320,11 +4241,7 @@ const drops = [
   {
     item: "Book of Shamut",
     minLevel: 1,
-    maps: [
-      { name: "Kundun Box+2", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
-    ],
+    maps: [{ name: "Kundun Box+2", rate: 20000 }],
   },
   {
     item: "Book of Silverheart",
@@ -4390,7 +4307,7 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
@@ -4407,7 +4324,7 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
@@ -4424,7 +4341,7 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
@@ -4454,7 +4371,7 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Box", rate: 600 },
@@ -4468,7 +4385,7 @@ const drops = [
     item: "Brave Armor",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -4482,7 +4399,7 @@ const drops = [
     item: "Brave Boots",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -4496,7 +4413,7 @@ const drops = [
     item: "Brave Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -4510,7 +4427,7 @@ const drops = [
     item: "Brave Helm",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -4562,7 +4479,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -4585,7 +4502,7 @@ const drops = [
     item: "Brave Pants",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -5482,11 +5399,10 @@ const drops = [
     item: "Bronze Armor",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -5502,11 +5418,10 @@ const drops = [
     item: "Bronze Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -5522,7 +5437,6 @@ const drops = [
     item: "Bronze Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -5540,7 +5454,6 @@ const drops = [
     item: "Bronze Helm",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -5558,11 +5471,10 @@ const drops = [
     item: "Bronze Pants",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -5744,26 +5656,23 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Kundun", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -5835,7 +5744,7 @@ const drops = [
       { name: "Cherry Blossom Play Box", rate: 1500 },
       { name: "Golden Box", rate: 10000 },
       { name: "Mix CherryBlossom White Reward", rate: 1500 },
-      { name: "MossMerchant07.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
     ],
   },
@@ -5846,7 +5755,7 @@ const drops = [
       { name: "Cherry Blossom Play Box", rate: 1000 },
       { name: "Golden Box", rate: 10000 },
       { name: "Mix CherryBlossom White Reward", rate: 1000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
     ],
   },
@@ -5994,8 +5903,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Monkey Red", rate: 10000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch of Blessing", rate: 5 },
       { name: "Roomy Card Box (Higher)", rate: 250 },
       { name: "Roomy Card Box (Medium)", rate: 250 },
@@ -6010,13 +5919,13 @@ const drops = [
     item: "Condor Flame",
     minLevel: 1,
     maps: [
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
       { name: "Monkey Purple", rate: 10000 },
       { name: "Pouch of Blessing", rate: 20 },
       { name: "Sheep Green", rate: 10000 },
@@ -6029,7 +5938,7 @@ const drops = [
   {
     item: "Conqueror's Badge",
     minLevel: 1,
-    maps: [{ name: "MossMerchant06.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Constant Shield",
@@ -6074,12 +5983,12 @@ const drops = [
       { name: "Baseball Lower Case", rate: 200 },
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
@@ -6100,17 +6009,16 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 20000 },
+      { name: "Moss Merchant", rate: 20000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
@@ -6133,102 +6041,102 @@ const drops = [
   {
     item: "Dark Angel Alchemist Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Alchemist Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Alchemist Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Alchemist Helmet",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Alchemist Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Illusion Knight Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Illusion Knight Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Illusion Knight Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Illusion Knight Helmet",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Illusion Knight Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Light Wizard Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Light Wizard Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Light Wizard Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Light Wizard Helmet",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Light Wizard Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Mage Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Mage Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Mage Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Mage Helmet",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Angel Mage Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Dark Breaker",
@@ -6240,18 +6148,16 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
       { name: "Event LastManStanding Winner Reward", rate: 1 },
       { name: "Event Raffle HitOrder 2", rate: 1 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 1 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -6263,11 +6169,9 @@ const drops = [
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Sapi Queen", rate: 10000 },
@@ -6290,8 +6194,8 @@ const drops = [
     item: "Dark Devil Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -6299,8 +6203,8 @@ const drops = [
     item: "Dark Devil Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -6308,8 +6212,8 @@ const drops = [
     item: "Dark Devil Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -6317,8 +6221,8 @@ const drops = [
     item: "Dark Devil Helm",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -6326,8 +6230,8 @@ const drops = [
     item: "Dark Devil Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -6335,8 +6239,8 @@ const drops = [
     item: "Dark Devil Shield",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -6351,9 +6255,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6362,11 +6265,10 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6375,9 +6277,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6385,11 +6286,10 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6398,9 +6298,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6408,11 +6307,10 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6421,9 +6319,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6432,11 +6329,10 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6445,9 +6341,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6456,11 +6351,10 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6473,12 +6367,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6496,11 +6389,10 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
@@ -6517,11 +6409,10 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
       { name: "Shiny Earring Box (Left)", rate: 570 },
@@ -6538,9 +6429,7 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6558,11 +6447,10 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6579,9 +6467,8 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -6605,11 +6492,11 @@ const drops = [
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Mix Senior Reward", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
@@ -6621,9 +6508,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6632,12 +6518,11 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6648,9 +6533,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6658,12 +6542,11 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6674,9 +6557,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6684,12 +6566,11 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6698,9 +6579,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6709,12 +6589,11 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6723,9 +6602,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -6734,12 +6612,11 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -6753,12 +6630,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6777,10 +6653,9 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6799,10 +6674,9 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6821,10 +6695,9 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6843,12 +6716,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Sapi Queen", rate: 570 },
@@ -6874,9 +6746,9 @@ const drops = [
     item: "Dark Transformation Ring",
     minLevel: 1,
     maps: [
-      { name: "MossMerchant07.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
-      { name: "MossMerchant11.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -6915,72 +6787,72 @@ const drops = [
   {
     item: "Darkangel Elf Armor (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Armor (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Boots (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Boots (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Gloves (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Gloves (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Helm (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Helm (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Pants (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Elf Pants (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Fighter Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Fighter Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Fighter Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Fighter Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Gun",
@@ -6996,77 +6868,77 @@ const drops = [
   {
     item: "Darkangel Gun Crusher Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Gun Crusher Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Gun Crusher Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Gun Crusher Helmet",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Gun Crusher Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Knight Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Armor (Conviction)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Boots (Conviction)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Gloves (Conviction)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Helm (Conviction)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Knight Pants (Conviction)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Lance",
@@ -7082,52 +6954,52 @@ const drops = [
   {
     item: "Darkangel Lancer Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lancer Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lancer Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lancer Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lancer Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lord Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lord Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lord Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lord Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Lord Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Magic 2H Sword",
@@ -7143,42 +7015,42 @@ const drops = [
   {
     item: "Darkangel Magic Armor (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Armor (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Boots (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Boots (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Gloves (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Gloves (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Pants (A)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Pants (B)",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 5000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 5000 }],
   },
   {
     item: "Darkangel Magic Sword",
@@ -7227,27 +7099,27 @@ const drops = [
   {
     item: "Darkangel Runist Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Runist Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Runist Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Runist Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Runist Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Scepter",
@@ -7274,27 +7146,27 @@ const drops = [
   {
     item: "Darkangel Slayer Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Slayer Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Slayer Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Slayer Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Slayer Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Staff",
@@ -7321,27 +7193,27 @@ const drops = [
   {
     item: "Darkangel Summoner Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Summoner Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Summoner Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Summoner Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Summoner Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Sword",
@@ -7357,27 +7229,27 @@ const drops = [
   {
     item: "Darkangel Wizard Armor",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Wizard Boots",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Wizard Gloves",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Wizard Helm",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Darkangel Wizard Pants",
     minLevel: 1,
-    maps: [{ name: "(20,231) 60-Day Dark Angel Armor Box", rate: 10000 }],
+    maps: [{ name: "60-Day Dark Angel Armor Box", rate: 10000 }],
   },
   {
     item: "Daybreak",
@@ -7401,8 +7273,6 @@ const drops = [
     item: "Deadly Staff",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -7412,7 +7282,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
@@ -7449,19 +7319,15 @@ const drops = [
   {
     item: "Demon",
     minLevel: 1,
-    maps: [
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
-    ],
+    maps: [],
   },
   {
     item: "Demonic Armor",
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -7469,10 +7335,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
     ],
   },
   {
@@ -7480,9 +7345,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -7490,10 +7354,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
     ],
   },
   {
@@ -7501,9 +7364,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -7511,10 +7373,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
     ],
   },
   {
@@ -7522,9 +7383,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -7532,10 +7392,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
     ],
   },
   {
@@ -7543,9 +7402,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -7553,10 +7411,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1 },
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
     ],
   },
   {
@@ -7568,9 +7425,7 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -7584,10 +7439,10 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
@@ -7656,7 +7511,7 @@ const drops = [
   {
     item: "Devil Wings",
     minLevel: 1,
-    maps: [{ name: "MossMerchant11.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Devil's Invitation",
@@ -7695,7 +7550,7 @@ const drops = [
     item: "Divine Armor",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -7709,7 +7564,7 @@ const drops = [
     item: "Divine Boots",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -7723,7 +7578,7 @@ const drops = [
     item: "Divine Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -7737,7 +7592,7 @@ const drops = [
     item: "Divine Helm",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -7764,7 +7619,7 @@ const drops = [
     item: "Divine Pants",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -7816,7 +7671,7 @@ const drops = [
   {
     item: "Divine Sword of Archangel",
     minLevel: 1,
-    maps: [{ name: "MossMerchant06.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Divine Sword of the Archangel",
@@ -7928,8 +7783,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -7954,17 +7808,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -7985,16 +7836,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -8015,16 +7864,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -8045,17 +7892,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -8071,9 +7915,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -8083,7 +7926,6 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -8091,9 +7933,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -8102,7 +7943,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -8110,9 +7950,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -8121,7 +7960,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -8129,9 +7967,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -8140,7 +7977,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -8148,9 +7984,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -8159,7 +7994,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -8182,17 +8016,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -8215,15 +8046,14 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+
       { name: "Firecracker", rate: 20000 },
       { name: "Gold Medal", rate: 20000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Love Heart", rate: 20000 },
       { name: "Luck Box", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -8261,18 +8091,16 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
       { name: "Event LastManStanding Winner Reward", rate: 200 },
       { name: "Event Raffle HitOrder 2", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 200 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 200 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 30000 },
@@ -8290,14 +8118,13 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Moon Rabbit", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Sapi Queen", rate: 10000 },
@@ -8322,26 +8149,23 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Balgass", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -8434,8 +8258,7 @@ const drops = [
     maps: [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -8451,13 +8274,11 @@ const drops = [
     item: "Eclipse Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -8471,13 +8292,11 @@ const drops = [
     item: "Eclipse Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -8495,8 +8314,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -8514,8 +8332,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -8606,8 +8423,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
     ],
@@ -8668,8 +8484,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Moon Rabbit", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -8691,7 +8506,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Elemental Talisman Box", rate: 500 },
-      { name: "MossMerchant07.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -8766,7 +8581,7 @@ const drops = [
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
     ],
   },
@@ -8948,7 +8763,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -8970,7 +8785,7 @@ const drops = [
   {
     item: "Entro Magic Gun",
     minLevel: 1,
-    maps: [{ name: "MossMerchant05.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Entropy Magic Gun",
@@ -9137,7 +8952,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
     ],
   },
   {
@@ -9155,7 +8969,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
     ],
   },
   {
@@ -9173,7 +8986,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
     ],
   },
   {
@@ -9191,7 +9003,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 6000 },
       { name: "Event Raffle Winner", rate: 6000 },
       { name: "Event ScrambleWord Level 1", rate: 6000 },
-      { name: "ResetSystem Milestone", rate: 6000 },
     ],
   },
   {
@@ -9312,8 +9123,7 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -9337,7 +9147,7 @@ const drops = [
       { name: "Moon Rabbit", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
@@ -9347,7 +9157,6 @@ const drops = [
     item: "Falchion",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -9452,7 +9261,7 @@ const drops = [
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
@@ -9483,8 +9292,6 @@ const drops = [
     item: "Frost Mace",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -9494,7 +9301,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
@@ -9873,7 +9680,7 @@ const drops = [
   {
     item: "Garuda's Feather",
     minLevel: 1,
-    maps: [{ name: "MossMerchant11.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Garuda's Flame",
@@ -9954,7 +9761,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -9979,8 +9786,7 @@ const drops = [
     maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
     ],
@@ -9993,8 +9799,6 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
     ],
   },
   {
@@ -10005,8 +9809,6 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
     ],
   },
   {
@@ -10017,8 +9819,6 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
     ],
   },
   {
@@ -10029,8 +9829,7 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
     ],
   },
@@ -10046,8 +9845,6 @@ const drops = [
     item: "Golden Crossbow",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 110000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -10058,13 +9855,13 @@ const drops = [
       { name: "Green Box", rate: 300 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
     ],
@@ -10081,14 +9878,14 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -10178,16 +9975,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -10216,16 +10008,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -10253,16 +10040,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -10290,14 +10072,9 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -10326,16 +10103,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -10426,9 +10198,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -10440,7 +10211,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -10451,9 +10221,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -10464,7 +10233,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
     ],
   },
   {
@@ -10475,9 +10243,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -10488,7 +10255,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
     ],
   },
   {
@@ -10497,9 +10263,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -10511,7 +10276,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
     ],
   },
   {
@@ -10520,9 +10284,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -10534,14 +10297,12 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
     ],
   },
   {
     item: "Great Hammer",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -10558,9 +10319,8 @@ const drops = [
       { name: "Blessing Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -10575,12 +10335,12 @@ const drops = [
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 20000 },
+      { name: "Moss Merchant", rate: 20000 },
       { name: "Nightmare", rate: 20000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
     ],
@@ -10604,9 +10364,8 @@ const drops = [
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -10619,11 +10378,10 @@ const drops = [
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -10644,29 +10402,26 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Kundun", rate: 10000 },
       { name: "Kundun Box+2", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -10723,18 +10478,16 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -10757,16 +10510,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -10782,7 +10533,7 @@ const drops = [
   {
     item: "Guardian Enhanced Stone",
     minLevel: 1,
-    maps: [{ name: "MossMerchant10.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Guardian Gloves",
@@ -10794,16 +10545,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -10825,16 +10574,14 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -10850,7 +10597,7 @@ const drops = [
   {
     item: "Guardian Jewel",
     minLevel: 1,
-    maps: [{ name: "MossMerchant09.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Guardian Pants",
@@ -10862,18 +10609,16 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -11019,7 +10764,7 @@ const drops = [
     item: "Hades Armor",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -11033,7 +10778,7 @@ const drops = [
     item: "Hades Boots",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -11047,7 +10792,7 @@ const drops = [
     item: "Hades Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -11061,7 +10806,7 @@ const drops = [
     item: "Hades Helm",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -11075,7 +10820,7 @@ const drops = [
     item: "Hades Pants",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -11119,8 +10864,8 @@ const drops = [
     item: "Hell Night Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -11128,8 +10873,8 @@ const drops = [
     item: "Hell Night Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -11137,8 +10882,8 @@ const drops = [
     item: "Hell Night Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -11146,8 +10891,8 @@ const drops = [
     item: "Hell Night Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -11275,12 +11020,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -11301,12 +11045,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -11326,12 +11069,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -11351,10 +11093,9 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -11375,12 +11116,11 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 1300 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -11394,11 +11134,8 @@ const drops = [
     item: "Holy Storm Claws",
     minLevel: 1,
     maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
       { name: "Green Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Monkey White", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
@@ -11960,9 +11697,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -11974,7 +11710,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
     ],
   },
   {
@@ -11983,9 +11718,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -11997,7 +11731,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
     ],
   },
   {
@@ -12006,9 +11739,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -12020,7 +11752,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
     ],
   },
   {
@@ -12029,9 +11760,8 @@ const drops = [
     maps: [
       { name: "Balgass", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 200 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 200 },
       { name: "Event IceWindCastle GuildMember", rate: 200 },
       { name: "Event IceWindCastle Player", rate: 200 },
@@ -12043,7 +11773,6 @@ const drops = [
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 200 },
     ],
   },
   {
@@ -12252,10 +11981,8 @@ const drops = [
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1300 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 800 },
+      { name: "Event Chaos Castle 1", rate: 1300 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 800 },
       { name: "Event IceWindCastle GuildMember", rate: 800 },
@@ -12267,20 +11994,17 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 800 },
       { name: "Event Raffle Lotto 2", rate: 800 },
       { name: "Event ScrambleWord Level 2", rate: 800 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Heaven Box", rate: 10000 },
       { name: "Helper Ellen", rate: 10000 },
       { name: "Mix CherryBlossom Red Reward", rate: 10000 },
       { name: "NPC SantaClause1 Reward", rate: 4000 },
-      { name: "ResetSystem Regular", rate: 800 },
     ],
   },
   {
     item: "Inberial Staff",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -12290,7 +12014,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
@@ -12323,14 +12047,9 @@ const drops = [
     item: "Iris Armor",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -12348,16 +12067,11 @@ const drops = [
     item: "Iris Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -12373,16 +12087,11 @@ const drops = [
     item: "Iris Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -12398,16 +12107,11 @@ const drops = [
     item: "Iris Helm",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -12423,16 +12127,11 @@ const drops = [
     item: "Iris Pants",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 12400 },
-      { name: "Mix LuckyCoin20", rate: 11000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -12497,10 +12196,6 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,259) Devils Box", rate: 10000 },
-      { name: "(14,260) High Devils Box", rate: 10000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -12518,6 +12213,7 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
+      { name: "Devils Box", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Elegant Jewelry Case", rate: 2000 },
       { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
@@ -12542,13 +12238,13 @@ const drops = [
       { name: "Erohim", rate: 10000 },
       { name: "Event AcheronGuardian Reward", rate: 19880 },
       { name: "Event ArcaBattle Winner GuildMaster Reward", rate: 10000 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
       { name: "Event CW Elf Altar", rate: 10000 },
       { name: "Event CW Hero List", rate: 10000 },
       {
@@ -12556,11 +12252,8 @@ const drops = [
         rate: 10000,
       },
       { name: "Event CastleSiege Winner Main GuildMaster Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 4480 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Chaos Castle 1", rate: 4480 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -12573,14 +12266,14 @@ const drops = [
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
       { name: "Event Raffle HitOrder 2", rate: 680 },
-      { name: "Event Raffle HitOrder 3", rate: 10000 },
+
       { name: "Event Raffle Lotto 2", rate: 680 },
-      { name: "Event Raffle Lotto 3", rate: 10000 },
+
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Fire Flame Ghost Egg", rate: 820 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Gnome", rate: 10000 },
       { name: "Goblin Treasure Box (Blue)", rate: 12625 },
       { name: "Goblin Treasure Box (Green)", rate: 12250 },
@@ -12614,8 +12307,10 @@ const drops = [
       { name: "Golden Wheel", rate: 10000 },
       { name: "Gorgon", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Hellraiser", rate: 10000 },
+      { name: "High Devils Box", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
       { name: "IllusionTemple Renewal 1", rate: 10000 },
@@ -12642,13 +12337,12 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 20000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -12660,10 +12354,11 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 11300 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Higher)", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 10000 },
       { name: "Roomy Card Box (Medium)", rate: 10000 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -12705,7 +12400,7 @@ const drops = [
   {
     item: "Jewel of Bless x10",
     minLevel: 1,
-    maps: [{ name: "MossMerchant08.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Jewel of Bloodangel",
@@ -12735,23 +12430,20 @@ const drops = [
       { name: "Earring Box of Fury (Right)", rate: 10000 },
       { name: "Elegant Jewelry Case", rate: 10000 },
       { name: "Event ArcaBattle Loser GuildMaster Reward", rate: 10000 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
       {
         name: "Event CastleSiege Loser Alliance GuildMaster Reward",
         rate: 10000,
       },
       { name: "Event CastleSiege Loser Main GuildMaster Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1180 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event Gift Box", rate: 1000 },
-      { name: "Event HideAndSeek Round 1", rate: 2000 },
-      { name: "Event HideAndSeek Round 2", rate: 1480 },
+      { name: "Event Chaos Castle 1", rate: 1180 },
+
       { name: "Event Higher Box", rate: 1000 },
       { name: "Event IceWindCastle GuildMaster", rate: 1480 },
       { name: "Event IceWindCastle GuildMember", rate: 1480 },
@@ -12762,13 +12454,13 @@ const drops = [
       { name: "Event Luxuary Box", rate: 1000 },
       { name: "Event Medium Box", rate: 1000 },
       { name: "Event Raffle HitOrder 2", rate: 1480 },
-      { name: "Event Raffle HitOrder 3", rate: 2000 },
+
       { name: "Event Raffle Lotto 2", rate: 1480 },
-      { name: "Event Raffle Lotto 3", rate: 2000 },
+
       { name: "Event ScrambleWord Level 2", rate: 1480 },
       { name: "Fire Flame Ghost Egg", rate: 1500 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 1000 },
+
       { name: "Ghost Horse Capsule", rate: 10000 },
       { name: "Gold Hell Maine", rate: 12400 },
       { name: "Gold Medal", rate: 5000 },
@@ -12807,14 +12499,13 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "NPC SantaClause1 Reward", rate: 10000 },
       { name: "Old Jewelry Case", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -12824,7 +12515,7 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1480 },
+
       { name: "Roomy Card Box (Lower)", rate: 2000 },
       { name: "Sacred Birth Star", rate: 5000 },
       { name: "Sapi Queen", rate: 230 },
@@ -12861,8 +12552,6 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -12902,16 +12591,14 @@ const drops = [
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1180 },
-      { name: "Event ChaosCastle 2", rate: 10000 },
-      { name: "Event ChaosCastle 3", rate: 10000 },
-      { name: "Event ChaosCastle 4", rate: 10000 },
-      { name: "Event ChaosCastle 5", rate: 10000 },
-      { name: "Event ChaosCastle 6", rate: 10000 },
-      { name: "Event ChaosCastle 7", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Chaos Castle 1", rate: 1180 },
+      { name: "Event Chaos Castle 2", rate: 10000 },
+      { name: "Event Chaos Castle 3", rate: 10000 },
+      { name: "Event Chaos Castle 4", rate: 10000 },
+      { name: "Event Chaos Castle 5", rate: 10000 },
+      { name: "Event Chaos Castle 6", rate: 10000 },
+      { name: "Event Chaos Castle 7", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -12926,7 +12613,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Gnome", rate: 10000 },
       { name: "God of Darkness", rate: 20000 },
       { name: "Gold Hell Maine", rate: 12400 },
@@ -12954,6 +12641,7 @@ const drops = [
       { name: "Golden Vepar", rate: 10000 },
       { name: "Golden Wheel", rate: 10000 },
       { name: "Gorgon", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Hellraiser", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
@@ -12971,15 +12659,14 @@ const drops = [
       { name: "Luck Box", rate: 5000 },
       { name: "Lunar Rabbit", rate: 10000 },
       { name: "Medusa", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -12988,9 +12675,10 @@ const drops = [
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Higher)", rate: 3500 },
       { name: "Roomy Card Box (Medium)", rate: 3500 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -13077,9 +12765,7 @@ const drops = [
       { name: "Elite Underground Dreadfear", rate: 20000 },
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1300 },
-      { name: "Event Raffle HitOrder 3", rate: 1300 },
-      { name: "Event Raffle Lotto 3", rate: 1300 },
+
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Firecracker", rate: 5000 },
       { name: "Gnome", rate: 10000 },
@@ -13132,12 +12818,11 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -13184,10 +12869,6 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,259) Devils Box", rate: 10000 },
-      { name: "(14,260) High Devils Box", rate: 10000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
@@ -13205,6 +12886,7 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
+      { name: "Devils Box", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Elegant Jewelry Case", rate: 1000 },
       { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
@@ -13228,24 +12910,21 @@ const drops = [
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
       { name: "Event AcheronGuardian Reward", rate: 19880 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1180 },
-      { name: "Event ChaosCastle 2", rate: 2000 },
-      { name: "Event ChaosCastle 3", rate: 2000 },
-      { name: "Event ChaosCastle 4", rate: 2000 },
-      { name: "Event ChaosCastle 5", rate: 2000 },
-      { name: "Event ChaosCastle 6", rate: 2000 },
-      { name: "Event ChaosCastle 7", rate: 2000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1180 },
+      { name: "Event Chaos Castle 2", rate: 2000 },
+      { name: "Event Chaos Castle 3", rate: 2000 },
+      { name: "Event Chaos Castle 4", rate: 2000 },
+      { name: "Event Chaos Castle 5", rate: 2000 },
+      { name: "Event Chaos Castle 6", rate: 2000 },
+      { name: "Event Chaos Castle 7", rate: 2000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -13256,14 +12935,14 @@ const drops = [
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
       { name: "Event Raffle HitOrder 2", rate: 680 },
-      { name: "Event Raffle HitOrder 3", rate: 10000 },
+
       { name: "Event Raffle Lotto 2", rate: 680 },
-      { name: "Event Raffle Lotto 3", rate: 10000 },
+
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Fire Flame Ghost Egg", rate: 1130 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Gnome", rate: 10000 },
       { name: "Goblin Treasure Box (Blue)", rate: 12625 },
       { name: "Goblin Treasure Box (Green)", rate: 12250 },
@@ -13296,7 +12975,9 @@ const drops = [
       { name: "Golden Wheel", rate: 10000 },
       { name: "Gorgon", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Hellraiser", rate: 10000 },
+      { name: "High Devils Box", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
       { name: "IllusionTemple Renewal 1", rate: 2600 },
@@ -13314,14 +12995,13 @@ const drops = [
       { name: "Lucky Bag Egg", rate: 4000 },
       { name: "Lunar Rabbit", rate: 10000 },
       { name: "Medusa", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -13332,8 +13012,9 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Lower)", rate: 10000 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -13381,14 +13062,6 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "'Monster Elite Underground Twin Tale", rate: 10000 },
-      { name: "(13,350) Roomy Egg", rate: 30000 },
-      { name: "(14,254) Gift of Henchmen", rate: 10000 },
-      { name: "(14,256) Gift of Knights", rate: 10000 },
-      { name: "(14,257) Gift of High Knights", rate: 10000 },
-      { name: "(14,258) Minor Devils Box", rate: 10000 },
-      { name: "(14,259) Devils Box", rate: 10000 },
-      { name: "(14,260) High Devils Box", rate: 10000 },
-      { name: "(14,262) Guardman Captains Box", rate: 30000 },
       { name: "Balrog", rate: 10000 },
       { name: "Baseball Intermediate Box", rate: 1000 },
       { name: "Baseball Lower Case", rate: 1000 },
@@ -13406,6 +13079,7 @@ const drops = [
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Death King", rate: 10000 },
       { name: "Deep Dungeon Gorgon", rate: 10000 },
+      { name: "Devils Box", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Elegant Jewelry Case", rate: 2000 },
       { name: "Elite Ashy Bloody Witch Queen", rate: 10000 },
@@ -13429,18 +13103,15 @@ const drops = [
       { name: "Elite Underground Persona", rate: 10000 },
       { name: "Erohim", rate: 10000 },
       { name: "Event AcheronGuardian Reward", rate: 19880 },
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 11180 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event Gift Box", rate: 1000 },
-      { name: "Event HideAndSeek Round 1", rate: 1300 },
-      { name: "Event HideAndSeek Round 2", rate: 680 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 11180 },
+
       { name: "Event Higher Box", rate: 1000 },
       { name: "Event IceWindCastle GuildMaster", rate: 680 },
       { name: "Event IceWindCastle GuildMember", rate: 680 },
@@ -13451,14 +13122,17 @@ const drops = [
       { name: "Event Luxuary Box", rate: 1000 },
       { name: "Event Medium Box", rate: 1000 },
       { name: "Event Raffle HitOrder 2", rate: 680 },
-      { name: "Event Raffle HitOrder 3", rate: 1300 },
+
       { name: "Event Raffle Lotto 2", rate: 680 },
-      { name: "Event Raffle Lotto 3", rate: 1300 },
+
       { name: "Event ScrambleWord Level 2", rate: 680 },
       { name: "Fire Flame Ghost", rate: 20000 },
       { name: "Fire Flame Ghost Egg", rate: 1250 },
       { name: "Firecracker", rate: 5000 },
-      { name: "GM Gift Box", rate: 1000 },
+
+      { name: "Gift of Henchmen", rate: 10000 },
+      { name: "Gift of High Knights", rate: 10000 },
+      { name: "Gift of Knights", rate: 10000 },
       { name: "Gnome", rate: 10000 },
       { name: "Goblin Treasure Box (Blue)", rate: 12625 },
       { name: "Goblin Treasure Box (Green)", rate: 12250 },
@@ -13491,8 +13165,10 @@ const drops = [
       { name: "Golden Wheel", rate: 10000 },
       { name: "Greater Evomon Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
+      { name: "Guardman Captains Box", rate: 30000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Hellraiser", rate: 10000 },
+      { name: "High Devils Box", rate: 10000 },
       { name: "Hydra", rate: 10000 },
       { name: "Ice Queen", rate: 10000 },
       { name: "IllusionTemple Renewal 1", rate: 2000 },
@@ -13519,19 +13195,19 @@ const drops = [
       { name: "Mastery Box (Minor)", rate: 10000 },
       { name: "Mastery Box (Standard)", rate: 10000 },
       { name: "Medusa", rate: 60000 },
+      { name: "Minor Devils Box", rate: 10000 },
       { name: "Minor Evomon Box", rate: 10000 },
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 2000 },
+
       { name: "Monkey Green", rate: 10000 },
       { name: "Monkey Purple", rate: 20000 },
       { name: "Monkey Red", rate: 20000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 10000 },
       { name: "Normus", rate: 10000 },
@@ -13543,10 +13219,11 @@ const drops = [
       { name: "Power Chicken", rate: 7000 },
       { name: "Purple Box", rate: 11300 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 680 },
+
       { name: "Roomy Card Box (Higher)", rate: 2500 },
       { name: "Roomy Card Box (Lower)", rate: 1300 },
       { name: "Roomy Card Box (Medium)", rate: 2500 },
+      { name: "Roomy Egg", rate: 30000 },
       { name: "Rooster Green", rate: 10120 },
       { name: "Rooster Purple", rate: 10120 },
       { name: "Rooster Red", rate: 10120 },
@@ -13705,7 +13382,6 @@ const drops = [
     item: "Katana",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -13726,9 +13402,8 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -13755,7 +13430,7 @@ const drops = [
       { name: "Nightmare", rate: 20000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
@@ -13766,7 +13441,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
     ],
   },
@@ -13865,7 +13540,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -13932,7 +13607,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -13994,7 +13669,7 @@ const drops = [
       { name: "Muff", rate: 10000 },
       { name: "Nix", rate: 16000 },
       { name: "Normus", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 10000 },
       { name: "Sellihoden", rate: 10000 },
       { name: "Selupan", rate: 16000 },
@@ -14044,8 +13719,8 @@ const drops = [
     item: "Lazy Wind Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14053,8 +13728,8 @@ const drops = [
     item: "Lazy Wind Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14062,8 +13737,8 @@ const drops = [
     item: "Lazy Wind Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14071,8 +13746,8 @@ const drops = [
     item: "Lazy Wind Helm",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14080,8 +13755,8 @@ const drops = [
     item: "Lazy Wind Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14089,8 +13764,8 @@ const drops = [
     item: "Lazy Wind Shield",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14099,7 +13774,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -14120,7 +13795,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -14141,7 +13816,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -14162,7 +13837,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -14183,7 +13858,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -14209,18 +13884,16 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
@@ -14236,17 +13909,15 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
@@ -14262,16 +13933,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
@@ -14287,16 +13956,14 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
@@ -14312,19 +13979,17 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
@@ -14338,15 +14003,14 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+
       { name: "Firecracker", rate: 20000 },
       { name: "Gold Medal", rate: 20000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Love Heart", rate: 20000 },
       { name: "Luck Box", rate: 20000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
@@ -14365,14 +14029,13 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blessing Box", rate: 30000 },
       { name: "Blue Ribbon Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
       { name: "Firecracker", rate: 30000 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Gold Medal", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
@@ -14392,7 +14055,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
+
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
@@ -14420,7 +14083,7 @@ const drops = [
       { name: "Hellraiser", rate: 5000 },
       { name: "Muff", rate: 5000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 10 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Silla", rate: 5000 },
@@ -14457,10 +14120,9 @@ const drops = [
     item: "Light Crossbow",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
@@ -14475,8 +14137,8 @@ const drops = [
     item: "Light Lord Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14484,8 +14146,8 @@ const drops = [
     item: "Light Lord Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14493,8 +14155,8 @@ const drops = [
     item: "Light Lord Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14502,8 +14164,8 @@ const drops = [
     item: "Light Lord Helmet",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14511,8 +14173,8 @@ const drops = [
     item: "Light Lord Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14520,8 +14182,8 @@ const drops = [
     item: "Light Lord Shield",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -14532,12 +14194,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -14556,12 +14218,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -14580,12 +14242,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -14604,12 +14266,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -14628,12 +14290,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -14676,18 +14338,17 @@ const drops = [
       { name: "Baseball Senior Box", rate: 200 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event Gift Box", rate: 200 },
+
       { name: "Event Higher Box", rate: 200 },
       { name: "Event Lower Box", rate: 200 },
       { name: "Event Luxuary Box", rate: 200 },
       { name: "Event Medium Box", rate: 200 },
-      { name: "GM Gift Box", rate: 200 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
@@ -15879,13 +15540,13 @@ const drops = [
     item: "Loch's Feather",
     minLevel: 1,
     maps: [
-      { name: "Event BloodCastle1 Reward", rate: 10000 },
-      { name: "Event BloodCastle2 Reward", rate: 10000 },
-      { name: "Event BloodCastle3 Reward", rate: 10000 },
-      { name: "Event BloodCastle4 Reward", rate: 10000 },
-      { name: "Event BloodCastle5 Reward", rate: 10000 },
-      { name: "Event BloodCastle6 Reward", rate: 10000 },
-      { name: "Event BloodCastle7 Reward", rate: 10000 },
+      { name: "Event Blood Castle 1 Reward", rate: 10000 },
+      { name: "Event Blood Castle 2 Reward", rate: 10000 },
+      { name: "Event Blood Castle 3 Reward", rate: 10000 },
+      { name: "Event Blood Castle 4 Reward", rate: 10000 },
+      { name: "Event Blood Castle 5 Reward", rate: 10000 },
+      { name: "Event Blood Castle 6 Reward", rate: 10000 },
+      { name: "Event Blood Castle 7 Reward", rate: 10000 },
       { name: "Monkey Purple", rate: 10000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Pouch of Blessing", rate: 50 },
@@ -15908,16 +15569,13 @@ const drops = [
     maps: [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Green Box", rate: 15000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
-      { name: "MossMerchant03.xml", rate: 20000 },
+      { name: "Moss Merchant", rate: 20000 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
     ],
   },
@@ -15960,9 +15618,7 @@ const drops = [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 1500 },
-      { name: "Event Raffle HitOrder 3", rate: 1500 },
-      { name: "Event Raffle Lotto 3", rate: 1500 },
+
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
@@ -15998,8 +15654,8 @@ const drops = [
     item: "Magic Knight Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -16007,8 +15663,8 @@ const drops = [
     item: "Magic Knight Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -16016,8 +15672,8 @@ const drops = [
     item: "Magic Knight Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -16025,8 +15681,8 @@ const drops = [
     item: "Magic Knight Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -16034,8 +15690,8 @@ const drops = [
     item: "Magic Knight Shield",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -16873,14 +16529,13 @@ const drops = [
     maps: [
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Monkey Green", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 20000 },
       { name: "Red Chocolate Box", rate: 20000 },
       { name: "Rooster Green", rate: 300 },
@@ -16896,7 +16551,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "MossMerchant11.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -16973,7 +16628,7 @@ const drops = [
       { name: "Muff", rate: 5000 },
       { name: "Nix", rate: 8000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 3500 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Selupan", rate: 8000 },
@@ -17006,8 +16661,8 @@ const drops = [
     item: "Miracle Staff",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 500 },
-      { name: "(14,260) High Devils Box", rate: 2000 },
+      { name: "Devils Box", rate: 500 },
+      { name: "High Devils Box", rate: 2000 },
     ],
   },
   {
@@ -17015,10 +16670,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Green Box", rate: 300 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -17169,7 +16821,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Kundun Box+1", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -17181,8 +16833,8 @@ const drops = [
     item: "Necklace of Lightning",
     minLevel: 1,
     maps: [
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -17313,7 +16965,7 @@ const drops = [
       { name: "Hellraiser", rate: 5000 },
       { name: "Muff", rate: 5000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 10 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Silla", rate: 5000 },
@@ -17398,7 +17050,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -17416,7 +17068,6 @@ const drops = [
     item: "Pad Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -17435,7 +17086,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -17454,7 +17105,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -17472,7 +17123,6 @@ const drops = [
     item: "Pad Pants",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -17536,10 +17186,10 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant07.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Sacred Birth Star", rate: 1000 },
@@ -17569,7 +17219,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 11000 },
+
       { name: "Mix Maple Leaf Reward", rate: 11000 },
       { name: "Sacred Birth Star", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
@@ -17593,9 +17243,7 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 70000 },
-      { name: "Event Gift Box", rate: 100 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event Higher Box", rate: 100 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
@@ -17608,7 +17256,7 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 1 },
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Firecracker", rate: 1000 },
-      { name: "GM Gift Box", rate: 100 },
+
       { name: "Gold Medal", rate: 1000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
@@ -17618,11 +17266,11 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
@@ -17654,7 +17302,7 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
@@ -17686,8 +17334,6 @@ const drops = [
       { name: "Event PlayTime Round 2", rate: 10000 },
       { name: "Event PlayTime Round 5", rate: 10000 },
       { name: "Event PlayTime Round 8", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
     ],
   },
   {
@@ -17799,10 +17445,6 @@ const drops = [
     item: "Piercing Blade Glove",
     minLevel: 1,
     maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Roomy Card Box (Lower)", rate: 1000 },
     ],
@@ -17837,34 +17479,22 @@ const drops = [
   {
     item: "Piercing Groove Armor",
     minLevel: 1,
-    maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ],
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
   },
   {
     item: "Piercing Groove Boots",
     minLevel: 1,
-    maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ],
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
   },
   {
     item: "Piercing Groove Helm",
     minLevel: 1,
-    maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ],
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
   },
   {
     item: "Piercing Groove Pants",
     minLevel: 1,
-    maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 1400 },
-      { name: "Mix Maple Leaf Reward", rate: 1400 },
-    ],
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 1400 }],
   },
   {
     item: "Plate Armor",
@@ -17874,15 +17504,15 @@ const drops = [
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -17900,15 +17530,15 @@ const drops = [
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -17926,15 +17556,15 @@ const drops = [
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -17951,12 +17581,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -17974,12 +17604,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -17995,8 +17625,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 90000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18006,11 +17635,10 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
     ],
   },
   {
@@ -18021,7 +17649,7 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
     ],
@@ -18148,9 +17776,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -18159,12 +17786,11 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 1850 },
       { name: "Event ScrambleWord Level 2", rate: 1850 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
     ],
   },
   {
@@ -18175,9 +17801,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1150 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1850 },
+      { name: "Event Chaos Castle 1", rate: 1150 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1850 },
       { name: "Event IceWindCastle GuildMember", rate: 1850 },
       { name: "Event IceWindCastle Player", rate: 1850 },
@@ -18185,12 +17810,11 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 1850 },
       { name: "Event Raffle Lotto 2", rate: 1850 },
       { name: "Event ScrambleWord Level 2", rate: 1850 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1850 },
     ],
   },
   {
@@ -18201,9 +17825,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -18211,12 +17834,11 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -18227,9 +17849,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -18237,12 +17858,11 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 10000 },
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -18253,9 +17873,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 1000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 1350 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10000 },
+      { name: "Event Chaos Castle 1", rate: 1350 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10000 },
       { name: "Event IceWindCastle GuildMember", rate: 10000 },
       { name: "Event IceWindCastle Player", rate: 10000 },
@@ -18264,12 +17883,11 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 10000 },
       { name: "Event ScrambleWord Level 2", rate: 10000 },
       { name: "Kundun", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10000 },
     ],
   },
   {
@@ -18278,9 +17896,7 @@ const drops = [
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
@@ -18295,9 +17911,7 @@ const drops = [
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
@@ -18312,9 +17926,7 @@ const drops = [
     maps: [
       { name: "Buff Gladiators Drop", rate: 20000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
@@ -18329,9 +17941,7 @@ const drops = [
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
@@ -18346,9 +17956,7 @@ const drops = [
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
@@ -18362,10 +17970,9 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
+
       { name: "Monkey Green", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
       { name: "Rooster Purple", rate: 300 },
       { name: "Rooster Red", rate: 300 },
@@ -18407,7 +18014,7 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
@@ -18434,10 +18041,10 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "MossMerchant09.xml", rate: 10000 },
-      { name: "MossMerchant10.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Sacred Birth Star", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
@@ -18468,13 +18075,13 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 100 },
+
       { name: "Event Higher Box", rate: 100 },
       { name: "Event Lower Box", rate: 100 },
       { name: "Event Luxuary Box", rate: 100 },
       { name: "Event Medium Box", rate: 100 },
       { name: "Firecracker", rate: 1000 },
-      { name: "GM Gift Box", rate: 100 },
+
       { name: "Gold Medal", rate: 1000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
@@ -18484,7 +18091,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -18504,7 +18111,7 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
@@ -18526,13 +18133,13 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 20000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 100 },
+
       { name: "Event Higher Box", rate: 100 },
       { name: "Event Lower Box", rate: 100 },
       { name: "Event Luxuary Box", rate: 100 },
       { name: "Event Medium Box", rate: 100 },
       { name: "Firecracker", rate: 1000 },
-      { name: "GM Gift Box", rate: 100 },
+
       { name: "Gold Medal", rate: 1000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
@@ -18542,7 +18149,7 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 12000 },
+
       { name: "Mix Maple Leaf Reward", rate: 12000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -18568,7 +18175,7 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "IllusionTemple Renewal 6", rate: 300 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 10000 },
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
@@ -18579,7 +18186,7 @@ const drops = [
     item: "Royal Armor",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18593,7 +18200,7 @@ const drops = [
     item: "Royal Boots",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18607,7 +18214,7 @@ const drops = [
     item: "Royal Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18621,7 +18228,7 @@ const drops = [
     item: "Royal Mask",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18648,7 +18255,7 @@ const drops = [
     item: "Royal Pants",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -18662,8 +18269,6 @@ const drops = [
     item: "Rune Bastard Sword",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -18673,7 +18278,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
@@ -18689,27 +18294,24 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 20000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 20000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
       { name: "Event LastManStanding Winner Reward", rate: 1 },
       { name: "Event Raffle HitOrder 2", rate: 1 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 1 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Kundun", rate: 10000 },
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
     ],
   },
@@ -18743,7 +18345,7 @@ const drops = [
       { name: "Hellraiser", rate: 5000 },
       { name: "Muff", rate: 5000 },
       { name: "Normus", rate: 5000 },
-      { name: "ResetSystem Milestone", rate: 10 },
+
       { name: "Salamander", rate: 5000 },
       { name: "Sellihoden", rate: 5000 },
       { name: "Silla", rate: 5000 },
@@ -18774,7 +18376,7 @@ const drops = [
   {
     item: "Ruud Box (1000)",
     minLevel: 1,
-    maps: [{ name: "MossMerchant06.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Ruud Box (50)",
@@ -18784,7 +18386,7 @@ const drops = [
   {
     item: "Ruud Box(1000)",
     minLevel: 1,
-    maps: [{ name: "MossMerchant07.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Sacred Fire Armor",
@@ -18894,9 +18496,8 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 20000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -18908,10 +18509,8 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 800 },
-      { name: "Mix LuckyCoin20", rate: 2500 },
-      { name: "MossMerchant05.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -18948,8 +18547,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 130000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -18960,14 +18558,14 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -18978,7 +18576,6 @@ const drops = [
     item: "Scale Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -18997,7 +18594,6 @@ const drops = [
     item: "Scale Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -19017,8 +18613,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 130000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -19029,14 +18624,14 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Box", rate: 300 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -19048,8 +18643,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -19060,14 +18654,14 @@ const drops = [
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Box", rate: 600 },
       { name: "Red Chaos Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -19092,14 +18686,14 @@ const drops = [
     item: "Scroll of Decay",
     minLevel: 1,
     maps: [
-      { name: "(14,254) Gift of Henchmen", rate: 10000 },
-      { name: "(14,256) Gift of Knights", rate: 10000 },
-      { name: "(14,257) Gift of High Knights", rate: 10000 },
-      { name: "(14,258) Minor Devils Box", rate: 10000 },
+      { name: "Gift of Henchmen", rate: 10000 },
+      { name: "Gift of High Knights", rate: 10000 },
+      { name: "Gift of Knights", rate: 10000 },
       { name: "Greater Evomon Box", rate: 10000 },
       { name: "Legendary Evomon Box", rate: 10000 },
       { name: "Luxurious Evomon Box", rate: 10000 },
       { name: "Magnificent Evomon Box", rate: 10000 },
+      { name: "Minor Devils Box", rate: 10000 },
       { name: "Minor Evomon Box", rate: 10000 },
       { name: "Standard Evomon Box", rate: 10000 },
     ],
@@ -19127,14 +18721,14 @@ const drops = [
     item: "Scroll of Inferno",
     minLevel: 1,
     maps: [
-      { name: "(14,254) Gift of Henchmen", rate: 10000 },
-      { name: "(14,256) Gift of Knights", rate: 10000 },
-      { name: "(14,257) Gift of High Knights", rate: 10000 },
-      { name: "(14,258) Minor Devils Box", rate: 10000 },
+      { name: "Gift of Henchmen", rate: 10000 },
+      { name: "Gift of High Knights", rate: 10000 },
+      { name: "Gift of Knights", rate: 10000 },
       { name: "Greater Evomon Box", rate: 10000 },
       { name: "Legendary Evomon Box", rate: 10000 },
       { name: "Luxurious Evomon Box", rate: 10000 },
       { name: "Magnificent Evomon Box", rate: 10000 },
+      { name: "Minor Devils Box", rate: 10000 },
       { name: "Minor Evomon Box", rate: 10000 },
       { name: "Standard Evomon Box", rate: 10000 },
     ],
@@ -19142,12 +18736,12 @@ const drops = [
   {
     item: "Sculpture",
     minLevel: 1,
-    maps: [{ name: "MossMerchant10.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Seal of Ghost Horses",
     minLevel: 1,
-    maps: [{ name: "MossMerchant10.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Sealed Blood Angel Armor of Conquest",
@@ -19158,7 +18752,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19170,16 +18763,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Angel Armor of Element",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Blood Angel Armor of Extremity",
@@ -19190,7 +18779,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19202,7 +18790,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19214,7 +18801,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19226,7 +18812,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19238,7 +18823,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19250,16 +18834,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Angel Armor of Longing",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Blood Angel Armor of Ritual",
@@ -19270,7 +18850,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19282,7 +18861,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19294,7 +18872,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
     ],
   },
   {
@@ -19306,7 +18883,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19318,7 +18894,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19330,7 +18905,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19342,7 +18916,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19354,7 +18927,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19366,7 +18938,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19378,16 +18949,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Angel Gloves of Element",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Blood Angel Gloves of Extremity",
@@ -19398,7 +18965,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19410,7 +18976,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19422,7 +18987,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19434,7 +18998,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19446,16 +19009,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Angel Gloves of Longing",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Blood Angel Gloves of Tenacity",
@@ -19466,7 +19025,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19478,7 +19036,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
     ],
   },
   {
@@ -19490,7 +19047,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19502,7 +19058,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19514,7 +19069,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19526,7 +19080,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19538,7 +19091,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19550,7 +19102,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19562,7 +19113,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19574,7 +19124,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19586,16 +19135,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Angel Helm of Longing",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Blood Angel Helm of Ritual",
@@ -19606,7 +19151,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19618,7 +19162,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19630,7 +19173,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
     ],
   },
   {
@@ -19642,7 +19184,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19654,7 +19195,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19666,7 +19206,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19678,16 +19217,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Angel Pants of Element",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Blood Angel Pants of Extremity",
@@ -19698,7 +19233,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19710,7 +19244,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19722,7 +19255,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19734,7 +19266,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19746,7 +19277,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19758,16 +19288,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Angel Pants of Longing",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Blood Angel Pants of Ritual",
@@ -19778,7 +19304,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19790,7 +19315,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19802,7 +19326,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 10000 },
       { name: "Event Raffle Winner", rate: 10000 },
       { name: "Event ScrambleWord Level 1", rate: 10000 },
-      { name: "ResetSystem Milestone", rate: 10000 },
     ],
   },
   {
@@ -19814,7 +19337,6 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
@@ -19826,16 +19348,12 @@ const drops = [
       { name: "Event Raffle Lotto 1", rate: 2000 },
       { name: "Event Raffle Winner", rate: 2000 },
       { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
     ],
   },
   {
     item: "Sealed Blood Helm of Element",
     minLevel: 1,
-    maps: [
-      { name: "Event ScrambleWord Level 1", rate: 2000 },
-      { name: "ResetSystem Milestone", rate: 2000 },
-    ],
+    maps: [{ name: "Event ScrambleWord Level 1", rate: 2000 }],
   },
   {
     item: "Sealed Stone Shard",
@@ -20552,7 +20070,7 @@ const drops = [
     item: "Seraphim Armor",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -20566,7 +20084,7 @@ const drops = [
     item: "Seraphim Boots",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -20580,7 +20098,7 @@ const drops = [
     item: "Seraphim Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -20594,7 +20112,7 @@ const drops = [
     item: "Seraphim Helm",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -20608,7 +20126,7 @@ const drops = [
     item: "Seraphim Pants",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -20622,7 +20140,6 @@ const drops = [
     item: "Serpent Crossbow",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -20639,7 +20156,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Blessing Box", rate: 30000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
+
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
@@ -20661,12 +20178,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
     ],
@@ -20675,7 +20192,6 @@ const drops = [
     item: "Serpent Staff",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 80000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
@@ -20728,7 +20244,7 @@ const drops = [
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
       { name: "Mix Senior Reward", rate: 10000 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant03.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
       { name: "Sacred Birth Star", rate: 10000 },
@@ -20742,10 +20258,7 @@ const drops = [
   {
     item: "Short Sword",
     minLevel: 1,
-    maps: [
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix Maple Leaf Reward", rate: 700 },
-    ],
+    maps: [{ name: "Mix Maple Leaf Reward", rate: 700 }],
   },
   {
     item: "Silk Armor",
@@ -20753,7 +20266,7 @@ const drops = [
     maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
@@ -20779,7 +20292,7 @@ const drops = [
     maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
@@ -20793,7 +20306,7 @@ const drops = [
     maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
@@ -20807,7 +20320,7 @@ const drops = [
     maps: [
       { name: "Heaven Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 20000 },
       { name: "Red Ribbon Box", rate: 10000 },
@@ -20823,17 +20336,17 @@ const drops = [
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey Green", rate: 10000 },
-      { name: "MossMerchant05.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
       { name: "Rooster Green", rate: 300 },
@@ -21873,8 +21386,6 @@ const drops = [
     item: "Skull Shield",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 70000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -21885,11 +21396,10 @@ const drops = [
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Red Ribbon Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
     ],
   },
   {
@@ -21897,11 +21407,11 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
+
       { name: "Green Box", rate: 300 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
       { name: "Red Chaos Box", rate: 10000 },
@@ -22774,12 +22284,12 @@ const drops = [
   {
     item: "Sphere",
     minLevel: 1,
-    maps: [{ name: "Event ChaosCastle 1", rate: 55 }],
+    maps: [{ name: "Event Chaos Castle 1", rate: 55 }],
   },
   {
     item: "Sphere (Di)",
     minLevel: 1,
-    maps: [{ name: "Event ChaosCastle 1", rate: 52 }],
+    maps: [{ name: "Event Chaos Castle 1", rate: 52 }],
   },
   {
     item: "Sphere (Tetra)",
@@ -22789,7 +22299,7 @@ const drops = [
   {
     item: "Sphere (Tri)",
     minLevel: 1,
-    maps: [{ name: "Event ChaosCastle 1", rate: 51 }],
+    maps: [{ name: "Event Chaos Castle 1", rate: 51 }],
   },
   {
     item: "Sphere Upgrade Rune",
@@ -22800,8 +22310,6 @@ const drops = [
     item: "Sphinx Armor",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -22813,10 +22321,10 @@ const drops = [
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -22827,8 +22335,6 @@ const drops = [
     item: "Sphinx Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -22839,10 +22345,10 @@ const drops = [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -22853,8 +22359,6 @@ const drops = [
     item: "Sphinx Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -22865,10 +22369,10 @@ const drops = [
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -22879,8 +22383,6 @@ const drops = [
     item: "Sphinx Mask",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -22892,10 +22394,10 @@ const drops = [
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -22906,8 +22408,6 @@ const drops = [
     item: "Sphinx Pants",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -22919,10 +22419,10 @@ const drops = [
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sheep Purple", rate: 10000 },
       { name: "Sheep Red", rate: 10000 },
       { name: "WarriorRing40", rate: 10000 },
@@ -23001,15 +22501,15 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
@@ -23023,12 +22523,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
@@ -23043,15 +22543,15 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
@@ -23065,12 +22565,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
@@ -23082,12 +22582,7 @@ const drops = [
   {
     item: "Spirit Map",
     minLevel: 1,
-    maps: [
-      { name: "Event HideAndSeek Round 1", rate: 2000 },
-      { name: "Event Raffle HitOrder 3", rate: 2000 },
-      { name: "Event Raffle Lotto 3", rate: 2000 },
-      { name: "Roomy Card Box (Lower)", rate: 2000 },
-    ],
+    maps: [{ name: "Roomy Card Box (Lower)", rate: 2000 }],
   },
   {
     item: "Spirit Pants",
@@ -23096,15 +22591,15 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Sheep Purple", rate: 10000 },
@@ -23124,10 +22619,7 @@ const drops = [
   {
     item: "Spirit of Guardian",
     minLevel: 1,
-    maps: [
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
-    ],
+    maps: [],
   },
   {
     item: "Staff of Destruction",
@@ -23138,18 +22630,16 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
@@ -23157,11 +22647,10 @@ const drops = [
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Love Heart", rate: 30000 },
       { name: "Luck Box", rate: 30000 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Monkey White", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+      { name: "Moss Merchant", rate: 10000 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -23191,9 +22680,8 @@ const drops = [
       { name: "Death King", rate: 10000 },
       { name: "Dragon Red", rate: 20000 },
       { name: "Erohim", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -23215,15 +22703,15 @@ const drops = [
       { name: "Mix ChaosCard Gold Reward", rate: 10000 },
       { name: "Mix ChaosCard Mini Reward", rate: 10000 },
       { name: "Mix ChaosCard Rare Reward", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 4500 },
       { name: "Moon Rabbit", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Pouch Of Blessing", rate: 10000 },
       { name: "Pouch of Blessing", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sacred Birth Star", rate: 30000 },
       { name: "Silver Box", rate: 10000 },
       { name: "Silver Medal", rate: 30000 },
@@ -23236,7 +22724,7 @@ const drops = [
       { name: "Blessing Box", rate: 30000 },
       { name: "Blue Ribbon Box", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Firecracker", rate: 30000 },
       { name: "Gold Medal", rate: 30000 },
       { name: "Kundun Box+2", rate: 20000 },
@@ -23308,8 +22796,8 @@ const drops = [
     item: "Sticky Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23317,8 +22805,8 @@ const drops = [
     item: "Sticky Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23326,8 +22814,8 @@ const drops = [
     item: "Sticky Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23335,8 +22823,8 @@ const drops = [
     item: "Sticky Helm",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23344,8 +22832,8 @@ const drops = [
     item: "Sticky Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23359,9 +22847,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23369,10 +22856,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23380,9 +22866,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23390,10 +22875,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23401,9 +22885,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23411,10 +22894,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23422,9 +22904,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23432,10 +22913,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23443,9 +22923,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23453,10 +22932,9 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 85 },
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23469,7 +22947,7 @@ const drops = [
       { name: "Green Box", rate: 1000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Sacred Birth Star", rate: 10000 },
       { name: "Silver Medal", rate: 10000 },
@@ -23480,15 +22958,10 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -23507,17 +22980,12 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -23535,17 +23003,12 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -23563,15 +23026,10 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
+
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
@@ -23589,9 +23047,6 @@ const drops = [
     item: "Storm Jahad Armor",
     minLevel: 1,
     maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -23606,9 +23061,6 @@ const drops = [
     item: "Storm Jahad Boots",
     minLevel: 1,
     maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -23623,9 +23075,6 @@ const drops = [
     item: "Storm Jahad Helm",
     minLevel: 1,
     maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -23640,9 +23089,6 @@ const drops = [
     item: "Storm Jahad Pants",
     minLevel: 1,
     maps: [
-      { name: "Event HideAndSeek Round 1", rate: 1100 },
-      { name: "Event Raffle HitOrder 3", rate: 1100 },
-      { name: "Event Raffle Lotto 3", rate: 1100 },
       { name: "Monkey White", rate: 10000 },
       { name: "Red Box", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 1100 },
@@ -23657,8 +23103,8 @@ const drops = [
     item: "Stormwing Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23666,8 +23112,8 @@ const drops = [
     item: "Stormwing Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23675,8 +23121,8 @@ const drops = [
     item: "Stormwing Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23684,8 +23130,8 @@ const drops = [
     item: "Stormwing Helm",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23693,8 +23139,8 @@ const drops = [
     item: "Stormwing Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23702,8 +23148,8 @@ const drops = [
     item: "Succubus Armor",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23711,8 +23157,8 @@ const drops = [
     item: "Succubus Boots",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23720,8 +23166,8 @@ const drops = [
     item: "Succubus Gloves",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23729,8 +23175,8 @@ const drops = [
     item: "Succubus Helm",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23738,8 +23184,8 @@ const drops = [
     item: "Succubus Pants",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 1000 },
-      { name: "(14,260) High Devils Box", rate: 4000 },
+      { name: "Devils Box", rate: 1000 },
+      { name: "High Devils Box", rate: 4000 },
       { name: "Lord Silvester", rate: 4100 },
     ],
   },
@@ -23747,8 +23193,8 @@ const drops = [
     item: "Summon Spirit Stick",
     minLevel: 1,
     maps: [
-      { name: "(14,259) Devils Box", rate: 500 },
-      { name: "(14,260) High Devils Box", rate: 2000 },
+      { name: "Devils Box", rate: 500 },
+      { name: "High Devils Box", rate: 2000 },
     ],
   },
   {
@@ -23756,9 +23202,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23769,7 +23214,6 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23777,9 +23221,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23788,7 +23231,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23796,9 +23238,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23807,7 +23248,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23815,9 +23255,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23826,7 +23265,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23834,9 +23272,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -23845,7 +23282,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -23857,8 +23293,6 @@ const drops = [
     item: "Sword Breaker",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
@@ -23868,7 +23302,7 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Lord Silvester", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
       { name: "Seed Capsule (Ice)", rate: 5000 },
@@ -23885,16 +23319,16 @@ const drops = [
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
     item: "Sword of Assassin",
     minLevel: 1,
-    maps: [{ name: "MossMerchant01.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Sword of Destruction",
@@ -23908,18 +23342,16 @@ const drops = [
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 400 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 1", rate: 1000 },
-      { name: "Event HideAndSeek Round 2", rate: 10 },
+      { name: "Event Chaos Castle 1", rate: 400 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 10 },
       { name: "Event IceWindCastle GuildMember", rate: 10 },
       { name: "Event IceWindCastle Player", rate: 10 },
       { name: "Event LastManStanding Winner Reward", rate: 10 },
       { name: "Event Raffle HitOrder 2", rate: 10 },
-      { name: "Event Raffle HitOrder 3", rate: 1000 },
+
       { name: "Event Raffle Lotto 2", rate: 10 },
-      { name: "Event Raffle Lotto 3", rate: 1000 },
+
       { name: "Event ScrambleWord Level 2", rate: 10 },
       { name: "Firecracker", rate: 10000 },
       { name: "Gold Medal", rate: 10000 },
@@ -23927,14 +23359,12 @@ const drops = [
       { name: "Kundun Box+2", rate: 20000 },
       { name: "Love Heart", rate: 10000 },
       { name: "Luck Box", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Monkey White", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 10 },
+
       { name: "Roomy Card Box (Lower)", rate: 1000 },
       { name: "Rooster Green", rate: 200 },
       { name: "Rooster Purple", rate: 200 },
@@ -23963,7 +23393,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
+
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
@@ -24009,8 +23439,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -24021,7 +23451,6 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -24029,9 +23458,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -24040,7 +23468,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -24048,9 +23475,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -24059,7 +23485,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -24067,9 +23492,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -24078,7 +23502,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -24086,8 +23509,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -24096,16 +23519,14 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
     item: "Symbol of Kundun",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 1300 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 800 },
+      { name: "Event Chaos Castle 1", rate: 1300 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 800 },
       { name: "Event IceWindCastle GuildMember", rate: 800 },
       { name: "Event IceWindCastle Player", rate: 800 },
@@ -24113,7 +23534,6 @@ const drops = [
       { name: "Event Raffle HitOrder 2", rate: 800 },
       { name: "Event Raffle Lotto 2", rate: 800 },
       { name: "Event ScrambleWord Level 2", rate: 800 },
-      { name: "ResetSystem Regular", rate: 800 },
     ],
   },
   {
@@ -24136,14 +23556,13 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Elemental Talisman Box", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 100 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
-      { name: "MossMerchant01.xml", rate: 2000 },
-      { name: "MossMerchant02.xml", rate: 2000 },
-      { name: "MossMerchant03.xml", rate: 2000 },
-      { name: "MossMerchant04.xml", rate: 2000 },
-      { name: "MossMerchant05.xml", rate: 2000 },
-      { name: "MossMerchant11.xml", rate: 10000 },
+
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -24151,16 +23570,14 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Elemental Talisman Box", rate: 10000 },
-      { name: "Event HideAndSeek Round 1", rate: 200 },
-      { name: "Event Raffle HitOrder 3", rate: 200 },
-      { name: "Event Raffle Lotto 3", rate: 200 },
-      { name: "MossMerchant01.xml", rate: 2000 },
-      { name: "MossMerchant02.xml", rate: 2000 },
-      { name: "MossMerchant03.xml", rate: 2000 },
-      { name: "MossMerchant04.xml", rate: 2000 },
-      { name: "MossMerchant05.xml", rate: 2000 },
-      { name: "MossMerchant06.xml", rate: 10000 },
-      { name: "MossMerchant08.xml", rate: 10000 },
+
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 2000 },
+      { name: "Moss Merchant", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Roomy Card Box (Lower)", rate: 200 },
     ],
   },
@@ -24880,7 +24297,7 @@ const drops = [
   {
     item: "Three Vacancies",
     minLevel: 1,
-    maps: [{ name: "MossMerchant11.xml", rate: 10000 }],
+    maps: [{ name: "Moss Merchant", rate: 10000 }],
   },
   {
     item: "Thunder Blade",
@@ -24891,9 +24308,8 @@ const drops = [
       { name: "Box of Kundun+5", rate: 10000 },
       { name: "Buff Gladiators Drop", rate: 10000 },
       { name: "Dark Elf", rate: 10000 },
-      { name: "Event ChaosCastle 1", rate: 500 },
-      { name: "Event DevilSquare Rank Reward", rate: 50000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
+      { name: "Event Chaos Castle 1", rate: 500 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -24906,10 +24322,9 @@ const drops = [
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix LuckyCoin10", rate: 10000 },
-      { name: "Mix LuckyCoin20", rate: 10000 },
+
       { name: "Mix Senior Reward", rate: 5000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "Sapi Queen", rate: 10000 },
       { name: "Shiny Earring Box (Left)", rate: 10000 },
       { name: "Shiny Earring Box (Right)", rate: 10000 },
@@ -24934,11 +24349,11 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Kundun", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -24956,8 +24371,7 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -24976,8 +24390,7 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Nightmare", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
@@ -24996,10 +24409,10 @@ const drops = [
       { name: "Box of Kundun+3", rate: 10000 },
       { name: "Box of Kundun+4", rate: 10000 },
       { name: "Box of Kundun+5", rate: 10000 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
+
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix CherryBlossomGold Reward", rate: 700 },
+
       { name: "Mix Maple Leaf Reward", rate: 700 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Red Chocolate Box", rate: 10000 },
@@ -25012,10 +24425,9 @@ const drops = [
     item: "Thunder Staff",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 10000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
-      { name: "MossMerchant02.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
       { name: "Orange Candy Box", rate: 10000 },
       { name: "Pink Chocolate Box", rate: 10000 },
       { name: "Purple Chaos Box", rate: 10000 },
@@ -25036,7 +24448,6 @@ const drops = [
     item: "Tiger Bow",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -25101,7 +24512,7 @@ const drops = [
     item: "Titan  Armor",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -25115,7 +24526,7 @@ const drops = [
     item: "Titan  Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -25129,7 +24540,7 @@ const drops = [
     item: "Titan  Helm",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -25143,7 +24554,7 @@ const drops = [
     item: "Titan  Pants",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -25157,7 +24568,7 @@ const drops = [
     item: "Titan Boots",
     minLevel: 1,
     maps: [
-      { name: "Event ChaosCastle 1", rate: 400 },
+      { name: "Event Chaos Castle 1", rate: 400 },
       { name: "Medusa", rate: 600 },
       { name: "Seed Capsule (Earth)", rate: 5000 },
       { name: "Seed Capsule (Fire)", rate: 5000 },
@@ -25177,7 +24588,6 @@ const drops = [
     item: "Tomahawk",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
       { name: "Heaven Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -25227,8 +24637,7 @@ const drops = [
       { name: "Blue Chocolate Box", rate: 10000 },
       { name: "Dark Blue Candy Box", rate: 10000 },
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 5000 },
@@ -25243,8 +24652,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Red Box", rate: 5000 },
     ],
   },
@@ -25257,8 +24665,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Red Box", rate: 5000 },
     ],
   },
@@ -25271,8 +24678,7 @@ const drops = [
       { name: "Kundun Box+2", rate: 10000 },
       { name: "Mayas Left Hand", rate: 10000 },
       { name: "Mayas Right Hand", rate: 10000 },
-      { name: "Mix LuckyCoin10", rate: 6200 },
-      { name: "Mix LuckyCoin20", rate: 5500 },
+
       { name: "Mix Senior Reward", rate: 5000 },
       { name: "Red Box", rate: 5000 },
     ],
@@ -25374,9 +24780,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25387,7 +24792,6 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25395,9 +24799,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25406,7 +24809,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25414,9 +24816,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25425,7 +24826,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25433,9 +24833,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25444,7 +24843,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25452,9 +24850,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 30000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25463,7 +24860,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25575,7 +24971,6 @@ const drops = [
     item: "Vine Armor",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -25591,7 +24986,6 @@ const drops = [
     item: "Vine Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -25607,7 +25001,6 @@ const drops = [
     item: "Vine Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -25623,7 +25016,6 @@ const drops = [
     item: "Vine Helm",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -25639,7 +25031,6 @@ const drops = [
     item: "Vine Pants",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 40000 },
       { name: "Green Chaos Box", rate: 10000 },
       { name: "Kundun Box+1", rate: 10000 },
       { name: "Light Purple Candy Box", rate: 10000 },
@@ -25681,7 +25072,7 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Kundun Box+2", rate: 10000 },
-      { name: "MossMerchant04.xml", rate: 10000 },
+      { name: "Moss Merchant", rate: 10000 },
     ],
   },
   {
@@ -25736,9 +25127,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25749,7 +25139,6 @@ const drops = [
       { name: "Kundun", rate: 10000 },
       { name: "Nightmare", rate: 10000 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25757,9 +25146,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25768,7 +25156,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25776,9 +25163,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25787,7 +25173,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -25795,9 +25180,8 @@ const drops = [
     minLevel: 1,
     maps: [
       { name: "Buff Gladiators Drop", rate: 1000 },
-      { name: "Event ChaosCastle 1", rate: 885 },
-      { name: "Event DevilSquare Rank Reward", rate: 20000 },
-      { name: "Event HideAndSeek Round 2", rate: 85 },
+      { name: "Event Chaos Castle 1", rate: 885 },
+
       { name: "Event IceWindCastle GuildMaster", rate: 85 },
       { name: "Event IceWindCastle GuildMember", rate: 85 },
       { name: "Event IceWindCastle Player", rate: 85 },
@@ -25806,7 +25190,6 @@ const drops = [
       { name: "Event Raffle Lotto 2", rate: 85 },
       { name: "Event ScrambleWord Level 2", rate: 85 },
       { name: "Red Box", rate: 10000 },
-      { name: "ResetSystem Regular", rate: 85 },
     ],
   },
   {
@@ -26006,8 +25389,6 @@ const drops = [
     item: "Wind Armor",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -26017,9 +25398,9 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
     ],
@@ -26028,8 +25409,6 @@ const drops = [
     item: "Wind Boots",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -26039,9 +25418,9 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
     ],
@@ -26050,8 +25429,6 @@ const drops = [
     item: "Wind Gloves",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -26061,9 +25438,9 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
     ],
@@ -26072,8 +25449,6 @@ const drops = [
     item: "Wind Helm",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -26083,9 +25458,9 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
     ],
@@ -26094,8 +25469,6 @@ const drops = [
     item: "Wind Pants",
     minLevel: 1,
     maps: [
-      { name: "Event DevilSquare Rank Reward", rate: 100000 },
-      { name: "Event HideAndSeek Round 2", rate: 1 },
       { name: "Event IceWindCastle GuildMaster", rate: 1 },
       { name: "Event IceWindCastle GuildMember", rate: 1 },
       { name: "Event IceWindCastle Player", rate: 1 },
@@ -26105,9 +25478,9 @@ const drops = [
       { name: "Event ScrambleWord Level 2", rate: 1 },
       { name: "Green Ribbon Box", rate: 10000 },
       { name: "Medusa", rate: 600 },
-      { name: "Mix CherryBlossomGold Reward", rate: 1000 },
+
       { name: "Mix Maple Leaf Reward", rate: 1000 },
-      { name: "ResetSystem Regular", rate: 1 },
+
       { name: "WarriorRing40", rate: 10000 },
       { name: "WarriorRing80", rate: 10000 },
     ],
@@ -26137,12 +25510,12 @@ const drops = [
       { name: "Baseball Intermediate Box", rate: 10000 },
       { name: "Baseball Lower Case", rate: 10000 },
       { name: "Baseball Senior Box", rate: 10000 },
-      { name: "Event Gift Box", rate: 10000 },
+
       { name: "Event Higher Box", rate: 10000 },
       { name: "Event Lower Box", rate: 10000 },
       { name: "Event Luxuary Box", rate: 10000 },
       { name: "Event Medium Box", rate: 10000 },
-      { name: "GM Gift Box", rate: 10000 },
+
       { name: "PlayTime Box", rate: 10000 },
     ],
   },
@@ -26216,9 +25589,9 @@ const drops = [
       { name: "[Lvl 3] Soul Converter Box", rate: 13500 },
       { name: "[Lvl 4] Soul Converter Box", rate: 13400 },
       { name: "[Lvl 5] Soul Converter Box", rate: 13300 },
-      { name: "[Lvl 3] Monster Soul Converter", rate: 13500 },
-      { name: "[Lvl 4] Monster Soul Converter", rate: 13400 },
-      { name: "[Lvl 5] Monster Soul Converter", rate: 13300 },
+      { name: "[Lvl3] Monster Soul Converter", rate: 13500 },
+      { name: "[Lvl4] Monster Soul Converter", rate: 13400 },
+      { name: "[Lvl5] Monster Soul Converter", rate: 13300 },
     ],
   },
   {

@@ -126,7 +126,7 @@ export default {
       },
     },
     serverInfo: {
-      title: "Server Information & Settings",
+      title: "Server Information",
       intro:
         "Here are the key server rates, rewards, and useful commands to help you progress efficiently. Keep track of event timers, reset rewards, and boss respawns to maximize your gains.",
       list: {
