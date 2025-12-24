@@ -426,7 +426,7 @@ function Info({ user, currentTheme, onThemeChange }) {
                               {translate("dropSearch.droprate")}
                             </li>
 
-                            {res.minLevel > 0 && (
+                            {res.source === "map" && res.minLevel > 0 && (
                               <li>
                                 <span
                                   style={{
