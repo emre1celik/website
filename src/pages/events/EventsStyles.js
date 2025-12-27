@@ -79,12 +79,10 @@ export const EventNameWrapper = styled.div`
 
   color: #ffffffff;
   font-weight: 600;
-  border-bottom: 1px dotted rgba(255, 255, 255, 0.6);
   transition: all 0.2s ease;
 
   &:hover {
     color: #ffffffff;
-    text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
     transform: scale(1.03);
   }
 
