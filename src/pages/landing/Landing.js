@@ -8,17 +8,15 @@ import {
   LandingButton,
   ResponsiveIcon,
   LandingButtonLabel,
-} from "./LandingStyles";
-import Footer from "../../components/footer/Footer";
-import { Helmet } from "react-helmet";
-import { useTranslation } from "../../context/TranslationContext";
-import {
   LandingFeatures,
   FeatureCard,
   FeatureIcon,
   FeatureTitle,
   FeatureText,
 } from "./LandingStyles";
+import Footer from "../../components/footer/Footer";
+import { Helmet } from "react-helmet";
+import { useTranslation } from "../../context/TranslationContext";
 import { faDragon, faTrophy, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 function Landing({ user, currentTheme, onThemeChange }) {
@@ -31,14 +29,6 @@ function Landing({ user, currentTheme, onThemeChange }) {
           Myra MuOnline - Season 19 Episode 2-3 | MU Online Private Server |
           Download & Play
         </title>
-        <meta
-          name="description"
-          content="Join Myra MuOnline Season 19 Episode 2-3! Play the ultimate MU Online private server. Download, register, and start your adventure today. Fast servers, fun events, and active community."
-        />
-        <meta
-          name="keywords"
-          content="mu online, muonline, mu, myra, myra muonline, myra season 19, myra season 19 episode 2, myra season 19 episode 3, myra private server, download mu online, play mu online"
-        />
       </Helmet>
 
       <LandingWrapper>
@@ -50,24 +40,26 @@ function Landing({ user, currentTheme, onThemeChange }) {
 
           <LandingButtons>
             <Link to="/downloads" style={{ textDecoration: "none" }}>
-              <LandingButton className="download">
+              <LandingButton>
                 <ResponsiveIcon icon={faDownload} />
-                {translate("landing.download")}{" "}
+                {translate("landing.download")}
                 <LandingButtonLabel>
                   {translate("landing.client")}
                 </LandingButtonLabel>
               </LandingButton>
             </Link>
+
             <Link to="/register" style={{ textDecoration: "none" }}>
-              <LandingButton className="register">
+              <LandingButton>
                 <ResponsiveIcon icon={faUserPlus} />
-                {translate("landing.register")}{" "}
+                {translate("landing.register")}
                 <LandingButtonLabel>
                   {translate("landing.account")}
                 </LandingButtonLabel>
               </LandingButton>
             </Link>
           </LandingButtons>
+
           <LandingFeatures>
             <FeatureCard>
               <FeatureIcon icon={faDragon} />
@@ -88,6 +80,7 @@ function Landing({ user, currentTheme, onThemeChange }) {
             </FeatureCard>
           </LandingFeatures>
         </LandingHero>
+
         <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </LandingWrapper>
     </>
