@@ -435,6 +435,17 @@ export default {
     client: "Klient",
     register: "Registreeru",
     account: "Konto",
+    feature1Title: "Hooaeg 19 Episood 2–3",
+    feature1Desc:
+      "Koge uusimat MU Online sisu tasakaalustatud mänguviisi ja kaasaegsete funktsioonidega.",
+
+    feature2Title: "Kohandatud Süsteemid",
+    feature2Desc:
+      "Edetabelid, sündmused ja saavutused, mis premeerivad võistlust ja arengut.",
+
+    feature3Title: "Rahvusvaheline ja Lõbus",
+    feature3Desc:
+      "Stabiilsed serverid, rahulik tempo ja sõbralik globaalne kogukond.",
   },
   footer: {
     rights: "© 2025 MyraMU. Kõik õigused kaitstud.",

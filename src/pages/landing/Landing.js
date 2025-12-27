@@ -12,6 +12,15 @@ import {
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
+import {
+  LandingFeatures,
+  FeatureCard,
+  FeatureIcon,
+  FeatureTitle,
+  FeatureText,
+} from "./LandingStyles";
+import { faDragon, faTrophy, faGlobe } from "@fortawesome/free-solid-svg-icons";
+
 function Landing({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
 
@@ -59,6 +68,25 @@ function Landing({ user, currentTheme, onThemeChange }) {
               </LandingButton>
             </Link>
           </LandingButtons>
+          <LandingFeatures>
+            <FeatureCard>
+              <FeatureIcon icon={faDragon} />
+              <FeatureTitle>{translate("landing.feature1Title")}</FeatureTitle>
+              <FeatureText>{translate("landing.feature1Desc")}</FeatureText>
+            </FeatureCard>
+
+            <FeatureCard>
+              <FeatureIcon icon={faTrophy} />
+              <FeatureTitle>{translate("landing.feature2Title")}</FeatureTitle>
+              <FeatureText>{translate("landing.feature2Desc")}</FeatureText>
+            </FeatureCard>
+
+            <FeatureCard>
+              <FeatureIcon icon={faGlobe} />
+              <FeatureTitle>{translate("landing.feature3Title")}</FeatureTitle>
+              <FeatureText>{translate("landing.feature3Desc")}</FeatureText>
+            </FeatureCard>
+          </LandingFeatures>
         </LandingHero>
         <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </LandingWrapper>

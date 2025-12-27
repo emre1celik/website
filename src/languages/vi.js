@@ -335,6 +335,17 @@ export default {
     client: "Client",
     register: "Đăng ký",
     account: "Tài khoản",
+    feature1Title: "Mùa 19 Tập 2–3",
+    feature1Desc:
+      "Trải nghiệm nội dung MU Online mới nhất với lối chơi cân bằng và tính năng hiện đại.",
+
+    feature2Title: "Hệ Thống Tùy Chỉnh",
+    feature2Desc:
+      "Bảng xếp hạng, sự kiện và thành tựu được thiết kế để thưởng cho cạnh tranh và tiến bộ.",
+
+    feature3Title: "Quốc Tế & Vui Vẻ",
+    feature3Desc:
+      "Máy chủ ổn định, nhịp độ dễ dàng và cộng đồng toàn cầu thân thiện.",
   },
   navigation: {
     home: "Trang chủ",

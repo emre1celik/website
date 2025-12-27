@@ -18,7 +18,6 @@ export default {
       bag: "(Reward)",
     },
   },
-
   chaosCombination: {
     title: "Chaos Combination Rates",
     intro:
@@ -345,6 +344,17 @@ export default {
     client: "Client",
     register: "Register",
     account: "Account",
+    feature1Title: "Season 19 Episode 2–3",
+    feature1Desc:
+      "Experience the latest MU Online content with balanced gameplay and modern features.",
+
+    feature2Title: "Custom Systems",
+    feature2Desc:
+      "Highscores, events and achievements built to reward competition and progress.",
+
+    feature3Title: "International Server",
+    feature3Desc:
+      "Stable servers, easy pace leveling and a friendly international community.",
   },
   navigation: {
     home: "Home",

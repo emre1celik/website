@@ -434,6 +434,16 @@ export default {
     client: "Klients",
     register: "Reģistrēties",
     account: "Konts",
+    feature1Title: "19. Sezona 2–3 Epizode",
+    feature1Desc:
+      "Izbaudi jaunāko MU Online saturu ar līdzsvarotu spēli un modernām iespējām.",
+
+    feature2Title: "Pielāgotas Sistēmas",
+    feature2Desc:
+      "Highscores, notikumi un sasniegumi, kas veicina sacensību un progresu.",
+
+    feature3Title: "Starptautisks un Jautrs",
+    feature3Desc: "Stabili serveri, viegls temps un draudzīga globāla kopiena.",
   },
   footer: {
     rights: "© 2025 MyraMU. Visas tiesības aizsargātas.",

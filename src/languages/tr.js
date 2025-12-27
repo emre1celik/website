@@ -432,6 +432,17 @@ export default {
     client: "İstemci",
     register: "Kayıt Ol",
     account: "Hesap",
+    feature1Title: "Sezon 19 Bölüm 2–3",
+    feature1Desc:
+      "Dengeli oynanış ve modern özelliklerle en yeni MU Online içeriğini deneyimleyin.",
+
+    feature2Title: "Özel Sistemler",
+    feature2Desc:
+      "Rekabeti ve gelişimi ödüllendiren sıralamalar, etkinlikler ve başarılar.",
+
+    feature3Title: "Uluslararası ve Eğlenceli",
+    feature3Desc:
+      "Kararlı sunucular, kolay tempo ve dost canlısı küresel topluluk.",
   },
   footer: {
     rights: "© 2025 MyraMU. Tüm hakları saklıdır.",

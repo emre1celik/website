@@ -434,6 +434,17 @@ export default {
     client: "Klient",
     register: "Zarejestruj się",
     account: "Konto",
+    feature1Title: "Sezon 19 Odcinek 2–3",
+    feature1Desc:
+      "Poznaj najnowszą zawartość MU Online z wyważoną rozgrywką i nowoczesnymi funkcjami.",
+
+    feature2Title: "Systemy Niestandardowe",
+    feature2Desc:
+      "Rankingi, eventy i osiągnięcia stworzone, by nagradzać rywalizację i rozwój.",
+
+    feature3Title: "Międzynarodowy i Przyjemny",
+    feature3Desc:
+      "Stabilne serwery, spokojne tempo i przyjazna społeczność z całego świata.",
   },
   footer: {
     rights: "© 2025 MyraMU. Wszelkie prawa zastrzeżone.",
