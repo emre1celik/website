@@ -323,9 +323,9 @@ export default function ControlPanelProfile({
               padding: "0.7rem",
               borderRadius: "5px",
               backgroundColor: "rgba(176, 176, 176, 0.2)",
-              color: "white",
-              border: `1px solid white`,
-              borderLeft: "6px solid white",
+              color: "#CCC",
+              border: `1px solid #CCC`,
+              borderLeft: "6px solid #CCC",
             }}
           >
             {passwordMessage.text}

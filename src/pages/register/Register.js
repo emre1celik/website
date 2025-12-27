@@ -164,9 +164,9 @@ function Register({ user, currentTheme, onThemeChange }) {
                     borderRadius: "5px",
                     marginTop: "15px",
                     backgroundColor: "rgba(176, 176, 176, 0.2)",
-                    color: "white",
-                    border: `1px solid white`,
-                    borderLeft: "6px solid white",
+                    color: "#CCC",
+                    border: `1px solid #CCC`,
+                    borderLeft: "6px solid #CCC",
                   }}
                 >
                   {message.text}
