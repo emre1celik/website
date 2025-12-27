@@ -9,6 +9,7 @@ export const NavigationWrapper = styled.nav`
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   color: white;
   user-select: none;
 `;

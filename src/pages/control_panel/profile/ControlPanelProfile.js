@@ -322,14 +322,10 @@ export default function ControlPanelProfile({
               marginTop: "1rem",
               padding: "0.7rem",
               borderRadius: "5px",
-              backgroundColor:
-                passwordMessage.type === "success"
-                  ? "rgba(76, 175, 80, 0.2)"
-                  : "rgba(244, 67, 54, 0.2)",
-              color: passwordMessage.type === "success" ? "#4caf50" : "#f44336",
-              border: `1px solid ${
-                passwordMessage.type === "success" ? "#4caf50" : "#f44336"
-              }`,
+              backgroundColor: "rgba(176, 176, 176, 0.2)",
+              color: "white",
+              border: `1px solid white`,
+              borderLeft: "6px solid white",
             }}
           >
             {passwordMessage.text}

@@ -421,8 +421,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                         classNamesMap[key] || "Unknown Class"
                                       }
                                       style={{
-                                        width: "40px",
-                                        height: "40px",
+                                        width: "26px",
+                                        height: "26px",
                                         cursor: "pointer",
                                       }}
                                     />
@@ -553,8 +553,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                         alt={key}
                                         title={classNamesMap[key] || "Unknown"}
                                         style={{
-                                          width: "32px",
-                                          height: "32px",
+                                          width: "22px",
+                                          height: "22px",
                                         }}
                                       />
                                     );

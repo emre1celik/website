@@ -117,23 +117,10 @@ function Login({ user, onLogin, currentTheme, onThemeChange }) {
                   padding: "0.7rem",
                   borderRadius: "5px",
                   marginTop: "15px",
-                  backgroundColor:
-                    message.type === "success"
-                      ? "rgba(76, 175, 80, 0.2)"
-                      : "rgba(244, 67, 54, 0.2)",
-                  color:
-                    message.type === "success"
-                      ? currentTheme.primary
-                      : "#f44336",
-                  border: `1px solid ${
-                    message.type === "success"
-                      ? currentTheme.primary
-                      : "#f44336"
-                  }`,
-                  borderLeft:
-                    message.type === "success"
-                      ? "6px solid #4caf50"
-                      : "6px solid #f44336",
+                  backgroundColor: "rgba(176, 176, 176, 0.2)",
+                  color: "white",
+                  border: `1px solid white`,
+                  borderLeft: "6px solid white",
                 }}
               >
                 {message.text}
