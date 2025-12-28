@@ -64,6 +64,8 @@ export const ControlPanelContent = styled.main`
 
 export const ControlPanelBox = styled.div`
   background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   padding: 2rem 3rem;
   border-radius: 12px;
   width: 700px;

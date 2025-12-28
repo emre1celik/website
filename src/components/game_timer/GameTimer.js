@@ -44,7 +44,7 @@ function GameTimer() {
   }, [SERVER_UTC_OFFSET]); // rerun effect if offset changes
 
   return (
-    <div style={{ marginBottom: "5px" }}>
+    <div style={{ marginBottom: "5px", textAlign: "center" }}>
       {translate("events.currentGameTime")}: {serverTime}
     </div>
   );

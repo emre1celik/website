@@ -97,12 +97,9 @@ export const HighscoresBox = styled.div`
   height: 700px;
   max-width: 1200px;
 
-  background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.7) 100%
-    ),
-    rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 
   h2 {
     margin-bottom: 1.5rem;
