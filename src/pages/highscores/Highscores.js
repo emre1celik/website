@@ -456,7 +456,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                 {formatNumber(player.energy)}
                               </td>
                               <td className="hideOnSmall">
-                                //if leadership is 0 , show N/a
                                 {player.leadership === 0
                                   ? "N/A"
                                   : formatNumber(player.leadership)}
