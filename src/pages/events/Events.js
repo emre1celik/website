@@ -59,7 +59,7 @@ const invasionSchedule = {
     "22:30",
   ],
   "Golden Invasion": ["07:00", "11:00"],
-  "Muun Invasion": [
+  "Blue Dragon Invasion": [
     "01:15",
     "03:15",
     "05:15",
@@ -261,10 +261,10 @@ function Events({ user, currentTheme, onThemeChange }) {
       where: "Lorencia",
       rewards: "1-2,000 Ruud, Jewels, Accesories, Ancient items",
     },
-    "Muun Invasion": {
+    "Blue Dragon Invasion": {
       enter: "Automatic invasion",
       where: "Lorencia",
-      rewards: "Muun eggs",
+      rewards: "Jewels",
     },
     "Arka War": {
       enter: "Guild registration required",
