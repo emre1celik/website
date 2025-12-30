@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
-export const CookieOverlay = styled.div`
+export const CookieOverlay = styled.div.attrs({
+  "aria-hidden": "true",
+  "data-nosnippet": "",
+})`
   position: fixed;
   top: 0;
   left: 0;
@@ -10,23 +13,19 @@ export const CookieOverlay = styled.div`
   z-index: 9998;
 `;
 
-export const CookieBannerWrapper = styled.div`
+export const CookieBannerWrapper = styled.div.attrs({
+  "aria-hidden": "true",
+  "data-nosnippet": "",
+})`
   position: fixed;
-  top: 50%; 
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(200, 200, 200, 0.95);
   color: #000;
   padding: 1.5rem 2rem;
   border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   z-index: 9999;
-  font-size: 1rem;
-  max-width: 90%;
-  width: 400px;
 `;
 
 export const CookieButtonGroup = styled.div`

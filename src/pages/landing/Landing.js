@@ -8,16 +8,10 @@ import {
   LandingButton,
   ResponsiveIcon,
   LandingButtonLabel,
-  LandingFeatures,
-  FeatureCard,
-  FeatureIcon,
-  FeatureTitle,
-  FeatureText,
 } from "./LandingStyles";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
-import { faDragon, faTrophy, faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 function Landing({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
