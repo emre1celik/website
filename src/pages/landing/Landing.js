@@ -26,7 +26,7 @@ function Landing({ user, currentTheme, onThemeChange }) {
     <>
       <Helmet>
         <title>
-          Myra MuOnline - Season 19 Episode 2-3 | MU Online Private Server |
+          Myra MU Online - Season 19 Episode 2-3 | MU Online Private Server |
           Download & Play
         </title>
       </Helmet>
