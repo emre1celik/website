@@ -221,21 +221,10 @@ export default function ControlPanelAchievements({
                   width: "100%",
                   padding: "0.5rem",
                   borderRadius: "5px",
-                  backgroundColor:
-                    messages[ach.key].type === "success"
-                      ? "rgba(76, 175, 80, 0.2)"
-                      : "rgba(244, 67, 54, 0.2)",
-                  color:
-                    messages[ach.key].type === "success"
-                      ? "#4caf50"
-                      : "#f44336",
-                  border: `1px solid ${
-                    messages[ach.key].type === "success" ? "#4caf50" : "#f44336"
-                  }`,
-                  borderLeft:
-                    messages[ach.key].type === "success"
-                      ? "6px solid #4caf50"
-                      : "6px solid #f44336",
+                  backgroundColor: "rgba(176, 176, 176, 0.2)",
+                  color: "rgb(204, 204, 204)",
+                  border: "1px solid rgb(204, 204, 204)",
+                  borderLeft: "6px solid rgb(204, 204, 204)",
                 }}
               >
                 {messages[ach.key].type === "success" ? (
