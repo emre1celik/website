@@ -18,7 +18,7 @@ export const HighscoresContent = styled.main`
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 1rem;
   animation: fadeInUp 0.8s ease both;
 
   @keyframes fadeInUp {
@@ -112,11 +112,11 @@ export const HighscoresBox = styled.div`
     width: 8px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #666;
+    background: rgba(0, 0, 0, 0.35);
     border-radius: 4px;
   }
   &::-webkit-scrollbar-thumb:hover {
-    background: #666;
+    background: rgba(0, 0, 0, 0.35);
   }
 `;
 

@@ -119,7 +119,7 @@ export const RegisterBox = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.35);
     border-radius: 3px;
   }
 `;

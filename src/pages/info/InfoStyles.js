@@ -90,12 +90,12 @@ export const InfoBox = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: #666;
+    background: rgba(0, 0, 0, 0.35);
     border-radius: 4px;
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: #666;
+    background: rgba(0, 0, 0, 0.35);
   }
 
   h2 {
