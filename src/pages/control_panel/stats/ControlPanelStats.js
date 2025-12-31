@@ -60,6 +60,8 @@ export default function ControlPanelStats({
         {translate("controlPanel.stats.noCharacters")}
       </div>
     );
+  const formatStat = (value) =>
+    typeof value === "number" ? value.toLocaleString() : value;
 
   return (
     <div>
@@ -106,20 +108,20 @@ export default function ControlPanelStats({
                 {char.reset}
               </p>
               <p>
-                <strong>Strength:</strong> {char.strength}
+                <strong>Strength:</strong> {formatStat(char.strength)}
               </p>
               <p>
-                <strong>Agility:</strong> {char.agility}
+                <strong>Agility:</strong> {formatStat(char.agility)}
               </p>
               <p>
-                <strong>Vitality:</strong> {char.vitality}
+                <strong>Vitality:</strong> {formatStat(char.vitality)}
               </p>
               <p>
-                <strong>Energy:</strong> {char.energy}
+                <strong>Energy:</strong> {formatStat(char.energy)}
               </p>
               {char.leadership > 0 && (
                 <p>
-                  <strong>Leadership:</strong> {char.leadership}
+                  <strong>Leadership:</strong> {formatStat(char.leadership)}
                 </p>
               )}
               {char.giant_model !== null && (
