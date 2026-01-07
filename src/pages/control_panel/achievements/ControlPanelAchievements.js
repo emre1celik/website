@@ -92,7 +92,7 @@ export default function ControlPanelAchievements({
         ...prev,
         [milestoneKey]: {
           type: "error",
-          text: "Server error while claiming reward",
+          text: "Something went wrong while claiming reward",
         },
       }));
     } finally {

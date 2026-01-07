@@ -66,7 +66,7 @@ export default function ControlPanelProfile({
         alert(data.error || "Payment creation failed.");
       }
     } catch (err) {
-      alert("Server error: " + err.message);
+      alert("Something went wrong: " + err.message);
     } finally {
       setPayLoading(false);
     }

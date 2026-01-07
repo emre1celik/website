@@ -114,13 +114,15 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
       } else {
         setPaymentMessage({
           type: "error",
-          text: "❌ Something went wrong while processing your payment. If you were charged, your WCoin has already been delivered.",
+          text:
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
+            "Something went wrong while processing your payment. If you were charged, your WCoin has already been delivered.",
         });
       }
     } catch (err) {
       setPaymentMessage({
         type: "error",
-        text: "❌ Server error: " + err.message,
+        text: "Something went wrong: " + err.message,
       });
     }
   }
@@ -177,7 +179,13 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
       if (response.ok) {
         setCharacterActionMessage({
           type: "success",
-          text: "✅ " + data.message,
+          text:
+            (
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                style={{ marginRight: "5px" }}
+              />
+            ) + data.message,
         });
         await fetchCharacters(); // refresh list
       } else {
@@ -194,7 +202,10 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
     } catch (err) {
       setCharacterActionMessage({
         type: "error",
-        text: "❌ Server error: " + err.message,
+        text:
+          <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
+          "Something went wrong: " +
+          err.message,
       });
     } finally {
       setActionLoading((prev) => ({ ...prev, [key]: false }));
@@ -225,7 +236,13 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
       if (response.ok) {
         setCharacterActionMessage({
           type: "success",
-          text: "✅ " + data.message,
+          text:
+            (
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                style={{ marginRight: "5px" }}
+              />
+            ) + data.message,
         });
         await fetchCharacters(); // refresh after change
       } else {
@@ -242,7 +259,10 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
     } catch (err) {
       setCharacterActionMessage({
         type: "error",
-        text: "❌ Server error: " + err.message,
+        text:
+          <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
+          "Something went wrong: " +
+          err.message,
       });
     }
   }
@@ -292,7 +312,7 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
         return [];
       }
     } catch (err) {
-      //console.error("Server error:", err);
+      //console.error("Something went wrong:", err);
       setCharacters([]);
       return [];
     } finally {
@@ -350,7 +370,7 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
           setProfile(null);
         }
       } catch (err) {
-        //console.error("Server error:", err);
+        //console.error("Something went wrong:", err);
         setProfile(null);
       } finally {
         setLoading(false);
@@ -399,14 +419,23 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
       const data = await response.json();
 
       if (response.ok) {
-        setPasswordMessage({ type: "success", text: "✅ " + data.message });
+        setPasswordMessage({
+          type: "success",
+          text:
+            (
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                style={{ marginRight: "5px" }}
+              />
+            ) + data.message,
+        });
         setPassword("");
         setConfirmPassword("");
       } else {
         setPasswordMessage({
           type: "error",
           text:
-            "❌ " +
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
             (data.error ||
               data.errors?.new_password?.[0] ||
               "Failed to update password"),
@@ -415,7 +444,10 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
     } catch (err) {
       setPasswordMessage({
         type: "error",
-        text: "❌ Server error: " + err.message,
+        text:
+          <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
+          "Something went wrong: " +
+          err.message,
       });
     } finally {
       setChangingPassword(false);
