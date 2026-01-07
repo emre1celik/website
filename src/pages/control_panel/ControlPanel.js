@@ -41,7 +41,7 @@ import ControlPanelStats from "./stats/ControlPanelStats";
 import ControlPanelAchievements from "./achievements/ControlPanelAchievements";
 import { useLocation } from "react-router-dom";
 
-function ControlPanel({ user, currentTheme, onThemeChange }) {
+function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
   const { translate } = useTranslation();
   const [characterActionMessage, setCharacterActionMessage] = useState(null);
   const [activeTab, setActiveTab] = useState("profile");
@@ -478,11 +478,7 @@ function ControlPanel({ user, currentTheme, onThemeChange }) {
             paymentMessage={paymentMessage}
             openDonateModal={openDonateModal}
             setOpenDonateModal={setOpenDonateModal}
-            onLogout={() => {
-              // clears the user globally
-              localStorage.removeItem("apiToken");
-              window.location.reload(); // simplest way to force Navigation to update
-            }}
+            onLogout={onLogout}
             currentTheme={currentTheme}
           />
         );

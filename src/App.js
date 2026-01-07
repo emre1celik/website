@@ -41,6 +41,12 @@ function App() {
     }
   }, []);
 
+  const handleLogout = () => {
+    localStorage.removeItem("apiToken");
+    localStorage.removeItem("username");
+    setUser(null);
+  };
+
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem("theme");
     return themes[saved] || redTheme;
@@ -109,6 +115,7 @@ function App() {
                       user={user}
                       currentTheme={theme}
                       onThemeChange={handleThemeChange}
+                      onLogout={handleLogout}
                     />
                   ) : (
                     <Login
