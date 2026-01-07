@@ -27,7 +27,7 @@ function Login({ user, onLogin, currentTheme, onThemeChange }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
-    setMessage({ text: "", type: "" }); // ✅ reset correctly
+    setMessage({ text: "", type: "" });
 
     try {
       const response = await fetch("https://api.myramu.online/api/login", {

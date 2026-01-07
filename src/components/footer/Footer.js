@@ -5,7 +5,7 @@ import { useTheme } from "styled-components";
 
 function Footer({ onThemeChange }) {
   const { translate } = useTranslation();
-  const currentTheme = useTheme(); // ✅ from ThemeProvider
+  const currentTheme = useTheme();
 
   return (
     <FooterWrapper>
