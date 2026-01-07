@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCheckCircle,
+  faLock,
+  faSpinner,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   RegisterWrapper,
   RegisterContent,
@@ -39,7 +43,12 @@ function Register({ user, currentTheme, onThemeChange }) {
     // Password mismatch
     if (form.password !== form.confirmPassword) {
       setMessage({
-        text: translate("register.passwordMismatch"),
+        text: (
+          <>
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+            {translate("register.passwordMismatch")}
+          </>
+        ),
         type: "error",
       });
       return;
@@ -62,26 +71,68 @@ function Register({ user, currentTheme, onThemeChange }) {
       const data = await response.json();
 
       if (response.ok) {
-        setMessage({ text: translate("register.success"), type: "success" });
+        setMessage({
+          text: (
+            <>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                style={{ marginRight: "5px" }}
+              />
+              {translate("register.success")}
+            </>
+          ),
+          type: "success",
+        });
       } else if (data.errors) {
         if (data.errors.account)
-          setMessage({ text: data.errors.account[0], type: "error" });
+          setMessage({
+            text: (
+              <>
+                <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+                {data.errors.account[0]}
+              </>
+            ),
+            type: "error",
+          });
         else if (data.errors.email)
-          setMessage({ text: data.errors.email[0], type: "error" });
+          setMessage({
+            text: (
+              <>
+                <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+                {data.errors.email[0]}
+              </>
+            ),
+            type: "error",
+          });
         else
           setMessage({
-            text: translate("register.somethingWrong"),
+            text: (
+              <>
+                <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+                {translate("register.somethingWrong")}
+              </>
+            ),
             type: "error",
           });
       } else {
         setMessage({
-          text: translate("register.somethingWrong"),
+          text: (
+            <>
+              <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+              {translate("register.somethingWrong")}
+            </>
+          ),
           type: "error",
         });
       }
     } catch (err) {
       setMessage({
-        text: translate("register.serverError", { error: err.message }),
+        text: (
+          <>
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+            {translate("register.serverError", { error: err.message })}
+          </>
+        ),
         type: "error",
       });
     } finally {

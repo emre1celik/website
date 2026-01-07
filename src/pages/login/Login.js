@@ -1,7 +1,11 @@
 import { useState } from "react";
 import Navigation from "../../components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCheckCircle,
+  faLock,
+  faSpinner,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link, useNavigate } from "react-router-dom";
 import { LoginWrapper, LoginContent, LoginBox } from "./LoginStyles";
 import Footer from "../../components/footer/Footer";
@@ -46,14 +50,38 @@ function Login({ user, onLogin, currentTheme, onThemeChange }) {
         localStorage.setItem("apiToken", token);
         localStorage.setItem("username", data.username);
         onLogin(data.username);
-        setMessage({ text: translate("login.success"), type: "success" });
+        setMessage({
+          text: (
+            <>
+              <FontAwesomeIcon
+                icon={faCheckCircle}
+                style={{ marginRight: "5px" }}
+              />{" "}
+              {translate("login.success")}
+            </>
+          ),
+          type: "success",
+        });
         navigate("/control-panel");
       } else {
-        setMessage({ text: translate("login.invalid"), type: "error" });
+        setMessage({
+          text: (
+            <>
+              <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />{" "}
+              {translate("login.invalid")}
+            </>
+          ),
+          type: "error",
+        });
       }
     } catch (err) {
       setMessage({
-        text: translate("login.serverError", { error: err.message }),
+        text: (
+          <>
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />{" "}
+            {translate("login.serverError", { error: err.message })}
+          </>
+        ),
         type: "error",
       });
     } finally {
