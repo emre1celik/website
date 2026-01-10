@@ -49,7 +49,7 @@ function App() {
 
   const [theme, setTheme] = useState(() => {
     const saved = localStorage.getItem("theme");
-    return themes[saved] || redTheme;
+    return themes[saved] || greenTheme;
   });
 
   const [fading, setFading] = useState(false);
