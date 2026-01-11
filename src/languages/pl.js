@@ -426,7 +426,41 @@ export default {
     accept: "Akceptuję",
     decline: "Odrzuć",
   },
+  chatbot: {
+    title: "Asystent Przewodnika",
+    send: "Wyślij",
+    placeholder: "Zadaj pytanie...",
+    typing: "Pisze",
+    you: "Napisałeś",
+    welcome:
+      "Cześć! 👋 Pomogę Ci z pytaniami i informacjami. Po prostu zapytaj! 🫡",
+    fallback:
+      "Przepraszam 😥, nie mam jeszcze tej informacji. Spróbuj na Discordzie.",
 
+    download: "Klienta gry możesz pobrać ze strony Pobieranie.",
+    font: "Jeśli widzisz kwadraty zamiast tekstu, pobierz i zainstaluj czcionkę ArialUni.",
+    season:
+      "Serwer działa na Season 19 Episode 2-3 z niestandardowymi systemami.",
+    events:
+      "Blood Castle, Devil Square i inwazje odbywają się często. Sprawdź stronę Wydarzeń.",
+    barracks:
+      "Aby rozpocząć quest 3 klasy, idź do Crywolf i porozmawiaj z NPC Werewolf Quarry.",
+    commands:
+      "Listę komend znajdziesz w Przewodnikach → Informacje o Serwerze.",
+    evolution:
+      "Informacje o questach klasowych są w Przewodnikach → Quests & Evolution.",
+    reset: "Reset dostępny na poziomie 400 komendą /reset.",
+    grandReset: "Grand Reset wymaga 100 resetów i daje potężne nagrody.",
+    maxStats: "Maksymalna wartość statystyki to 32,000.",
+    drops: "Drop zależy od map i potworów. Sprawdź Przewodniki.",
+
+    links: {
+      download: "Pobieranie",
+      events: "Wydarzenia",
+      guides: "Przewodniki",
+      fallback: "Discord",
+    },
+  },
   landing: {
     heading: "Witamy w MyraMU!",
     subheading: "Doświadcz najlepszej przygody MU online.",

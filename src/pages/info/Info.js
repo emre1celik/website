@@ -14,7 +14,6 @@ import {
   PageButton,
   PageInfo,
 } from "./InfoStyles";
-
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

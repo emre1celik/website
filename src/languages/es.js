@@ -430,7 +430,46 @@ export default {
     accept: "Aceptar",
     decline: "Rechazar",
   },
+  chatbot: {
+    title: "Asistente de Guía",
+    send: "Enviar",
+    placeholder: "Haz una pregunta...",
+    typing: "Escribiendo",
+    you: "Dijiste",
+    welcome:
+      "¡Hola! 👋 Puedo ayudarte si tienes preguntas, necesitas información o tienes algún problema. Pregúntame lo que quieras y trataré de ayudarte. 🫡",
+    fallback:
+      "Lo siento 😥, todavía no estoy seguro sobre eso. ¿Has intentado preguntar en nuestro canal de Discord?",
 
+    download:
+      "Puedes descargar el cliente del juego desde la página de Descargas.",
+    font: "Si ves cuadrados en lugar de texto, descarga e instala la fuente ArialUni. Puedes encontrarla en la página de Descargas debajo de los enlaces. Reinicia el cliente después de instalarla.",
+    season:
+      "Actualmente estamos en la Temporada 19 Episodio 2-3, con sistemas personalizados y tasas balanceadas.",
+    events:
+      "Eventos como Blood Castle, Devil Square e invasiones se realizan con frecuencia. Consulta la página de Eventos para ver horarios y recompensas.",
+    barracks:
+      "Para la misión de 3ª clase ve a Crywolf y habla con el NPC Werewolf Quarry para entrar a Barracks. Desde allí también puedes ir directamente al Dark Elf.",
+    commands:
+      "Para ver todos los comandos disponibles, visita la página de Guías y entra en Información del Servidor.",
+    evolution:
+      "Para información sobre misiones de cambio de clase, visita la sección Guías → Misiones y Evolución.",
+    reset:
+      "Puedes hacer reset al llegar al nivel 400 usando el comando /reset. Recibirás 5 WCoins, 100 Goblin Points y 200 Ruud.",
+    grandReset:
+      "El Grand Reset requiere 100 resets y otorga grandes recompensas. Recibirás 1,000 WCoins y 10,000 Goblin Points. Las estadísticas no se reinician.",
+    maxStats:
+      "Cada estadística tiene un máximo de 32,000 para mantener el balance del servidor.",
+    drops:
+      "Los drops dependen del mapa, monstruos y eventos. Puedes buscar ubicaciones exactas en Guías → Búsqueda de Ítems.",
+
+    links: {
+      download: "Ir a Descargas",
+      events: "Ir a Eventos",
+      guides: "Ir a Guías",
+      fallback: "Visitar Discord",
+    },
+  },
   landing: {
     heading: "¡Bienvenido a MyraMU!",
     subheading: "Experimenta la mejor aventura de MU online.",

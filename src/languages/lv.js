@@ -426,7 +426,38 @@ export default {
     accept: "Pieņemt",
     decline: "Noraidīt",
   },
+  chatbot: {
+    title: "Ceļveža Asistents",
+    send: "Sūtīt",
+    placeholder: "Uzdod jautājumu...",
+    typing: "Raksta",
+    you: "Tu teici",
+    welcome:
+      "Sveiks! 👋 Es varu palīdzēt ar jautājumiem vai informāciju. Droši jautā! 🫡",
+    fallback:
+      "Atvainojiet 😥, par šo man vēl nav informācijas. Mēģini Discord.",
 
+    download: "Spēles klientu vari lejupielādēt no Lejupielāžu lapas.",
+    font: "Ja redzi kvadrātus teksta vietā, lejupielādē ArialUni fontu no Lejupielāžu lapas.",
+    season: "Serveris darbojas Season 19 Episode 2-3 ar pielāgotām sistēmām.",
+    events:
+      "Blood Castle, Devil Square un citi notikumi notiek regulāri. Skaties Notikumu lapu.",
+    barracks:
+      "3. klases uzdevumam dodies uz Crywolf un runā ar Werewolf Quarry NPC.",
+    commands: "Komandu sarakstu atradīsi Ceļvežos sadaļā Servera Informācija.",
+    evolution: "Klases attīstības informācija ir Ceļveži → Quests & Evolution.",
+    reset: "Reset pieejams 400 līmenī ar komandu /reset.",
+    grandReset: "Grand Reset prasa 100 resetus un dod lielas balvas.",
+    maxStats: "Maksimālais stat ir 32,000.",
+    drops: "Dropi atkarīgi no kartēm un monstriem. Skaties Ceļvežus.",
+
+    links: {
+      download: "Lejupielādes",
+      events: "Notikumi",
+      guides: "Ceļveži",
+      fallback: "Discord",
+    },
+  },
   landing: {
     heading: "Laipni lūdzam MyraMU!",
     subheading: "Izbaudi ultimātu MU online piedzīvojumu.",

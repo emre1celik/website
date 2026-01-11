@@ -427,7 +427,41 @@ export default {
     accept: "Nõustu",
     decline: "Keeldu",
   },
+  chatbot: {
+    title: "Juhendi Assistent",
+    send: "Saada",
+    placeholder: "Esita küsimus...",
+    typing: "Kirjutab",
+    you: "Sina ütlesid",
+    welcome:
+      "Tere! 👋 Aitan sind küsimuste, info või probleemidega. Küsi julgelt! 🫡",
+    fallback:
+      "Vabandust 😥, ma ei tea seda veel. Proovi küsida meie Discordi kanalist.",
 
+    download: "Mängu kliendi saad alla laadida allalaadimiste lehelt.",
+    font: "Kui tekst kuvatakse ruutudena, laadi alla ja paigalda ArialUni font. See asub Allalaadimiste lehel.",
+    season:
+      "Server töötab Season 19 Episode 2-3 versioonil koos kohandatud süsteemidega.",
+    events:
+      "Blood Castle, Devil Square ja invasioonid toimuvad tihti. Vaata sündmuste lehte ajakava jaoks.",
+    barracks:
+      "3. klassi missiooniks mine Crywolfi ja räägi Werewolf Quarry NPC-ga Barracksisse teleportimiseks.",
+    commands: "Kõigi käskude loendi leiad Giidide lehelt Server Info alt.",
+    evolution: "Klassi arengu info leiad Giidid → Quests & Evolution.",
+    reset:
+      "Reset on võimalik tasemel 400 käsuga /reset. Saad WCoine, Goblin Punkte ja Ruudi.",
+    grandReset: "Grand Reset vajab 100 resetti ja annab võimsad auhinnad.",
+    maxStats: "Maksimaalne stat on 32,000 tasakaalu hoidmiseks.",
+    drops:
+      "Esemete drop sõltub kaartidest ja koletistest. Vaata Giidide lehte täpsemalt.",
+
+    links: {
+      download: "Ava Allalaadimised",
+      events: "Ava Sündmused",
+      guides: "Ava Giidid",
+      fallback: "Discord",
+    },
+  },
   landing: {
     heading: "Tere tulemast MyraMU-sse!",
     subheading: "Koge ülimat MU online seiklust.",

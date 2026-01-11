@@ -428,7 +428,39 @@ export default {
     accept: "Aceitar",
     decline: "Recusar",
   },
+  chatbot: {
+    title: "Assistente de Guia",
+    send: "Enviar",
+    placeholder: "Faça uma pergunta...",
+    typing: "Digitando",
+    you: "Você disse",
+    welcome:
+      "Olá! 👋 Posso ajudar com dúvidas, informações ou problemas. É só perguntar! 🫡",
+    fallback: "Desculpa 😥, ainda não tenho essa informação. Tente no Discord.",
 
+    download: "Você pode baixar o cliente do jogo na página de Downloads.",
+    font: "Se aparecerem quadrados no lugar do texto, instale a fonte ArialUni.",
+    season:
+      "Estamos rodando a Season 19 Episode 2-3 com sistemas personalizados.",
+    events:
+      "Eventos como Blood Castle e Devil Square acontecem frequentemente. Veja a página de Eventos.",
+    barracks:
+      "Para a quest da 3ª classe vá para Crywolf e fale com o NPC Werewolf Quarry.",
+    commands: "A lista de comandos está disponível na página de Guias.",
+    evolution:
+      "Informações sobre evolução de classes estão em Guias → Quests & Evolution.",
+    reset: "O reset pode ser feito no nível 400 usando /reset.",
+    grandReset: "Grand Reset requer 100 resets e oferece grandes recompensas.",
+    maxStats: "O limite máximo de stats é 32,000.",
+    drops: "Os drops dependem do mapa e monstros. Consulte os Guias.",
+
+    links: {
+      download: "Downloads",
+      events: "Eventos",
+      guides: "Guias",
+      fallback: "Discord",
+    },
+  },
   landing: {
     heading: "Bem-vindo ao MyraMU!",
     subheading: "Experimente a aventura definitiva de MU online.",

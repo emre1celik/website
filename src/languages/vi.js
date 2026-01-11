@@ -328,6 +328,39 @@ export default {
       <strong>⚠️ Lỗi font:</strong> Nếu bạn thấy ký tự bị lỗi (ô vuông), hãy tắt game, tải font (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) và cài đặt, sau đó mở lại game.
     `,
   },
+  chatbot: {
+    title: "Trợ Lý Hướng Dẫn",
+    send: "Gửi",
+    placeholder: "Đặt câu hỏi...",
+    typing: "Đang nhập",
+    you: "Bạn đã nói",
+    welcome:
+      "Xin chào! 👋 Tôi có thể giúp bạn với câu hỏi hoặc thông tin. Cứ hỏi nhé! 🫡",
+    fallback:
+      "Xin lỗi 😥, tôi chưa có thông tin này. Hãy thử hỏi trên Discord.",
+
+    download: "Bạn có thể tải game từ trang Tải Về.",
+    font: "Nếu thấy ký tự vuông, hãy tải và cài đặt font ArialUni.",
+    season: "Server đang chạy Season 19 Episode 2-3 với hệ thống tùy chỉnh.",
+    events:
+      "Blood Castle, Devil Square và các sự kiện diễn ra thường xuyên. Xem trang Sự Kiện.",
+    barracks:
+      "Để làm nhiệm vụ lớp 3, hãy đến Crywolf và nói chuyện với NPC Werewolf Quarry.",
+    commands: "Danh sách lệnh có trong trang Hướng Dẫn.",
+    evolution:
+      "Thông tin nâng cấp lớp nằm trong Hướng Dẫn → Quests & Evolution.",
+    reset: "Reset có thể thực hiện ở cấp 400 bằng lệnh /reset.",
+    grandReset: "Grand Reset yêu cầu 100 reset và mang lại phần thưởng lớn.",
+    maxStats: "Giới hạn chỉ số tối đa là 32,000.",
+    drops: "Drop phụ thuộc vào bản đồ và quái vật.",
+
+    links: {
+      download: "Tải Về",
+      events: "Sự Kiện",
+      guides: "Hướng Dẫn",
+      fallback: "Discord",
+    },
+  },
   landing: {
     heading: "Chào mừng đến với MyraMU!",
     subheading: "Trải nghiệm cuộc phiêu lưu MU Online đỉnh cao.",

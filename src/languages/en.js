@@ -365,6 +365,44 @@ export default {
     login: "Login",
     info: "Guides",
   },
+  chatbot: {
+    title: "Guide Assistant",
+    send: "Send",
+    placeholder: "Ask a question...",
+    typing: "Typing",
+    you: "You said",
+    welcome:
+      "Hi! 👋 I can help you if you have any questions, need information or have any issues. Just ask me anything and I will try to assist you! 🫡",
+    fallback:
+      "Sorry 😥, I’m not sure about that yet. Have you tried asking it in our discord channel?",
+
+    download: "You can download the game client from the Downloads page.",
+    font: "If you see squares instead of text, please download and install the ArialUni font. You can download it from our Downloads page below the links. After installing, restart the game client.",
+    season:
+      "We are currently running Season 19 Episode 2-3. We have custom systems and balanced rates for an enjoyable experience.",
+    events:
+      "Events like Blood Castle, Devil Square, and invasions run frequently. Check the Events page for the schedule. It will show you the next start times, where to join, and rewards.",
+    barracks:
+      "For 3rd class quest go to Crywolf then talk to the Werewolf Quary NPC to get teleported to Barracks. From there he can also teleport you straight to Dark Elf.",
+    commands:
+      "For a list of all commands that you can use go to the Guides page then click Server Information.",
+    evolution:
+      "For information about class quest upgrades you can view the Guides page, Quest & Evolution section. This will show you what to do. You can buy all quest items in Lorencia bar.",
+    reset:
+      "You can reset your character after reaching level 400. Type /reset in-game to reset and earn rewards. You will recieve 5 WCoins, 100 Goblin Points and 200 Ruud per reset.",
+    grandReset:
+      "Grand Reset requires 100 resets and gives powerful rewards. You will recieve 1,000 WCoins and 10,000 Goblin Points upon Grand Reset. Your character stats will not be reset.",
+    maxStats:
+      "Each stat has a maximum cap of 32,000 to keep the server balanced. You can allocate stat points through leveling. Each character level gives 5 stat points to distribute.",
+    drops:
+      "Item drops depend on maps, monsters, and events. You can search in guides page for exact location of items. Go to Guides and click on Drop Item Search.",
+    links: {
+      download: "Go to Downloads page",
+      events: "Go to Events page",
+      guides: "Go to Guides page",
+      fallback: "Visit our Discord channel",
+    },
+  },
   login: {
     header: "Login",
     username: "Username",

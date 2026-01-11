@@ -2,10 +2,17 @@ import { useTranslation } from "../../context/TranslationContext";
 import { FooterWrapper, ThemeSwitcher, ThemeButton } from "./FooterStyles";
 import { greenTheme, blueTheme, redTheme } from "../../styles/ThemeStyles";
 import { useTheme } from "styled-components";
+import { ChatButton } from "../../components/chatbot/ChatbotStyles";
+import Chatbot from "../../components/chatbot/Chatbot";
+import { useState } from "react";
+import { faRobot } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Footer({ onThemeChange }) {
   const { translate } = useTranslation();
   const currentTheme = useTheme();
+
+  const [chatOpen, setChatOpen] = useState(false);
 
   return (
     <FooterWrapper>
@@ -27,6 +34,12 @@ function Footer({ onThemeChange }) {
         />
       </ThemeSwitcher>
 
+      {chatOpen && <Chatbot onClose={() => setChatOpen(false)} />}
+
+      <ChatButton onClick={() => setChatOpen((o) => !o)}>
+        <FontAwesomeIcon icon={faRobot} />
+        <span>{translate("chatbot.title")}</span>
+      </ChatButton>
       <p>{translate("footer.rights")}</p>
     </FooterWrapper>
   );

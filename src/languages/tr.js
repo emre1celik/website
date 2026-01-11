@@ -424,7 +424,38 @@ export default {
     accept: "Kabul Et",
     decline: "Reddet",
   },
+  chatbot: {
+    title: "Rehber Asistanı",
+    send: "Gönder",
+    placeholder: "Bir soru sor...",
+    typing: "Yazıyor",
+    you: "Sen söyledin",
+    welcome:
+      "Merhaba! 👋 Soruların, bilgiler veya sorunlar için buradayım. Sorabilirsin! 🫡",
+    fallback:
+      "Üzgünüm 😥, bu konuda bilgim yok. Discord kanalını deneyebilirsin.",
 
+    download: "Oyun istemcisini İndirmeler sayfasından indirebilirsin.",
+    font: "Eğer yazılar kare görünüyorsa ArialUni fontunu indirip kur.",
+    season: "Sunucu Season 19 Episode 2-3 sürümünde çalışıyor.",
+    events:
+      "Blood Castle, Devil Square ve istilalar sıkça yapılır. Etkinlikler sayfasını kontrol et.",
+    barracks:
+      "3. sınıf görevi için Crywolf'a git ve Werewolf Quarry NPC ile konuş.",
+    commands: "Komut listesi Rehberler → Sunucu Bilgisi bölümünde.",
+    evolution: "Sınıf görevleri Rehberler → Quests & Evolution bölümünde.",
+    reset: "400 seviyede /reset komutuyla reset atabilirsin.",
+    grandReset: "Grand Reset 100 reset ister ve büyük ödüller verir.",
+    maxStats: "Maksimum stat limiti 32,000.",
+    drops: "Drop bilgileri haritalara ve yaratıklara bağlıdır.",
+
+    links: {
+      download: "İndirmeler",
+      events: "Etkinlikler",
+      guides: "Rehberler",
+      fallback: "Discord",
+    },
+  },
   landing: {
     heading: "MyraMU'ya Hoş Geldiniz!",
     subheading: "En iyi MU online macerasını yaşayın.",
