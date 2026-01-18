@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Navigation from "../../components/navigation/Navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,6 +11,7 @@ import { LoginWrapper, LoginContent, LoginBox } from "./LoginStyles";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
+import { useLocation } from "react-router-dom";
 
 function Login({ user, onLogin, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
@@ -18,6 +19,16 @@ function Login({ user, onLogin, currentTheme, onThemeChange }) {
   const [message, setMessage] = useState({ text: "", type: "" });
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.message) {
+      setMessage({
+        type: "error",
+        text: location.state.message,
+      });
+    }
+  }, [location]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

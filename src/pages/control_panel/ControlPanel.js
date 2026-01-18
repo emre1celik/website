@@ -40,6 +40,8 @@ import ControlPanelProfile from "./profile/ControlPanelProfile";
 import ControlPanelStats from "./stats/ControlPanelStats";
 import ControlPanelAchievements from "./achievements/ControlPanelAchievements";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useCallback } from "react";
 
 function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
   const { translate } = useTranslation();
@@ -57,6 +59,22 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
   const location = useLocation();
   const [paymentMessage, setPaymentMessage] = useState(null);
   const [openDonateModal, setOpenDonateModal] = useState(false);
+  const navigate = useNavigate();
+
+  const handleUnauthorized = useCallback(() => {
+    localStorage.removeItem("apiToken");
+    localStorage.removeItem("username");
+
+    if (onLogout) onLogout();
+
+    navigate("/login", {
+      replace: true,
+      state: {
+        message:
+          "You were logged out because your account was used on another device.",
+      },
+    });
+  }, [navigate, onLogout]);
 
   async function handlePaymentCapture(orderId) {
     setActiveTab("profile");
@@ -175,6 +193,10 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       );
 
       const data = await response.json();
+      if (response.status === 401) {
+        handleUnauthorized();
+        return;
+      }
 
       if (response.ok) {
         setCharacterActionMessage({
@@ -233,6 +255,11 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       );
 
       const data = await response.json();
+      if (response.status === 401) {
+        handleUnauthorized();
+        return;
+      }
+
       if (response.ok) {
         setCharacterActionMessage({
           type: "success",
@@ -293,7 +320,7 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
     return { icon: DefaultIcon, key: "unknown" };
   }
 
-  const fetchCharacters = async () => {
+  const fetchCharacters = useCallback(async () => {
     setCharsLoading(true);
     const token = localStorage.getItem("apiToken");
 
@@ -303,28 +330,33 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       });
 
       const data = await response.json();
+      if (response.status === 401) {
+        handleUnauthorized();
+        return [];
+      }
+
       if (response.ok) {
         setCharacters(data.characters);
-        return data.characters; // return updated characters
+        return data.characters;
       } else {
-        //console.error("Failed to load characters:", data.error);
         setCharacters([]);
         return [];
       }
-    } catch (err) {
-      //console.error("Something went wrong:", err);
+    } catch {
       setCharacters([]);
       return [];
     } finally {
       setCharsLoading(false);
     }
-  };
+  }, [handleUnauthorized]);
+
   const [achievements, setAchievements] = useState([]);
   const [achievementsLoading, setAchievementsLoading] = useState(true);
 
-  const fetchAchievements = async () => {
+  const fetchAchievements = useCallback(async () => {
     setAchievementsLoading(true);
     const token = localStorage.getItem("apiToken");
+
     try {
       const response = await fetch(
         "https://api.myramu.online/api/achievements",
@@ -332,45 +364,52 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
           headers: { Authorization: `Bearer ${token}` },
         }
       );
+
       const data = await response.json();
+      if (response.status === 401) {
+        handleUnauthorized();
+        return;
+      }
+
       if (response.ok) {
         setAchievements(data.achievements);
       } else {
         setAchievements([]);
       }
-    } catch (err) {
+    } catch {
       setAchievements([]);
     } finally {
       setAchievementsLoading(false);
     }
-  };
+  }, [handleUnauthorized]);
 
   // 2️⃣ useEffect calls fetchCharacters on mount/user change
   useEffect(() => {
     fetchCharacters();
     fetchAchievements();
-  }, [user]);
-
+  }, [user, fetchCharacters, fetchAchievements]);
   useEffect(() => {
     const fetchProfile = async () => {
       setLoading(true);
       const token = localStorage.getItem("apiToken");
+
       try {
         const response = await fetch("https://api.myramu.online/api/profile", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
+          headers: { Authorization: `Bearer ${token}` },
         });
+
         const data = await response.json();
+        if (response.status === 401) {
+          handleUnauthorized();
+          return;
+        }
 
         if (response.ok) {
           setProfile(data);
         } else {
-          //console.error("Failed to load profile:", data.error);
           setProfile(null);
         }
-      } catch (err) {
-        //console.error("Something went wrong:", err);
+      } catch {
         setProfile(null);
       } finally {
         setLoading(false);
@@ -378,7 +417,7 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
     };
 
     fetchProfile();
-  }, [user]);
+  }, [user, handleUnauthorized]);
 
   async function onChangePasswordSubmit(e) {
     e.preventDefault();
@@ -417,6 +456,10 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       );
 
       const data = await response.json();
+      if (response.status === 401) {
+        handleUnauthorized();
+        return;
+      }
 
       if (response.ok) {
         setPasswordMessage({
