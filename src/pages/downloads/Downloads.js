@@ -12,6 +12,7 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
+import fontissue from "../../assets/images/fontissue.png";
 
 function Downloads({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
@@ -84,6 +85,11 @@ function Downloads({ user, currentTheme, onThemeChange }) {
             <DownloadsNote>
               <TranslatedHTML entity="downloads.note1" />
             </DownloadsNote>
+            <img
+              src={fontissue}
+              alt="Myra MU Online Screenshot"
+              style={{ width: "100%", height: "auto" }}
+            />
             <DownloadsNote>
               <TranslatedHTML entity="downloads.note3_desc" />
             </DownloadsNote>
