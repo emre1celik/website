@@ -80,7 +80,6 @@ export const GlowingName = styled.span`
     (rank === 3 || (rank >= 4 && rank <= 25)) &&
     css`
       color: ${theme.primary};
-      animation: ${themeGlow(theme)} 2s ease-in-out infinite alternate;
     `}
 `;
 
