@@ -579,11 +579,16 @@ const topBosses = bosses;
     <img
       src={bossIconMap[bossName]}
       alt={bossName}
-      style={{ width: "28px", height: "28px" }}
+      style={{
+        width: "40px",
+        height: "40px",
+        imageRendering: "auto",
+      }}
     />
   )}
   <span>{bossName}</span>
 </BossTitle>
+
 
 
             <BossTableWrapper>

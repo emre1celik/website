@@ -267,10 +267,14 @@ export const BossTitle = styled.h3`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
+  gap: 0.75rem;
+
+  margin-bottom: 0.75rem;
+
   color: ${({ theme }) => theme.primary};
-  font-size: 1rem;
+  font-size: 1.25rem; 
+  font-weight: bold;
+  letter-spacing: 0.5px;
 `;
 
 
