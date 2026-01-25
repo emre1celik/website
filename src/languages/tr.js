@@ -346,6 +346,9 @@ export default {
     nextStart: "Başlangıç",
     timeRemaining: "Kalan Süre",
     now: "Şimdi!",
+    enter: "Giriş",
+    where: "Nerede",
+    rewards: "Ödüller",
     currentGameTime: "Mevcut Oyun Süresi",
   },
   notFound: {

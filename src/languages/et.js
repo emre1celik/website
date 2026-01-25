@@ -393,6 +393,9 @@ export default {
   events: {
     title: "Eelseisvad Sündmused",
     event: "Üritus",
+    enter: "Sisenemine",
+    where: "Asukoht",
+    rewards: "Preemiad",
     nextStart: "Järgmine Algus",
     timeRemaining: "Aega Jäänud",
     now: "Nüüd!",

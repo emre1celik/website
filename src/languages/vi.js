@@ -403,6 +403,9 @@ export default {
   events: {
     title: "Sự kiện sắp diễn ra",
     event: "Sự kiện",
+    enter: "Cách vào",
+    where: "Địa điểm",
+    rewards: "Phần thưởng",
     nextStart: "Bắt đầu tiếp theo",
     timeRemaining: "Thời gian còn lại",
     now: "Đang diễn ra!",

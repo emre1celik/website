@@ -381,6 +381,9 @@ export default {
   events: {
     title: "Nadchodzące Wydarzenia",
     event: "Wydarzenie",
+    enter: "Wejście",
+    where: "Gdzie",
+    rewards: "Nagrody",
     nextStart: "Następny Start",
     timeRemaining: "Pozostały Czas",
     now: "Teraz!",

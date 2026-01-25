@@ -384,6 +384,9 @@ export default {
     nextStart: "Следующее Начало",
     timeRemaining: "Оставшееся Время",
     now: "Сейчас!",
+    enter: "Вход",
+    where: "Где",
+    rewards: "Награды",
     currentGameTime: "Текущее Время Игры",
   },
   register: {

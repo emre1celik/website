@@ -417,6 +417,9 @@ export default {
   events: {
     title: "Upcoming Events",
     event: "Event",
+    enter: "Enter",
+    where: "Where",
+    rewards: "Rewards",
     nextStart: "Next Start",
     timeRemaining: "Time Remaining",
     now: "Now!",

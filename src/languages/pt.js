@@ -386,6 +386,9 @@ export default {
     nextStart: "Próximo Início",
     timeRemaining: "Tempo Restante",
     now: "Agora!",
+    enter: "Entrada",
+    where: "Onde",
+    rewards: "Recompensas",
     currentGameTime: "Hora Atual do Jogo",
   },
   register: {

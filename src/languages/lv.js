@@ -390,6 +390,9 @@ export default {
   events: {
     title: "Nākamie Notikumi",
     event: "Notikums",
+    enter: "Ieeja",
+    where: "Atrašanās vieta",
+    rewards: "Atlīdzības",
     nextStart: "Nākamā Sākšana",
     timeRemaining: "Atlikušais Laiks",
     now: "Tagad!",

@@ -370,21 +370,21 @@ function Events({ user, currentTheme, onThemeChange }) {
                               <InfoItem>
                                 <FontAwesomeIcon icon={faDoorOpen} />
                                 <div>
-                                  <b>Enter:</b> {info.enter}
+                                  <b>{translate("events.enter")}:</b> {info.enter}
                                 </div>
                               </InfoItem>
 
                               <InfoItem>
                                 <FontAwesomeIcon icon={faMapMarkedAlt} />
                                 <div>
-                                  <b>Where:</b> {info.where}
+                                  <b>{translate("events.where")}:</b> {info.where}
                                 </div>
                               </InfoItem>
 
                               <InfoItem>
                                 <FontAwesomeIcon icon={faTrophy} />
                                 <div>
-                                  <b>Rewards:</b> {info.rewards}
+                                  <b>{translate("events.rewards")}:</b> {info.rewards}
                                 </div>
                               </InfoItem>
                             </InfoList>
