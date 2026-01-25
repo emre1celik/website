@@ -357,9 +357,10 @@ export default {
   highscores: {
     serverError: "Serveri viga: {error}",
     title: "Parimad mängijad",
-    topPlayers: "Aktiivseimad Mängijad",
-    topEvents: "Top Sündmused",
-    topGuilds: "Top Gildid",
+    topPlayers: "Mängijad",
+    topEvents: "Sündmused",
+    topGuilds: "Gildid",
+    topBoss: "Jälgid",
     loadingPlayers: "Laadimine parimad mängijad...",
     filterByClass: "Filtreeri klassi järgi:",
     rank: "Koht",

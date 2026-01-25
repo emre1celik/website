@@ -345,9 +345,10 @@ export default {
   highscores: {
     serverError: "Błąd serwera: {error}",
     title: "Ranking",
-    topPlayers: "Najaktywniejsi Gracze",
-    topEvents: "Najlepsze Wydarzenia",
-    topGuilds: "Najlepsze Gildie",
+    topPlayers: "Gracze",
+    topEvents: "Wydarzenia",
+    topGuilds: "Gildie",
+    topBoss: "Bossowie",
     loadingPlayers: "Ładowanie najlepszych graczy...",
     filterByClass: "Filtruj według klasy:",
     rank: "Pozycja",

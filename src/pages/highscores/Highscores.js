@@ -417,7 +417,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 onClick={() => setActiveTab("bosses")}
               >
                 <FontAwesomeIcon icon={faSkull} />
-                <span>Top Boss Kills</span>
+                <span>{translate("highscores.topBoss")}</span>
               </ControlPanelTabButton>
 
               <ControlPanelTabButton

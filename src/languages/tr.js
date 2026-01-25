@@ -355,9 +355,10 @@ export default {
   highscores: {
     serverError: "Sunucu hatası: {error}",
     title: "Liderlik Tablosu",
-    topPlayers: "En Aktif Oyuncular",
-    topEvents: "En İyi Etkinlikler",
-    topGuilds: "En İyi Loncalar",
+    topPlayers: "Oyuncular",
+    topEvents: "Etkinlikler",
+    topGuilds: "Loncalar",
+    topBoss: "Bosslar",
     loadingPlayers: "En iyi oyuncular yükleniyor...",
     filterByClass: "Sınıfa göre filtrele:",
     rank: "Sıra",

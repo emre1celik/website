@@ -429,9 +429,10 @@ export default {
   highscores: {
     serverError: "Something went wrong: {error}",
     title: "Highscores",
-    topPlayers: "Top Active Players",
-    topEvents: "Top Events",
-    topGuilds: "Top Guilds",
+    topPlayers: "Players",
+    topEvents: "Events",
+    topGuilds: "Guilds",
+    topBoss: "Bosses",
     loadingPlayers: "Loading top players...",
     filterByClass: "Filter by class:",
     all: "All",

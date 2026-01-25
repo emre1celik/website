@@ -347,9 +347,10 @@ export default {
   highscores: {
     serverError: "Erro do servidor: {error}",
     title: "Classificação",
-    topPlayers: "Jogadores Mais Ativos",
-    topEvents: "Melhores Eventos",
-    topGuilds: "Melhores Guildas",
+    topPlayers: "Jogadores",
+    topEvents: "Eventos",
+    topBoss: "Bossowie",
+    topGuilds: "Guildas",
     loadingPlayers: "Carregando melhores jogadores...",
     filterByClass: "Filtrar por classe:",
     rank: "Posição",

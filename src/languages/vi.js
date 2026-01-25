@@ -417,6 +417,7 @@ export default {
     title: "Bảng xếp hạng",
     topPlayers: "Người chơi hàng đầu",
     topEvents: "Top sự kiện",
+    topBoss: "Boss",
     gens: "Gens",
     topGuilds: "Top guild",
     loadingPlayers: "Đang tải bảng xếp hạng...",

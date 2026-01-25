@@ -354,9 +354,10 @@ export default {
   highscores: {
     serverError: "Servera kļūda: {error}",
     title: "Līderu tabula",
-    topPlayers: "Aktīvākie Spēlētāji",
-    topEvents: "Labākie notikumi",
-    topGuilds: "Labākie gildes",
+    topPlayers: "Spēlētāji",
+    topEvents: "Notikumi",
+    topGuilds: "Gildes",
+    topBoss: "Bosi",
     loadingPlayers: "Ielādē labākos spēlētājus...",
     filterByClass: "Filtrēt pēc klases:",
     rank: "Rangs",
