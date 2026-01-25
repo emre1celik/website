@@ -159,6 +159,8 @@ export default function Chatbot() {
                   <a
                     key={idx}
                     href={link.to}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{
                       fontSize: "12px",
                       padding: "4px 8px",
