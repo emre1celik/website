@@ -640,8 +640,6 @@ const topBosses = bosses;
           />
         )}
         <span>{bossName}</span>
-      </BossTitle>
-
       {bossCfg && (
         <BossSubtitle>
           <span>
@@ -652,6 +650,8 @@ const topBosses = bosses;
           </span>
         </BossSubtitle>
       )}
+      </BossTitle>
+
 
       <BossTableWrapper>
         <HighscoresTable>
