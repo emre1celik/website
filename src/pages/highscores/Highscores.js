@@ -39,7 +39,7 @@ import IkIcon from "../../assets/images/classes/ik.png";
 import DuprianIcon from "../../assets/images/gens/duprian.png";
 import VanertIcon from "../../assets/images/gens/vanert.png";
 import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
-import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.webp";
+import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
 import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
 import LordFereaIcon from "../../assets/images/bosses/lord_of_ferea.png";
 import LordSilvesterIcon from "../../assets/images/bosses/lord_silvester.png";
