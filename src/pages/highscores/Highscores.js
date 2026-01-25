@@ -100,7 +100,7 @@ const bossConfigMap = {
   },
   "God of Darkness": {
     src: GodOfDarknessIcon,
-    width: 44,
+    width: 74,
     height: 84,
     map: "Swamp of Darkness",
     hp: "200,000,000",
