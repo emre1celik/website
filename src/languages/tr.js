@@ -358,6 +358,7 @@ export default {
     topPlayers: "Oyuncular",
     topEvents: "Etkinlikler",
     topGuilds: "Loncalar",
+    kills: "Öldürmeler",
     topBoss: "Bosslar",
     loadingPlayers: "En iyi oyuncular yükleniyor...",
     filterByClass: "Sınıfa göre filtrele:",

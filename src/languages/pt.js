@@ -362,6 +362,7 @@ export default {
     gens: "Gens",
     agility: "Agilidade",
     vitality: "Vitalidade",
+    kills: "Abates",
     all: "Todos",
     energy: "Energia",
     leadership: "Liderança",

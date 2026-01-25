@@ -363,6 +363,7 @@ export default {
     topBoss: "Jälgid",
     loadingPlayers: "Laadimine parimad mängijad...",
     filterByClass: "Filtreeri klassi järgi:",
+    kills: "Tapmised",
     rank: "Koht",
     name: "Nimi",
     class: "Klass",

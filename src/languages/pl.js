@@ -362,6 +362,7 @@ export default {
     gens: "Gens",
     vitality: "Witalność",
     energy: "Energia",
+    kills: "Zabójstwa",
     leadership: "Dowodzenie",
     loadingEvents: "Ładowanie najlepszych wydarzeń...",
     filterByEvent: "Filtruj według wydarzenia:",

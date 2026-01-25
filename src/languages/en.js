@@ -442,6 +442,7 @@ export default {
     class: "Class",
     resets: "Resets",
     level: "Level",
+    kills: "Kills",
     strength: "Strength",
     agility: "Agility",
     vitality: "Vitality",

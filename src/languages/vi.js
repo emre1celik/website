@@ -419,6 +419,7 @@ export default {
     topEvents: "Top sự kiện",
     topBoss: "Boss",
     gens: "Gens",
+    kills: "Số lần tiêu diệt",
     topGuilds: "Top guild",
     loadingPlayers: "Đang tải bảng xếp hạng...",
     filterByClass: "Lọc theo class:",

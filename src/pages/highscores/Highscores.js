@@ -681,9 +681,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                 <HighscoresTable>
                                   <thead>
                                     <tr>
-                                      <th>Rank</th>
-                                      <th>Character</th>
-                                      <th>Kills</th>
+                                      <th>{translate("highscores.rank")}</th>
+                                      <th>{translate("highscores.name")}</th>
+                                      <th>{translate("highscores.kills")}</th>
                                     </tr>
                                   </thead>
                                   <tbody>

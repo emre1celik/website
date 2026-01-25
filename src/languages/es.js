@@ -373,6 +373,7 @@ export default {
     class: "Clase",
     resets: "Reinicios",
     level: "Nivel",
+    kills: "Muertes",
     strength: "Fuerza",
     agility: "Agilidad",
     vitality: "Vitalidad",

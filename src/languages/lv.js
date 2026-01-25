@@ -367,6 +367,7 @@ export default {
     resets: "Atiestatījumi",
     level: "Līmenis",
     strength: "Spēks",
+    kills: "Nogalināšanas",
     agility: "Veiklība",
     vitality: "Dzīvotspēja",
     all: "Visi",
