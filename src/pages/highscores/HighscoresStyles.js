@@ -267,6 +267,7 @@ export const BossTitle = styled.span`
 
 export const BossSubtitle = styled.div`
   font-size: 0.8rem;
+  padding-top: 0.25rem;
   color: rgba(255, 255, 255, 0.75);
 
   span {
