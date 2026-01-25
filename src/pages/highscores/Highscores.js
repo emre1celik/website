@@ -46,7 +46,7 @@ import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
 import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
 import LordFereaIcon from "../../assets/images/bosses/lord_of_ferea.png";
 import LordSilvesterIcon from "../../assets/images/bosses/lord_silvester.png";
-import NightmareIcon from "../../assets/images/bosses/nightmare.png";
+import NightmareIcon from "../../assets/images/bosses/nightmare.jpg";
 import NixIcon from "../../assets/images/bosses/nix.png";
 import SelupanIcon from "../../assets/images/bosses/selupan.png";
 
