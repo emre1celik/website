@@ -38,6 +38,14 @@ import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
 import DuprianIcon from "../../assets/images/gens/duprian.png";
 import VanertIcon from "../../assets/images/gens/vanert.png";
+import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
+import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.webp";
+import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
+import LordFereaIcon from "../../assets/images/bosses/lord_of_ferea.png";
+import LordSilvesterIcon from "../../assets/images/bosses/lord_silvester.png";
+import NightmareIcon from "../../assets/images/bosses/nightmare.png";
+import NixIcon from "../../assets/images/bosses/nix.png";
+import SelupanIcon from "../../assets/images/bosses/selupan.png";
 
 import DefaultIcon from "../../assets/images/classes/default.png";
 import {
@@ -79,6 +87,16 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     ik: "Illusion Knight",
   };
   const [bossData, setBossData] = useState({});
+const bossIconMap = {
+  "Core Magriffy": CoreMagriffyIcon,
+  "God of Darkness": GodOfDarknessIcon,
+  "Illusion of Kundun": KundunIcon,
+  "Lord of Ferea": LordFereaIcon,
+  "Lord Silvester": LordSilvesterIcon,
+  "Nightmare": NightmareIcon,
+  "Nix": NixIcon,
+  "Selupan": SelupanIcon,
+};
 
 const [bosses, setBosses] = useState([]);
 const [selectedBoss, setSelectedBoss] = useState("");
@@ -556,7 +574,17 @@ const topBosses = bosses;
       <BossGrid>
         {Object.entries(bossData).map(([bossName, rows]) => (
           <BossCard key={bossName}>
-            <BossTitle>{bossName}</BossTitle>
+<BossTitle>
+  {bossIconMap[bossName] && (
+    <img
+      src={bossIconMap[bossName]}
+      alt={bossName}
+      style={{ width: "28px", height: "28px" }}
+    />
+  )}
+  <span>{bossName}</span>
+</BossTitle>
+
 
             <BossTableWrapper>
               <HighscoresTable>

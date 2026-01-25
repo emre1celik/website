@@ -264,11 +264,15 @@ export const BossCard = styled.div`
 `;
 
 export const BossTitle = styled.h3`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   margin-bottom: 0.5rem;
   color: ${({ theme }) => theme.primary};
   font-size: 1rem;
 `;
+
 
 export const BossTableWrapper = styled.div`
   overflow-y: auto;
