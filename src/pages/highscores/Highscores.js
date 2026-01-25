@@ -12,6 +12,8 @@ import {
   BossTitle,
   BossTableWrapper,
   BossSubtitle,
+  BossHeader,
+  BossText,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -627,32 +629,36 @@ const topBosses = bosses;
 
   return (
     <BossCard key={bossName}>
-      <BossTitle>
-        {bossCfg && (
-          <img
-            src={bossCfg.src}
-            alt={bossName}
-            style={{
-              width: `${bossCfg.width}px`,
-              height: `${bossCfg.height}px`,
-              objectFit: "contain",
-            }}
-          />
-        )}
-        <span>{bossName}</span>
-      {bossCfg && (
-        <BossSubtitle>
-          <span>
-            <FontAwesomeIcon icon={faMapMarkerAlt} /> {bossCfg.map}
-          </span>
-          <span>
-            <FontAwesomeIcon icon={faHeart} /> HP: {bossCfg.hp}
-          </span>
-        </BossSubtitle>
-      )}
-      </BossTitle>
 
+<BossHeader>
+  {bossCfg && (
+    <img
+      src={bossCfg.src}
+      alt={bossName}
+      style={{
+        width: `${bossCfg.width}px`,
+        height: `${bossCfg.height}px`,
+        objectFit: "contain",
+        flexShrink: 0,
+      }}
+    />
+  )}
 
+  <BossText>
+    <BossTitle>{bossName}</BossTitle>
+
+    {bossCfg && (
+      <BossSubtitle>
+        <span>
+          <FontAwesomeIcon icon={faMapMarkerAlt} /> {bossCfg.map}
+        </span>
+        <span>
+          <FontAwesomeIcon icon={faHeart} /> HP: {bossCfg.hp}
+        </span>
+      </BossSubtitle>
+    )}
+  </BossText>
+</BossHeader>
       <BossTableWrapper>
         <HighscoresTable>
           <thead>

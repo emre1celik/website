@@ -263,30 +263,32 @@ export const BossCard = styled.div`
   height: 320px;
 `;
 
-export const BossTitle = styled.h3`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-
-  margin-bottom: 0.75rem;
-
-  color: ${({ theme }) => theme.primary};
-  font-size: 1.25rem; 
+export const BossTitle = styled.span`
+  font-size: 1.1rem;
   font-weight: bold;
-  letter-spacing: 0.5px;
+  color: ${({ theme }) => theme.primary};
 `;
 
+
 export const BossSubtitle = styled.div`
-  text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.75);
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
 
   span {
     display: block;
   }
+`;
+
+export const BossHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+`;
+export const BossText = styled.div`
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 `;
 
 export const BossTableWrapper = styled.div`
