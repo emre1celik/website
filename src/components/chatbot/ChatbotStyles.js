@@ -22,7 +22,7 @@ export const Message = styled.div`
 
 export const ChatWrapper = styled.div`
   position: fixed;
-  bottom: 90px;
+  bottom: 105px;
   right: 24px;
   width: 320px;
   max-height: 420px;
@@ -108,7 +108,7 @@ export const Send = styled.button`
 
 export const ChatButton = styled.button`
   position: fixed;
-  bottom: 15px;
+  bottom: 55px;
   right: 15px;
   background: ${({ theme }) => theme.primary};
   color: black;
@@ -122,10 +122,6 @@ export const ChatButton = styled.button`
   display: flex;
   align-items: center;
   gap: 8px;
-
-  &:hover {
-    transform: translateY(-2px);
-  }
 
   @media (max-width: 680px) {
     span {

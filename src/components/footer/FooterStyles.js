@@ -1,24 +1,24 @@
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0.4rem 0.75rem;
+  height: 42px;
+
   backdrop-filter: blur(2px);
   background: rgba(0, 0, 0, 0.4);
   color: white;
-  position: relative;
-  z-index: 2;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-
-  display: flex;
-  flex-direction: column;
 `;
+
 
 export const ThemeSwitcher = styled.div`
   display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: 0.4rem;
 `;
 
 export const ThemeButton = styled.button`
