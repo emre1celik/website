@@ -88,15 +88,48 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   };
   const [bossData, setBossData] = useState({});
 const bossIconMap = {
-  "Core Magriffy": CoreMagriffyIcon,
-  "God of Darkness": GodOfDarknessIcon,
-  "Illusion of Kundun": KundunIcon,
-  "Lord of Ferea": LordFereaIcon,
-  "Lord Silvester": LordSilvesterIcon,
-  "Nightmare": NightmareIcon,
-  "Nix": NixIcon,
-  "Selupan": SelupanIcon,
+  "Core Magriffy": {
+    src: CoreMagriffyIcon,
+    width: 40,
+    height: 40,
+  },
+  "God of Darkness": {
+    src: GodOfDarknessIcon,
+    width: 34,
+    height: 44, // 👈 taller
+  },
+  "Illusion of Kundun": {
+    src: KundunIcon,
+    width: 42,
+    height: 42,
+  },
+  "Lord of Ferea": {
+    src: LordFereaIcon,
+    width: 32,
+    height: 44, // 👈 taller, slimmer
+  },
+  "Lord Silvester": {
+    src: LordSilvesterIcon,
+    width: 40,
+    height: 40,
+  },
+  "Nightmare": {
+    src: NightmareIcon,
+    width: 44,
+    height: 40,
+  },
+  "Nix": {
+    src: NixIcon,
+    width: 36,
+    height: 36,
+  },
+  "Selupan": {
+    src: SelupanIcon,
+    width: 44,
+    height: 44,
+  },
 };
+
 
 const [bosses, setBosses] = useState([]);
 const [selectedBoss, setSelectedBoss] = useState("");
@@ -575,17 +608,18 @@ const topBosses = bosses;
         {Object.entries(bossData).map(([bossName, rows]) => (
           <BossCard key={bossName}>
 <BossTitle>
-  {bossIconMap[bossName] && (
-    <img
-      src={bossIconMap[bossName]}
-      alt={bossName}
-      style={{
-        width: "60px",
-        height: "60px",
-        imageRendering: "auto",
-      }}
-    />
-  )}
+{bossIconMap[bossName] && (
+  <img
+    src={bossIconMap[bossName].src}
+    alt={bossName}
+    style={{
+      width: `${bossIconMap[bossName].width}px`,
+      height: `${bossIconMap[bossName].height}px`,
+      objectFit: "contain",
+    }}
+  />
+)}
+
   <span>{bossName}</span>
 </BossTitle>
 
