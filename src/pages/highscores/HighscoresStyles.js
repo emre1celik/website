@@ -242,3 +242,43 @@ export const RankIcon = styled.span`
   margin-left: 0.5rem;
   color: gold;
 `;
+export const BossGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const BossCard = styled.div`
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+`;
+
+export const BossTitle = styled.h3`
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: ${({ theme }) => theme.primary};
+  font-size: 1rem;
+`;
+
+export const BossTableWrapper = styled.div`
+  overflow-y: auto;
+  flex: 1;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+  }
+`;

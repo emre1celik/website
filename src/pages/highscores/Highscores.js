@@ -7,6 +7,10 @@ import {
   HighscoresTable,
   RankIcon,
   GlowingName,
+  BossGrid,
+  BossCard,
+  BossTitle,
+  BossTableWrapper,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -74,35 +78,40 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
   };
+  const [bossData, setBossData] = useState({});
+
 const [bosses, setBosses] = useState([]);
 const [selectedBoss, setSelectedBoss] = useState("");
 const [bossKills, setBossKills] = useState([]);
 const [loadingBosses, setLoadingBosses] = useState(false);
 useEffect(() => {
-  if (activeTab !== "bosses") return;
+  if (activeTab !== "bosses" || bosses.length === 0) return;
 
-  setLoadingBosses(true);
-
-  fetch("https://api.myramu.online/api/bosses")
-    .then(res => res.json())
-    .then(data => {
-      setBosses(data.bosses || []);
-      if (data.bosses?.length) {
-        setSelectedBoss(data.bosses[0]);
-      }
-    })
-    .finally(() => setLoadingBosses(false));
-}, [activeTab]);
-useEffect(() => {
-  if (!selectedBoss) return;
+  const topBosses = bosses.slice(0, 4); // 👈 2x2 grid
 
   setLoading(true);
 
-  fetch(`https://api.myramu.online/api/top-boss-kills?boss=${encodeURIComponent(selectedBoss)}`)
-    .then(res => res.json())
-    .then(data => setBossKills(data.top_kills || []))
+  Promise.all(
+    topBosses.map((boss) =>
+      fetch(
+        `https://api.myramu.online/api/top-boss-kills?boss=${encodeURIComponent(
+          boss
+        )}&limit=10`
+      )
+        .then((res) => res.json())
+        .then((data) => ({ boss, data: data.top_kills || [] }))
+    )
+  )
+    .then((results) => {
+      const map = {};
+      results.forEach(({ boss, data }) => {
+        map[boss] = data;
+      });
+      setBossData(map);
+    })
     .finally(() => setLoading(false));
-}, [selectedBoss]);
+}, [activeTab, bosses]);
+
 
   const classIconMap = {
     dw: {
@@ -528,44 +537,47 @@ useEffect(() => {
               )}
 {activeTab === "bosses" && (
   <>
-    <HighscoresFilter>
-      <label>Boss:</label>
-      <select
-        value={selectedBoss}
-        onChange={(e) => setSelectedBoss(e.target.value)}
-      >
-        {bosses.map(boss => (
-          <option key={boss} value={boss}>
-            {boss}
-          </option>
-        ))}
-      </select>
-    </HighscoresFilter>
+    {loading ? (
+      <div style={{ minHeight: "150px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <FontAwesomeIcon icon={faSpinner} spin />
+      </div>
+    ) : (
+      <BossGrid>
+        {Object.entries(bossData).map(([bossName, rows]) => (
+          <BossCard key={bossName}>
+            <BossTitle>{bossName}</BossTitle>
 
-    <HighscoresTable>
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Character</th>
-          <th>Kills</th>
-        </tr>
-      </thead>
-      <tbody>
-        {bossKills.map((row, index) => (
-          <tr key={index}>
-            <td>{index + 1}</td>
-            <td>
-              <GlowingName rank={index}>
-                {row.name}
-              </GlowingName>
-            </td>
-            <td>{row.kills}</td>
-          </tr>
+            <BossTableWrapper>
+              <HighscoresTable>
+                <thead>
+                  <tr>
+                    <th>Rank</th>
+                    <th>Character</th>
+                    <th>Kills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {rows.map((row, index) => (
+                    <tr key={index}>
+                      <td>{index + 1}</td>
+                      <td>
+                        <GlowingName rank={index}>
+                          {row.name}
+                        </GlowingName>
+                      </td>
+                      <td>{row.kills}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </HighscoresTable>
+            </BossTableWrapper>
+          </BossCard>
         ))}
-      </tbody>
-    </HighscoresTable>
+      </BossGrid>
+    )}
   </>
 )}
+
 
               {activeTab === "events" && (
                 <>
