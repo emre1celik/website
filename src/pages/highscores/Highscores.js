@@ -85,6 +85,16 @@ const [selectedBoss, setSelectedBoss] = useState("");
 const [bossKills, setBossKills] = useState([]);
 const [loadingBosses, setLoadingBosses] = useState(false);
 useEffect(() => {
+  if (activeTab !== "bosses") return;
+
+  fetch("https://api.myramu.online/api/bosses")
+    .then(res => res.json())
+    .then(data => {
+      setBosses(data.bosses || []);
+    });
+}, [activeTab]);
+
+useEffect(() => {
   if (activeTab !== "bosses" || bosses.length === 0) return;
 
   const topBosses = bosses.slice(0, 4); // 👈 2x2 grid
