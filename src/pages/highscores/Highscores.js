@@ -91,13 +91,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   };
   const [bossData, setBossData] = useState({});
 const bossConfigMap = {
-  "Core Magriffy": {
-    src: CoreMagriffyIcon,
-    width: 40,
-    height: 84,
-    map: "Nars, Acheron",
-    hp: "250,000,000",
-  },
   "God of Darkness": {
     src: GodOfDarknessIcon,
     width: 84,
@@ -105,12 +98,12 @@ const bossConfigMap = {
     map: "Swamp of Darkness",
     hp: "200,000,000",
   },
-  "Illusion of Kundun": {
-    src: KundunIcon,
-    width: 62,
+  "Nix": {
+    src: NixIcon,
+    width: 66,
     height: 84,
-    map: "Kalima",
-    hp: "10,000,000",
+    map: "Nixies Lake",
+    hp: "1,000,000,000",
   },
   "Lord of Ferea": {
     src: LordFereaIcon,
@@ -126,19 +119,12 @@ const bossConfigMap = {
     map: "Uruk Mountain",
     hp: "150,000,000",
   },
-  "Nightmare": {
-    src: NightmareIcon,
-    width: 44,
+  "Core Magriffy": {
+    src: CoreMagriffyIcon,
+    width: 40,
     height: 84,
-    map: "Kanturu Core",
-    hp: "1,500,000",
-  },
-  "Nix": {
-    src: NixIcon,
-    width: 66,
-    height: 84,
-    map: "Nixies Lake",
-    hp: "1,000,000,000",
+    map: "Nars, Acheron",
+    hp: "250,000,000",
   },
   "Selupan": {
     src: SelupanIcon,
@@ -146,6 +132,20 @@ const bossConfigMap = {
     height: 84,
     map: "Raklion",
     hp: "48,000,000",
+  },
+  "Nightmare": {
+    src: NightmareIcon,
+    width: 44,
+    height: 84,
+    map: "Kanturu Core",
+    hp: "1,500,000",
+  },
+  "Illusion of Kundun": {
+    src: KundunIcon,
+    width: 62,
+    height: 84,
+    map: "Kalima",
+    hp: "10,000,000",
   },
 };
 
