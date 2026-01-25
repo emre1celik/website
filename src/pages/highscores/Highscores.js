@@ -11,12 +11,13 @@ import {
   BossCard,
   BossTitle,
   BossTableWrapper,
+  BossSubtitle,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCrown, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faCrown, faHeart, faMapMarkerAlt, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import {
   faUsers,
   faTrophy,
@@ -87,48 +88,65 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     ik: "Illusion Knight",
   };
   const [bossData, setBossData] = useState({});
-const bossIconMap = {
+const bossConfigMap = {
   "Core Magriffy": {
     src: CoreMagriffyIcon,
     width: 40,
     height: 40,
+    map: "Ferea",
+    hp: "1,200,000",
   },
   "God of Darkness": {
     src: GodOfDarknessIcon,
     width: 34,
-    height: 44, // 👈 taller
+    height: 44,
+    map: "Aida",
+    hp: "900,000",
   },
   "Illusion of Kundun": {
     src: KundunIcon,
     width: 42,
     height: 42,
+    map: "Kanturu Relics",
+    hp: "2,500,000",
   },
   "Lord of Ferea": {
     src: LordFereaIcon,
     width: 32,
-    height: 44, // 👈 taller, slimmer
+    height: 44,
+    map: "Ferea",
+    hp: "1,800,000",
   },
   "Lord Silvester": {
     src: LordSilvesterIcon,
     width: 40,
     height: 40,
+    map: "Karutan",
+    hp: "3,000,000",
   },
   "Nightmare": {
     src: NightmareIcon,
     width: 44,
     height: 40,
+    map: "Kanturu Core",
+    hp: "1,600,000",
   },
   "Nix": {
     src: NixIcon,
     width: 36,
     height: 36,
+    map: "Aida",
+    hp: "750,000",
   },
   "Selupan": {
     src: SelupanIcon,
     width: 44,
     height: 44,
+    map: "Raklion",
+    hp: "5,000,000",
   },
 };
+
 
 
 const [bosses, setBosses] = useState([]);
@@ -252,7 +270,6 @@ const topBosses = bosses;
     }
     return { icon: DefaultIcon, key: "unknown" };
   }
-
   function formatNumber(num) {
     return num?.toLocaleString("en-US");
   }
@@ -605,52 +622,63 @@ const topBosses = bosses;
       </div>
     ) : (
       <BossGrid>
-        {Object.entries(bossData).map(([bossName, rows]) => (
-          <BossCard key={bossName}>
-<BossTitle>
-{bossIconMap[bossName] && (
-  <img
-    src={bossIconMap[bossName].src}
-    alt={bossName}
-    style={{
-      width: `${bossIconMap[bossName].width}px`,
-      height: `${bossIconMap[bossName].height}px`,
-      objectFit: "contain",
-    }}
-  />
-)}
+{Object.entries(bossData).map(([bossName, rows]) => {
+  const bossCfg = bossConfigMap[bossName];
 
-  <span>{bossName}</span>
-</BossTitle>
+  return (
+    <BossCard key={bossName}>
+      <BossTitle>
+        {bossCfg && (
+          <img
+            src={bossCfg.src}
+            alt={bossName}
+            style={{
+              width: `${bossCfg.width}px`,
+              height: `${bossCfg.height}px`,
+              objectFit: "contain",
+            }}
+          />
+        )}
+        <span>{bossName}</span>
+      </BossTitle>
 
+      {bossCfg && (
+        <BossSubtitle>
+          <span>
+            <FontAwesomeIcon icon={faMapMarkerAlt} /> {bossCfg.map}
+          </span>
+          <span>
+            <FontAwesomeIcon icon={faHeart} /> HP: {bossCfg.hp}
+          </span>
+        </BossSubtitle>
+      )}
 
+      <BossTableWrapper>
+        <HighscoresTable>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Character</th>
+              <th>Kills</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((row, index) => (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td>
+                  <GlowingName rank={index}>{row.name}</GlowingName>
+                </td>
+                <td>{row.kills}</td>
+              </tr>
+            ))}
+          </tbody>
+        </HighscoresTable>
+      </BossTableWrapper>
+    </BossCard>
+  );
+})}
 
-            <BossTableWrapper>
-              <HighscoresTable>
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Character</th>
-                    <th>Kills</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {rows.map((row, index) => (
-                    <tr key={index}>
-                      <td>{index + 1}</td>
-                      <td>
-                        <GlowingName rank={index}>
-                          {row.name}
-                        </GlowingName>
-                      </td>
-                      <td>{row.kills}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </HighscoresTable>
-            </BossTableWrapper>
-          </BossCard>
-        ))}
       </BossGrid>
     )}
   </>

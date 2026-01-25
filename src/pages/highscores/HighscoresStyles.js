@@ -277,6 +277,17 @@ export const BossTitle = styled.h3`
   letter-spacing: 0.5px;
 `;
 
+export const BossSubtitle = styled.div`
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+
+  span {
+    display: block;
+  }
+`;
 
 export const BossTableWrapper = styled.div`
   overflow-y: auto;
