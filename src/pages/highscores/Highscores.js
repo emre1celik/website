@@ -153,35 +153,29 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
   const [bosses, setBosses] = useState([]);
   useEffect(() => {
-    if (activeTab !== "bosses") return;
+    if (bosses.length > 0) return;
 
     fetch("https://api.myramu.online/api/bosses")
       .then(res => res.json())
-      .then(data => {
-        setBosses(data.bosses || []);
-      });
-  }, [activeTab]);
+      .then(data => setBosses(data.bosses || []));
+  }, []);
+
 
   useEffect(() => {
-    if (activeTab !== "bosses" || bosses.length === 0) return;
-
-    const topBosses = bosses;
-
+    if (bosses.length === 0 || Object.keys(bossData).length > 0) return;
 
     setLoading(true);
 
     Promise.all(
-      topBosses.map((boss) =>
+      bosses.map((boss) =>
         fetch(
-          `https://api.myramu.online/api/top-boss-kills?boss=${encodeURIComponent(
-            boss
-          )}&limit=10`
+          `https://api.myramu.online/api/top-boss-kills?boss=${encodeURIComponent(boss)}&limit=10`
         )
-          .then((res) => res.json())
-          .then((data) => ({ boss, data: data.top_kills || [] }))
+          .then(res => res.json())
+          .then(data => ({ boss, data: data.top_kills || [] }))
       )
     )
-      .then((results) => {
+      .then(results => {
         const map = {};
         results.forEach(({ boss, data }) => {
           map[boss] = data;
@@ -189,7 +183,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
         setBossData(map);
       })
       .finally(() => setLoading(false));
-  }, [activeTab, bosses]);
+  }, [bosses]);
+
 
 
   const classIconMap = {
