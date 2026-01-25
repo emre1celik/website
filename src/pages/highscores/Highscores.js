@@ -12,7 +12,7 @@ import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCrown, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faCrown, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import {
   faUsers,
   faTrophy,
@@ -74,6 +74,35 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
   };
+const [bosses, setBosses] = useState([]);
+const [selectedBoss, setSelectedBoss] = useState("");
+const [bossKills, setBossKills] = useState([]);
+const [loadingBosses, setLoadingBosses] = useState(false);
+useEffect(() => {
+  if (activeTab !== "bosses") return;
+
+  setLoadingBosses(true);
+
+  fetch("https://api.myramu.online/api/bosses")
+    .then(res => res.json())
+    .then(data => {
+      setBosses(data.bosses || []);
+      if (data.bosses?.length) {
+        setSelectedBoss(data.bosses[0]);
+      }
+    })
+    .finally(() => setLoadingBosses(false));
+}, [activeTab]);
+useEffect(() => {
+  if (!selectedBoss) return;
+
+  setLoading(true);
+
+  fetch(`https://api.myramu.online/api/top-boss-kills?boss=${encodeURIComponent(selectedBoss)}`)
+    .then(res => res.json())
+    .then(data => setBossKills(data.top_kills || []))
+    .finally(() => setLoading(false));
+}, [selectedBoss]);
 
   const classIconMap = {
     dw: {
@@ -285,6 +314,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 <FontAwesomeIcon icon={faUsers} />
                 <span>{translate("highscores.topPlayers")}</span>
               </ControlPanelTabButton>
+              <ControlPanelTabButton
+                active={activeTab === "bosses"}
+                onClick={() => setActiveTab("bosses")}
+              >
+                <FontAwesomeIcon icon={faSkull} />
+                <span>Top Boss Kills</span>
+              </ControlPanelTabButton>
 
               <ControlPanelTabButton
                 active={activeTab === "events"}
@@ -490,6 +526,46 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                   )}
                 </>
               )}
+{activeTab === "bosses" && (
+  <>
+    <HighscoresFilter>
+      <label>Boss:</label>
+      <select
+        value={selectedBoss}
+        onChange={(e) => setSelectedBoss(e.target.value)}
+      >
+        {bosses.map(boss => (
+          <option key={boss} value={boss}>
+            {boss}
+          </option>
+        ))}
+      </select>
+    </HighscoresFilter>
+
+    <HighscoresTable>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Character</th>
+          <th>Kills</th>
+        </tr>
+      </thead>
+      <tbody>
+        {bossKills.map((row, index) => (
+          <tr key={index}>
+            <td>{index + 1}</td>
+            <td>
+              <GlowingName rank={index}>
+                {row.name}
+              </GlowingName>
+            </td>
+            <td>{row.kills}</td>
+          </tr>
+        ))}
+      </tbody>
+    </HighscoresTable>
+  </>
+)}
 
               {activeTab === "events" && (
                 <>
