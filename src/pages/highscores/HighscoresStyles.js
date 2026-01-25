@@ -51,12 +51,6 @@ const bronzeGlow = keyframes`
   100% { text-shadow: 0 0 5px #cd7f32, 0 0 10px #cd7f32; }
 `;
 
-const themeGlow = (theme) => keyframes`
-  0% { text-shadow: 0 0 5px ${theme.primary}, 0 0 10px ${theme.primary}; }
-  50% { text-shadow: 0 0 20px ${theme.primaryHover}, 0 0 30px ${theme.primary}; }
-  100% { text-shadow: 0 0 5px ${theme.primary}, 0 0 10px ${theme.primary}; }
-`;
-
 export const GlowingName = styled.span`
   ${({ rank, theme }) =>
     rank === 0 &&

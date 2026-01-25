@@ -90,109 +90,106 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     ik: "Illusion Knight",
   };
   const [bossData, setBossData] = useState({});
-const bossConfigMap = {
-  "God of Darkness": {
-    src: GodOfDarknessIcon,
-    width: 84,
-    height: 84,
-    map: "Swamp of Darkness",
-    hp: "200,000,000",
-  },
-  "Nix": {
-    src: NixIcon,
-    width: 66,
-    height: 84,
-    map: "Nixies Lake",
-    hp: "1,000,000,000",
-  },
-  "Lord of Ferea": {
-    src: LordFereaIcon,
-    width: 82,
-    height: 84,
-    map: "Ferea",
-    hp: "250,000,000",
-  },
-  "Lord Silvester": {
-    src: LordSilvesterIcon,
-    width: 80,
-    height: 84,
-    map: "Uruk Mountain",
-    hp: "150,000,000",
-  },
-  "Core Magriffy": {
-    src: CoreMagriffyIcon,
-    width: 40,
-    height: 84,
-    map: "Nars, Acheron",
-    hp: "250,000,000",
-  },
-  "Selupan": {
-    src: SelupanIcon,
-    width: 64,
-    height: 84,
-    map: "Raklion",
-    hp: "48,000,000",
-  },
-  "Nightmare": {
-    src: NightmareIcon,
-    width: 44,
-    height: 84,
-    map: "Kanturu Core",
-    hp: "1,500,000",
-  },
-  "Illusion of Kundun": {
-    src: KundunIcon,
-    width: 62,
-    height: 84,
-    map: "Kalima",
-    hp: "10,000,000",
-  },
-};
+  const bossConfigMap = {
+    "God of Darkness": {
+      src: GodOfDarknessIcon,
+      width: 84,
+      height: 84,
+      map: "Swamp of Darkness",
+      hp: "200,000,000",
+    },
+    "Nix": {
+      src: NixIcon,
+      width: 66,
+      height: 84,
+      map: "Nixies Lake",
+      hp: "1,000,000,000",
+    },
+    "Lord of Ferea": {
+      src: LordFereaIcon,
+      width: 82,
+      height: 84,
+      map: "Ferea",
+      hp: "250,000,000",
+    },
+    "Lord Silvester": {
+      src: LordSilvesterIcon,
+      width: 80,
+      height: 84,
+      map: "Uruk Mountain",
+      hp: "150,000,000",
+    },
+    "Core Magriffy": {
+      src: CoreMagriffyIcon,
+      width: 40,
+      height: 84,
+      map: "Nars, Acheron",
+      hp: "250,000,000",
+    },
+    "Selupan": {
+      src: SelupanIcon,
+      width: 64,
+      height: 84,
+      map: "Raklion",
+      hp: "48,000,000",
+    },
+    "Nightmare": {
+      src: NightmareIcon,
+      width: 44,
+      height: 84,
+      map: "Kanturu Core",
+      hp: "1,500,000",
+    },
+    "Illusion of Kundun": {
+      src: KundunIcon,
+      width: 62,
+      height: 84,
+      map: "Kalima",
+      hp: "10,000,000",
+    },
+  };
 
 
 
-const [bosses, setBosses] = useState([]);
-const [selectedBoss, setSelectedBoss] = useState("");
-const [bossKills, setBossKills] = useState([]);
-const [loadingBosses, setLoadingBosses] = useState(false);
-useEffect(() => {
-  if (activeTab !== "bosses") return;
+  const [bosses, setBosses] = useState([]);
+  useEffect(() => {
+    if (activeTab !== "bosses") return;
 
-  fetch("https://api.myramu.online/api/bosses")
-    .then(res => res.json())
-    .then(data => {
-      setBosses(data.bosses || []);
-    });
-}, [activeTab]);
-
-useEffect(() => {
-  if (activeTab !== "bosses" || bosses.length === 0) return;
-
-const topBosses = bosses;
-
-
-  setLoading(true);
-
-  Promise.all(
-    topBosses.map((boss) =>
-      fetch(
-        `https://api.myramu.online/api/top-boss-kills?boss=${encodeURIComponent(
-          boss
-        )}&limit=10`
-      )
-        .then((res) => res.json())
-        .then((data) => ({ boss, data: data.top_kills || [] }))
-    )
-  )
-    .then((results) => {
-      const map = {};
-      results.forEach(({ boss, data }) => {
-        map[boss] = data;
+    fetch("https://api.myramu.online/api/bosses")
+      .then(res => res.json())
+      .then(data => {
+        setBosses(data.bosses || []);
       });
-      setBossData(map);
-    })
-    .finally(() => setLoading(false));
-}, [activeTab, bosses]);
+  }, [activeTab]);
+
+  useEffect(() => {
+    if (activeTab !== "bosses" || bosses.length === 0) return;
+
+    const topBosses = bosses;
+
+
+    setLoading(true);
+
+    Promise.all(
+      topBosses.map((boss) =>
+        fetch(
+          `https://api.myramu.online/api/top-boss-kills?boss=${encodeURIComponent(
+            boss
+          )}&limit=10`
+        )
+          .then((res) => res.json())
+          .then((data) => ({ boss, data: data.top_kills || [] }))
+      )
+    )
+      .then((results) => {
+        const map = {};
+        results.forEach(({ boss, data }) => {
+          map[boss] = data;
+        });
+        setBossData(map);
+      })
+      .finally(() => setLoading(false));
+  }, [activeTab, bosses]);
 
 
   const classIconMap = {
@@ -616,79 +613,96 @@ const topBosses = bosses;
                   )}
                 </>
               )}
-{activeTab === "bosses" && (
-  <>
-    {loading ? (
-      <div style={{ minHeight: "150px", display: "flex", justifyContent: "center", alignItems: "center" }}>
-        <FontAwesomeIcon icon={faSpinner} spin />
-      </div>
-    ) : (
-      <BossGrid>
-{Object.entries(bossData).map(([bossName, rows]) => {
-  const bossCfg = bossConfigMap[bossName];
+              {activeTab === "bosses" && (
+                <>
+                  {loading ? (
+                    <div style={{ minHeight: "150px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                      <FontAwesomeIcon icon={faSpinner} spin />
+                    </div>
+                  ) : (
+                    <BossGrid>
+                      {Object.entries(bossData).map(([bossName, rows]) => {
+                        const bossCfg = bossConfigMap[bossName];
 
-  return (
-    <BossCard key={bossName}>
+                        return (
+                          <BossCard key={bossName}>
 
-<BossHeader>
-  {bossCfg && (
-    <img
-      src={bossCfg.src}
-      alt={bossName}
-      style={{
-        width: `${bossCfg.width}px`,
-        height: `${bossCfg.height}px`,
-        objectFit: "contain",
-        flexShrink: 0,
-      }}
-    />
-  )}
+                            <BossHeader>
+                              {bossCfg && (
+                                <img
+                                  src={bossCfg.src}
+                                  alt={bossName}
+                                  style={{
+                                    width: `${bossCfg.width}px`,
+                                    height: `${bossCfg.height}px`,
+                                    objectFit: "contain",
+                                    flexShrink: 0,
+                                  }}
+                                />
+                              )}
 
-  <BossText>
-    <BossTitle>{bossName}</BossTitle>
+                              <BossText>
+                                <BossTitle>{bossName}</BossTitle>
 
-    {bossCfg && (
-      <BossSubtitle>
-        <span>
-          <FontAwesomeIcon icon={faMapMarkerAlt} /> {bossCfg.map}
-        </span>
-        <span>
-          <FontAwesomeIcon icon={faHeart} /> HP: {bossCfg.hp}
-        </span>
-      </BossSubtitle>
-    )}
-  </BossText>
-</BossHeader>
-      <BossTableWrapper>
-        <HighscoresTable>
-          <thead>
-            <tr>
-              <th>Rank</th>
-              <th>Character</th>
-              <th>Kills</th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((row, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>
-                  <GlowingName rank={index}>{row.name}</GlowingName>
-                </td>
-                <td>{row.kills}</td>
-              </tr>
-            ))}
-          </tbody>
-        </HighscoresTable>
-      </BossTableWrapper>
-    </BossCard>
-  );
-})}
+                                {bossCfg && (
+                                  <BossSubtitle>
+                                    <span>
+                                      <FontAwesomeIcon icon={faMapMarkerAlt} /> {bossCfg.map}
+                                    </span>
+                                    <span>
+                                      <FontAwesomeIcon icon={faHeart} /> HP: {bossCfg.hp}
+                                    </span>
+                                  </BossSubtitle>
+                                )}
+                              </BossText>
+                            </BossHeader>
+                            <BossTableWrapper>
+                              <HighscoresTable>
+                                <thead>
+                                  <tr>
+                                    <th>Rank</th>
+                                    <th>Character</th>
+                                    <th>Kills</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {rows.map((row, index) => (
+                                    <tr key={index}>
+                                      <td>
+                                        {index + 1}
+                                        {index === 0 && (
+                                          <RankIcon style={{ color: "gold" }}>
+                                            <FontAwesomeIcon icon={faCrown} />
+                                          </RankIcon>
+                                        )}
+                                        {index === 1 && (
+                                          <RankIcon style={{ color: "silver" }}>
+                                            <FontAwesomeIcon icon={faCrown} />
+                                          </RankIcon>
+                                        )}
+                                        {index === 2 && (
+                                          <RankIcon style={{ color: "#cd7f32" }}>
+                                            <FontAwesomeIcon icon={faCrown} />
+                                          </RankIcon>
+                                        )}
+                                      </td>
+                                      <td>
+                                        <GlowingName rank={index}>{row.name}</GlowingName>
+                                      </td>
+                                      <td>{row.kills}</td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </HighscoresTable>
+                            </BossTableWrapper>
+                          </BossCard>
+                        );
+                      })}
 
-      </BossGrid>
-    )}
-  </>
-)}
+                    </BossGrid>
+                  )}
+                </>
+              )}
 
 
               {activeTab === "events" && (
