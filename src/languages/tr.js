@@ -363,6 +363,7 @@ export default {
     rank: "Sıra",
     name: "İsim",
     all: "Hepsi",
+    gens: "Gens",
     class: "Sınıf",
     resets: "Sıfırlamalar",
     level: "Seviye",

@@ -365,6 +365,7 @@ export default {
     rank: "Koht",
     name: "Nimi",
     class: "Klass",
+    gens: "Gens",
     resets: "Lähtestamised",
     level: "Tase",
     strength: "Jõud",

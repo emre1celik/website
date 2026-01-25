@@ -353,6 +353,7 @@ export default {
     rank: "Ранг",
     name: "Имя",
     class: "Класс",
+    gens: "Генс",
     resets: "Сбросы",
     level: "Уровень",
     strength: "Сила",

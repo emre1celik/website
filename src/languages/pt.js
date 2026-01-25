@@ -358,6 +358,7 @@ export default {
     resets: "Resets",
     level: "Nível",
     strength: "Força",
+    gens: "Gens",
     agility: "Agilidade",
     vitality: "Vitalidade",
     all: "Todos",

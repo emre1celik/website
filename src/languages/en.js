@@ -435,6 +435,7 @@ export default {
     loadingPlayers: "Loading top players...",
     filterByClass: "Filter by class:",
     all: "All",
+    gens: "Gens",
     rank: "Rank",
     name: "Name",
     class: "Class",

@@ -361,6 +361,7 @@ export default {
     serverError: "Error del servidor: {error}",
     title: "Clasificación",
     topPlayers: "Jugadores Más Activos",
+    gens: "Gens",
     topEvents: "Mejores Eventos",
     topGuilds: "Mejores Gremios",
     loadingPlayers: "Cargando los mejores jugadores...",

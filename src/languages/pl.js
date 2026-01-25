@@ -358,6 +358,7 @@ export default {
     strength: "Siła",
     agility: "Zręczność",
     all: "Wszystko",
+    gens: "Gens",
     vitality: "Witalność",
     energy: "Energia",
     leadership: "Dowodzenie",

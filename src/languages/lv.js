@@ -362,6 +362,7 @@ export default {
     rank: "Rangs",
     name: "Vārds",
     class: "Klase",
+    gens: "Gens",
     resets: "Atiestatījumi",
     level: "Līmenis",
     strength: "Spēks",
