@@ -286,6 +286,7 @@ export const BossHeader = styled.div`
 
   margin: 0 auto;          /* 👈 THIS centers the header */
   text-align: left;        /* keep text natural */
+  padding-bottom: 0.5rem;
 `;
 
 export const BossText = styled.div`

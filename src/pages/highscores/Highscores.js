@@ -100,8 +100,8 @@ const bossConfigMap = {
   },
   "God of Darkness": {
     src: GodOfDarknessIcon,
-    width: 34,
-    height: 44,
+    width: 44,
+    height: 84,
     map: "Aida",
     hp: "900,000",
   },
