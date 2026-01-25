@@ -261,6 +261,7 @@ export const BossCard = styled.div`
   display: flex;
   flex-direction: column;
   height: 320px;
+  gap: 0.5rem;
 `;
 
 export const BossTitle = styled.span`
@@ -283,10 +284,8 @@ export const BossHeader = styled.div`
   display: flex;
   align-items: center;
   gap: 0.75rem;
-
-  margin: 0 auto;          /* 👈 THIS centers the header */
-  text-align: left;        /* keep text natural */
-  padding-bottom: 0.5rem;
+  margin: 0 auto; 
+  text-align: left;
 `;
 
 export const BossText = styled.div`
