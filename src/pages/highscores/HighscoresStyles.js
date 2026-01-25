@@ -222,9 +222,8 @@ export const HighscoresTable = styled.table`
 
   /* For very small screens (<600px), only show Rank, Name, Resets */
   @media (max-width: 600px) {
-    th:nth-child(n+3), /* hide Class (3) */
-    td:nth-child(n+3) {
-      /* hide all columns after Name */
+    th:nth-child(n+4),
+    td:nth-child(n+4) {
       display: none;
     }
 

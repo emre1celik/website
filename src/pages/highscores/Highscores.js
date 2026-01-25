@@ -32,6 +32,8 @@ import GcIcon from "../../assets/images/classes/gc.png";
 import LwIcon from "../../assets/images/classes/lw.png";
 import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
+import DuprianIcon from "../../assets/images/gens/duprian.png";
+import VanertIcon from "../../assets/images/gens/vanert.png";
 
 import DefaultIcon from "../../assets/images/classes/default.png";
 import {
@@ -131,6 +133,16 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       icon: IkIcon,
     },
   };
+
+  const gensMap = {
+    0: null,
+    1: { icon: DuprianIcon, name: "Duprian" },
+    2: { icon: VanertIcon, name: "Vanert" },
+  };
+
+  function getGensInfo(gens) {
+    return gensMap[gens] || null;
+  }
 
   function getClassInfo(raceId) {
     for (const key in classIconMap) {
@@ -360,6 +372,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                             <th>{translate("highscores.rank")}</th>
                             <th>{translate("highscores.name")}</th>
                             <th>{translate("highscores.class")}</th>
+                            <th>{translate("highscores.gens")}</th>
                             <th>{translate("highscores.resets")}</th>
                             <th>{translate("highscores.level")}</th>
                             <th className="hideOnSmall">
@@ -373,9 +386,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                             </th>
                             <th className="hideOnSmall">
                               {translate("highscores.energy")}
-                            </th>
-                            <th className="hideOnSmall">
-                              {translate("highscores.leadership")}
                             </th>
                           </tr>
                         </thead>
@@ -429,7 +439,24 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                   );
                                 })()}
                               </td>
-
+                              <td>
+                                {(() => {
+                                  const gens = getGensInfo(player.gens);
+                                  return gens ? (
+                                    <img
+                                      src={gens.icon}
+                                      alt={gens.name}
+                                      title={gens.name}
+                                      style={{
+                                        width: "28px",
+                                        height: "28px",
+                                      }}
+                                    />
+                                  ) : (
+                                    <span style={{ opacity: 0.3 }}>–</span>
+                                  );
+                                })()}
+                              </td>
                               <td>
                                 {player.grand_reset > 0 ? (
                                   <>
@@ -454,11 +481,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                               </td>
                               <td className="hideOnSmall">
                                 {formatNumber(player.energy)}
-                              </td>
-                              <td className="hideOnSmall">
-                                {player.leadership === 0
-                                  ? "N/A"
-                                  : formatNumber(player.leadership)}
                               </td>
                             </tr>
                           ))}
