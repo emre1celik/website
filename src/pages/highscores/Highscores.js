@@ -97,7 +97,8 @@ useEffect(() => {
 useEffect(() => {
   if (activeTab !== "bosses" || bosses.length === 0) return;
 
-  const topBosses = bosses.slice(0, 4); // 👈 2x2 grid
+const topBosses = bosses;
+
 
   setLoading(true);
 
