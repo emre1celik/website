@@ -14,6 +14,9 @@ import {
   BossSubtitle,
   BossHeader,
   BossText,
+  NameWithTooltip,
+  PlayerTooltip,
+  TooltipRow,
   PlayerGrid,
   PlayerCard,
   PlayerHeader,
@@ -256,10 +259,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     2: { icon: VanertIcon, name: "Vanert" },
   };
 
-  function getGensInfo(gens) {
-    return gensMap[gens] || null;
-  }
-
   const bossDisplayOrder = [
     "God of Darkness",
     "Nix",
@@ -302,16 +301,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
         setLoadingEvents(false);
       }
     };
-    function groupPlayersByClass(players) {
-      const groups = { all: players.slice(0, 10) };
-
-      Object.keys(classIconMap).forEach((key) => {
-        const ids = classIconMap[key].ids;
-        groups[key] = players.filter((p) => ids.includes(p.race)).slice(0, 10);
-      });
-
-      return groups;
-    }
 
     const fetchGuilds = async () => {
       setLoadingGuilds(true);
@@ -393,18 +382,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     fetchHighscores();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedClass]);
-  function groupPlayersByClass(players, classIconMap) {
-    const groups = { all: players.slice(0, 10) };
-
-    Object.keys(classIconMap).forEach((key) => {
-      const ids = classIconMap[key].ids;
-      groups[key] = players
-        .filter((p) => ids.includes(p.race))
-        .slice(0, 10);
-    });
-
-    return groups;
-  }
 
   return (
     <>
@@ -501,14 +478,74 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                 <tr key={i}>
                                   <td>
                                     {i + 1}
-                                    {i < 3 && (
-                                      <RankIcon>
+                                    {i === 0 && (
+                                      <RankIcon style={{ color: "gold" }}>
                                         <FontAwesomeIcon icon={faCrown} />
                                       </RankIcon>
                                     )}
+                                    {i === 1 && (
+                                      <RankIcon style={{ color: "silver" }}>
+                                        <FontAwesomeIcon icon={faCrown} />
+                                      </RankIcon>
+                                    )}
+                                    {i === 2 && (
+                                      <RankIcon style={{ color: "#cd7f32" }}>
+                                        <FontAwesomeIcon icon={faCrown} />
+                                      </RankIcon>
+                                    )}
+
                                   </td>
                                   <td>
-                                    <GlowingName rank={i}>{p.name}</GlowingName>
+                                    <NameWithTooltip>
+                                      <GlowingName rank={i}>{p.name}</GlowingName>
+
+                                      <PlayerTooltip>
+                                        <TooltipRow>
+                                          <span>Level</span>
+                                          <strong>{p.level}</strong>
+                                        </TooltipRow>
+
+                                        <TooltipRow>
+                                          <span>Master</span>
+                                          <strong>{p.level_master}</strong>
+                                        </TooltipRow>
+
+                                        <TooltipRow>
+                                          <span>Majestic</span>
+                                          <strong>{p.level_majestic}</strong>
+                                        </TooltipRow>
+
+                                        <hr style={{ borderColor: "rgba(255,255,255,0.1)", margin: "6px 0" }} />
+
+                                        <TooltipRow>
+                                          <span>STR</span>
+                                          <strong>{formatNumber(p.strength)}</strong>
+                                        </TooltipRow>
+
+                                        <TooltipRow>
+                                          <span>AGI</span>
+                                          <strong>{formatNumber(p.agility)}</strong>
+                                        </TooltipRow>
+
+                                        <TooltipRow>
+                                          <span>VIT</span>
+                                          <strong>{formatNumber(p.vitality)}</strong>
+                                        </TooltipRow>
+
+                                        <TooltipRow>
+                                          <span>ENE</span>
+                                          <strong>{formatNumber(p.energy)}</strong>
+                                        </TooltipRow>
+
+                                        {p.leadership > 0 && (
+                                          <TooltipRow>
+                                            <span>CMD</span>
+                                            <strong>{formatNumber(p.leadership)}</strong>
+                                          </TooltipRow>
+                                        )}
+                                      </PlayerTooltip>
+                                    </NameWithTooltip>
+
                                   </td>
                                   <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
                                 </tr>

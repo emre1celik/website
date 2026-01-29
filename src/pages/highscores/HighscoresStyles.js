@@ -307,6 +307,62 @@ export const PlayerHeader = styled.div`
   margin: 0 auto;
 `;
 
+export const NameWithTooltip = styled.div`
+  position: relative;
+  display: inline-block;
+`;
+
+export const PlayerTooltip = styled.div`
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  background: rgba(10, 10, 15, 0.95);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  color: #fff;
+  z-index: 999;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+
+  opacity: 0;
+  transform: translate(-50%, 6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+
+  ${NameWithTooltip}:hover & {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: rgba(10, 10, 15, 0.95) transparent transparent transparent;
+  }
+`;
+
+export const TooltipRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 0;
+
+  span {
+    opacity: 0.85;
+  }
+
+  strong {
+    color: #ffd700;
+  }
+`;
 export const PlayerTitle = styled.span`
   font-size: 1.1rem;
   font-weight: bold;
