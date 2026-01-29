@@ -506,62 +506,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
                                   </td>
                                   <td>
-                                    <NameWithTooltip>
-                                      <GlowingName
-                                        rank={i}
-                                        style={{ cursor: "pointer" }}
-                                        onClick={() => setSelectedPlayer(p)}
-                                      >
-                                        {p.name}
-                                      </GlowingName>
-
-                                      <PlayerTooltip>
-                                        <TooltipRow>
-                                          <span>Level</span>
-                                          <strong>{p.level}</strong>
-                                        </TooltipRow>
-
-                                        <TooltipRow>
-                                          <span>Master</span>
-                                          <strong>{p.level_master}</strong>
-                                        </TooltipRow>
-
-                                        <TooltipRow>
-                                          <span>Majestic</span>
-                                          <strong>{p.level_majestic}</strong>
-                                        </TooltipRow>
-
-                                        <hr style={{ borderColor: "rgba(255,255,255,0.1)", margin: "6px 0" }} />
-
-                                        <TooltipRow>
-                                          <span>STR</span>
-                                          <strong>{formatNumber(p.strength)}</strong>
-                                        </TooltipRow>
-
-                                        <TooltipRow>
-                                          <span>AGI</span>
-                                          <strong>{formatNumber(p.agility)}</strong>
-                                        </TooltipRow>
-
-                                        <TooltipRow>
-                                          <span>VIT</span>
-                                          <strong>{formatNumber(p.vitality)}</strong>
-                                        </TooltipRow>
-
-                                        <TooltipRow>
-                                          <span>ENE</span>
-                                          <strong>{formatNumber(p.energy)}</strong>
-                                        </TooltipRow>
-
-                                        {p.leadership > 0 && (
-                                          <TooltipRow>
-                                            <span>CMD</span>
-                                            <strong>{formatNumber(p.leadership)}</strong>
-                                          </TooltipRow>
-                                        )}
-                                      </PlayerTooltip>
-                                    </NameWithTooltip>
-
+                                    <GlowingName
+                                      rank={i}
+                                      style={{ cursor: "pointer" }}
+                                      onClick={() => setSelectedPlayer(p)}
+                                    >
+                                      {p.name}
+                                    </GlowingName>
                                   </td>
                                   <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
                                 </tr>
@@ -618,57 +569,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
                                         </td>
                                         <td>
-                                          <NameWithTooltip>
-                                            <GlowingName
-                                              rank={i}
-                                              style={{ cursor: "pointer" }}
-                                              onClick={() => setSelectedPlayer(p)}
-                                            >
-                                              {p.name}
-                                            </GlowingName>
-
-
-                                            <PlayerTooltip>
-                                              <TooltipRow>
-                                                <span>Level</span>
-                                                <strong>{p.level}</strong>
-                                              </TooltipRow>
-
-                                              <hr
-                                                style={{
-                                                  borderColor: "rgba(255,255,255,0.1)",
-                                                  margin: "6px 0",
-                                                }}
-                                              />
-
-                                              <TooltipRow>
-                                                <span>{translate("highscores.strength")}</span>
-                                                <strong>{formatNumber(p.strength)}</strong>
-                                              </TooltipRow>
-
-                                              <TooltipRow>
-                                                <span>{translate("highscores.agility")}</span>
-                                                <strong>{formatNumber(p.agility)}</strong>
-                                              </TooltipRow>
-
-                                              <TooltipRow>
-                                                <span>{translate("highscores.vitality")}</span>
-                                                <strong>{formatNumber(p.vitality)}</strong>
-                                              </TooltipRow>
-
-                                              <TooltipRow>
-                                                <span>{translate("highscores.energy")}</span>
-                                                <strong>{formatNumber(p.energy)}</strong>
-                                              </TooltipRow>
-
-                                              {p.leadership > 0 && (
-                                                <TooltipRow>
-                                                  <span>{translate("highscores.leadership")}</span>
-                                                  <strong>{formatNumber(p.leadership)}</strong>
-                                                </TooltipRow>
-                                              )}
-                                            </PlayerTooltip>
-                                          </NameWithTooltip>
+                                          <GlowingName
+                                            rank={i}
+                                            style={{ cursor: "pointer" }}
+                                            onClick={() => setSelectedPlayer(p)}
+                                          >
+                                            {p.name}
+                                          </GlowingName>
                                         </td>
                                         <td>
                                           {formatNumber(
@@ -976,42 +883,66 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
               <PopupSection>
                 <PopupRow>
-                  <span>Level</span>
+                  <span>{translate("highscores.level")}</span>
                   <strong>{selectedPlayer.level}</strong>
                 </PopupRow>
                 <PopupRow>
-                  <span>Master</span>
-                  <strong>{selectedPlayer.level_master}</strong>
+                  <span>{translate("highscores.resets")}</span>
+                  <strong>
+                    {formatNumber(
+                      selectedPlayer.reset + selectedPlayer.grand_reset * 100
+                    )}</strong>
                 </PopupRow>
-                <PopupRow>
-                  <span>Majestic</span>
-                  <strong>{selectedPlayer.level_majestic}</strong>
-                </PopupRow>
+                {(() => {
+                  const { icon, key } = getClassInfo(selectedPlayer.race);
+                  return (
+                    <PopupRow>
+                      <span>{translate("highscores.class")}</span>
+                      <strong style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                        <img
+                          src={icon}
+                          alt={key}
+                          style={{ width: 20, height: 20 }}
+                        />
+                        {classNamesMap[key] || "Unknown"}
+                      </strong>
+                    </PopupRow>
+                  );
+                })()}
+
               </PopupSection>
 
               <Divider />
 
               <PopupSection>
                 <PopupRow>
-                  <span>STR</span>
+                  <span>{translate("highscores.life")}</span>
+                  <strong>{selectedPlayer.life}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>{translate("highscores.mana")}</span>
+                  <strong>{selectedPlayer.mana}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>{translate("highscores.strength")}</span>
                   <strong>{formatNumber(selectedPlayer.strength)}</strong>
                 </PopupRow>
                 <PopupRow>
-                  <span>AGI</span>
+                  <span>{translate("highscores.agility")}</span>
                   <strong>{formatNumber(selectedPlayer.agility)}</strong>
                 </PopupRow>
                 <PopupRow>
-                  <span>VIT</span>
+                  <span>{translate("highscores.vitality")}</span>
                   <strong>{formatNumber(selectedPlayer.vitality)}</strong>
                 </PopupRow>
                 <PopupRow>
-                  <span>ENE</span>
+                  <span>{translate("highscores.energy")}</span>
                   <strong>{formatNumber(selectedPlayer.energy)}</strong>
                 </PopupRow>
 
                 {selectedPlayer.leadership > 0 && (
                   <PopupRow>
-                    <span>CMD</span>
+                    <span>{translate("highscores.leadership")}</span>
                     <strong>{formatNumber(selectedPlayer.leadership)}</strong>
                   </PopupRow>
                 )}
