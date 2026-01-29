@@ -310,6 +310,7 @@ export const PlayerHeader = styled.div`
 export const NameWithTooltip = styled.div`
   position: relative;
   display: inline-block;
+  z-index: 9999;
 `;
 
 export const PlayerTooltip = styled.div`
