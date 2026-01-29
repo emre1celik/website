@@ -95,7 +95,27 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     lw: "Light Wizard",
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
-  }; const classMeta = {
+  }; const eventMeta = {
+    0: {
+      name: "Blood Castle",
+      description: "Race against time to destroy the Crystal Statue",
+      stats: "Score • Speed • Team Coordination",
+      icon: faSkull,
+    },
+    1: {
+      name: "Devil Square",
+      description: "Survive endless monster waves for maximum score",
+      stats: "Kills • Damage • AoE Efficiency",
+      icon: faSkull,
+    },
+    2: {
+      name: "Chaos Castle",
+      description: "Last man standing in a shrinking arena",
+      stats: "PvP • Survivability • Positioning",
+      icon: faSkull,
+    },
+  };
+  const classMeta = {
     all: {
       description: "Overall ranking across all classes and builds",
       stats: "Total Resets • Levels • Global Progression",
@@ -444,6 +464,17 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     fetchHighscores();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedClass]);
+  const eventsByType = {
+    0: [],
+    1: [],
+    2: [],
+  };
+
+  events.forEach((e) => {
+    if (eventsByType[e.event_id]) {
+      eventsByType[e.event_id].push(e);
+    }
+  });
 
   return (
     <>
@@ -804,54 +835,61 @@ function Highscores({ user, currentTheme, onThemeChange }) {
               {activeTab === "events" && (
                 <>
                   {loadingEvents ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        minHeight: "150px",
-                      }}
-                    >
+                    <div style={{ minHeight: "150px", display: "flex", alignItems: "center", justifyContent: "center" }}>
                       <FontAwesomeIcon icon={faSpinner} spin />
                       &nbsp;{translate("highscores.loadingEvents")}
                     </div>
                   ) : errorEvents ? (
                     <p style={{ color: "red" }}>{errorEvents}</p>
                   ) : (
-                    <PlayerGrid>
-                      {eventConfig.map((eventCfg) => {
-                        const rows = events
-                          .filter((e) => e.event_id === eventCfg.id)
-                          .slice(0, 25);
-
-                        if (!rows.length) return null;
+                    <BossGrid>
+                      {[0, 1, 2].map((eventId) => {
+                        const meta = eventMeta[eventId];
+                        const rows = eventsByType[eventId] || [];
 
                         return (
-                          <PlayerCard key={eventCfg.id} style={{ height: "500px" }}>
-                            <PlayerHeader>
-                              <FontAwesomeIcon icon={faTrophy} />
-                              <PlayerTitle>{eventCfg.label}</PlayerTitle>
-                            </PlayerHeader>
+                          <BossCard key={eventId}>
+                            {/* Header */}
+                            <BossHeader>
+                              <FontAwesomeIcon
+                                icon={meta.icon}
+                                size="2x"
+                                style={{ color: "#aaa", flexShrink: 0 }}
+                              />
 
+                              <BossText>
+                                <BossTitle>{meta.name}</BossTitle>
+
+                                <BossSubtitle>
+                                  <span>{meta.description}</span>
+                                  <span>
+                                    <strong style={{ color: "#aaa" }}>Focus:</strong>{" "}
+                                    {meta.stats}
+                                  </span>
+                                </BossSubtitle>
+                              </BossText>
+                            </BossHeader>
+
+                            {/* Table */}
                             <BossTableWrapper>
                               <HighscoresTable>
                                 <thead>
                                   <tr>
                                     <th>{translate("highscores.rank")}</th>
-                                    <th>{translate("highscores.name")}</th>
+                                    <th>{translate("highscores.character")}</th>
                                     <th>{translate("highscores.class")}</th>
                                     <th>{translate("highscores.score")}</th>
                                   </tr>
                                 </thead>
                                 <tbody>
-                                  {rows.map((row, index) => {
+                                  {rows.slice(0, 25).map((row, index) => {
                                     const { icon, key } = getClassInfo(row.race);
 
                                     return (
                                       <tr key={index}>
                                         <td>
                                           {index + 1}
-                                          {index <= 2 && (
+                                          {index < 3 && (
                                             <RankIcon
                                               style={{
                                                 color:
@@ -866,19 +904,22 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                             </RankIcon>
                                           )}
                                         </td>
+
                                         <td>
                                           <GlowingName rank={index}>
                                             {row.char_name}
                                           </GlowingName>
                                         </td>
+
                                         <td>
                                           <img
                                             src={icon}
                                             alt={key}
-                                            title={classNamesMap[key] || "Unknown"}
+                                            title={classNamesMap[key]}
                                             style={{ width: 28, height: 28 }}
                                           />
                                         </td>
+
                                         <td>{formatNumber(row.score)}</td>
                                       </tr>
                                     );
@@ -886,10 +927,10 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                 </tbody>
                               </HighscoresTable>
                             </BossTableWrapper>
-                          </PlayerCard>
+                          </BossCard>
                         );
                       })}
-                    </PlayerGrid>
+                    </BossGrid>
                   )}
                 </>
               )}
