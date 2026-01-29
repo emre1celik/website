@@ -66,7 +66,7 @@ import GuildEmblem from "../../components/guild_emblem/GuildEmblem";
 function Highscores({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
   const [selectedClass, setSelectedClass] = useState("all");
-  const [players, setPlayers] = useState([]);
+  const [players, setPlayers] = useState({});
   const [selectedEvent, setSelectedEvent] = useState("1");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -463,56 +463,66 @@ function Highscores({ user, currentTheme, onThemeChange }) {
               {activeTab === "players" && (
                 <>
                   {loading ? (
-                    <div style={{ minHeight: "150px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <div
+                      style={{
+                        minHeight: "150px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
                       <FontAwesomeIcon icon={faSpinner} spin />
                       &nbsp;{translate("highscores.loadingPlayers")}
                     </div>
                   ) : error ? (
                     <p style={{ color: "red" }}>{error}</p>
+                  ) : !players || !players.all ? (
+                    <p>{translate("highscores.loadingPlayers")}</p>
                   ) : (
-                    (() => {
-                      const grouped = players;
+                    <PlayerGrid>
+                      {/* ALL CLASSES */}
+                      <PlayerCard>
+                        <PlayerHeader>
+                          <FontAwesomeIcon icon={faUsers} />
+                          <PlayerTitle>{translate("highscores.topPlayers")}</PlayerTitle>
+                        </PlayerHeader>
 
-                      return (
-                        <PlayerGrid>
-                          {/* ALL CLASSES */}
-                          <PlayerCard>
-                            <PlayerHeader>
-                              <FontAwesomeIcon icon={faUsers} />
-                              <PlayerTitle>{translate("highscores.topPlayers")}</PlayerTitle>
-                            </PlayerHeader>
+                        <BossTableWrapper>
+                          <HighscoresTable>
+                            <thead>
+                              <tr>
+                                <th>{translate("highscores.rank")}</th>
+                                <th>{translate("highscores.name")}</th>
+                                <th>{translate("highscores.resets")}</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {players.all.map((p, i) => (
+                                <tr key={i}>
+                                  <td>
+                                    {i + 1}
+                                    {i < 3 && (
+                                      <RankIcon>
+                                        <FontAwesomeIcon icon={faCrown} />
+                                      </RankIcon>
+                                    )}
+                                  </td>
+                                  <td>
+                                    <GlowingName rank={i}>{p.name}</GlowingName>
+                                  </td>
+                                  <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </HighscoresTable>
+                        </BossTableWrapper>
+                      </PlayerCard>
 
-                            <BossTableWrapper>
-                              <HighscoresTable>
-                                <thead>
-                                  <tr>
-                                    <th>{translate("highscores.rank")}</th>
-                                    <th>{translate("highscores.name")}</th>
-                                    <th>{translate("highscores.resets")}</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  {grouped.all.map((p, i) => (
-                                    <tr key={i}>
-                                      <td>
-                                        {i + 1}
-                                        {i < 3 && (
-                                          <RankIcon>
-                                            <FontAwesomeIcon icon={faCrown} />
-                                          </RankIcon>
-                                        )}
-                                      </td>
-                                      <td><GlowingName rank={i}>{p.name}</GlowingName></td>
-                                      <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
-                                    </tr>
-                                  ))}
-                                </tbody>
-                              </HighscoresTable>
-                            </BossTableWrapper>
-                          </PlayerCard>
-
-                          {/* PER CLASS */}
-                          {Object.keys(classIconMap).map((key) => (
+                      {/* PER CLASS */}
+                      {Object.keys(classIconMap).map(
+                        (key) =>
+                          players[key] &&
+                          players[key].length > 0 && (
                             <PlayerCard key={key}>
                               <PlayerHeader>
                                 <img
@@ -533,7 +543,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     </tr>
                                   </thead>
                                   <tbody>
-                                    {grouped[key].map((p, i) => (
+                                    {players[key].map((p, i) => (
                                       <tr key={i}>
                                         <td>
                                           {i + 1}
@@ -543,21 +553,27 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                             </RankIcon>
                                           )}
                                         </td>
-                                        <td><GlowingName rank={i}>{p.name}</GlowingName></td>
-                                        <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
+                                        <td>
+                                          <GlowingName rank={i}>{p.name}</GlowingName>
+                                        </td>
+                                        <td>
+                                          {formatNumber(
+                                            p.reset + p.grand_reset * 100
+                                          )}
+                                        </td>
                                       </tr>
                                     ))}
                                   </tbody>
                                 </HighscoresTable>
                               </BossTableWrapper>
                             </PlayerCard>
-                          ))}
-                        </PlayerGrid>
-                      );
-                    })()
+                          )
+                      )}
+                    </PlayerGrid>
                   )}
                 </>
               )}
+
               {activeTab === "bosses" && (
                 <>
                   {loading ? (
