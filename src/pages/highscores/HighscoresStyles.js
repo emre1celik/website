@@ -316,23 +316,24 @@ export const NameWithTooltip = styled.div`
 
 export const PlayerTooltip = styled.div`
   position: absolute;
-  bottom: 120%;
+  top: 120%;
   left: 50%;
   transform: translateX(-50%);
   min-width: 200px;
+
   background: rgba(10, 10, 15, 0.95);
   border: 1px solid rgba(255, 215, 0, 0.4);
   border-radius: 8px;
   padding: 0.75rem;
   font-size: 0.75rem;
   color: #fff;
-  z-index: 999;
 
+  z-index: 999;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
   pointer-events: none;
 
   opacity: 0;
-  transform: translate(-50%, 6px);
+  transform: translate(-50%, -6px);
   transition: opacity 0.2s ease, transform 0.2s ease;
 
   ${NameWithTooltip}:hover & {
@@ -340,15 +341,16 @@ export const PlayerTooltip = styled.div`
     transform: translate(-50%, 0);
   }
 
+  /* Arrow pointing UP */
   &:after {
     content: "";
     position: absolute;
-    top: 100%;
+    bottom: 100%;
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
     border-style: solid;
-    border-color: rgba(10, 10, 15, 0.95) transparent transparent transparent;
+    border-color: transparent transparent rgba(10, 10, 15, 0.95) transparent;
   }
 `;
 
