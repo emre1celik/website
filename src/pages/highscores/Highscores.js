@@ -95,7 +95,65 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     lw: "Light Wizard",
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
+  }; const classMeta = {
+    dw: {
+      description: "Master of elemental magic and long-range spells",
+      stats: "Energy • Mana • Skill Damage",
+    },
+    dk: {
+      description: "Melee warrior with devastating physical strength",
+      stats: "Strength • Vitality • Attack Damage",
+    },
+    elf: {
+      description: "Agile archer supporting allies with buffs",
+      stats: "Agility • Energy • Support Skills",
+    },
+    mg: {
+      description: "Hybrid fighter combining magic and melee",
+      stats: "Strength • Energy • Hybrid Damage",
+    },
+    dl: {
+      description: "Commander using dark magic and leadership",
+      stats: "Energy • Leadership • Curse Damage",
+    },
+    sum: {
+      description: "Summoner controlling powerful spirits",
+      stats: "Energy • Summon Damage",
+    },
+    rf: {
+      description: "Close-range brawler with explosive combos",
+      stats: "Vitality • Strength • Combo Damage",
+    },
+    gl: {
+      description: "Spear master with balanced offense",
+      stats: "Strength • Agility • Pierce Damage",
+    },
+    rw: {
+      description: "Rune-enhanced spellcaster",
+      stats: "Energy • Rune Power • Skill Damage",
+    },
+    sl: {
+      description: "High-speed assassin with burst damage",
+      stats: "Agility • Critical Damage",
+    },
+    gc: {
+      description: "Gun specialist with rapid fire attacks",
+      stats: "Agility • Attack Speed • DPS",
+    },
+    lw: {
+      description: "Light-based spellcaster with control magic",
+      stats: "Energy • Crowd Control",
+    },
+    ma: {
+      description: "Ancient mage of Lemuria",
+      stats: "Energy • Mastery Damage",
+    },
+    ik: {
+      description: "Knight manipulating illusions and blades",
+      stats: "Strength • Agility • Hybrid Damage",
+    },
   };
+
   const [bossData, setBossData] = useState({});
   const bossConfigMap = {
     "God of Darkness": {
@@ -519,14 +577,38 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                           players[key] &&
                           players[key].length > 0 && (
                             <PlayerCard key={key}>
-                              <PlayerHeader>
+                              <PlayerHeader style={{ justifyContent: "flex-start" }}>
                                 <img
                                   src={classIconMap[key].icon}
                                   alt={key}
-                                  style={{ width: 32, height: 32 }}
+                                  style={{ width: 42, height: 42, flexShrink: 0 }}
                                 />
-                                <PlayerTitle>{classNamesMap[key]}</PlayerTitle>
+
+                                <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
+                                  <PlayerTitle>{classNamesMap[key]}</PlayerTitle>
+
+                                  <span
+                                    style={{
+                                      fontSize: "0.75rem",
+                                      color: "rgba(255,255,255,0.65)",
+                                      marginTop: "2px",
+                                    }}
+                                  >
+                                    {classMeta[key]?.description}
+                                  </span>
+
+                                  <span
+                                    style={{
+                                      fontSize: "0.75rem",
+                                      color: "rgba(255,255,255,0.65)",
+                                    }}
+                                  >
+                                    <strong style={{ color: "#aaa" }}>Focus:</strong>{" "}
+                                    {classMeta[key]?.stats}
+                                  </span>
+                                </div>
                               </PlayerHeader>
+
 
                               <BossTableWrapper>
                                 <HighscoresTable>
