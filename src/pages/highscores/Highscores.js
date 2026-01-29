@@ -848,7 +848,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                         const rows = eventsByType[eventId] || [];
 
                         return (
-                          <BossCard key={eventId}>
+                          <BossCard key={eventId} style={{ height: "500px", width: "100%" }}>
                             {/* Header */}
                             <BossHeader>
                               <FontAwesomeIcon
