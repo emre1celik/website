@@ -274,6 +274,49 @@ export const BossSubtitle = styled.div`
     display: block;
   }
 `;
+export const PlayerGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+export const PlayerCard = styled.div`
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  height: 320px;
+  gap: 0.5rem;
+`;
+
+export const PlayerHeader = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 auto;
+`;
+
+export const PlayerTitle = styled.span`
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: ${({ theme }) => theme.primary};
+`;
+
+export const PlayerSubtitle = styled.div`
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+`;
 
 export const BossHeader = styled.div`
   display: flex;

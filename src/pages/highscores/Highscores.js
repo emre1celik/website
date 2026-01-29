@@ -14,6 +14,10 @@ import {
   BossSubtitle,
   BossHeader,
   BossText,
+  PlayerGrid,
+  PlayerCard,
+  PlayerHeader,
+  PlayerTitle,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -298,6 +302,16 @@ function Highscores({ user, currentTheme, onThemeChange }) {
         setLoadingEvents(false);
       }
     };
+    function groupPlayersByClass(players) {
+      const groups = { all: players.slice(0, 10) };
+
+      Object.keys(classIconMap).forEach((key) => {
+        const ids = classIconMap[key].ids;
+        groups[key] = players.filter((p) => ids.includes(p.race)).slice(0, 10);
+      });
+
+      return groups;
+    }
 
     const fetchGuilds = async () => {
       setLoadingGuilds(true);
@@ -436,186 +450,108 @@ function Highscores({ user, currentTheme, onThemeChange }) {
               {activeTab === "players" && (
                 <>
                   {loading ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        minHeight: "150px",
-                      }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faSpinner}
-                        spin
-                        style={{ marginRight: "8px" }}
-                      />
-                      {translate("highscores.loadingPlayers")}
+                    <div style={{ minHeight: "150px", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                      <FontAwesomeIcon icon={faSpinner} spin />
+                      &nbsp;{translate("highscores.loadingPlayers")}
                     </div>
-                  ) : errorEvents ? (
+                  ) : error ? (
                     <p style={{ color: "red" }}>{error}</p>
                   ) : (
-                    <>
-                      <HighscoresFilter>
-                        {" "}
-                        <label>
-                          {translate("highscores.filterByClass")}
-                        </label>{" "}
-                        <div
-                          style={{
-                            display: "flex",
-                            alignItems: "center",
-                            justifyContent: "center",
-                            gap: "8px",
-                          }}
-                        >
-                          {" "}
-                          <img
-                            src={
-                              selectedClass === "all"
-                                ? DefaultIcon
-                                : classIconMap[selectedClass].icon
-                            }
-                            alt={selectedClass}
-                            style={{ width: "28px", height: "28px" }}
-                          />{" "}
-                          <select
-                            value={selectedClass}
-                            onChange={(e) => setSelectedClass(e.target.value)}
-                          >
-                            {" "}
-                            <option value="all">
-                              {translate("highscores.all")}
-                            </option>{" "}
-                            {Object.keys(classIconMap).map((key) => (
-                              <option key={key} value={key}>
-                                {" "}
-                                {classNamesMap[key] || key}{" "}
-                              </option>
-                            ))}{" "}
-                          </select>{" "}
-                        </div>{" "}
-                      </HighscoresFilter>{" "}
-                      <HighscoresTable>
-                        <thead>
-                          <tr>
-                            <th>{translate("highscores.rank")}</th>
-                            <th>{translate("highscores.name")}</th>
-                            <th>{translate("highscores.class")}</th>
-                            <th>{translate("highscores.resets")}</th>
-                            <th>{translate("highscores.level")}</th>
-                            <th className="hideOnSmall">
-                              {translate("highscores.strength")}
-                            </th>
-                            <th className="hideOnSmall">
-                              {translate("highscores.agility")}
-                            </th>
-                            <th className="hideOnSmall">
-                              {translate("highscores.vitality")}
-                            </th>
-                            <th className="hideOnSmall">
-                              {translate("highscores.energy")}
-                            </th>
-                            <th>{translate("highscores.gens")}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {players.map((player, index) => (
-                            <tr key={index}>
-                              <td>
-                                {index + 1}{" "}
-                                {index === 0 && (
-                                  <RankIcon style={{ color: "gold" }}>
-                                    <FontAwesomeIcon icon={faCrown} />
-                                  </RankIcon>
-                                )}
-                                {index === 1 && (
-                                  <RankIcon style={{ color: "silver" }}>
-                                    <FontAwesomeIcon icon={faCrown} />
-                                  </RankIcon>
-                                )}
-                                {index === 2 && (
-                                  <RankIcon style={{ color: "#cd7f32" }}>
-                                    {" "}
-                                    {/* bronze */}
-                                    <FontAwesomeIcon icon={faCrown} />
-                                  </RankIcon>
-                                )}
-                              </td>
+                    (() => {
+                      function groupPlayersByClass(players) {
+                        const groups = { all: players.slice(0, 10) };
 
-                              <td>
-                                <GlowingName rank={index}>
-                                  {player.name}
-                                </GlowingName>
-                              </td>
-                              <td>
-                                {(() => {
-                                  const { icon, key } = getClassInfo(
-                                    player.race
-                                  );
-                                  return (
-                                    <img
-                                      src={icon}
-                                      alt={`Class ${player.race}`}
-                                      title={
-                                        classNamesMap[key] || "Unknown Class"
-                                      }
-                                      style={{
-                                        width: "32px",
-                                        height: "32px",
-                                        cursor: "pointer",
-                                      }}
-                                    />
-                                  );
-                                })()}
-                              </td>
-                              <td>
-                                {player.grand_reset > 0 ? (
-                                  <>
-                                    {formatNumber(
-                                      player.reset + player.grand_reset * 100
-                                    )}
-                                  </>
-                                ) : (
-                                  formatNumber(player.reset)
-                                )}
-                              </td>
+                        Object.keys(classIconMap).forEach((key) => {
+                          const ids = classIconMap[key].ids;
+                          groups[key] = players.filter((p) => ids.includes(p.race)).slice(0, 10);
+                        });
 
-                              <td>{formatNumber(player.level)}</td>
-                              <td className="hideOnSmall">
-                                {formatNumber(player.strength)}
-                              </td>
-                              <td className="hideOnSmall">
-                                {formatNumber(player.agility)}
-                              </td>
-                              <td className="hideOnSmall">
-                                {formatNumber(player.vitality)}
-                              </td>
-                              <td className="hideOnSmall">
-                                {formatNumber(player.energy)}
-                              </td>
-                              <td>
-                                {(() => {
-                                  const gens = getGensInfo(player.gens);
-                                  return gens ? (
-                                    <img
-                                      src={gens.icon}
-                                      alt={gens.name}
-                                      title={gens.name}
-                                      style={{
-                                        width: "28px",
-                                        height: "28px",
-                                      }}
-                                    />
-                                  ) : (
-                                    <span style={{ opacity: 0.3 }}>–</span>
-                                  );
-                                })()}
-                              </td>
-                            </tr>
+                        return groups;
+                      }
+                      const grouped = groupPlayersByClass(players);
+
+                      return (
+                        <PlayerGrid>
+                          {/* ALL CLASSES */}
+                          <PlayerCard>
+                            <PlayerHeader>
+                              <FontAwesomeIcon icon={faUsers} />
+                              <PlayerTitle>{translate("highscores.topPlayers")}</PlayerTitle>
+                            </PlayerHeader>
+
+                            <BossTableWrapper>
+                              <HighscoresTable>
+                                <thead>
+                                  <tr>
+                                    <th>{translate("highscores.rank")}</th>
+                                    <th>{translate("highscores.name")}</th>
+                                    <th>{translate("highscores.resets")}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {grouped.all.map((p, i) => (
+                                    <tr key={i}>
+                                      <td>
+                                        {i + 1}
+                                        {i < 3 && (
+                                          <RankIcon>
+                                            <FontAwesomeIcon icon={faCrown} />
+                                          </RankIcon>
+                                        )}
+                                      </td>
+                                      <td><GlowingName rank={i}>{p.name}</GlowingName></td>
+                                      <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
+                                    </tr>
+                                  ))}
+                                </tbody>
+                              </HighscoresTable>
+                            </BossTableWrapper>
+                          </PlayerCard>
+
+                          {/* PER CLASS */}
+                          {Object.keys(classIconMap).map((key) => (
+                            <PlayerCard key={key}>
+                              <PlayerHeader>
+                                <img
+                                  src={classIconMap[key].icon}
+                                  alt={key}
+                                  style={{ width: 32, height: 32 }}
+                                />
+                                <PlayerTitle>{classNamesMap[key]}</PlayerTitle>
+                              </PlayerHeader>
+
+                              <BossTableWrapper>
+                                <HighscoresTable>
+                                  <thead>
+                                    <tr>
+                                      <th>{translate("highscores.rank")}</th>
+                                      <th>{translate("highscores.name")}</th>
+                                      <th>{translate("highscores.resets")}</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    {grouped[key].map((p, i) => (
+                                      <tr key={i}>
+                                        <td>
+                                          {i + 1}
+                                          {i < 3 && (
+                                            <RankIcon>
+                                              <FontAwesomeIcon icon={faCrown} />
+                                            </RankIcon>
+                                          )}
+                                        </td>
+                                        <td><GlowingName rank={i}>{p.name}</GlowingName></td>
+                                        <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </HighscoresTable>
+                              </BossTableWrapper>
+                            </PlayerCard>
                           ))}
-                        </tbody>
-                      </HighscoresTable>
-                    </>
+                        </PlayerGrid>
+                      );
+                    })()
                   )}
                 </>
               )}
