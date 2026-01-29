@@ -388,6 +388,8 @@ export default {
     serverError: "Sunucu hatası: {error}",
     title: "Liderlik Tablosu",
     topPlayers: "Oyuncular",
+    life: "Can",
+    mana: "Mana",
     topEvents: "Etkinlikler",
     topGuilds: "Loncalar",
     kills: "Öldürmeler",

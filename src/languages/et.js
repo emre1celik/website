@@ -387,6 +387,8 @@ export default {
     serverError: "Serveri viga: {error}",
     title: "Parimad mängijad",
     topPlayers: "Mängijad",
+    life: "Elu",
+    mana: "Mana",
     topEvents: "Sündmused",
     topGuilds: "Gildid",
     topBoss: "Jälgid",

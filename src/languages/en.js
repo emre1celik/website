@@ -472,6 +472,8 @@ export default {
     rank: "Rank",
     name: "Name",
     class: "Class",
+    life: "Life",
+    mana: "Mana",
     resets: "Resets",
     level: "Level",
     kills: "Kills",

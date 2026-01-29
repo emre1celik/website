@@ -385,6 +385,8 @@ export default {
     title: "Līderu tabula",
     topPlayers: "Spēlētāji",
     topEvents: "Notikumi",
+    life: "Dzīvība",
+    mana: "Mana",
     topGuilds: "Gildes",
     topBoss: "Bosi",
     loadingPlayers: "Ielādē labākos spēlētājus...",

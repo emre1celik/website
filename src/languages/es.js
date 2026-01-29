@@ -395,6 +395,8 @@ export default {
     topPlayers: "Jugadores",
     topBoss: "Jefes",
     gens: "Gens",
+    life: "Vida",
+    mana: "Maná",
     topEvents: "Eventos",
     topGuilds: "Gremios",
     loadingPlayers: "Cargando los mejores jugadores...",

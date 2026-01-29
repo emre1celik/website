@@ -378,6 +378,8 @@ export default {
     topEvents: "Wydarzenia",
     topGuilds: "Gildie",
     topBoss: "Bossowie",
+    life: "Życie",
+    mana: "Mana",
     loadingPlayers: "Ładowanie najlepszych graczy...",
     filterByClass: "Filtruj według klasy:",
     rank: "Pozycja",

@@ -449,6 +449,8 @@ export default {
     title: "Bảng xếp hạng",
     topPlayers: "Người chơi hàng đầu",
     topEvents: "Top sự kiện",
+    life: "Sinh lực",
+    mana: "Năng lượng",
     topBoss: "Boss",
     gens: "Gens",
     kills: "Số lần tiêu diệt",

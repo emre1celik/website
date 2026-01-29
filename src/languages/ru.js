@@ -376,6 +376,8 @@ export default {
     title: "Таблица лидеров",
     topPlayers: "Самые Игроки",
     topEvents: "События",
+    life: "Жизнь",
+    mana: "Мана",
     topGuilds: "Гильдии",
     loadingPlayers: "Загрузка лучших игроков...",
     filterByClass: "Фильтр по классу:",

@@ -379,6 +379,8 @@ export default {
     topPlayers: "Jogadores",
     topEvents: "Eventos",
     topBoss: "Bossowie",
+    life: "Vida",
+    mana: "Mana",
     topGuilds: "Guildas",
     loadingPlayers: "Carregando melhores jogadores...",
     filterByClass: "Filtrar por classe:",
