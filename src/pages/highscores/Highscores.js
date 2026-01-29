@@ -96,6 +96,10 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
   }; const classMeta = {
+    all: {
+      description: "Overall ranking across all classes and builds",
+      stats: "Total Resets • Levels • Global Progression",
+    },
     dw: {
       description: "Master of elemental magic and long-range spells",
       stats: "Energy • Mana • Skill Damage",
@@ -517,11 +521,40 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     <PlayerGrid>
                       {/* ALL CLASSES */}
                       <PlayerCard>
-                        <PlayerHeader>
-                          <img src={DefaultIcon} alt=""
-                            style={{ width: 32, height: 32 }} />
-                          <PlayerTitle>{translate("highscores.all")} {translate("highscores.topPlayers")}</PlayerTitle>
+                        <PlayerHeader style={{ justifyContent: "flex-start" }}>
+                          <img
+                            src={DefaultIcon}
+                            alt="All Players"
+                            style={{ width: 42, height: 42, flexShrink: 0 }}
+                          />
+
+                          <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
+                            <PlayerTitle>
+                              {translate("highscores.all")} {translate("highscores.topPlayers")}
+                            </PlayerTitle>
+
+                            <span
+                              style={{
+                                fontSize: "0.75rem",
+                                color: "rgba(255,255,255,0.65)",
+                                marginTop: "2px",
+                              }}
+                            >
+                              {classMeta.all.description}
+                            </span>
+
+                            <span
+                              style={{
+                                fontSize: "0.75rem",
+                                color: "rgba(255,255,255,0.65)",
+                              }}
+                            >
+                              <strong style={{ color: "#aaa" }}>Focus:</strong>{" "}
+                              {classMeta.all.stats}
+                            </span>
+                          </div>
                         </PlayerHeader>
+
 
                         <BossTableWrapper>
                           <HighscoresTable>
