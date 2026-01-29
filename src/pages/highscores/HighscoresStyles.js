@@ -85,8 +85,8 @@ export const HighscoresBox = styled.div`
   align-items: center;
   display: flex;
 
-max-height: 75vh;
-overflow: visible;
+  max-height: 75vh;
+  overflow-y: auto;
 
   height: 700px;
   max-width: 1200px;

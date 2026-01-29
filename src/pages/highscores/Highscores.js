@@ -463,7 +463,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                         <PlayerHeader>
                           <img src={DefaultIcon} alt=""
                             style={{ width: 32, height: 32 }} />
-                          <PlayerTitle>{translate("highscores.topPlayers")}</PlayerTitle>
+                          <PlayerTitle>{translate("highscores.all")} {translate("highscores.topPlayers")}</PlayerTitle>
                         </PlayerHeader>
 
                         <BossTableWrapper>
