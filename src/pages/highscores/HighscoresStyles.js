@@ -206,6 +206,9 @@ export const HighscoresTable = styled.table`
   tbody tr:hover {
     z-index: 50;
   }
+  tbody tr:not(:hover) {
+    z-index: 0;
+  }
 
   tbody tr:nth-child(even) {
     background: rgba(255, 255, 255, 0.05);
@@ -320,6 +323,7 @@ export const NameWithTooltip = styled.div`
 
 export const PlayerTooltip = styled.div`
   position: absolute;
+  z-index: 9999;
   top: 120%;
   left: 50%;
   transform: translateX(-50%);
