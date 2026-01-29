@@ -304,6 +304,35 @@ export default {
   },
 
   downloads: {
+    requirements: {
+      title: "Yêu cầu hệ thống",
+      table: {
+        component: "Thành phần",
+        minimum: "Tối thiểu",
+        recommended: "Khuyến nghị",
+
+        processor: "Bộ xử lý",
+        memory: "Bộ nhớ",
+        os: "Hệ điều hành",
+        gpu: "Card đồ họa",
+        connection: "Kết nối Internet",
+
+        processor_min: "Intel i3 / Ryzen 3",
+        processor_rec: "Intel i5 / Ryzen 5",
+
+        memory_min: "4 GB",
+        memory_rec: "8 GB",
+
+        os_min: "Windows 10",
+        os_rec: "Windows 10",
+
+        gpu_min: "1024 MB",
+        gpu_rec: "2048 MB",
+
+        connection_min: "4 Mbps (ADSL)",
+        connection_rec: "10 Mbps (ADSL / Cáp quang)",
+      },
+    },
     full_client: "Bản Đầy Đủ",
     no_sound_client: "Bản Không Âm Thanh",
     title: "Link tải client",

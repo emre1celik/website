@@ -35,6 +35,54 @@ export const DownloadsHero = styled.header`
     padding: 1rem;
   }
 `;
+export const SystemRequirements = styled.div`
+  width: 100%;
+  margin-bottom: 1rem;
+
+  h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  th,
+  td {
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+  }
+
+  th {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-weight: 600;
+  }
+
+  td {
+    background: rgba(0, 0, 0, 0.35);
+    color: #ccc;
+  }
+
+  tr:not(:last-child) td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  th:not(:last-child),
+  td:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .recommended {
+    color: ${({ theme }) => theme.primary};
+    font-weight: 600;
+  }
+`;
 
 export const DownloadsBox = styled.div`
   background: rgba(0, 0, 0, 0.7);

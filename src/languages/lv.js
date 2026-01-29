@@ -318,6 +318,35 @@ export default {
   },
 
   downloads: {
+    requirements: {
+      title: "Sistēmas prasības",
+      table: {
+        component: "Komponents",
+        minimum: "Minimālās",
+        recommended: "Ieteicamās",
+
+        processor: "Procesors",
+        memory: "Atmiņa",
+        os: "Operētājsistēma",
+        gpu: "Videokarte",
+        connection: "Interneta savienojums",
+
+        processor_min: "Intel i3 / Ryzen 3",
+        processor_rec: "Intel i5 / Ryzen 5",
+
+        memory_min: "4 GB",
+        memory_rec: "8 GB",
+
+        os_min: "Windows 10",
+        os_rec: "Windows 10",
+
+        gpu_min: "1024 MB",
+        gpu_rec: "2048 MB",
+
+        connection_min: "4 Mbps (ADSL)",
+        connection_rec: "10 Mbps (ADSL / Optiskais)",
+      },
+    },
     title: "Lejupielādes spoguļi",
     full_client: "Pilnais Klients",
     no_sound_client: "Klients Bez Skaņas",

@@ -318,6 +318,35 @@ export default {
   },
 
   downloads: {
+    requirements: {
+      title: "Süsteeminõuded",
+      table: {
+        component: "Komponent",
+        minimum: "Miinimum",
+        recommended: "Soovitatav",
+
+        processor: "Protsessor",
+        memory: "Mälu",
+        os: "Operatsioonisüsteem",
+        gpu: "Videokaart",
+        connection: "Internetiühendus",
+
+        processor_min: "Intel i3 / Ryzen 3",
+        processor_rec: "Intel i5 / Ryzen 5",
+
+        memory_min: "4 GB",
+        memory_rec: "8 GB",
+
+        os_min: "Windows 10",
+        os_rec: "Windows 10",
+
+        gpu_min: "1024 MB",
+        gpu_rec: "2048 MB",
+
+        connection_min: "4 Mbps (ADSL)",
+        connection_rec: "10 Mbps (ADSL / Fiiber)",
+      },
+    },
     title: "Allalaadimise peeglid",
     full_client: "Täisversioon",
     no_sound_client: "Versioon ilma helita",

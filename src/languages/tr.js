@@ -316,6 +316,35 @@ export default {
   },
 
   downloads: {
+    requirements: {
+      title: "Sistem Gereksinimleri",
+      table: {
+        component: "Bileşen",
+        minimum: "Minimum",
+        recommended: "Önerilen",
+
+        processor: "İşlemci",
+        memory: "Bellek",
+        os: "İşletim Sistemi",
+        gpu: "Ekran Kartı",
+        connection: "İnternet Bağlantısı",
+
+        processor_min: "Intel i3 / Ryzen 3",
+        processor_rec: "Intel i5 / Ryzen 5",
+
+        memory_min: "4 GB",
+        memory_rec: "8 GB",
+
+        os_min: "Windows 10",
+        os_rec: "Windows 10",
+
+        gpu_min: "1024 MB",
+        gpu_rec: "2048 MB",
+
+        connection_min: "4 Mbps (ADSL)",
+        connection_rec: "10 Mbps (ADSL / Fiber)",
+      },
+    },
     title: "İndirme Yansımaları",
     full_client: "Tam İstemci",
     no_sound_client: "Sessiz İstemci",

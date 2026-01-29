@@ -13,6 +13,7 @@ import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
 import fontissue from "../../assets/images/fontissue.png";
+import { SystemRequirements } from "./DownloadsStyles";
 
 function Downloads({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
@@ -81,6 +82,61 @@ function Downloads({ user, currentTheme, onThemeChange }) {
                 </li>
               ))}
             </ul>
+            <SystemRequirements>
+              <h3>{translate("downloads.requirements.title")}</h3>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>{translate("downloads.requirements.table.component")}</th>
+                    <th>{translate("downloads.requirements.table.minimum")}</th>
+                    <th>{translate("downloads.requirements.table.recommended")}</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>{translate("downloads.requirements.table.processor")}</td>
+                    <td>{translate("downloads.requirements.table.processor_min")}</td>
+                    <td className="recommended">
+                      {translate("downloads.requirements.table.processor_rec")}
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>{translate("downloads.requirements.table.memory")}</td>
+                    <td>{translate("downloads.requirements.table.memory_min")}</td>
+                    <td className="recommended">
+                      {translate("downloads.requirements.table.memory_rec")}
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>{translate("downloads.requirements.table.os")}</td>
+                    <td>{translate("downloads.requirements.table.os_min")}</td>
+                    <td className="recommended">
+                      {translate("downloads.requirements.table.os_rec")}
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>{translate("downloads.requirements.table.gpu")}</td>
+                    <td>{translate("downloads.requirements.table.gpu_min")}</td>
+                    <td className="recommended">
+                      {translate("downloads.requirements.table.gpu_rec")}
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>{translate("downloads.requirements.table.connection")}</td>
+                    <td>{translate("downloads.requirements.table.connection_min")}</td>
+                    <td className="recommended">
+                      {translate("downloads.requirements.table.connection_rec")}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </SystemRequirements>
 
             <DownloadsNote>
               <TranslatedHTML entity="downloads.note1" />

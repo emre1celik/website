@@ -318,6 +318,35 @@ export default {
   },
 
   downloads: {
+    requirements: {
+      title: "Системные требования",
+      table: {
+        component: "Компонент",
+        minimum: "Минимальные",
+        recommended: "Рекомендуемые",
+
+        processor: "Процессор",
+        memory: "Память",
+        os: "Операционная система",
+        gpu: "Видеокарта",
+        connection: "Интернет-соединение",
+
+        processor_min: "Intel i3 / Ryzen 3",
+        processor_rec: "Intel i5 / Ryzen 5",
+
+        memory_min: "4 ГБ",
+        memory_rec: "8 ГБ",
+
+        os_min: "Windows 10",
+        os_rec: "Windows 10",
+
+        gpu_min: "1024 МБ",
+        gpu_rec: "2048 МБ",
+
+        connection_min: "4 Мбит/с (ADSL)",
+        connection_rec: "10 Мбит/с (ADSL / Оптоволокно)",
+      },
+    },
     title: "Зеркала загрузки",
     full_client: "Полный Клиент",
     no_sound_client: "Клиент Без Звука",

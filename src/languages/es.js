@@ -320,6 +320,35 @@ export default {
   },
 
   downloads: {
+    requirements: {
+      title: "Requisitos del sistema",
+      table: {
+        component: "Componente",
+        minimum: "Mínimo",
+        recommended: "Recomendado",
+
+        processor: "Procesador",
+        memory: "Memoria",
+        os: "Sistema operativo",
+        gpu: "Tarjeta gráfica",
+        connection: "Conexión",
+
+        processor_min: "Intel i3 / Ryzen 3",
+        processor_rec: "Intel i5 / Ryzen 5",
+
+        memory_min: "4 GB",
+        memory_rec: "8 GB",
+
+        os_min: "Windows 10",
+        os_rec: "Windows 10",
+
+        gpu_min: "1024 MB",
+        gpu_rec: "2048 MB",
+
+        connection_min: "4 Mbps (ADSL)",
+        connection_rec: "10 Mbps (ADSL / Fibra)",
+      },
+    },
     title: "Espejos de descarga",
     full_client: "Cliente Completo",
     no_sound_client: "Cliente Sin Sonido",
