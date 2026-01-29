@@ -65,6 +65,7 @@ import {
 } from "../control_panel/ControlPanelStyles";
 import { useTranslation } from "../../context/TranslationContext";
 import GuildEmblem from "../../components/guild_emblem/GuildEmblem";
+import tr from "../../languages/tr";
 
 function Highscores({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
@@ -611,16 +612,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                                 <strong>{p.level}</strong>
                                               </TooltipRow>
 
-                                              <TooltipRow>
-                                                <span>Master</span>
-                                                <strong>{p.level_master}</strong>
-                                              </TooltipRow>
-
-                                              <TooltipRow>
-                                                <span>Majestic</span>
-                                                <strong>{p.level_majestic}</strong>
-                                              </TooltipRow>
-
                                               <hr
                                                 style={{
                                                   borderColor: "rgba(255,255,255,0.1)",
@@ -629,28 +620,28 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                               />
 
                                               <TooltipRow>
-                                                <span>STR</span>
+                                                <span>{translate("highscores.strength")}</span>
                                                 <strong>{formatNumber(p.strength)}</strong>
                                               </TooltipRow>
 
                                               <TooltipRow>
-                                                <span>AGI</span>
+                                                <span>{translate("highscores.agility")}</span>
                                                 <strong>{formatNumber(p.agility)}</strong>
                                               </TooltipRow>
 
                                               <TooltipRow>
-                                                <span>VIT</span>
+                                                <span>{translate("highscores.vitality")}</span>
                                                 <strong>{formatNumber(p.vitality)}</strong>
                                               </TooltipRow>
 
                                               <TooltipRow>
-                                                <span>ENE</span>
+                                                <span>{translate("highscores.energy")}</span>
                                                 <strong>{formatNumber(p.energy)}</strong>
                                               </TooltipRow>
 
                                               {p.leadership > 0 && (
                                                 <TooltipRow>
-                                                  <span>CMD</span>
+                                                  <span>{translate("highscores.leadership")}</span>
                                                   <strong>{formatNumber(p.leadership)}</strong>
                                                 </TooltipRow>
                                               )}
