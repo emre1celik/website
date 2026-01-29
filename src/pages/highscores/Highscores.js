@@ -374,7 +374,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
         const data = await response.json();
 
         if (response.ok) {
-          setPlayers(data.players || []);
+          setPlayers(data);
+
         } else {
           setError(
             translate("highscores.serverError").replace("{error}", data.error)
@@ -392,6 +393,18 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     fetchHighscores();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedClass]);
+  function groupPlayersByClass(players, classIconMap) {
+    const groups = { all: players.slice(0, 10) };
+
+    Object.keys(classIconMap).forEach((key) => {
+      const ids = classIconMap[key].ids;
+      groups[key] = players
+        .filter((p) => ids.includes(p.race))
+        .slice(0, 10);
+    });
+
+    return groups;
+  }
 
   return (
     <>
@@ -458,17 +471,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     <p style={{ color: "red" }}>{error}</p>
                   ) : (
                     (() => {
-                      function groupPlayersByClass(players) {
-                        const groups = { all: players.slice(0, 10) };
-
-                        Object.keys(classIconMap).forEach((key) => {
-                          const ids = classIconMap[key].ids;
-                          groups[key] = players.filter((p) => ids.includes(p.race)).slice(0, 10);
-                        });
-
-                        return groups;
-                      }
-                      const grouped = groupPlayersByClass(players);
+                      const grouped = players;
 
                       return (
                         <PlayerGrid>
