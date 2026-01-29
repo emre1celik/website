@@ -85,8 +85,9 @@ export const HighscoresBox = styled.div`
   align-items: center;
   display: flex;
 
-  max-height: 75vh;
-  overflow-y: auto;
+max-height: 75vh;
+overflow: visible;
+
   height: 700px;
   max-width: 1200px;
 
@@ -310,7 +311,7 @@ export const PlayerHeader = styled.div`
 export const NameWithTooltip = styled.div`
   position: relative;
   display: inline-block;
-  z-index: 9999;
+  z-index: 99999;
 `;
 
 export const PlayerTooltip = styled.div`
