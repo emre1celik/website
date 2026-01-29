@@ -712,7 +712,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                         if (!rows.length) return null;
 
                         return (
-                          <PlayerCard key={eventCfg.id} style={{ height: "auto" }}>
+                          <PlayerCard key={eventCfg.id} style={{ height: "500px" }}>
                             <PlayerHeader>
                               <FontAwesomeIcon icon={faTrophy} />
                               <PlayerTitle>{eventCfg.label}</PlayerTitle>
