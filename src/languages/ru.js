@@ -378,6 +378,8 @@ export default {
     topEvents: "События",
     life: "Жизнь",
     mana: "Мана",
+    money: "Zen",
+    ruud_money: "Ruud",
     topGuilds: "Гильдии",
     loadingPlayers: "Загрузка лучших игроков...",
     filterByClass: "Фильтр по классу:",

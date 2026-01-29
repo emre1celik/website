@@ -377,6 +377,8 @@ export default {
     topPlayers: "Gracze",
     topEvents: "Wydarzenia",
     topGuilds: "Gildie",
+    money: "Zen",
+    ruud_money: "Ruud",
     topBoss: "Bossowie",
     life: "Życie",
     mana: "Mana",

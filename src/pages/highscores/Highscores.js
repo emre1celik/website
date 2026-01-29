@@ -916,10 +916,22 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
               <PopupSection>
                 <PopupRow>
+                  <span>{translate("highscores.money")}</span>
+                  <strong>{formatNumber(selectedPlayer.money)}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>{translate("highscores.ruud_money")}</span>
+                  <strong>{formatNumber(selectedPlayer.ruud_money)}</strong>
+                </PopupRow>
+              </PopupSection>
+
+              <Divider />
+
+              <PopupSection>
+                <PopupRow>
                   <span>{translate("highscores.life")}</span>
                   <strong>{formatNumber(selectedPlayer.life)}</strong>
                 </PopupRow>
-
                 <PopupRow>
                   <span>{translate("highscores.mana")}</span>
                   <strong>{formatNumber(selectedPlayer.mana)}</strong>

@@ -389,6 +389,8 @@ export default {
     topPlayers: "Mängijad",
     life: "Elu",
     mana: "Mana",
+    money: "Zen",
+    ruud_money: "Ruud",
     topEvents: "Sündmused",
     topGuilds: "Gildid",
     topBoss: "Jälgid",

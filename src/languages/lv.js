@@ -385,6 +385,8 @@ export default {
     title: "Līderu tabula",
     topPlayers: "Spēlētāji",
     topEvents: "Notikumi",
+    money: "Zen",
+    ruud_money: "Ruud",
     life: "Dzīvība",
     mana: "Mana",
     topGuilds: "Gildes",

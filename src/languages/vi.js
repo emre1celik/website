@@ -454,6 +454,8 @@ export default {
     topBoss: "Boss",
     gens: "Gens",
     kills: "Số lần tiêu diệt",
+    money: "Zen",
+    ruud_money: "Ruud",
     topGuilds: "Top guild",
     loadingPlayers: "Đang tải bảng xếp hạng...",
     filterByClass: "Lọc theo class:",

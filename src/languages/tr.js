@@ -392,6 +392,8 @@ export default {
     mana: "Mana",
     topEvents: "Etkinlikler",
     topGuilds: "Loncalar",
+    money: "Zen",
+    ruud_money: "Ruud",
     kills: "Öldürmeler",
     topBoss: "Bosslar",
     loadingPlayers: "En iyi oyuncular yükleniyor...",

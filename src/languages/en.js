@@ -472,6 +472,8 @@ export default {
     rank: "Rank",
     name: "Name",
     class: "Class",
+    money: "Zen",
+    ruud_money: "Ruud",
     life: "Life",
     mana: "Mana",
     resets: "Resets",
