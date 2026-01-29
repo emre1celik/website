@@ -802,7 +802,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     <p style={{ color: "red" }}>{errorGuilds}</p>
                   ) : (
                     <PlayerGrid>
-                      <PlayerCard>
+                      <PlayerCard style={{ height: "500px", width: "100%" }}>
                         <PlayerHeader>
                           <FontAwesomeIcon icon={faShieldAlt} />
                           <PlayerTitle>{translate("highscores.topGuilds")}</PlayerTitle>
