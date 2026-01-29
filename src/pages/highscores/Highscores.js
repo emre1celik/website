@@ -954,7 +954,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
           <PlayerPopupOverlay onClick={() => setSelectedPlayer(null)}>
             <PlayerPopup onClick={(e) => e.stopPropagation()}>
               <PopupHeader>
-                <span>{selectedPlayer.name}</span>
+                <span style={{ color: "white", fontWeight: "bold" }}>{selectedPlayer.name}</span>
                 <CloseButton onClick={() => setSelectedPlayer(null)}>✕</CloseButton>
               </PopupHeader>
 
