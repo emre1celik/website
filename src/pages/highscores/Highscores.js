@@ -801,7 +801,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                   ) : errorGuilds ? (
                     <p style={{ color: "red" }}>{errorGuilds}</p>
                   ) : (
-                    <PlayerGrid>
+                    <PlayerGrid style={{ display: "block" }}>
                       <PlayerCard style={{ height: "500px", width: "100%" }}>
                         <PlayerHeader>
                           <FontAwesomeIcon icon={faShieldAlt} />
