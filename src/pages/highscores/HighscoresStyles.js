@@ -309,7 +309,7 @@ export const PlayerPopupOverlay = styled.div`
 export const PlayerPopup = styled.div`
   width: 320px;
   background: rgba(10, 10, 15, 0.98);
-  border: 1px solid rgba(255, 215, 0, 0.4);
+  border: 1px solid ${({ theme }) => theme.primary};
   border-radius: 10px;
   padding: 1rem;
   color: white;
@@ -354,7 +354,7 @@ export const PopupRow = styled.div`
   }
 
   strong {
-    color: #ffd700;
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
@@ -397,7 +397,7 @@ export const PlayerTooltip = styled.div`
   min-width: 200px;
 
   background: rgba(10, 10, 15, 0.95);
-  border: 1px solid rgba(255, 215, 0, 0.4);
+  border: 1px solid ${({ theme }) => theme.primary};
   border-radius: 8px;
   padding: 0.75rem;
   font-size: 0.75rem;
@@ -439,7 +439,7 @@ export const TooltipRow = styled.div`
   }
 
   strong {
-    color: #ffd700;
+    color: ${({ theme }) => theme.primary};
   }
 `;
 export const PlayerTitle = styled.span`
