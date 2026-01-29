@@ -754,7 +754,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                           const bossCfg = bossConfigMap[bossName];
 
                           return (
-                            <BossCard key={bossName}>
+                            <BossCard key={bossName} style={{ height: "400px", width: "100%" }}>
                               <BossHeader>
                                 {bossCfg && (
                                   <img
