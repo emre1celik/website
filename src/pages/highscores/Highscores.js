@@ -21,6 +21,13 @@ import {
   PlayerCard,
   PlayerHeader,
   PlayerTitle,
+  PlayerPopupOverlay,
+  PlayerPopup,
+  PopupHeader,
+  CloseButton,
+  PopupSection,
+  PopupRow,
+  Divider,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -193,6 +200,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       .finally(() => setLoading(false));
   }, [bosses]);
 
+  const [selectedPlayer, setSelectedPlayer] = useState(null);
 
 
   const classIconMap = {
@@ -499,7 +507,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                   </td>
                                   <td>
                                     <NameWithTooltip>
-                                      <GlowingName rank={i}>{p.name}</GlowingName>
+                                      <GlowingName
+                                        rank={i}
+                                        style={{ cursor: "pointer" }}
+                                        onClick={() => setSelectedPlayer(p)}
+                                      >
+                                        {p.name}
+                                      </GlowingName>
 
                                       <PlayerTooltip>
                                         <TooltipRow>
@@ -605,7 +619,14 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                         </td>
                                         <td>
                                           <NameWithTooltip>
-                                            <GlowingName rank={i}>{p.name}</GlowingName>
+                                            <GlowingName
+                                              rank={i}
+                                              style={{ cursor: "pointer" }}
+                                              onClick={() => setSelectedPlayer(p)}
+                                            >
+                                              {p.name}
+                                            </GlowingName>
+
 
                                             <PlayerTooltip>
                                               <TooltipRow>
@@ -945,6 +966,59 @@ function Highscores({ user, currentTheme, onThemeChange }) {
             </ControlPanelTabContent>
           </HighscoresBox>
         </HighscoresContent>
+        {selectedPlayer && (
+          <PlayerPopupOverlay onClick={() => setSelectedPlayer(null)}>
+            <PlayerPopup onClick={(e) => e.stopPropagation()}>
+              <PopupHeader>
+                <span>{selectedPlayer.name}</span>
+                <CloseButton onClick={() => setSelectedPlayer(null)}>✕</CloseButton>
+              </PopupHeader>
+
+              <PopupSection>
+                <PopupRow>
+                  <span>Level</span>
+                  <strong>{selectedPlayer.level}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>Master</span>
+                  <strong>{selectedPlayer.level_master}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>Majestic</span>
+                  <strong>{selectedPlayer.level_majestic}</strong>
+                </PopupRow>
+              </PopupSection>
+
+              <Divider />
+
+              <PopupSection>
+                <PopupRow>
+                  <span>STR</span>
+                  <strong>{formatNumber(selectedPlayer.strength)}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>AGI</span>
+                  <strong>{formatNumber(selectedPlayer.agility)}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>VIT</span>
+                  <strong>{formatNumber(selectedPlayer.vitality)}</strong>
+                </PopupRow>
+                <PopupRow>
+                  <span>ENE</span>
+                  <strong>{formatNumber(selectedPlayer.energy)}</strong>
+                </PopupRow>
+
+                {selectedPlayer.leadership > 0 && (
+                  <PopupRow>
+                    <span>CMD</span>
+                    <strong>{formatNumber(selectedPlayer.leadership)}</strong>
+                  </PopupRow>
+                )}
+              </PopupSection>
+            </PlayerPopup>
+          </PlayerPopupOverlay>
+        )}
 
         <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
       </HighscoresWrapper>

@@ -295,6 +295,74 @@ export const PlayerGrid = styled.div`
     grid-template-columns: 1fr;
   }
 `;
+export const PlayerPopupOverlay = styled.div`
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const PlayerPopup = styled.div`
+  width: 320px;
+  background: rgba(10, 10, 15, 0.98);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+`;
+
+export const PopupHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: gold;
+  margin-bottom: 0.75rem;
+`;
+
+export const CloseButton = styled.button`
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 1.2rem;
+  cursor: pointer;
+
+  &:hover {
+    color: white;
+  }
+`;
+
+export const PopupSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
+export const PopupRow = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+
+  span {
+    opacity: 0.85;
+  }
+
+  strong {
+    color: #ffd700;
+  }
+`;
+
+export const Divider = styled.hr`
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0.75rem 0;
+`;
 
 export const PlayerCard = styled.div`
   background: rgba(0, 0, 0, 0.6);
@@ -303,9 +371,8 @@ export const PlayerCard = styled.div`
   padding: 0.75rem;
   display: flex;
   flex-direction: column;
-  height: 320px;
   gap: 0.5rem;
-    height: 420px; 
+  height: 420px; 
 `;
 
 export const PlayerHeader = styled.div`
