@@ -3,7 +3,6 @@ import {
   HighscoresWrapper,
   HighscoresContent,
   HighscoresBox,
-  HighscoresFilter,
   HighscoresTable,
   RankIcon,
   GlowingName,
@@ -14,9 +13,6 @@ import {
   BossSubtitle,
   BossHeader,
   BossText,
-  NameWithTooltip,
-  PlayerTooltip,
-  TooltipRow,
   PlayerGrid,
   PlayerCard,
   PlayerHeader,
@@ -53,8 +49,6 @@ import GcIcon from "../../assets/images/classes/gc.png";
 import LwIcon from "../../assets/images/classes/lw.png";
 import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
-import DuprianIcon from "../../assets/images/gens/duprian.png";
-import VanertIcon from "../../assets/images/gens/vanert.png";
 import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
 import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
 import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
@@ -72,16 +66,14 @@ import {
 } from "../control_panel/ControlPanelStyles";
 import { useTranslation } from "../../context/TranslationContext";
 import GuildEmblem from "../../components/guild_emblem/GuildEmblem";
-import tr from "../../languages/tr";
 
 function Highscores({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
-  const [selectedClass, setSelectedClass] = useState("all");
+  const [selectedClass] = useState("all");
   const [players, setPlayers] = useState({});
-  const [selectedEvent, setSelectedEvent] = useState("1");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [activeTab, setActiveTab] = useState("players"); // default tab
+  const [activeTab, setActiveTab] = useState("players");
   const [events, setEvents] = useState([]);
   const [guilds, setGuilds] = useState([]);
   const [loadingEvents, setLoadingEvents] = useState(false);
@@ -173,7 +165,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     fetch("https://api.myramu.online/api/bosses")
       .then(res => res.json())
       .then(data => setBosses(data.bosses || []));
-  }, []);
+  }, [bosses.length]);
 
 
   useEffect(() => {
@@ -198,7 +190,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
         setBossData(map);
       })
       .finally(() => setLoading(false));
-  }, [bosses]);
+  }, [bosses, bossData]);
 
   const [selectedPlayer, setSelectedPlayer] = useState(null);
 
@@ -262,12 +254,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
   };
 
-  const gensMap = {
-    0: null,
-    1: { icon: DuprianIcon, name: "Duprian" },
-    2: { icon: VanertIcon, name: "Vanert" },
-  };
-
   const bossDisplayOrder = [
     "God of Darkness",
     "Nix",
@@ -277,6 +263,11 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     "Lord Silvester",
     "Nightmare",
     "Illusion of Kundun",
+  ];
+  const eventConfig = [
+    { id: 0, key: "bloodCastle", label: "Blood Castle" },
+    { id: 1, key: "devilSquare", label: "Devil Square" },
+    { id: 2, key: "chaosCastle", label: "Chaos Castle" },
   ];
 
   function getClassInfo(raceId) {
@@ -706,97 +697,88 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                         minHeight: "150px",
                       }}
                     >
-                      <FontAwesomeIcon
-                        icon={faSpinner}
-                        spin
-                        style={{ marginRight: "8px" }}
-                      />
-                      {translate("highscores.loadingEvents")}
+                      <FontAwesomeIcon icon={faSpinner} spin />
+                      &nbsp;{translate("highscores.loadingEvents")}
                     </div>
                   ) : errorEvents ? (
                     <p style={{ color: "red" }}>{errorEvents}</p>
                   ) : (
-                    <>
-                      <HighscoresFilter>
-                        <label>{translate("highscores.filterByEvent")}</label>
-                        <select
-                          value={selectedEvent}
-                          onChange={(e) => setSelectedEvent(e.target.value)}
-                        >
-                          <option value="0">Blood Castle</option>
-                          <option value="1">Devil Square</option>
-                          <option value="2">Chaos Castle</option>
-                        </select>
-                      </HighscoresFilter>
+                    <PlayerGrid>
+                      {eventConfig.map((eventCfg) => {
+                        const rows = events
+                          .filter((e) => e.event_id === eventCfg.id)
+                          .slice(0, 25);
 
-                      <HighscoresTable>
-                        <thead>
-                          <tr>
-                            <th>{translate("highscores.rank")}</th>
-                            <th>{translate("highscores.character")}</th>
-                            <th>{translate("highscores.class")}</th>
-                            <th>{translate("highscores.score")}</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {events
-                            .filter(
-                              (event) =>
-                                selectedEvent === "all" ||
-                                String(event.event_id) === selectedEvent
-                            )
-                            .map((event, index) => (
-                              <tr key={index}>
-                                <td>
-                                  {index + 1}
-                                  {index === 0 && (
-                                    <RankIcon style={{ color: "gold" }}>
-                                      <FontAwesomeIcon icon={faCrown} />
-                                    </RankIcon>
-                                  )}
-                                  {index === 1 && (
-                                    <RankIcon style={{ color: "silver" }}>
-                                      <FontAwesomeIcon icon={faCrown} />
-                                    </RankIcon>
-                                  )}
-                                  {index === 2 && (
-                                    <RankIcon style={{ color: "#cd7f32" }}>
-                                      <FontAwesomeIcon icon={faCrown} />
-                                    </RankIcon>
-                                  )}
-                                </td>
-                                <td>
-                                  <GlowingName rank={index}>
-                                    {event.char_name}
-                                  </GlowingName>
-                                </td>
-                                <td>
-                                  {(() => {
-                                    const { icon, key } = getClassInfo(
-                                      event.race
-                                    );
+                        if (!rows.length) return null;
+
+                        return (
+                          <PlayerCard key={eventCfg.id}>
+                            <PlayerHeader>
+                              <FontAwesomeIcon icon={faTrophy} />
+                              <PlayerTitle>{eventCfg.label}</PlayerTitle>
+                            </PlayerHeader>
+
+                            <BossTableWrapper>
+                              <HighscoresTable>
+                                <thead>
+                                  <tr>
+                                    <th>{translate("highscores.rank")}</th>
+                                    <th>{translate("highscores.name")}</th>
+                                    <th>{translate("highscores.class")}</th>
+                                    <th>{translate("highscores.score")}</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  {rows.map((row, index) => {
+                                    const { icon, key } = getClassInfo(row.race);
+
                                     return (
-                                      <img
-                                        src={icon}
-                                        alt={key}
-                                        title={classNamesMap[key] || "Unknown"}
-                                        style={{
-                                          width: "32px",
-                                          height: "32px",
-                                        }}
-                                      />
+                                      <tr key={index}>
+                                        <td>
+                                          {index + 1}
+                                          {index <= 2 && (
+                                            <RankIcon
+                                              style={{
+                                                color:
+                                                  index === 0
+                                                    ? "gold"
+                                                    : index === 1
+                                                      ? "silver"
+                                                      : "#cd7f32",
+                                              }}
+                                            >
+                                              <FontAwesomeIcon icon={faCrown} />
+                                            </RankIcon>
+                                          )}
+                                        </td>
+                                        <td>
+                                          <GlowingName rank={index}>
+                                            {row.char_name}
+                                          </GlowingName>
+                                        </td>
+                                        <td>
+                                          <img
+                                            src={icon}
+                                            alt={key}
+                                            title={classNamesMap[key] || "Unknown"}
+                                            style={{ width: 28, height: 28 }}
+                                          />
+                                        </td>
+                                        <td>{formatNumber(row.score)}</td>
+                                      </tr>
                                     );
-                                  })()}
-                                </td>
-                                <td>{formatNumber(event.score)}</td>
-                              </tr>
-                            ))}
-                        </tbody>
-                      </HighscoresTable>
-                    </>
+                                  })}
+                                </tbody>
+                              </HighscoresTable>
+                            </BossTableWrapper>
+                          </PlayerCard>
+                        );
+                      })}
+                    </PlayerGrid>
                   )}
                 </>
               )}
+
 
               {activeTab === "guilds" && (
                 <>
