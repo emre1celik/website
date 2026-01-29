@@ -877,7 +877,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                   <tr>
                                     <th>{translate("highscores.rank")}</th>
                                     <th>{translate("highscores.character")}</th>
-                                    <th>{translate("highscores.class")}</th>
                                     <th>{translate("highscores.score")}</th>
                                   </tr>
                                 </thead>
@@ -909,15 +908,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           <GlowingName rank={index}>
                                             {row.char_name}
                                           </GlowingName>
-                                        </td>
-
-                                        <td>
-                                          <img
-                                            src={icon}
-                                            alt={key}
-                                            title={classNamesMap[key]}
-                                            style={{ width: 28, height: 28 }}
-                                          />
                                         </td>
 
                                         <td>{formatNumber(row.score)}</td>
