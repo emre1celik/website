@@ -203,6 +203,9 @@ export const HighscoresTable = styled.table`
     color: ${({ theme }) => theme.primary};
     text-transform: uppercase;
   }
+  tbody tr:hover {
+    z-index: 50;
+  }
 
   tbody tr:nth-child(even) {
     background: rgba(255, 255, 255, 0.05);
@@ -299,6 +302,7 @@ export const PlayerCard = styled.div`
   flex-direction: column;
   height: 320px;
   gap: 0.5rem;
+    height: 420px; 
 `;
 
 export const PlayerHeader = styled.div`
@@ -395,6 +399,7 @@ export const BossText = styled.div`
 export const BossTableWrapper = styled.div`
   overflow-y: auto;
   flex: 1;
+  overflow-x: visible;
 
   &::-webkit-scrollbar {
     width: 6px;
