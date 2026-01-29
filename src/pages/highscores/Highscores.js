@@ -461,7 +461,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                       {/* ALL CLASSES */}
                       <PlayerCard>
                         <PlayerHeader>
-                          <FontAwesomeIcon icon={faUsers} />
+                          <img src={DefaultIcon} alt=""
+                            style={{ width: 32, height: 32 }} />
                           <PlayerTitle>{translate("highscores.topPlayers")}</PlayerTitle>
                         </PlayerHeader>
 
