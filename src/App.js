@@ -78,11 +78,39 @@ function App() {
           <GlobalStyles />
           <ThemeFade $fading={fading}>
             {MAINTENANCE_MODE ? (
-              <Maintenance
-                user={user}
-                currentTheme={theme}
-                onThemeChange={handleThemeChange}
-              />
+              <Routes>
+                <Route
+                  path="/login"
+                  element={
+                    <Login
+                      onLogin={setUser}
+                      user={user}
+                      currentTheme={theme}
+                      onThemeChange={handleThemeChange}
+                    />
+                  }
+                />
+                <Route
+                  path="/register"
+                  element={
+                    <Register
+                      user={user}
+                      currentTheme={theme}
+                      onThemeChange={handleThemeChange}
+                    />
+                  }
+                />
+                <Route
+                  path="*"
+                  element={
+                    <Maintenance
+                      user={user}
+                      currentTheme={theme}
+                      onThemeChange={handleThemeChange}
+                    />
+                  }
+                />
+              </Routes>
             ) : (
               <Routes>
                 <Route
