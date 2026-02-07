@@ -372,7 +372,14 @@ export default {
     note3_desc: `
       <strong>⚠️ Problema de fonte:</strong> Se você não consegue ver a fonte e o texto no jogo, mas apenas quadrados, feche o cliente do jogo. Baixe a fonte ausente aqui (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) e clique para instalá-la. Depois reinicie o cliente do jogo.
     `,
+  }, maintenance: {
+    header: "Manutenção do Servidor",
+    message:
+      "Estamos atualmente realizando manutenção para atualizar o Myra MuOnline para a Temporada 20, Episódios 2 e 3. " +
+      "Durante este período, o site e os serviços do jogo podem ficar temporariamente indisponíveis. " +
+      "Por favor, volte em breve — estaremos online novamente assim que a atualização for concluída."
   },
+
   highscores: {
     serverError: "Erro do servidor: {error}",
     title: "Classificação",

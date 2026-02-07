@@ -383,7 +383,14 @@ export default {
   notFound: {
     header: "404 - Sayfa Bulunamadı",
     message: "Hata! Aradığınız sayfayı bulamıyoruz.",
+  }, maintenance: {
+    header: "Sunucu Bakımı",
+    message:
+      "Myra MuOnline’ı Season 20, Episode 2 ve 3 sürümüne yükseltmek için şu anda bakım çalışmaları yapıyoruz. " +
+      "Bu süre boyunca web sitesi ve oyun hizmetleri geçici olarak kullanılamayabilir. " +
+      "Lütfen kısa süre sonra tekrar kontrol edin — güncelleme tamamlanır tamamlanmaz tekrar çevrimiçi olacağız."
   },
+
   highscores: {
     serverError: "Sunucu hatası: {error}",
     title: "Liderlik Tablosu",

@@ -379,7 +379,14 @@ export default {
     community: "Kopiena",
     login: "Ienākt",
     info: "Ceļveži",
+  }, maintenance: {
+    header: "Servera Apkope",
+    message:
+      "Pašlaik notiek uzturēšanas darbi, lai atjauninātu Myra MuOnline uz 20. sezonu, 2. un 3. epizodi. " +
+      "Šajā laikā tīmekļa vietne un spēles pakalpojumi var būt īslaicīgi nepieejami. " +
+      "Lūdzu, apmeklējiet mūs vēlāk — mēs atgriezīsimies tiešsaistē, tiklīdz atjauninājums būs pabeigts."
   },
+
   highscores: {
     serverError: "Servera kļūda: {error}",
     title: "Līderu tabula",

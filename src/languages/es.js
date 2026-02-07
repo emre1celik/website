@@ -388,7 +388,14 @@ export default {
   notFound: {
     header: "404 - Página No Encontrada",
     message: "¡Ups! No podemos encontrar la página que buscas.",
+  }, maintenance: {
+    header: "Mantenimiento del Servidor",
+    message:
+      "Actualmente estamos realizando tareas de mantenimiento mientras actualizamos Myra MuOnline a la Temporada 20, Episodio 2 y 3. " +
+      "Durante este período, el sitio web y los servicios del juego pueden no estar disponibles temporalmente. " +
+      "Por favor, vuelve a visitarnos en breve — estaremos en línea nuevamente tan pronto como finalice la actualización."
   },
+
   highscores: {
     serverError: "Error del servidor: {error}",
     title: "Clasificación",

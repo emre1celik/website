@@ -454,6 +454,13 @@ export default {
     now: "Now!",
     currentGameTime: "Current Game Time",
   },
+  maintenance: {
+    header: "Server Maintenance",
+    message:
+      "We are currently performing maintenance while upgrading Myra MuOnline to Season 20, Episode 2 & 3. " +
+      "During this time, the website and game services may be temporarily unavailable. " +
+      "Please check back shortly — we’ll be online again as soon as the upgrade is complete."
+  },
   notFound: {
     header: "404 - Page Not Found",
     message: "Oops! We can’t find the page you’re looking for.",

@@ -382,6 +382,13 @@ export default {
     noAccount: "Kas sul pole kontot?",
     registerHere: "Registreeru siin",
   },
+  maintenance: {
+    header: "Serveri Hooldus",
+    message:
+      "Hetkel teostame hooldustöid, et uuendada Myra MuOnline Season 20, Episode 2 ja 3 versioonile. " +
+      "Selle aja jooksul võivad veebileht ja mänguteenused olla ajutiselt kättesaamatud. " +
+      "Palun külasta meid peagi uuesti — oleme tagasi niipea, kui uuendus on lõpetatud."
+  },
 
   highscores: {
     serverError: "Serveri viga: {error}",

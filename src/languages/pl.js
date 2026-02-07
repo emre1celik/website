@@ -370,7 +370,14 @@ export default {
     note3_desc: `
       <strong>⚠️ Problem z czcionką:</strong> Jeśli nie widzisz czcionki i tekstu w grze, a jedynie kwadraty, zamknij klienta gry. Pobierz brakującą czcionkę tutaj (<a href="https://muonline.eu/ARIALUNI.TTF" target="_blank" rel="noopener noreferrer" class="theme-link">ArialUni</a>) i kliknij, aby ją zainstalować. Następnie uruchom ponownie klienta gry.
     `,
+  }, maintenance: {
+    header: "Przerwa Techniczna",
+    message:
+      "Obecnie prowadzimy prace konserwacyjne związane z aktualizacją Myra MuOnline do Sezonu 20, Epizodu 2 i 3. " +
+      "W tym czasie strona internetowa oraz usługi gry mogą być chwilowo niedostępne. " +
+      "Zapraszamy ponownie wkrótce — wrócimy online zaraz po zakończeniu aktualizacji."
   },
+
   highscores: {
     serverError: "Błąd serwera: {error}",
     title: "Ranking",

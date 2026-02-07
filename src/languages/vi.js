@@ -443,7 +443,14 @@ export default {
   notFound: {
     header: "404 - Không tìm thấy trang",
     message: "Rất tiếc! Trang bạn tìm không tồn tại.",
+  }, maintenance: {
+    header: "Bảo Trì Máy Chủ",
+    message:
+      "Hiện tại chúng tôi đang tiến hành bảo trì để nâng cấp Myra MuOnline lên Season 20, Episode 2 & 3. " +
+      "Trong thời gian này, trang web và các dịch vụ trò chơi có thể tạm thời không khả dụng. " +
+      "Vui lòng quay lại sau — chúng tôi sẽ hoạt động trở lại ngay khi quá trình nâng cấp hoàn tất."
   },
+
   highscores: {
     serverError: "Lỗi máy chủ: {error}",
     title: "Bảng xếp hạng",
