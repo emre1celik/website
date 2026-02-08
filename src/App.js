@@ -101,6 +101,27 @@ function App() {
                   }
                 />
                 <Route
+                  path="/control-panel"
+                  element={
+                    <Login
+                      onLogin={setUser}
+                      user={user}
+                      currentTheme={theme}
+                      onThemeChange={handleThemeChange}
+                    />
+                  }
+                />
+                <Route
+                  path="/highscores"
+                  element={
+                    <Highscores
+                      user={user}
+                      currentTheme={theme}
+                      onThemeChange={handleThemeChange}
+                    />
+                  }
+                />
+                <Route
                   path="*"
                   element={
                     <Maintenance
