@@ -464,13 +464,15 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       if (response.ok) {
         setPasswordMessage({
           type: "success",
-          text:
-            (
+          text: (
+            <>
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 style={{ marginRight: "5px" }}
               />
-            ) + data.message,
+              {data.message}
+            </>
+          ),
         });
         setPassword("");
         setConfirmPassword("");
