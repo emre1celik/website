@@ -353,13 +353,17 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   ];
 
   function getClassInfo(raceId) {
+    const classId = Number(raceId);
+
     for (const key in classIconMap) {
-      if (classIconMap[key].ids.includes(raceId)) {
+      if (classIconMap[key].ids.includes(classId)) {
         return { icon: classIconMap[key].icon, key };
       }
     }
+
     return { icon: DefaultIcon, key: "unknown" };
   }
+
   function formatNumber(num) {
     return num?.toLocaleString("en-US");
   }
