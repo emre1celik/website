@@ -132,10 +132,15 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       } else {
         setPaymentMessage({
           type: "error",
-          text:
-            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
-            "Something went wrong while processing your payment. If you were charged, your WCoin has already been delivered.",
+          text: (
+            <>
+              <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+              Something went wrong while processing your payment. If you were charged,
+              your WCoin has already been delivered.
+            </>
+          ),
         });
+
       }
     } catch (err) {
       setPaymentMessage({
@@ -201,14 +206,17 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       if (response.ok) {
         setCharacterActionMessage({
           type: "success",
-          text:
-            (
+          text: (
+            <>
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 style={{ marginRight: "5px" }}
               />
-            ) + data.message,
+              {data.message}
+            </>
+          ),
         });
+
         await fetchCharacters(); // refresh list
       } else {
         setCharacterActionMessage({
@@ -224,11 +232,14 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
     } catch (err) {
       setCharacterActionMessage({
         type: "error",
-        text:
-          <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
-          "Something went wrong: " +
-          err.message,
+        text: (
+          <>
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+            Something went wrong: {err.message}
+          </>
+        ),
       });
+
     } finally {
       setActionLoading((prev) => ({ ...prev, [key]: false }));
     }
@@ -263,14 +274,17 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       if (response.ok) {
         setCharacterActionMessage({
           type: "success",
-          text:
-            (
+          text: (
+            <>
               <FontAwesomeIcon
                 icon={faCheckCircle}
                 style={{ marginRight: "5px" }}
               />
-            ) + data.message,
+              {data.message}
+            </>
+          ),
         });
+
         await fetchCharacters(); // refresh after change
       } else {
         setCharacterActionMessage({
@@ -286,11 +300,14 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
     } catch (err) {
       setCharacterActionMessage({
         type: "error",
-        text:
-          <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
-          "Something went wrong: " +
-          err.message,
+        text: (
+          <>
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+            Something went wrong: {err.message}
+          </>
+        ),
       });
+
     }
   }
 
@@ -479,21 +496,28 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
       } else {
         setPasswordMessage({
           type: "error",
-          text:
-            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
-            (data.error ||
-              data.errors?.new_password?.[0] ||
-              "Failed to update password"),
+          text: (
+            <>
+              <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+              {data.error ||
+                data.errors?.new_password?.[0] ||
+                "Failed to update password"}
+            </>
+          ),
         });
+
       }
     } catch (err) {
       setPasswordMessage({
         type: "error",
-        text:
-          <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} /> +
-          "Something went wrong: " +
-          err.message,
+        text: (
+          <>
+            <FontAwesomeIcon icon={faLock} style={{ marginRight: "5px" }} />
+            Something went wrong: {err.message}
+          </>
+        ),
       });
+
     } finally {
       setChangingPassword(false);
     }
