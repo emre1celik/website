@@ -68,7 +68,7 @@ function App() {
       setFading(false);
     }, 120);
   };
-  const MAINTENANCE_MODE = true;
+  const MAINTENANCE_MODE = false;
 
   return (
     <TranslationProvider>
