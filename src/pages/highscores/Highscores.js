@@ -49,6 +49,7 @@ import GcIcon from "../../assets/images/classes/gc.png";
 import LwIcon from "../../assets/images/classes/lw.png";
 import MaIcon from "../../assets/images/classes/ma.png";
 import IkIcon from "../../assets/images/classes/ik.png";
+import AlcIcon from "../../assets/images/classes/al.png";
 import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
 import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
 import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
@@ -95,6 +96,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     lw: "Light Wizard",
     ma: "Mage: Lemuria",
     ik: "Illusion Knight",
+    al: "Alchemist",
   }; const eventMeta = {
     0: {
       name: "Blood Castle",
@@ -151,6 +153,10 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     gl: {
       description: "Spear master with balanced offense",
       stats: "Strength • Agility • Pierce Damage",
+    },
+    al: {
+      description: "Master of potions, transmutation, and support chemistry",
+      stats: "Energy • Crafting • Support Effects",
     },
     rw: {
       description: "Rune-enhanced spellcaster",
@@ -313,7 +319,11 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     gc: {
       ids: [160, 161, 163, 167, 175],
       icon: GcIcon,
+    }, al: {
+      ids: [224, 225, 227, 231, 239],
+      icon: AlcIcon,
     },
+
     lw: {
       ids: [176, 177, 179, 183, 191],
       icon: LwIcon,
