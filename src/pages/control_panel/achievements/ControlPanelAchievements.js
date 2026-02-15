@@ -81,7 +81,7 @@ export default function ControlPanelAchievements({
         try {
           const errData = await response.json();
           errorMsg = errData.error || errorMsg;
-        } catch (err) {}
+        } catch (err) { }
         setMessages((prev) => ({
           ...prev,
           [milestoneKey]: { type: "error", text: errorMsg },
@@ -158,8 +158,8 @@ export default function ControlPanelAchievements({
                   <h4>{ach.label}</h4>
                   <p>
                     {translate("controlPanel.rewards.progress")}:{" "}
-                    {ach.progress.toLocaleString()} /{" "}
-                    {ach.required.toLocaleString()}
+                    {Number(ach.progress ?? 0).toLocaleString()} /{" "}
+                    {Number(ach.required ?? 0).toLocaleString()}
                   </p>
                 </div>
               </AchievementInfo>
@@ -172,8 +172,9 @@ export default function ControlPanelAchievements({
                 }}
               >
                 <AchievementReward>
-                  <FontAwesomeIcon icon={faGift} /> +
-                  {ach.reward_ruud.toLocaleString()} WCoin
+                  <FontAwesomeIcon icon={faGift} />
+                  +{Number(ach.reward_ruud ?? 0).toLocaleString()} WCoin
+
                 </AchievementReward>
 
                 {ach.unlocked && !ach.claimed ? (
