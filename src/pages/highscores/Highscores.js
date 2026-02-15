@@ -325,7 +325,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
 
     lw: {
-      ids: [176, 177, 179, 183, 191],
+      ids: [176, 177, 178, 179, 183, 191],
       icon: LwIcon,
     },
     ma: {
@@ -336,6 +336,10 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       ids: [208, 209, 211, 215, 223],
       icon: IkIcon,
     },
+    al: {
+      ids: [224, 225, 227, 231, 239],
+      icon: AlcIcon,
+    }
   };
 
   const bossDisplayOrder = [
