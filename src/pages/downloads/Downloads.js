@@ -20,17 +20,17 @@ function Downloads({ user, currentTheme, onThemeChange }) {
 
   const fullMirrors = [
     {
-      name: "Google Drive (1,7 GB)",
-      url: "https://drive.google.com/file/d/1COtXeSKISrPAJGtONO7rSWyR__o0h084/view?usp=sharing",
+      name: "Google Drive (1,84 GB)",
+      url: "https://drive.google.com/file/d/1Ie__rMBcVVbneeFrTyxZdafM-8oewdl7/view?usp=drive_link",
       icon: faCloud,
     },
     {
-      name: "MEGA.nz (1,7 GB)",
+      name: "MEGA.nz (1,84 GB)",
       url: "https://mega.nz/file/BHsCTSoK#41EFK7k3SkZFYSJA6ejvBNcrfKNuEdbKcdYoFPvCOtg",
       icon: faCloud,
     },
     {
-      name: "MediaFire (1,7 GB)",
+      name: "MediaFire (1,84 GB)",
       url: "https://www.mediafire.com/file/7582addza0w9z43/Myra+MU+Online.rar/file",
       icon: faFile,
     },

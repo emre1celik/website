@@ -119,10 +119,22 @@ export default function ControlPanelAchievements({
     );
   if (!achievements?.length)
     return (
-      <p>
-        <FontAwesomeIcon icon={faSpinner} spin /> No achievements found.
-      </p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "150px",
+          fontSize: "1rem",
+          color: "#ccc",
+          gap: "8px",
+        }}
+      >
+        <FontAwesomeIcon icon={faSpinner} spin />{" "}
+        {translate("controlPanel.rewards.noAchievements")}
+      </div>
     );
+
 
   const getIcon = (type) => {
     switch (type) {
