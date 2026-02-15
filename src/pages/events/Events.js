@@ -30,58 +30,45 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const invasionSchedule = {
-  "Erohim Invasion": [
-    "00:00",
-    "02:00",
-    "04:00",
-    "06:00",
-    "08:00",
-    "10:00",
-    "13:00",
-    "15:00",
-    "17:00",
-    "19:00",
-    "22:00",
+  "Underworld Invasion": [
+    "00:05",
+    "04:05",
+    "08:05",
+    "12:05",
+    "16:05",
+    "18:32",
   ],
   "Red Dragon Invasion": [
-    "01:30",
-    "03:30",
-    "05:30",
-    "07:30",
-    "09:30",
-    "12:30",
-    "14:30",
-    "16:30",
-    "18:30",
-    "20:30",
-    "23:30",
-  ],
-  "Balrog Invasion": [
-    "00:30",
-    "02:30",
-    "04:30",
-    "06:30",
-    "08:30",
-    "10:30",
-    "13:30",
-    "15:30",
-    "17:30",
-    "19:30",
-    "22:30",
-  ],
-  "Golden Invasion": ["07:00", "11:00"],
-  "Blue Dragon Invasion": [
-    "01:15",
-    "03:15",
-    "05:15",
-    "07:15",
-    "09:15",
+    "00:15",
+    "04:15",
+    "08:15",
     "12:15",
-    "14:15",
     "16:15",
-    "18:15",
-    "20:15",
-    "23:15",
+    "18:32",
+  ],
+  "Golden Invasion": [
+    "00:25",
+    "04:25",
+    "08:25",
+    "12:25",
+    "16:25",
+    "20:25",
+  ],
+  "White Wizard Invasion": [
+    "00:50",
+    "04:50",
+    "08:50",
+    "12:50",
+    "16:50",
+    "20:32",
+  ],
+  "Muun Invasion": [
+    "01:50",
+    "05:50",
+    "09:50",
+    "13:50",
+    "17:50",
+    "18:32",
   ],
 };
 
@@ -122,17 +109,21 @@ const eventSchedule = {
     "21:00",
     "23:00",
   ],
-  "Illusion Temple": ["22:30"],
+  "Illusion Temple": [
+    "01:30",
+    "05:30",
+    "09:30",
+    "13:30",
+    "17:30",
+    "21:30",
+  ],
+
   "Arka War": [{ dayOfWeek: 4, time: "22:00" }], // Thursday
   CryWolf: [
-    { dayOfWeek: 0, time: "21:25" },
-    { dayOfWeek: 1, time: "20:44" },
-    { dayOfWeek: 2, time: "21:25" },
-    { dayOfWeek: 3, time: "21:25" },
-    { dayOfWeek: 4, time: "21:25" },
-    { dayOfWeek: 5, time: "21:25" },
-    { dayOfWeek: 6, time: "21:25" },
+    { dayOfWeek: 4, time: "20:30" }, // Thursday
+    { dayOfWeek: 0, time: "20:30" }, // Sunday
   ],
+
 };
 
 const allEvents = { ...eventSchedule, ...invasionSchedule };
@@ -261,6 +252,23 @@ function Events({ user, currentTheme, onThemeChange }) {
         enter: "Automatic invasion",
         where: "Lorencia",
         rewards: "1-2,000 Ruud, Jewels, Accesories, Ancient items",
+      },
+      "Underworld Invasion": {
+        enter: "Automatic invasion",
+        where: "Lorencia / Dungeon / Devias",
+        rewards: "Ruud, Jewels, Excellent & Ancient items",
+      },
+
+      "White Wizard Invasion": {
+        enter: "Automatic invasion",
+        where: "Lorencia, Noria, Devias",
+        rewards: "Jewels, Ruud, Event items",
+      },
+
+      "Muun Invasion": {
+        enter: "Automatic invasion",
+        where: "Multiple maps (global)",
+        rewards: "Muun Eggs, Jewels, Ruud",
       },
 
       "Red Dragon Invasion": {
