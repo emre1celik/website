@@ -3,6 +3,7 @@ import {
   faSpinner,
   faLocationCrosshairs,
   faArrowsRotate,
+  faWarning,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   CharacterActions,
@@ -56,7 +57,7 @@ export default function ControlPanelStats({
           gap: "8px",
         }}
       >
-        <FontAwesomeIcon icon={faSpinner} spin />{" "}
+        <FontAwesomeIcon icon={faWarning} style={{ color: "#ff0000" }} />{" "}
         {translate("controlPanel.stats.noCharacters")}
       </div>
     );
