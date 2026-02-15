@@ -355,16 +355,21 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   ];
 
   function getClassInfo(raceId) {
-    const classId = Number(raceId);
+    const classId = parseInt(raceId, 10);
+
+    if (Number.isNaN(classId)) {
+      return { icon: DefaultIcon, key: "unknown" };
+    }
 
     for (const key in classIconMap) {
-      if (classIconMap[key].ids.includes(classId)) {
+      if (classIconMap[key].ids.some(id => id === classId)) {
         return { icon: classIconMap[key].icon, key };
       }
     }
 
     return { icon: DefaultIcon, key: "unknown" };
   }
+
 
   function formatNumber(num) {
     const value = Number(num);
