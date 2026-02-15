@@ -365,8 +365,10 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   }
 
   function formatNumber(num) {
-    return num?.toLocaleString("en-US");
+    const value = Number(num);
+    return Number.isFinite(value) ? value.toLocaleString("en-US") : "0";
   }
+
   useEffect(() => {
     const fetchEvents = async () => {
       setLoadingEvents(true);
