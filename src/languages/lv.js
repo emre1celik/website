@@ -485,7 +485,7 @@ export default {
 
     download: "Spēles klientu vari lejupielādēt no Lejupielāžu lapas.",
     font: "Ja redzi kvadrātus teksta vietā, lejupielādē ArialUni fontu no Lejupielāžu lapas.",
-    season: "Serveris darbojas Season 19 Episode 2-3 ar pielāgotām sistēmām.",
+    season: "Serveris darbojas Season 20 Episode 2-3 ar pielāgotām sistēmām.",
     events:
       "Blood Castle, Devil Square un citi notikumi notiek regulāri. Skaties Notikumu lapu.",
     barracks:
@@ -523,6 +523,6 @@ export default {
     feature3Desc: "Stabili serveri, viegls temps un draudzīga globāla kopiena.",
   },
   footer: {
-    rights: "© 2025 MyraMU. Visas tiesības aizsargātas.",
+    rights: "© 2026 MyraMU. Visas tiesības aizsargātas.",
   },
 };

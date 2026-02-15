@@ -486,7 +486,7 @@ export default {
     download: "Klienta gry możesz pobrać ze strony Pobieranie.",
     font: "Jeśli widzisz kwadraty zamiast tekstu, pobierz i zainstaluj czcionkę ArialUni.",
     season:
-      "Serwer działa na Season 19 Episode 2-3 z niestandardowymi systemami.",
+      "Serwer działa na Season 20 Episode 2-3 z niestandardowymi systemami.",
     events:
       "Blood Castle, Devil Square i inwazje odbywają się często. Sprawdź stronę Wydarzeń.",
     barracks:
@@ -527,6 +527,6 @@ export default {
       "Stabilne serwery, spokojne tempo i przyjazna społeczność z całego świata.",
   },
   footer: {
-    rights: "© 2025 MyraMU. Wszelkie prawa zastrzeżone.",
+    rights: "© 2026 MyraMU. Wszelkie prawa zastrzeżone.",
   },
 };

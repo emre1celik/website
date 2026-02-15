@@ -370,7 +370,7 @@ export default {
 
     download: "Bạn có thể tải game từ trang Tải Về.",
     font: "Nếu thấy ký tự vuông, hãy tải và cài đặt font ArialUni.",
-    season: "Server đang chạy Season 19 Episode 2-3 với hệ thống tùy chỉnh.",
+    season: "Server đang chạy Season 20 Episode 2-3 với hệ thống tùy chỉnh.",
     events:
       "Blood Castle, Devil Square và các sự kiện diễn ra thường xuyên. Xem trang Sự Kiện.",
     barracks:
@@ -489,7 +489,7 @@ export default {
   },
   register: {
     title:
-      "Myra MuOnline - Đăng ký tài khoản | Season 19 Episode 2-3 | MU Online",
+      "Myra MuOnline - Đăng ký tài khoản | Season 20 Episode 2-3 | MU Online",
     header: "Tạo tài khoản",
     username: "Tên đăng nhập",
     email: "Email",
@@ -513,6 +513,6 @@ export default {
     decline: "Từ chối",
   },
   footer: {
-    rights: "© 2025 MyraMU. Giữ mọi quyền.",
+    rights: "© 2026 MyraMU. Giữ mọi quyền.",
   },
 };

@@ -373,7 +373,7 @@ export default {
     client: "Client",
     register: "Register",
     account: "Account",
-    feature1Title: "Season 19 Episode 2–3",
+    feature1Title: "Season 20 Episode 2–3",
     feature1Desc:
       "Experience the latest MU Online content with balanced gameplay and modern features.",
 
@@ -408,7 +408,7 @@ export default {
     download: "You can download the game client from the Downloads page.",
     font: "If you see squares instead of text, please download and install the ArialUni font. You can download it from our Downloads page below the links. After installing, restart the game client.",
     season:
-      "We are currently running Season 19 Episode 2-3. We have custom systems and balanced rates for an enjoyable experience.",
+      "We are currently running Season 20 Episode 2-3. We have custom systems and balanced rates for an enjoyable experience.",
     events:
       "Events like Blood Castle, Devil Square, and invasions run frequently. Check the Events page for the schedule. It will show you the next start times, where to join, and rewards.",
     barracks:
@@ -503,7 +503,7 @@ export default {
   },
   register: {
     title:
-      "Myra MuOnline - Register Account | Season 19 Episode 2-3 | MU Online",
+      "Myra MuOnline - Register Account | Season 20 Episode 2-3 | MU Online",
     header: "Create an Account",
     username: "Username",
     email: "Email",
@@ -527,6 +527,6 @@ export default {
     decline: "Decline",
   },
   footer: {
-    rights: "© 2025 MyraMU. All rights reserved.",
+    rights: "© 2026 MyraMU. All rights reserved.",
   },
 };

@@ -487,7 +487,7 @@ export default {
     download: "Você pode baixar o cliente do jogo na página de Downloads.",
     font: "Se aparecerem quadrados no lugar do texto, instale a fonte ArialUni.",
     season:
-      "Estamos rodando a Season 19 Episode 2-3 com sistemas personalizados.",
+      "Estamos rodando a Season 20 Episode 2-3 com sistemas personalizados.",
     events:
       "Eventos como Blood Castle e Devil Square acontecem frequentemente. Veja a página de Eventos.",
     barracks:
@@ -527,6 +527,6 @@ export default {
       "Servidores estáveis, ritmo fácil e uma comunidade global amigável.",
   },
   footer: {
-    rights: "© 2025 MyraMU. Todos os direitos reservados.",
+    rights: "© 2026 MyraMU. Todos os direitos reservados.",
   },
 };

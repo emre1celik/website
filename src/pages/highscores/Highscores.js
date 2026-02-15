@@ -479,14 +479,14 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   return (
     <>
       <Helmet>
-        <title>Myra MuOnline - Highscores | Season 19 Episode 2-3</title>
+        <title>Myra MuOnline - Highscores | Season 20 Episode 2-3</title>
         <meta
           name="description"
-          content="View the top players on Myra MuOnline! Check highscores by class and see who dominates the rankings in Season 19 Episode 2-3."
+          content="View the top players on Myra MuOnline! Check highscores by class and see who dominates the rankings in Season 20 Episode 2-3."
         />
         <meta
           name="keywords"
-          content="mu online highscores, myra mu rankings, top players muonline, season 19 highscores"
+          content="mu online highscores, myra mu rankings, top players muonline, Season 20 highscores"
         />
       </Helmet>
 

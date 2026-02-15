@@ -536,6 +536,6 @@ export default {
       "Servidores estables, progreso fácil y una comunidad global amigable.",
   },
   footer: {
-    rights: "© 2025 MyraMU. Todos los derechos reservados.",
+    rights: "© 2026 MyraMU. Todos los derechos reservados.",
   },
 };

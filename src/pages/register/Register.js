@@ -144,15 +144,15 @@ function Register({ user, currentTheme, onThemeChange }) {
     <>
       <Helmet>
         <title>
-          Myra MuOnline - Register Account | Season 19 Episode 2-3 | MU Online
+          Myra MuOnline - Register Account | Season 20 Episode 2-3 | MU Online
         </title>
         <meta
           name="description"
-          content="Create your Myra MuOnline account now! Join Season 19 Episode 2-3 and play on the best MU Online private server. Register quickly and start your adventure."
+          content="Create your Myra MuOnline account now! Join Season 20 Episode 2-3 and play on the best MU Online private server. Register quickly and start your adventure."
         />
         <meta
           name="keywords"
-          content="mu online register, myra mu register, mu online account, myra season 19 register, myra private server registration"
+          content="mu online register, myra mu register, mu online account, myra Season 20 register, myra private server registration"
         />
       </Helmet>
 

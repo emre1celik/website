@@ -487,7 +487,7 @@ export default {
     download: "Mängu kliendi saad alla laadida allalaadimiste lehelt.",
     font: "Kui tekst kuvatakse ruutudena, laadi alla ja paigalda ArialUni font. See asub Allalaadimiste lehel.",
     season:
-      "Server töötab Season 19 Episode 2-3 versioonil koos kohandatud süsteemidega.",
+      "Server töötab Season 20 Episode 2-3 versioonil koos kohandatud süsteemidega.",
     events:
       "Blood Castle, Devil Square ja invasioonid toimuvad tihti. Vaata sündmuste lehte ajakava jaoks.",
     barracks:
@@ -528,6 +528,6 @@ export default {
       "Stabiilsed serverid, rahulik tempo ja sõbralik globaalne kogukond.",
   },
   footer: {
-    rights: "© 2025 MyraMU. Kõik õigused kaitstud.",
+    rights: "© 2026 MyraMU. Kõik õigused kaitstud.",
   },
 };

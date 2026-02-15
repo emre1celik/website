@@ -483,7 +483,7 @@ export default {
 
     download: "Oyun istemcisini İndirmeler sayfasından indirebilirsin.",
     font: "Eğer yazılar kare görünüyorsa ArialUni fontunu indirip kur.",
-    season: "Sunucu Season 19 Episode 2-3 sürümünde çalışıyor.",
+    season: "Sunucu Season 20 Episode 2-3 sürümünde çalışıyor.",
     events:
       "Blood Castle, Devil Square ve istilalar sıkça yapılır. Etkinlikler sayfasını kontrol et.",
     barracks:
@@ -522,6 +522,6 @@ export default {
       "Kararlı sunucular, kolay tempo ve dost canlısı küresel topluluk.",
   },
   footer: {
-    rights: "© 2025 MyraMU. Tüm hakları saklıdır.",
+    rights: "© 2026 MyraMU. Tüm hakları saklıdır.",
   },
 };

@@ -104,16 +104,16 @@ function Login({ user, onLogin, currentTheme, onThemeChange }) {
     <>
       <Helmet>
         <title>
-          Myra MuOnline - Login | Season 19 Episode 2-3 | MU Online Private
+          Myra MuOnline - Login | Season 20 Episode 2-3 | MU Online Private
           Server
         </title>
         <meta
           name="description"
-          content="Login to your Myra MuOnline account and continue your journey in Season 19 Episode 2-3. Access your stats, items, and enjoy the ultimate MU Online experience."
+          content="Login to your Myra MuOnline account and continue your journey in Season 20 Episode 2-3. Access your stats, items, and enjoy the ultimate MU Online experience."
         />
         <meta
           name="keywords"
-          content="mu online login, myra mu login, mu private server login, season 19 ep2 login, myra account login"
+          content="mu online login, myra mu login, mu private server login, Season 20 ep2 login, myra account login"
         />
       </Helmet>
 

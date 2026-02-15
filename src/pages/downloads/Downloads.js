@@ -31,7 +31,7 @@ function Downloads({ user, currentTheme, onThemeChange }) {
     },
     {
       name: "MediaFire (1,84 GB)",
-      url: "https://www.mediafire.com/file/7582addza0w9z43/Myra+MU+Online.rar/file",
+      url: "https://www.mediafire.com/file/0px69c0vfn6dhdj/Myra+MuOnline+-+Season+20+Episode+2+&+3.rar/file",
       icon: faFile,
     },
   ];
@@ -40,7 +40,7 @@ function Downloads({ user, currentTheme, onThemeChange }) {
     <>
       <Helmet>
         <title>
-          Myra MuOnline - Downloads | Season 19 Episode 2-3 | MU Online Client
+          Myra MuOnline - Downloads | Season 20 Episode 2-3 | MU Online Client
         </title>
       </Helmet>
 

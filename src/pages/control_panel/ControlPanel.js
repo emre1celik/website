@@ -558,14 +558,14 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
   return (
     <>
       <Helmet>
-        <title>Myra MuOnline - Control Panel | Season 19 Episode 2-3</title>
+        <title>Myra MuOnline - Control Panel | Season 20 Episode 2-3</title>
         <meta
           name="description"
-          content="Manage your Myra MuOnline account in the Control Panel. Check your stats, update settings, and enjoy the Season 19 Episode 2-3 private server experience."
+          content="Manage your Myra MuOnline account in the Control Panel. Check your stats, update settings, and enjoy the Season 20 Episode 2-3 private server experience."
         />
         <meta
           name="keywords"
-          content="mu online control panel, myra mu account management, mu private server stats, myra season 19 control panel"
+          content="mu online control panel, myra mu account management, mu private server stats, myra Season 20 control panel"
         />
       </Helmet>
 
