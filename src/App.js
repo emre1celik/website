@@ -101,6 +101,25 @@ function App() {
                   }
                 />
                 <Route
+                  path="/control-panel"
+                  element={
+                    user ? (
+                      <ControlPanel
+                        user={user}
+                        currentTheme={theme}
+                        onThemeChange={handleThemeChange}
+                        onLogout={handleLogout}
+                      />
+                    ) : (
+                      <Login
+                        onLogin={setUser}
+                        currentTheme={theme}
+                        onThemeChange={handleThemeChange}
+                      />
+                    )
+                  }
+                />
+                <Route
                   path="*"
                   element={
                     <Maintenance
@@ -142,25 +161,6 @@ function App() {
                       currentTheme={theme}
                       onThemeChange={handleThemeChange}
                     />
-                  }
-                />
-                <Route
-                  path="/control-panel"
-                  element={
-                    user ? (
-                      <ControlPanel
-                        user={user}
-                        currentTheme={theme}
-                        onThemeChange={handleThemeChange}
-                        onLogout={handleLogout}
-                      />
-                    ) : (
-                      <Login
-                        onLogin={setUser}
-                        currentTheme={theme}
-                        onThemeChange={handleThemeChange}
-                      />
-                    )
                   }
                 />
                 <Route
