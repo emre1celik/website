@@ -502,13 +502,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 <FontAwesomeIcon icon={faUsers} />
                 <span>{translate("highscores.topPlayers")}</span>
               </ControlPanelTabButton>
-              <ControlPanelTabButton
-                active={activeTab === "bosses"}
-                onClick={() => setActiveTab("bosses")}
-              >
-                <FontAwesomeIcon icon={faSkull} />
-                <span>{translate("highscores.topBoss")}</span>
-              </ControlPanelTabButton>
 
               <ControlPanelTabButton
                 active={activeTab === "events"}
