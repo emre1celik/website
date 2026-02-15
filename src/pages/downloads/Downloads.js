@@ -141,17 +141,7 @@ function Downloads({ user, currentTheme, onThemeChange }) {
             <DownloadsNote>
               <TranslatedHTML entity="downloads.note1" />
             </DownloadsNote>
-            <img
-              src={fontissue}
-              alt="Myra MU Online Screenshot"
-              style={{ width: "100%", height: "auto" }}
-            />
-            <DownloadsNote>
-              <TranslatedHTML entity="downloads.note3_desc" />
-            </DownloadsNote>
-            <DownloadsNote>
-              <TranslatedHTML entity="downloads.note2_desc" />
-            </DownloadsNote>
+
           </DownloadsBox>
         </DownloadsHero>
         <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
