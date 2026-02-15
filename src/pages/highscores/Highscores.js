@@ -627,7 +627,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                       {p.name}
                                     </GlowingName>
                                   </td>
-                                  <td>{formatNumber(p.reset + p.grand_reset * 100)}</td>
+                                  <td>{Number(p.reset) + Number(p.grand_reset) * 100}</td>
                                 </tr>
                               ))}
                             </tbody>
@@ -1026,8 +1026,11 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                   <span>{translate("highscores.resets")}</span>
                   <strong>
                     {formatNumber(
-                      selectedPlayer.reset + selectedPlayer.grand_reset * 100
-                    )}</strong>
+                      Number(selectedPlayer.reset) +
+                      Number(selectedPlayer.grand_reset) * 100
+                    )}
+                  </strong>
+
                 </PopupRow>
                 {(() => {
                   const { icon, key } = getClassInfo(selectedPlayer.race);
