@@ -241,14 +241,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
 
   const [bosses, setBosses] = useState([]);
-  useEffect(() => {
-    if (bosses.length > 0) return;
-
-    fetch("https://api.myramu.online/api/bosses")
-      .then(res => res.json())
-      .then(data => setBosses(data.bosses || []));
-  }, [bosses.length]);
-
 
   useEffect(() => {
     if (bosses.length === 0 || Object.keys(bossData).length > 0) return;
@@ -733,106 +725,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                           )
                       )}
                     </PlayerGrid>
-                  )}
-                </>
-              )}
-
-              {activeTab === "bosses" && (
-                <>
-                  {loading ? (
-                    <div
-                      style={{
-                        minHeight: "150px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faSpinner} spin />
-                    </div>
-                  ) : (
-                    <BossGrid>
-                      {bossDisplayOrder
-                        .filter((bossName) => bossData[bossName])
-                        .map((bossName) => {
-                          const rows = bossData[bossName];
-                          const bossCfg = bossConfigMap[bossName];
-
-                          return (
-                            <BossCard key={bossName} style={{ height: "400px", width: "100%" }}>
-                              <BossHeader>
-                                {bossCfg && (
-                                  <img
-                                    src={bossCfg.src}
-                                    alt={bossName}
-                                    style={{
-                                      width: `${bossCfg.width}px`,
-                                      height: `${bossCfg.height}px`,
-                                      objectFit: "contain",
-                                      flexShrink: 0,
-                                    }}
-                                  />
-                                )}
-
-                                <BossText>
-                                  <BossTitle>{bossName}</BossTitle>
-
-                                  {bossCfg && (
-                                    <BossSubtitle>
-                                      <span>
-                                        <FontAwesomeIcon icon={faMapMarkerAlt} /> {bossCfg.map}
-                                      </span>
-                                      <span>
-                                        <FontAwesomeIcon icon={faHeart} /> HP: {bossCfg.hp}
-                                      </span>
-                                    </BossSubtitle>
-                                  )}
-                                </BossText>
-                              </BossHeader>
-
-                              <BossTableWrapper>
-                                <HighscoresTable>
-                                  <thead>
-                                    <tr>
-                                      <th>{translate("highscores.rank")}</th>
-                                      <th>{translate("highscores.name")}</th>
-                                      <th>{translate("highscores.kills")}</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    {rows.map((row, index) => (
-                                      <tr key={index}>
-                                        <td>
-                                          {index + 1}
-                                          {index === 0 && (
-                                            <RankIcon style={{ color: "gold" }}>
-                                              <FontAwesomeIcon icon={faCrown} />
-                                            </RankIcon>
-                                          )}
-                                          {index === 1 && (
-                                            <RankIcon style={{ color: "silver" }}>
-                                              <FontAwesomeIcon icon={faCrown} />
-                                            </RankIcon>
-                                          )}
-                                          {index === 2 && (
-                                            <RankIcon style={{ color: "#cd7f32" }}>
-                                              <FontAwesomeIcon icon={faCrown} />
-                                            </RankIcon>
-                                          )}
-                                        </td>
-                                        <td>
-                                          <GlowingName rank={index}>{row.name}</GlowingName>
-                                        </td>
-                                        <td>{row.kills}</td>
-                                      </tr>
-                                    ))}
-                                  </tbody>
-                                </HighscoresTable>
-                              </BossTableWrapper>
-                            </BossCard>
-                          );
-                        })}
-                    </BossGrid>
                   )}
                 </>
               )}
