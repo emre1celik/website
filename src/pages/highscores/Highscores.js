@@ -390,20 +390,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
         const data = await res.json();
 
         if (res.ok) {
-          const decodedGuilds = (data.top_guilds || []).map((guild) => {
-            // decode Base64
-            let name = "";
-            try {
-              name = atob(guild.guild_name); // Base64 → binary string
-              name = name.replace(/\0+$/, ""); // remove trailing nulls
-            } catch (e) {
-              name = guild.guild_name; // fallback if decode fails
-            }
+          setGuilds(data.top_guilds || []);
 
-            return { ...guild, guild_name: name };
-          });
-
-          setGuilds(decodedGuilds);
         } else {
           setErrorGuilds(
             translate("highscores.serverError").replace("{error}", data.error)
