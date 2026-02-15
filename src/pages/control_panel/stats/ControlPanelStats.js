@@ -57,7 +57,7 @@ export default function ControlPanelStats({
           gap: "8px",
         }}
       >
-        <FontAwesomeIcon icon={faWarning} style={{ color: "#ff0000" }} />{" "}
+        <FontAwesomeIcon icon={faWarning} />{" "}
         {translate("controlPanel.stats.noCharacters")}
       </div>
     );
