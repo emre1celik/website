@@ -715,9 +715,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           </GlowingName>
                                         </td>
                                         <td>
-                                          {formatNumber(
-                                            p.reset + p.grand_reset * 100
-                                          )}
+                                          {Number(p.reset) + Number(p.grand_reset) * 100
+                                          }
                                         </td>
                                       </tr>
                                     ))}
