@@ -277,50 +277,50 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
   const classIconMap = {
     dw: {
-      ids: [0, 1, 3, 7, 15],
+      ids: [0, 1, 2, 3, 7, 15],
       icon: DwIcon,
     },
     dk: {
-      ids: [16, 17, 19, 23, 31],
+      ids: [16, 17, 18, 19, 23, 31],
       icon: DkIcon,
     },
     elf: {
-      ids: [32, 33, 35, 39, 47],
+      ids: [32, 33, 34, 35, 39, 47],
       icon: ElfIcon,
     },
     mg: {
-      ids: [48, 49, 51, 55, 63],
+      ids: [48, 49, 50, 51, 55, 63],
       icon: MgIcon,
     },
     dl: {
-      ids: [64, 65, 67, 71, 79],
+      ids: [64, 65, 66, 67, 71, 79],
       icon: DlIcon,
     },
     sum: {
-      ids: [80, 81, 83, 87, 95],
+      ids: [80, 81, 82, 83, 87, 95],
       icon: SumIcon,
     },
     rf: {
-      ids: [96, 97, 99, 103, 111],
+      ids: [96, 97, 98, 99, 103, 111],
       icon: RfIcon,
     },
     gl: {
-      ids: [112, 113, 115, 119, 127],
+      ids: [112, 113, 114, 115, 119, 127],
       icon: GlIcon,
     },
     rw: {
-      ids: [128, 129, 131, 135, 143],
+      ids: [128, 129, 130, 131, 135, 143],
       icon: RwIcon,
     },
     sl: {
-      ids: [144, 145, 147, 151, 159],
+      ids: [144, 145, 146, 147, 151, 159],
       icon: SlIcon,
     },
     gc: {
-      ids: [160, 161, 163, 167, 175],
+      ids: [160, 161, 162, 163, 167, 175],
       icon: GcIcon,
     }, al: {
-      ids: [224, 225, 227, 231, 239],
+      ids: [224, 225, 226, 227, 231, 239],
       icon: AlcIcon,
     },
 
@@ -329,15 +329,15 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       icon: LwIcon,
     },
     ma: {
-      ids: [192, 193, 195, 199, 207],
+      ids: [192, 193, 194, 195, 199, 207],
       icon: MaIcon,
     },
     ik: {
-      ids: [208, 209, 211, 215, 223],
+      ids: [208, 209, 210, 211, 215, 223],
       icon: IkIcon,
     },
     al: {
-      ids: [224, 225, 227, 231, 239],
+      ids: [224, 225, 226, 227, 231, 239],
       icon: AlcIcon,
     }
   };
