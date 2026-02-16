@@ -282,7 +282,7 @@ function Events({ user, currentTheme, onThemeChange }) {
 
       "Red Dragon Invasion": {
         enter: "Automatic invasion",
-        where: "Lorencia",
+        where: "Noria",
         rewards: "1-2,000 Ruud, Jewels, Accesories, Ancient items",
       },
       "Golden Invasion": {
