@@ -181,6 +181,7 @@ function Info({ user, currentTheme, onThemeChange }) {
             <li>/addcmd {translate("guide.serverInfo.list.amount")}</li>
             <li>/reset</li>
             <li>/reset auto</li>
+            <li>/change</li>
             <li>/attack</li>
             <li>/clearinv</li>
           </ul>
