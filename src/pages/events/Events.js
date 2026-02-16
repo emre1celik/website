@@ -73,6 +73,10 @@ const invasionSchedule = {
 };
 
 const eventSchedule = {
+  "Boss Battle Together": [
+    "00:05",
+  ],
+
   "Blood Castle": [
     "01:06",
     "02:00",
@@ -222,7 +226,12 @@ function Events({ user, currentTheme, onThemeChange }) {
         enter: "Blood Castle Ticket, buy from NPC Lumen Barmaid",
         where: "Event Square (Press CTRL+T ingame)",
         rewards: "Fast reset, Ruud, Jewels",
+      }, "Boss Battle Together": {
+        enter: "Automatic participation (join when announced)",
+        where: "Event Arena (global summon zone)",
+        rewards: "Event items, Ruud, bonus rewards for Top Damage & Last Hit",
       },
+
       "Devil Square": {
         enter: "Devil Square Ticket, buy from NPC Lumen Barmaid",
         where: "Event Square (Press CTRL+T ingame)",
