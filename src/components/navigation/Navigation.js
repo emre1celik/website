@@ -121,9 +121,10 @@ function Navigation({ user }) {
 
           <li>
             <NavigationItemLink
+              to="https://discord.gg/EceQbCVgSy"
+              target="_blank"
+              rel="noopener noreferrer"
               as={Link}
-              to="/community"
-              $active={location.pathname === "/community"}
             >
               <NavigationIcon>
                 <FontAwesomeIcon icon={faUsers} />

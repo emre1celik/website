@@ -29,7 +29,7 @@ import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCrown, faHeart, faMapMarkerAlt, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faCrown, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import {
   faUsers,
   faTrophy,

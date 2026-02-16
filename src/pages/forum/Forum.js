@@ -17,12 +17,18 @@ import {
     ButtonRow,
     ActionButton,
     ThreadRight,
+    SectionDivider,
+    NewThreadTextarea,
     ThreadActions,
     IconButton,
     PinnedIcon,
     NewThreadBox,
     NewThreadInput,
     NewThreadActions,
+    ReplyBox,
+    ReplyItem,
+    ReplyActions,
+    ReplyMeta,
 } from "./ForumStyles";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -68,6 +74,12 @@ const MOCK_THREADS = {
             author_account: "admin",
             views: 198,
         },
+        {
+            id: 103,
+            title: "Upcoming Patch Notes",
+            author_account: "admin",
+            views: 198,
+        },
     ],
     2: [
         {
@@ -101,12 +113,24 @@ const MOCK_THREADS = {
 
 const MOCK_POSTS = {
     101: [
-        { id: 1, author: "admin", content: "Welcome to the server!" },
-        { id: 2, author: "player01", content: "Glad to be here 🔥" },
+        {
+            id: 1, author: "admin", content: "Welcome to the server!",
+            createdAt: "2024-01-18T12:15:00",
+        },
+        {
+            id: 2, author: "player01", content: "Glad to be here 🔥",
+            createdAt: "2024-01-18T12:15:00",
+        },
     ],
     201: [
-        { id: 1, author: "player01", content: "I get disconnected instantly." },
-        { id: 2, author: "admin", content: "Check your firewall & ports." },
+        {
+            id: 1, author: "player01", content: "I get disconnected instantly.",
+            createdAt: "2024-01-18T12:15:00",
+        },
+        {
+            id: 2, author: "admin", content: "Check your firewall & ports.",
+            createdAt: "2024-01-18T12:15:00",
+        },
     ],
 };
 
@@ -120,6 +144,8 @@ function Forum({ user, currentTheme, onThemeChange }) {
     const [creatingThread, setCreatingThread] = useState(false);
     const [newThreadTitle, setNewThreadTitle] = useState("");
     const [newThreadCategory, setNewThreadCategory] = useState(null);
+    const [newThreadBody, setNewThreadBody] = useState("");
+    const [replyText, setReplyText] = useState("");
 
     useEffect(() => {
         setCategories(MOCK_CATEGORIES);
@@ -134,7 +160,10 @@ function Forum({ user, currentTheme, onThemeChange }) {
             id: Date.now(),
             title: newThreadTitle,
             author_account: user,
+            views: 0,
+            body: newThreadBody,
         };
+
 
         setThreads((prev) => ({
             ...prev,
@@ -146,7 +175,23 @@ function Forum({ user, currentTheme, onThemeChange }) {
 
         setNewThreadTitle("");
         setNewThreadCategory(null);
-        setCreatingThread(false);
+        setCreatingThread(false); setNewThreadBody("");
+
+    };
+    const handleReply = () => {
+        if (!replyText.trim() || !activeThread) return;
+
+        MOCK_POSTS[activeThread.id] = [
+            ...(MOCK_POSTS[activeThread.id] || []),
+            {
+                id: Date.now(),
+                author: user,
+                content: replyText,
+                createdAt: new Date().toISOString(),
+            },
+        ];
+
+        setReplyText("");
     };
 
     const loadThreads = (categoryId) => {
@@ -205,22 +250,50 @@ function Forum({ user, currentTheme, onThemeChange }) {
                                     Started by {activeThread.author_account}
                                 </CategoryDescription>
 
-                                {(MOCK_POSTS[activeThread.id] || []).map((post) => (
-                                    <div
-                                        key={post.id}
-                                        style={{
-                                            padding: "0.6rem",
-                                            marginBottom: "0.5rem",
-                                            borderRadius: "8px",
-                                            background: "rgba(255,255,255,0.05)",
-                                        }}
-                                    >
-                                        <strong>{post.author}</strong>
-                                        <div style={{ fontSize: "0.9rem", opacity: 0.9 }}>
-                                            {post.content}
-                                        </div>
-                                    </div>
-                                ))}
+                                {(MOCK_POSTS[activeThread.id] || []).map((post) => {
+                                    const isOwner = true;
+
+                                    return (
+                                        <ReplyItem key={post.id}>
+                                            <CategoryCard>
+                                                <CategoryHeader>{post.author}</CategoryHeader>
+                                                <ReplyMeta>
+                                                    Posted {new Date(post.createdAt).toLocaleString()}
+                                                </ReplyMeta>
+                                                <CategoryDescription>{post.content}</CategoryDescription>
+
+                                                {isOwner && (
+                                                    <ReplyActions>
+                                                        <IconButton title="Edit reply">
+                                                            <FontAwesomeIcon icon={faPen} />
+                                                        </IconButton>
+                                                        <IconButton $danger title="Delete reply">
+                                                            <FontAwesomeIcon icon={faTrash} />
+                                                        </IconButton>
+                                                    </ReplyActions>
+                                                )}
+                                            </CategoryCard>
+                                        </ReplyItem>
+
+                                    );
+
+                                })}
+                                <ReplyBox>
+                                    <CategoryHeader>Reply</CategoryHeader>
+
+                                    <NewThreadTextarea
+                                        placeholder="Write a reply..."
+                                        value={replyText}
+                                        onChange={(e) => setReplyText(e.target.value)}
+                                    />
+
+                                    <NewThreadActions>
+                                        <ActionButton onClick={handleReply}>
+                                            Post Reply
+                                        </ActionButton>
+                                    </NewThreadActions>
+                                </ReplyBox>
+
                             </CategoryCard>
                         </>
                     )}
@@ -304,22 +377,33 @@ function Forum({ user, currentTheme, onThemeChange }) {
                                 </ButtonRow>
                                 {creatingThread && newThreadCategory === cat.id && (
                                     <NewThreadBox>
-                                        <CategoryHeader>Create New Thread</CategoryHeader>
+                                        <CategoryHeader>
+                                            <FontAwesomeIcon icon={faPlus} /> Create New Thread
+                                        </CategoryHeader>
 
                                         <NewThreadInput
-                                            placeholder="Thread title..."
+                                            placeholder="Thread title"
                                             value={newThreadTitle}
                                             onChange={(e) => setNewThreadTitle(e.target.value)}
                                         />
 
+                                        <NewThreadTextarea
+                                            placeholder="What do you want to discuss?"
+                                            value={newThreadBody}
+                                            onChange={(e) => setNewThreadBody(e.target.value)}
+                                        />
+
+                                        <SectionDivider />
+
                                         <NewThreadActions>
                                             <ActionButton onClick={handleCreateThread}>
-                                                Create
+                                                Post Thread
                                             </ActionButton>
                                             <ActionButton
                                                 onClick={() => {
                                                     setCreatingThread(false);
                                                     setNewThreadTitle("");
+                                                    setNewThreadBody("");
                                                     setNewThreadCategory(null);
                                                 }}
                                             >
@@ -328,6 +412,7 @@ function Forum({ user, currentTheme, onThemeChange }) {
                                         </NewThreadActions>
                                     </NewThreadBox>
                                 )}
+
 
                             </CategoryCard>
                         ))}

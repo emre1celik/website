@@ -78,6 +78,7 @@ export const ForumBox = styled.div`
 
 export const CategoryCard = styled.div`
   border-radius: 14px;
+  position: relative;
   padding: 0.9rem 1rem;
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -116,6 +117,11 @@ export const ThreadTitle = styled.span`
 export const ThreadAuthor = styled.span`
   opacity: 0.7;
 `;
+export const ReplyMeta = styled.div`
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-bottom: 4px;
+`;
 
 export const ButtonRow = styled.div`
   margin-top: 8px;
@@ -143,8 +149,42 @@ transition: transform 0.15s ease, opacity 0.15s ease;
 
 export const ThreadRight = styled.div`
 display: flex;
-align - items: center;
+align-items: center;
 gap: 10px;
+`;
+// FIRST define NewThreadBox
+export const NewThreadBox = styled.div`
+  padding: 0.9rem;
+  border-radius: 14px;
+  background: rgba(195, 111, 111, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+`;
+
+export const ReplyActions = styled.div`
+ position: absolute;
+ top: 12px;
+ right: 12px;
+ display: flex;
+ gap: 8px;
+ opacity: 0;
+ transition: opacity 0.15s ease;
+`;
+
+export const ReplyItem = styled.div`
+  margin-bottom: 10px;
+
+  &:hover ${ReplyActions} {
+    opacity: 1;
+  }
+`;
+// THEN extend it
+export const ReplyBox = styled(NewThreadBox)`
+  margin-top: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 `;
 
 export const ThreadActions = styled.div`
@@ -157,48 +197,54 @@ transition: opacity 0.15s ease;
     opacity: 1;
 }
     `;
+export const NewThreadTextarea = styled.textarea`
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  resize: vertical;
+  min-height: 90px;
+`;
+
+export const SectionDivider = styled.div`
+  height: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  margin: 0.6rem 0;
+`;
 
 export const IconButton = styled.button`
 all: unset;
 cursor: pointer;
-font - size: 0.85rem;
+font-size: 0.85rem;
 opacity: 0.75;
 display: flex;
-align - items: center;
+align-items: center;
 
   &:hover {
     opacity: 1;
     color: ${({ theme, $danger }) =>
-        $danger ? "#ff5f5f" : theme.primary || "#ffcc00"
-    };
+    $danger ? "#ff5f5f" : theme.primary || "#ffcc00"
+  };
 }
-`;
-export const NewThreadBox = styled.div`
-padding: 0.9rem;
-border - radius: 14px;
-background: rgba(255, 255, 255, 0.06);
-border: 1px solid rgba(255, 255, 255, 0.14);
-display: flex;
-flex - direction: column;
-gap: 8px;
 `;
 
 export const NewThreadInput = styled.input`
 padding: 0.5rem 0.6rem;
-border - radius: 8px;
+border-radius: 8px;
 border: none;
-font - family: inherit;
-font - size: 0.9rem;
+font-family: inherit;
+font-size: 0.9rem;
 `;
 
 export const NewThreadActions = styled.div`
 display: flex;
 gap: 8px;
-justify - content: flex - end;
+justify-content: flex-end;
 `;
 
 export const PinnedIcon = styled.span`
-font - size: 0.8rem;
+font-size: 0.8rem;
 opacity: 0.85;
 color: ${({ theme }) => theme.primary || "#ffcc00"};
 `;

@@ -180,13 +180,9 @@ function Info({ user, currentTheme, onThemeChange }) {
             <li>/addvit {translate("guide.serverInfo.list.amount")}</li>
             <li>/addcmd {translate("guide.serverInfo.list.amount")}</li>
             <li>/reset</li>
-            <li>/offstore</li>
-            <li>/offattack</li>
-            <li>/clearinventory</li>
-            <li>/clearextinventory</li>
-            <li>/cleargremorycase</li>
-            <li>/cleareventinventory</li>
-            <li>/clearemuuninventory</li>
+            <li>/reset auto</li>
+            <li>/attack</li>
+            <li>/clearinv</li>
           </ul>
           <p>{translate("guide.serverInfo.outro")}</p>
         </>

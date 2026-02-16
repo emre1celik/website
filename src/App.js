@@ -15,7 +15,6 @@ import { greenTheme, blueTheme, redTheme } from "./styles/ThemeStyles";
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import styled from "styled-components";
-import Maintenance from "./pages/maintenance/Maintenance";
 import Forum from "./pages/forum/Forum";
 
 const themes = {
