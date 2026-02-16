@@ -8,7 +8,10 @@ export const ForumWrapper = styled.div`
   min-height: 100vh;
   background-image: url(${({ theme }) => theme?.background});
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
+  font-family: "AlbertusMedium", Arial, sans-serif;
 `;
 
 export const ForumContent = styled.main`
@@ -29,29 +32,41 @@ export const ForumBox = styled.div`
   gap: 14px;
   overflow-y: auto;
   background: rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 4px;
+  }
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.35);
+  }
+
 `;
 
 /* Cards */
 
 export const CategoryCard = styled.div`
+  position: relative;
   border-radius: 14px;
   padding: 0.9rem 1rem;
   background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
 `;
 
 export const CategoryHeader = styled.div`
   font-weight: 800;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  font-size: 1.05rem;
   color: ${({ theme }) => theme.primary || "#ffcc00"};
 `;
 
 export const CategoryDescription = styled.div`
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   opacity: 0.85;
-  margin: 6px 0 10px;
-  line-height: 1.4;
+  margin-top: 4px;
 `;
 
 /* Threads */
@@ -71,15 +86,12 @@ export const ThreadRow = styled.div`
 export const ThreadTitle = styled.span`
   font-weight: 600;
   font-size: 0.85rem;
-  display: flex;
-  align-items: center;
-  gap: 6px;
 `;
 
 export const ThreadRight = styled.div`
   display: flex;
   gap: 10px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 `;
 
 export const ThreadAuthor = styled.span`
@@ -94,7 +106,7 @@ export const ReplyItem = styled.div`
 `;
 
 export const ReplyMeta = styled.div`
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   opacity: 0.6;
   margin-bottom: 4px;
 `;
@@ -117,6 +129,7 @@ export const ReplyActions = styled.div`
 export const IconButton = styled.button`
   all: unset;
   cursor: pointer;
+  font-size: 0.85rem;
   opacity: 0.75;
 
   &:hover {
@@ -141,6 +154,10 @@ export const ActionButton = styled.button`
   font-weight: 700;
   background: ${({ theme }) => theme.primary || "#ffcc00"};
   color: ${({ theme }) => theme.primaryText};
+
+  &:hover {
+    opacity: 0.9;
+  }
 `;
 
 /* Pagination */
@@ -148,7 +165,8 @@ export const ActionButton = styled.button`
 export const PaginationRow = styled.div`
   display: flex;
   justify-content: center;
-  gap: 12px;
+  align-items: center;
+  gap: 10px;
   margin-top: 6px;
 `;
 
@@ -157,6 +175,10 @@ export const PageButton = styled.button`
   cursor: pointer;
   font-size: 0.7rem;
   opacity: ${({ disabled }) => (disabled ? 0.4 : 0.85)};
+
+  &:hover {
+    opacity: ${({ disabled }) => (disabled ? 0.4 : 1)};
+  }
 `;
 
 export const PageIndicator = styled.div`
@@ -178,19 +200,28 @@ export const NewThreadBox = styled.div`
 export const ReplyBox = styled(NewThreadBox)`
   margin-top: 12px;
 `;
+
+export const NewThreadInput = styled.input`
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: none;
+`;
+
+export const NewThreadTextarea = styled.textarea`
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  resize: vertical;
+  min-height: 90px;
+`;
+
 export const NewThreadActions = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 8px;
 `;
 
-export const NewThreadInput = styled.input`
-  padding: 0.5rem;
-  border-radius: 8px;
-`;
-
-export const NewThreadTextarea = styled.textarea`
-  padding: 0.6rem;
-  border-radius: 8px;
-  min-height: 90px;
+export const PinnedIcon = styled.span`
+  font-size: 0.8rem;
+  margin-right: 4px;
 `;
