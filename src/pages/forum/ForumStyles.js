@@ -34,7 +34,6 @@ export const ForumBox = styled.div`
 /* Cards */
 
 export const CategoryCard = styled.div`
-  position: relative;
   border-radius: 14px;
   padding: 0.9rem 1rem;
   background: rgba(255, 255, 255, 0.04);
@@ -42,13 +41,17 @@ export const CategoryCard = styled.div`
 
 export const CategoryHeader = styled.div`
   font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   color: ${({ theme }) => theme.primary || "#ffcc00"};
 `;
 
 export const CategoryDescription = styled.div`
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   opacity: 0.85;
-  margin-bottom: 8px;
+  margin: 6px 0 10px;
+  line-height: 1.4;
 `;
 
 /* Threads */
@@ -68,12 +71,15 @@ export const ThreadRow = styled.div`
 export const ThreadTitle = styled.span`
   font-weight: 600;
   font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 `;
 
 export const ThreadRight = styled.div`
   display: flex;
   gap: 10px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 `;
 
 export const ThreadAuthor = styled.span`
@@ -88,8 +94,9 @@ export const ReplyItem = styled.div`
 `;
 
 export const ReplyMeta = styled.div`
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   opacity: 0.6;
+  margin-bottom: 4px;
 `;
 
 export const ReplyActions = styled.div`
@@ -141,8 +148,7 @@ export const ActionButton = styled.button`
 export const PaginationRow = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10px;
+  gap: 12px;
   margin-top: 6px;
 `;
 
@@ -151,10 +157,6 @@ export const PageButton = styled.button`
   cursor: pointer;
   font-size: 0.7rem;
   opacity: ${({ disabled }) => (disabled ? 0.4 : 0.85)};
-
-  &:hover {
-    opacity: ${({ disabled }) => (disabled ? 0.4 : 1)};
-  }
 `;
 
 export const PageIndicator = styled.div`
@@ -176,6 +178,11 @@ export const NewThreadBox = styled.div`
 export const ReplyBox = styled(NewThreadBox)`
   margin-top: 12px;
 `;
+export const NewThreadActions = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+`;
 
 export const NewThreadInput = styled.input`
   padding: 0.5rem;
@@ -186,15 +193,4 @@ export const NewThreadTextarea = styled.textarea`
   padding: 0.6rem;
   border-radius: 8px;
   min-height: 90px;
-`;
-
-export const NewThreadActions = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  gap: 8px;
-`;
-
-export const PinnedIcon = styled.span`
-  font-size: 0.8rem;
-  margin-right: 4px;
 `;

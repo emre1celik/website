@@ -19,11 +19,8 @@ import {
     ReplyMeta,
     ReplyActions,
     ReplyBox,
-    NewThreadBox,
-    NewThreadInput,
     NewThreadTextarea,
     NewThreadActions,
-    PinnedIcon,
     PaginationRow,
     PageButton,
     PageIndicator,
@@ -36,45 +33,75 @@ import {
     faThumbtack,
     faPlus,
     faEye,
+    faNewspaper,
+    faBullhorn,
+    faComments,
+    faLifeRing,
+    faCogs,
 } from "@fortawesome/free-solid-svg-icons";
 
 /* ---------------- MOCK DATA ---------------- */
 
 const MOCK_CATEGORIES = [
-    { id: 1, name: "Announcements", description: "Official news" },
-    { id: 2, name: "Support", description: "Get help" },
-    { id: 3, name: "General Discussion", description: "Talk freely" },
+    {
+        id: 1,
+        name: "Announcements",
+        icon: faBullhorn,
+        description:
+            "Official announcements from the staff including server updates, scheduled maintenance, patch notes, events, and important notices you should not miss.",
+    },
+    {
+        id: 2,
+        name: "Support",
+        icon: faLifeRing,
+        description:
+            "Need help? Ask questions about technical issues, account problems, gameplay bugs, or anything else you need assistance with.",
+    },
+    {
+        id: 3,
+        name: "General Discussion",
+        icon: faComments,
+        description:
+            "Talk freely about the game, share opinions, strategies, screenshots, stories, or anything related to the community.",
+    },
+    {
+        id: 4,
+        name: "Development & Feedback",
+        icon: faCogs,
+        description:
+            "Share feedback, report bugs, suggest new features, and discuss ongoing development with the team and other players.",
+    },
 ];
 
 const MOCK_THREADS = {
     1: [
-        { id: 101, title: "Server Launch – Welcome!", author_account: "admin", views: 312 },
+        { id: 101, title: "Server Launch – Welcome!", author_account: "admin", views: 312, sticky: true },
         { id: 102, title: "Upcoming Patch Notes", author_account: "admin", views: 198 },
         { id: 103, title: "Maintenance Schedule", author_account: "admin", views: 144 },
-        { id: 104, title: "Server Rules", author_account: "admin", views: 522 },
-        { id: 105, title: "New Events Incoming", author_account: "admin", views: 201 },
-        { id: 106, title: "Website Update", author_account: "admin", views: 87 },
+        { id: 104, title: "Server Rules & Guidelines", author_account: "admin", views: 522 },
+        { id: 105, title: "Holiday Events Incoming", author_account: "admin", views: 201 },
+        { id: 106, title: "Website Update Overview", author_account: "admin", views: 87 },
     ],
 };
 
 const MOCK_POSTS = {
     101: [
-        { id: 1, author: "admin", content: "Welcome!", createdAt: "2024-01-18T12:15:00" },
+        { id: 1, author: "admin", content: "Welcome to the server!", createdAt: "2024-01-18T12:15:00" },
         { id: 2, author: "player01", content: "Glad to be here!", createdAt: "2024-01-18T12:20:00" },
     ],
 };
 
-/* ------------------------------------------ */
+const THREADS_PER_PAGE = 4;
 
-const THREADS_PER_PAGE = 5;
+/* ------------------------------------------ */
 
 function Forum({ user, currentTheme, onThemeChange }) {
     const [categories, setCategories] = useState([]);
     const [threads, setThreads] = useState({});
-    const [activeThread, setActiveThread] = useState(null);
     const [activeCategory, setActiveCategory] = useState(null);
+    const [activeThread, setActiveThread] = useState(null);
     const [replyText, setReplyText] = useState("");
-    const [threadPages, setThreadPages] = useState({}); // categoryId -> page
+    const [threadPages, setThreadPages] = useState({});
 
     useEffect(() => {
         setCategories(MOCK_CATEGORIES);
@@ -116,19 +143,11 @@ function Forum({ user, currentTheme, onThemeChange }) {
                 <ForumBox>
                     <h2>Community</h2>
 
-                    {/* ---------------- THREAD VIEW ---------------- */}
                     {activeThread && (
                         <>
                             <ActionButton onClick={() => setActiveThread(null)}>
                                 ← Back
                             </ActionButton>
-
-                            <CategoryCard>
-                                <CategoryHeader>{activeThread.title}</CategoryHeader>
-                                <CategoryDescription>
-                                    Started by {activeThread.author_account}
-                                </CategoryDescription>
-                            </CategoryCard>
 
                             {(MOCK_POSTS[activeThread.id] || []).map(post => (
                                 <ReplyItem key={post.id}>
@@ -162,42 +181,39 @@ function Forum({ user, currentTheme, onThemeChange }) {
                         </>
                     )}
 
-                    {/* ---------------- CATEGORY LIST ---------------- */}
                     {!activeThread &&
                         categories.map(cat => {
                             const allThreads = threads[cat.id] || [];
-                            const currentPage = threadPages[cat.id] || 1;
+                            const page = threadPages[cat.id] || 1;
                             const totalPages = Math.ceil(allThreads.length / THREADS_PER_PAGE);
 
-                            const start = (currentPage - 1) * THREADS_PER_PAGE;
-                            const paginatedThreads = allThreads.slice(
-                                start,
-                                start + THREADS_PER_PAGE
-                            );
+                            const start = (page - 1) * THREADS_PER_PAGE;
+                            const pageThreads = allThreads.slice(start, start + THREADS_PER_PAGE);
 
                             return (
                                 <CategoryCard key={cat.id}>
-                                    <CategoryHeader>{cat.name}</CategoryHeader>
+                                    <CategoryHeader>
+                                        <FontAwesomeIcon icon={cat.icon} />
+                                        {cat.name}
+                                    </CategoryHeader>
                                     <CategoryDescription>{cat.description}</CategoryDescription>
 
                                     {activeCategory === cat.id &&
-                                        paginatedThreads.map(thread => (
+                                        pageThreads.map(thread => (
                                             <ThreadRow
                                                 key={thread.id}
                                                 onClick={() => openThread(cat.id, thread)}
                                             >
                                                 <ThreadTitle>
-                                                    {thread.id === 101 && (
-                                                        <PinnedIcon>
-                                                            <FontAwesomeIcon icon={faThumbtack} />
-                                                        </PinnedIcon>
-                                                    )}
+                                                    <FontAwesomeIcon
+                                                        icon={thread.sticky ? faThumbtack : faNewspaper}
+                                                    />
                                                     {thread.title}
                                                 </ThreadTitle>
 
                                                 <ThreadRight>
                                                     <ThreadAuthor>
-                                                        Posted by {thread.author_account} · {thread.views} views
+                                                        {thread.author_account} · {thread.views} views
                                                     </ThreadAuthor>
                                                 </ThreadRight>
                                             </ThreadRow>
@@ -206,11 +222,11 @@ function Forum({ user, currentTheme, onThemeChange }) {
                                     {activeCategory === cat.id && totalPages > 1 && (
                                         <PaginationRow>
                                             <PageButton
-                                                disabled={currentPage === 1}
+                                                disabled={page === 1}
                                                 onClick={() =>
                                                     setThreadPages(p => ({
                                                         ...p,
-                                                        [cat.id]: currentPage - 1,
+                                                        [cat.id]: page - 1,
                                                     }))
                                                 }
                                             >
@@ -218,15 +234,15 @@ function Forum({ user, currentTheme, onThemeChange }) {
                                             </PageButton>
 
                                             <PageIndicator>
-                                                Page {currentPage} / {totalPages}
+                                                Page {page} / {totalPages}
                                             </PageIndicator>
 
                                             <PageButton
-                                                disabled={currentPage === totalPages}
+                                                disabled={page === totalPages}
                                                 onClick={() =>
                                                     setThreadPages(p => ({
                                                         ...p,
-                                                        [cat.id]: currentPage + 1,
+                                                        [cat.id]: page + 1,
                                                     }))
                                                 }
                                             >
