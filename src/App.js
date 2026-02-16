@@ -16,6 +16,7 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyles from "./styles/GlobalStyles";
 import styled from "styled-components";
 import Maintenance from "./pages/maintenance/Maintenance";
+import Forum from "./pages/forum/Forum";
 
 const themes = {
   green: greenTheme,
@@ -148,6 +149,17 @@ function App() {
                   )
                 }
               />
+              <Route
+                path="/community"
+                element={
+                  <Forum
+                    user={user}
+                    currentTheme={theme}
+                    onThemeChange={handleThemeChange}
+                  />
+                }
+              />
+
               <Route
                 path="/"
                 element={
