@@ -185,10 +185,10 @@ export default function ControlPanelAchievements({
               >
                 <AchievementReward>
                   <FontAwesomeIcon icon={faGift} />
-                  +{Number(ach.rewards.wcoin ?? 0).toLocaleString()} WCoin
-                  +{Number(ach.rewards.goblin ?? 0).toLocaleString()} Goblin Points
-                  +{Number(ach.rewards.ruud ?? 0).toLocaleString()} Ruud
+                  +{Number(ach.reward_ruud ?? 0).toLocaleString()} WCoin
+
                 </AchievementReward>
+
                 {ach.unlocked && !ach.claimed ? (
                   <GreenButton
                     onClick={() => claimReward(ach.key)}
