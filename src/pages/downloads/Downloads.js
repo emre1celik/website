@@ -21,17 +21,17 @@ function Downloads({ user, currentTheme, onThemeChange }) {
   const fullMirrors = [
     {
       name: "Google Drive (1,84 GB)",
-      url: "https://drive.google.com/file/d/1Ie__rMBcVVbneeFrTyxZdafM-8oewdl7/view?usp=drive_link",
+      url: "https://drive.google.com/file/d/1Ie__rMBcVVbneeFrTyxZdafM-8oewdl7/view?usp=sharing",
       icon: faCloud,
     },
     {
       name: "MEGA.nz (1,84 GB)",
-      url: "https://mega.nz/file/FPMEnQIL#2LoM4EuQPth59tgB4Bri6VW6oLLxZANB-3xvvUiqrnE",
+      url: "https://mega.nz/file/IH81xZ5C#zqp3UZ5CtTiBReB9s6baGzJhWv-Gs4gfNQzeImx8ey0",
       icon: faCloud,
     },
     {
       name: "MediaFire (1,84 GB)",
-      url: "https://www.mediafire.com/file/0px69c0vfn6dhdj/Myra+MuOnline+-+Season+20+Episode+2+&+3.rar/file",
+      url: "https://www.mediafire.com/file/fi3ksn93i8cdfyk/Myra+MuOnline+-+Season+20+Episode+2+&+3.rar/file",
       icon: faFile,
     },
   ];
