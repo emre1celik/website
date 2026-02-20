@@ -13,6 +13,7 @@ import {
   AchievementReward,
   GreenButton,
   AchievementActions,
+  AchievementProgressBar,
 } from "../ControlPanelStyles";
 import EventIcon from "../../../assets/images/classes/event.png";
 import ResetIcon from "../../../assets/images/classes/reset.png";
@@ -183,7 +184,14 @@ export default function ControlPanelAchievements({
                   <div>+{Number(ach.rewards.wcoin ?? 0).toLocaleString()} WCoin</div>
                   <div>+{Number(ach.rewards.goblin ?? 0).toLocaleString()} Goblin Points</div>
                   <div>+{Number(ach.rewards.ruud ?? 0).toLocaleString()} Ruud</div>
-                </AchievementReward>
+                </AchievementReward><AchievementProgressBar>
+                  <div style={{
+                    width: `${Math.min(
+                      (ach.progress / ach.required) * 100,
+                      100
+                    )}%`
+                  }} />
+                </AchievementProgressBar>
                 {Number(ach.rewards.ruud ?? 0) > 0 && ach.unlocked && !ach.claimed && (
                   <select
                     value={selectedCharacters[ach.key] || ""}

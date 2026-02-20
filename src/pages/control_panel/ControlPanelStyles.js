@@ -275,7 +275,19 @@ export const AchievementInfo = styled.div`
     word-break: break-word;
   }
 `;
+export const AchievementProgressBar = styled.div`
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  overflow: hidden;
 
+  div {
+    height: 100%;
+    background: ${({ theme }) => theme?.primary || "#4caf50"};
+    transition: width 0.4s ease;
+  }
+`;
 export const AchievementReward = styled.div`
   display: flex;
   flex-wrap: wrap;
