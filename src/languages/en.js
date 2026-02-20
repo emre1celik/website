@@ -406,7 +406,7 @@ export default {
       "Sorry 😥, I’m not sure about that yet. Have you tried asking it in our discord channel?",
 
     download: "You can download the game client from the Downloads page.",
-    font: "If you see squares instead of text, please download and install the ArialUni font. You can download it from our Downloads page below the links. After installing, restart the game client.",
+    font: "If you see squares instead of text, please install the ArialUni font. When you download the client its inside the client folder RunTimes.",
     season:
       "We are currently running Season 20 Episode 2-3. We have custom systems and balanced rates for an enjoyable experience.",
     events:
