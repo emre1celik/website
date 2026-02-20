@@ -977,6 +977,21 @@ function Highscores({ user, currentTheme, onThemeChange }) {
               <Divider />
 
               <PopupSection>
+                <strong style={{ color: "#aaa" }}>Equipped Gear</strong>
+
+                {selectedPlayer.equipped &&
+                  Object.entries(selectedPlayer.equipped).map(([slot, item]) => (
+                    <PopupRow key={slot}>
+                      <span>{slot}</span>
+                      <strong>
+                        {item
+                          ? `Type ${item.type}-${item.index} +${item.level}`
+                          : "Empty"}
+                      </strong>
+                    </PopupRow>
+                  ))}
+              </PopupSection>
+              <PopupSection>
                 <PopupRow>
                   <span>{translate("highscores.money")}</span>
                   <strong>{formatNumber(selectedPlayer.money)}</strong>
