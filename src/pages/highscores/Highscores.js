@@ -983,7 +983,24 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     </PopupRow>
                   );
                 })()}
+                <PopupRow>
+                  <span>Location</span>
+                  <strong>
+                    {selectedPlayer.map_name} ({selectedPlayer.map_x}, {selectedPlayer.map_y})
+                  </strong>
+                </PopupRow>
 
+                {(() => {
+                  const pk = getPkStatus(selectedPlayer.pk_level);
+                  return (
+                    <PopupRow>
+                      <span>PK Status</span>
+                      <strong style={{ color: pk.color }}>
+                        {pk.label}
+                      </strong>
+                    </PopupRow>
+                  );
+                })()}
               </PopupSection>
 
               <Divider />
@@ -998,25 +1015,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                   <strong>{formatNumber(selectedPlayer.ruud_money)}</strong>
                 </PopupRow>
               </PopupSection>
-              <PopupRow>
-                <span>Location</span>
-                <strong>
-                  {selectedPlayer.map_name}
-                  ({selectedPlayer.map_x}, {selectedPlayer.map_y})
-                </strong>
-              </PopupRow>
 
-              {(() => {
-                const pk = getPkStatus(selectedPlayer.pk_level);
-                return (
-                  <PopupRow>
-                    <span>PK Status</span>
-                    <strong style={{ color: pk.color }}>
-                      {pk.label}
-                    </strong>
-                  </PopupRow>
-                );
-              })()}
               <Divider />
 
               <PopupSection>
