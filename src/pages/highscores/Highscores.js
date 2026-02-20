@@ -357,11 +357,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     gc: {
       ids: [160, 161, 162, 163, 167, 175],
       icon: GcIcon,
-    }, al: {
-      ids: [224, 225, 226, 227, 231, 239],
-      icon: AlcIcon,
     },
-
     lw: {
       ids: [176, 177, 178, 179, 183, 191],
       icon: LwIcon,
@@ -840,8 +836,12 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                         </td>
 
                                         <td>
-                                          <GlowingName rank={index}>
-                                            {row.char_name}
+                                          <GlowingName
+                                            rank={index}
+                                            style={{ cursor: "pointer" }}
+                                            onClick={() => setSelectedPlayer(row)}
+                                          >
+                                            {row.name}
                                           </GlowingName>
                                         </td>
 
