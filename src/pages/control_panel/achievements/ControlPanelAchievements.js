@@ -75,29 +75,26 @@ export default function ControlPanelAchievements({
           console.error("Failed to refresh achievements:", err);
         }
 
-        setMessages((prev) => ({
-          ...prev,
+        setMessages({
           [milestoneKey]: { type: "success", text: data.message },
-        }));
+        });
       } else {
         let errorMsg = "Failed to claim reward";
         try {
           const errData = await response.json();
           errorMsg = errData.error || errorMsg;
         } catch (err) { }
-        setMessages((prev) => ({
-          ...prev,
+        setMessages({
           [milestoneKey]: { type: "error", text: errorMsg },
-        }));
+        });
       }
     } catch (err) {
-      setMessages((prev) => ({
-        ...prev,
+      setMessages({
         [milestoneKey]: {
           type: "error",
           text: "Something went wrong while claiming reward",
         },
-      }));
+      });
     } finally {
       setClaimingKeys((prev) => prev.filter((k) => k !== milestoneKey));
     }
