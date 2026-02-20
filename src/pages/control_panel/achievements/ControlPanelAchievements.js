@@ -25,11 +25,11 @@ export default function ControlPanelAchievements({
   setLoading,
   setAchievements,
   currentTheme,
+  characters,
 }) {
   const [claimingKeys, setClaimingKeys] = useState([]);
   const [messages, setMessages] = useState({});
-  const { translate } = useTranslation();
-
+  const { translate } = useTranslation(); const [selectedCharacters, setSelectedCharacters] = useState({});
   const claimReward = async (milestoneKey) => {
     if (claimingKeys.includes(milestoneKey)) return;
     setClaimingKeys((prev) => [...prev, milestoneKey]);
@@ -45,7 +45,10 @@ export default function ControlPanelAchievements({
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
           },
-          body: JSON.stringify({ milestone_key: milestoneKey }),
+          body: JSON.stringify({
+            milestone_key: milestoneKey,
+            character_name: selectedCharacters[milestoneKey] || null
+          }),
         }
       );
 
@@ -187,8 +190,27 @@ export default function ControlPanelAchievements({
                   <FontAwesomeIcon icon={faGift} />
                   <div>+{Number(ach.rewards.wcoin ?? 0).toLocaleString()} WCoin</div>
                   <div>+{Number(ach.rewards.goblin ?? 0).toLocaleString()} Goblin Points</div>
+                  <div>+{Number(ach.rewards.ruud ?? 0).toLocaleString()} Ruud</div>
                 </AchievementReward>
-
+                {Number(ach.rewards.ruud ?? 0) > 0 && ach.unlocked && !ach.claimed && (
+                  <select
+                    value={selectedCharacters[ach.key] || ""}
+                    onChange={(e) =>
+                      setSelectedCharacters((prev) => ({
+                        ...prev,
+                        [ach.key]: e.target.value,
+                      }))
+                    }
+                    style={{ marginTop: "5px" }}
+                  >
+                    <option value="">Select Character</option>
+                    {characters.map((char) => (
+                      <option key={char.name} value={char.name}>
+                        {char.name}
+                      </option>
+                    ))}
+                  </select>
+                )}
                 {ach.unlocked && !ach.claimed ? (
                   <GreenButton
                     onClick={() => claimReward(ach.key)}

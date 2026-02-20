@@ -577,6 +577,7 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
             setLoading={setAchievementsLoading}
             setAchievements={setAchievements}
             currentTheme={currentTheme}
+            characters={characters}
           />
         );
       default:
