@@ -12,6 +12,7 @@ import {
   AchievementInfo,
   AchievementReward,
   GreenButton,
+  AchievementActions,
 } from "../ControlPanelStyles";
 import EventIcon from "../../../assets/images/classes/event.png";
 import ResetIcon from "../../../assets/images/classes/reset.png";
@@ -176,13 +177,7 @@ export default function ControlPanelAchievements({
                 </div>
               </AchievementInfo>
 
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "flex-end",
-                }}
-              >
+              <AchievementActions>
                 <AchievementReward>
                   <FontAwesomeIcon icon={faGift} />
                   <div>+{Number(ach.rewards.wcoin ?? 0).toLocaleString()} WCoin</div>
@@ -245,7 +240,7 @@ export default function ControlPanelAchievements({
                     {translate("controlPanel.rewards.locked")}
                   </span>
                 )}
-              </div>
+              </AchievementActions>
             </AchievementItem>
             {messages[ach.key] && (
               <div

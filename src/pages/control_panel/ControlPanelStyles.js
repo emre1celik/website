@@ -227,16 +227,16 @@ export const CharacterActions = styled.div`
 
 export const AchievementItem = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.8rem;
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid
     ${({ claimed, theme }) => (claimed ? theme?.primary || "#4caf50" : "#555")};
   border-left: 6px solid
     ${({ claimed, unlocked, theme }) =>
-      claimed || unlocked ? theme?.primary || "#4caf50" : "#777"};
-  border-radius: 8px;
-  padding: 1rem;
+    claimed || unlocked ? theme?.primary || "#4caf50" : "#777"};
+  border-radius: 10px;
+  padding: 1.2rem;
   transition: transform 0.2s ease, border-color 0.3s ease;
 
   &:hover {
@@ -246,43 +246,56 @@ export const AchievementItem = styled.div`
 
 export const AchievementInfo = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
 
   img {
     width: 40px;
     height: 40px;
-    filter: ${({ claimed }) => (claimed ? "grayscale(0%)" : "grayscale(100%)")};
-    opacity: ${({ unlocked }) => (unlocked ? 1 : 0.5)};
+    flex-shrink: 0;
   }
 
   div {
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
   }
 
   h4 {
     margin: 0;
-    color: ${({ claimed, theme }) =>
-      claimed ? theme?.primary || "#4caf50" : "#fff"};
     font-size: 1.1rem;
+    line-height: 1.2;
   }
 
   p {
     margin: 0;
     color: #bbb;
     font-size: 0.9rem;
+    line-height: 1.4;
+    word-break: break-word;
   }
 `;
 
 export const AchievementReward = styled.div`
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
   color: #ccc;
   font-size: 0.9rem;
-`;
 
+  div {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    white-space: nowrap;
+  }
+`;
+export const AchievementActions = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+`;
 export const ControlPanelTabButton = styled.button`
   flex: 1;
   padding: 0.75rem 1.5rem;
