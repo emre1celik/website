@@ -1001,7 +1001,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
               <PopupRow>
                 <span>Location</span>
                 <strong>
-                  {getMapName(selectedPlayer.map_number)}
+                  {selectedPlayer.map_name}
                   ({selectedPlayer.map_x}, {selectedPlayer.map_y})
                 </strong>
               </PopupRow>
