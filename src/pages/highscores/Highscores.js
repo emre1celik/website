@@ -319,7 +319,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       icon: DwIcon,
     },
     dk: {
-      ids: [16, 17, 18, 19, 23, 31],
+      ids: [16, 17, 18, 19, 20, 23, 31],
       icon: DkIcon,
     },
     elf: {
