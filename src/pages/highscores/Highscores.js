@@ -244,35 +244,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
   };
 
-  const mapNames = {
-    0: "Lorencia",
-    1: "Dungeon",
-    2: "Devias",
-    3: "Noria",
-    4: "Lost Tower",
-    7: "Arena",
-    8: "Atlans",
-    10: "Tarkan",
-    17: "Icarus",
-    18: "Aida",
-    19: "Crywolf",
-    30: "Kanturu",
-    34: "Raklion",
-    41: "Karutan",
-    49: "Acheron",
-    50: "Ferea",
-    51: "Nixies Lake",
-    57: "Swamp of Darkness",
-    62: "Scorched Canyon",
-    63: "Crimson Icarus",
-    64: "Temple of Arnil",
-    65: "Gray Aida",
-    69: "Ignis Volcano",
-    74: "Swamp of Doom",
-  };
-  function getMapName(mapNumber) {
-    return mapNames[mapNumber] || `Unknown (${mapNumber})`;
-  }
   function getPkStatus(pkLevel) {
     const level = Number(pkLevel);
 
