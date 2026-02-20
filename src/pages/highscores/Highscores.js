@@ -977,7 +977,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
               <Divider />
 
               <PopupSection>
-                <strong style={{ color: "#aaa" }}>Equipped Gear</strong>
+                <strong>Equipped Gear</strong>
 
                 {selectedPlayer.equipped &&
                   Object.entries(selectedPlayer.equipped).map(([slot, item]) => (
@@ -991,6 +991,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     </PopupRow>
                   ))}
               </PopupSection>
+
+              <Divider />
+
               <PopupSection>
                 <PopupRow>
                   <span>{translate("highscores.money")}</span>
