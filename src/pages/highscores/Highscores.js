@@ -244,8 +244,46 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
   };
 
+  const mapNames = {
+    0: "Lorencia",
+    1: "Dungeon",
+    2: "Devias",
+    3: "Noria",
+    4: "Lost Tower",
+    7: "Arena",
+    8: "Atlans",
+    10: "Tarkan",
+    17: "Icarus",
+    18: "Aida",
+    19: "Crywolf",
+    30: "Kanturu",
+    34: "Raklion",
+    41: "Karutan",
+    49: "Acheron",
+    50: "Ferea",
+    51: "Nixies Lake",
+    57: "Swamp of Darkness",
+    62: "Scorched Canyon",
+    63: "Crimson Icarus",
+    64: "Temple of Arnil",
+    65: "Gray Aida",
+    69: "Ignis Volcano",
+    74: "Swamp of Doom",
+  };
+  function getMapName(mapNumber) {
+    return mapNames[mapNumber] || `Unknown (${mapNumber})`;
+  }
+  function getPkStatus(pkLevel) {
+    const level = Number(pkLevel);
 
+    if (level === 3) return { label: "Normal", color: "#aaa" };
+    if (level === 1 || level === 2)
+      return { label: "Hero", color: "#00ff90" };
+    if (level >= 4)
+      return { label: "Player Killer", color: "#ff3c3c" };
 
+    return { label: "Unknown", color: "#fff" };
+  }
   const [bosses, setBosses] = useState([]);
 
   useEffect(() => {
@@ -960,7 +998,25 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                   <strong>{formatNumber(selectedPlayer.ruud_money)}</strong>
                 </PopupRow>
               </PopupSection>
+              <PopupRow>
+                <span>Location</span>
+                <strong>
+                  {getMapName(selectedPlayer.map_number)}
+                  ({selectedPlayer.map_x}, {selectedPlayer.map_y})
+                </strong>
+              </PopupRow>
 
+              {(() => {
+                const pk = getPkStatus(selectedPlayer.pk_level);
+                return (
+                  <PopupRow>
+                    <span>PK Status</span>
+                    <strong style={{ color: pk.color }}>
+                      {pk.label}
+                    </strong>
+                  </PopupRow>
+                );
+              })()}
               <Divider />
 
               <PopupSection>
