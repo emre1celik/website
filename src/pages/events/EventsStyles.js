@@ -40,7 +40,7 @@ export const EventsContent = styled.main`
 export const EventsBox = styled.div`
   width: 100%;
   max-width: 720px;
-  height: 72vh;
+  height: 79vh;
 
   padding: 1.5rem;
   border-radius: 18px;

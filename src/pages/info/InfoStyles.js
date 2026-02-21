@@ -40,7 +40,7 @@ export const InfoBox = styled.div`
   max-width: 1100px;
 
   /* 👇 This is the key part */
-  max-height: calc(100vh - 180px);
+  height: 83vh;
   overflow-y: auto;
 
   background: rgba(0, 0, 0, 0.75);
