@@ -18,7 +18,6 @@ import {
   EventsWrapper,
   InfoItem,
   InfoList,
-  ScrollContent,
 } from "./EventsStyles";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -28,64 +27,69 @@ import {
   faMapMarkedAlt,
   faTrophy,
 } from "@fortawesome/free-solid-svg-icons";
-
 const invasionSchedule = {
-  "Underworld Invasion": [
-    "00:05",
-    "04:05",
-    "08:05",
-    "12:05",
-    "16:05",
-    "18:32",
+  "Death King Invasion": [
+    "00:05", "04:05", "08:05", "12:05", "16:05", "18:05",
   ],
+
   "Red Dragon Invasion": [
-    "00:15",
-    "04:15",
-    "08:15",
-    "12:15",
-    "16:15",
-    "18:32",
+    "00:15", "02:15", "04:15", "06:15", "08:15", "10:15",
+    "12:15", "14:15", "16:15", "18:15", "20:15", "22:15",
   ],
+
   "Golden Invasion": [
-    "00:25",
-    "04:25",
-    "08:25",
-    "12:25",
-    "16:25",
-    "20:25",
+    "00:25", "03:25", "06:25", "09:25",
+    "12:25", "15:25", "18:25", "21:25",
   ],
+
   "White Wizard Invasion": [
-    "00:50",
-    "04:50",
-    "08:50",
-    "12:50",
-    "16:50",
-    "20:32",
+    "00:50", "04:50", "08:50", "12:50", "16:50", "20:50",
   ],
+
+  "Balrog Invasion": [
+    "02:05", "06:05", "10:05", "14:05", "18:05", "18:32",
+  ],
+
+  "Lunar Rabbit Invasion": [
+    "02:15", "06:15", "10:15", "14:15", "18:15",
+  ],
+
+  "Elemental Invasion": [
+    "02:25", "06:25", "10:25", "14:25", "18:25",
+  ],
+
+  "Cursed Santa Invasion": [
+    "02:50", "06:50", "10:50", "14:50", "18:50",
+  ],
+
+  "Medusa Invasion": [
+    "01:00", "05:00", "09:00", "13:00", "17:00", "18:00",
+  ],
+
+  "Azure Dragon Invasion": [
+    "01:25", "05:25", "09:25", "13:25", "17:25", "18:25",
+  ],
+
   "Muun Invasion": [
-    "01:50",
-    "05:50",
-    "09:50",
-    "13:50",
-    "17:50",
-    "18:32",
+    "01:50", "05:50", "09:50", "13:50", "17:50", "18:50",
   ],
 };
-
 const eventSchedule = {
   "Boss Battle Together": [
-    "00:05",
+    "00:25",
+    "15:25",
+    "20:25",
   ],
 
   "Blood Castle": [
-    "01:06",
+    "01:00",
     "02:00",
     "04:00",
     "06:00",
     "08:00",
     "10:00",
     "13:00",
-    "15:03",
+    "15:00",
     "16:00",
     "18:00",
     "20:00",
@@ -96,6 +100,7 @@ const eventSchedule = {
     "04:30",
     "08:30",
     "12:30",
+    "14:30",
     "16:30",
     "20:30",
   ],
@@ -106,9 +111,7 @@ const eventSchedule = {
     "07:00",
     "09:00",
     "11:00",
-    "11:24",
-    "16:50",
-    "17:13",
+    "16:00",
     "19:00",
     "21:00",
     "23:00",
@@ -122,7 +125,15 @@ const eventSchedule = {
     "21:30",
   ],
 
-  "Arka War": [{ dayOfWeek: 4, time: "22:00" }], // Thursday
+  "Arka War": [
+    { dayOfWeek: 0, time: "10:45" },
+    { dayOfWeek: 1, time: "10:45" },
+    { dayOfWeek: 2, time: "10:45" },
+    { dayOfWeek: 3, time: "10:45" },
+    { dayOfWeek: 4, time: "10:45" },
+    { dayOfWeek: 5, time: "10:45" },
+    { dayOfWeek: 6, time: "10:45" },
+  ],
   CryWolf: [
     { dayOfWeek: 4, time: "20:30" }, // Thursday
     { dayOfWeek: 0, time: "20:30" }, // Sunday
@@ -231,7 +242,41 @@ function Events({ user, currentTheme, onThemeChange }) {
         where: "Event Arena (global summon zone)",
         rewards: "Event items, Ruud, bonus rewards for Top Damage & Last Hit",
       },
+      "Death King Invasion": {
+        enter: "Automatic invasion",
+        where: "Lorencia / Devias",
+        rewards: "Ruud, Jewels, Excellent items",
+      },
 
+      "Lunar Rabbit Invasion": {
+        enter: "Automatic invasion",
+        where: "Multiple maps",
+        rewards: "Event Boxes, Jewels",
+      },
+
+      "Elemental Invasion": {
+        enter: "Automatic invasion",
+        where: "Lorencia",
+        rewards: "Elemental monsters drop rewards",
+      },
+
+      "Cursed Santa Invasion": {
+        enter: "Automatic invasion",
+        where: "Lorencia / Noria / Devias",
+        rewards: "Christmas Boxes, Jewels",
+      },
+
+      "Medusa Invasion": {
+        enter: "Automatic invasion",
+        where: "Swamp of Calmness",
+        rewards: "Excellent & Ancient items",
+      },
+
+      "Azure Dragon Invasion": {
+        enter: "Automatic invasion",
+        where: "Multiple maps",
+        rewards: "Jewels, Ruud, Excellent items",
+      },
       "Devil Square": {
         enter: "Devil Square Ticket, buy from NPC Lumen Barmaid",
         where: "Event Square (Press CTRL+T ingame)",
