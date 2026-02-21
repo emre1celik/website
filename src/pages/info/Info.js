@@ -53,7 +53,7 @@ function Info({ user, currentTheme, onThemeChange }) {
   ];
 
   const { translate } = useTranslation();
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState(0);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [openResult, setOpenResult] = useState(null);
