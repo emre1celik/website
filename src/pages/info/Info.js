@@ -183,7 +183,10 @@ function Info({ user, currentTheme, onThemeChange }) {
             <li>/reset auto</li>
             <li>/change</li>
             <li>/attack</li>
+            <li>/store ruud</li>
+            <li>/store wcc</li>
             <li>/clearinv</li>
+            <li>/clearextinv</li>
           </ul>
           <p>{translate("guide.serverInfo.outro")}</p>
         </>

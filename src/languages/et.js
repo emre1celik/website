@@ -119,7 +119,7 @@ export default {
         masterExp: "Meistri EXP: 9999x",
         majesticExp: "Majestic EXP: 9999x",
         excellentDrop: "Excellent eseme languse määr: 200%",
-        resetReward: "Reset-auhind: 5 WCoini, 100 Goblini punkti, 200 Ruudi",
+        resetReward: "Reset-auhind: WCoini, Goblini punkti, Ruudi",
         grandReset: "Grand Reset nõue: 100 resetit",
         grandResetReward:
           "Grand Reset auhind: 1,000 WCoini, 10,000 Goblini punkti",

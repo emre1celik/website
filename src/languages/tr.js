@@ -119,7 +119,7 @@ export default {
         masterExp: "Master EXP: 9999x",
         majesticExp: "Majestic EXP: 9999x",
         excellentDrop: "Excellent Eşya Düşme Oranı: 200%",
-        resetReward: "Reset Ödülü: 5 WCoin, 100 Goblin Puanı, 200 Ruud",
+        resetReward: "Reset Ödülü: WCoin, Goblin Puanı, Ruud",
         grandReset: "Grand Reset Gereksinimi: 100 reset",
         grandResetReward: "Grand Reset Ödülü: 1,000 WCoin, 10,000 Goblin Puanı",
         eventTimers: "Etkinlik Zamanlayıcıları: web sitesinden kontrol edin",

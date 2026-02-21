@@ -119,7 +119,7 @@ export default {
         masterExp: "Master EXP: 9999x",
         majesticExp: "Majestic EXP: 9999x",
         excellentDrop: "Excellent priekšmeta krišanas likme: 200%",
-        resetReward: "Reset atlīdzība: 5 WCoin, 100 Goblina punkti, 200 Ruud",
+        resetReward: "Reset atlīdzība: WCoin, Goblina punkti, Ruud",
         grandReset: "Grand Reset prasība: 100 reseti",
         grandResetReward:
           "Grand Reset atlīdzība: 1,000 WCoin, 10,000 Goblina punkti",

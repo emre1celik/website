@@ -119,7 +119,7 @@ export default {
         masterExp: "Master EXP: 9999x",
         majesticExp: "Majestic EXP: 9999x",
         excellentDrop: "Шанс дропа Excellent: 200%",
-        resetReward: "Награда за ресет: 5 WCoin, 100 Goblin Points, 200 Ruud",
+        resetReward: "Награда за ресет: WCoin, Goblin Points, Ruud",
         grandReset: "Требование для Grand Reset: 100 ресетов",
         grandResetReward:
           "Награда Grand Reset: 1,000 WCoin, 10,000 Goblin Points",

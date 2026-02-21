@@ -116,7 +116,7 @@ export default {
         masterExp: "Master EXP: 9999x",
         majesticExp: "Majestic EXP: 9999x",
         excellentDrop: "Tỉ lệ rớt Excellent Item: 200%",
-        resetReward: "Reset Reward: 5 WCoins, 100 Goblin Points, 200 Ruud",
+        resetReward: "Reset Reward: WCoins, Goblin Points, Ruud",
         grandReset: "Yêu cầu Grand Reset: 100 resets",
         grandResetReward:
           "Grand Reset Reward: 1,000 WCoins, 10,000 Goblin Points",
