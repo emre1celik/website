@@ -142,49 +142,8 @@ export default {
       title: "Quests & Evolution",
       intro:
         "Quests và class advancements là core system progression trong MU. Hoàn thành quests unlock class cao hơn, skill mới, stat points, và trang bị mạnh. Follow NPC guidance cẩn thận, đánh quái cần thiết, hoàn thành từng stage để evolve nhân vật lên class tiếp theo.",
-      second: {
-        title: "Thăng class 2 (NPC Sebina, Devias)",
-        level:
-          "Level 150, nói chuyện với NPC Sebina ở Devias. Rồi mang items theo class (mua từ NPC Lumen barmaid ở Lorencia):",
-        items: [
-          "Dark Knight / Slayer: Broken Sword",
-          "Dark Wizard / Rune Mage: Soul Shard",
-          "Elf: Tear of Elf",
-        ],
-      },
-      third: {
-        title: "Thăng class 3 (NPC Apostle Devin, CryWolf)",
-        levelReq:
-          "Level 400 và đã hoàn thành 2nd quest. Quest có 3 phần (items mua từ NPC Lumen barmaid ở Lorencia):",
-        steps: [
-          "Mang 5,000,000 Zen và items: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Feather of Phoenix (Icarus)",
-          "Level 400, trả 7,000,000 Zen, vào map Balgass Barracks qua Werewolf Guardsman ở Crywolf, kill 20 mỗi loại: Balram, Death Spirit, Soram.",
-          "Vào Refuge (qua Gatekeeper trong Barracks), kill 1 Dark Elf Hero. Reward: thăng class 3, thêm stat points, unlock Master skill tree.",
-        ],
-      },
-      fourth: {
-        title: "Thăng class 4 (NPC Cent, Lorencia [131, 147])",
-        levelReq: "Level 800 và đã hoàn thành 3rd quest. Quest có 3 stage:",
-        stages: [
-          "Stage 1: Eligibility Test – Đánh Cent để pass test đầu. Reward: +20 stat points.",
-          "Stage 2: New Battle (1) – Đánh 5 Deep Dungeon Skeleton Warriors, 5 Cyclops, 5 Ghost Monsters trong 1 phút. Reward: +30 stat points.",
-          "Stage 3: New Battle (2) – Đánh Cent lần nữa với skills mạnh hơn. Reward: +50 stat points, Scroll of Gray Oblivion, unlock 4th class, skill enhance tree.",
-        ],
-        rewards:
-          "+100 stat points tổng, unlock 4th class, skill enhance tree, Scroll of Gray Oblivion.",
-      },
-      fifth: {
-        title: "Thăng class 5 (NPC Eunice, Devias [193, 12])",
-        levelReq: "Level 1,200 và đã hoàn thành 4th quest. Quest có 4 phần:",
-        waves: [
-          "Wave 1: Nhận Extra Nuke DMG buff, đánh Eunice trong 1 phút.",
-          "Wave 2: Nhận Extra Bolt DMG buff, đánh Eunice trong 1 phút.",
-          "Wave 3: Nhận Extra Wide DMG buff, đánh Eunice trong 1 phút.",
-          "Wave 4 (Mount Quest): Đưa Eunice 300 Jewel of Creation, rồi đánh cô ấy trên Giant Mount trong 1 phút để nhận random Giant Mount.",
-        ],
-        rewards:
-          "+200 stat points, unlock 5th skill tree, 3 Extra Ability Cards (Nuke/Bolt/Wide), và Giant Mounts access.",
-      },
+      description:
+        "Bạn có thể tiến hóa lớp nhân vật dễ dàng bằng cách nhập /change trong game. Hệ thống sẽ tự động chuyển bạn đến nhiệm vụ đổi lớp tiếp theo nếu bạn đáp ứng đủ yêu cầu. Bạn cũng có thể nói chuyện với các NPC đổi lớp để bắt đầu nhiệm vụ thủ công. Các NPC chính gồm Sebina cho lớp 2, Apostle Devin cho lớp 3, Cent cho lớp 4 và Eunice cho lớp 5. Mỗi nhiệm vụ có yêu cầu và phần thưởng riêng, vì vậy hãy chuẩn bị kỹ trước khi bắt đầu.",
     },
     ruud: {
       title: "Cách Lấy Ruud",

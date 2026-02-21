@@ -147,55 +147,8 @@ export default {
       title: "Misijas un evolūcija",
       intro:
         "Misijas un klases attīstība ir MU galvenā progresijas sistēma. Pabeidzot šīs misijas, tiek atbloķētas augstākas klases, jaunas prasmes, statistikas punkti un jaudīgs aprīkojums. Sekojiet NPC norādēm rūpīgi, uzvariet vajadzīgos monstrus un pabeidziet katru posmu, lai evolvētu savu tēlu uz nākamo klasi.",
-
-      second: {
-        title: "2. klases maiņa (NPC Sebina, Devias)",
-        level:
-          "Līmenī 150 runā ar NPC Sebina Devias. Tad atnes klases specifiskos priekšmetus (var nopirkt pie NPC Lumen bārmenes Lorencijā):",
-        items: [
-          "Dark Knight / Slayer: Salauzts zobens",
-          "Dark Wizard / Rune Mage: Dvēseles daļa",
-          "Elf: Elfa asara",
-        ],
-      },
-
-      third: {
-        title: "3. klases maiņa (NPC Apostle Devin, CryWolf)",
-        levelReq:
-          "Jābūt līmenī 400 un 2. misijai pabeigtai. Misijai ir trīs daļas (priekšmetus var iegādāties pie NPC Lumen bārmenes Lorencijā):",
-        steps: [
-          "Atnes 5,000,000 Zen un priekšmetus: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Phoenix Spalva (Icarus).",
-          "Līmenis 400, maksā 7,000,000 Zen, ienāk Balgass Barracks kartē caur Werewolf Guardsman Crywolf, nogalini 20 katru: Balram, Death Spirit, Soram.",
-          "Ienāk Refuge (caur Gatekeeper Barracks), nogalini 1 Dark Elf Hero. Atlīdzība: 3. klases maiņa, papildu statistikas punkti, Master prasmju koka atbloķēšana.",
-        ],
-      },
-
-      fourth: {
-        title: "4. klases maiņa (NPC Cent, Lorencia [131, 147])",
-        levelReq:
-          "Jābūt līmenī 800 un 3. misijai pabeigtai. Misijai ir trīs posmi:",
-        stages: [
-          "Posms 1: Atbilstības tests – uzvari Cent, lai izietu pirmo testu. Atlīdzība: +20 statistikas punkti.",
-          "Posms 2: Jauna cīņa (1) – uzvari 5 Deep Dungeon Skeleton Warriors, 5 Cyclops un 5 Ghost Monsters 1 minūtes laikā. Atlīdzība: +30 statistikas punkti.",
-          "Posms 3: Jauna cīņa (2) – uzvari Cent vēlreiz ar spēcīgākām prasmēm. Atlīdzība: +50 statistikas punkti, Scroll of Gray Oblivion, 4. klases atbloķēšana, prasmju uzlabošanas koks.",
-        ],
-        rewards:
-          "+100 kopējie statistikas punkti, 4. klase atbloķēta, prasmju uzlabošanas koks, Scroll of Gray Oblivion.",
-      },
-
-      fifth: {
-        title: "5. klases maiņa (NPC Eunice, Devias [193, 12])",
-        levelReq:
-          "Jābūt līmenī 1,200 un 4. misijai pabeigtai. Misijai ir četras daļas:",
-        waves: [
-          "Vilnis 1: Saņem Extra Nuke DMG bufs un uzvari Eunice 1 minūtes laikā.",
-          "Vilnis 2: Saņem Extra Bolt DMG bufs un uzvari Eunice 1 minūtes laikā.",
-          "Vilnis 3: Saņem Extra Wide DMG bufs un uzvari Eunice 1 minūtes laikā.",
-          "Vilnis 4 (Mount Quest): Iedod Eunice 300 Jewel of Creation, pēc tam uzvari viņu viņas Giant Mount 1 minūtes laikā, lai iegūtu nejaušu Giant Mount.",
-        ],
-        rewards:
-          "+200 statistikas punkti, 5. prasmju koks atbloķēts, 3 Extra Ability Cards (Nuke/Bolt/Wide) un pieeja Giant Mounts.",
-      },
+      description:
+        "Tu vari viegli attīstīt savu klasi, ierakstot spēlē komandu /change. Tas automātiski piešķirs nākamo klases uzdevumu, ja izpildi prasības. Vari arī runāt ar klases maiņas NPC, lai sāktu uzdevumus manuāli. Galvenie NPC ir Sebina 2. klasei, Apostle Devin 3. klasei, Cent 4. klasei un Eunice 5. klasei. Katram uzdevumam ir savas prasības un balvas, tāpēc pirms uzsākšanas noteikti sagatavojies.",
     },
 
     ruud: {

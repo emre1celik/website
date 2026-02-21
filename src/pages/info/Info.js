@@ -231,81 +231,8 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: faScroll,
       content: (
         <>
-          {/* unchanged */}
           <p>{translate("questsEvo.intro")}</p>
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              <strong>{translate("questsEvo.secondClass.title")}</strong>:{" "}
-              {translate("questsEvo.secondClass.level")}
-              <br />
-              <br />
-              <ul style={{ listStyleType: "none" }}>
-                <li>{translate("questsEvo.secondClass.items.darkKnight")}</li>
-                <br />
-                <li>{translate("questsEvo.secondClass.items.darkWizard")}</li>
-                <br />
-                <li>{translate("questsEvo.secondClass.items.elf")}</li>
-              </ul>
-              <br />
-            </li>
-
-            <hr style={{ borderColor: currentTheme.primary }} />
-            <br />
-
-            <li>
-              <strong>{translate("questsEvo.thirdClass.title")}</strong>:{" "}
-              {translate("questsEvo.thirdClass.levelReq")}
-              <br />
-              <br />
-              <ol style={{ listStyleType: "none" }}>
-                <li>{translate("questsEvo.thirdClass.steps.step1")}</li>
-                <br />
-                <li>{translate("questsEvo.thirdClass.steps.step2")}</li>
-                <br />
-                <li>{translate("questsEvo.thirdClass.steps.step3")}</li>
-              </ol>
-            </li>
-
-            <hr style={{ borderColor: currentTheme.primary }} />
-            <br />
-
-            <li>
-              <strong>{translate("questsEvo.fourthClass.title")}</strong>:{" "}
-              {translate("questsEvo.fourthClass.levelReq")}
-              <br />
-              <br />
-              <ol style={{ listStyleType: "none" }}>
-                <li>{translate("questsEvo.fourthClass.stages.stage1")}</li>
-                <br />
-                <li>{translate("questsEvo.fourthClass.stages.stage2")}</li>
-                <br />
-                <li>{translate("questsEvo.fourthClass.stages.stage3")}</li>
-              </ol>
-              <br />
-              <strong>{translate("questsEvo.fourthClass.rewards")}</strong>
-            </li>
-
-            <hr style={{ borderColor: currentTheme.primary }} />
-            <br />
-
-            <li>
-              <strong>{translate("questsEvo.fifthClass.title")}</strong>:{" "}
-              {translate("questsEvo.fifthClass.levelReq")}
-              <br />
-              <br />
-              <ol style={{ listStyleType: "none" }}>
-                <li>{translate("questsEvo.fifthClass.waves.wave1")}</li>
-                <br />
-                <li>{translate("questsEvo.fifthClass.waves.wave2")}</li>
-                <br />
-                <li>{translate("questsEvo.fifthClass.waves.wave3")}</li>
-                <br />
-                <li>{translate("questsEvo.fifthClass.waves.wave4")}</li>
-              </ol>
-              <br />
-              {translate("questsEvo.fifthClass.rewards")}
-            </li>
-          </ul>
+          <p>{translate("questsEvo.description")}</p>
         </>
       ),
     },

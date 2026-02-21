@@ -146,55 +146,8 @@ export default {
       title: "Görevler ve Evrim",
       intro:
         "Görevler ve sınıf gelişimi MU'daki temel ilerleme sistemidir. Bu görevleri tamamlamak, daha yüksek sınıfları, yeni becerileri, stat puanlarını ve güçlü ekipmanları açar. NPC talimatlarını dikkatle takip edin, gerekli canavarları yenin ve karakterinizi bir sonraki sınıfa evrimleştirmek için her aşamayı tamamlayın.",
-
-      second: {
-        title: "2. sınıf değişimi (NPC Sebina, Devias)",
-        level:
-          "Seviye 150'te, Devias'taki NPC Sebina ile konuşun. Ardından sınıfa özel eşyaları getirin (Lorencia'daki NPC Lumen barmenden satın alınabilir):",
-        items: [
-          "Dark Knight / Slayer: Kırık Kılıç",
-          "Dark Wizard / Rune Mage: Ruh Parçası",
-          "Elf: Elf Gözyaşı",
-        ],
-      },
-
-      third: {
-        title: "3. sınıf değişimi (NPC Apostle Devin, CryWolf)",
-        levelReq:
-          "Seviye 400 olmalı ve 2. görevi tamamlamış olmalısınız. Görev üç parçadan oluşur (eşyalar Lorencia'daki NPC Lumen barmenden alınabilir):",
-        steps: [
-          "5,000,000 Zen ve eşyaları getirin: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Phoenix Tüyü (Icarus).",
-          "Seviye 400, 7,000,000 Zen ödeyin, Crywolf'taki Werewolf Guardsman aracılığıyla Balgass Barracks haritasına girin, Balram, Death Spirit, Soram'dan 20'şer tane öldürün.",
-          "Refuge'a girin (Barracks içindeki Gatekeeper aracılığıyla), 1 Dark Elf Hero öldürün. Ödül: 3. sınıf değişimi, ek stat puanları, Master yetenek ağacının açılması.",
-        ],
-      },
-
-      fourth: {
-        title: "4. sınıf değişimi (NPC Cent, Lorencia [131, 147])",
-        levelReq:
-          "Seviye 800 olmalı ve 3. görevi tamamlamış olmalısınız. Görev üç aşamadan oluşur:",
-        stages: [
-          "Aşama 1: Uygunluk Testi – İlk testi geçmek için Cent'i yenin. Ödül: +20 stat puanı.",
-          "Aşama 2: Yeni Savaş (1) – 1 dakika içinde 5 Deep Dungeon Skeleton Warriors, 5 Cyclops ve 5 Ghost Monsters öldürün. Ödül: +30 stat puanı.",
-          "Aşama 3: Yeni Savaş (2) – Daha güçlü yeteneklerle Cent'i tekrar yenin. Ödül: +50 stat puanı, Scroll of Gray Oblivion, 4. sınıf açılır, yetenek geliştirme ağacı açılır.",
-        ],
-        rewards:
-          "Toplam +100 stat puanı, 4. sınıf açıldı, yetenek geliştirme ağacı, Scroll of Gray Oblivion.",
-      },
-
-      fifth: {
-        title: "5. sınıf değişimi (NPC Eunice, Devias [193, 12])",
-        levelReq:
-          "Seviye 1,200 olmalı ve 4. görevi tamamlamış olmalısınız. Görev dört bölümden oluşur:",
-        waves: [
-          "Dalga 1: Extra Nuke DMG buff'ı alın ve 1 dakika içinde Eunice'i yenin.",
-          "Dalga 2: Extra Bolt DMG buff'ı alın ve 1 dakika içinde Eunice'i yenin.",
-          "Dalga 3: Extra Wide DMG buff'ı alın ve 1 dakika içinde Eunice'i yenin.",
-          "Dalga 4 (Mount Görevi): Eunice'e 300 Jewel of Creation verin, ardından 1 dakika içinde dev Mount'unda yenerek rastgele bir Giant Mount kazanın.",
-        ],
-        rewards:
-          "+200 stat puanı, 5. yetenek ağacı açıldı, 3 Extra Ability Cards (Nuke/Bolt/Wide) ve Giant Mount erişimi.",
-      },
+      description:
+        "Oyunda /change yazarak sınıfınızı kolayca geliştirebilirsiniz. Gereksinimleri karşılıyorsanız sistem sizi otomatik olarak bir sonraki sınıf görevine yönlendirir. Görevleri manuel başlatmak için sınıf değişim NPC'leriyle de konuşabilirsiniz. Ana NPC'ler: 2. sınıf için Sebina, 3. sınıf için Apostle Devin, 4. sınıf için Cent ve 5. sınıf için Eunice'dir. Her görevin kendine ait gereksinimleri ve ödülleri vardır, bu yüzden başlamadan önce hazırlıklı olduğunuzdan emin olun.",
     },
 
     ruud: {

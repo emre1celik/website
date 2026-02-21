@@ -147,55 +147,8 @@ export default {
       title: "Missioonid ja evolutsioon",
       intro:
         "Missioonid ja klassi arengud on MU põhiline progresioonisüsteem. Nende täitmine avab kõrgemaid klasse, uusi oskusi, statistika punkte ja võimsat varustust. Järgi NPC juhiseid hoolikalt, alista vajalikud monsterid ja lõpeta iga etapp, et oma tegelast järgmisesse klassi arendada.",
-
-      second: {
-        title: "2. klassi vahetus (NPC Sebina, Devias)",
-        level:
-          "150. tasemel räägi NPC Sebina’ga Devias. Seejärel too klassispetsiifilised esemed (saad osta NPC Lumen’ilt baarmenilt Lorencias):",
-        items: [
-          "Dark Knight / Slayer: Katkenud mõõk",
-          "Dark Wizard / Rune Mage: Hingetükk",
-          "Elf: Elfi pisar",
-        ],
-      },
-
-      third: {
-        title: "3. klassi vahetus (NPC Apostle Devin, CryWolf)",
-        levelReq:
-          "Peab olema 400. tasemel ja 2. missioon lõpetatud. Missioon koosneb kolmest osast (esemed saab osta NPC Lumen’ilt baarmenilt Lorencias):",
-        steps: [
-          "Too 5,000,000 Zen ja esemed: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Phoenix Sulg (Icarus).",
-          "Tase 400, maksa 7,000,000 Zen, siseneda Balgass Barracks kaardile Werewolf Guardsman’i kaudu Crywolf’is, tapa 20 Balram’i, Death Spirit’i ja Soram’i.",
-          "Siseneda Refuge’isse (värava kaudu Cuartelis), tapa 1 Dark Elf Hero. Auhind: 3. klassi vahetus, lisastatistikapunktid, Master oskuste puu avamine.",
-        ],
-      },
-
-      fourth: {
-        title: "4. klassi vahetus (NPC Cent, Lorencia [131, 147])",
-        levelReq:
-          "Peab olema 800. tasemel ja 3. missioon lõpetatud. Missioon koosneb kolmest etapist:",
-        stages: [
-          "Etapp 1: Sobivuse test – alista Cent, et läbida esimene test. Auhind: +20 statistika punkti.",
-          "Etapp 2: Uus lahing (1) – alista 5 Deep Dungeon Skeleton Warrior, 5 Cyclops ja 5 Ghost Monster 1 minuti jooksul. Auhind: +30 statistika punkti.",
-          "Etapp 3: Uus lahing (2) – alista Cent uuesti tugevamate oskustega. Auhind: +50 statistika punkti, Scroll of Gray Oblivion, 4. klassi avamine, oskuste täiustamise puu.",
-        ],
-        rewards:
-          "+100 statistika punkti kokku, 4. klass avatud, oskuste täiustamise puu, Scroll of Gray Oblivion.",
-      },
-
-      fifth: {
-        title: "5. klassi vahetus (NPC Eunice, Devias [193, 12])",
-        levelReq:
-          "Peab olema 1,200. tasemel ja 4. missioon lõpetatud. Missioon koosneb neljast osast:",
-        waves: [
-          "Laine 1: Saad Extra Nuke DMG buffi ja alista Eunice 1 minuti jooksul.",
-          "Laine 2: Saad Extra Bolt DMG buffi ja alista Eunice 1 minuti jooksul.",
-          "Laine 3: Saad Extra Wide DMG buffi ja alista Eunice 1 minuti jooksul.",
-          "Laine 4 (Mount Quest): Anna Eunice’ile 300 Jewel of Creation, seejärel alista ta tema Giant Mountil 1 minuti jooksul, et võita juhuslik Giant Mount.",
-        ],
-        rewards:
-          "+200 statistika punkti, 5. oskuste puu avamine, 3 Extra Ability Card (Nuke/Bolt/Wide) ja juurdepääs Giant Mount’idele.",
-      },
+      description:
+        "Saad oma klassi arendada lihtsalt kirjutades mängus /change. See määrab sind automaatselt järgmise klassi ülesandele, kui täidad nõuded. Samuti võid rääkida klassivahetuse NPC-dega, et alustada ülesandeid käsitsi. Peamised NPC-d on Sebina 2. klassi jaoks, Apostle Devin 3. klassi jaoks, Cent 4. klassi jaoks ja Eunice 5. klassi jaoks. Igal ülesandel on kindlad nõuded ja auhinnad, seega valmistu enne alustamist korralikult.",
     },
 
     ruud: {

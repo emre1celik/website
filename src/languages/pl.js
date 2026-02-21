@@ -147,55 +147,8 @@ export default {
       title: "Misje i ewolucja",
       intro:
         "Misje i awanse klasowe są podstawowym systemem progresji w MU. Ukończenie tych misji odblokowuje wyższe klasy, nowe umiejętności, punkty statystyk i potężny ekwipunek. Dokładnie śledź wskazówki NPC, pokonuj wymagane potwory i ukończ każdy etap, aby ewoluować postać do następnej klasy.",
-
-      second: {
-        title: "Zmiana 2. klasy (NPC Sebina, Devias)",
-        level:
-          "Na poziomie 150 porozmawiaj z NPC Sebina w Devias. Następnie przynieś przedmioty specyficzne dla klasy (można je kupić u NPC Lumen barmanki w Lorencji):",
-        items: [
-          "Dark Knight / Slayer: Złamany miecz",
-          "Dark Wizard / Rune Mage: Fragment duszy",
-          "Elf: Łza Elfa",
-        ],
-      },
-
-      third: {
-        title: "Zmiana 3. klasy (NPC Apostle Devin, CryWolf)",
-        levelReq:
-          "Musisz mieć poziom 400 i ukończyć 2. misję. Misja składa się z trzech części (przedmioty można kupić u NPC Lumen barmanki w Lorencji):",
-        steps: [
-          "Przynieś 5,000,000 Zen i przedmioty: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Pióro Feniksa (Icarus).",
-          "Poziom 400, zapłać 7,000,000 Zen, wejdź na mapę Balgass Barracks przez Werewolf Guardsman w Crywolf, zabij 20 każdego: Balram, Death Spirit, Soram.",
-          "Wejdź do Refuge (przez Gatekeeper w Barracks), zabij 1 Dark Elf Hero. Nagroda: zmiana na 3. klasę, dodatkowe punkty statystyk, odblokowanie drzewa umiejętności Master.",
-        ],
-      },
-
-      fourth: {
-        title: "Zmiana 4. klasy (NPC Cent, Lorencia [131, 147])",
-        levelReq:
-          "Musisz mieć poziom 800 i ukończyć 3. misję. Misja składa się z trzech etapów:",
-        stages: [
-          "Etap 1: Test kwalifikacyjny – pokonaj Cent, aby zdać pierwszy test. Nagroda: +20 punktów statystyk.",
-          "Etap 2: Nowa bitwa (1) – pokonaj 5 Deep Dungeon Skeleton Warriors, 5 Cyclops i 5 Ghost Monsters w ciągu 1 minuty. Nagroda: +30 punktów statystyk.",
-          "Etap 3: Nowa bitwa (2) – pokonaj Cent ponownie, tym razem z silniejszymi umiejętnościami. Nagroda: +50 punktów statystyk, Scroll of Gray Oblivion, odblokowanie 4. klasy, drzewo ulepszania umiejętności.",
-        ],
-        rewards:
-          "+100 punktów statystyk ogółem, 4. klasa odblokowana, drzewo ulepszania umiejętności, Scroll of Gray Oblivion.",
-      },
-
-      fifth: {
-        title: "Zmiana 5. klasy (NPC Eunice, Devias [193, 12])",
-        levelReq:
-          "Musisz mieć poziom 1,200 i ukończyć 4. misję. Misja składa się z czterech części:",
-        waves: [
-          "Fala 1: Otrzymaj buff Extra Nuke DMG i pokonaj Eunice w ciągu 1 minuty.",
-          "Fala 2: Otrzymaj buff Extra Bolt DMG i pokonaj Eunice w ciągu 1 minuty.",
-          "Fala 3: Otrzymaj buff Extra Wide DMG i pokonaj Eunice w ciągu 1 minuty.",
-          "Fala 4 (Quest Mount): Oddaj Eunice 300 Jewel of Creation, następnie pokonaj ją na jej Giant Mount w ciągu 1 minuty, aby zdobyć losowego Giant Mount.",
-        ],
-        rewards:
-          "+200 punktów statystyk, odblokowanie 5. drzewa umiejętności, 3 Extra Ability Cards (Nuke/Bolt/Wide) i dostęp do Giant Mounts.",
-      },
+      description:
+        "Możesz łatwo ewoluować swoją klasę, wpisując w grze komendę /change. Automatycznie ustawi to następną misję zmiany klasy, jeśli spełniasz wymagania. Możesz także porozmawiać z NPC zmiany klasy, aby rozpocząć zadania ręcznie. Główni NPC to Sebina dla 2. klasy, Apostle Devin dla 3. klasy, Cent dla 4. klasy oraz Eunice dla 5. klasy. Każde zadanie posiada określone wymagania i nagrody, więc upewnij się, że jesteś odpowiednio przygotowany przed rozpoczęciem.",
     },
 
     ruud: {
