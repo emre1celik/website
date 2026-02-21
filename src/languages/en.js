@@ -22,7 +22,11 @@ export default {
     title: "Chaos Combination Rates",
     intro:
       "<strong>Chaos Combination</strong> is the system used to craft and upgrade high-tier items, including wings and powerful weapons. You can perform Chaos Combinations at special NPCs like the <strong>Noria Goblin</strong>, located in Noria, or similar NPCs in Lorencia and Devias. Using the correct materials and understanding success rates is crucial to maximize your chances.",
-    upgradeRates: "Item Upgrade Success Rates:",
+    upgradeRates: "Item Level Upgrade Success Rates:",
+    elementalRates: "Elemental Success Rates:",
+    harmonyRates: "Jewels Success Rates:",
+    wingRates: "Wings Success Rates:",
+    abilityRates: "Ability Success Rates:",
     wings1_description:
       "<strong>Wings Creation Success Rates:</strong> 60% base success. Tips: Use successful Chaos combination items to increase chance, and try in high-level maps for better outcomes.",
     wings2_description:
@@ -36,106 +40,51 @@ export default {
       "Successfully using Chaos Combination not only upgrades your equipment but also provides a strategic advantage in high-level maps and PvP battles. Remember to gather sufficient materials and plan your combinations carefully — failing a high-tier combination can be costly, so preparation is key!",
   },
   ruud: {
-    title: "How to get Ruud",
+    title: "Ruud Rewards and Farming",
     intro:
       "Ruud is a valuable currency used to purchase Ancient and Excellent Endgame Equipment. It can also be used for upgrading certain items, enhancing mounts, and exchanging for rare crafting materials. The best ways to farm Ruud include:",
     list: {
       bloodCastle:
         "<strong>Blood Castle</strong> and <strong>Devil Square</strong> — top Ruud reward events; repeat runs daily for maximum profit.",
       goldenInvasions:
-        "<strong>Golden Invasions</strong> — hunt Golden Dragons, Titans, and other mini-bosses for bonus Ruud and rare loot.",
+        "<strong>Invasions and Events</strong> — hunt Golden Dragons, Balrogs, and other mini-bosses for bonus Ruud and rare loot.",
       majesticMaps:
         "<strong>Majestic Maps</strong> — defeat Elite Monsters and World Bosses in high-level maps for endgame Ruud farming.",
       castleSiege:
-        "<strong>Castle Siege</strong> — join your guild in special raids for shared Ruud rewards and bonus loot.",
+        "<strong>Website Achievements</strong> — login to our website and view the custom Rewards section!",
       ruudNPC:
-        "Use your Ruud at the <strong>Ruud NPC</strong> to buy powerful ancient weapons, armors, and upgrade materials.",
+        "Use your Ruud at the <strong>Ruud NPC Priest James</strong> to buy powerful ancient weapons, armors, and upgrade materials.",
     },
     tip: "<em>Tip:</em> Always check <strong>Event Timers</strong> for the best Ruud opportunities! Focus on high-level challenges — the stronger the monsters, the greater the Ruud rewards. Also, saving Ruud for <strong>limited-time items</strong> can maximize your endgame power.",
   },
   questsEvo: {
-    title: "Quests & Evolution",
+    title: "Quests and Class Evolution",
     intro:
       "Quests and class advancements are the core progression system in MU. Completing these quests unlocks higher classes, new skills, stat points, and powerful equipment. Follow the NPC guidance carefully, defeat the required monsters, and complete each stage to evolve your character to the next class.",
-    secondClass: {
-      title: "2nd class change (NPC Sebina, Devias)",
-      level:
-        "At level 150, talk to NPC Sebina in Devias. Then bring class-specific items (can be bought from NPC Lumen barmaid in Lorencia):",
-      items: {
-        darkKnight: "Dark Knight / Slayer: Broken Sword",
-        darkWizard: "Dark Wizard / Rune Mage: Soul Shard",
-        elf: "Elf: Tear of Elf",
-      },
-    },
-    thirdClass: {
-      title: "3rd class change (NPC Apostle Devin, CryWolf)",
-      levelReq:
-        "Must be level 400 and have completed 2nd quest. Quest has three parts (items can be bought from NPC Lumen barmaid in Lorencia):",
-      steps: {
-        step1:
-          "Bring 5,000,000 Zen and items: Flame of Death Beam Knight (Tarkan), Horn of Hell Maine (Aida), Feather of Phoenix (Icarus)",
-        step2:
-          "Level 400, pay 7,000,000 Zen, enter Balgass Barracks map via Werewolf Guardsman in Crywolf, kill 20 each of Balram, Death Spirit, Soram.",
-        step3:
-          "Enter Refuge (via Gatekeeper inside Barracks), kill 1 Dark Elf Hero. Reward: third class change, additional stat points, unlock Master skill tree.",
-      },
-    },
-    fourthClass: {
-      title: "4th class change (NPC Cent, Lorencia [131, 147])",
-      levelReq:
-        "Must be level 800 and have completed 3rd quest. Quest has three stages:",
-      stages: {
-        stage1:
-          "Stage 1: Eligibility Test – Defeat Cent to pass the first test. Reward: +20 stat points.",
-        stage2:
-          "Stage 2: New Battle (1) – Defeat 5 Deep Dungeon Skeleton Warriors, 5 Cyclops, and 5 Ghost Monsters within 1 minute. Reward: +30 stat points.",
-        stage3:
-          "Stage 3: New Battle (2) – Defeat Cent again with stronger skills. Reward: +50 stat points, Scroll of Gray Oblivion, unlock 4th class, skill enhance tree.",
-      },
-      rewards:
-        "+100 total stat points, 4th class unlocked, skill enhance tree, Scroll of Gray Oblivion.",
-    },
-    fifthClass: {
-      title: "5th class change (NPC Eunice, Devias [193, 12])",
-      levelReq:
-        "Must be level 1,200 and have completed the 4th quest. Quest has four parts:",
-      waves: {
-        wave1:
-          "Wave 1: Receive Extra Nuke DMG buff and defeat Eunice within 1 minute.",
-        wave2:
-          "Wave 2: Receive Extra Bolt DMG buff and defeat Eunice within 1 minute.",
-        wave3:
-          "Wave 3: Receive Extra Wide DMG buff and defeat Eunice within 1 minute.",
-        wave4:
-          "Wave 4 (Mount Quest): Give Eunice 300 Jewel of Creation, then defeat her on her Giant Mount within 1 minute to earn a random Giant Mount.",
-      },
-      rewards:
-        "Rewards: +200 stat points, unlock 5th skill tree, 3 Extra Ability Cards (Nuke/Bolt/Wide), and access to Giant Mounts.",
-    },
   },
   guide: {
     intro:
       "Here you’ll find everything you need to know — from server details and gear progression to Chaos Machine crafting and Ruud farming tips. Whether you’re a new adventurer or a returning veteran, this page will help you power up efficiently and enjoy every part of your journey on our server!",
     gear: {
-      title: "Weapons & Gear",
+      title: "Weapons and Gear Progression",
       intro:
         "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). After this you can:",
       list: {
         hunt: "Hunt monsters and bosses to drop Excellent option items (minimum 3-4 options). You can also hunt Kundun boss in Kalima for Excellent and Ancient option items.",
         seedCapsules:
-          "OR collect Seed Capsules for 5 slot socket weapons and armor. The capsules also drop seeds that you can insert into the slots.",
+          "OR collect Box of Luck, Silver & Gold Medals and Heart of Love for Excellent plus Ancient options.",
         bloodangel:
-          "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events. Upgrade it through tiers to evolve into higher sets. This is the best armor; this armor has excellent and ancient options. The full upgrade path is:",
+          "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events. Upgrade it through tiers to evolve into higher sets. This is the best armor; this armor has ancient options. The full upgrade path is:",
       },
     },
     serverInfo: {
-      title: "Server Information",
+      title: "Server Information and Commands",
       intro:
         "Here are the key server rates, rewards, and useful commands to help you progress efficiently. Keep track of event timers, reset rewards, and boss respawns to maximize your gains.",
       list: {
-        expRate: "EXP Rate: 5000x",
-        masterExp: "Master EXP: 9999x",
-        majesticExp: "Majestic EXP: 9999x",
+        expRate: "Normal EXP: 5000x",
+        masterExp: "Master EXP: 5000x",
+        majesticExp: "Majestic EXP: 5000x",
         excellentDrop: "Excellent Item Drop Rate: 200%",
         resetReward: "Reset Reward: WCoins, Goblin Points, Ruud",
         grandReset: "Grand Reset requirement: 100 resets",
@@ -151,7 +100,7 @@ export default {
     },
 
     weaponsGear: {
-      title: "Weapons & Gear",
+      title: "Weapons and Gear Progression",
       intro:
         "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). After this you can:",
       list: [
@@ -162,7 +111,7 @@ export default {
     },
 
     questsEvo: {
-      title: "Quests & Evolution",
+      title: "Quests and Class Evolution",
       intro:
         "Quests and class advancements are the core progression system in MU. Completing these quests unlocks higher classes, new skills, stat points, and powerful equipment. Follow the NPC guidance carefully, defeat the required monsters, and complete each stage to evolve your character to the next class.",
       description:

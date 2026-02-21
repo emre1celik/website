@@ -174,19 +174,21 @@ function Info({ user, currentTheme, onThemeChange }) {
               {translate("guide.serverInfo.list.commands")}
             </li>
             <br />
-            <li>/addstr {translate("guide.serverInfo.list.amount")}</li>
-            <li>/addagi {translate("guide.serverInfo.list.amount")}</li>
-            <li>/addene {translate("guide.serverInfo.list.amount")}</li>
-            <li>/addvit {translate("guide.serverInfo.list.amount")}</li>
-            <li>/addcmd {translate("guide.serverInfo.list.amount")}</li>
-            <li>/reset</li>
-            <li>/reset auto</li>
-            <li>/change</li>
-            <li>/attack</li>
-            <li>/store ruud</li>
-            <li>/store wcc</li>
-            <li>/clearinv</li>
-            <li>/clearextinv</li>
+            <li>/addstr {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to strength</span></li>
+            <li>/addagi {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to agility</span></li>
+            <li>/addene {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to energy</span></li>
+            <li>/addvit {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to vitality</span></li>
+            <li>/addcmd {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to command</span></li>
+            <li>/reset <span style={{ color: "grey" }}>- Required level 400, you will stay in spot</span></li>
+            <li>/reset auto <span style={{ color: "grey" }}>- Automatically reset at level 400, use again to disable</span></li>
+            <li>/change <span style={{ color: "grey" }}>- Automatically evolve to your next class quest evolution</span></li>
+            <li>/attack <span style={{ color: "grey" }}>- This will put you in off attack modus, you can close client</span></li>
+            <li>/store ruud <span style={{ color: "grey" }}>- Open personal store then type this to offstore sell ruud (Zen will be Ruud)</span></li>
+            <li>/store wcc <span style={{ color: "grey" }}>- Open personal store then type this to offstore sell WCoin (Zen will be WCoin)</span></li>
+            <li>/clearinv <span style={{ color: "grey" }}>- Clears your entire inventory</span></li>
+            <li>/clearextinv <span style={{ color: "grey" }}>- Clears all four of your extended inventory</span></li>
+            <li>/clearinvmuun <span style={{ color: "grey" }}>- Clears your entire muun inventory</span></li>
+            <li>/cleareventinv <span style={{ color: "grey" }}>- Clears your entire event inventory</span></li>
           </ul>
           <p>{translate("guide.serverInfo.outro")}</p>
         </>
@@ -220,6 +222,7 @@ function Info({ user, currentTheme, onThemeChange }) {
                 <li>Brilliant</li>
                 <li>Apocalypse</li>
                 <li>Lightning</li>
+                <li>Temple Guard</li>
               </ul>
             </li>
           </ul>
@@ -231,8 +234,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: faScroll,
       content: (
         <>
-          <p>{translate("questsEvo.intro")}</p>
-          <p>{translate("questsEvo.description")}</p>
+          <p>{translate("guide.questsEvo.description")}</p>
         </>
       ),
     },
@@ -436,16 +438,49 @@ function Info({ user, currentTheme, onThemeChange }) {
             <li>
               <strong>{translate("chaosCombination.upgradeRates")}</strong>
               <ul style={{ listStyleType: "none" }}>
-                <li>+1 ~ +6 → 100%</li>
-                <li>+7 → 100%</li>
-                <li>+8 → 100%</li>
-                <li>+9 → 100%</li>
-                <li>+10 → 100%</li>
-                <li>+11 → 100%</li>
-                <li>+12 → 100%</li>
-                <li>+13 → 100%</li>
-                <li>+14 → 100%</li>
-                <li>+15 → 100%</li>
+                <li>+1 ~ +15 → 100%</li>
+              </ul>
+            </li>
+          </ul>
+          <ul style={{ listStyleType: "none" }}>
+            <li>
+              <strong>{translate("chaosCombination.harmonyRates")}</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>Jewel of Bless Success Rate → 100%</li>
+                <li>Jewel of Soul Success Rate → 100%</li>
+                <li>Jewel of Life Success Rate → 100%</li>
+                <li>Harmony Success Rate → 50%</li>
+                <li>Gemstone Success Rate → 50%</li>
+                <li>Artifact Spider Success Rate → 80%</li>
+              </ul>
+            </li>
+          </ul>
+          <ul style={{ listStyleType: "none" }}>
+            <li>
+              <strong>{translate("chaosCombination.elementalRates")}</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>Pentagram Mithril Rate → 100%</li>
+                <li>Pentagram Elixir Rate → 100%</li>
+                <li>Pentagram Jewel Rate → 100%</li>
+              </ul>
+            </li>
+          </ul>
+          <ul style={{ listStyleType: "none" }}>
+            <li>
+              <strong>{translate("chaosCombination.wingRates")}</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>Wing Relics (All level) → 100%</li>
+                <li>Wing Core → 100%</li>
+              </ul>
+            </li>
+          </ul>
+          <ul style={{ listStyleType: "none" }}>
+            <li>
+              <strong>{translate("chaosCombination.abilityRates")}</strong>
+              <ul style={{ listStyleType: "none" }}>
+                <li>Ability card option → 100%</li>
+                <li>Elite ability card → 100%</li>
+                <li>Skill ability card → 100%</li>
               </ul>
             </li>
           </ul>
