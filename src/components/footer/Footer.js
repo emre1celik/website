@@ -34,12 +34,6 @@ function Footer({ onThemeChange }) {
         />
       </ThemeSwitcher>
 
-      {chatOpen && <Chatbot onClose={() => setChatOpen(false)} />}
-
-      <ChatButton onClick={() => setChatOpen((o) => !o)}>
-        <FontAwesomeIcon icon={faRobot} style={{ color: "white" }} />
-        <span style={{ color: "white" }}>{translate("chatbot.title")}</span>
-      </ChatButton>
       <p>{translate("footer.rights")}</p>
     </FooterWrapper>
   );
