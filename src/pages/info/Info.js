@@ -214,7 +214,6 @@ function Info({ user, currentTheme, onThemeChange }) {
                 <li>Bloodangel</li>
                 <li>Darkangel</li>
                 <li>Holyangel</li>
-                <li>Awakening</li>
                 <li>Soul</li>
                 <li>Blue Eye</li>
                 <li>Silver Heart</li>
