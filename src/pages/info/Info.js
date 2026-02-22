@@ -211,17 +211,17 @@ function Info({ user, currentTheme, onThemeChange }) {
               <br />
               <br />
               <ul>
-                <li>Bloodangel</li>
-                <li>Darkangel</li>
-                <li>Holyangel</li>
-                <li>Soul</li>
-                <li>Blue Eye</li>
-                <li>Silver Heart</li>
-                <li>Manticore</li>
-                <li>Brilliant</li>
-                <li>Apocalypse</li>
-                <li>Lightning</li>
-                <li>Temple Guard</li>
+                <li>Bloodangel <span style={{ color: "grey" }}>- Level: 400 | Ancient: Ruud Shop | Excellent: Deep Dungeon 1, 2, 3, 4, 5</span></li>
+                <li>Darkangel <span style={{ color: "grey" }}>- Level: 600 | Ancient: Ruud Shop | Excellent: Swamp of Darkness</span></li>
+                <li>Holyangel <span style={{ color: "grey" }}>- Level: 800 | Ancient: Ruud Shop | Excellent: Kubera Mines</span></li>
+                <li>Soul <span style={{ color: "grey" }}>- Level: 900 | Ancient: Ruud Shop | Excellent: Abyss of Atlans 1, 2, 3</span></li>
+                <li>Blue Eye <span style={{ color: "grey" }}>- Level: 1000 | Ancient: Ruud Shop | Excellent: Scorched Canyon</span></li>
+                <li>Silver Heart <span style={{ color: "grey" }}>- Level: 1100 | Ancient: Ruud Shop | Excellent: Crimson Icarus</span></li>
+                <li>Manticore <span style={{ color: "grey" }}>- Level: 1200 | Ancient: Ruud Shop | Excellent: Arenil Temple</span></li>
+                <li>Brilliant <span style={{ color: "grey" }}>- Level: 1300 | Ancient: Ruud Shop | Excellent: Ashen Aida</span></li>
+                <li>Apocalypse <span style={{ color: "grey" }}>- Level: 1400 | Ancient: Ruud Shop | Excellent: Burning Kethotum, Kanturu Underground, Ignis Volcano</span></li>
+                <li>Lightning <span style={{ color: "grey" }}>- Level: 1500 | Ancient: Ruud Shop | Excellent: Bloody Tarkan, Tormenta Island, Twisted Karutan</span></li>
+                <li>Temple Guard <span style={{ color: "grey" }}>- Level: 1500 | Ancient: Ruud Shop | Excellent: Swamp of Doom, Kardamahal Temple</span></li>
               </ul>
             </li>
           </ul>
