@@ -32,10 +32,13 @@ export default function ControlPanelAchievements({
   const [claimingKeys, setClaimingKeys] = useState([]);
   const [messages, setMessages] = useState({});
   const { translate } = useTranslation(); const [selectedCharacters, setSelectedCharacters] = useState({});
+  const [activeRewardTab, setActiveRewardTab] = useState("character");
+  const filteredAchievements = achievements.filter(
+    ach => ach.category === activeRewardTab
+  );
   const claimReward = async (milestoneKey) => {
     if (claimingKeys.includes(milestoneKey)) return;
     setClaimingKeys((prev) => [...prev, milestoneKey]);
-
     const token = localStorage.getItem("apiToken");
 
     try {
@@ -158,8 +161,23 @@ export default function ControlPanelAchievements({
     <div>
       <h3>{translate("controlPanel.rewards.title")}</h3>
       <p>{translate("controlPanel.rewards.description")}</p>
+      <div style={{ display: "flex", gap: "10px", marginBottom: "15px" }}>
+        <GreenButton
+          onClick={() => setActiveRewardTab("character")}
+          disabled={activeRewardTab === "character"}
+        >
+          Character Rewards
+        </GreenButton>
+
+        <GreenButton
+          onClick={() => setActiveRewardTab("event")}
+          disabled={activeRewardTab === "event"}
+        >
+          Event Rewards
+        </GreenButton>
+      </div>
       <AchievementList>
-        {achievements.map((ach) => (
+        {filteredAchievements.map((ach) => (
           <>
             <AchievementItem
               key={ach.key}
