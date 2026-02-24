@@ -235,7 +235,7 @@ export const AchievementItem = styled.div`
     ${({ claimed, unlocked, theme }) =>
     claimed || unlocked ? theme?.primary || "#4caf50" : "#777"};
   border-radius: 10px;
-padding: ${({ claimed }) => (claimed ? "0.2rem" : "1.2rem")};
+padding: ${({ claimed }) => (claimed ? "0.4rem" : "1.2rem")};
   transition: transform 0.2s ease, border-color 0.3s ease;
 
   &:hover {
