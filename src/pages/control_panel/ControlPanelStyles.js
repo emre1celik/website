@@ -70,8 +70,7 @@ export const ControlPanelBox = styled.div`
   border-radius: 12px;
   width: 700px;
   max-width: 100%;
-  height: 700px;
-  max-height: 75vh;
+  max-height: 81vh;
 
   display: flex;
   flex-direction: column;
