@@ -170,7 +170,21 @@ export default function ControlPanelAchievements({
                 <img src={getIcon(ach.type)} alt={ach.label} />
                 <div>
                   <h4>{ach.label}</h4>
-                  {!ach.claimed && (
+
+                  {ach.claimed ? (
+                    <p
+                      style={{
+                        color: currentTheme.primary,
+                        fontWeight: "bold",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "6px",
+                      }}
+                    >
+                      <FontAwesomeIcon icon={faTrophy} />
+                      {translate("controlPanel.rewards.claimed")}
+                    </p>
+                  ) : (
                     <p>
                       {translate("controlPanel.rewards.progress")}:{" "}
                       {Number(ach.progress ?? 0).toLocaleString()} /{" "}
@@ -181,23 +195,7 @@ export default function ControlPanelAchievements({
               </AchievementInfo>
 
               <AchievementActions>
-
-                {/* ✅ CLAIMED STATE */}
-                {ach.claimed ? (
-                  <span
-                    style={{
-                      color: currentTheme.primary,
-                      fontWeight: "bold",
-                      fontSize: "1rem",
-                    }}
-                  >
-                    <FontAwesomeIcon
-                      icon={faTrophy}
-                      style={{ marginRight: "6px" }}
-                    />
-                    {translate("controlPanel.rewards.claimed")}
-                  </span>
-                ) : (
+                {!ach.claimed && (
                   <>
                     {/* Rewards */}
                     <AchievementReward>
@@ -290,8 +288,9 @@ export default function ControlPanelAchievements({
               </div>
             )}
           </>
-        ))}
-      </AchievementList>
-    </div>
+        ))
+        }
+      </AchievementList >
+    </div >
   );
 }
