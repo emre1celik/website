@@ -170,83 +170,102 @@ export default function ControlPanelAchievements({
                 <img src={getIcon(ach.type)} alt={ach.label} />
                 <div>
                   <h4>{ach.label}</h4>
-                  <p>
-                    {translate("controlPanel.rewards.progress")}:{" "}
-                    {Number(ach.progress ?? 0).toLocaleString()} /{" "}
-                    {Number(ach.required ?? 0).toLocaleString()}
-                  </p>
+                  {!ach.claimed && (
+                    <p>
+                      {translate("controlPanel.rewards.progress")}:{" "}
+                      {Number(ach.progress ?? 0).toLocaleString()} /{" "}
+                      {Number(ach.required ?? 0).toLocaleString()}
+                    </p>
+                  )}
                 </div>
               </AchievementInfo>
 
               <AchievementActions>
-                <AchievementReward>
-                  <FontAwesomeIcon icon={faGift} />
-                  <div>+{Number(ach.rewards.wcoin ?? 0).toLocaleString()} WCoin</div>
-                  <div>+{Number(ach.rewards.goblin ?? 0).toLocaleString()} Goblin Points</div>
-                  <div>+{Number(ach.rewards.ruud ?? 0).toLocaleString()} Ruud</div>
-                </AchievementReward><AchievementProgressBar>
-                  <div style={{
-                    width: `${Math.min(
-                      (ach.progress / ach.required) * 100,
-                      100
-                    )}%`
-                  }} />
-                </AchievementProgressBar>
-                {Number(ach.rewards.ruud ?? 0) > 0 && ach.unlocked && !ach.claimed && (
-                  <select
-                    value={selectedCharacters[ach.key] || ""}
-                    onChange={(e) =>
-                      setSelectedCharacters((prev) => ({
-                        ...prev,
-                        [ach.key]: e.target.value,
-                      }))
-                    }
-                    style={{ marginTop: "5px" }}
-                  >
-                    <option value="">Select Character</option>
-                    {characters.map((char) => (
-                      <option key={char.name} value={char.name}>
-                        {char.name}
-                      </option>
-                    ))}
-                  </select>
-                )}
-                {ach.unlocked && !ach.claimed ? (
-                  <GreenButton
-                    onClick={() => claimReward(ach.key)}
-                    style={{ marginTop: "5px" }}
-                    disabled={claimingKeys.includes(ach.key)}
-                  >
-                    {claimingKeys.includes(ach.key) ? (
-                      <>
-                        <FontAwesomeIcon
-                          icon={faSpinner}
-                          spin
-                          style={{ marginRight: "5px" }}
-                        />
-                        {translate("controlPanel.rewards.claiming")}
-                      </>
-                    ) : (
-                      <>
-                        <FontAwesomeIcon
-                          icon={faTrophy}
-                          style={{ marginRight: "5px" }}
-                        />
-                        {translate("controlPanel.rewards.claim")}
-                      </>
-                    )}
-                  </GreenButton>
-                ) : ach.claimed ? (
+
+                {/* ✅ CLAIMED STATE */}
+                {ach.claimed ? (
                   <span
-                    style={{ color: currentTheme.primary, fontWeight: "bold" }}
+                    style={{
+                      color: currentTheme.primary,
+                      fontWeight: "bold",
+                      fontSize: "1rem",
+                    }}
                   >
+                    <FontAwesomeIcon
+                      icon={faTrophy}
+                      style={{ marginRight: "6px" }}
+                    />
                     {translate("controlPanel.rewards.claimed")}
                   </span>
                 ) : (
-                  <span style={{ color: "#888" }}>
-                    <FontAwesomeIcon icon={faLock} />{" "}
-                    {translate("controlPanel.rewards.locked")}
-                  </span>
+                  <>
+                    {/* Rewards */}
+                    <AchievementReward>
+                      <FontAwesomeIcon icon={faGift} />
+                      <div>+{Number(ach.rewards.wcoin ?? 0).toLocaleString()} WCoin</div>
+                      <div>+{Number(ach.rewards.goblin ?? 0).toLocaleString()} Goblin Points</div>
+                      <div>+{Number(ach.rewards.ruud ?? 0).toLocaleString()} Ruud</div>
+                    </AchievementReward>
+
+                    {/* Progress Bar */}
+                    <AchievementProgressBar>
+                      <div
+                        style={{
+                          width: `${Math.min(
+                            (ach.progress / ach.required) * 100,
+                            100
+                          )}%`,
+                        }}
+                      />
+                    </AchievementProgressBar>
+
+                    {/* Character selector */}
+                    {Number(ach.rewards.ruud ?? 0) > 0 && ach.unlocked && (
+                      <select
+                        value={selectedCharacters[ach.key] || ""}
+                        onChange={(e) =>
+                          setSelectedCharacters((prev) => ({
+                            ...prev,
+                            [ach.key]: e.target.value,
+                          }))
+                        }
+                        style={{ marginTop: "5px" }}
+                      >
+                        <option value="">Select Character</option>
+                        {characters.map((char) => (
+                          <option key={char.name} value={char.name}>
+                            {char.name}
+                          </option>
+                        ))}
+                      </select>
+                    )}
+
+                    {/* Claim / Locked */}
+                    {ach.unlocked ? (
+                      <GreenButton
+                        onClick={() => claimReward(ach.key)}
+                        style={{ marginTop: "5px" }}
+                        disabled={claimingKeys.includes(ach.key)}
+                      >
+                        {claimingKeys.includes(ach.key) ? (
+                          <>
+                            <FontAwesomeIcon icon={faSpinner} spin />
+                            {translate("controlPanel.rewards.claiming")}
+                          </>
+                        ) : (
+                          <>
+                            <FontAwesomeIcon icon={faTrophy} />
+                            {translate("controlPanel.rewards.claim")}
+                          </>
+                        )}
+                      </GreenButton>
+                    ) : (
+                      <span style={{ color: "#888" }}>
+                        <FontAwesomeIcon icon={faLock} />{" "}
+                        {translate("controlPanel.rewards.locked")}
+                      </span>
+                    )}
+                  </>
                 )}
               </AchievementActions>
             </AchievementItem>
