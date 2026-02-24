@@ -116,6 +116,12 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       stats: "PvP • Survivability • Positioning",
       icon: faSkull,
     },
+    3: {
+      name: "Maze of Dimensions",
+      description: "Fight through dimensional labyrinth stages",
+      stats: "League Score • Survival • Efficiency",
+      icon: faTrophy,
+    },
   };
   const classMeta = {
     all: {
@@ -478,6 +484,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     0: [],
     1: [],
     2: [],
+    3: [],
   };
 
   events.forEach((e) => {
@@ -745,7 +752,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     <p style={{ color: "red" }}>{errorEvents}</p>
                   ) : (
                     <BossGrid>
-                      {[0, 1, 2].map((eventId) => {
+                      {[0, 1, 2, 3].map((eventId) => {
                         const meta = eventMeta[eventId];
                         const rows = eventsByType[eventId] || [];
 
