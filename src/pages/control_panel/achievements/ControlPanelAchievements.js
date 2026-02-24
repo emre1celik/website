@@ -270,8 +270,7 @@ export default function ControlPanelAchievements({
                           </>
                         ) : (
                           <>
-                            <FontAwesomeIcon icon={faTrophy} />
-                            {translate("controlPanel.rewards.claim")}
+                            <FontAwesomeIcon icon={faTrophy} /> {translate("controlPanel.rewards.claim")}
                           </>
                         )}
                       </GreenButton>
