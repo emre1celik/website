@@ -143,6 +143,8 @@ const eventSchedule = {
 
 const allEvents = { ...eventSchedule, ...invasionSchedule };
 
+const eventOnlyNames = new Set(Object.keys(eventSchedule));
+const invasionOnlyNames = new Set(Object.keys(invasionSchedule));
 const SERVER_UTC_OFFSET = -1;
 function getServerNow() {
   const now = new Date();
@@ -349,28 +351,24 @@ function Events({ user, currentTheme, onThemeChange }) {
     []
   );
 
-  const rows = Object.keys(allEvents)
-    .map((eventName) => {
-      const nextTime = nextEvents[eventName];
-      if (!nextTime) return null;
-      const diff = nextTime - getServerNow();
-      return { eventName, nextTime, diff };
-    })
-    .filter(Boolean)
-    .sort((a, b) => a.diff - b.diff);
+  const buildRows = (namesSet) =>
+    Array.from(namesSet)
+      .map((eventName) => {
+        const nextTime = nextEvents[eventName];
+        if (!nextTime) return null;
+        const diff = nextTime - getServerNow();
+        return { eventName, nextTime, diff };
+      })
+      .filter(Boolean)
+      .sort((a, b) => a.diff - b.diff);
+
+  const eventRows = buildRows(eventOnlyNames);
+  const invasionRows = buildRows(invasionOnlyNames);
 
   const toggleOpen = (eventName) => {
     userInteractedRef.current = true;
     setOpenEvent((prev) => (prev === eventName ? null : eventName));
   };
-
-  /* auto-open first event once */
-
-  useEffect(() => {
-    if (!rows.length) return;
-    if (userInteractedRef.current) return;
-    setOpenEvent(rows[0].eventName);
-  }, [rows]);
 
   return (
     <EventsWrapper>
@@ -381,91 +379,175 @@ function Events({ user, currentTheme, onThemeChange }) {
           <h2>{translate("events.title")}</h2>
           <GameTimer />
 
-          <HighscoresTable>
-            <thead>
-              <tr>
-                <th>{translate("events.event")}</th>
-                <th>{translate("events.nextStart")}</th>
-                <th>{translate("events.timeRemaining")}</th>
-              </tr>
-            </thead>
+          <>
+            <HighscoresTable>
+              <thead>
+                <tr>
+                  <th>{translate("events.event")}</th>
+                  <th>{translate("events.nextStart")}</th>
+                  <th>{translate("events.timeRemaining")}</th>
+                </tr>
+              </thead>
 
-            <tbody>
-              {rows.map(({ eventName, nextTime, diff }) => {
-                const isOpen = openEvent === eventName;
-                const isNow = diff <= 0 && diff >= NOW_WINDOW_MS;
-                const info = eventInfo[eventName];
+              <tbody>
+                {eventRows.map(({ eventName, nextTime, diff }) => {
+                  const isOpen = openEvent === eventName;
+                  const isNow = diff <= 0 && diff >= NOW_WINDOW_MS;
+                  const info = eventInfo[eventName];
 
-                return (
-                  <>
-                    <tr key={eventName}>
-                      <td>
-                        <EventNameButton
-                          $open={isOpen}
-                          onClick={() => toggleOpen(eventName)}
-                        >
-                          <Chevron open={isOpen}>
-                            <FontAwesomeIcon icon={faChevronRight} />
-                          </Chevron>
-                          {eventName}
-                        </EventNameButton>
-                      </td>
+                  return (
+                    <>
+                      <tr key={eventName}>
+                        <td>
+                          <EventNameButton
+                            $open={isOpen}
+                            onClick={() => toggleOpen(eventName)}
+                          >
+                            <Chevron open={isOpen}>
+                              <FontAwesomeIcon icon={faChevronRight} />
+                            </Chevron>
+                            {eventName}
+                          </EventNameButton>
+                        </td>
 
-                      <td>
-                        {nextTime.toLocaleTimeString([], {
-                          hour: "2-digit",
-                          minute: "2-digit",
-                        })}
-                      </td>
+                        <td>
+                          {nextTime.toLocaleTimeString([], {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                          })}
+                        </td>
 
-                      <td>
-                        {isNow ? (
-                          <GlowingName rank={1}>
-                            {translate("events.now")}
-                          </GlowingName>
-                        ) : (
-                          formatCountdown(nextTime)
-                        )}
-                      </td>
-                    </tr>
+                        <td>
+                          {isNow ? (
+                            <GlowingName rank={1}>{translate("events.now")}</GlowingName>
+                          ) : (
+                            formatCountdown(nextTime)
+                          )}
+                        </td>
+                      </tr>
 
-                    {isOpen && info && (
-                      <DetailsRow>
-                        <DetailsCell colSpan={3}>
-                          <DetailsCard>
-                            <DetailsTitle>{eventName}</DetailsTitle>
+                      {isOpen && info && (
+                        <DetailsRow>
+                          <DetailsCell colSpan={3}>
+                            <DetailsCard>
+                              <DetailsTitle>{eventName}</DetailsTitle>
 
-                            <InfoList>
-                              <InfoItem>
-                                <FontAwesomeIcon icon={faDoorOpen} />
-                                <div>
-                                  <b>{translate("events.enter")}:</b> {info.enter}
-                                </div>
-                              </InfoItem>
+                              <InfoList>
+                                <InfoItem>
+                                  <FontAwesomeIcon icon={faDoorOpen} />
+                                  <div>
+                                    <b>{translate("events.enter")}:</b> {info.enter}
+                                  </div>
+                                </InfoItem>
 
-                              <InfoItem>
-                                <FontAwesomeIcon icon={faMapMarkedAlt} />
-                                <div>
-                                  <b>{translate("events.where")}:</b> {info.where}
-                                </div>
-                              </InfoItem>
+                                <InfoItem>
+                                  <FontAwesomeIcon icon={faMapMarkedAlt} />
+                                  <div>
+                                    <b>{translate("events.where")}:</b> {info.where}
+                                  </div>
+                                </InfoItem>
 
-                              <InfoItem>
-                                <FontAwesomeIcon icon={faTrophy} />
-                                <div>
-                                  <b>{translate("events.rewards")}:</b> {info.rewards}
-                                </div>
-                              </InfoItem>
-                            </InfoList>
-                          </DetailsCard>
-                        </DetailsCell>
-                      </DetailsRow>
-                    )}
-                  </>
-                );
-              })}
-            </tbody>
-          </HighscoresTable>
+                                <InfoItem>
+                                  <FontAwesomeIcon icon={faTrophy} />
+                                  <div>
+                                    <b>{translate("events.rewards")}:</b> {info.rewards}
+                                  </div>
+                                </InfoItem>
+                              </InfoList>
+                            </DetailsCard>
+                          </DetailsCell>
+                        </DetailsRow>
+                      )}
+                    </>
+                  );
+                })}
+              </tbody>
+            </HighscoresTable>
+
+            <HighscoresTable>
+              <thead>
+                <tr>
+                  <th>{translate("events.event")}</th>
+                  <th>{translate("events.nextStart")}</th>
+                  <th>{translate("events.timeRemaining")}</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                {invasionRows.map(({ eventName, nextTime, diff }) => {
+                  const isOpen = openEvent === eventName;
+                  const isNow = diff <= 0 && diff >= NOW_WINDOW_MS;
+                  const info = eventInfo[eventName];
+
+                  return (
+                    <>
+                      <tr key={eventName}>
+                        <td>
+                          <EventNameButton
+                            $open={isOpen}
+                            onClick={() => toggleOpen(eventName)}
+                          >
+                            <Chevron open={isOpen}>
+                              <FontAwesomeIcon icon={faChevronRight} />
+                            </Chevron>
+                            {eventName}
+                          </EventNameButton>
+                        </td>
+
+                        <td>
+                          {nextTime.toLocaleTimeString([], {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                          })}
+                        </td>
+
+                        <td>
+                          {isNow ? (
+                            <GlowingName rank={1}>{translate("events.now")}</GlowingName>
+                          ) : (
+                            formatCountdown(nextTime)
+                          )}
+                        </td>
+                      </tr>
+
+                      {isOpen && info && (
+                        <DetailsRow>
+                          <DetailsCell colSpan={3}>
+                            <DetailsCard>
+                              <DetailsTitle>{eventName}</DetailsTitle>
+
+                              <InfoList>
+                                <InfoItem>
+                                  <FontAwesomeIcon icon={faDoorOpen} />
+                                  <div>
+                                    <b>{translate("events.enter")}:</b> {info.enter}
+                                  </div>
+                                </InfoItem>
+
+                                <InfoItem>
+                                  <FontAwesomeIcon icon={faMapMarkedAlt} />
+                                  <div>
+                                    <b>{translate("events.where")}:</b> {info.where}
+                                  </div>
+                                </InfoItem>
+
+                                <InfoItem>
+                                  <FontAwesomeIcon icon={faTrophy} />
+                                  <div>
+                                    <b>{translate("events.rewards")}:</b> {info.rewards}
+                                  </div>
+                                </InfoItem>
+                              </InfoList>
+                            </DetailsCard>
+                          </DetailsCell>
+                        </DetailsRow>
+                      )}
+                    </>
+                  );
+                })}
+              </tbody>
+            </HighscoresTable>
+          </>
         </EventsBox>
       </EventsContent>
 
