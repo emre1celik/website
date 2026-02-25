@@ -58,6 +58,7 @@ import LordSilvesterIcon from "../../assets/images/bosses/lord_silvester.png";
 import NightmareIcon from "../../assets/images/bosses/nightmare.png";
 import NixIcon from "../../assets/images/bosses/nix.png";
 import SelupanIcon from "../../assets/images/bosses/selupan.png";
+import MedusaIcon from "../../assets/images/bosses/medusa.png";
 
 import DefaultIcon from "../../assets/images/classes/default.png";
 import {
@@ -248,6 +249,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Kalima",
       hp: "10,000,000",
     },
+    "Medusa": {
+      src: MedusaIcon,
+      width: 62,
+      height: 84,
+      map: "Swamp of Peace",
+      hp: "1,000,000,000",
+    }
   };
 
   function getPkStatus(pkLevel) {
