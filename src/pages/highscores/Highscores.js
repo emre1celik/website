@@ -242,7 +242,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Kanturu Core",
       hp: "1,500,000",
     },
-    "Illusion of Kundun": {
+    "Kundun": {
       src: KundunIcon,
       width: 62,
       height: 84,
