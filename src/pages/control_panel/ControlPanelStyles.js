@@ -227,6 +227,7 @@ export const RewardTabs = styled.div`
   display: flex;
   width: 100%;
   gap: 10px;
+  margin-bottom: 10px;
 
   button {
     flex: 1;       /* 👈 equal width */
