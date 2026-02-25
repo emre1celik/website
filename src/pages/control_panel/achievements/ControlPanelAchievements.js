@@ -165,7 +165,7 @@ export default function ControlPanelAchievements({
     <div>
       <h3>{translate("controlPanel.rewards.title")}</h3>
       <p>{translate("controlPanel.rewards.description")}</p>
-      <div style={{ display: "flex", gap: "10px", marginBottom: "15px" }}>
+      <RewardTabs>
         <GreenButton
           onClick={() => setActiveRewardTab("character")}
           disabled={activeRewardTab === "character"}
@@ -186,7 +186,7 @@ export default function ControlPanelAchievements({
         >
           Monster Rewards
         </GreenButton>
-      </div>
+      </RewardTabs>
       <AchievementList>
         {filteredAchievements.map((ach) => (
           <>
