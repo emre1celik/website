@@ -375,7 +375,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     "Core Magriffy",
     "Lord Silvester",
     "Nightmare",
-    "Illusion of Kundun",
+    "Kundun",
+    "Medusa",
   ];
   const eventConfig = [
     { id: 0, key: "bloodCastle", label: "Blood Castle" },
