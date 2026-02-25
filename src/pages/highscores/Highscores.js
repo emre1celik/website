@@ -263,14 +263,12 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   }
   const [bosses, setBosses] = useState([]);
   useEffect(() => {
-    if (activeTab !== "bosses") return;
-
     fetch("https://api.myramu.online/api/bosses")
       .then(res => res.json())
       .then(data => {
         setBosses(data.bosses || []);
       });
-  }, [activeTab]);
+  }, []);
   useEffect(() => {
     if (bosses.length === 0 || Object.keys(bossData).length > 0) return;
 
