@@ -154,6 +154,10 @@ export default function ControlPanelAchievements({
         return StatsIcon;
       default:
         return EventIcon;
+      case "lord_silvester_kills":
+      case "hydra_kills":
+      case "kundun_kills":
+        return EventIcon;
     }
   };
 
@@ -174,6 +178,13 @@ export default function ControlPanelAchievements({
           disabled={activeRewardTab === "event"}
         >
           Event Rewards
+        </GreenButton>
+
+        <GreenButton
+          onClick={() => setActiveRewardTab("monster")}
+          disabled={activeRewardTab === "monster"}
+        >
+          Monster Rewards
         </GreenButton>
       </div>
       <AchievementList>
