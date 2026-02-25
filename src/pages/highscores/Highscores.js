@@ -265,7 +265,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   useEffect(() => {
     if (activeTab !== "bosses") return;
 
-    fetch("https://api.myramu.online/api/boss-list")
+    fetch("https://api.myramu.online/api/bosses")
       .then(res => res.json())
       .then(data => {
         setBosses(data.bosses || []);
