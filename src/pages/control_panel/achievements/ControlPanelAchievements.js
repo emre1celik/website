@@ -14,6 +14,7 @@ import {
   GreenButton,
   AchievementActions,
   AchievementProgressBar,
+  RewardTabs,
 } from "../ControlPanelStyles";
 import EventIcon from "../../../assets/images/classes/event.png";
 import ResetIcon from "../../../assets/images/classes/reset.png";
