@@ -789,7 +789,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                 <img
                                   src={config.src}
                                   width={config.width}
-                                  height={config.height}
                                   alt={boss}
                                 />
 
