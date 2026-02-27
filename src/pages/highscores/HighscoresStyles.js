@@ -77,8 +77,8 @@ export const GlowingName = styled.span`
     `}
 `;
 export const ClassIconBackground = styled.div`
-  width: 60px;
-  height: 60px;
+  width: ${({ size }) => size || 60}px;
+  height: ${({ size }) => size || 60}px;
 
   display: flex;
   align-items: center;
@@ -86,8 +86,8 @@ export const ClassIconBackground = styled.div`
 
   border-radius: 12px;
 
-  background: rgba(120, 120, 120, 0.18);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(120,120,120,0.18);
+  border: 1px solid rgba(255,255,255,0.15);
 
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
@@ -99,8 +99,8 @@ export const ClassIconBackground = styled.div`
   flex-shrink: 0;
 
   img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 85%;
+    max-height: 85%;
     object-fit: contain;
   }
 

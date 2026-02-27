@@ -97,7 +97,7 @@ export default function ControlPanelStats({
                 className="class-info"
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
-                <ClassIconBackground>
+                <ClassIconBackground size={42}>
                   <img src={classInfo.icon} alt={classInfo.key} />
                 </ClassIconBackground>
 
