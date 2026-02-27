@@ -583,7 +583,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                       {/* ALL CLASSES */}
                       <PlayerCard>
                         <PlayerHeader style={{ justifyContent: "flex-start" }}>
-                          <ClassIconBackground>
+                          <ClassIconBackground iconScale={60}>
                             <img src={DefaultIcon} alt="All Players" />
                           </ClassIconBackground>
 
@@ -670,7 +670,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                           players[key].length > 0 && (
                             <PlayerCard key={key}>
                               <PlayerHeader style={{ justifyContent: "flex-start" }}>
-                                <ClassIconBackground>
+                                <ClassIconBackground iconScale={60}>
                                   <img src={classIconMap[key].icon} alt={key} />
                                 </ClassIconBackground>
 
@@ -786,7 +786,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                               {/* HEADER */}
                               <BossHeader>
 
-                                <ClassIconBackground>
+                                <ClassIconBackground iconScale={60}>
                                   <img
                                     src={config.src}
                                     alt={boss}

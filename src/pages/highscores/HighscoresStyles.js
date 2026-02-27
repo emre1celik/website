@@ -98,9 +98,10 @@ export const ClassIconBackground = styled.div`
 
   flex-shrink: 0;
 
+  /* 👇 NEW — icon scale control */
   img {
-    max-width: 85%;
-    max-height: 85%;
+    width: ${({ iconScale }) => iconScale || 70}%;
+    height: ${({ iconScale }) => iconScale || 70}%;
     object-fit: contain;
   }
 
