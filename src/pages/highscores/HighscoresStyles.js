@@ -496,9 +496,9 @@ export const PlayerSubtitle = styled.div`
 export const BossHeader = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.75rem;
-  margin: 0 auto; 
-  text-align: left;
+  width: 100%;
 `;
 
 export const BossText = styled.div`
