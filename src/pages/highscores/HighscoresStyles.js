@@ -76,7 +76,38 @@ export const GlowingName = styled.span`
       color: ${theme.primary};
     `}
 `;
+export const ClassIconBackground = styled.div`
+  width: 48px;
+  height: 48px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  /* glass grey background */
+  background: rgba(120, 120, 120, 0.18);
+
+  /* subtle border */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  /* glass effect */
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.15),
+    0 4px 12px rgba(0,0,0,0.4);
+
+  flex-shrink: 0;
+
+  img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+`;
 export const HighscoresBox = styled.div`
   padding: 1rem;
   border-radius: 10px;

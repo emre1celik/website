@@ -30,6 +30,7 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCrown, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { ClassIconBackground } from "./HighscoresStyles";
 import {
   faUsers,
   faTrophy,
@@ -582,11 +583,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                       {/* ALL CLASSES */}
                       <PlayerCard>
                         <PlayerHeader style={{ justifyContent: "flex-start" }}>
-                          <img
-                            src={DefaultIcon}
-                            alt="All Players"
-                            style={{ width: 42, height: 42, flexShrink: 0 }}
-                          />
+                          <ClassIconBackground>
+                            <img src={DefaultIcon} alt="All Players" />
+                          </ClassIconBackground>
 
                           <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
                             <PlayerTitle>
@@ -671,11 +670,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                           players[key].length > 0 && (
                             <PlayerCard key={key}>
                               <PlayerHeader style={{ justifyContent: "flex-start" }}>
-                                <img
-                                  src={classIconMap[key].icon}
-                                  alt={key}
-                                  style={{ width: 42, height: 42, flexShrink: 0 }}
-                                />
+                                <ClassIconBackground>
+                                  <img src={classIconMap[key].icon} alt={key} />
+                                </ClassIconBackground>
 
                                 <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.2 }}>
                                   <PlayerTitle>{classNamesMap[key]}</PlayerTitle>
