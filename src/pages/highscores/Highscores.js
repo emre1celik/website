@@ -233,8 +233,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Core Magriffy": {
       src: CoreMagriffyIcon,
-      width: 90,
-      height: 90,
+      width: 80,
+      height: 80,
       map: "Nars, Acheron",
       hp: "2,000,000,000",
       defense: "7,650",
