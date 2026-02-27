@@ -98,11 +98,17 @@ export const ClassIconBackground = styled.div`
 
   flex-shrink: 0;
 
-  /* 👇 NEW — icon scale control */
+  /* Images */
   img {
     width: ${({ iconScale }) => iconScale || 70}%;
     height: ${({ iconScale }) => iconScale || 70}%;
     object-fit: contain;
+  }
+
+  /* FontAwesome icons */
+  svg {
+    width: ${({ iconScale }) => iconScale || 70}%;
+    height: ${({ iconScale }) => iconScale || 70}%;
   }
 
   transition: all 0.25s ease;

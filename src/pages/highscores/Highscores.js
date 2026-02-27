@@ -907,11 +907,12 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                           <BossCard key={eventId} style={{ height: "500px", width: "100%" }}>
                             {/* Header */}
                             <BossHeader>
-                              <FontAwesomeIcon
-                                icon={meta.icon}
-                                size="2x"
-                                style={{ color: "#aaa", flexShrink: 0 }}
-                              />
+                              <ClassIconBackground size={60} iconScale={65}>
+                                <FontAwesomeIcon
+                                  icon={meta.icon}
+                                  style={{ fontSize: "26px", color: "#aaa" }}
+                                />
+                              </ClassIconBackground>
 
                               <BossText>
                                 <BossTitle>{meta.name}</BossTitle>
