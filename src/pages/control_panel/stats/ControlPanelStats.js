@@ -131,18 +131,15 @@ export default function ControlPanelStats({
                   <strong>Leadership:</strong> {formatStat(char.leadership)}
                 </p>
               )}
-              {char.giant_model !== null && (
+              {char.giant_mount_type > 0 && (
                 <MountSelector>
                   <label>{translate("controlPanel.stats.giant_mount")}</label>
+
                   {actionLoading[mountKey] ? (
-                    <FontAwesomeIcon
-                      icon={faSpinner}
-                      spin
-                      style={{ color: "#ccc" }}
-                    />
+                    <FontAwesomeIcon icon={faSpinner} spin />
                   ) : (
                     <select
-                      value={char.giant_model}
+                      value={char.giant_mount_type}
                       onChange={(e) => changeMount(e, char)}
                     >
                       <option value={1}>Silver</option>
