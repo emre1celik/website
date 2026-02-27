@@ -269,8 +269,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Medusa": {
       src: MedusaIcon,
-      width: 120,
-      height: 120,
+      width: 100,
+      height: 100,
       map: "Swamp of Peace",
       hp: "2,000,000,000",
       defense: "5,500",
