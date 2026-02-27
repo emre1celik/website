@@ -77,22 +77,18 @@ export const GlowingName = styled.span`
     `}
 `;
 export const ClassIconBackground = styled.div`
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 10px;
+  border-radius: 12px;
 
-  /* glass grey background */
   background: rgba(120, 120, 120, 0.18);
-
-  /* subtle border */
   border: 1px solid rgba(255, 255, 255, 0.15);
 
-  /* glass effect */
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
 
@@ -103,9 +99,16 @@ export const ClassIconBackground = styled.div`
   flex-shrink: 0;
 
   img {
-    width: 32px;
-    height: 32px;
+    max-width: 90%;
+    max-height: 90%;
     object-fit: contain;
+  }
+
+  transition: all 0.25s ease;
+
+  &:hover {
+    background: rgba(160,160,160,0.25);
+    transform: translateY(-2px);
   }
 `;
 export const HighscoresBox = styled.div`

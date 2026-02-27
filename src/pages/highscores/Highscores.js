@@ -786,11 +786,17 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                               {/* HEADER */}
                               <BossHeader>
 
-                                <img
-                                  src={config.src}
-                                  width={config.width}
-                                  alt={boss}
-                                />
+                                <ClassIconBackground>
+                                  <img
+                                    src={config.src}
+                                    alt={boss}
+                                    style={{
+                                      width: config.width,
+                                      height: config.height,
+                                      objectFit: "contain",
+                                    }}
+                                  />
+                                </ClassIconBackground>
 
                                 <BossText>
                                   <BossTitle>{boss}</BossTitle>

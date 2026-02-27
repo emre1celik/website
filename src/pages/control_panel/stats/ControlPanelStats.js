@@ -14,7 +14,7 @@ import {
   GreenButton,
   MountSelector,
 } from "../ControlPanelStyles";
-
+import { ClassIconBackground } from "../../highscores/HighscoresStyles";
 export default function ControlPanelStats({
   characters,
   charsLoading,
@@ -93,8 +93,14 @@ export default function ControlPanelStats({
           <CharacterCard key={char.name}>
             <CharacterHeader>
               <h4>{char.name}</h4>
-              <div className="class-info">
-                <img src={classInfo.icon} alt={classInfo.key} />
+              <div
+                className="class-info"
+                style={{ display: "flex", alignItems: "center", gap: "10px" }}
+              >
+                <ClassIconBackground>
+                  <img src={classInfo.icon} alt={classInfo.key} />
+                </ClassIconBackground>
+
                 <span>{classNamesMap[classInfo.key] || "Unknown"}</span>
               </div>
             </CharacterHeader>
