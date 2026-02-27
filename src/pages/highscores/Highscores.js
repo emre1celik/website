@@ -792,7 +792,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     alt={boss}
                                     style={{
                                       width: config.width,
-                                      height: config.height,
                                       objectFit: "contain",
                                     }}
                                   />
