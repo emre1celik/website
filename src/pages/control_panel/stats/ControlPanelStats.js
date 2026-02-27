@@ -142,9 +142,9 @@ export default function ControlPanelStats({
                       value={char.giant_mount_type}
                       onChange={(e) => changeMount(e, char)}
                     >
-                      <option value={1}>Silver</option>
+                      <option value={1}>Blue</option>
                       <option value={2}>Gold</option>
-                      <option value={3}>Blue</option>
+                      <option value={3}>Red</option>
                     </select>
                   )}
                 </MountSelector>
