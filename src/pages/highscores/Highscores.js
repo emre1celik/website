@@ -824,6 +824,12 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     <span>
                                       <strong>HP:</strong> {config.hp}
                                     </span>
+                                    <span>
+                                      <strong>Defense:</strong> {config.defense}
+                                    </span>
+                                    <span>
+                                      <strong>Respawn:</strong> {config.respawn}
+                                    </span>
                                   </BossSubtitle>
                                 </BossText>
 
