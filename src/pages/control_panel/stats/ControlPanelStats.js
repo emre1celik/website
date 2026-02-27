@@ -15,6 +15,21 @@ import {
   MountSelector,
 } from "../ControlPanelStyles";
 
+import DwIcon from "../../../assets/images/classes/dw.ico";
+import DkIcon from "../../../assets/images/classes/dk.ico";
+import ElfIcon from "../../../assets/images/classes/elf.ico";
+import MgIcon from "../../../assets/images/classes/mg.ico";
+import DlIcon from "../../../assets/images/classes/dl.ico";
+import SumIcon from "../../../assets/images/classes/sum.ico";
+import RfIcon from "../../../assets/images/classes/rf.ico";
+import GlIcon from "../../../assets/images/classes/gl.ico";
+import RwIcon from "../../../assets/images/classes/rw.ico";
+import SlIcon from "../../../assets/images/classes/sl.ico";
+import GcIcon from "../../../assets/images/classes/gc.ico";
+import LwIcon from "../../../assets/images/classes/lw.ico";
+import MaIcon from "../../../assets/images/classes/ma.ico";
+import IkIcon from "../../../assets/images/classes/ik.ico";
+import AlcIcon from "../../../assets/images/classes/al.ico";
 export default function ControlPanelStats({
   characters,
   charsLoading,

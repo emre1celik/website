@@ -35,21 +35,22 @@ import {
   faTrophy,
   faShieldAlt,
 } from "@fortawesome/free-solid-svg-icons";
-import DwIcon from "../../assets/images/classes/dw.png";
-import DkIcon from "../../assets/images/classes/dk.png";
-import ElfIcon from "../../assets/images/classes/elf.png";
-import MgIcon from "../../assets/images/classes/mg.png";
-import DlIcon from "../../assets/images/classes/dl.png";
-import SumIcon from "../../assets/images/classes/sum.png";
-import RfIcon from "../../assets/images/classes/rf.png";
-import GlIcon from "../../assets/images/classes/gl.png";
-import RwIcon from "../../assets/images/classes/rw.png";
-import SlIcon from "../../assets/images/classes/sl.png";
-import GcIcon from "../../assets/images/classes/gc.png";
-import LwIcon from "../../assets/images/classes/lw.png";
-import MaIcon from "../../assets/images/classes/ma.png";
-import IkIcon from "../../assets/images/classes/ik.png";
-import AlcIcon from "../../assets/images/classes/al.png";
+import DwIcon from "../../assets/images/classes/dw.ico";
+import DkIcon from "../../assets/images/classes/dk.ico";
+import ElfIcon from "../../assets/images/classes/elf.ico";
+import MgIcon from "../../assets/images/classes/mg.ico";
+import DlIcon from "../../assets/images/classes/dl.ico";
+import SumIcon from "../../assets/images/classes/sum.ico";
+import RfIcon from "../../assets/images/classes/rf.ico";
+import GlIcon from "../../assets/images/classes/gl.ico";
+import RwIcon from "../../assets/images/classes/rw.ico";
+import SlIcon from "../../assets/images/classes/sl.ico";
+import GcIcon from "../../assets/images/classes/gc.ico";
+import LwIcon from "../../assets/images/classes/lw.ico";
+import MaIcon from "../../assets/images/classes/ma.ico";
+import IkIcon from "../../assets/images/classes/ik.ico";
+import AlcIcon from "../../assets/images/classes/al.ico";
+
 import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
 import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
 import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
@@ -306,7 +307,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
   const classIconMap = {
     dw: {
-      ids: [0, 1, 2, 3, 7, 15],
+      ids: [0, 1, 2, 3, 7, 8, 15],
       icon: DwIcon,
     },
     dk: {
@@ -314,55 +315,55 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       icon: DkIcon,
     },
     elf: {
-      ids: [32, 33, 34, 35, 39, 47],
+      ids: [32, 33, 34, 35, 36, 39, 47],
       icon: ElfIcon,
     },
     mg: {
-      ids: [48, 49, 50, 51, 55, 63],
+      ids: [48, 49, 50, 51, 52, 55, 63],
       icon: MgIcon,
     },
     dl: {
-      ids: [64, 65, 66, 67, 71, 79],
+      ids: [64, 65, 66, 67, 68, 71, 79],
       icon: DlIcon,
     },
     sum: {
-      ids: [80, 81, 82, 83, 87, 95],
+      ids: [80, 81, 82, 83, 84, 87, 95],
       icon: SumIcon,
     },
     rf: {
-      ids: [96, 97, 98, 99, 103, 111],
+      ids: [96, 97, 98, 99, 100, 103, 111],
       icon: RfIcon,
     },
     gl: {
-      ids: [112, 113, 114, 115, 119, 127],
+      ids: [112, 113, 114, 115, 116, 119, 127],
       icon: GlIcon,
     },
     rw: {
-      ids: [128, 129, 130, 131, 135, 143],
+      ids: [128, 129, 130, 131, 132, 135, 143],
       icon: RwIcon,
     },
     sl: {
-      ids: [144, 145, 146, 147, 151, 159],
+      ids: [144, 145, 146, 147, 148, 151, 159],
       icon: SlIcon,
     },
     gc: {
-      ids: [160, 161, 162, 163, 167, 175],
+      ids: [160, 161, 162, 163, 164, 167, 175],
       icon: GcIcon,
     },
     lw: {
-      ids: [176, 177, 178, 179, 183, 191],
+      ids: [176, 177, 178, 179, 180, 183, 191],
       icon: LwIcon,
     },
     ma: {
-      ids: [192, 193, 194, 195, 199, 207],
+      ids: [192, 193, 194, 195, 196, 199, 207],
       icon: MaIcon,
     },
     ik: {
-      ids: [208, 209, 210, 211, 215, 223],
+      ids: [208, 209, 210, 211, 212, 215, 223],
       icon: IkIcon,
     },
     al: {
-      ids: [224, 225, 226, 227, 231, 239],
+      ids: [224, 225, 226, 227, 228, 231, 239],
       icon: AlcIcon,
     }
   };
@@ -377,11 +378,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     "Nightmare",
     "Kundun",
     "Medusa",
-  ];
-  const eventConfig = [
-    { id: 0, key: "bloodCastle", label: "Blood Castle" },
-    { id: 1, key: "devilSquare", label: "Devil Square" },
-    { id: 2, key: "chaosCastle", label: "Chaos Castle" },
   ];
 
   function getClassInfo(raceId) {
@@ -915,7 +911,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                 </thead>
                                 <tbody>
                                   {rows.slice(0, 25).map((row, index) => {
-                                    const { icon, key } = getClassInfo(row.race);
 
                                     return (
                                       <tr key={index}>
