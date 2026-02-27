@@ -61,9 +61,15 @@ export default function ControlPanelStats({
         {translate("controlPanel.stats.noCharacters")}
       </div>
     );
-  const formatStat = (value) =>
-    typeof value === "number" ? value.toLocaleString() : value;
+  const formatStat = (value) => {
+    if (value === null || value === undefined) return value;
 
+    const number = Number(value);
+
+    return Number.isNaN(number)
+      ? value
+      : number.toLocaleString();
+  };
   return (
     <div>
       <h3>{translate("controlPanel.stats.characterStatistics")}</h3>
