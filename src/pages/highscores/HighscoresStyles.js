@@ -323,7 +323,7 @@ export const BossSubtitle = styled.div`
 `;
 export const PlayerGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
   width: 100%;
 
@@ -419,7 +419,7 @@ export const PlayerHeader = styled.div`
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin: 0 auto;
+  width: 100%;
 `;
 
 export const NameWithTooltip = styled.div`
