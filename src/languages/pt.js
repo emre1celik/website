@@ -149,7 +149,7 @@ export default {
       intro:
         "Missões e avanço de classe são o sistema central de progressão em MU. Completar essas missões desbloqueia classes superiores, novas habilidades, pontos de status e equipamentos poderosos. Siga cuidadosamente as instruções dos NPCs, derrote os monstros exigidos e complete cada etapa para evoluir seu personagem para a próxima classe.",
       description:
-        "Você pode evoluir sua classe facilmente digitando /change dentro do jogo. Isso definirá automaticamente a próxima missão de mudança de classe caso você cumpra os requisitos. Você também pode falar com os NPCs de mudança de classe para iniciar as missões manualmente. Os principais NPCs são Sebina para a 2ª classe, Apostle Devin para a 3ª classe, Cent para a 4ª classe e Eunice para a 5ª classe. Cada missão possui requisitos e recompensas específicas, portanto prepare-se adequadamente antes de iniciá-las.",
+        "Você pode evoluir sua classe facilmente digitando /evo dentro do jogo. Isso definirá automaticamente a próxima missão de mudança de classe caso você cumpra os requisitos. Você também pode falar com os NPCs de mudança de classe para iniciar as missões manualmente. Os principais NPCs são Sebina para a 2ª classe, Apostle Devin para a 3ª classe, Cent para a 4ª classe e Eunice para a 5ª classe. Cada missão possui requisitos e recompensas específicas, portanto prepare-se adequadamente antes de iniciá-las.",
     },
 
     ruud: {

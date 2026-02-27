@@ -115,7 +115,7 @@ export default {
       intro:
         "Quests and class advancements are the core progression system in MU. Completing these quests unlocks higher classes, new skills, stat points, and powerful equipment. Follow the NPC guidance carefully, defeat the required monsters, and complete each stage to evolve your character to the next class.",
       description:
-        "You can evolve class easily by typing /change in-game. This will automatically set you to the next class quest if you meet the requirements. You can also talk to the class change NPCs to start the quests manually. The main class change NPCs are Sebina for 2nd class, Apostle Devin for 3rd class, Cent for 4th class and Eunice for 5th class. Each quest has specific requirements and rewards, so make sure to prepare accordingly before starting them.",
+        "You can evolve class easily by typing /evo in-game. This will automatically set you to the next class quest if you meet the requirements. You can also talk to the class change NPCs to start the quests manually. The main class change NPCs are Sebina for 2nd class, Apostle Devin for 3rd class, Cent for 4th class and Eunice for 5th class. Each quest has specific requirements and rewards, so make sure to prepare accordingly before starting them.",
     },
 
     ruud: {

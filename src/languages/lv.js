@@ -148,7 +148,7 @@ export default {
       intro:
         "Misijas un klases attīstība ir MU galvenā progresijas sistēma. Pabeidzot šīs misijas, tiek atbloķētas augstākas klases, jaunas prasmes, statistikas punkti un jaudīgs aprīkojums. Sekojiet NPC norādēm rūpīgi, uzvariet vajadzīgos monstrus un pabeidziet katru posmu, lai evolvētu savu tēlu uz nākamo klasi.",
       description:
-        "Tu vari viegli attīstīt savu klasi, ierakstot spēlē komandu /change. Tas automātiski piešķirs nākamo klases uzdevumu, ja izpildi prasības. Vari arī runāt ar klases maiņas NPC, lai sāktu uzdevumus manuāli. Galvenie NPC ir Sebina 2. klasei, Apostle Devin 3. klasei, Cent 4. klasei un Eunice 5. klasei. Katram uzdevumam ir savas prasības un balvas, tāpēc pirms uzsākšanas noteikti sagatavojies.",
+        "Tu vari viegli attīstīt savu klasi, ierakstot spēlē komandu /evo. Tas automātiski piešķirs nākamo klases uzdevumu, ja izpildi prasības. Vari arī runāt ar klases maiņas NPC, lai sāktu uzdevumus manuāli. Galvenie NPC ir Sebina 2. klasei, Apostle Devin 3. klasei, Cent 4. klasei un Eunice 5. klasei. Katram uzdevumam ir savas prasības un balvas, tāpēc pirms uzsākšanas noteikti sagatavojies.",
     },
 
     ruud: {

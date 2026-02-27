@@ -148,7 +148,7 @@ export default {
       intro:
         "Missioonid ja klassi arengud on MU põhiline progresioonisüsteem. Nende täitmine avab kõrgemaid klasse, uusi oskusi, statistika punkte ja võimsat varustust. Järgi NPC juhiseid hoolikalt, alista vajalikud monsterid ja lõpeta iga etapp, et oma tegelast järgmisesse klassi arendada.",
       description:
-        "Saad oma klassi arendada lihtsalt kirjutades mängus /change. See määrab sind automaatselt järgmise klassi ülesandele, kui täidad nõuded. Samuti võid rääkida klassivahetuse NPC-dega, et alustada ülesandeid käsitsi. Peamised NPC-d on Sebina 2. klassi jaoks, Apostle Devin 3. klassi jaoks, Cent 4. klassi jaoks ja Eunice 5. klassi jaoks. Igal ülesandel on kindlad nõuded ja auhinnad, seega valmistu enne alustamist korralikult.",
+        "Saad oma klassi arendada lihtsalt kirjutades mängus /evo. See määrab sind automaatselt järgmise klassi ülesandele, kui täidad nõuded. Samuti võid rääkida klassivahetuse NPC-dega, et alustada ülesandeid käsitsi. Peamised NPC-d on Sebina 2. klassi jaoks, Apostle Devin 3. klassi jaoks, Cent 4. klassi jaoks ja Eunice 5. klassi jaoks. Igal ülesandel on kindlad nõuded ja auhinnad, seega valmistu enne alustamist korralikult.",
     },
 
     ruud: {

@@ -143,7 +143,7 @@ export default {
       intro:
         "Quests và class advancements là core system progression trong MU. Hoàn thành quests unlock class cao hơn, skill mới, stat points, và trang bị mạnh. Follow NPC guidance cẩn thận, đánh quái cần thiết, hoàn thành từng stage để evolve nhân vật lên class tiếp theo.",
       description:
-        "Bạn có thể tiến hóa lớp nhân vật dễ dàng bằng cách nhập /change trong game. Hệ thống sẽ tự động chuyển bạn đến nhiệm vụ đổi lớp tiếp theo nếu bạn đáp ứng đủ yêu cầu. Bạn cũng có thể nói chuyện với các NPC đổi lớp để bắt đầu nhiệm vụ thủ công. Các NPC chính gồm Sebina cho lớp 2, Apostle Devin cho lớp 3, Cent cho lớp 4 và Eunice cho lớp 5. Mỗi nhiệm vụ có yêu cầu và phần thưởng riêng, vì vậy hãy chuẩn bị kỹ trước khi bắt đầu.",
+        "Bạn có thể tiến hóa lớp nhân vật dễ dàng bằng cách nhập /evo trong game. Hệ thống sẽ tự động chuyển bạn đến nhiệm vụ đổi lớp tiếp theo nếu bạn đáp ứng đủ yêu cầu. Bạn cũng có thể nói chuyện với các NPC đổi lớp để bắt đầu nhiệm vụ thủ công. Các NPC chính gồm Sebina cho lớp 2, Apostle Devin cho lớp 3, Cent cho lớp 4 và Eunice cho lớp 5. Mỗi nhiệm vụ có yêu cầu và phần thưởng riêng, vì vậy hãy chuẩn bị kỹ trước khi bắt đầu.",
     },
     ruud: {
       title: "Cách Lấy Ruud",

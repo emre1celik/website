@@ -147,7 +147,7 @@ export default {
       intro:
         "Görevler ve sınıf gelişimi MU'daki temel ilerleme sistemidir. Bu görevleri tamamlamak, daha yüksek sınıfları, yeni becerileri, stat puanlarını ve güçlü ekipmanları açar. NPC talimatlarını dikkatle takip edin, gerekli canavarları yenin ve karakterinizi bir sonraki sınıfa evrimleştirmek için her aşamayı tamamlayın.",
       description:
-        "Oyunda /change yazarak sınıfınızı kolayca geliştirebilirsiniz. Gereksinimleri karşılıyorsanız sistem sizi otomatik olarak bir sonraki sınıf görevine yönlendirir. Görevleri manuel başlatmak için sınıf değişim NPC'leriyle de konuşabilirsiniz. Ana NPC'ler: 2. sınıf için Sebina, 3. sınıf için Apostle Devin, 4. sınıf için Cent ve 5. sınıf için Eunice'dir. Her görevin kendine ait gereksinimleri ve ödülleri vardır, bu yüzden başlamadan önce hazırlıklı olduğunuzdan emin olun.",
+        "Oyunda /evo yazarak sınıfınızı kolayca geliştirebilirsiniz. Gereksinimleri karşılıyorsanız sistem sizi otomatik olarak bir sonraki sınıf görevine yönlendirir. Görevleri manuel başlatmak için sınıf değişim NPC'leriyle de konuşabilirsiniz. Ana NPC'ler: 2. sınıf için Sebina, 3. sınıf için Apostle Devin, 4. sınıf için Cent ve 5. sınıf için Eunice'dir. Her görevin kendine ait gereksinimleri ve ödülleri vardır, bu yüzden başlamadan önce hazırlıklı olduğunuzdan emin olun.",
     },
 
     ruud: {

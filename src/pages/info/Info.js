@@ -181,10 +181,11 @@ function Info({ user, currentTheme, onThemeChange }) {
             <li>/addcmd {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to command</span></li>
             <li>/reset <span style={{ color: "grey" }}>- Required level 400, you will stay in spot</span></li>
             <li>/reset auto <span style={{ color: "grey" }}>- Automatically reset at level 400, use again to disable</span></li>
-            <li>/change <span style={{ color: "grey" }}>- Automatically evolve to your next class quest evolution</span></li>
+            <li>/evo <span style={{ color: "grey" }}>- Automatically evolve to your next class quest evolution</span></li>
             <li>/attack <span style={{ color: "grey" }}>- This will put you in off attack modus, you can close client</span></li>
             <li>/store ruud <span style={{ color: "grey" }}>- Open personal store then type this to offstore sell ruud (Zen will be Ruud)</span></li>
             <li>/store wcc <span style={{ color: "grey" }}>- Open personal store then type this to offstore sell WCoin (Zen will be WCoin)</span></li>
+            <li>/warehouse (number) <span style={{ color: "grey" }}>- Change to a different warehouse number</span></li>
             <li>/clearinv <span style={{ color: "grey" }}>- Clears your entire inventory</span></li>
             <li>/clearextinv <span style={{ color: "grey" }}>- Clears all four of your extended inventory</span></li>
             <li>/clearinvmuun <span style={{ color: "grey" }}>- Clears your entire muun inventory</span></li>
