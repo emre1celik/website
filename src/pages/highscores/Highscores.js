@@ -786,7 +786,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                               {/* HEADER */}
                               <BossHeader>
 
-                                <ClassIconBackground iconScale={60}>
+                                <ClassIconBackground iconScale={100}>
                                   <img
                                     src={config.src}
                                     alt={boss}
