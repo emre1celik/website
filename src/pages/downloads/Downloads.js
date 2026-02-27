@@ -12,7 +12,6 @@ import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
-import fontissue from "../../assets/images/fontissue.png";
 import { SystemRequirements } from "./DownloadsStyles";
 
 function Downloads({ user, currentTheme, onThemeChange }) {
