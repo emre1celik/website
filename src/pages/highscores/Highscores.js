@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useMemo } from "react";
 import {
   HighscoresWrapper,
   HighscoresContent,
@@ -522,7 +523,20 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       eventsByType[e.event_id].push(e);
     }
   });
+  function shuffleArray(array) {
+    const shuffled = [...array];
 
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+
+    return shuffled;
+  }
+  const shuffledClassKeys = useMemo(
+    () => shuffleArray(Object.keys(classIconMap)),
+    []
+  );
   return (
     <>
       <Helmet>
@@ -682,7 +696,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                       </PlayerCard>
 
                       {/* PER CLASS */}
-                      {Object.keys(classIconMap).map(
+                      {shuffledClassKeys.map(
                         (key) =>
                           players[key] &&
                           players[key].length > 0 && (
