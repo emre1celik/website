@@ -1067,7 +1067,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                   <td>{formatNumber(Number(guild.total_resets))}</td>
 
                                   <td>
-                                    <GuildEmblem data={guild.emblem} scale={4} />
+                                    <GuildEmblem data={guild.emblem} scale={3} />
                                   </td>
                                 </tr>
                               ))}
