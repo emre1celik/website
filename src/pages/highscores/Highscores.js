@@ -198,63 +198,63 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     "God of Darkness": {
       src: GodOfDarknessIcon,
       width: 84,
-      height: 84,
+      height: 100,
       map: "Swamp of Darkness",
       hp: "200,000,000",
     },
     "Nix": {
       src: NixIcon,
       width: 66,
-      height: 84,
+      height: 100,
       map: "Nixies Lake",
       hp: "1,000,000,000",
     },
     "Lord of Ferea": {
       src: LordFereaIcon,
       width: 82,
-      height: 84,
+      height: 100,
       map: "Ferea",
       hp: "250,000,000",
     },
     "Lord Silvester": {
       src: LordSilvesterIcon,
       width: 80,
-      height: 84,
+      height: 100,
       map: "Uruk Mountain",
       hp: "150,000,000",
     },
     "Core Magriffy": {
       src: CoreMagriffyIcon,
       width: 40,
-      height: 84,
+      height: 100,
       map: "Nars, Acheron",
       hp: "250,000,000",
     },
     "Selupan": {
       src: SelupanIcon,
       width: 64,
-      height: 84,
+      height: 100,
       map: "Raklion",
       hp: "48,000,000",
     },
     "Nightmare": {
       src: NightmareIcon,
       width: 44,
-      height: 84,
+      height: 100,
       map: "Kanturu Core",
       hp: "1,500,000",
     },
     "Kundun": {
       src: KundunIcon,
       width: 62,
-      height: 84,
+      height: 100,
       map: "Kalima",
       hp: "10,000,000",
     },
     "Medusa": {
       src: MedusaIcon,
       width: 62,
-      height: 84,
+      height: 100,
       map: "Swamp of Peace",
       hp: "1,000,000,000",
     }
@@ -792,6 +792,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     alt={boss}
                                     style={{
                                       width: config.width,
+                                      height: config.height,
                                       objectFit: "contain",
                                     }}
                                   />
