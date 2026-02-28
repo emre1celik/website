@@ -300,8 +300,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Nix": {
       src: NixIcon,
-      width: 120,
-      height: 120,
+      width: 140,
+      height: 140,
       map: "Nixies Lake",
       hp: "1,800,000,000",
       defense: "9,100",
@@ -327,8 +327,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Core Magriffy": {
       src: CoreMagriffyIcon,
-      width: 80,
-      height: 80,
+      width: 130,
+      height: 130,
       map: "Nars, Acheron",
       hp: "2,000,000,000",
       defense: "7,650",
