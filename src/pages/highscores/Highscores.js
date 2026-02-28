@@ -296,8 +296,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Lord Silvester": {
       src: LordSilvesterIcon,
-      width: 100,
-      height: 100,
+      width: 90,
+      height: 90,
       map: "Uruk Mountain",
       hp: "1,000,000,000",
       defense: "7,400",
