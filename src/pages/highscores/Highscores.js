@@ -236,8 +236,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Zaikan": {
       src: ZaikanIcon,
-      width: 140,
-      height: 140,
+      width: 120,
+      height: 120,
       map: "Tarkan",
       hp: "300,000",
       defense: "2,500",
@@ -269,8 +269,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   const bossConfigMap = {
     "God of Darkness": {
       src: GodOfDarknessIcon,
-      width: 130,
-      height: 130,
+      width: 120,
+      height: 120,
       map: "Swamp of Darkness",
       hp: "2,000,000,000",
       defense: "10,000",
@@ -296,8 +296,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Lord Silvester": {
       src: LordSilvesterIcon,
-      width: 160,
-      height: 160,
+      width: 130,
+      height: 130,
       map: "Uruk Mountain",
       hp: "1,000,000,000",
       defense: "7,400",
