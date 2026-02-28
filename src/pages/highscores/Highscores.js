@@ -209,8 +209,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       width: 90,
       height: 90,
       map: "Devias",
-      hp: "75,000",
-      defense: "900",
+      hp: "100,000",
+      defense: "90",
       respawn: "60 min",
     },
 
@@ -218,20 +218,20 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       src: GorgonIcon,
       width: 95,
       height: 95,
-      map: "Devias",
-      hp: "45,000",
-      defense: "600",
-      respawn: "30 min",
+      map: "Dungeon 1 ~ 3",
+      hp: "120,000",
+      defense: "100",
+      respawn: "60 min",
     },
 
     "Hydra": {
       src: HydraIcon,
       width: 90,
       height: 90,
-      map: "Atlans",
-      hp: "200,000",
-      defense: "1,800",
-      respawn: "120 min",
+      map: "Atlans 1 ~ 3",
+      hp: "190,000",
+      defense: "200",
+      respawn: "60 min",
     },
 
     "Zaikan": {
@@ -239,9 +239,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       width: 85,
       height: 85,
       map: "Tarkan",
-      hp: "300,000",
-      defense: "2,500",
-      respawn: "120 min",
+      hp: "340,000",
+      defense: "400",
+      respawn: "60 min",
     },
 
     "Phoenix of Darkness": {
@@ -249,9 +249,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       width: 90,
       height: 90,
       map: "Icarus",
-      hp: "450,000",
-      defense: "3,500",
-      respawn: "180 min",
+      hp: "750,000",
+      defense: "500",
+      respawn: "60 min",
     },
 
     "Hellmaine": {
@@ -259,9 +259,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       width: 85,
       height: 85,
       map: "Aida",
-      hp: "600,000",
-      defense: "4,200",
-      respawn: "180 min",
+      hp: "1,000,000",
+      defense: "520",
+      respawn: "60 min",
     },
 
   };
