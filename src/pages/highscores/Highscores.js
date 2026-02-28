@@ -238,8 +238,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Red Dragon": {
       src: RedDragonIcon,
-      width: 160,
-      height: 160,
+      width: 150,
+      height: 150,
       map: "Lorencia / Noria / Devias",
       hp: "150,000",
       defense: "1,400",
