@@ -525,14 +525,14 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     "Medusa",
   ];
   const monsterDisplayOrder = [
-    "Ice Queen",
-    "Gorgon",
-    "Balrog",
-    "Red Dragon",
-    "Hydra",
-    "Zaikan",
-    "Phoenix of Darkness",
     "Hellmaine",
+    "Phoenix of Darkness",
+    "Zaikan",
+    "Hydra",
+    "Red Dragon",
+    "Balrog",
+    "Gorgon",
+    "Ice Queen",
   ];
   function getClassInfo(raceId) {
     const classId = parseInt(raceId, 10);
