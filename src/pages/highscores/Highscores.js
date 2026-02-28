@@ -53,6 +53,15 @@ import MaIcon from "../../assets/images/classes/ma.ico";
 import IkIcon from "../../assets/images/classes/ik.ico";
 import AlcIcon from "../../assets/images/classes/al.ico";
 
+import IceQueenIcon from "../../assets/images/monsters/ice_queen.png";
+import GorgonIcon from "../../assets/images/monsters/gorgon.png";
+import BalrogIcon from "../../assets/images/monsters/balrog.png";
+import RedDragonIcon from "../../assets/images/monsters/red_dragon.png";
+import HydraIcon from "../../assets/images/monsters/hydra.png";
+import ZaikanIcon from "../../assets/images/monsters/zaikan.png";
+import PhoenixIcon from "../../assets/images/monsters/phoenix_darkness.png";
+import HellmaineIcon from "../../assets/images/monsters/hellmaine.png";
+
 import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
 import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
 import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
@@ -195,7 +204,89 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       stats: "Strength • Agility • Hybrid Damage",
     },
   };
+  const monsterConfigMap = {
 
+    "Ice Queen": {
+      src: IceQueenIcon,
+      width: 90,
+      height: 90,
+      map: "Devias",
+      hp: "75,000",
+      defense: "900",
+      respawn: "60 min",
+    },
+
+    "Gorgon": {
+      src: GorgonIcon,
+      width: 85,
+      height: 85,
+      map: "Devias",
+      hp: "45,000",
+      defense: "600",
+      respawn: "30 min",
+    },
+
+    "Balrog": {
+      src: BalrogIcon,
+      width: 95,
+      height: 95,
+      map: "Atlans",
+      hp: "120,000",
+      defense: "1,200",
+      respawn: "60 min",
+    },
+
+    "Red Dragon": {
+      src: RedDragonIcon,
+      width: 110,
+      height: 110,
+      map: "Lorencia / Noria / Devias",
+      hp: "150,000",
+      defense: "1,400",
+      respawn: "90 min",
+    },
+
+    "Hydra": {
+      src: HydraIcon,
+      width: 110,
+      height: 110,
+      map: "Atlans",
+      hp: "200,000",
+      defense: "1,800",
+      respawn: "120 min",
+    },
+
+    "Zaikan": {
+      src: ZaikanIcon,
+      width: 100,
+      height: 100,
+      map: "Tarkan",
+      hp: "300,000",
+      defense: "2,500",
+      respawn: "120 min",
+    },
+
+    "Phoenix of Darkness": {
+      src: PhoenixIcon,
+      width: 120,
+      height: 120,
+      map: "Icarus",
+      hp: "450,000",
+      defense: "3,500",
+      respawn: "180 min",
+    },
+
+    "Hellmaine": {
+      src: HellmaineIcon,
+      width: 120,
+      height: 120,
+      map: "Aida",
+      hp: "600,000",
+      defense: "4,200",
+      respawn: "180 min",
+    },
+
+  };
   const [bossData, setBossData] = useState({});
   const bossConfigMap = {
     "God of Darkness": {
@@ -829,133 +920,161 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     </PlayerGrid>
                   )}
                 </>
-              )}
-              {activeTab === "bosses" && (
+              )}{activeTab === "monsters" && (
                 <>
                   {loading ? (
-                    <div style={{
-                      minHeight: "150px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center"
-                    }}>
+                    <div
+                      style={{
+                        minHeight: "150px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
                       <FontAwesomeIcon icon={faSpinner} spin />
-                      &nbsp;Loading Boss Rankings...
+                      &nbsp;Loading Monster Rankings...
                     </div>
                   ) : (
                     <BossGrid>
 
-                      {bossDisplayOrder
-                        .filter(boss => bosses.includes(boss))
-                        .map((boss) => {
+                      {monsters.map((monster) => {
 
-                          const config = bossConfigMap[boss];
-                          const rows = bossData[boss] || [];
+                        const config = monsterConfigMap[monster];
+                        const rows = monsterData[monster] || [];
 
-                          if (!config) return null;
+                        // skip monsters without config
+                        if (!config) return null;
 
-                          return (
-                            <BossCard key={boss}>
+                        return (
+                          <BossCard key={monster}>
 
-                              {/* HEADER */}
-                              <BossHeader>
+                            {/* HEADER */}
+                            <BossHeader>
 
-                                <ClassIconBackground iconScale={60} size={90}>
-                                  <img
-                                    src={config.src}
-                                    alt={boss}
-                                    style={{
-                                      width: config.width,
-                                      height: config.height,
-                                      objectFit: "contain",
-                                    }}
-                                  />
-                                </ClassIconBackground>
+                              <ClassIconBackground iconScale={60} size={90}>
+                                <img
+                                  src={config.src}
+                                  alt={monster}
+                                  style={{
+                                    width: config.width,
+                                    height: config.height,
+                                    objectFit: "contain",
+                                  }}
+                                />
+                              </ClassIconBackground>
 
-                                <BossText>
-                                  <BossTitle>{boss}</BossTitle>
+                              <BossText>
+                                <BossTitle>{monster}</BossTitle>
 
-                                  <BossSubtitle>
-                                    <span><strong>Location:</strong> {config.map}</span>
-                                    <span>
-                                      <strong>HP:</strong> {config.hp}
-                                    </span>
-                                    <span>
-                                      <strong>Defense:</strong> {config.defense}
-                                    </span>
-                                    <span>
-                                      <strong>Respawn:</strong> {config.respawn}
-                                    </span>
-                                  </BossSubtitle>
-                                </BossText>
+                                <BossSubtitle>
+                                  <span>
+                                    <strong>Location:</strong> {config.map}
+                                  </span>
+                                  <span>
+                                    <strong>HP:</strong> {config.hp}
+                                  </span>
+                                  <span>
+                                    <strong>Defense:</strong> {config.defense}
+                                  </span>
+                                  <span>
+                                    <strong>Respawn:</strong> {config.respawn}
+                                  </span>
+                                </BossSubtitle>
+                              </BossText>
 
-                              </BossHeader>
+                            </BossHeader>
 
-                              {/* TABLE */}
-                              <BossTableWrapper>
-                                <HighscoresTable>
-                                  <thead>
-                                    <tr>
-                                      <th>Rank</th>
-                                      <th>Player</th>
-                                      <th>Kills</th>
+                            {/* TABLE */}
+                            <BossTableWrapper>
+                              <HighscoresTable>
+                                <thead>
+                                  <tr>
+                                    <th>Rank</th>
+                                    <th>Player</th>
+                                    <th>Kills</th>
+                                  </tr>
+                                </thead>
+
+                                <tbody>
+                                  {rows.map((row, index) => (
+                                    <tr key={index}>
+                                      <td>
+                                        {index + 1}
+
+                                        {index < 3 && (
+                                          <RankIcon
+                                            style={{
+                                              color:
+                                                index === 0
+                                                  ? "gold"
+                                                  : index === 1
+                                                    ? "silver"
+                                                    : "#cd7f32",
+                                            }}
+                                          >
+                                            <FontAwesomeIcon icon={faCrown} />
+                                          </RankIcon>
+                                        )}
+                                      </td>
+
+                                      <td>
+                                        <GlowingName rank={index}>
+                                          {row.name}
+                                        </GlowingName>
+                                      </td>
+
+                                      <td>{row.kills}</td>
                                     </tr>
-                                  </thead>
+                                  ))}
+                                </tbody>
+                              </HighscoresTable>
+                            </BossTableWrapper>
 
-                                  <tbody>
-                                    {rows.map((row, index) => (
-                                      <tr key={index}>
-                                        <td>
-                                          {index + 1}
-                                          {index < 3 && (
-                                            <RankIcon
-                                              style={{
-                                                color:
-                                                  index === 0
-                                                    ? "gold"
-                                                    : index === 1
-                                                      ? "silver"
-                                                      : "#cd7f32",
-                                              }}
-                                            >
-                                              <FontAwesomeIcon icon={faCrown} />
-                                            </RankIcon>
-                                          )}
-                                        </td>
+                          </BossCard>
+                        );
+                      })}
 
-                                        <td>
-                                          <GlowingName rank={index}>
-                                            {row.name}
-                                          </GlowingName>
-                                        </td>
-
-                                        <td>{row.kills}</td>
-                                      </tr>
-                                    ))}
-                                  </tbody>
-
-                                </HighscoresTable>
-                              </BossTableWrapper>
-
-                            </BossCard>
-                          );
-                        })}
                     </BossGrid>
                   )}
                 </>
               )}{activeTab === "monsters" && (
                 <BossGrid>
+
                   {monsters.map(monster => {
 
+                    const config = monsterConfigMap[monster];
                     const rows = monsterData[monster] || [];
+
+                    if (!config) return null;
 
                     return (
                       <BossCard key={monster}>
 
                         <BossHeader>
+
+                          <ClassIconBackground iconScale={60} size={90}>
+                            <img
+                              src={config.src}
+                              alt={monster}
+                              style={{
+                                width: config.width,
+                                height: config.height,
+                                objectFit: "contain"
+                              }}
+                            />
+                          </ClassIconBackground>
+
                           <BossText>
                             <BossTitle>{monster}</BossTitle>
+
+                            <BossSubtitle>
+                              <span><strong>Location:</strong> {config.map}</span>
+                              <span><strong>HP:</strong> {config.hp}</span>
+                              <span><strong>Defense:</strong> {config.defense}</span>
+                              <span><strong>Spawn:</strong> {config.respawn}</span>
+                            </BossSubtitle>
                           </BossText>
+
                         </BossHeader>
 
                         <BossTableWrapper>
@@ -971,22 +1090,42 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                             <tbody>
                               {rows.map((row, index) => (
                                 <tr key={index}>
-                                  <td>{index + 1}</td>
+                                  <td>
+                                    {index + 1}
+                                    {index < 3 && (
+                                      <RankIcon
+                                        style={{
+                                          color:
+                                            index === 0
+                                              ? "gold"
+                                              : index === 1
+                                                ? "silver"
+                                                : "#cd7f32"
+                                        }}
+                                      >
+                                        <FontAwesomeIcon icon={faCrown} />
+                                      </RankIcon>
+                                    )}
+                                  </td>
+
                                   <td>
                                     <GlowingName rank={index}>
                                       {row.name}
                                     </GlowingName>
                                   </td>
+
                                   <td>{row.kills}</td>
                                 </tr>
                               ))}
                             </tbody>
+
                           </HighscoresTable>
                         </BossTableWrapper>
 
                       </BossCard>
                     );
                   })}
+
                 </BossGrid>
               )}
               {activeTab === "events" && (
