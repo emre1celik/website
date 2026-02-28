@@ -269,8 +269,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   const bossConfigMap = {
     "God of Darkness": {
       src: GodOfDarknessIcon,
-      width: 120,
-      height: 120,
+      width: 90,
+      height: 90,
       map: "Swamp of Darkness",
       hp: "2,000,000,000",
       defense: "10,000",
@@ -278,8 +278,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Nix": {
       src: NixIcon,
-      width: 125,
-      height: 125,
+      width: 90,
+      height: 90,
       map: "Nixies Lake",
       hp: "1,800,000,000",
       defense: "9,100",
@@ -287,8 +287,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Lord of Ferea": {
       src: LordFereaIcon,
-      width: 130,
-      height: 130,
+      width: 95,
+      height: 95,
       map: "Ferea",
       hp: "2,000,000,000",
       defense: "8,500",
@@ -296,8 +296,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Lord Silvester": {
       src: LordSilvesterIcon,
-      width: 130,
-      height: 130,
+      width: 100,
+      height: 100,
       map: "Uruk Mountain",
       hp: "1,000,000,000",
       defense: "7,400",
@@ -305,8 +305,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Core Magriffy": {
       src: CoreMagriffyIcon,
-      width: 130,
-      height: 130,
+      width: 90,
+      height: 90,
       map: "Nars, Acheron",
       hp: "2,000,000,000",
       defense: "7,650",
@@ -314,8 +314,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Selupan": {
       src: SelupanIcon,
-      width: 120,
-      height: 120,
+      width: 90,
+      height: 90,
       map: "Raklion",
       hp: "800,000,000",
       defense: "6,250",
@@ -323,8 +323,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Nightmare": {
       src: NightmareIcon,
-      width: 80,
-      height: 100,
+      width: 90,
+      height: 90,
       map: "Kanturu Core",
       hp: "150,000,000",
       defense: "6,000",
@@ -332,8 +332,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Kundun": {
       src: KundunIcon,
-      width: 150,
-      height: 150,
+      width: 110,
+      height: 110,
       map: "Kalima",
       hp: "50,000,000",
       defense: "1,500",
@@ -341,8 +341,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Medusa": {
       src: MedusaIcon,
-      width: 150,
-      height: 150,
+      width: 105,
+      height: 105,
       map: "Swamp of Peace",
       hp: "2,000,000,000",
       defense: "5,500",
