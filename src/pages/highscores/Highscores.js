@@ -238,8 +238,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Red Dragon": {
       src: RedDragonIcon,
-      width: 140,
-      height: 140,
+      width: 160,
+      height: 160,
       map: "Lorencia / Noria / Devias",
       hp: "150,000",
       defense: "1,400",
@@ -300,8 +300,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Nix": {
       src: NixIcon,
-      width: 80,
-      height: 80,
+      width: 120,
+      height: 120,
       map: "Nixies Lake",
       hp: "1,800,000,000",
       defense: "9,100",
