@@ -236,8 +236,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Zaikan": {
       src: ZaikanIcon,
-      width: 90,
-      height: 90,
+      width: 85,
+      height: 85,
       map: "Tarkan",
       hp: "300,000",
       defense: "2,500",
@@ -256,8 +256,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Hellmaine": {
       src: HellmaineIcon,
-      width: 90,
-      height: 90,
+      width: 85,
+      height: 85,
       map: "Aida",
       hp: "600,000",
       defense: "4,200",
