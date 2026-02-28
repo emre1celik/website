@@ -85,6 +85,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   const [loadingGuilds, setLoadingGuilds] = useState(false);
   const [errorEvents, setErrorEvents] = useState("");
   const [errorGuilds, setErrorGuilds] = useState("");
+  const [monsters, setMonsters] = useState([]);
+  const [monsterData, setMonsterData] = useState({});
   const classNamesMap = {
     dw: "Dark Wizard",
     dk: "Dark Knight",
@@ -298,6 +300,38 @@ function Highscores({ user, currentTheme, onThemeChange }) {
         setBosses(data.bosses || []);
       });
   }, []);
+  useEffect(() => {
+    fetch("https://api.myramu.online/api/monsters")
+      .then(res => res.json())
+      .then(data => {
+        setMonsters(data.monsters || []);
+      });
+  }, []);
+  useEffect(() => {
+
+    if (monsters.length === 0 || Object.keys(monsterData).length > 0)
+      return;
+
+    Promise.all(
+      monsters.map(monster =>
+        fetch(
+          `https://api.myramu.online/api/top-monster-kills?monster=${encodeURIComponent(monster)}&limit=10`
+        )
+          .then(res => res.json())
+          .then(data => ({ monster, data: data.top_kills || [] }))
+      )
+    ).then(results => {
+
+      const map = {};
+
+      results.forEach(({ monster, data }) => {
+        map[monster] = data;
+      });
+
+      setMonsterData(map);
+    });
+
+  }, [monsters, monsterData]);
   useEffect(() => {
     if (bosses.length === 0 || Object.keys(bossData).length > 0) return;
 
@@ -573,7 +607,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 <FontAwesomeIcon icon={faSkull} />
                 <span>{translate("highscores.topBoss")}</span>
               </ControlPanelTabButton>
-
+              <ControlPanelTabButton
+                active={activeTab === "monsters"}
+                onClick={() => setActiveTab("monsters")}
+              >
+                <FontAwesomeIcon icon={faSkull} />
+                <span>Top Monsters</span>
+              </ControlPanelTabButton>
               <ControlPanelTabButton
                 active={activeTab === "events"}
                 onClick={() => setActiveTab("events")}
@@ -901,6 +941,51 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     </BossGrid>
                   )}
                 </>
+              )}{activeTab === "monsters" && (
+                <BossGrid>
+                  {monsters.map(monster => {
+
+                    const rows = monsterData[monster] || [];
+
+                    return (
+                      <BossCard key={monster}>
+
+                        <BossHeader>
+                          <BossText>
+                            <BossTitle>{monster}</BossTitle>
+                          </BossText>
+                        </BossHeader>
+
+                        <BossTableWrapper>
+                          <HighscoresTable>
+                            <thead>
+                              <tr>
+                                <th>Rank</th>
+                                <th>Player</th>
+                                <th>Kills</th>
+                              </tr>
+                            </thead>
+
+                            <tbody>
+                              {rows.map((row, index) => (
+                                <tr key={index}>
+                                  <td>{index + 1}</td>
+                                  <td>
+                                    <GlowingName rank={index}>
+                                      {row.name}
+                                    </GlowingName>
+                                  </td>
+                                  <td>{row.kills}</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </HighscoresTable>
+                        </BossTableWrapper>
+
+                      </BossCard>
+                    );
+                  })}
+                </BossGrid>
               )}
               {activeTab === "events" && (
                 <>
