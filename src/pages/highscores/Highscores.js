@@ -300,8 +300,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Nix": {
       src: NixIcon,
-      width: 140,
-      height: 140,
+      width: 125,
+      height: 125,
       map: "Nixies Lake",
       hp: "1,800,000,000",
       defense: "9,100",
