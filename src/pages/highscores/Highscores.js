@@ -238,8 +238,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Red Dragon": {
       src: RedDragonIcon,
-      width: 150,
-      height: 150,
+      width: 135,
+      height: 135,
       map: "Lorencia / Noria / Devias",
       hp: "150,000",
       defense: "1,400",
@@ -336,8 +336,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Selupan": {
       src: SelupanIcon,
-      width: 90,
-      height: 90,
+      width: 120,
+      height: 120,
       map: "Raklion",
       hp: "800,000,000",
       defense: "6,250",
@@ -354,8 +354,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Kundun": {
       src: KundunIcon,
-      width: 90,
-      height: 90,
+      width: 150,
+      height: 150,
       map: "Kalima",
       hp: "50,000,000",
       defense: "1,500",
@@ -363,8 +363,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Medusa": {
       src: MedusaIcon,
-      width: 100,
-      height: 100,
+      width: 150,
+      height: 150,
       map: "Swamp of Peace",
       hp: "2,000,000,000",
       defense: "5,500",
