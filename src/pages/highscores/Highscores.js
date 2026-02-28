@@ -318,8 +318,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Lord Silvester": {
       src: LordSilvesterIcon,
-      width: 150,
-      height: 150,
+      width: 190,
+      height: 190,
       map: "Uruk Mountain",
       hp: "1,000,000,000",
       defense: "7,400",
@@ -517,12 +517,12 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     "God of Darkness",
     "Nix",
     "Lord of Ferea",
-    "Selupan",
     "Core Magriffy",
     "Lord Silvester",
+    "Medusa",
+    "Selupan",
     "Nightmare",
     "Kundun",
-    "Medusa",
   ];
   const monsterDisplayOrder = [
     "Hellmaine",
