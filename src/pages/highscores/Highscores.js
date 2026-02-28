@@ -203,7 +203,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Swamp of Darkness",
       hp: "2,000,000,000",
       defense: "10,000",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     },
     "Nix": {
       src: NixIcon,
@@ -212,7 +212,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Nixies Lake",
       hp: "1,800,000,000",
       defense: "9,100",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     },
     "Lord of Ferea": {
       src: LordFereaIcon,
@@ -221,7 +221,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Ferea",
       hp: "2,000,000,000",
       defense: "8,500",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     },
     "Lord Silvester": {
       src: LordSilvesterIcon,
@@ -230,7 +230,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Uruk Mountain",
       hp: "1,000,000,000",
       defense: "7,400",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     },
     "Core Magriffy": {
       src: CoreMagriffyIcon,
@@ -239,7 +239,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Nars, Acheron",
       hp: "2,000,000,000",
       defense: "7,650",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     },
     "Selupan": {
       src: SelupanIcon,
@@ -248,7 +248,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Raklion",
       hp: "800,000,000",
       defense: "6,250",
-      respawn: "24 hours",
+      respawn: "2 hours",
     },
     "Nightmare": {
       src: NightmareIcon,
@@ -257,7 +257,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Kanturu Core",
       hp: "150,000,000",
       defense: "6,000",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     },
     "Kundun": {
       src: KundunIcon,
@@ -266,7 +266,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Kalima",
       hp: "50,000,000",
       defense: "1,500",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     },
     "Medusa": {
       src: MedusaIcon,
@@ -275,7 +275,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       map: "Swamp of Peace",
       hp: "2,000,000,000",
       defense: "5,500",
-      respawn: "24 hours",
+      respawn: "2 ~ 4 hours",
     }
   };
 
