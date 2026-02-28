@@ -278,8 +278,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Nix": {
       src: NixIcon,
-      width: 90,
-      height: 90,
+      width: 85,
+      height: 85,
       map: "Nixies Lake",
       hp: "1,800,000,000",
       defense: "9,100",
@@ -341,8 +341,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     },
     "Medusa": {
       src: MedusaIcon,
-      width: 105,
-      height: 105,
+      width: 85,
+      height: 85,
       map: "Swamp of Peace",
       hp: "2,000,000,000",
       defense: "5,500",
