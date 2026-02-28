@@ -30,7 +30,7 @@ import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCrown, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { faCrown, faKhanda, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { ClassIconBackground } from "./HighscoresStyles";
 import {
   faUsers,
@@ -712,7 +712,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 active={activeTab === "monsters"}
                 onClick={() => setActiveTab("monsters")}
               >
-                <FontAwesomeIcon icon={faSkull} />
+                <FontAwesomeIcon icon={faKhanda} />
                 <span>{translate("highscores.topMonsters")}</span>
               </ControlPanelTabButton>
 
