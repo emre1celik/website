@@ -55,8 +55,6 @@ import AlcIcon from "../../assets/images/classes/al.ico";
 
 import IceQueenIcon from "../../assets/images/monsters/ice_queen.png";
 import GorgonIcon from "../../assets/images/monsters/gorgon.png";
-import BalrogIcon from "../../assets/images/monsters/balrog.png";
-import RedDragonIcon from "../../assets/images/monsters/red_dragon.png";
 import HydraIcon from "../../assets/images/monsters/hydra.png";
 import ZaikanIcon from "../../assets/images/monsters/zaikan.png";
 import PhoenixIcon from "../../assets/images/monsters/phoenix_darkness.png";
@@ -224,26 +222,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
       hp: "45,000",
       defense: "600",
       respawn: "30 min",
-    },
-
-    "Balrog": {
-      src: BalrogIcon,
-      width: 120,
-      height: 120,
-      map: "Atlans",
-      hp: "120,000",
-      defense: "1,200",
-      respawn: "60 min",
-    },
-
-    "Red Dragon": {
-      src: RedDragonIcon,
-      width: 135,
-      height: 135,
-      map: "Lorencia / Noria / Devias",
-      hp: "150,000",
-      defense: "1,400",
-      respawn: "90 min",
     },
 
     "Hydra": {
@@ -529,8 +507,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
     "Phoenix of Darkness",
     "Zaikan",
     "Hydra",
-    "Red Dragon",
-    "Balrog",
     "Gorgon",
     "Ice Queen",
   ];
