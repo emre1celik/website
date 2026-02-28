@@ -206,8 +206,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Ice Queen": {
       src: IceQueenIcon,
-      width: 120,
-      height: 120,
+      width: 90,
+      height: 90,
       map: "Devias",
       hp: "75,000",
       defense: "900",
@@ -216,8 +216,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Gorgon": {
       src: GorgonIcon,
-      width: 120,
-      height: 120,
+      width: 95,
+      height: 95,
       map: "Devias",
       hp: "45,000",
       defense: "600",
@@ -226,8 +226,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Hydra": {
       src: HydraIcon,
-      width: 110,
-      height: 110,
+      width: 90,
+      height: 90,
       map: "Atlans",
       hp: "200,000",
       defense: "1,800",
@@ -236,8 +236,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Zaikan": {
       src: ZaikanIcon,
-      width: 120,
-      height: 120,
+      width: 90,
+      height: 90,
       map: "Tarkan",
       hp: "300,000",
       defense: "2,500",
@@ -246,8 +246,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Phoenix of Darkness": {
       src: PhoenixIcon,
-      width: 120,
-      height: 120,
+      width: 90,
+      height: 90,
       map: "Icarus",
       hp: "450,000",
       defense: "3,500",
@@ -256,8 +256,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Hellmaine": {
       src: HellmaineIcon,
-      width: 120,
-      height: 120,
+      width: 90,
+      height: 90,
       map: "Aida",
       hp: "600,000",
       defense: "4,200",
