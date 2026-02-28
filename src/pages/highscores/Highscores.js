@@ -208,8 +208,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Ice Queen": {
       src: IceQueenIcon,
-      width: 90,
-      height: 90,
+      width: 120,
+      height: 120,
       map: "Devias",
       hp: "75,000",
       defense: "900",
@@ -218,8 +218,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Gorgon": {
       src: GorgonIcon,
-      width: 85,
-      height: 85,
+      width: 120,
+      height: 120,
       map: "Devias",
       hp: "45,000",
       defense: "600",
@@ -228,8 +228,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
 
     "Balrog": {
       src: BalrogIcon,
-      width: 95,
-      height: 95,
+      width: 120,
+      height: 120,
       map: "Atlans",
       hp: "120,000",
       defense: "1,200",
