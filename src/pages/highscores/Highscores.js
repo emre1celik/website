@@ -834,7 +834,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                   <BossTitle>{boss}</BossTitle>
 
                                   <BossSubtitle>
-                                    <span>{config.map}</span>
+                                    <span><strong>Location:</strong> {config.map}</span>
                                     <span>
                                       <strong>HP:</strong> {config.hp}
                                     </span>
