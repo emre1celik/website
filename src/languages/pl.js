@@ -342,6 +342,7 @@ export default {
     topBoss: "Bossowie",
     life: "Życie",
     mana: "Mana",
+    topMonsters: "Potwory",
     loadingPlayers: "Ładowanie najlepszych graczy...",
     filterByClass: "Filtruj według klasy:",
     rank: "Pozycja",

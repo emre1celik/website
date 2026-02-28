@@ -351,6 +351,7 @@ export default {
     mana: "Mana",
     topGuilds: "Gildes",
     topBoss: "Bosi",
+    topMonsters: "Monstri",
     loadingPlayers: "Ielādē labākos spēlētājus...",
     filterByClass: "Filtrēt pēc klases:",
     rank: "Rangs",

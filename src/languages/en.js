@@ -378,6 +378,7 @@ export default {
     topEvents: "Events",
     topGuilds: "Guilds",
     topBoss: "Bosses",
+    topMonsters: "Monsters",
     loadingPlayers: "Loading top players...",
     filterByClass: "Filter by class:",
     all: "All",

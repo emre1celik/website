@@ -421,6 +421,7 @@ export default {
     gens: "Gens",
     kills: "Số lần tiêu diệt",
     money: "Zen",
+    topMonsters: "Quái vật",
     ruud_money: "Ruud",
     topGuilds: "Top guild",
     loadingPlayers: "Đang tải bảng xếp hạng...",

@@ -354,6 +354,7 @@ export default {
     topEvents: "Sündmused",
     topGuilds: "Gildid",
     topBoss: "Jälgid",
+    topMonsters: "Koletised",
     loadingPlayers: "Laadimine parimad mängijad...",
     filterByClass: "Filtreeri klassi järgi:",
     kills: "Tapmised",

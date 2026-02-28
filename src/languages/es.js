@@ -355,6 +355,7 @@ export default {
     title: "Clasificación",
     topPlayers: "Jugadores",
     topBoss: "Jefes",
+    topMonsters: "Monstruos",
     money: "Zen",
     ruud_money: "Ruud",
     gens: "Gens",

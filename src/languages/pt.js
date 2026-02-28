@@ -343,6 +343,7 @@ export default {
     ruud_money: "Ruud",
     life: "Vida",
     mana: "Mana",
+    topMonsters: "Monstros",
     topGuilds: "Guildas",
     loadingPlayers: "Carregando melhores jogadores...",
     filterByClass: "Filtrar por classe:",

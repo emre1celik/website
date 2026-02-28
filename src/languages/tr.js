@@ -359,6 +359,7 @@ export default {
     loadingPlayers: "En iyi oyuncular yükleniyor...",
     filterByClass: "Sınıfa göre filtrele:",
     rank: "Sıra",
+    topMonsters: "Canavarlar",
     name: "İsim",
     all: "Hepsi",
     gens: "Gens",

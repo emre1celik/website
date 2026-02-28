@@ -607,13 +607,15 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 <FontAwesomeIcon icon={faSkull} />
                 <span>{translate("highscores.topBoss")}</span>
               </ControlPanelTabButton>
+
               <ControlPanelTabButton
                 active={activeTab === "monsters"}
                 onClick={() => setActiveTab("monsters")}
               >
                 <FontAwesomeIcon icon={faSkull} />
-                <span>Top Monsters</span>
+                <span>{translate("highscores.topMonsters")}</span>
               </ControlPanelTabButton>
+
               <ControlPanelTabButton
                 active={activeTab === "events"}
                 onClick={() => setActiveTab("events")}

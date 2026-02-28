@@ -344,6 +344,7 @@ export default {
     loadingPlayers: "Загрузка лучших игроков...",
     filterByClass: "Фильтр по классу:",
     topBoss: "Боссы",
+    topMonsters: "Монстры",
     kills: "Убийства",
     rank: "Ранг",
     name: "Имя",
