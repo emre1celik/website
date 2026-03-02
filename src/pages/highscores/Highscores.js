@@ -772,6 +772,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                 <th>{translate("highscores.rank")}</th>
                                 <th>{translate("highscores.name")}</th>
                                 <th>{translate("highscores.resets")}</th>
+                                <th>{translate("highscores.class")}</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -806,6 +807,25 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     </GlowingName>
                                   </td>
                                   <td>{Number(p.reset) + Number(p.grand_reset) * 100}</td>
+                                  <td>
+                                    {(() => {
+                                      const { icon, key } = getClassInfo(p.race);
+
+                                      return (
+                                        <ClassIconBackground size={36} iconScale={60}>
+                                          <img
+                                            src={icon}
+                                            alt={key}
+                                            style={{
+                                              width: "70%",
+                                              height: "70%",
+                                              objectFit: "contain",
+                                            }}
+                                          />
+                                        </ClassIconBackground>
+                                      );
+                                    })()}
+                                  </td>
                                 </tr>
                               ))}
                             </tbody>
