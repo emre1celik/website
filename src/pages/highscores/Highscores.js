@@ -808,11 +808,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                   </td>
                                   <td>{Number(p.reset) + Number(p.grand_reset) * 100}</td>
                                   <td
-                                    style={{
-                                      display: "flex",
-                                      justifyContent: "center",
-                                      alignItems: "center",
-                                    }}
                                   >
                                     {(() => {
                                       const { icon, key } = getClassInfo(p.race);
