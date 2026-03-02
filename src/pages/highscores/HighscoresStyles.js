@@ -84,8 +84,8 @@ export const ClassIconBackground = styled.div`
   align-items: center;
   justify-content: center;
 
-  border-radius: 12px;
-
+  border-radius: ${({ size }) =>
+    size ? `${Math.min(size * 0.2, 12)}px` : "12px"};
   background: rgba(120,120,120,0.18);
   border: 1px solid rgba(255,255,255,0.15);
 
