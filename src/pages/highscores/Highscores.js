@@ -818,7 +818,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                             src={icon}
                                             alt={key}
                                             style={{
-                                              width: "23px",
+                                              width: "80%",
+                                              height: "80%",
                                               objectFit: "contain",
                                             }}
                                           /></ClassIconBackground>
