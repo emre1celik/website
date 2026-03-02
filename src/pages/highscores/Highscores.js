@@ -807,12 +807,12 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     </GlowingName>
                                   </td>
                                   <td>{Number(p.reset) + Number(p.grand_reset) * 100}</td>
-                                  <td>
+                                  <td style={{ textAlign: "center" }}>
                                     {(() => {
                                       const { icon, key } = getClassInfo(p.race);
 
                                       return (
-                                        <ClassIconBackground size={20} iconScale={60}>
+                                        <ClassIconBackground size={25} iconScale={60}>
                                           <img
                                             src={icon}
                                             alt={key}
