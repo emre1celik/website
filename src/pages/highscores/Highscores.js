@@ -812,7 +812,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                       const { icon, key } = getClassInfo(p.race);
 
                                       return (
-                                        <ClassIconBackground size={20} iconScale={30}>
+                                        <ClassIconBackground size={20} iconScale={60}>
                                           <img
                                             src={icon}
                                             alt={key}
