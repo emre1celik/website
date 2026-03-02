@@ -818,17 +818,15 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                       const { icon, key } = getClassInfo(p.race);
 
                                       return (
-                                        <ClassIconBackground size={25} iconScale={60}>
-                                          <img
-                                            src={icon}
-                                            alt={key}
-                                            style={{
-                                              width: "70%",
-                                              height: "70%",
-                                              objectFit: "contain",
-                                            }}
-                                          />
-                                        </ClassIconBackground>
+                                        <img
+                                          src={icon}
+                                          alt={key}
+                                          style={{
+                                            width: "70%",
+                                            height: "70%",
+                                            objectFit: "contain",
+                                          }}
+                                        />
                                       );
                                     })()}
                                   </td>
