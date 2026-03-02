@@ -994,6 +994,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                       <th>Rank</th>
                                       <th>Player</th>
                                       <th>Kills</th>
+                                      <th>Class</th>
                                     </tr>
                                   </thead>
 
@@ -1025,6 +1026,18 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                         </td>
 
                                         <td>{row.kills}</td>
+                                        <td className="iconCell">
+                                          {(() => {
+                                            const { icon } = getClassInfo(row.race);
+                                            return (
+                                              <img
+                                                src={icon}
+                                                alt="class"
+                                                style={{ width: 20, height: 20 }}
+                                              />
+                                            );
+                                          })()}
+                                        </td>
                                       </tr>
                                     ))}
                                   </tbody>
@@ -1112,6 +1125,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                       <th>Rank</th>
                                       <th>Player</th>
                                       <th>Kills</th>
+                                      <th>Class</th>
                                     </tr>
                                   </thead>
 
@@ -1144,6 +1158,18 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                         </td>
 
                                         <td>{row.kills}</td>
+                                        <td className="iconCell">
+                                          {(() => {
+                                            const { icon } = getClassInfo(row.race);
+                                            return (
+                                              <img
+                                                src={icon}
+                                                alt="class"
+                                                style={{ width: 20, height: 20 }}
+                                              />
+                                            );
+                                          })()}
+                                        </td>
                                       </tr>
                                     ))}
                                   </tbody>
