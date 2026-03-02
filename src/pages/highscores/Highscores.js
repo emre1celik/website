@@ -1259,7 +1259,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     <p style={{ color: "red" }}>{errorGuilds}</p>
                   ) : (
                     <PlayerGrid style={{ display: "block" }}>
-                      <PlayerCard style={{ height: "650px", width: "100%" }}>
+                      <PlayerCard style={{ height: "550px", width: "100%" }}>
                         <BossTableWrapper>
                           <HighscoresTable>
                             <thead>
