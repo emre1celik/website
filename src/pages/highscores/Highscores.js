@@ -817,8 +817,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           src={icon}
                                           alt={key}
                                           style={{
-                                            width: "20px",
-                                            height: "20px",
+                                            width: "17px",
+                                            height: "17px",
                                             objectFit: "contain",
                                           }}
                                         />
@@ -1033,7 +1033,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                               <img
                                                 src={icon}
                                                 alt="class"
-                                                style={{ width: 20, height: 20 }}
+                                                style={{ width: 17, height: 17 }}
                                               />
                                             );
                                           })()}
@@ -1165,7 +1165,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                               <img
                                                 src={icon}
                                                 alt="class"
-                                                style={{ width: 20, height: 20 }}
+                                                style={{ width: 17, height: 17 }}
                                               />
                                             );
                                           })()}
