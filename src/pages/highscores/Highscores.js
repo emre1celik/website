@@ -817,8 +817,8 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           src={icon}
                                           alt={key}
                                           style={{
-                                            width: "22%",
-                                            height: "22%",
+                                            maxWidth: "15px",
+                                            maxHeight: "15px",
                                             objectFit: "contain",
                                           }}
                                         />
