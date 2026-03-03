@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "../../../context/TranslationContext";
 import { faCrown, faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, getClassInfo, BossTitle, ClassIconBackground, GlowingName, HighscoresTable, RankIcon } from "../HighscoresStyles";
+import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, BossTitle, ClassIconBackground, GlowingName, HighscoresTable, RankIcon, HighscoreClassIconImage } from "../HighscoresStyles";
 
 function HighscoresEvents({
     activeTab,
@@ -10,7 +10,8 @@ function HighscoresEvents({
     eventMeta,
     eventsByType,
     setSelectedPlayer,
-    formatNumber
+    formatNumber,
+    getClassInfo
 }) {
     const { translate } = useTranslation();
     return (activeTab === "events" && (
