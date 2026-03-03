@@ -812,19 +812,11 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     {(() => {
                                       const { icon, key } = getClassInfo(p.race);
 
-                                      return (
-                                        <div style={{ border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}>
-                                          <img
-                                            src={icon}
-                                            alt={key}
-                                            style={{
-                                              width: "17px",
-                                              height: "17px",
-                                              padding: "2px",
-                                              objectFit: "contain",
-                                            }}
-                                          />
-                                        </div>
+                                      return (<img
+                                        src={icon}
+                                        alt={key}
+                                        style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
+                                      />
                                       );
                                     })()}
                                   </td>
@@ -1033,13 +1025,11 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           {(() => {
                                             const { icon } = getClassInfo(row.race);
                                             return (
-
-                                              <div style={{ border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}>
-                                                <img
-                                                  src={icon}
-                                                  alt="class"
-                                                  style={{ width: 17, height: 17 }}
-                                                /></div>
+                                              <img
+                                                src={icon}
+                                                alt="class"
+                                                style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
+                                              />
                                             );
                                           })()}
                                         </td>
@@ -1167,13 +1157,11 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           {(() => {
                                             const { icon } = getClassInfo(row.race);
                                             return (
-
-                                              <div style={{ border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}>
-                                                <img
-                                                  src={icon}
-                                                  alt="class"
-                                                  style={{ width: 17, height: 17 }}
-                                                /></div>
+                                              <img
+                                                src={icon}
+                                                alt="class"
+                                                style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
+                                              />
                                             );
                                           })()}
                                         </td>
@@ -1404,7 +1392,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                         <img
                           src={icon}
                           alt={key}
-                          style={{ width: 20, height: 20 }}
+                          style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
                         />
                         {classNamesMap[key] || "Unknown"}
                       </strong>
