@@ -815,7 +815,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                       return (<img
                                         src={icon}
                                         alt={key}
-                                        style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
+                                        style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
                                       />
                                       );
                                     })()}
@@ -1028,7 +1028,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                               <img
                                                 src={icon}
                                                 alt="class"
-                                                style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
+                                                style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
                                               />
                                             );
                                           })()}
@@ -1392,7 +1392,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                         <img
                           src={icon}
                           alt={key}
-                          style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
+                          style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
                         />
                         {classNamesMap[key] || "Unknown"}
                       </strong>
