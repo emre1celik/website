@@ -234,7 +234,7 @@ export const HighscoresTable = styled.table`
 
   th,
   td {
-    padding: 0.55rem 0.7rem;
+    padding: 0.45rem 0.7rem;
     line-height: 1.2;
     border-bottom: 1px solid #444;
   }
