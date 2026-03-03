@@ -1,8 +1,8 @@
 import { faCrown, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, BossTitle, ClassIconBackground, classNamesMap, GlowingName, HighscoreClassIconImage, HighscoresTable, RankIcon } from "../HighscoresStyles";
+import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, BossTitle, ClassIconBackground, GlowingName, HighscoreClassIconImage, HighscoresTable, RankIcon } from "../HighscoresStyles";
 
-function HighscoresBosses({ activeTab, loading, bossDisplayOrder, bosses, bossConfigMap, getClassInfo, bossData }) {
+function HighscoresBosses({ activeTab, loading, bossDisplayOrder, classNamesMap, bosses, bossConfigMap, getClassInfo, bossData }) {
     return (activeTab === "bosses" && (
         <>
             {loading ? (
