@@ -737,6 +737,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 bossConfigMap={bossConfigMap}
                 getClassInfo={getClassInfo}
                 bossData={bossData}
+                classNamesMap={classNamesMap}
               />
 
               <HighscoresMonsters
@@ -747,6 +748,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 monsterData={monsterData}
                 getClassInfo={getClassInfo}
                 monsterConfigMap={monsterConfigMap}
+                classNamesMap={classNamesMap}
               />
               <HighscoresEvents
                 activeTab={activeTab}

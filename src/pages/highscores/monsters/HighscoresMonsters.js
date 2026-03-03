@@ -2,7 +2,7 @@ import { faCrown, faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, BossTitle, ClassIconBackground, GlowingName, HighscoreClassIconImage, HighscoresTable, RankIcon } from "../HighscoresStyles";
 
-function HighscoresMonsters({ activeTab, loading, monsterDisplayOrder, monsters, monsterData, getClassInfo, monsterConfigMap }) {
+function HighscoresMonsters({ activeTab, loading, monsterDisplayOrder, monsters, monsterData, getClassInfo, monsterConfigMap, classNamesMap }) {
     return (activeTab === "monsters" && (
         <>
             {loading ? (
@@ -110,7 +110,8 @@ function HighscoresMonsters({ activeTab, loading, monsterDisplayOrder, monsters,
                                                                 return (
                                                                     <HighscoreClassIconImage
                                                                         src={icon}
-                                                                        alt="class"
+                                                                        alt={classNamesMap[key] || "Unknown"}
+                                                                        title={classNamesMap[key] || "Unknown"}
                                                                     />
                                                                 );
                                                             })()}
