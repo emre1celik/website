@@ -756,6 +756,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                 eventsByType={eventsByType}
                 setSelectedPlayer={setSelectedPlayer}
                 formatNumber={formatNumber}
+                getClassInfo={getClassInfo}
               />
 
               <HighscoresGuilds

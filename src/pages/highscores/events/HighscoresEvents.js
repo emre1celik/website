@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "../../../context/TranslationContext";
 import { faCrown, faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, BossTitle, ClassIconBackground, GlowingName, HighscoresTable, RankIcon } from "../HighscoresStyles";
+import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, getClassInfo, BossTitle, ClassIconBackground, GlowingName, HighscoresTable, RankIcon } from "../HighscoresStyles";
 
 function HighscoresEvents({
     activeTab,
@@ -60,11 +60,12 @@ function HighscoresEvents({
                                                 <th>{translate("highscores.rank")}</th>
                                                 <th>{translate("highscores.character")}</th>
                                                 <th>{translate("highscores.score")}</th>
+                                                <th>{translate("highscores.class")}</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             {rows.slice(0, 25).map((row, index) => {
-
+                                                const { icon, key } = getClassInfo(row.race);
                                                 return (
                                                     <tr key={index}>
                                                         <td>
@@ -96,6 +97,13 @@ function HighscoresEvents({
                                                         </td>
 
                                                         <td>{formatNumber(row.score)}</td>
+                                                        <td>
+                                                            <HighscoreClassIconImage
+                                                                src={icon}
+                                                                alt={key}
+                                                                title={key}
+                                                            />
+                                                        </td>
                                                     </tr>
                                                 );
                                             })}
