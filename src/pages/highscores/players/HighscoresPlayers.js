@@ -66,7 +66,6 @@ function HighscoresPlayers({ activeTab, loading, error, players, classMeta, clas
                                         <th>{translate("highscores.rank")}</th>
                                         <th>{translate("highscores.name")}</th>
                                         <th>{translate("highscores.resets")}</th>
-                                        <th>{translate("highscores.class")}</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -101,17 +100,6 @@ function HighscoresPlayers({ activeTab, loading, error, players, classMeta, clas
                                                 </GlowingName>
                                             </td>
                                             <td>{Number(p.reset) + Number(p.grand_reset) * 100}</td>
-                                            <td
-                                            >
-                                                {(() => {
-                                                    const { icon, key } = getClassInfo(p.race);
-
-                                                    return (<HighscoreClassIconImage
-                                                        src={icon}
-                                                        alt={key} />
-                                                    );
-                                                })()}
-                                            </td>
                                         </tr>
                                     ))}
                                 </tbody>
