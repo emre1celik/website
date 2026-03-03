@@ -7,6 +7,7 @@ function HighscoresEvents({
     activeTab,
     loadingEvents,
     errorEvents,
+    classNamesMap,
     eventMeta,
     eventsByType,
     setSelectedPlayer,
@@ -101,8 +102,8 @@ function HighscoresEvents({
                                                         <td>
                                                             <HighscoreClassIconImage
                                                                 src={icon}
-                                                                alt={key}
-                                                                title={key}
+                                                                alt={classNamesMap[key] || "Unknown"}
+                                                                title={classNamesMap[key] || "Unknown"}
                                                             />
                                                         </td>
                                                     </tr>
