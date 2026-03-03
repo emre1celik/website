@@ -108,7 +108,8 @@ function HighscoresPlayers({ activeTab, loading, error, players, classMeta, clas
 
                                                     return (<HighscoreClassIconImage
                                                         src={icon}
-                                                        alt={key} />
+                                                        alt={classNamesMap[key] || "Unknown"}
+                                                        title={classNamesMap[key] || "Unknown"} />
                                                     );
                                                 })()}
                                             </td>
