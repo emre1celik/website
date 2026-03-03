@@ -813,15 +813,18 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                       const { icon, key } = getClassInfo(p.race);
 
                                       return (
-                                        <img
-                                          src={icon}
-                                          alt={key}
-                                          style={{
-                                            width: "17px",
-                                            height: "17px",
-                                            objectFit: "contain",
-                                          }}
-                                        />
+                                        <div style={{ border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}>
+                                          <img
+                                            src={icon}
+                                            alt={key}
+                                            style={{
+                                              width: "17px",
+                                              height: "17px",
+                                              padding: "2px",
+                                              objectFit: "contain",
+                                            }}
+                                          />
+                                        </div>
                                       );
                                     })()}
                                   </td>
@@ -1030,11 +1033,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           {(() => {
                                             const { icon } = getClassInfo(row.race);
                                             return (
-                                              <img
-                                                src={icon}
-                                                alt="class"
-                                                style={{ width: 17, height: 17 }}
-                                              />
+
+                                              <div style={{ border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}>
+                                                <img
+                                                  src={icon}
+                                                  alt="class"
+                                                  style={{ width: 17, height: 17 }}
+                                                /></div>
                                             );
                                           })()}
                                         </td>
@@ -1162,11 +1167,13 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           {(() => {
                                             const { icon } = getClassInfo(row.race);
                                             return (
-                                              <img
-                                                src={icon}
-                                                alt="class"
-                                                style={{ width: 17, height: 17 }}
-                                              />
+
+                                              <div style={{ border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}>
+                                                <img
+                                                  src={icon}
+                                                  alt="class"
+                                                  style={{ width: 17, height: 17 }}
+                                                /></div>
                                             );
                                           })()}
                                         </td>
