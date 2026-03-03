@@ -106,11 +106,13 @@ function HighscoresBosses({ activeTab, loading, bossDisplayOrder, bosses, bossCo
                                                         <td>{row.kills}</td>
                                                         <td className="iconCell">
                                                             {(() => {
-                                                                const { icon } = getClassInfo(row.race);
+                                                                const { icon, key } = getClassInfo(row.race);
                                                                 return (
                                                                     <HighscoreClassIconImage
                                                                         src={icon}
-                                                                        alt="class" />
+
+                                                                        alt={classNamesMap[key] || "Unknown"}
+                                                                        title={classNamesMap[key] || "Unknown"} />
                                                                 );
                                                             })()}
                                                         </td>

@@ -106,7 +106,7 @@ function HighscoresMonsters({ activeTab, loading, monsterDisplayOrder, monsters,
                                                         <td>{row.kills}</td>
                                                         <td className="iconCell">
                                                             {(() => {
-                                                                const { icon } = getClassInfo(row.race);
+                                                                const { icon, key } = getClassInfo(row.race);
                                                                 return (
                                                                     <HighscoreClassIconImage
                                                                         src={icon}
