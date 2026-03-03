@@ -25,6 +25,7 @@ import {
   PopupSection,
   PopupRow,
   Divider,
+  HighscoreClassIconImage,
 } from "./HighscoresStyles";
 import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
@@ -812,11 +813,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                     {(() => {
                                       const { icon, key } = getClassInfo(p.race);
 
-                                      return (<img
+                                      return (<HighscoreClassIconImage
                                         src={icon}
-                                        alt={key}
-                                        style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
-                                      />
+                                        alt={key} />
                                       );
                                     })()}
                                   </td>
@@ -907,6 +906,17 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                         <td>
                                           {Number(p.reset) + Number(p.grand_reset) * 100
                                           }
+                                        </td>
+                                        <td
+                                        >
+                                          {(() => {
+                                            const { icon, key } = getClassInfo(p.race);
+
+                                            return (<HighscoreClassIconImage
+                                              src={icon}
+                                              alt={key} />
+                                            );
+                                          })()}
                                         </td>
                                       </tr>
                                     ))}
@@ -1025,11 +1035,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           {(() => {
                                             const { icon } = getClassInfo(row.race);
                                             return (
-                                              <img
+                                              <HighscoreClassIconImage
                                                 src={icon}
-                                                alt="class"
-                                                style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
-                                              />
+                                                alt="class" />
                                             );
                                           })()}
                                         </td>
@@ -1074,7 +1082,7 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                           if (!config) return null;
 
                           return (
-                            <BossCard key={monster}>
+                            <BossCard key={monster} style={{ height: "400px" }}>
 
                               {/* HEADER */}
                               <BossHeader>
@@ -1157,10 +1165,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                                           {(() => {
                                             const { icon } = getClassInfo(row.race);
                                             return (
-                                              <img
+                                              <HighscoreClassIconImage
                                                 src={icon}
                                                 alt="class"
-                                                style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
                                               />
                                             );
                                           })()}
@@ -1389,10 +1396,9 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                     <PopupRow>
                       <span>{translate("highscores.class")}</span>
                       <strong style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-                        <img
+                        <HighscoreClassIconImage
                           src={icon}
                           alt={key}
-                          style={{ width: 24, height: 24, padding: "2px", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "5px", background: "rgba(120,120,120,0.18)", backdropFilter: "blur(10px)" }}
                         />
                         {classNamesMap[key] || "Unknown"}
                       </strong>

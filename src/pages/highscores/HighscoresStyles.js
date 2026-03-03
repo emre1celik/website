@@ -305,6 +305,23 @@ export const BossCard = styled.div`
   gap: 0.5rem;
 `;
 
+export const HighscoreClassIconImage = styled.img`
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 5px;
+  background-filter: blur(10px);
+  background: rgba(120,120,120,0.18);
+  box-shadow:
+    inset 0 1px 2px rgba(255,255,255,0.15),
+    0 4px 12px rgba(0,0,0,0.4);
+  &:hover {
+    background: rgba(160,160,160,0.25);
+    transform: translateY(-2px);
+  }
+`;
+
 export const BossTitle = styled.span`
   font-size: 1.1rem;
   font-weight: bold;
