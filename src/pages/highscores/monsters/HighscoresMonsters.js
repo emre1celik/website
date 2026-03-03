@@ -1,0 +1,134 @@
+import { faCrown, faSpinner } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { BossCard, BossGrid, BossHeader, BossSubtitle, BossTableWrapper, BossText, BossTitle, ClassIconBackground, GlowingName, HighscoreClassIconImage, HighscoresTable, RankIcon } from "../HighscoresStyles";
+
+function HighscoresMonsters({ activeTab, loading, monsterDisplayOrder, monsters, monsterData, getClassInfo, monsterConfigMap }) {
+    return (activeTab === "monsters" && (
+        <>
+            {loading ? (
+                <div
+                    style={{
+                        minHeight: "150px",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
+                    <FontAwesomeIcon icon={faSpinner} spin />
+                    &nbsp;Loading Monster Rankings...
+                </div>
+            ) : (
+                <BossGrid>
+
+                    {monsterDisplayOrder
+                        .filter(monster => monsters.includes(monster))
+                        .map((monster) => {
+
+                            const config = monsterConfigMap[monster];
+                            const rows = monsterData[monster] || [];
+
+                            if (!config) return null;
+
+                            return (
+                                <BossCard key={monster} style={{ height: "400px" }}>
+                                    <BossHeader>
+                                        <ClassIconBackground iconScale={60} size={90}>
+                                            <img
+                                                src={config.src}
+                                                alt={monster}
+                                                style={{
+                                                    width: config.width,
+                                                    height: config.height,
+                                                    objectFit: "contain",
+                                                }}
+                                            />
+                                        </ClassIconBackground>
+
+                                        <BossText>
+                                            <BossTitle>{monster}</BossTitle>
+
+                                            <BossSubtitle>
+                                                <span>
+                                                    <strong>Location:</strong> {config.map}
+                                                </span>
+                                                <span>
+                                                    <strong>HP:</strong> {config.hp}
+                                                </span>
+                                                <span>
+                                                    <strong>Defense:</strong> {config.defense}
+                                                </span>
+                                                <span>
+                                                    <strong>Respawn:</strong> {config.respawn}
+                                                </span>
+                                            </BossSubtitle>
+                                        </BossText>
+                                    </BossHeader>
+
+                                    <BossTableWrapper>
+                                        <HighscoresTable>
+                                            <thead>
+                                                <tr>
+                                                    <th>Rank</th>
+                                                    <th>Player</th>
+                                                    <th>Kills</th>
+                                                    <th>Class</th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+                                                {rows.map((row, index) => (
+                                                    <tr key={index}>
+                                                        <td>
+                                                            {index + 1}
+
+                                                            {index < 3 && (
+                                                                <RankIcon
+                                                                    style={{
+                                                                        color:
+                                                                            index === 0
+                                                                                ? "gold"
+                                                                                : index === 1
+                                                                                    ? "silver"
+                                                                                    : "#cd7f32",
+                                                                    }}
+                                                                >
+                                                                    <FontAwesomeIcon icon={faCrown} />
+                                                                </RankIcon>
+                                                            )}
+                                                        </td>
+
+                                                        <td>
+                                                            <GlowingName rank={index}>
+                                                                {row.name}
+                                                            </GlowingName>
+                                                        </td>
+
+                                                        <td>{row.kills}</td>
+                                                        <td className="iconCell">
+                                                            {(() => {
+                                                                const { icon } = getClassInfo(row.race);
+                                                                return (
+                                                                    <HighscoreClassIconImage
+                                                                        src={icon}
+                                                                        alt="class"
+                                                                    />
+                                                                );
+                                                            })()}
+                                                        </td>
+                                                    </tr>
+                                                ))}
+                                            </tbody>
+                                        </HighscoresTable>
+                                    </BossTableWrapper>
+
+                                </BossCard>
+                            );
+                        })}
+
+                </BossGrid>
+            )}
+        </>
+    ))
+}
+
+export default HighscoresMonsters;

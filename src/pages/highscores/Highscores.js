@@ -79,6 +79,10 @@ import {
 } from "../control_panel/ControlPanelStyles";
 import { useTranslation } from "../../context/TranslationContext";
 import GuildEmblem from "../../components/guild_emblem/GuildEmblem";
+import HighscoresGuilds from "./guilds/HighscoresGuilds";
+import HighscoresEvents from "./events/HighscoresEvents";
+import HighscoresMonsters from "./monsters/HighscoresMonsters";
+import HighscoresBosses from "./bosses/HighscoresBosses";
 
 function Highscores({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
@@ -930,443 +934,45 @@ function Highscores({ user, currentTheme, onThemeChange }) {
                   )}
                 </>
               )}
-              {activeTab === "bosses" && (
-                <>
-                  {loading ? (
-                    <div style={{
-                      minHeight: "150px",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center"
-                    }}>
-                      <FontAwesomeIcon icon={faSpinner} spin />
-                      &nbsp;Loading Boss Rankings...
-                    </div>
-                  ) : (
-                    <BossGrid>
+              <HighscoresBosses
+                activeTab={activeTab}
+                loading={loading}
+                bossDisplayOrder={bossDisplayOrder}
+                bosses={bosses}
+                bossConfigMap={bossConfigMap}
+                getClassInfo={getClassInfo}
+                bossData={bossData}
+              />
 
-                      {bossDisplayOrder
-                        .filter(boss => bosses.includes(boss))
-                        .map((boss) => {
+              <HighscoresMonsters
+                activeTab={activeTab}
+                loading={loading}
+                monsterDisplayOrder={monsterDisplayOrder}
+                monsters={monsters}
+                monsterData={monsterData}
+                getClassInfo={getClassInfo}
+                monsterConfigMap={monsterConfigMap}
+              />
+              <HighscoresEvents
+                activeTab={activeTab}
+                loadingEvents={loadingEvents}
+                errorEvents={errorEvents}
+                eventMeta={eventMeta}
+                eventsByType={eventsByType}
+                setSelectedPlayer={setSelectedPlayer}
+                formatNumber={formatNumber}
+              />
 
-                          const config = bossConfigMap[boss];
-                          const rows = bossData[boss] || [];
-
-                          if (!config) return null;
-
-                          return (
-                            <BossCard key={boss}>
-
-                              {/* HEADER */}
-                              <BossHeader>
-
-                                <ClassIconBackground iconScale={60} size={90}>
-                                  <img
-                                    src={config.src}
-                                    alt={boss}
-                                    style={{
-                                      width: config.width,
-                                      height: config.height,
-                                      objectFit: "contain",
-                                    }}
-                                  />
-                                </ClassIconBackground>
-
-                                <BossText>
-                                  <BossTitle>{boss}</BossTitle>
-
-                                  <BossSubtitle>
-                                    <span><strong>Location:</strong> {config.map}</span>
-                                    <span>
-                                      <strong>HP:</strong> {config.hp}
-                                    </span>
-                                    <span>
-                                      <strong>Defense:</strong> {config.defense}
-                                    </span>
-                                    <span>
-                                      <strong>Respawn:</strong> {config.respawn}
-                                    </span>
-                                  </BossSubtitle>
-                                </BossText>
-
-                              </BossHeader>
-
-                              {/* TABLE */}
-                              <BossTableWrapper>
-                                <HighscoresTable>
-                                  <thead>
-                                    <tr>
-                                      <th>Rank</th>
-                                      <th>Player</th>
-                                      <th>Kills</th>
-                                      <th>Class</th>
-                                    </tr>
-                                  </thead>
-
-                                  <tbody>
-                                    {rows.map((row, index) => (
-                                      <tr key={index}>
-                                        <td>
-                                          {index + 1}
-                                          {index < 3 && (
-                                            <RankIcon
-                                              style={{
-                                                color:
-                                                  index === 0
-                                                    ? "gold"
-                                                    : index === 1
-                                                      ? "silver"
-                                                      : "#cd7f32",
-                                              }}
-                                            >
-                                              <FontAwesomeIcon icon={faCrown} />
-                                            </RankIcon>
-                                          )}
-                                        </td>
-
-                                        <td>
-                                          <GlowingName rank={index}>
-                                            {row.name}
-                                          </GlowingName>
-                                        </td>
-
-                                        <td>{row.kills}</td>
-                                        <td className="iconCell">
-                                          {(() => {
-                                            const { icon } = getClassInfo(row.race);
-                                            return (
-                                              <HighscoreClassIconImage
-                                                src={icon}
-                                                alt="class" />
-                                            );
-                                          })()}
-                                        </td>
-                                      </tr>
-                                    ))}
-                                  </tbody>
-
-                                </HighscoresTable>
-                              </BossTableWrapper>
-
-                            </BossCard>
-                          );
-                        })}
-                    </BossGrid>
-                  )}
-                </>
-              )}{activeTab === "monsters" && (
-                <>
-                  {loading ? (
-                    <div
-                      style={{
-                        minHeight: "150px",
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
-                      <FontAwesomeIcon icon={faSpinner} spin />
-                      &nbsp;Loading Monster Rankings...
-                    </div>
-                  ) : (
-                    <BossGrid>
-
-                      {monsterDisplayOrder
-                        .filter(monster => monsters.includes(monster))
-                        .map((monster) => {
-
-                          const config = monsterConfigMap[monster];
-                          const rows = monsterData[monster] || [];
-
-                          // skip monsters without config
-                          if (!config) return null;
-
-                          return (
-                            <BossCard key={monster} style={{ height: "400px" }}>
-
-                              {/* HEADER */}
-                              <BossHeader>
-
-                                <ClassIconBackground iconScale={60} size={90}>
-                                  <img
-                                    src={config.src}
-                                    alt={monster}
-                                    style={{
-                                      width: config.width,
-                                      height: config.height,
-                                      objectFit: "contain",
-                                    }}
-                                  />
-                                </ClassIconBackground>
-
-                                <BossText>
-                                  <BossTitle>{monster}</BossTitle>
-
-                                  <BossSubtitle>
-                                    <span>
-                                      <strong>Location:</strong> {config.map}
-                                    </span>
-                                    <span>
-                                      <strong>HP:</strong> {config.hp}
-                                    </span>
-                                    <span>
-                                      <strong>Defense:</strong> {config.defense}
-                                    </span>
-                                    <span>
-                                      <strong>Respawn:</strong> {config.respawn}
-                                    </span>
-                                  </BossSubtitle>
-                                </BossText>
-
-                              </BossHeader>
-
-                              {/* TABLE */}
-                              <BossTableWrapper>
-                                <HighscoresTable>
-                                  <thead>
-                                    <tr>
-                                      <th>Rank</th>
-                                      <th>Player</th>
-                                      <th>Kills</th>
-                                      <th>Class</th>
-                                    </tr>
-                                  </thead>
-
-                                  <tbody>
-                                    {rows.map((row, index) => (
-                                      <tr key={index}>
-                                        <td>
-                                          {index + 1}
-
-                                          {index < 3 && (
-                                            <RankIcon
-                                              style={{
-                                                color:
-                                                  index === 0
-                                                    ? "gold"
-                                                    : index === 1
-                                                      ? "silver"
-                                                      : "#cd7f32",
-                                              }}
-                                            >
-                                              <FontAwesomeIcon icon={faCrown} />
-                                            </RankIcon>
-                                          )}
-                                        </td>
-
-                                        <td>
-                                          <GlowingName rank={index}>
-                                            {row.name}
-                                          </GlowingName>
-                                        </td>
-
-                                        <td>{row.kills}</td>
-                                        <td className="iconCell">
-                                          {(() => {
-                                            const { icon } = getClassInfo(row.race);
-                                            return (
-                                              <HighscoreClassIconImage
-                                                src={icon}
-                                                alt="class"
-                                              />
-                                            );
-                                          })()}
-                                        </td>
-                                      </tr>
-                                    ))}
-                                  </tbody>
-                                </HighscoresTable>
-                              </BossTableWrapper>
-
-                            </BossCard>
-                          );
-                        })}
-
-                    </BossGrid>
-                  )}
-                </>
-              )}
-              {activeTab === "events" && (
-                <>
-                  {loadingEvents ? (
-                    <div style={{ minHeight: "150px", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                      <FontAwesomeIcon icon={faSpinner} spin />
-                      &nbsp;{translate("highscores.loadingEvents")}
-                    </div>
-                  ) : errorEvents ? (
-                    <p style={{ color: "red" }}>{errorEvents}</p>
-                  ) : (
-                    <BossGrid>
-                      {[0, 1, 2, 3].map((eventId) => {
-                        const meta = eventMeta[eventId];
-                        const rows = eventsByType[eventId] || [];
-
-                        return (
-                          <BossCard key={eventId} style={{ height: "500px", width: "100%" }}>
-                            {/* Header */}
-                            <BossHeader>
-                              <ClassIconBackground size={60} iconScale={65}>
-                                <FontAwesomeIcon
-                                  icon={meta.icon}
-                                  style={{ fontSize: "26px", color: "#aaa" }}
-                                />
-                              </ClassIconBackground>
-
-                              <BossText>
-                                <BossTitle>{meta.name}</BossTitle>
-
-                                <BossSubtitle>
-                                  <span>{meta.description}</span>
-                                  <span>
-                                    <strong style={{ color: "#aaa" }}>Focus:</strong>{" "}
-                                    {meta.stats}
-                                  </span>
-                                </BossSubtitle>
-                              </BossText>
-                            </BossHeader>
-
-                            {/* Table */}
-                            <BossTableWrapper>
-                              <HighscoresTable>
-                                <thead>
-                                  <tr>
-                                    <th>{translate("highscores.rank")}</th>
-                                    <th>{translate("highscores.character")}</th>
-                                    <th>{translate("highscores.score")}</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  {rows.slice(0, 25).map((row, index) => {
-
-                                    return (
-                                      <tr key={index}>
-                                        <td>
-                                          {index + 1}
-                                          {index < 3 && (
-                                            <RankIcon
-                                              style={{
-                                                color:
-                                                  index === 0
-                                                    ? "gold"
-                                                    : index === 1
-                                                      ? "silver"
-                                                      : "#cd7f32",
-                                              }}
-                                            >
-                                              <FontAwesomeIcon icon={faCrown} />
-                                            </RankIcon>
-                                          )}
-                                        </td>
-
-                                        <td>
-                                          <GlowingName
-                                            rank={index}
-                                            style={{ cursor: "pointer" }}
-                                            onClick={() => setSelectedPlayer(row)}
-                                          >
-                                            {row.name}
-                                          </GlowingName>
-                                        </td>
-
-                                        <td>{formatNumber(row.score)}</td>
-                                      </tr>
-                                    );
-                                  })}
-                                </tbody>
-                              </HighscoresTable>
-                            </BossTableWrapper>
-                          </BossCard>
-                        );
-                      })}
-                    </BossGrid>
-                  )}
-                </>
-              )}
-
-
-              {activeTab === "guilds" && (
-                <>
-                  {loadingGuilds ? (
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        minHeight: "150px",
-                      }}
-                    >
-                      <FontAwesomeIcon
-                        icon={faSpinner}
-                        spin
-                        style={{ marginRight: "8px" }}
-                      />
-                      {translate("highscores.loadingGuilds")}
-                    </div>
-                  ) : errorGuilds ? (
-                    <p style={{ color: "red" }}>{errorGuilds}</p>
-                  ) : (
-                    <PlayerGrid style={{ display: "block" }}>
-                      <PlayerCard style={{ height: "550px", width: "100%" }}>
-                        <BossTableWrapper>
-                          <HighscoresTable>
-                            <thead>
-                              <tr>
-                                <th>{translate("highscores.rank")}</th>
-                                <th>{translate("highscores.guildName")}</th>
-                                <th>{translate("highscores.master")}</th>
-                                <th>{translate("highscores.resets")}</th>
-                                <th>{translate("highscores.emblem")}</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              {guilds.map((guild, index) => (
-                                <tr key={index}>
-                                  <td>
-                                    {index + 1}
-                                    {index === 0 && (
-                                      <RankIcon style={{ color: "gold" }}>
-                                        <FontAwesomeIcon icon={faCrown} />
-                                      </RankIcon>
-                                    )}
-                                    {index === 1 && (
-                                      <RankIcon style={{ color: "silver" }}>
-                                        <FontAwesomeIcon icon={faCrown} />
-                                      </RankIcon>
-                                    )}
-                                    {index === 2 && (
-                                      <RankIcon style={{ color: "#cd7f32" }}>
-                                        <FontAwesomeIcon icon={faCrown} />
-                                      </RankIcon>
-                                    )}
-                                  </td>
-
-                                  <td>
-                                    <GlowingName rank={index}>
-                                      {guild.guild_name}
-                                    </GlowingName>
-                                  </td>
-
-                                  <td>{guild.master_name}</td>
-
-                                  <td>{formatNumber(Number(guild.total_resets))}</td>
-
-                                  <td>
-                                    <GuildEmblem data={guild.emblem} scale={3} />
-                                  </td>
-                                </tr>
-                              ))}
-                            </tbody>
-                          </HighscoresTable>
-                        </BossTableWrapper>
-                      </PlayerCard>
-                    </PlayerGrid>
-                  )}
-                </>
-              )}
-
+              <HighscoresGuilds
+                activeTab={activeTab}
+                loadingGuilds={loadingGuilds}
+                errorGuilds={errorGuilds}
+                guilds={guilds}
+                formatNumber={formatNumber}
+              />
             </ControlPanelTabContent>
-          </HighscoresBox>
-        </HighscoresContent>
+          </HighscoresBox >
+        </HighscoresContent >
         {selectedPlayer && (
           <PlayerPopupOverlay onClick={() => setSelectedPlayer(null)}>
             <PlayerPopup onClick={(e) => e.stopPropagation()}>
@@ -1466,10 +1072,11 @@ function Highscores({ user, currentTheme, onThemeChange }) {
               </PopupSection>
             </PlayerPopup>
           </PlayerPopupOverlay>
-        )}
+        )
+        }
 
         <Footer currentTheme={currentTheme} onThemeChange={onThemeChange} />
-      </HighscoresWrapper>
+      </HighscoresWrapper >
     </>
   );
 }
