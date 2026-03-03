@@ -315,7 +315,7 @@ function ControlPanel({ user, currentTheme, onThemeChange, onLogout }) {
 
   const classIconMap = {
     dw: {
-      ids: [0, 1, 2, 3, 7, 8, 15],
+      ids: [0, 1, 2, 3, 4, 7, 8, 15],
       icon: DwIcon,
     },
     dk: {
