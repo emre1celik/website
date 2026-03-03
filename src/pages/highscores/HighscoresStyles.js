@@ -318,7 +318,7 @@ export const HighscoreClassIconImage = styled.img`
     0 4px 12px rgba(0,0,0,0.4);
   &:hover {
     background: rgba(160,160,160,0.25);
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 `;
 
