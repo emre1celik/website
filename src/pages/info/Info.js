@@ -16,7 +16,8 @@ import {
 } from "./InfoStyles";
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; import {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
   BossGrid,
   BossCard,
   BossHeader,
@@ -24,22 +25,48 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; import {
   BossSubtitle,
   BossText,
   ClassIconBackground,
-} from "../highscores/HighscoresStyles"; import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
+} from "../highscores/HighscoresStyles";
+import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
 import LordFereaIcon from "../../assets/images/bosses/lord_of_ferea.png";
 import LordSilvesterIcon from "../../assets/images/bosses/lord_silvester.png";
 import NightmareIcon from "../../assets/images/bosses/nightmare.png";
 import SelupanIcon from "../../assets/images/bosses/selupan.png";
 import MedusaIcon from "../../assets/images/bosses/medusa.png";
 import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
+import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
+import NixIcon from "../../assets/images/bosses/nix.png";
 
 import IceQueenIcon from "../../assets/images/monsters/ice_queen.png";
+import RedDragonIcon from "../../assets/images/monsters/red_dragon.png";
+import GoldDragonIcon from "../../assets/images/monsters/gold_dragon.png";
 import GorgonIcon from "../../assets/images/monsters/gorgon.png";
 import HydraIcon from "../../assets/images/monsters/hydra.png";
 import ZaikanIcon from "../../assets/images/monsters/zaikan.png";
 import PhoenixIcon from "../../assets/images/monsters/phoenix_darkness.png";
-import HellmaineIcon from "../../assets/images/monsters/hellmaine.png"; import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
-import NixIcon from "../../assets/images/bosses/nix.png";
+import HellmaineIcon from "../../assets/images/monsters/hellmaine.png";
 import BloodCastleIcon from "../../assets/images/classes/event.png";
+import DeathKingIcon from "../../assets/images/monsters/deathking.png";
+import WhiteWizardIcon from "../../assets/images/monsters/whitewizard.png";
+import BalrogIcon from "../../assets/images/monsters/balrog.png";
+import HellraiserIcon from "../../assets/images/monsters/hellraiser.png";
+import LunarIcon from "../../assets/images/monsters/lunar.png";
+import MuunIcon from "../../assets/images/monsters/lunar.png";
+import AzureDragonIcon from "../../assets/images/monsters/lunar.png";
+
+import EliteAbyssIcon from "../../assets/images/monsters/eliteabyss.png";
+import EliteScorchedIcon from "../../assets/images/monsters/elitescorched.png";
+import EliteIcarusIcon from "../../assets/images/monsters/eliteicarus.png";
+import EliteArenilIcon from "../../assets/images/monsters/elitearnil.png";
+import EliteAidaIcon from "../../assets/images/monsters/eliteaida.png";
+import EliteKethotumIcon from "../../assets/images/monsters/elitekethotum.png";
+import EliteKanturuIcon from "../../assets/images/monsters/elitekanturu.png";
+import EliteIgnisIcon from "../../assets/images/monsters/eliteignis.png";
+import EliteTarkanIcon from "../../assets/images/monsters/elitetarkan.png";
+import EliteTormentaIcon from "../../assets/images/monsters/elitetormenta.png";
+import EliteKarutanIcon from "../../assets/images/monsters/elitekarutan.png";
+import EliteKardamahalIcon from "../../assets/images/monsters/elitekardamahal.png";
+import EliteSwampIcon from "../../assets/images/monsters/eliteswamp.png";
+
 import {
   faCog,
   faScroll,
@@ -203,91 +230,91 @@ function Info({ user, currentTheme, onThemeChange }) {
     {
       name: "Elite Abyss",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteAbyssIcon,
       location: "Abyss of Atlans",
       ruud: "5,000",
     },
     {
       name: "Elite Scorched Canyon",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteScorchedIcon,
       location: "Scorched Canyon",
       ruud: "5,500",
     },
     {
       name: "Elite Crimson Icarus",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteIcarusIcon,
       location: "Crimson Icarus",
       ruud: "6,000",
     },
     {
       name: "Elite Temple of Arenil",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteArenilIcon,
       location: "Temple of Arenil",
       ruud: "6,500",
     },
     {
       name: "Elite Ashen Aida",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteAidaIcon,
       location: "Ashen Aida",
       ruud: "7,000",
     },
     {
       name: "Elite Burning Kethotum",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteKethotumIcon,
       location: "Burning Kethotum",
       ruud: "7,500",
     },
     {
       name: "Elite Kanturu Underground",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteKanturuIcon,
       location: "Kanturu Underground",
       ruud: "8,000",
     },
     {
       name: "Elite Ignis Volcano",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteIgnisIcon,
       location: "Ignis Volcano",
       ruud: "8,500",
     },
     {
-      name: "Elite Gore Tarkan",
+      name: "Elite Bloody Tarkan",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteTarkanIcon,
       location: "Gore Tarkan",
       ruud: "9,000",
     },
     {
       name: "Elite Tormenta Island",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteTormentaIcon,
       location: "Tormenta Island",
       ruud: "9,500",
     },
     {
       name: "Elite Twisted Karutan",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteKarutanIcon,
       location: "Twisted Karutan",
       ruud: "10,000",
     },
     {
       name: "Elite Kardamahal Temple",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteKardamahalIcon,
       location: "Kardamahal Temple",
       ruud: "10,000",
     },
     {
       name: "Elite Swamp of Doom",
       type: "elite",
-      icon: BloodCastleIcon,
+      icon: EliteSwampIcon,
       location: "Swamp of Doom",
       ruud: "10,000",
     },
@@ -301,25 +328,25 @@ function Info({ user, currentTheme, onThemeChange }) {
     {
       name: "Deathking Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: DeathKingIcon,
       ruud: "2,000 ~ 3,000 per kill",
     },
     {
       name: "Red Dragon Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: RedDragonIcon,
       ruud: "3,000 ~ 5,000 per kill",
     },
     {
       name: "Golden Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: GoldDragonIcon,
       ruud: "3,000 per kill",
     },
     {
       name: "White Wizard Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: WhiteWizardIcon,
       ruud: "3,500 per kill",
     },
     {
@@ -362,31 +389,31 @@ function Info({ user, currentTheme, onThemeChange }) {
     {
       name: "Balrog Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: BalrogIcon,
       ruud: "5,000",
     },
     {
       name: "Lunar Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: LunarIcon,
       ruud: "500",
     },
     {
       name: "Hellraiser Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: HellraiserIcon,
       ruud: "5,000",
     },
     {
       name: "Azure Dragon Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: AzureDragonIcon,
       ruud: "500",
     },
     {
       name: "Muun Invasion",
       type: "invasion",
-      icon: BloodCastleIcon,
+      icon: MuunIcon,
       ruud: "500",
     },
   ]; const [rewardSearch, setRewardSearch] = useState(""); const filteredRewards = rewardSources.filter(r =>

@@ -99,11 +99,11 @@ export default {
     gear: {
       title: "Weapons and gear progression",
       intro:
-        "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). After this you can:",
+        "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). Here you can buy starter weapons and starter armor. After this you can:",
       list: {
-        hunt: "Hunt monsters and bosses to drop excellent option items (minimum 3-4 options).",
+        hunt: "Hunt monsters and bosses to drop excellent option items (minimum 3-4 options), these drop anywhere. The higher the map level the higher the armor and weapon tier.",
         seedCapsules:
-          "OR collect Box of Luck, Silver & Gold Medals and Heart of Love for excellent plus ancient options.",
+          "OR collect Box of Luck, Silver & Gold Medals and Heart of Love for excellent plus ancient options armor. For weapons collect Box of Heaven.",
         bloodangel:
           "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events, bosses, monsters, website login rewards, and invasions. Upgrade it through tiers to evolve into higher sets; for each upgrade between tiers you need a Soul for armor pieces and an Anvil for weapon pieces. These can be also bought at the Ruud shop. This is the best armor; this armor has ancient options. The full upgrade path is:",
       },
