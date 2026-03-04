@@ -669,11 +669,11 @@ function Info({ user, currentTheme, onThemeChange }) {
                         <span><strong>{translate("rewards.ruud")}:</strong> {reward.ruud}</span>
                       )}
 
-                      {reward.wcoin > 0 && (
+                      {reward.wcoin && (
                         <span><strong>{translate("rewards.wcoin")}:</strong> {reward.wcoin}</span>
                       )}
 
-                      {reward.goblin > 0 && (
+                      {reward.goblin && (
                         <span><strong>{translate("rewards.goblin")}:</strong> {reward.goblin}</span>
                       )}
                     </BossSubtitle>
