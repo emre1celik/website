@@ -116,15 +116,15 @@ export default {
         "Oto kluczowe stawki serwera, nagrody i przydatne komendy, które pomogą Ci efektywnie się rozwijać. Śledź timery wydarzeń, nagrody za reset oraz respawny bossów, aby zmaksymalizować swoje zyski.",
       list: {
         expRate: "Stawka EXP: 5000x",
-        masterExp: "Master EXP: 9999x",
-        majesticExp: "Majestic EXP: 9999x",
+        masterExp: "Master EXP: 200%",
+        majesticExp: "Majestic EXP: 200%",
         excellentDrop: "Szansa na przedmiot Excellent: 200%",
-        resetReward: "Nagroda za reset: WCoin, Punktów Goblina, Ruud",
+        resetReward: "Nagroda za Reset: Konfigurowalna po zalogowaniu na stronie (WCoin/GP/Ruud)",
         grandReset: "Wymaganie Grand Reset: 100 resetów",
         grandResetReward:
           "Nagroda Grand Reset: 1,000 WCoin, 10,000 Punktów Goblina",
-        eventTimers: "Timery wydarzeń: sprawdź harmonogram na stronie",
-        bossRespawns: "Respawny bossów: co godzinę",
+        eventTimers: "Timery wydarzeń: Sprawdź harmonogram na stronie",
+        bossRespawns: "Respawn bossów: Sprawdź harmonogram na stronie",
         commands: "Komendy:",
         amount: "(ilość)",
       },
@@ -330,7 +330,19 @@ export default {
       "W tym czasie strona internetowa oraz usługi gry mogą być chwilowo niedostępne. " +
       "Zapraszamy ponownie wkrótce — wrócimy online zaraz po zakończeniu aktualizacji."
   },
+  rewards: {
+    title: "Nagrody WCoin, Goblin Points i Ruud",
 
+    description:
+      "Istnieje kilka sposobów na zdobycie WCoin, Goblin Points i Ruud w grze. Nagrody te można zdobywać poprzez różne aktywności, takie jak polowanie na bossy, inwazje oraz wydarzenia w grze, takie jak Blood Castle i Devil Square. Niektóre nagrody, w tym WCoin i Goblin Points, można również zdobyć poprzez działania na stronie, takie jak resety. Wielu bossów i niektóre minibossy upuszczają Ruud po pokonaniu. Poniżej znajduje się lista bossów, potworów i wydarzeń, które zapewniają te waluty, wraz z ilością Ruud, WCoin lub Goblin Points, które można otrzymać.",
+
+    search: "Szukaj bossa, potwora lub wydarzenia...",
+
+    location: "Lokalizacja",
+    ruud: "Ruud",
+    wcoin: "WCoin",
+    goblin: "Goblin Points",
+  },
   highscores: {
     serverError: "Błąd serwera: {error}",
     title: "Ranking",
@@ -399,6 +411,23 @@ export default {
     legal: "Tworząc konto, zgadzasz się na nasze {terms} i {privacy}.",
     terms: "Regulamin",
     privacy: "Polityka prywatności",
+  }, commands: {
+    addstr: "Dodaje punkty do siły",
+    addagi: "Dodaje punkty do zręczności",
+    addene: "Dodaje punkty do energii",
+    addvit: "Dodaje punkty do witalności",
+    addcmd: "Dodaje punkty do dowodzenia",
+    reset: "Wymagany poziom 400, zostaniesz w tym samym miejscu",
+    resetAuto: "Automatyczny reset na poziomie 400, użyj ponownie, aby wyłączyć",
+    evo: "Automatycznie ewoluuje do następnej ewolucji z questa klasowego",
+    attack: "Włącza tryb offline attack, możesz zamknąć klienta",
+    storeRuud: "Otwórz sklep osobisty i wpisz to, aby sprzedawać Ruud w offstore (Zen będzie Ruud)",
+    storeWcc: "Otwórz sklep osobisty i wpisz to, aby sprzedawać WCoin w offstore (Zen będzie WCoin)",
+    warehouse: "Zmień na inny numer magazynu",
+    clearinv: "Czyści cały ekwipunek",
+    clearextinv: "Czyści wszystkie cztery strony rozszerzonego ekwipunku",
+    clearinvmuun: "Czyści cały ekwipunek muun",
+    cleareventinv: "Czyści cały ekwipunek eventowy",
   },
   login: {
     header: "Logowanie",

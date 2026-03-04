@@ -16,14 +16,35 @@ import {
 } from "./InfoStyles";
 import Footer from "../../components/footer/Footer";
 import Navigation from "../../components/navigation/Navigation";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; import {
+  BossGrid,
+  BossCard,
+  BossHeader,
+  BossTitle,
+  BossSubtitle,
+  BossText,
+  ClassIconBackground,
+} from "../highscores/HighscoresStyles"; import CoreMagriffyIcon from "../../assets/images/bosses/core_magriffy.png";
+import LordFereaIcon from "../../assets/images/bosses/lord_of_ferea.png";
+import LordSilvesterIcon from "../../assets/images/bosses/lord_silvester.png";
+import NightmareIcon from "../../assets/images/bosses/nightmare.png";
+import SelupanIcon from "../../assets/images/bosses/selupan.png";
+import MedusaIcon from "../../assets/images/bosses/medusa.png";
+import KundunIcon from "../../assets/images/bosses/illusion_of_kundun.png";
+
+import IceQueenIcon from "../../assets/images/monsters/ice_queen.png";
+import GorgonIcon from "../../assets/images/monsters/gorgon.png";
+import HydraIcon from "../../assets/images/monsters/hydra.png";
+import ZaikanIcon from "../../assets/images/monsters/zaikan.png";
+import PhoenixIcon from "../../assets/images/monsters/phoenix_darkness.png";
+import HellmaineIcon from "../../assets/images/monsters/hellmaine.png"; import GodOfDarknessIcon from "../../assets/images/bosses/god_of_darkness.png";
+import NixIcon from "../../assets/images/bosses/nix.png";
+import BloodCastleIcon from "../../assets/images/classes/event.png";
 import {
   faCog,
   faScroll,
   faShieldAlt,
   faCoins,
-  faHandsHelping,
-  faDragon,
   faStar,
   faGlassWhiskey,
   faBolt,
@@ -38,22 +59,341 @@ import {
   faBagShopping,
   faArrowRight,
   faArrowLeft,
+  faDragon,
 } from "@fortawesome/free-solid-svg-icons";
 import { useTranslation } from "../../context/TranslationContext";
 import TranslatedHTML from "../../components/language/TranslatedHTML";
 import monsterDrops from "../../config/map_drops";
 import bagDrops from "../../config/itembags_drops";
 import { faMapMarkedAlt, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
-import { faSkull } from "@fortawesome/free-solid-svg-icons";
 
 function Info({ user, currentTheme, onThemeChange }) {
   const drops = [
     ...monsterDrops.map((d) => ({ ...d, source: "map" })),
     ...bagDrops.map((d) => ({ ...d, source: "bag" })),
-  ];
+  ]; const rewardSources = [
 
+    // BOSSES
+    {
+      name: "God of Darkness",
+      type: "boss",
+      icon: GodOfDarknessIcon,
+      location: "Swamp of Darkness",
+      ruud: "25,000 - 30,000",
+    },
+    {
+      name: "Nix",
+      type: "boss",
+      icon: NixIcon,
+      location: "Nixies Lake",
+      ruud: "20,000 - 25,000",
+    },
+    {
+      name: "Lord of Ferea",
+      type: "boss",
+      icon: LordFereaIcon,
+      location: "Ferea",
+      ruud: "15,000 - 20,000",
+    },
+    {
+      name: "Lord Silvester",
+      type: "boss",
+      icon: LordSilvesterIcon,
+      location: "Uruk Mountain",
+      ruud: "10,000 - 15,000",
+    },
+    {
+      name: "Core Magriffy",
+      type: "boss",
+      icon: CoreMagriffyIcon,
+      location: "Nars, Acheron",
+      ruud: "10,000 - 15,000",
+    },
+    {
+      name: "Medusa",
+      type: "boss",
+      icon: MedusaIcon,
+      location: "Swamp of Peace",
+      ruud: "10,000 - 15,000",
+    },
+    {
+      name: "Selupan",
+      type: "boss",
+      icon: SelupanIcon,
+      location: "Raklion",
+      ruud: "10,000 - 15,000",
+    },
+    {
+      name: "Nightmare",
+      type: "boss",
+      icon: NightmareIcon,
+      location: "Kanturu Core",
+      ruud: "10,000 - 15,000",
+    },
+    {
+      name: "Kundun",
+      type: "boss",
+      icon: KundunIcon,
+      location: "Kalima",
+      ruud: "5,000",
+    },
+    // MINI BOSSES
+    {
+      name: "Hellmaine",
+      type: "monster",
+      icon: HellmaineIcon,
+      location: "Aida",
+      ruud: "4,000",
+    },
+    {
+      name: "Phoenix of Darkness",
+      type: "monster",
+      icon: PhoenixIcon,
+      location: "Icarus",
+      ruud: "3,500",
+    },
+    {
+      name: "Zaikan",
+      type: "monster",
+      icon: ZaikanIcon,
+      location: "Tarkan",
+      ruud: "3,000",
+    },
+    {
+      name: "Hydra",
+      type: "monster",
+      icon: HydraIcon,
+      location: "Atlans",
+      ruud: "2,500",
+    },
+    {
+      name: "Gorgon",
+      type: "monster",
+      icon: GorgonIcon,
+      location: "Dungeon",
+      ruud: "2,000",
+    },
+    {
+      name: "Ice Queen",
+      type: "monster",
+      icon: IceQueenIcon,
+      location: "Devias",
+      ruud: "1,500",
+    },
+
+    // EVENTS
+    {
+      name: "Blood Castle",
+      type: "event",
+      icon: BloodCastleIcon,
+      ruud: "~100,000 per event",
+    },
+    {
+      name: "Devil Square",
+      type: "event",
+      icon: BloodCastleIcon,
+      ruud: "~80,000 per event",
+    },
+    {
+      name: "Chaos Castle",
+      type: "event",
+      icon: BloodCastleIcon,
+      ruud: "~15,000 per event",
+    },
+    {
+      name: "Elite Abyss",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Abyss of Atlans",
+      ruud: "5,000",
+    },
+    {
+      name: "Elite Scorched Canyon",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Scorched Canyon",
+      ruud: "5,500",
+    },
+    {
+      name: "Elite Crimson Icarus",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Crimson Icarus",
+      ruud: "6,000",
+    },
+    {
+      name: "Elite Temple of Arenil",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Temple of Arenil",
+      ruud: "6,500",
+    },
+    {
+      name: "Elite Ashen Aida",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Ashen Aida",
+      ruud: "7,000",
+    },
+    {
+      name: "Elite Burning Kethotum",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Burning Kethotum",
+      ruud: "7,500",
+    },
+    {
+      name: "Elite Kanturu Underground",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Kanturu Underground",
+      ruud: "8,000",
+    },
+    {
+      name: "Elite Ignis Volcano",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Ignis Volcano",
+      ruud: "8,500",
+    },
+    {
+      name: "Elite Gore Tarkan",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Gore Tarkan",
+      ruud: "9,000",
+    },
+    {
+      name: "Elite Tormenta Island",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Tormenta Island",
+      ruud: "9,500",
+    },
+    {
+      name: "Elite Twisted Karutan",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Twisted Karutan",
+      ruud: "10,000",
+    },
+    {
+      name: "Elite Kardamahal Temple",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Kardamahal Temple",
+      ruud: "10,000",
+    },
+    {
+      name: "Elite Swamp of Doom",
+      type: "elite",
+      icon: BloodCastleIcon,
+      location: "Swamp of Doom",
+      ruud: "10,000",
+    },
+    {
+      name: "Maze of Dimensions",
+      type: "event",
+      icon: BloodCastleIcon,
+      ruud: "20,000 per floor",
+    },
+    // INVASIONS
+    {
+      name: "Deathking Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "2,000 ~ 3,000 per kill",
+    },
+    {
+      name: "Red Dragon Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "3,000 ~ 5,000 per kill",
+    },
+    {
+      name: "Golden Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "3,000 per kill",
+    },
+    {
+      name: "White Wizard Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "3,500 per kill",
+    },
+    {
+      name: "Website Rewards: Event",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "907,000 total",
+      wcoin: "1,500 total",
+      goblin: "20,500 total",
+    },
+    {
+      name: "Website Rewards: Reset",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "1,144,000 total",
+      wcoin: "2,035 total",
+      goblin: "27,600 total",
+    },
+    {
+      name: "Website Rewards: Grand Reset",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      wcoin: "1,000",
+      goblin: "10,000",
+    },
+    {
+      name: "Website Rewards: Monsters",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "1,161,000 total",
+      wcoin: "4,761 total",
+      goblin: "48,350 total",
+    },
+    {
+      name: "In-game playtime",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      goblin: "1 per 10 minutes",
+    },
+    {
+      name: "Balrog Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "5,000",
+    },
+    {
+      name: "Lunar Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "500",
+    },
+    {
+      name: "Hellraiser Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "5,000",
+    },
+    {
+      name: "Azure Dragon Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "500",
+    },
+    {
+      name: "Muun Invasion",
+      type: "invasion",
+      icon: BloodCastleIcon,
+      ruud: "500",
+    },
+  ]; const [rewardSearch, setRewardSearch] = useState(""); const filteredRewards = rewardSources.filter(r =>
+    r.name.toLowerCase().includes(rewardSearch.toLowerCase())
+  );
   const { translate } = useTranslation();
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(null);
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
   const [openResult, setOpenResult] = useState(null);
@@ -173,25 +513,184 @@ function Info({ user, currentTheme, onThemeChange }) {
               />
               {translate("guide.serverInfo.list.commands")}
             </li>
-            <br />
-            <li>/addstr {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to strength</span></li>
-            <li>/addagi {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to agility</span></li>
-            <li>/addene {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to energy</span></li>
-            <li>/addvit {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to vitality</span></li>
-            <li>/addcmd {translate("guide.serverInfo.list.amount")} <span style={{ color: "grey" }}>- Adds points to command</span></li>
-            <li>/reset <span style={{ color: "grey" }}>- Required level 400, you will stay in spot</span></li>
-            <li>/reset auto <span style={{ color: "grey" }}>- Automatically reset at level 400, use again to disable</span></li>
-            <li>/evo <span style={{ color: "grey" }}>- Automatically evolve to your next class quest evolution</span></li>
-            <li>/attack <span style={{ color: "grey" }}>- This will put you in off attack modus, you can close client</span></li>
-            <li>/store ruud <span style={{ color: "grey" }}>- Open personal store then type this to offstore sell ruud (Zen will be Ruud)</span></li>
-            <li>/store wcc <span style={{ color: "grey" }}>- Open personal store then type this to offstore sell WCoin (Zen will be WCoin)</span></li>
-            <li>/warehouse (number) <span style={{ color: "grey" }}>- Change to a different warehouse number</span></li>
-            <li>/clearinv <span style={{ color: "grey" }}>- Clears your entire inventory</span></li>
-            <li>/clearextinv <span style={{ color: "grey" }}>- Clears all four of your extended inventory</span></li>
-            <li>/clearinvmuun <span style={{ color: "grey" }}>- Clears your entire muun inventory</span></li>
-            <li>/cleareventinv <span style={{ color: "grey" }}>- Clears your entire event inventory</span></li>
+            <li>
+              /addstr {translate("guide.serverInfo.list.amount")}{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.addstr")}
+              </span>
+            </li>
+
+            <li>
+              /addagi {translate("guide.serverInfo.list.amount")}{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.addagi")}
+              </span>
+            </li>
+
+            <li>
+              /addene {translate("guide.serverInfo.list.amount")}{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.addene")}
+              </span>
+            </li>
+
+            <li>
+              /addvit {translate("guide.serverInfo.list.amount")}{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.addvit")}
+              </span>
+            </li>
+
+            <li>
+              /addcmd {translate("guide.serverInfo.list.amount")}{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.addcmd")}
+              </span>
+            </li>
+
+            <li>
+              /reset{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.reset")}
+              </span>
+            </li>
+
+            <li>
+              /reset auto{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.resetAuto")}
+              </span>
+            </li>
+
+            <li>
+              /evo{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.evo")}
+              </span>
+            </li>
+
+            <li>
+              /attack{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.attack")}
+              </span>
+            </li>
+
+            <li>
+              /store ruud{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.storeRuud")}
+              </span>
+            </li>
+
+            <li>
+              /store wcc{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.storeWcc")}
+              </span>
+            </li>
+
+            <li>
+              /warehouse (number){" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.warehouse")}
+              </span>
+            </li>
+
+            <li>
+              /clearinv{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.clearinv")}
+              </span>
+            </li>
+
+            <li>
+              /clearextinv{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.clearextinv")}
+              </span>
+            </li>
+
+            <li>
+              /clearinvmuun{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.clearinvmuun")}
+              </span>
+            </li>
+
+            <li>
+              /cleareventinv{" "}
+              <span style={{ color: "grey" }}>
+                - {translate("commands.cleareventinv")}
+              </span>
+            </li>
           </ul>
           <p>{translate("guide.serverInfo.outro")}</p>
+        </>
+      ),
+    },
+    {
+      title: translate("rewards.title"),
+      icon: faCoins,
+      content: (
+        <>
+          <p>{translate("rewards.description")}</p>
+          <SearchInput
+            type="text"
+            placeholder={translate("rewards.search")}
+            value={rewardSearch}
+            onChange={(e) => setRewardSearch(e.target.value)}
+            style={{ marginBottom: "15px" }}
+          />
+          <BossGrid>
+            {filteredRewards.map((reward, i) => (
+              <BossCard style={{ height: "auto" }} key={i}>
+                <BossHeader>
+                  <ClassIconBackground iconScale={60} size={90}>
+                    <img
+                      src={reward.icon || BloodCastleIcon}
+                      alt={reward.name}
+                      style={{
+                        width: 85,
+                        height: 85,
+                        objectFit: "contain"
+                      }}
+                    />
+                  </ClassIconBackground>
+
+                  <BossText>
+                    <BossTitle>{reward.name}</BossTitle>
+                    <BossSubtitle>
+                      {reward.location && (
+                        <span><strong>{translate("rewards.location")}:</strong> {reward.location}</span>
+                      )}
+
+                      {reward.ruud && (
+                        <span><strong>{translate("rewards.ruud")}:</strong> {reward.ruud}</span>
+                      )}
+
+                      {reward.wcoin > 0 && (
+                        <span><strong>{translate("rewards.wcoin")}:</strong> {reward.wcoin}</span>
+                      )}
+
+                      {reward.goblin > 0 && (
+                        <span><strong>{translate("rewards.goblin")}:</strong> {reward.goblin}</span>
+                      )}
+                    </BossSubtitle>
+                  </BossText>
+                </BossHeader>
+              </BossCard>
+            ))}
+          </BossGrid>
+        </>
+      ),
+    },
+    {
+      title: translate("questsEvo.title"),
+      icon: faScroll,
+      content: (
+        <>
+          <p>{translate("guide.questsEvo.description")}</p>
         </>
       ),
     },
@@ -200,7 +699,6 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: faShieldAlt,
       content: (
         <>
-          {/* unchanged */}
           <p>{translate("guide.gear.intro")}</p>
           <ul style={{ listStyleType: "none" }}>
             <li>{translate("guide.gear.list.hunt")}</li>
@@ -229,59 +727,6 @@ function Info({ user, currentTheme, onThemeChange }) {
         </>
       ),
     },
-    {
-      title: translate("questsEvo.title"),
-      icon: faScroll,
-      content: (
-        <>
-          <p>{translate("guide.questsEvo.description")}</p>
-        </>
-      ),
-    },
-    {
-      title: translate("ruud.title"),
-      icon: faCoins,
-      content: (
-        <>
-          {/* unchanged */}
-          <p>{translate("ruud.intro")}</p>
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <TranslatedHTML entity="ruud.list.bloodCastle" />
-            </li>
-            <br />
-            <li>
-              <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <TranslatedHTML entity="ruud.list.goldenInvasions" />
-            </li>
-            <br />
-            <li>
-              <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <TranslatedHTML entity="ruud.list.majesticMaps" />
-            </li>
-            <br />
-            <li>
-              <FontAwesomeIcon icon={faDragon} style={{ marginRight: "6px" }} />
-              <TranslatedHTML entity="ruud.list.castleSiege" />
-            </li>
-            <br />
-            <li>
-              <FontAwesomeIcon
-                icon={faHandsHelping}
-                style={{ marginRight: "6px" }}
-              />
-              <TranslatedHTML entity="ruud.list.ruudNPC" />
-            </li>
-          </ul>
-          <p className="footer-note">
-            <FontAwesomeIcon icon={faStar} style={{ marginRight: "6px" }} />
-            <TranslatedHTML entity="ruud.tip" />
-          </p>
-        </>
-      ),
-    },
-    // 🔍 New Drop Search section
     {
       title: translate("dropSearch.title"),
       icon: faSearch,
@@ -365,7 +810,7 @@ function Info({ user, currentTheme, onThemeChange }) {
                                   }}
                                 >
                                   <FontAwesomeIcon
-                                    icon={faSkull}
+                                    icon={BloodCastleIcon}
                                     style={{
                                       marginRight: "4px",
                                       color: currentTheme.primary,

@@ -116,15 +116,14 @@ export default {
         "Siin on peamised serveri määrad, auhinnad ja kasulikud käsud, mis aitavad sul tõhusalt areneda. Jälgi sündmuste taimerit, reset-auhindu ja bosside taassünke, et maksimeerida oma kasu.",
       list: {
         expRate: "EXP määr: 5000x",
-        masterExp: "Meistri EXP: 9999x",
-        majesticExp: "Majestic EXP: 9999x",
-        excellentDrop: "Excellent eseme languse määr: 200%",
-        resetReward: "Reset-auhind: WCoini, Goblini punkti, Ruudi",
+        masterExp: "Meistri EXP: 200%",
+        majesticExp: "Majestic EXP: 200%",
+        excellentDrop: "Excellent eseme languse määr: 200%", resetReward: "Reset preemia: Muudetav veebilehe sisselogimisel (WCoin/GP/Ruud)",
         grandReset: "Grand Reset nõue: 100 resetit",
         grandResetReward:
           "Grand Reset auhind: 1,000 WCoini, 10,000 Goblini punkti",
-        eventTimers: "Sündmuste taimerid: vaata veebilehe ajakava",
-        bossRespawns: "Bosside taassünnid: iga tund",
+        eventTimers: "Eventide taimerid: Vaata ajakava veebilehelt",
+        bossRespawns: "Bosside respawn: Vaata ajakava veebilehelt",
         commands: "Käsud:",
         amount: "(kogus)",
       },
@@ -341,8 +340,37 @@ export default {
       "Hetkel teostame hooldustöid, et uuendada Myra MuOnline Season 20, Episode 2 ja 3 versioonile. " +
       "Selle aja jooksul võivad veebileht ja mänguteenused olla ajutiselt kättesaamatud. " +
       "Palun külasta meid peagi uuesti — oleme tagasi niipea, kui uuendus on lõpetatud."
+  }, commands: {
+    addstr: "Lisab punkte tugevusele",
+    addagi: "Lisab punkte osavusele",
+    addene: "Lisab punkte energiale",
+    addvit: "Lisab punkte vitaalsusele",
+    addcmd: "Lisab punkte käsule",
+    reset: "Nõutav tase 400, jääd samasse kohta",
+    resetAuto: "Resetib automaatselt tasemel 400, kasuta uuesti, et välja lülitada",
+    evo: "Evolveerib automaatselt järgmisele klassiülesande arengule",
+    attack: "Lülitab sisse offline rünnaku režiimi, võid kliendi sulgeda",
+    storeRuud: "Ava personaalne pood ja kirjuta see, et müüa Ruudi offstore’is (Zen muutub Ruudiks)",
+    storeWcc: "Ava personaalne pood ja kirjuta see, et müüa WCoini offstore’is (Zen muutub WCoiniks)",
+    warehouse: "Vaheta teise laoruumi numbri peale",
+    clearinv: "Tühjendab kogu sinu inventari",
+    clearextinv: "Tühjendab kõik neli laiendatud inventari lehte",
+    clearinvmuun: "Tühjendab kogu sinu muun-inventari",
+    cleareventinv: "Tühjendab kogu sinu event-inventari",
   },
+  rewards: {
+    title: "WCoin, Goblin Pointsi ja Ruudi preemiad",
 
+    description:
+      "Mängus on mitmeid viise WCoini, Goblin Pointsi ja Ruudi teenimiseks. Neid preemiaid saab erinevate tegevuste kaudu nagu bosside jaht, invasioonid ning mängusisesed üritused nagu Blood Castle ja Devil Square. Mõningaid preemiaid, sealhulgas WCoini ja Goblin Pointse, saab teenida ka veebisaidi tegevuste kaudu nagu resetid. Paljud bossid ja mõned minibossid annavad alistamisel Ruudi. Allpool leiad nimekirja bossidest, koletistest ja üritustest, mis annavad neid valuutasid, koos Ruudi, WCoini või Goblin Pointside kogustega.",
+
+    search: "Otsi bossi, koletist või üritust...",
+
+    location: "Asukoht",
+    ruud: "Ruud",
+    wcoin: "WCoin",
+    goblin: "Goblin Points",
+  },
   highscores: {
     serverError: "Serveri viga: {error}",
     title: "Parimad mängijad",

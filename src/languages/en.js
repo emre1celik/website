@@ -1,7 +1,38 @@
 // eslint-disable-next-line
 export default {
+  commands: {
+    addstr: "Adds points to strength",
+    addagi: "Adds points to agility",
+    addene: "Adds points to energy",
+    addvit: "Adds points to vitality",
+    addcmd: "Adds points to command",
+    reset: "Required level 400, you will stay in spot",
+    resetAuto: "Automatically reset at level 400, use again to disable",
+    evo: "Automatically evolve to your next class quest evolution",
+    attack: "This will put you in off attack mode, you can close client",
+    storeRuud: "Open personal store then type this to offstore sell ruud (Zen will be Ruud)",
+    storeWcc: "Open personal store then type this to offstore sell WCoin (Zen will be WCoin)",
+    warehouse: "Change to a different warehouse number",
+    clearinv: "Clears your entire inventory",
+    clearextinv: "Clears all four of your extended inventory",
+    clearinvmuun: "Clears your entire muun inventory",
+    cleareventinv: "Clears your entire event inventory",
+  },
+  rewards: {
+    title: "WCoin, Goblin Points and Ruud Rewards",
+
+    description:
+      "There are several ways to earn WCoin, Goblin Points, and Ruud in the game. These rewards can be obtained through various activities such as boss hunts, invasions, and in-game events like Blood Castle and Devil Square. Some rewards, including WCoin and Goblin Points, can also be earned through website actions such as resets. Many bosses and certain minibosses drop Ruud when defeated. Below you will find a list of bosses, monsters, and events that provide these currencies, along with the amount of Ruud, WCoin, or Goblin Points they reward.",
+
+    search: "Search boss, monster or event...",
+
+    location: "Location",
+    ruud: "Ruud",
+    wcoin: "WCoin",
+    goblin: "Goblin Points",
+  },
   dropSearch: {
-    title: "Drop Item Search",
+    title: "Drop item search",
     intro:
       "Search for an item to see more information about droprates, location and monsters. This data is collected from all maps and monsters in the server.",
     placeholder: "Enter item name...",
@@ -19,7 +50,7 @@ export default {
     },
   },
   chaosCombination: {
-    title: "Chaos Combination Rates",
+    title: "Chaos combination rates",
     intro:
       "<strong>Chaos Combination</strong> is the system used to craft and upgrade high-tier items, including wings and powerful weapons. You can perform Chaos Combinations at special NPCs like the <strong>Noria Goblin</strong>, located in Noria, or similar NPCs in Lorencia and Devias. Using the correct materials and understanding success rates is crucial to maximize your chances.",
     upgradeRates: "Item Level Upgrade Success Rates:",
@@ -58,7 +89,7 @@ export default {
     tip: "<em>Tip:</em> Always check <strong>Event Timers</strong> for the best Ruud opportunities! Focus on high-level challenges — the stronger the monsters, the greater the Ruud rewards. Also, saving Ruud for <strong>limited-time items</strong> can maximize your endgame power.",
   },
   questsEvo: {
-    title: "Quests and Class Evolution",
+    title: "Quests and class evolution",
     intro:
       "Quests and class advancements are the core progression system in MU. Completing these quests unlocks higher classes, new skills, stat points, and powerful equipment. Follow the NPC guidance carefully, defeat the required monsters, and complete each stage to evolve your character to the next class.",
   },
@@ -66,32 +97,32 @@ export default {
     intro:
       "Here you’ll find everything you need to know — from server details and gear progression to Chaos Machine crafting and Ruud farming tips. Whether you’re a new adventurer or a returning veteran, this page will help you power up efficiently and enjoy every part of your journey on our server!",
     gear: {
-      title: "Weapons and Gear Progression",
+      title: "Weapons and gear progression",
       intro:
         "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). After this you can:",
       list: {
-        hunt: "Hunt monsters and bosses to drop Excellent option items (minimum 3-4 options). You can also hunt Kundun boss in Kalima for Excellent and Ancient option items.",
+        hunt: "Hunt monsters and bosses to drop excellent option items (minimum 3-4 options).",
         seedCapsules:
-          "OR collect Box of Luck, Silver & Gold Medals and Heart of Love for Excellent plus Ancient options.",
+          "OR collect Box of Luck, Silver & Gold Medals and Heart of Love for excellent plus ancient options.",
         bloodangel:
-          "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events. Upgrade it through tiers to evolve into higher sets. This is the best armor; this armor has ancient options. The full upgrade path is:",
+          "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events, bosses, monsters, website login rewards, and invasions. Upgrade it through tiers to evolve into higher sets; for each upgrade between tiers you need a Soul for armor pieces and an Anvil for weapon pieces. These can be also bought at the Ruud shop. This is the best armor; this armor has ancient options. The full upgrade path is:",
       },
     },
     serverInfo: {
-      title: "Server Information and Commands",
+      title: "Server information and commands",
       intro:
         "Here are the key server rates, rewards, and useful commands to help you progress efficiently. Keep track of event timers, reset rewards, and boss respawns to maximize your gains.",
       list: {
         expRate: "Normal EXP: 5000x",
-        masterExp: "Master EXP: 5000x",
-        majesticExp: "Majestic EXP: 5000x",
+        masterExp: "Master EXP: 200%",
+        majesticExp: "Majestic EXP: 200%",
         excellentDrop: "Excellent Item Drop Rate: 200%",
-        resetReward: "Reset Reward: WCoins, Goblin Points, Ruud",
+        resetReward: "Reset Reward: Custom in website login (WCoin/GP/Ruud)",
         grandReset: "Grand Reset requirement: 100 resets",
         grandResetReward:
           "Grand Reset Reward: 1,000 WCoins, 10,000 Goblin Points",
         eventTimers: "Event Timers: Check website schedule",
-        bossRespawns: "Boss Respawns: Each hour",
+        bossRespawns: "Boss Respawns: Check website schedule",
         commands: "Commands:",
         amount: "(amount)",
       },
@@ -104,7 +135,7 @@ export default {
       intro:
         "Start your adventure by visiting the NPC Shops in Lorenica, Noria, or Elbeland for basic starter gear (press TAB to open minimap). After this you can:",
       list: [
-        "Hunt monsters and bosses to drop Excellent option items (minimum 3-4 options). You can also hunt Kundun boss in Kalima for Excellent and Ancient option items.",
+        "Hunt monsters and bosses to drop excellent option items (minimum 3-4 options).",
         "OR collect Seed Capsules for 5 slot socket weapons and armor. The capsules also drop seeds that you can insert into the slots.",
         "OR begin your Bloodangel Set journey — available from the Elbeland NPC Priest James. You need Ruud for this, which can be collected from all events. Upgrade it through tiers to evolve into higher sets. This is the best armor; this armor has excellent and ancient options. The full upgrade path is: Bloodangel, Darkangel, Holyangel, Awakening, Soul, Blue Eye, Silver Heart, Manticore, Brilliant, Apocalypse, Lightning.",
       ],

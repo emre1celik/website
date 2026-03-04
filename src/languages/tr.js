@@ -116,14 +116,14 @@ export default {
         "İşte verimli ilerlemenize yardımcı olacak temel sunucu oranları, ödüller ve yararlı komutlar. Etkinlik zamanlayıcılarını, reset ödüllerini ve boss respawnlarını takip ederek kazançlarınızı maksimuma çıkarın.",
       list: {
         expRate: "EXP Oranı: 5000x",
-        masterExp: "Master EXP: 9999x",
-        majesticExp: "Majestic EXP: 9999x",
+        masterExp: "Master EXP: 200%",
+        majesticExp: "Majestic EXP: 200%",
         excellentDrop: "Excellent Eşya Düşme Oranı: 200%",
-        resetReward: "Reset Ödülü: WCoin, Goblin Puanı, Ruud",
+        resetReward: "Reset Ödülü: Web sitesi girişinde özelleştirilebilir (WCoin/GP/Ruud)",
         grandReset: "Grand Reset Gereksinimi: 100 reset",
         grandResetReward: "Grand Reset Ödülü: 1,000 WCoin, 10,000 Goblin Puanı",
-        eventTimers: "Etkinlik Zamanlayıcıları: web sitesinden kontrol edin",
-        bossRespawns: "Boss Yeniden Doğuşları: Her saat",
+        eventTimers: "Etkinlik zamanlayıcıları: Web sitesindeki takvimi kontrol edin",
+        bossRespawns: "Boss yeniden doğma süreleri: Web sitesindeki takvimi kontrol edin",
         commands: "Komutlar:",
         amount: "(miktar)",
       },
@@ -343,7 +343,19 @@ export default {
       "Bu süre boyunca web sitesi ve oyun hizmetleri geçici olarak kullanılamayabilir. " +
       "Lütfen kısa süre sonra tekrar kontrol edin — güncelleme tamamlanır tamamlanmaz tekrar çevrimiçi olacağız."
   },
+  rewards: {
+    title: "WCoin, Goblin Points ve Ruud Ödülleri",
 
+    description:
+      "Oyunda WCoin, Goblin Points ve Ruud kazanmanın birkaç yolu vardır. Bu ödüller boss avları, invasions ve Blood Castle ile Devil Square gibi oyun içi etkinlikler aracılığıyla elde edilebilir. WCoin ve Goblin Points dahil bazı ödüller web sitesi üzerinden yapılan işlemlerle, örneğin resetler ile de kazanılabilir. Birçok boss ve bazı minibosslar yenildiğinde Ruud düşürür. Aşağıda bu para birimlerini sağlayan bosslar, canavarlar ve etkinliklerin listesi ile birlikte verilen Ruud, WCoin veya Goblin Points miktarlarını bulabilirsiniz.",
+
+    search: "Boss, canavar veya etkinlik ara...",
+
+    location: "Konum",
+    ruud: "Ruud",
+    wcoin: "WCoin",
+    goblin: "Goblin Points",
+  },
   highscores: {
     serverError: "Sunucu hatası: {error}",
     title: "Liderlik Tablosu",
@@ -417,6 +429,23 @@ export default {
     community: "Topluluk",
     login: "Giriş",
     info: "Rehberler",
+  }, commands: {
+    addstr: "Güce puan ekler",
+    addagi: "Çevikliğe puan ekler",
+    addene: "Enerjiye puan ekler",
+    addvit: "Canlılığa (vitality) puan ekler",
+    addcmd: "Komuta puanı ekler",
+    reset: "Gerekli seviye 400, bulunduğun yerde kalırsın",
+    resetAuto: "400 seviyede otomatik reset, kapatmak için tekrar kullan",
+    evo: "Bir sonraki sınıf görev evolüsyonuna otomatik geçirir",
+    attack: "Offline attack modunu açar, istemciyi kapatabilirsin",
+    storeRuud: "Kişisel mağazayı aç ve offstore’da Ruud satmak için bunu yaz (Zen Ruud olur)",
+    storeWcc: "Kişisel mağazayı aç ve offstore’da WCoin satmak için bunu yaz (Zen WCoin olur)",
+    warehouse: "Farklı bir depo numarasına geç",
+    clearinv: "Tüm envanterini temizler",
+    clearextinv: "Genişletilmiş envanterin dört sayfasını temizler",
+    clearinvmuun: "Tüm muun envanterini temizler",
+    cleareventinv: "Tüm event envanterini temizler",
   },
   cookie: {
     message:

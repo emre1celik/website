@@ -58,10 +58,6 @@ const invasionSchedule = {
     "02:25", "06:25", "10:25", "14:25", "18:25",
   ],
 
-  "Cursed Santa Invasion": [
-    "02:50", "06:50", "10:50", "14:50", "18:50",
-  ],
-
   "Medusa Invasion": [
     "01:00", "05:00", "09:00", "13:00", "17:00", "18:00",
   ],
@@ -260,12 +256,6 @@ function Events({ user, currentTheme, onThemeChange }) {
         enter: "Automatic invasion",
         where: "Lorencia",
         rewards: "Elemental monsters drop rewards",
-      },
-
-      "Cursed Santa Invasion": {
-        enter: "Automatic invasion",
-        where: "Lorencia / Noria / Devias",
-        rewards: "Christmas Boxes, Jewels",
       },
 
       "Medusa Invasion": {

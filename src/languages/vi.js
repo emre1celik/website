@@ -113,15 +113,15 @@ export default {
         "Đây là các key rates, rewards và lệnh hữu ích để bạn phát triển nhanh. Theo dõi event timers, reset rewards, và boss respawns để tối đa lợi ích.",
       list: {
         expRate: "EXP Rate: 5000x",
-        masterExp: "Master EXP: 9999x",
-        majesticExp: "Majestic EXP: 9999x",
+        masterExp: "Master EXP: 200%",
+        majesticExp: "Majestic EXP: 200%",
         excellentDrop: "Tỉ lệ rớt Excellent Item: 200%",
-        resetReward: "Reset Reward: WCoins, Goblin Points, Ruud",
+        resetReward: "Phần thưởng Reset: Tùy chỉnh khi đăng nhập website (WCoin/GP/Ruud)",
         grandReset: "Yêu cầu Grand Reset: 100 resets",
         grandResetReward:
           "Grand Reset Reward: 1,000 WCoins, 10,000 Goblin Points",
-        eventTimers: "Event Timers: Check website schedule",
-        bossRespawns: "Boss Respawns: Mỗi giờ",
+        eventTimers: "Thời gian sự kiện: Xem lịch trên website",
+        bossRespawns: "Thời gian hồi sinh Boss: Xem lịch trên website",
         commands: "Commands:",
         amount: "(amount)",
       },
@@ -409,7 +409,36 @@ export default {
       "Trong thời gian này, trang web và các dịch vụ trò chơi có thể tạm thời không khả dụng. " +
       "Vui lòng quay lại sau — chúng tôi sẽ hoạt động trở lại ngay khi quá trình nâng cấp hoàn tất."
   },
+  rewards: {
+    title: "Phần thưởng WCoin, Goblin Points và Ruud",
 
+    description:
+      "Có nhiều cách để kiếm WCoin, Goblin Points và Ruud trong trò chơi. Những phần thưởng này có thể nhận được thông qua nhiều hoạt động khác nhau như săn boss, các cuộc xâm lược và các sự kiện trong game như Blood Castle và Devil Square. Một số phần thưởng, bao gồm WCoin và Goblin Points, cũng có thể nhận được thông qua các hoạt động trên website như reset. Nhiều boss và một số miniboss sẽ rơi Ruud khi bị tiêu diệt. Dưới đây là danh sách các boss, quái vật và sự kiện cung cấp các loại tiền này, cùng với số lượng Ruud, WCoin hoặc Goblin Points nhận được.",
+
+    search: "Tìm boss, quái vật hoặc sự kiện...",
+
+    location: "Vị trí",
+    ruud: "Ruud",
+    wcoin: "WCoin",
+    goblin: "Goblin Points",
+  }, commands: {
+    addstr: "Cộng điểm vào sức mạnh",
+    addagi: "Cộng điểm vào nhanh nhẹn",
+    addene: "Cộng điểm vào năng lượng",
+    addvit: "Cộng điểm vào thể lực",
+    addcmd: "Cộng điểm vào chỉ huy",
+    reset: "Yêu cầu cấp 400, bạn sẽ đứng nguyên tại chỗ",
+    resetAuto: "Tự động reset ở cấp 400, dùng lại để tắt",
+    evo: "Tự động tiến hóa sang bước tiếp theo của nhiệm vụ class",
+    attack: "Bật chế độ offline attack, bạn có thể đóng client",
+    storeRuud: "Mở cửa hàng cá nhân rồi gõ lệnh này để bán Ruud ở offstore (Zen sẽ thành Ruud)",
+    storeWcc: "Mở cửa hàng cá nhân rồi gõ lệnh này để bán WCoin ở offstore (Zen sẽ thành WCoin)",
+    warehouse: "Chuyển sang số kho khác",
+    clearinv: "Xóa toàn bộ túi đồ của bạn",
+    clearextinv: "Xóa cả 4 trang túi đồ mở rộng",
+    clearinvmuun: "Xóa toàn bộ túi đồ muun",
+    cleareventinv: "Xóa toàn bộ túi đồ event",
+  },
   highscores: {
     serverError: "Lỗi máy chủ: {error}",
     title: "Bảng xếp hạng",

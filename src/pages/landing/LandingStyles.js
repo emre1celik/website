@@ -1,24 +1,5 @@
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { keyframes } from "styled-components";
-
-const shine = keyframes`
-  0% {
-    transform: translateX(-120%);
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  50% {
-    transform: translateX(120%);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateX(120%);
-    opacity: 0;
-  }
-`;
 
 export const LandingWrapper = styled.div`
   display: flex;

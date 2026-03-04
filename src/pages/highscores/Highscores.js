@@ -4,20 +4,6 @@ import {
   HighscoresWrapper,
   HighscoresContent,
   HighscoresBox,
-  HighscoresTable,
-  RankIcon,
-  GlowingName,
-  BossGrid,
-  BossCard,
-  BossTitle,
-  BossTableWrapper,
-  BossSubtitle,
-  BossHeader,
-  BossText,
-  PlayerGrid,
-  PlayerCard,
-  PlayerHeader,
-  PlayerTitle,
   PlayerPopupOverlay,
   PlayerPopup,
   PopupHeader,
@@ -31,8 +17,7 @@ import Navigation from "../../components/navigation/Navigation";
 import Footer from "../../components/footer/Footer";
 import { Helmet } from "react-helmet";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCrown, faKhanda, faSkull, faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { ClassIconBackground } from "./HighscoresStyles";
+import { faKhanda, faSkull } from "@fortawesome/free-solid-svg-icons";
 import {
   faUsers,
   faTrophy,
@@ -78,13 +63,73 @@ import {
   ControlPanelTabs,
 } from "../control_panel/ControlPanelStyles";
 import { useTranslation } from "../../context/TranslationContext";
-import GuildEmblem from "../../components/guild_emblem/GuildEmblem";
 import HighscoresGuilds from "./guilds/HighscoresGuilds";
 import HighscoresEvents from "./events/HighscoresEvents";
 import HighscoresMonsters from "./monsters/HighscoresMonsters";
 import HighscoresBosses from "./bosses/HighscoresBosses";
 import HighscoresPlayers from "./players/HighscoresPlayers";
-
+const classIconMap = {
+  dw: {
+    ids: [0, 1, 2, 3, 4, 7, 8, 15],
+    icon: DwIcon,
+  },
+  dk: {
+    ids: [16, 17, 18, 19, 20, 23, 31],
+    icon: DkIcon,
+  },
+  elf: {
+    ids: [32, 33, 34, 35, 36, 39, 47],
+    icon: ElfIcon,
+  },
+  mg: {
+    ids: [48, 49, 50, 51, 52, 55, 63],
+    icon: MgIcon,
+  },
+  dl: {
+    ids: [64, 65, 66, 67, 68, 71, 79],
+    icon: DlIcon,
+  },
+  sum: {
+    ids: [80, 81, 82, 83, 84, 87, 95],
+    icon: SumIcon,
+  },
+  rf: {
+    ids: [96, 97, 98, 99, 100, 103, 111],
+    icon: RfIcon,
+  },
+  gl: {
+    ids: [112, 113, 114, 115, 116, 119, 127],
+    icon: GlIcon,
+  },
+  rw: {
+    ids: [128, 129, 130, 131, 132, 135, 143],
+    icon: RwIcon,
+  },
+  sl: {
+    ids: [144, 145, 146, 147, 148, 151, 159],
+    icon: SlIcon,
+  },
+  gc: {
+    ids: [160, 161, 162, 163, 164, 167, 175],
+    icon: GcIcon,
+  },
+  lw: {
+    ids: [176, 177, 178, 179, 180, 183, 191],
+    icon: LwIcon,
+  },
+  ma: {
+    ids: [192, 193, 194, 195, 196, 199, 207],
+    icon: MaIcon,
+  },
+  ik: {
+    ids: [208, 209, 210, 211, 212, 215, 223],
+    icon: IkIcon,
+  },
+  al: {
+    ids: [224, 225, 226, 227, 228, 231, 239],
+    icon: AlcIcon,
+  }
+};
 function Highscores({ user, currentTheme, onThemeChange }) {
   const { translate } = useTranslation();
   const [selectedClass] = useState("all");
@@ -432,70 +477,6 @@ function Highscores({ user, currentTheme, onThemeChange }) {
   }, [bosses, bossData]);
 
   const [selectedPlayer, setSelectedPlayer] = useState(null);
-
-
-  const classIconMap = {
-    dw: {
-      ids: [0, 1, 2, 3, 4, 7, 8, 15],
-      icon: DwIcon,
-    },
-    dk: {
-      ids: [16, 17, 18, 19, 20, 23, 31],
-      icon: DkIcon,
-    },
-    elf: {
-      ids: [32, 33, 34, 35, 36, 39, 47],
-      icon: ElfIcon,
-    },
-    mg: {
-      ids: [48, 49, 50, 51, 52, 55, 63],
-      icon: MgIcon,
-    },
-    dl: {
-      ids: [64, 65, 66, 67, 68, 71, 79],
-      icon: DlIcon,
-    },
-    sum: {
-      ids: [80, 81, 82, 83, 84, 87, 95],
-      icon: SumIcon,
-    },
-    rf: {
-      ids: [96, 97, 98, 99, 100, 103, 111],
-      icon: RfIcon,
-    },
-    gl: {
-      ids: [112, 113, 114, 115, 116, 119, 127],
-      icon: GlIcon,
-    },
-    rw: {
-      ids: [128, 129, 130, 131, 132, 135, 143],
-      icon: RwIcon,
-    },
-    sl: {
-      ids: [144, 145, 146, 147, 148, 151, 159],
-      icon: SlIcon,
-    },
-    gc: {
-      ids: [160, 161, 162, 163, 164, 167, 175],
-      icon: GcIcon,
-    },
-    lw: {
-      ids: [176, 177, 178, 179, 180, 183, 191],
-      icon: LwIcon,
-    },
-    ma: {
-      ids: [192, 193, 194, 195, 196, 199, 207],
-      icon: MaIcon,
-    },
-    ik: {
-      ids: [208, 209, 210, 211, 212, 215, 223],
-      icon: IkIcon,
-    },
-    al: {
-      ids: [224, 225, 226, 227, 228, 231, 239],
-      icon: AlcIcon,
-    }
-  };
 
   const bossDisplayOrder = [
     "God of Darkness",

@@ -116,15 +116,15 @@ export default {
         "Šeit ir galvenie servera likmju, atlīdzību un noderīgo komandu dati, kas palīdzēs tev efektīvi progresēt. Sekojiet līdzi notikumu taimeriem, reset atlīdzībām un boss respawniem, lai maksimizētu ieguvumus.",
       list: {
         expRate: "EXP likme: 5000x",
-        masterExp: "Master EXP: 9999x",
-        majesticExp: "Majestic EXP: 9999x",
+        masterExp: "Master EXP: 200%",
+        majesticExp: "Majestic EXP: 200%",
         excellentDrop: "Excellent priekšmeta krišanas likme: 200%",
-        resetReward: "Reset atlīdzība: WCoin, Goblina punkti, Ruud",
+        resetReward: "Reset atlīdzība: Pielāgojama vietnes pieteikšanās lapā (WCoin/GP/Ruud)",
         grandReset: "Grand Reset prasība: 100 reseti",
         grandResetReward:
           "Grand Reset atlīdzība: 1,000 WCoin, 10,000 Goblina punkti",
-        eventTimers: "Notikumu taimeri: pārbaudi mājaslapas grafiku",
-        bossRespawns: "Bosu respawni: katru stundu",
+        eventTimers: "Pasākumu taimeri: Skaties grafiku vietnē",
+        bossRespawns: "Bossu respawns: Skaties grafiku vietnē",
         commands: "Komandas:",
         amount: "(daudzums)",
       },
@@ -339,7 +339,36 @@ export default {
       "Šajā laikā tīmekļa vietne un spēles pakalpojumi var būt īslaicīgi nepieejami. " +
       "Lūdzu, apmeklējiet mūs vēlāk — mēs atgriezīsimies tiešsaistē, tiklīdz atjauninājums būs pabeigts."
   },
+  rewards: {
+    title: "WCoin, Goblin Points un Ruud atlīdzības",
 
+    description:
+      "Spēlē ir vairāki veidi, kā iegūt WCoin, Goblin Points un Ruud. Šīs atlīdzības var iegūt dažādās aktivitātēs, piemēram, bossu medībās, invāzijās un spēles pasākumos, piemēram, Blood Castle un Devil Square. Dažas atlīdzības, tostarp WCoin un Goblin Points, var iegūt arī ar vietnes darbībām, piemēram, resetiem. Daudzi bossi un daži minibossi pēc uzvaras dod Ruud. Zemāk atradīsi sarakstu ar bosiem, monstriem un pasākumiem, kas dod šīs valūtas, kā arī Ruud, WCoin vai Goblin Points daudzumu.",
+
+    search: "Meklēt bosu, monstru vai pasākumu...",
+
+    location: "Atrašanās vieta",
+    ruud: "Ruud",
+    wcoin: "WCoin",
+    goblin: "Goblin Points",
+  }, commands: {
+    addstr: "Pievieno punktus spēkam",
+    addagi: "Pievieno punktus veiklumam",
+    addene: "Pievieno punktus enerģijai",
+    addvit: "Pievieno punktus dzīvotspējai",
+    addcmd: "Pievieno punktus komandai",
+    reset: "Nepieciešams 400 līmenis, tu paliksi tajā pašā vietā",
+    resetAuto: "Automātiski resetos pie 400 līmeņa, izmanto vēlreiz, lai izslēgtu",
+    evo: "Automātiski attīsta uz nākamo klases uzdevuma evolūciju",
+    attack: "Ieslēdz offline uzbrukuma režīmu, vari aizvērt klientu",
+    storeRuud: "Atver personīgo veikalu un ieraksti šo, lai offstore pārdotu Ruud (Zen būs Ruud)",
+    storeWcc: "Atver personīgo veikalu un ieraksti šo, lai offstore pārdotu WCoin (Zen būs WCoin)",
+    warehouse: "Pārslēdz uz citu noliktavas numuru",
+    clearinv: "Iztīra visu tavu inventāru",
+    clearextinv: "Iztīra visas četras paplašinātā inventāra lapas",
+    clearinvmuun: "Iztīra visu tavu muun inventāru",
+    cleareventinv: "Iztīra visu tavu event inventāru",
+  },
   highscores: {
     serverError: "Servera kļūda: {error}",
     title: "Līderu tabula",

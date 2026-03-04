@@ -1,5 +1,18 @@
 // eslint-disable-next-line
 export default {
+  rewards: {
+    title: "Recompensas de WCoin, Goblin Points y Ruud",
+
+    description:
+      "Hay varias formas de ganar WCoin, Goblin Points y Ruud en el juego. Estas recompensas se pueden obtener a través de diversas actividades como cazar jefes, invasiones y eventos del juego como Blood Castle y Devil Square. Algunas recompensas, incluyendo WCoin y Goblin Points, también pueden obtenerse mediante acciones en el sitio web como resets. Muchos jefes y ciertos minibosses sueltan Ruud al ser derrotados. A continuación encontrarás una lista de jefes, monstruos y eventos que proporcionan estas monedas, junto con la cantidad de Ruud, WCoin o Goblin Points que otorgan.",
+
+    search: "Buscar jefe, monstruo o evento...",
+
+    location: "Ubicación",
+    ruud: "Ruud",
+    wcoin: "WCoin",
+    goblin: "Goblin Points",
+  },
   chaosCombination: {
     title: "Tasas de Combinación del Caos",
     intro:
@@ -35,7 +48,24 @@ export default {
     },
     tip: "<em>Consejo:</em> ¡Revisa siempre los <strong>Temporizadores de Eventos</strong> para las mejores oportunidades de Ruud! Concéntrate en desafíos de alto nivel — cuanto más fuertes sean los monstruos, mayores serán las recompensas de Ruud. Además, guardar Ruud para <strong>objetos de tiempo limitado</strong> puede maximizar tu poder final.",
   },
-
+  commands: {
+    addstr: "Añade puntos a fuerza",
+    addagi: "Añade puntos a agilidad",
+    addene: "Añade puntos a energía",
+    addvit: "Añade puntos a vitalidad",
+    addcmd: "Añade puntos a comando",
+    reset: "Nivel requerido 400, te quedarás en el mismo lugar",
+    resetAuto: "Resetea automáticamente al nivel 400, úsalo otra vez para desactivar",
+    evo: "Evoluciona automáticamente a tu siguiente evolución de misión de clase",
+    attack: "Activa el modo de ataque offline, puedes cerrar el cliente",
+    storeRuud: "Abre la tienda personal y escribe esto para vender Ruud en offstore (Zen será Ruud)",
+    storeWcc: "Abre la tienda personal y escribe esto para vender WCoin en offstore (Zen será WCoin)",
+    warehouse: "Cambia a otro número de almacén",
+    clearinv: "Vacía todo tu inventario",
+    clearextinv: "Vacía las cuatro páginas de inventario extendido",
+    clearinvmuun: "Vacía todo tu inventario de muun",
+    cleareventinv: "Vacía todo tu inventario de eventos",
+  },
   questsEvo: {
     title: "Misiones y Evolución",
     intro:
@@ -117,16 +147,14 @@ export default {
         "Aquí están las tasas clave del servidor, recompensas y comandos útiles para ayudarte a progresar eficientemente. Controla los temporizadores de eventos, recompensas de reinicio y respawns de jefes para maximizar tus ganancias.",
       list: {
         expRate: "Tasa de EXP: 5000x",
-        masterExp: "EXP de Maestro: 9999x",
-        majesticExp: "EXP Majestic: 9999x",
-        excellentDrop: "Tasa de Drop de Items Excelente: 200%",
-        resetReward:
-          "Recompensa por Reinicio: WCoins, Puntos de Goblin, Ruud",
+        masterExp: "EXP de Maestro: 200%",
+        majesticExp: "EXP Majestic: 200%",
+        excellentDrop: "Tasa de Drop de Items Excelente: 200%", resetReward: "Recompensa de Reset: Configurable en el login del sitio web (WCoin/GP/Ruud)",
         grandReset: "Requisito de Gran Reinicio: 100 reinicios",
         grandResetReward:
           "Recompensa de Gran Reinicio: 1,000 WCoins, 10,000 Puntos de Goblin",
-        eventTimers: "Temporizadores de Eventos: Consulta el horario en la web",
-        bossRespawns: "Respawns de Jefes: Cada hora",
+        eventTimers: "Temporizadores de eventos: Consulta el calendario del sitio web",
+        bossRespawns: "Reaparición de bosses: Consulta el calendario del sitio web",
         commands: "Comandos:",
         amount: "(cantidad)",
       },
