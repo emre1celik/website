@@ -346,7 +346,8 @@ export default {
       "Spēlē ir vairāki veidi, kā iegūt WCoin, Goblin Points un Ruud. Šīs atlīdzības var iegūt dažādās aktivitātēs, piemēram, bossu medībās, invāzijās un spēles pasākumos, piemēram, Blood Castle un Devil Square. Dažas atlīdzības, tostarp WCoin un Goblin Points, var iegūt arī ar vietnes darbībām, piemēram, resetiem. Daudzi bossi un daži minibossi pēc uzvaras dod Ruud. Zemāk atradīsi sarakstu ar bosiem, monstriem un pasākumiem, kas dod šīs valūtas, kā arī Ruud, WCoin vai Goblin Points daudzumu.",
 
     search: "Meklēt bosu, monstru vai pasākumu...",
-
+    respawn: "Atdzimšana",
+    checkHere: "Skatīt šeit",
     location: "Atrašanās vieta",
     ruud: "Ruud",
     wcoin: "WCoin",

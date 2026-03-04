@@ -93,6 +93,7 @@ import TranslatedHTML from "../../components/language/TranslatedHTML";
 import monsterDrops from "../../config/map_drops";
 import bagDrops from "../../config/itembags_drops";
 import { faMapMarkedAlt, faBoxOpen } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Info({ user, currentTheme, onThemeChange }) {
   const drops = [
@@ -107,6 +108,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: GodOfDarknessIcon,
       location: "Swamp of Darkness",
       ruud: "25,000 - 30,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Nix",
@@ -114,6 +116,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: NixIcon,
       location: "Nixies Lake",
       ruud: "20,000 - 25,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Lord of Ferea",
@@ -121,6 +124,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: LordFereaIcon,
       location: "Ferea",
       ruud: "15,000 - 20,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Lord Silvester",
@@ -128,6 +132,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: LordSilvesterIcon,
       location: "Uruk Mountain",
       ruud: "10,000 - 15,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Core Magriffy",
@@ -135,6 +140,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: CoreMagriffyIcon,
       location: "Nars, Acheron",
       ruud: "10,000 - 15,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Medusa",
@@ -142,6 +148,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: MedusaIcon,
       location: "Swamp of Peace",
       ruud: "10,000 - 15,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Selupan",
@@ -149,6 +156,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: SelupanIcon,
       location: "Raklion",
       ruud: "10,000 - 15,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Nightmare",
@@ -156,6 +164,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: NightmareIcon,
       location: "Kanturu Core",
       ruud: "10,000 - 15,000",
+      respawn: "2-3 hours"
     },
     {
       name: "Kundun",
@@ -163,14 +172,15 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: KundunIcon,
       location: "Kalima",
       ruud: "5,000",
+      respawn: "2 hours"
     },
-    // MINI BOSSES
     {
       name: "Hellmaine",
       type: "monster",
       icon: HellmaineIcon,
       location: "Aida",
       ruud: "4,000",
+      respawn: "2 hours"
     },
     {
       name: "Phoenix of Darkness",
@@ -178,6 +188,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: PhoenixIcon,
       location: "Icarus",
       ruud: "3,500",
+      respawn: "2 hours"
     },
     {
       name: "Zaikan",
@@ -185,6 +196,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: ZaikanIcon,
       location: "Tarkan",
       ruud: "3,000",
+      respawn: "2 hours"
     },
     {
       name: "Hydra",
@@ -192,6 +204,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: HydraIcon,
       location: "Atlans",
       ruud: "2,500",
+      respawn: "2 hours"
     },
     {
       name: "Gorgon",
@@ -199,6 +212,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: GorgonIcon,
       location: "Dungeon",
       ruud: "2,000",
+      respawn: "2 hours"
     },
     {
       name: "Ice Queen",
@@ -206,26 +220,35 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: IceQueenIcon,
       location: "Devias",
       ruud: "1,500",
+      respawn: "2 hours"
     },
-
-    // EVENTS
     {
       name: "Blood Castle",
       type: "event",
       icon: BloodCastleIcon,
       ruud: "~100,000 per event",
+      location: "Event Square"
     },
     {
       name: "Devil Square",
       type: "event",
       icon: BloodCastleIcon,
       ruud: "~80,000 per event",
+      location: "Event Square"
     },
     {
       name: "Chaos Castle",
       type: "event",
       icon: BloodCastleIcon,
       ruud: "~15,000 per event",
+      location: "Event Square"
+    },
+    {
+      name: "Maze of Dimensions",
+      type: "event",
+      icon: BloodCastleIcon,
+      ruud: "20,000 per floor",
+      location: "Event Square"
     },
     {
       name: "Elite Abyss",
@@ -233,6 +256,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteAbyssIcon,
       location: "Abyss of Atlans",
       ruud: "5,000",
+      respawn: "2 hours"
     },
     {
       name: "Elite Scorched Canyon",
@@ -240,6 +264,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteScorchedIcon,
       location: "Scorched Canyon",
       ruud: "5,500",
+      respawn: "2 hours"
     },
     {
       name: "Elite Crimson Icarus",
@@ -247,6 +272,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteIcarusIcon,
       location: "Crimson Icarus",
       ruud: "6,000",
+      respawn: "2 hours"
     },
     {
       name: "Elite Temple of Arenil",
@@ -254,6 +280,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteArenilIcon,
       location: "Temple of Arenil",
       ruud: "6,500",
+      respawn: "2 hours"
     },
     {
       name: "Elite Ashen Aida",
@@ -261,6 +288,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteAidaIcon,
       location: "Ashen Aida",
       ruud: "7,000",
+      respawn: "2 hours"
     },
     {
       name: "Elite Burning Kethotum",
@@ -268,6 +296,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteKethotumIcon,
       location: "Burning Kethotum",
       ruud: "7,500",
+      respawn: "2 hours"
     },
     {
       name: "Elite Kanturu Underground",
@@ -275,6 +304,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteKanturuIcon,
       location: "Kanturu Underground",
       ruud: "8,000",
+      respawn: "2 hours"
     },
     {
       name: "Elite Ignis Volcano",
@@ -282,6 +312,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteIgnisIcon,
       location: "Ignis Volcano",
       ruud: "8,500",
+      respawn: "2 hours"
     },
     {
       name: "Elite Bloody Tarkan",
@@ -289,6 +320,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteTarkanIcon,
       location: "Gore Tarkan",
       ruud: "9,000",
+      respawn: "2 hours"
     },
     {
       name: "Elite Tormenta Island",
@@ -296,6 +328,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteTormentaIcon,
       location: "Tormenta Island",
       ruud: "9,500",
+      respawn: "2 hours"
     },
     {
       name: "Elite Twisted Karutan",
@@ -303,6 +336,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteKarutanIcon,
       location: "Twisted Karutan",
       ruud: "10,000",
+      respawn: "2 hours"
     },
     {
       name: "Elite Kardamahal Temple",
@@ -310,6 +344,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteKardamahalIcon,
       location: "Kardamahal Temple",
       ruud: "10,000",
+      respawn: "2 hours"
     },
     {
       name: "Elite Swamp of Doom",
@@ -317,12 +352,7 @@ function Info({ user, currentTheme, onThemeChange }) {
       icon: EliteSwampIcon,
       location: "Swamp of Doom",
       ruud: "10,000",
-    },
-    {
-      name: "Maze of Dimensions",
-      type: "event",
-      icon: BloodCastleIcon,
-      ruud: "20,000 per floor",
+      respawn: "2 hours"
     },
     // INVASIONS
     {
@@ -350,43 +380,6 @@ function Info({ user, currentTheme, onThemeChange }) {
       ruud: "3,500 per kill",
     },
     {
-      name: "Website Rewards: Event",
-      type: "invasion",
-      icon: BloodCastleIcon,
-      ruud: "907,000 total",
-      wcoin: "1,500 total",
-      goblin: "20,500 total",
-    },
-    {
-      name: "Website Rewards: Reset",
-      type: "invasion",
-      icon: BloodCastleIcon,
-      ruud: "1,144,000 total",
-      wcoin: "2,035 total",
-      goblin: "27,600 total",
-    },
-    {
-      name: "Website Rewards: Grand Reset",
-      type: "invasion",
-      icon: BloodCastleIcon,
-      wcoin: "1,000",
-      goblin: "10,000",
-    },
-    {
-      name: "Website Rewards: Monsters",
-      type: "invasion",
-      icon: BloodCastleIcon,
-      ruud: "1,161,000 total",
-      wcoin: "4,761 total",
-      goblin: "48,350 total",
-    },
-    {
-      name: "In-game playtime",
-      type: "invasion",
-      icon: BloodCastleIcon,
-      goblin: "1 per 10 minutes",
-    },
-    {
       name: "Balrog Invasion",
       type: "invasion",
       icon: BalrogIcon,
@@ -409,12 +402,51 @@ function Info({ user, currentTheme, onThemeChange }) {
       type: "invasion",
       icon: AzureDragonIcon,
       ruud: "500",
+      location: "Lorencia",
     },
     {
       name: "Muun Invasion",
       type: "invasion",
       icon: MuunIcon,
       ruud: "500",
+      location: "Any map"
+    },
+    {
+      name: "Website Rewards: Event",
+      type: "character",
+      icon: BloodCastleIcon,
+      ruud: "907,000 total",
+      wcoin: "1,500 total",
+      goblin: "20,500 total",
+    },
+    {
+      name: "Website Rewards: Reset",
+      type: "character",
+      icon: BloodCastleIcon,
+      ruud: "1,144,000 total",
+      wcoin: "2,035 total",
+      goblin: "27,600 total",
+    },
+    {
+      name: "Website Rewards: Grand Reset",
+      type: "character",
+      icon: BloodCastleIcon,
+      wcoin: "1,000",
+      goblin: "10,000",
+    },
+    {
+      name: "Website Rewards: Monsters",
+      type: "character",
+      icon: BloodCastleIcon,
+      ruud: "1,161,000 total",
+      wcoin: "4,761 total",
+      goblin: "48,350 total",
+    },
+    {
+      name: "In-game playtime",
+      type: "character",
+      icon: BloodCastleIcon,
+      goblin: "1 per 10 minutes",
     },
   ]; const [rewardSearch, setRewardSearch] = useState(""); const filteredRewards = rewardSources.filter(r =>
     r.name.toLowerCase().includes(rewardSearch.toLowerCase())
@@ -702,6 +734,21 @@ function Info({ user, currentTheme, onThemeChange }) {
 
                       {reward.goblin && (
                         <span><strong>{translate("rewards.goblin")}:</strong> {reward.goblin}</span>
+                      )}
+
+                      {reward.respawn && (
+                        <span><strong>{translate("rewards.respawn")}:</strong> {reward.respawn}</span>
+                      )}
+
+                      {reward.type === "invasion" && (
+                        <span>
+                          <strong>
+                            {translate("rewards.respawn")}:{" "}
+                            <Link to="/info" style={{ textDecoration: "none", color: currentTheme.primaryHover }}>
+                              {translate("rewards.checkHere")}
+                            </Link>
+                          </strong>
+                        </span>
                       )}
                     </BossSubtitle>
                   </BossText>

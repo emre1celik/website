@@ -11,7 +11,8 @@ export default {
     location: "Ubicación",
     ruud: "Ruud",
     wcoin: "WCoin",
-    goblin: "Goblin Points",
+    goblin: "Goblin Points", respawn: "Reaparición",
+    checkHere: "Ver aquí",
   },
   chaosCombination: {
     title: "Tasas de Combinación del Caos",

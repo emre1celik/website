@@ -337,7 +337,8 @@ export default {
       "Istnieje kilka sposobów na zdobycie WCoin, Goblin Points i Ruud w grze. Nagrody te można zdobywać poprzez różne aktywności, takie jak polowanie na bossy, inwazje oraz wydarzenia w grze, takie jak Blood Castle i Devil Square. Niektóre nagrody, w tym WCoin i Goblin Points, można również zdobyć poprzez działania na stronie, takie jak resety. Wielu bossów i niektóre minibossy upuszczają Ruud po pokonaniu. Poniżej znajduje się lista bossów, potworów i wydarzeń, które zapewniają te waluty, wraz z ilością Ruud, WCoin lub Goblin Points, które można otrzymać.",
 
     search: "Szukaj bossa, potwora lub wydarzenia...",
-
+    respawn: "Respawn",
+    checkHere: "Sprawdź tutaj",
     location: "Lokalizacja",
     ruud: "Ruud",
     wcoin: "WCoin",

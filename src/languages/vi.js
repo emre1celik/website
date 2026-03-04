@@ -416,7 +416,8 @@ export default {
       "Có nhiều cách để kiếm WCoin, Goblin Points và Ruud trong trò chơi. Những phần thưởng này có thể nhận được thông qua nhiều hoạt động khác nhau như săn boss, các cuộc xâm lược và các sự kiện trong game như Blood Castle và Devil Square. Một số phần thưởng, bao gồm WCoin và Goblin Points, cũng có thể nhận được thông qua các hoạt động trên website như reset. Nhiều boss và một số miniboss sẽ rơi Ruud khi bị tiêu diệt. Dưới đây là danh sách các boss, quái vật và sự kiện cung cấp các loại tiền này, cùng với số lượng Ruud, WCoin hoặc Goblin Points nhận được.",
 
     search: "Tìm boss, quái vật hoặc sự kiện...",
-
+    respawn: "Hồi sinh",
+    checkHere: "Xem tại đây",
     location: "Vị trí",
     ruud: "Ruud",
     wcoin: "WCoin",

@@ -350,7 +350,8 @@ export default {
       "Oyunda WCoin, Goblin Points ve Ruud kazanmanın birkaç yolu vardır. Bu ödüller boss avları, invasions ve Blood Castle ile Devil Square gibi oyun içi etkinlikler aracılığıyla elde edilebilir. WCoin ve Goblin Points dahil bazı ödüller web sitesi üzerinden yapılan işlemlerle, örneğin resetler ile de kazanılabilir. Birçok boss ve bazı minibosslar yenildiğinde Ruud düşürür. Aşağıda bu para birimlerini sağlayan bosslar, canavarlar ve etkinliklerin listesi ile birlikte verilen Ruud, WCoin veya Goblin Points miktarlarını bulabilirsiniz.",
 
     search: "Boss, canavar veya etkinlik ara...",
-
+    respawn: "Yeniden Doğma",
+    checkHere: "Buraya bak",
     location: "Konum",
     ruud: "Ruud",
     wcoin: "WCoin",

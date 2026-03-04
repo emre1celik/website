@@ -365,7 +365,8 @@ export default {
       "Mängus on mitmeid viise WCoini, Goblin Pointsi ja Ruudi teenimiseks. Neid preemiaid saab erinevate tegevuste kaudu nagu bosside jaht, invasioonid ning mängusisesed üritused nagu Blood Castle ja Devil Square. Mõningaid preemiaid, sealhulgas WCoini ja Goblin Pointse, saab teenida ka veebisaidi tegevuste kaudu nagu resetid. Paljud bossid ja mõned minibossid annavad alistamisel Ruudi. Allpool leiad nimekirja bossidest, koletistest ja üritustest, mis annavad neid valuutasid, koos Ruudi, WCoini või Goblin Pointside kogustega.",
 
     search: "Otsi bossi, koletist või üritust...",
-
+    respawn: "Taasilmumine",
+    checkHere: "Vaata siit",
     location: "Asukoht",
     ruud: "Ruud",
     wcoin: "WCoin",
