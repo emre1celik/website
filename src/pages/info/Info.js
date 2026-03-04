@@ -50,8 +50,8 @@ import WhiteWizardIcon from "../../assets/images/monsters/whitewizard.png";
 import BalrogIcon from "../../assets/images/monsters/balrog.png";
 import HellraiserIcon from "../../assets/images/monsters/hellraiser.png";
 import LunarIcon from "../../assets/images/monsters/lunar.png";
-import MuunIcon from "../../assets/images/monsters/lunar.png";
-import AzureDragonIcon from "../../assets/images/monsters/lunar.png";
+import MuunIcon from "../../assets/images/monsters/muun.png";
+import AzureDragonIcon from "../../assets/images/monsters/azure.png";
 
 import EliteAbyssIcon from "../../assets/images/monsters/eliteabyss.png";
 import EliteScorchedIcon from "../../assets/images/monsters/elitescorched.png";
