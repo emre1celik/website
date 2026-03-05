@@ -73,8 +73,13 @@ const invasionSchedule = {
 const eventSchedule = {
   "Boss Battle Together": [
     "00:25",
+    "03:25",
+    "06:25",
+    "09:25",
+    "12:25",
     "15:25",
-    "20:25",
+    "18:25",
+    "21:25",
   ],
 
   "Blood Castle": [
