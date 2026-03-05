@@ -744,7 +744,7 @@ function Info({ user, currentTheme, onThemeChange }) {
                         <span>
                           <strong>
                             {translate("rewards.respawn")}:{" "}
-                            <Link to="/info" style={{ textDecoration: "none", color: currentTheme.primaryHover }}>
+                            <Link to="/events" style={{ textDecoration: "none", color: currentTheme.primaryHover }}>
                               {translate("rewards.checkHere")}
                             </Link>
                           </strong>
