@@ -785,7 +785,7 @@ function Info({ user, currentTheme, onThemeChange }) {
               <br />
               <ul>
                 <li>Bloodangel <span style={{ color: "grey" }}>- Level: 400 | Ancient: Ruud Shop | Excellent: Deep Dungeon 1, 2, 3, 4, 5</span></li>
-                <li>Darkangel <span style={{ color: "grey" }}>- Level: 600 | Ancient: Ruud Shop | Excellent: Swamp of Darkness</span></li>
+                <li>Darkangel <span style={{ color: "grey" }}>- Level: 600 | Ancient: Ruud Shop | Excellent: Swamp of Darkness, Nixies Lake, Ferea</span></li>
                 <li>Holyangel <span style={{ color: "grey" }}>- Level: 800 | Ancient: Ruud Shop | Excellent: Kubera Mines</span></li>
                 <li>Soul <span style={{ color: "grey" }}>- Level: 900 | Ancient: Ruud Shop | Excellent: Abyss of Atlans 1, 2, 3</span></li>
                 <li>Blue Eye <span style={{ color: "grey" }}>- Level: 1000 | Ancient: Ruud Shop | Excellent: Scorched Canyon</span></li>
