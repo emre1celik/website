@@ -121,13 +121,21 @@ const eventSchedule = {
     "19:15",
     "21:15",
   ],
-  "Illusion Temple": [
+  "Doppelganger": [
     "00:20",
     "04:20",
     "08:20",
     "12:20",
     "16:20",
     "20:20",
+  ],
+  "Illusion Temple": [
+    "01:30",
+    "05:30",
+    "09:30",
+    "13:30",
+    "17:30",
+    "21:30",
   ],
 
   "Arka War": [
@@ -285,6 +293,11 @@ function Events({ user, currentTheme, onThemeChange }) {
       },
       "Chaos Castle": {
         enter: "Armor of Guardsman, buy from NPC Lumen Barmaid",
+        where: "Event Square (Press CTRL+T ingame)",
+        rewards: "Ruud, Jewels",
+      },
+      "Doppelganger": {
+        enter: "Dimensional Mirror, buy from NPC Lumen Barmaid",
         where: "Event Square (Press CTRL+T ingame)",
         rewards: "Ruud, Jewels",
       },
