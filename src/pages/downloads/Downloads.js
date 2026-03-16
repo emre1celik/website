@@ -25,7 +25,7 @@ function Downloads({ user, currentTheme, onThemeChange }) {
     },
     {
       name: "MEGA.nz (1,84 GB)",
-      url: "https://mega.nz/file/tDklUCza#pMtp6iX8NU0HtomY52eCR7z8s72Yyc-bt0aIV7YkSHc",
+      url: "https://mega.nz/file/5L8FVDYB#_CDFfyxiEbA5y1ZJEhsszER4RDWIjvPZvilao18m7jk",
       icon: faCloud,
     },
     {
